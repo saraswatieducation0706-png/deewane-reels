@@ -1,0 +1,51 @@
+{
+ "out": "/tmp/claude-0/teasers/Teaser1.mp4",
+ "footer": "GATE ME 90 Days Challenge  \u2022  Starts Mon 19 Oct",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "GATE ME",
+    "90 DAYS"
+   ],
+   "sub": "A free daily challenge for GATE 2027",
+   "voice": "Preparing for GATE twenty twenty-seven, Mechanical? We are starting a free ninety day challenge, and you are invited."
+  },
+  {
+   "kind": "card",
+   "title": "Every Day You Get",
+   "lines": [
+    "8 AM: Topic of the day",
+    "Practice PDF + solutions",
+    "7 PM: Free test",
+    "Toppers in the next reel"
+   ],
+   "voice": "Every day you get the topic at eight A. M., a practice set with full solutions on Telegram, a free test at seven P. M., and the top scorers featured in the next reel."
+  },
+  {
+   "kind": "card",
+   "title": "Who Is It For",
+   "lines": [
+    "GATE 2027 ME aspirants",
+    "Final-year students",
+    "Working professionals"
+   ],
+   "voice": "It is for every GATE twenty twenty-seven Mechanical aspirant, final-year students and working professionals alike."
+  },
+  {
+   "kind": "dates",
+   "title": "Mark Your Calendar",
+   "lines": [
+    [
+     "Challenge length",
+     "90 days"
+    ],
+    [
+     "Day 1",
+     "Mon 19 Oct"
+    ]
+   ],
+   "voice": "Ninety days. Day one is Monday, nineteenth October. Comment GATE ninety and we will send you all the links."
+  }
+ ]
+}

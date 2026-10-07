@@ -1,0 +1,51 @@
+{
+ "out": "/tmp/claude-0/teasers/Teaser2.mp4",
+ "footer": "GATE ME 90 Days Challenge  \u2022  Starts Mon 19 Oct",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "HOW IT",
+    "WORKS"
+   ],
+   "sub": "GATE ME 90 Days Challenge",
+   "voice": "Here is exactly how the GATE M. E. ninety days challenge works. It takes just a few hours a day."
+  },
+  {
+   "kind": "steps",
+   "title": "Your Daily Routine",
+   "steps": [
+    "Watch the 8 AM reel",
+    "Solve the practice PDF",
+    "Take the 7 PM free test",
+    "Top 3 featured next day"
+   ],
+   "voice": "Watch the eight A. M. reel, solve the practice set, take the free test at seven P. M., and if you make the top three, you will be featured in the next reel."
+  },
+  {
+   "kind": "card",
+   "title": "The Rules",
+   "lines": [
+    "Monday to Saturday",
+    "Sundays off for catch-up",
+    "Free for everyone"
+   ],
+   "voice": "Monday to Saturday. Sundays are off, so you can catch up. And it is completely free."
+  },
+  {
+   "kind": "dates",
+   "title": "Starts",
+   "lines": [
+    [
+     "Join on",
+     "Telegram"
+    ],
+    [
+     "Day 1",
+     "Mon 19 Oct"
+    ]
+   ],
+   "voice": "Join our Telegram channel so you get every practice set. Day one is Monday, nineteenth October."
+  }
+ ]
+}

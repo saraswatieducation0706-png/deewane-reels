@@ -1,0 +1,49 @@
+{
+ "out": "/tmp/claude-0/teasers/Teaser4.mp4",
+ "footer": "GATE ME 90 Days Challenge  \u2022  Day 1 tomorrow",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "STARTS",
+    "TOMORROW"
+   ],
+   "sub": "GATE ME 90 Days Challenge",
+   "voice": "The GATE M. E. ninety days challenge starts tomorrow! Are you in?"
+  },
+  {
+   "kind": "card",
+   "title": "Day 1 Topic",
+   "lines": [
+    "Engineering Mechanics",
+    "Statics, Trusses & Friction"
+   ],
+   "voice": "Day one is Engineering Mechanics: statics, trusses and friction."
+  },
+  {
+   "kind": "card",
+   "title": "Get Ready Tonight",
+   "lines": [
+    "Join our Telegram",
+    "Comment GATE90 for links",
+    "Set an 8 AM reminder"
+   ],
+   "voice": "Tonight, join our Telegram channel, comment GATE ninety for all the links, and set a reminder for eight A. M. tomorrow."
+  },
+  {
+   "kind": "dates",
+   "title": "Tomorrow",
+   "lines": [
+    [
+     "Topic reel",
+     "8:00 AM"
+    ],
+    [
+     "Free test",
+     "7:00 PM"
+    ]
+   ],
+   "voice": "Topic reel at eight A. M., free test at seven P. M. See you on day one!"
+  }
+ ]
+}

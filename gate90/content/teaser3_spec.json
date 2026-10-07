@@ -1,0 +1,62 @@
+{
+ "out": "/tmp/claude-0/teasers/Teaser3.mp4",
+ "footer": "GATE ME 90 Days Challenge  \u2022  Starts Mon 19 Oct",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "THE 90 DAY",
+    "PLAN"
+   ],
+   "sub": "Full GATE ME syllabus, step by step",
+   "voice": "Ninety days, the complete GATE Mechanical syllabus, and a clear plan for every single day. Here is how it is split."
+  },
+  {
+   "kind": "table",
+   "title": "The Plan",
+   "rows": [
+    [
+     "Syllabus coverage",
+     "66 days"
+    ],
+    [
+     "Subject revision",
+     "12 days"
+    ],
+    [
+     "Mocks + formula sprints",
+     "12 days"
+    ],
+    [
+     "Full-length mocks",
+     "8"
+    ]
+   ],
+   "voice": "Sixty-six days to cover the full syllabus, twelve days of subject revision, then twelve days of mocks and formula sprints, with eight full-length mocks in GATE pattern."
+  },
+  {
+   "kind": "card",
+   "title": "Planned By",
+   "lines": [
+    "GATE AIR 16",
+    "UPSC ESE AIR 61"
+   ],
+   "voice": "The plan is designed by a GATE all India rank sixteen and E. S. E. all India rank sixty-one."
+  },
+  {
+   "kind": "dates",
+   "title": "Mark Your Calendar",
+   "lines": [
+    [
+     "Ends",
+     "Before GATE"
+    ],
+    [
+     "Day 1",
+     "Mon 19 Oct"
+    ]
+   ],
+   "voice": "It ends a week before GATE, so you walk in fully revised. Day one is Monday, nineteenth October."
+  }
+ ]
+}
