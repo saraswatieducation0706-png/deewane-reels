@@ -1,0 +1,29 @@
+{
+  "voice_id": "gad8DmXGyu7hwftX9JqI",
+  "voice_name": "Lohi - Kind, Authentic and Helpful (ElevenLabs library)",
+  "tts_model": "eleven_multilingual_v2",
+  "speed": 1.1,
+  "scene_gap_s": 0.4,
+  "tracker_folder_id": "1GNbGFsKY8_fpw1zRC5JdV05wohn2CPcd",
+  "timezone": "Asia/Kolkata",
+  "links": {
+    "app": "https://play.google.com/store/apps/details?id=co.jack.iurlk",
+    "telegram": "https://t.me/digcareerthrust",
+    "website": "https://web.digcareerthrust.com/login"
+  },
+  "github_repo": "saraswatieducation0706-png/deewane-reels",
+  "metricool_blog_id": "7269466",
+  "metricool_timezone": "Asia/Calcutta",
+  "daily_slots": [
+    "18:00",
+    "20:00",
+    "22:00"
+  ],
+  "overflow_slots": [
+    "10:00",
+    "12:00",
+    "14:00",
+    "16:00"
+  ],
+  "min_days_left_at_posting": 1
+}

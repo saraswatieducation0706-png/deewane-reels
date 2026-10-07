@@ -1,2 +1,4 @@
-# deewane-reels
-Daily job-alert reels for Deewane: IES &amp; GATE Point
+# Deewane reels
+
+`tooling/` = renderer, brand assets and references for the daily Deewane job-notification reels.
+Dated folders = that day's reels and covers (kept ~3 days for Metricool scheduling).
