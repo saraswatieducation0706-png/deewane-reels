@@ -1,6 +1,6 @@
 {
  "_note": "GATE ME 90 Days Challenge production status. produced = test docx + practice PDF done; reel_scheduled = 8 AM reel booked in Metricool.",
  "produced": [1],
- "reel_scheduled": [],
+ "reel_scheduled": [1],
  "test_delivered": [1]
 }
