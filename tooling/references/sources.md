@@ -31,7 +31,10 @@ vacancies, last date and the link. If a site fails, note it in SUMMARY.md and co
 
 Run 1–2 `WebSearch` queries with `allowed_domains: ["youtube.com"]`, e.g. "new government job notification
 <month year> freshers", "<today's date> govt job notification". Use only the video **titles** returned by search
-as leads (org + post), then find the notification on a lead site / official site and verify as usual.
+as leads (org + post). For each title lead: collect the details (post, vacancies, qualification, age, last date)
+from the lead job sites in §1, add it to candidates.json, then dedup, filter, verify on the official site and make
+the reel exactly as for any other lead (Naveen confirmed this process, 7 Oct 2026). Also try a search for vacancy
+names in titles you didn't recognise from the lead sites — those are the most useful extra leads.
 Limitations (tested 7 Oct 2026): YouTube's AI video summary needs a signed-in YouTube app and is not reachable
 from this environment, and youtube.com watch pages are rate-limited/refused for WebFetch — so never take facts
 from YouTube, and don't retry a refused YouTube fetch.
