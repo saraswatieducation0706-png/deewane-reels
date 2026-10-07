@@ -1,0 +1,276 @@
+{
+ "day": 1,
+ "subject": "Engineering Mechanics",
+ "topic": "Statics, Trusses & Friction",
+ "days_to_gate": 110,
+ "summary": "free-body diagrams, equilibrium, trusses and frames, and friction",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mechanics, Kinematics & Dynamics",
+ "questions": [
+  {
+   "text": "Three coplanar forces act at a point: 50 N along the +x axis, 80 N at 60° and 60 N at 150° (angles measured anticlockwise from +x). The magnitude of their resultant is",
+   "fig": null,
+   "opts": [
+    "106.3 N",
+    "190.0 N",
+    "99.3 N",
+    "121.4 N"
+   ],
+   "ans": "(A) 106.3 N, at 69.0° to the +x axis",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Resolve every force into x and y components, add them, then combine.",
+    "ΣF<sub>x</sub> = 50 + 80 cos 60° + 60 cos 150° = 50 + 40 − 51.96 = <b>38.04 N</b>",
+    "ΣF<sub>y</sub> = 0 + 80 sin 60° + 60 sin 150° = 69.28 + 30 = <b>99.28 N</b>",
+    "R = √(38.04² + 99.28²) = <b>106.3 N</b>; direction θ = tan⁻¹(99.28/38.04) = <b>69.0°</b> from +x.",
+    "<b>Exam tip:</b> 190 N is the arithmetic sum, a common trap. Forces add as vectors, never as numbers."
+   ]
+  },
+  {
+   "text": "A 1000 N lamp is hung from two cables as shown. Cable A makes 45° and cable B makes 30° with the vertical. The tension in cable B (in N) is ______",
+   "fig": "d1p_q2.png",
+   "opts": null,
+   "ans": "732 (accept 730 to 734)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Three concurrent forces in equilibrium. Write ΣF<sub>x</sub> = 0 and ΣF<sub>y</sub> = 0 (or use Lami's theorem).",
+    "Horizontal: T<sub>A</sub> sin 45° = T<sub>B</sub> sin 30° → T<sub>A</sub> = 0.7071 T<sub>B</sub>",
+    "Vertical: T<sub>A</sub> cos 45° + T<sub>B</sub> cos 30° = 1000 → 0.5 T<sub>B</sub> + 0.866 T<sub>B</sub> = 1000",
+    "T<sub>B</sub> = 1000 / 1.366 = <b>732.1 N</b>, and T<sub>A</sub> = <b>517.6 N</b>.",
+    "<b>Lami check:</b> T<sub>B</sub>/sin(180° − 45°) = 1000/sin(75°) → T<sub>B</sub> = 1000 × 0.7071/0.9659 = 732 N ✓",
+    "<b>Exam tip:</b> The cable closer to the vertical always carries more load."
+   ]
+  },
+  {
+   "text": "A 200 N force is applied at the end of a 0.5 m spanner, making 60° with the handle. The moment about the bolt centre is",
+   "fig": null,
+   "opts": [
+    "100.0 N·m",
+    "86.6 N·m",
+    "50.0 N·m",
+    "173.2 N·m"
+   ],
+   "ans": "(B) 86.6 N·m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Moment = force × perpendicular distance, or use only the force component perpendicular to the arm (Varignon's theorem).",
+    "Perpendicular component = 200 sin 60° = 173.2 N",
+    "M = 173.2 × 0.5 = <b>86.6 N·m</b>",
+    "<b>Exam tip:</b> 100 N·m would be correct only if the force were at 90° to the handle."
+   ]
+  },
+  {
+   "text": "The simply supported beam AB carries a 20 kN point load and a 5 kN/m UDL as shown. The reaction at support B (in kN) is ______",
+   "fig": "d1p_q4.png",
+   "opts": null,
+   "ans": "15",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Replace the UDL by its resultant at the centre of its length, then take moments about A.",
+    "UDL resultant = 5 × 2 = 10 kN, acting at 5 m from A.",
+    "ΣM<sub>A</sub> = 0: R<sub>B</sub> × 6 = 20 × 2 + 10 × 5 = 90 → R<sub>B</sub> = <b>15 kN</b>",
+    "ΣF<sub>y</sub> = 0: R<sub>A</sub> = 30 − 15 = <b>15 kN</b>",
+    "<b>Exam tip:</b> Always check the second reaction with ΣF<sub>y</sub> = 0; it catches arithmetic slips."
+   ]
+  },
+  {
+   "text": "The truss shown carries a single load of 40 kN at joint L2. L0 is a pin and L3 is a roller. Which member is a zero-force member?",
+   "fig": "d1p_q5.png",
+   "opts": [
+    "U1L1",
+    "U2L2",
+    "U1L2",
+    "L1L2"
+   ],
+   "ans": "(A) U1L1",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> If three members meet at an unloaded joint and two of them are collinear, the third member carries zero force.",
+    "At joint L1, members L0L1 and L1L2 are collinear (both horizontal) and no load acts at L1.",
+    "So ΣF<sub>y</sub> = 0 at L1 gives F<sub>U1L1</sub> = <b>0</b>.",
+    "U2L2 is not zero, because the 40 kN load acts at L2.",
+    "<b>Exam tip:</b> Spot zero-force members first. They shrink the problem before you write any equation."
+   ]
+  },
+  {
+   "text": "For the same truss (40 kN at L2), the force in the top chord member U1U2 (magnitude, in kN) is ______  Also state whether it is tension or compression.",
+   "fig": "d1p_q6s.png",
+   "opts": null,
+   "ans": "26.67 compression (accept 26.5 to 26.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Method of sections. Cut through U1U2, U1L2 and L1L2 (section 1–1) and take moments about the point where two of the cut members meet.",
+    "Reactions: R<sub>L0</sub> = 40 × 3/9 = <b>13.33 kN</b>, R<sub>L3</sub> = <b>26.67 kN</b>.",
+    "Left part, moments about L2 (where U1L2 and L1L2 meet): R<sub>L0</sub> × 6 + F<sub>U1U2</sub> × 3 = 0, taking F as tension.",
+    "F<sub>U1U2</sub> = −13.33 × 6 / 3 = <b>−26.67 kN</b> → <b>26.67 kN compression</b>.",
+    "<b>Exam tip:</b> The top chord of a simply supported truss under downward loads is always in compression; the bottom chord is in tension."
+   ]
+  },
+  {
+   "text": "A 500 N block on a rough horizontal floor (μ = 0.3) is pulled by a force P inclined at θ above the horizontal. The least value of P that can start the motion, and the angle at which it acts, are",
+   "fig": null,
+   "opts": [
+    "143.7 N at 16.7°",
+    "150.0 N at 0°",
+    "143.7 N at 73.3°",
+    "137.6 N at 16.7°"
+   ],
+   "ans": "(A) 143.7 N at 16.7°",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> P cos θ = μ(W − P sin θ) → P = μW / (cos θ + μ sin θ). P is least when the denominator is greatest, i.e. when tan θ = μ (θ equals the angle of friction).",
+    "θ = tan⁻¹(0.3) = <b>16.7°</b>",
+    "P<sub>min</sub> = μW / √(1 + μ²) = 150 / 1.044 = <b>143.7 N</b>",
+    "<b>Exam tip:</b> Pulling slightly upward beats a horizontal pull (150 N) because it reduces the normal reaction."
+   ]
+  },
+  {
+   "text": "A 400 N block rests on a rough plane inclined at 25° (μ = 0.2). The horizontal force P needed to just push it up the plane (in N) is ______",
+   "fig": "d1p_q8.png",
+   "opts": null,
+   "ans": "294 (accept 292 to 296)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> With the angle of friction φ = tan⁻¹μ, a horizontal force to push a block up an incline is P = W tan(α + φ).",
+    "φ = tan⁻¹(0.2) = 11.31°, so α + φ = 36.31°",
+    "P = 400 × tan 36.31° = 400 × 0.7348 = <b>293.9 N</b>",
+    "<b>Check by components:</b> along the plane P cos α = W sin α + μN, with N = W cos α + P sin α. Solving gives the same 293.9 N.",
+    "<b>Exam tip:</b> A horizontal push also presses the block into the plane, which increases friction. That is why it needs more force than a push along the plane."
+   ]
+  },
+  {
+   "text": "A uniform ladder rests against a rough vertical wall and on a rough floor, with μ = 0.25 at both surfaces. The least angle the ladder can make with the floor without slipping is",
+   "fig": null,
+   "opts": [
+    "61.9°",
+    "63.4°",
+    "75.9°",
+    "56.3°"
+   ],
+   "ans": "(A) 61.9°",
+   "sfig": "d1p_s9.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> At impending slip both friction forces reach their limits: F<sub>f</sub> = μN<sub>f</sub> (towards the wall) and F<sub>w</sub> = μN<sub>w</sub> (upwards).",
+    "ΣF<sub>x</sub>: N<sub>w</sub> = μN<sub>f</sub>. ΣF<sub>y</sub>: N<sub>f</sub> + μN<sub>w</sub> = W → N<sub>f</sub> = W/(1 + μ²)",
+    "ΣM about the foot: N<sub>w</sub> L sin θ + μN<sub>w</sub> L cos θ = W (L/2) cos θ",
+    "This simplifies to tan θ = (1 − μ²)/(2μ) = (1 − 0.0625)/0.5 = 1.875 → θ = <b>61.9°</b>",
+    "<b>Exam tip:</b> With a smooth wall the formula becomes tan θ = 1/(2μ) = 2, giving 63.4°. Wall friction lets the ladder stand slightly flatter."
+   ]
+  },
+  {
+   "text": "A rope passes half-way round a fixed rough cylinder (μ = 0.3) and is used to raise a load of 500 N slowly. The pull needed on the other end (in N) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1283 (accept 1275 to 1290)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Belt (capstan) friction: T<sub>1</sub>/T<sub>2</sub> = e<sup>μθ</sup>, with T<sub>1</sub> the tight side and θ in radians.",
+    "θ = π rad (half turn), so e<sup>0.3π</sup> = e<sup>0.9425</sup> = 2.566",
+    "To raise the load, the pull is on the tight side: T<sub>1</sub> = 500 × 2.566 = <b>1283 N</b>",
+    "<b>Exam tip:</b> To lower the load slowly, the same cylinder needs only 500/2.566 = 195 N. Always decide which side is tight first."
+   ]
+  },
+  {
+   "text": "Blocks A (200 N, μ = 0.2) and B (300 N, μ = 0.3) are tied together by a string parallel to an inclined plane, with A below B. The angle of inclination (in degrees) at which the pair just begins to slide down is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "14.57 (accept 14.4 to 14.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> When connected bodies slide together, total driving force = total limiting friction.",
+    "Driving force = (200 + 300) sin α = 500 sin α",
+    "Total friction = (0.2 × 200 + 0.3 × 300) cos α = 130 cos α",
+    "500 sin α = 130 cos α → tan α = 0.26 → α = <b>14.57°</b>",
+    "<b>Exam tip:</b> Neither block alone sets the angle (A alone would slide at 11.3°, B alone at 16.7°). The string makes them share friction."
+   ]
+  },
+  {
+   "text": "A light horizontal beam AB, hinged to the wall at A, is held by a cable BC at 30° to the beam. It carries 6 kN at mid-span and 4 kN at B. The tension in the cable is",
+   "fig": "d1p_q12.png",
+   "opts": [
+    "14.0 kN",
+    "7.0 kN",
+    "28.0 kN",
+    "16.2 kN"
+   ],
+   "ans": "(A) 14.0 kN",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Take moments about the hinge A so that both unknown hinge reactions drop out.",
+    "Vertical component of T at B = T sin 30°, acting at 4 m from A.",
+    "ΣM<sub>A</sub> = 0: T sin 30° × 4 = 6 × 2 + 4 × 4 = 28 → T = <b>14 kN</b>",
+    "Hinge reaction: A<sub>x</sub> = T cos 30° = 12.12 kN, A<sub>y</sub> = 10 − 7 = 3 kN → R<sub>A</sub> = <b>12.49 kN</b>",
+    "<b>Exam tip:</b> The cable is a two-force member, so its tension acts along the cable. Use that direction directly."
+   ]
+  },
+  {
+   "text": "For the wall-mounted truss shown, with 20 kN hanging at C, the force in member AC is",
+   "fig": "d1p_q13.png",
+   "opts": [
+    "30 kN (tension)",
+    "30 kN (compression)",
+    "36.06 kN (compression)",
+    "20 kN (tension)"
+   ],
+   "ans": "(A) 30 kN (tension)",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Method of joints at C, the joint with only two unknown members.",
+    "BC has slope 2/3, so sin α = 2/√13 and cos α = 3/√13.",
+    "ΣF<sub>y</sub> at C: F<sub>BC</sub> sin α = 20 → F<sub>BC</sub> = 36.06 kN, pushing C upward (<b>compression</b>).",
+    "ΣF<sub>x</sub> at C: F<sub>AC</sub> = F<sub>BC</sub> cos α = 36.06 × 3/√13 = <b>30 kN tension</b>",
+    "<b>Exam tip:</b> In a wall bracket the upper member is in tension (it is pulled) and the lower strut is in compression (it is pushed)."
+   ]
+  },
+  {
+   "text": "A uniform block 0.4 m wide and 1.0 m tall stands on a plane whose inclination α is slowly increased. If μ = 0.5, the block will",
+   "fig": "d1p_q14.png",
+   "opts": [
+    "Tip over at α = 21.8°",
+    "Slide at α = 26.6°",
+    "Tip over at α = 26.6°",
+    "Slide at α = 21.8°"
+   ],
+   "ans": "(A) Tip over at α = 21.8°",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Compare two limits. Sliding starts when tan α = μ. Tipping starts when the weight's line of action passes the lower edge, i.e. tan α = b/h.",
+    "Sliding: tan α = 0.5 → α = 26.6°",
+    "Tipping: tan α = 0.4/1.0 → α = 21.8°",
+    "The smaller angle is reached first, so the block <b>tips over at 21.8°</b> before it can slide.",
+    "<b>Exam tip:</b> Tall, narrow bodies tip; short, wide bodies slide. Always check both."
+   ]
+  },
+  {
+   "text": "A roller of weight 1000 N and radius 0.5 m is to be pulled over a step 0.2 m high by a horizontal force P through its centre. The least P needed (in N) is ______",
+   "fig": "d1p_q15.png",
+   "opts": null,
+   "ans": "1333 (accept 1320 to 1345)",
+   "sfig": "d1p_s15.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> At the moment of lifting, the floor reaction becomes zero. The roller then has three forces (P, W and the step reaction R), and R passes through the centre.",
+    "Take moments about the step corner. Lever arm of W = √(r² − (r − h)²) = √(0.25 − 0.09) = 0.4 m. Lever arm of P = r − h = 0.3 m.",
+    "P × 0.3 = 1000 × 0.4 → P = <b>1333 N</b>",
+    "<b>Exam tip:</b> P = W√(h(2r − h))/(r − h). As h approaches r the force becomes infinite, which is why a horizontal pull cannot lift a roller over a step as high as its radius."
+   ]
+  }
+ ]
+}

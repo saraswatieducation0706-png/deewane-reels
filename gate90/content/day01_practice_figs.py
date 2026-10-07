@@ -1,0 +1,120 @@
+from figlib import *
+import numpy as np
+F="fig/"
+def arcm(ax,c,r,a0,a1,t,tr=None,fs=9):
+    a=np.radians(np.linspace(a0,a1,30)); ax.plot(c[0]+r*np.cos(a),c[1]+r*np.sin(a),color=K,lw=0.8)
+    am=np.radians((a0+a1)/2); tr=tr or r+0.25; label(ax,c[0]+tr*np.cos(am),c[1]+tr*np.sin(am),t,fs=fs)
+# P2 lamp
+fig,ax=new(3.2,2.2)
+hatch_ground(ax,-2.4,2.4,1.8,down=False)
+P=(0,0); A=(-1.8,1.8); B=(1.8*np.tan(np.radians(30)),1.8)
+member(ax,A,P,1.3); member(ax,B,P,1.3); joint(ax,0,0,0.05)
+ax.plot([0,0],[0,1.8],color=K,lw=0.6,ls="--")
+arcm(ax,(0,0),0.6,90,135,"45°",tr=0.85); arcm(ax,(0,0),0.9,60,90,"30°",tr=1.15)
+member(ax,(0,0),(0,-0.3),1.3); ax.add_patch(Circle((0,-0.6),0.3,fill=False,ec=K,lw=1.3)); label(ax,0.75,-0.6,"1000 N",fs=8)
+label(ax,-1.15,0.75,"Cable A",fs=8,rotation=-45); label(ax,0.95,0.75,"Cable B",fs=8,rotation=60)
+ax.set_xlim(-2.5,2.5); ax.set_ylim(-1.0,2.1); save(fig,F+"d1p_q2.png")
+# P4 beam
+fig,ax=new(3.6,1.6)
+member(ax,(0,0),(6,0),4); pin(ax,0,-0.08,0.5); roller(ax,6,-0.08,0.5)
+arrow(ax,2,1.0,2,0.1); label(ax,2.0,1.2,"20 kN",fs=9)
+for x in np.linspace(4,6,7): arrow(ax,x,0.65,x,0.1,lw=1.0)
+ax.plot([4,6],[0.65,0.65],color=K,lw=1.0); label(ax,5,0.95,"5 kN/m",fs=9)
+label(ax,-0.3,0.3,"A"); label(ax,6.3,0.3,"B")
+dim(ax,0,-0.9,2,-0.9,"2 m",off=(0,-0.28)); dim(ax,2,-0.9,4,-0.9,"2 m",off=(0,-0.28)); dim(ax,4,-0.9,6,-0.9,"2 m",off=(0,-0.28))
+ax.set_xlim(-0.6,6.6); ax.set_ylim(-1.4,1.4); save(fig,F+"d1p_q4.png")
+# P5/P6 Pratt truss
+def pratt(name,section=False):
+    fig,ax=new(3.8,2.0)
+    pts=dict(L0=(0,0),L1=(3,0),L2=(6,0),L3=(9,0),U1=(3,3),U2=(6,3))
+    mem=[("L0","L1"),("L1","L2"),("L2","L3"),("L0","U1"),("U1","U2"),("U2","L3"),("U1","L1"),("U2","L2"),("U1","L2")]
+    for a,b in mem: member(ax,pts[a],pts[b],1.8)
+    for k,p in pts.items(): joint(ax,*p,0.09)
+    pin(ax,0,0,0.7); roller(ax,9,0,0.7)
+    for k,(x,y) in pts.items():
+        dx={"L0":-0.5,"L3":0.55}.get(k,0.0); dy=0.4 if k.startswith("U") else 0.35
+        if k=="L1": dx,dy=0.45,-0.4
+        if k=="L2": dx,dy=-0.45,-0.4
+        if k in("L0","L3"): dy=0.3
+        label(ax,x+dx,y+dy,k,fs=9)
+    arrow(ax,6,-0.15,6,-1.4); label(ax,7.05,-1.05,"40 kN",fs=9)
+    for i in range(3): dim(ax,3*i,-2.0,3*i+3,-2.0,"3 m",off=(0,-0.35))
+    dim(ax,10.4,0,10.4,3,"3 m",off=(0.45,0))
+    if section:
+        ax.plot([4.2,5.0],[3.9,-0.9],color="#B71C1C",lw=1.4,ls="--"); label(ax,6.4,3.95,"section 1–1",fs=8,color="#B71C1C")
+    ax.set_xlim(-1.0,11.4); ax.set_ylim(-2.6,4.2); save(fig,F+name)
+pratt("d1p_q5.png"); pratt("d1p_q6s.png",True)
+# P8 horizontal push on incline
+fig,ax=new(3.0,1.9)
+th=np.radians(25); Lp=4.0; top=(Lp*np.cos(th),Lp*np.sin(th))
+ax.add_patch(Polygon([[0,0],[top[0],0],[top[0],top[1]]],closed=True,fill=False,ec=K,lw=1.4)); hatch_ground(ax,-0.3,top[0]+0.3,0,size=0.15)
+arcm(ax,(0,0),0.9,0,25,"25°",tr=1.2)
+R=np.array([[np.cos(th),-np.sin(th)],[np.sin(th),np.cos(th)]]); o=np.array([1.6*np.cos(th),1.6*np.sin(th)])
+blk=(R@np.array([[0,0],[0.9,0],[0.9,0.6],[0,0.6]]).T).T+o; ax.add_patch(Polygon(blk,closed=True,fill=False,ec=K,lw=1.4))
+c=o+R@np.array([0.45,0.3]); label(ax,c[0],c[1],"400 N",fs=7,rotation=25)
+lc=o+R@np.array([0,0.3]); arrow(ax,lc[0]-1.0,lc[1],lc[0],lc[1]); label(ax,lc[0]-0.7,lc[1]+0.22,"P",fs=10)
+label(ax,2.9,0.9,"μ = 0.2",fs=8)
+ax.set_xlim(-0.4,top[0]+0.4); ax.set_ylim(-0.4,top[1]+0.2); save(fig,F+"d1p_q8.png")
+# P12 beam with cable
+fig,ax=new(3.4,2.0)
+hatch_wall(ax,0,-0.5,2.8,left=True,size=0.15)
+B=(4,0); C=(0,4*np.tan(np.radians(30)))
+member(ax,(0,0),B,3.5); member(ax,C,B,1.1); joint(ax,0,0); joint(ax,*B); joint(ax,*C)
+arrow(ax,2,1.0,2,0.1); label(ax,1.45,0.75,"6 kN",fs=9); arrow(ax,4,-0.1,4,-1.0); label(ax,4.55,-0.75,"4 kN",fs=9)
+arcm(ax,B,0.8,150,180,"30°",tr=1.15)
+label(ax,0.3,-0.3,"A"); label(ax,4.3,0.25,"B"); label(ax,0.3,C[1]+0.2,"C")
+dim(ax,0,-1.3,2,-1.3,"2 m",off=(0,-0.25)); dim(ax,2,-1.3,4,-1.3,"2 m",off=(0,-0.25))
+ax.set_xlim(-0.5,5.0); ax.set_ylim(-1.8,2.9); save(fig,F+"d1p_q12.png")
+# P13 cantilever truss
+fig,ax=new(2.8,2.0)
+hatch_wall(ax,0,-0.5,2.6,left=True,size=0.15)
+A=(0,2);B=(0,0);C=(3,2)
+member(ax,A,C); member(ax,B,C)
+for p in (A,B,C): joint(ax,*p)
+arrow(ax,3,1.9,3,0.8); label(ax,3.55,1.1,"20 kN",fs=9)
+label(ax,0.3,2.3,"A"); label(ax,0.3,-0.3,"B"); label(ax,3.25,2.3,"C")
+dim(ax,0,2.6,3,2.6,"3 m",off=(0,0.25)); dim(ax,-0.6,0,-0.6,2,"2 m",off=(-0.35,0))
+ax.set_xlim(-1.1,4.1); ax.set_ylim(-0.7,3.1); save(fig,F+"d1p_q13.png")
+# P14 block on tilting plane
+fig,ax=new(2.8,1.9)
+th=np.radians(20); Lp=4.0; top=(Lp*np.cos(th),Lp*np.sin(th))
+ax.plot([0,top[0]],[0,top[1]],color=K,lw=1.6); hatch_ground(ax,-0.3,top[0]+0.3,0,size=0.15)
+ax.add_patch(Circle((0,0),0.08,fc="white",ec=K,zorder=5))
+arcm(ax,(0,0),1.0,0,20,"α",tr=1.3)
+R=np.array([[np.cos(th),-np.sin(th)],[np.sin(th),np.cos(th)]]); o=np.array([1.8*np.cos(th),1.8*np.sin(th)])
+blk=(R@np.array([[0,0],[0.4,0],[0.4,1.0],[0,1.0]]).T).T+o; ax.add_patch(Polygon(blk,closed=True,fill=False,ec=K,lw=1.4))
+label(ax,3.1,1.8,"0.4 m × 1.0 m block\nμ = 0.5",fs=8)
+ax.set_xlim(-0.4,top[0]+0.4); ax.set_ylim(-0.4,2.4); save(fig,F+"d1p_q14.png")
+# P15 roller over step
+fig,ax=new(2.6,2.0)
+r=0.5;h=0.2
+hatch_ground(ax,-0.8,0.45,0,size=0.1); ax.plot([0.4,0.4],[0,h],color=K,lw=1.2); hatch_ground(ax,0.4,1.2,h,size=0.1)
+cx=0.4-np.sqrt(r*r-(r-h)**2); c=(cx,r)
+ax.add_patch(Circle(c,r,fill=False,ec=K,lw=1.5)); ax.add_patch(Circle(c,0.03,fc=K))
+arrow(ax,cx-0.9,r,cx-0.05,r); label(ax,cx-0.6,r+0.13,"P",fs=10)
+label(ax,cx-0.35,r+0.65,"W = 1000 N",fs=7)
+dim(ax,1.35,0,1.35,h,"h = 0.2 m",off=(0.5,0))
+ax.plot([0.4,1.4],[0,0],color=K,lw=0.5,ls=":")
+ax.plot([cx,cx+r*np.cos(np.radians(45))],[r,r+r*np.sin(np.radians(45))],color=K,lw=0.8); label(ax,cx+0.62,r+0.55,"r = 0.5 m",fs=7)
+ax.set_xlim(-1.0,2.3); ax.set_ylim(-0.25,1.2); save(fig,F+"d1p_q15.png")
+# Solution FBDs: P9 ladder FBD, P15 FBD
+fig,ax=new(2.4,2.4)
+t=np.radians(61.93); L=3
+foot=(0,0); top=(L*np.cos(t),L*np.sin(t)); member(ax,foot,top,3)
+arrow(ax,0,0,0,1.0); label(ax,-0.3,0.8,"$N_f$",fs=10)
+arrow(ax,0,0,0.8,0); label(ax,0.6,-0.25,"$\\mu N_f$",fs=10)
+arrow(ax,top[0],top[1],top[0]-0.9,top[1]); label(ax,top[0]-0.6,top[1]+0.25,"$N_w$",fs=10)
+arrow(ax,top[0],top[1],top[0],top[1]+0.8); label(ax,top[0]+0.45,top[1]+0.6,"$\\mu N_w$",fs=10)
+mid=(top[0]/2,top[1]/2); arrow(ax,mid[0],mid[1],mid[0],mid[1]-1.0); label(ax,mid[0]+0.3,mid[1]-0.8,"$W$",fs=10)
+arcm(ax,(0,0),0.45,0,61.93,"θ",tr=0.25)
+ax.set_xlim(-0.6,2.2); ax.set_ylim(-0.4,3.6); save(fig,F+"d1p_s9.png")
+fig,ax=new(2.4,2.0)
+c=(0,0); ax.add_patch(Circle(c,0.5,fill=False,ec=K,lw=1.3,ls="--"))
+corner=(0.4,-0.3)
+arrow(ax,0,0,-0.9,0); label(ax,-0.7,0.15,"P",fs=9)
+arrow(ax,0,0,0,-0.9); label(ax,0.15,-0.75,"W",fs=9)
+v=np.array([-0.4,0.3])/0.5; arrow(ax,0,0,v[0]*0.95,v[1]*0.95); label(ax,-1.0,0.75,"R",fs=10)
+ax.plot([0,corner[0]],[0,corner[1]],color=K,lw=0.6,ls=":"); ax.plot(*corner,"ko",ms=3)
+label(ax,0.35,-1.25,"R acts along the line from the step corner to the centre",fs=7)
+ax.set_xlim(-1.4,1.6); ax.set_ylim(-1.45,1.0); save(fig,F+"d1p_s15.png")
+print("ok")
