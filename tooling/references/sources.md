@@ -27,6 +27,15 @@ careerpower.in, recruitment.guru (stale), adda247.com/jobs, testbook.com (no lis
 Pages are long — ask WebFetch only for entries posted in the lookback window with org, post, qualification,
 vacancies, last date and the link. If a site fails, note it in SUMMARY.md and continue.
 
+## 1a. YouTube leads (extra lead source, added 7 Oct 2026)
+
+Run 1–2 `WebSearch` queries with `allowed_domains: ["youtube.com"]`, e.g. "new government job notification
+<month year> freshers", "<today's date> govt job notification". Use only the video **titles** returned by search
+as leads (org + post), then find the notification on a lead site / official site and verify as usual.
+Limitations (tested 7 Oct 2026): YouTube's AI video summary needs a signed-in YouTube app and is not reachable
+from this environment, and youtube.com watch pages are rate-limited/refused for WebFetch — so never take facts
+from YouTube, and don't retry a refused YouTube fetch.
+
 ## 2. Official sites — central (direct check for fresh notices + verification)
 
 UPSC upsc.gov.in · SSC ssc.gov.in · IBPS ibps.in · SBI sbi.bank.in/web/careers (SBI moved to .bank.in;
@@ -57,7 +66,7 @@ For every candidate, try the official website (page text, or the full PDF advert
 | Official site opens and the notification is there | **Verified.** Use ONLY the official facts (they override any aggregator figure). `"verified": true` in spec → footer "Verified from official source". |
 | Official site opens, notification found, but aggregator details were wrong | Still verified — use the official facts. Note the corrections in source.md. |
 | Official site opens but the notification can't be found there, or the official text contradicts the lead on something basic (doesn't exist, different org/post, already closed) | **Skip** — doubtful. Tracker status `skipped`, reason "not found / contradicts official site". |
-| Official site refuses access (403, blocked, timeout after one retry, robots, login/captcha wall) | **Proceed unverified** (allowed by Naveen). Take facts from the lead pages and confirm the key facts (posts, vacancies, qualification, age, last date) on at least 2 independent lead sites; where they disagree, say "as per notification" instead of a number. Set `"verified": false` → footer "Official site: <domain> — check notification before applying". Mark "UNVERIFIED (official site not accessible)" in SUMMARY.md and source.md, and add "⚠️ Please confirm details on the official website before applying." to the description. |
+| Official site refuses access (403, blocked, timeout after one retry, robots, login/captcha wall) | **Proceed unverified** (allowed by Naveen). Take facts from the lead pages and confirm the key facts (posts, vacancies, qualification, age, last date) on at least 2 independent lead sites; where they disagree, say "as per notification" instead of a number. Set `"verified": false` → footer "Official site: <domain> — check notification before applying". Mark "UNVERIFIED (official site not accessible)" in SUMMARY.md and source.md, and add "⚠️ Please confirm details on the official website before applying." to the description. **Do not put any "could not verify / not yet verified" line in the video itself** (voice or on-screen) — the footer is enough (Naveen, 7 Oct 2026). |
 
 ## 5. Reading the official notification
 

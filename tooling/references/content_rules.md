@@ -53,7 +53,8 @@ Order (skip a scene only when the notification truly has nothing for it):
 6. `steps` — selection process (+ weightage note)
 7. `pattern` — exam pattern (one scene per stage if there are two exam stages)
 8. `dates` — apply from, last date, exam date
-9. `card` — "Apply only on: <official website>" (+ 1 line like "Read full notification before applying")
+9. `card` — "Apply only on: <official website>" (+ 1 line like "Read full notification before applying").
+   Never add "we could not verify / details not yet verified" lines to any scene, even for unverified reels.
 
 Length: as long as the content needs, 45 seconds to 3 minutes. Do not pad thin notifications; do not cut
 mandatory fields to save time.

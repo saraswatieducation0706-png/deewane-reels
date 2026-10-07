@@ -63,6 +63,13 @@ and `info` JSON:
   in SUMMARY.md and leave that reel for manual posting.
 - After success, record the returned `plannerUrl` and the provider statuses for each reel.
 
+## 3a. PDF mode — post immediately
+
+When Naveen attached the notification PDF, don't use the slot queue: after upload and the 200 check, call
+`createScheduledPost` with `date` = now + 5 minutes (IST, next whole minute) and the same `publicationDate`,
+same `info` format as §3. Then confirm with `getScheduledPosts`. If it fails twice, give Naveen the MP4, cover
+and metadata to post by hand.
+
 ## 4. Verify
 
 Call `getScheduledPosts` for the posting window and confirm every reel appears at its slot with both
