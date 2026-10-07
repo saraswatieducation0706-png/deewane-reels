@@ -1,0 +1,57 @@
+from figlib import *
+import numpy as np
+F="fig/"
+def arcm(ax,c,r,a0,a1,t,tr=None,fs=9):
+    a=np.radians(np.linspace(a0,a1,30)); ax.plot(c[0]+r*np.cos(a),c[1]+r*np.sin(a),color=K,lw=0.8)
+    am=np.radians((a0+a1)/2); tr=tr or r+0.25; label(ax,c[0]+tr*np.cos(am),c[1]+tr*np.sin(am),t,fs=fs)
+# P2 ballistic pendulum
+fig,ax=new(3.4,2.4)
+hatch_ground(ax,1.2,3.2,3.0,down=False,size=0.15)
+ax.plot([2.0,2.0],[3.0,1.1],color=K,lw=1.0); ax.plot([2.4,2.4],[3.0,1.1],color=K,lw=1.0)
+ax.add_patch(Rectangle((1.6,0.5),1.2,0.6,fill=False,ec=K,lw=1.4)); label(ax,2.2,0.8,"1.99 kg",fs=8)
+ax.add_patch(Rectangle((-0.2,0.72),0.35,0.16,fc=K,ec=K)); arrow(ax,0.25,0.8,1.3,0.8); label(ax,0.0,1.15,"10 g",fs=8)
+label(ax,0.75,0.5,"v = ?",fs=8)
+# swung position (dashed)
+ax.add_patch(Rectangle((2.9,1.1),1.2,0.6,fill=False,ec=K,lw=1.0,ls="--"))
+ax.plot([2.0,3.3],[3.0,1.7],color=K,lw=0.7,ls="--"); ax.plot([2.4,3.7],[3.0,1.7],color=K,lw=0.7,ls="--")
+dim(ax,4.4,0.8,4.4,1.4,"h = 0.2 m",off=(0.9,0))
+ax.plot([2.8,4.6],[0.8,0.8],color=K,lw=0.5,ls=":"); ax.plot([4.1,4.6],[1.4,1.4],color=K,lw=0.5,ls=":")
+ax.set_xlim(-0.4,6.1); ax.set_ylim(0.2,3.3); save(fig,F+"d4p_q2.png")
+# P5 force-time graph
+fig,ax=new(3.2,2.0); ax.set_aspect("auto")
+arrow(ax,0,0,5.2,0,lw=1.0); arrow(ax,0,0,0,3.3,lw=1.0)
+ax.plot([0,2,4],[0,2.6,0],color=K,lw=1.8)
+ax.plot([0,2],[2.6,2.6],color=K,lw=0.6,ls=":"); ax.plot([2,2],[0,2.6],color=K,lw=0.6,ls=":")
+label(ax,-0.45,2.6,"500",fs=8); label(ax,2,-0.3,"0.02",fs=8); label(ax,4,-0.3,"0.04",fs=8); label(ax,-0.15,-0.3,"0",fs=8)
+label(ax,5.2,-0.35,"t (s)",fs=8); label(ax,0.15,3.55,"F (N)",fs=8,ha="left")
+ax.set_xlim(-0.9,5.6); ax.set_ylim(-0.6,3.8); save(fig,F+"d4p_q5.png")
+# P10 two-link mechanism (virtual work)
+fig,ax=new(3.4,2.0)
+th=np.radians(60); L=2.0; A=(0,0); B=(L*np.cos(th),L*np.sin(th)); C=(2*L*np.cos(th),0)
+member(ax,A,B,2.2); member(ax,B,C,2.2)
+for p in (A,B,C): joint(ax,*p,0.07)
+pin(ax,0,0,0.45); roller(ax,C[0],0,0.45)
+arrow(ax,B[0],B[1]+0.9,B[0],B[1]+0.1); label(ax,B[0]+0.85,B[1]+0.65,"P = 100 N",fs=8)
+arrow(ax,C[0]+1.0,0.0,C[0]+0.1,0.0); label(ax,C[0]+0.75,0.25,"Q",fs=10)
+arcm(ax,A,0.55,0,60,"θ",tr=0.8)
+label(ax,-0.3,0.35,"A",fs=9); label(ax,B[0]-0.3,B[1]+0.1,"B",fs=9); label(ax,C[0]+0.3,0.4,"C",fs=9)
+label(ax,0.25,1.05,"L",fs=9); label(ax,1.75,1.05,"L",fs=9)
+ax.set_xlim(-0.7,C[0]+1.4); ax.set_ylim(-0.5,B[1]+1.1); save(fig,F+"d4p_q10.png")
+# P13 block dropped onto a spring
+fig,ax=new(1.8,2.4)
+hatch_ground(ax,-0.9,0.9,0,size=0.12)
+n=8; ys=np.linspace(0,1.2,2*n+1); xs=[0]+[(0.25 if i%2 else -0.25) for i in range(1,2*n)]+[0]
+ax.plot(xs,ys,color=K,lw=1.1); ax.plot([-0.35,0.35],[1.2,1.2],color=K,lw=1.6)
+ax.add_patch(Rectangle((-0.3,1.9),0.6,0.5,fill=False,ec=K,lw=1.4)); label(ax,0.0,2.15,"2 kg",fs=8)
+dim(ax,0.65,1.2,0.65,1.9,"0.5 m",off=(0.45,0)); ax.plot([0.3,0.75],[1.9,1.9],color=K,lw=0.5,ls=":"); ax.plot([0.35,0.75],[1.2,1.2],color=K,lw=0.5,ls=":")
+label(ax,-0.75,0.6,"k = 4000\nN/m",fs=7)
+ax.set_xlim(-1.3,1.5); ax.set_ylim(-0.2,2.6); save(fig,F+"d4p_q13.png")
+# S11 oblique impact on a smooth floor
+fig,ax=new(3.2,1.8)
+hatch_ground(ax,-2.6,2.6,0,size=0.15)
+u=np.array([np.cos(np.radians(30)),-np.sin(np.radians(30))])*2.0
+arrow(ax,-u[0],-u[1],0,0); label(ax,-0.55,0.8,"10 m/s",fs=8)
+v=np.array([8.66,3.0])/9.165*1.9; arrow(ax,0,0,v[0],v[1]); label(ax,1.3,0.95,"9.17 m/s",fs=8)
+arcm(ax,(0,0),0.9,150,180,"30°",tr=1.25); arcm(ax,(0,0),0.9,0,19.1,"19.1°",tr=1.4,fs=8)
+ax.set_xlim(-2.7,2.7); ax.set_ylim(-0.3,1.3); save(fig,F+"d4p_s11.png")
+print("ok")

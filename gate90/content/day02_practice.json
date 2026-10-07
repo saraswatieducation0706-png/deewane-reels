@@ -1,0 +1,274 @@
+{
+ "day": 2,
+ "subject": "Engineering Mechanics",
+ "topic": "Kinematics & Dynamics",
+ "days_to_gate": 109,
+ "summary": "kinematics and dynamics of particles and rigid bodies in plane motion",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Linear Algebra",
+ "questions": [
+  {
+   "text": "A particle moves along a straight line with x = t³ − 6t² + 9t + 2 (x in m, t in s). The total distance travelled between t = 0 and t = 4 s is",
+   "fig": null,
+   "opts": [
+    "4 m",
+    "8 m",
+    "12 m",
+    "16 m"
+   ],
+   "ans": "(C) 12 m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Distance is not displacement. Find where the velocity changes sign and add the lengths of each leg.",
+    "v = dx/dt = 3t² − 12t + 9 = 3(t − 1)(t − 3) → the particle turns round at t = 1 s and t = 3 s.",
+    "x(0) = 2 m, x(1) = 6 m, x(3) = 2 m, x(4) = 6 m",
+    "Distance = |6 − 2| + |2 − 6| + |6 − 2| = 4 + 4 + 4 = <b>12 m</b> (displacement is only 4 m).",
+    "<b>Exam tip:</b> Whenever v can change sign inside the interval, split the interval at v = 0 before adding."
+   ]
+  },
+  {
+   "text": "A ball is projected from the top of a 40 m high tower with a speed of 30 m/s at 30° above the horizontal, as shown. Taking g = 9.81 m/s², the horizontal distance from the foot of the tower to the point where the ball hits the ground (in m) is ______",
+   "fig": "d2p_q2.png",
+   "opts": null,
+   "ans": "123.9 (accept 123 to 125)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Horizontal and vertical motions are independent. Use the vertical motion to find the time of flight, then x = u cos θ · t.",
+    "Components: u<sub>x</sub> = 30 cos 30° = 25.98 m/s, u<sub>y</sub> = 30 sin 30° = 15 m/s (up).",
+    "Taking up as positive, the ball lands at y = −40 m: −40 = 15t − 4.905t² → 4.905t² − 15t − 40 = 0",
+    "t = [15 + √(225 + 784.8)] / 9.81 = <b>4.768 s</b> (the negative root is rejected).",
+    "R = 25.98 × 4.768 = <b>123.9 m</b>",
+    "<b>Exam tip:</b> Do not use R = u² sin 2θ / g here. That formula holds only when launch and landing are at the same level."
+   ]
+  },
+  {
+   "text": "A boat moving at 20 m/s switches off its engine. The water resistance gives a retardation a = −0.5v (a in m/s², v in m/s). The distance covered while the speed falls to 5 m/s is",
+   "fig": null,
+   "opts": [
+    "15 m",
+    "27.7 m",
+    "40 m",
+    "30 m"
+   ],
+   "ans": "(D) 30 m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> When a is given as a function of v and distance is wanted, write a = v dv/dx.",
+    "v dv/dx = −0.5v → dv/dx = −0.5",
+    "x = (20 − 5)/0.5 = <b>30 m</b>",
+    "(The time taken would come from dv/dt = −0.5v: t = 2 ln 4 = 2.77 s, a common distractor.)",
+    "<b>Exam tip:</b> a = dv/dt gives time; a = v dv/dx gives distance. Pick the form that matches what is asked."
+   ]
+  },
+  {
+   "text": "A car moves on a circular track of radius 100 m. At an instant its speed is 15 m/s and the speed is increasing at 2 m/s². The magnitude of the total acceleration of the car at that instant (in m/s²) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.01 (accept 2.98 to 3.04)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> In curvilinear motion a = a<sub>t</sub> (change of speed) + a<sub>n</sub> (change of direction), and the two are perpendicular.",
+    "a<sub>n</sub> = v²/r = 15²/100 = <b>2.25 m/s²</b> (towards the centre)",
+    "a<sub>t</sub> = dv/dt = <b>2 m/s²</b> (along the path)",
+    "a = √(2.25² + 2²) = <b>3.01 m/s²</b>",
+    "<b>Exam tip:</b> Never add a<sub>t</sub> and a<sub>n</sub> as numbers (4.25 is a trap). They are at right angles."
+   ]
+  },
+  {
+   "text": "A road curve of radius 120 m is to be banked so that vehicles at 54 km/h need no friction. The required banking angle is",
+   "fig": null,
+   "opts": [
+    "10.8°",
+    "5.4°",
+    "24.6°",
+    "15.0°"
+   ],
+   "ans": "(A) 10.8°",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> With no friction, the horizontal component of the normal reaction alone supplies the centripetal force: tan θ = v²/(rg).",
+    "v = 54 km/h = 15 m/s",
+    "tan θ = 15² / (120 × 9.81) = 0.1911 → θ = <b>10.82°</b> ≈ 10.8°",
+    "<b>Exam tip:</b> Always convert km/h to m/s (divide by 3.6) before using v²/r."
+   ]
+  },
+  {
+   "text": "A 10 kg block on a rough horizontal table (μ = 0.2) is connected by a light inextensible string over a smooth light pulley to a hanging 5 kg block, as shown. The tension in the string (in N) is ______",
+   "fig": "d2p_q6.png",
+   "opts": null,
+   "ans": "39.24 (accept 39.0 to 39.5)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Write Newton's second law for each block along its own direction of motion; both have the same acceleration a.",
+    "Hanging block: 5g − T = 5a",
+    "Table block: T − 0.2 × 10g = 10a",
+    "Adding: 5g − 2g = 15a → a = 3 × 9.81/15 = <b>1.962 m/s²</b>",
+    "T = 5(g − a) = 5 × 7.848 = <b>39.24 N</b>",
+    "<b>Exam tip:</b> First check that motion happens at all: here 5g = 49 N is larger than the limiting friction 2g = 19.6 N, so it does."
+   ]
+  },
+  {
+   "text": "A uniform solid disc rolls without slipping on a horizontal floor. The ratio of its rotational kinetic energy to its total kinetic energy is",
+   "fig": null,
+   "opts": [
+    "1/2",
+    "1/3",
+    "2/3",
+    "1/4"
+   ],
+   "ans": "(B) 1/3",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For rolling without slipping v = rω, so KE<sub>total</sub> = ½mv² + ½Iω² = ½mv²(1 + k²/r²).",
+    "Disc: I = ½mr² → KE<sub>rot</sub> = ½(½mr²)(v/r)² = ¼mv²",
+    "KE<sub>total</sub> = ½mv² + ¼mv² = ¾mv²",
+    "Ratio = (¼)/(¾) = <b>1/3</b>",
+    "<b>Exam tip:</b> Ring 1/2, disc 1/3, solid sphere 2/7. The ratio is (k²/r²)/(1 + k²/r²)."
+   ]
+  },
+  {
+   "text": "A rod AB of length 2 m slides with end A on the floor and end B on a vertical wall, as shown. When the rod makes 30° with the floor, A moves away from the wall at 1.5 m/s. The speed of B (in m/s) at this instant is ______",
+   "fig": "d2p_q8.png",
+   "opts": null,
+   "ans": "2.598 (accept 2.58 to 2.62), downward",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The instantaneous centre I lies where the perpendiculars to the velocities of A and B meet: vertically above A and horizontally level with B.",
+    "IA = height of B = 2 sin 30° = 1 m; IB = horizontal distance of A = 2 cos 30° = 1.732 m",
+    "ω = v<sub>A</sub>/IA = 1.5/1 = 1.5 rad/s",
+    "v<sub>B</sub> = ω × IB = 1.5 × 1.732 = <b>2.598 m/s</b> (downward). Equivalently v<sub>B</sub> = v<sub>A</sub> cot θ.",
+    "<b>Exam tip:</b> Differentiating x² + y² = L² gives x·v<sub>A</sub> = y·v<sub>B</sub>, a quick check on any ladder problem."
+   ]
+  },
+  {
+   "text": "A solid sphere rolls down a 30° incline without slipping, starting from rest. The acceleration of its centre is (g = 9.81 m/s²)",
+   "fig": null,
+   "opts": [
+    "4.905 m/s²",
+    "3.270 m/s²",
+    "3.504 m/s²",
+    "2.453 m/s²"
+   ],
+   "ans": "(C) 3.504 m/s²",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For rolling without slipping on an incline a = g sin θ / (1 + k²/r²).",
+    "Solid sphere: k²/r² = 2/5 → a = (5/7) g sin θ",
+    "a = (5/7) × 9.81 × 0.5 = <b>3.504 m/s²</b>",
+    "The other options are for a smooth slide (4.905), a disc (3.270) and a ring (2.453).",
+    "<b>Exam tip:</b> The smaller k/r is, the faster the body rolls down. Solid sphere beats disc beats ring."
+   ]
+  },
+  {
+   "text": "The speed of a flywheel falls uniformly from 300 rpm to 120 rpm in 30 s. The number of revolutions it makes in this time is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "105",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> With uniform angular retardation, angle turned = average angular speed × time.",
+    "Average speed = (300 + 120)/2 = 210 rpm",
+    "Time = 30 s = 0.5 min",
+    "Revolutions = 210 × 0.5 = <b>105</b>",
+    "<b>Check:</b> α = (4π − 10π)/30 = −0.6283 rad/s²; θ = ω₀t + ½αt² = 10π(30) − ½(0.6283)(900) = 659.7 rad = 105 rev ✓",
+    "<b>Exam tip:</b> Stay in rpm and minutes when you only need revolutions. It avoids 2π conversions."
+   ]
+  },
+  {
+   "text": "A uniform rod of mass 6 kg and length 1.2 m is hinged at end O and held horizontal, as shown. It is released from rest. The vertical reaction at the hinge just after release (in N) is ______",
+   "fig": "d2p_q11.png",
+   "opts": null,
+   "ans": "14.72 (accept 14.5 to 14.9)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Just after release ω = 0, so the centre G has only tangential (vertical) acceleration a<sub>G</sub> = α·L/2.",
+    "Moments about O: mg(L/2) = (mL²/3) α → α = 3g/(2L) = 3 × 9.81/2.4 = <b>12.26 rad/s²</b>",
+    "a<sub>G</sub> = α L/2 = 12.26 × 0.6 = 7.36 m/s² = (3/4)g",
+    "Vertical: mg − R = m a<sub>G</sub> → R = mg/4 = 6 × 9.81/4 = <b>14.72 N</b>",
+    "<b>Exam tip:</b> R = mg/4 at the instant of release is a standard result. Memorise it, but know the derivation."
+   ]
+  },
+  {
+   "text": "A wheel of radius 0.4 m rolls without slipping; its centre moves at 10 m/s. The speed of a point on the rim at the same height as the centre is",
+   "fig": null,
+   "opts": [
+    "10 m/s",
+    "20 m/s",
+    "14.14 m/s",
+    "7.07 m/s"
+   ],
+   "ans": "(C) 14.14 m/s",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In rolling, every point moves as if rotating about the contact point (the instantaneous centre) with ω = v/r.",
+    "ω = 10/0.4 = 25 rad/s",
+    "Distance of the point from the contact point = √(0.4² + 0.4²) = 0.5657 m",
+    "v = 25 × 0.5657 = <b>14.14 m/s</b> = √2 × v<sub>centre</sub>",
+    "<b>Exam tip:</b> Top point 2v, centre v, contact point 0, side points √2 v. The radius of the wheel does not matter."
+   ]
+  },
+  {
+   "text": "A man of mass 70 kg stands on a weighing scale inside a lift. The lift accelerates upward at 2 m/s². The scale reading (in N) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "826.7 (accept 825 to 828)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The scale reads the normal reaction N. Apply Newton's second law to the man.",
+    "N − mg = ma → N = m(g + a)",
+    "N = 70 × (9.81 + 2) = <b>826.7 N</b>",
+    "<b>Exam tip:</b> Upward acceleration (or downward deceleration) increases the reading; free fall makes it zero."
+   ]
+  },
+  {
+   "text": "A small stone tied to a 1 m string is whirled in a vertical circle. The least speed at the lowest point that lets it just complete the circle is",
+   "fig": null,
+   "opts": [
+    "3.13 m/s",
+    "4.43 m/s",
+    "6.26 m/s",
+    "7.00 m/s"
+   ],
+   "ans": "(D) 7.00 m/s",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> At the top the string may just go slack: T = 0 → mg = mv<sub>top</sub>²/r → v<sub>top</sub>² = gr.",
+    "Energy between bottom and top (height 2r): v<sub>bot</sub>² = v<sub>top</sub>² + 4gr = 5gr",
+    "v<sub>bot</sub> = √(5 × 9.81 × 1) = <b>7.00 m/s</b>",
+    "<b>Exam tip:</b> For a rod (which can push) instead of a string, the top speed can be zero, so v<sub>bot</sub> = √(4gr)."
+   ]
+  },
+  {
+   "text": "A string is wound round a uniform disc of mass 3 kg. The free end of the string is fixed to the ceiling and the disc is released from rest, the string staying vertical, as shown. The acceleration of the centre of the disc (in m/s²) is ______",
+   "fig": "d2p_q15.png",
+   "opts": null,
+   "ans": "6.54 (accept 6.50 to 6.58)",
+   "sfig": "d2p_s15.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The disc translates and rotates. The string unwinds without slipping, so a = rα.",
+    "Translation: mg − T = ma",
+    "Rotation about the centre: T r = (½mr²) α = ½mr(a) → T = ½ma",
+    "mg = 1.5 ma → a = 2g/3 = <b>6.54 m/s²</b>, and T = mg/3 = <b>9.81 N</b>",
+    "<b>Exam tip:</b> The mass and radius cancel. For a ring the answer would be g/2, for a solid sphere 5g/7."
+   ]
+  }
+ ]
+}

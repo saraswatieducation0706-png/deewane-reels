@@ -1,0 +1,276 @@
+{
+ "day": 3,
+ "subject": "Engineering Mathematics",
+ "topic": "Linear Algebra",
+ "days_to_gate": 108,
+ "summary": "matrix algebra, rank, systems of linear equations, eigenvalues and eigenvectors",
+ "minutes": 40,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mechanics, Impulse, Energy & Impact",
+ "questions": [
+  {
+   "text": "The rank of the matrix <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td><td style=\"border:none;padding:0 5px;text-align:center\">6</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr></table> is",
+   "fig": null,
+   "opts": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "ans": "(C) 2",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Rank = number of non-zero rows after row reduction = order of the largest non-zero minor.",
+    "R<sub>2</sub> = 2R<sub>1</sub>, so R<sub>2</sub> → R<sub>2</sub> − 2R<sub>1</sub> gives a zero row. det A = 0, so rank &lt; 3.",
+    "R<sub>1</sub> and R<sub>3</sub> are not proportional: the minor |1 2; 1 1| = 1 − 2 = −1 ≠ 0.",
+    "Rank = <b>2</b>",
+    "<b>Exam tip:</b> Look for proportional rows or columns first; it often settles the rank without full elimination."
+   ]
+  },
+  {
+   "text": "The determinant of <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">0</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td><td style=\"border:none;padding:0 5px;text-align:center\">5</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">0</td><td style=\"border:none;padding:0 5px;text-align:center\">6</td></tr></table> is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "41",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Expand along a row or column with zeros to save work.",
+    "Along row 1: 2(4·6 − 5·0) − 1(0·6 − 5·1) + 3(0·0 − 4·1)",
+    "= 2(24) − 1(−5) + 3(−4) = 48 + 5 − 12 = <b>41</b>",
+    "<b>Exam tip:</b> Watch the sign pattern + − + along the first row; the middle term flips sign."
+   ]
+  },
+  {
+   "text": "The system x + y + z = 6, x + 2y + 3z = 10, x + 2y + λz = μ has <b>no solution</b> when",
+   "fig": null,
+   "opts": [
+    "λ = 3, μ = 10",
+    "λ ≠ 3, any μ",
+    "λ = 3, μ ≠ 10",
+    "λ = 10, μ = 3"
+   ],
+   "ans": "(C) λ = 3, μ ≠ 10",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Compare rank(A) with rank of the augmented matrix [A | b]. Unequal ranks → no solution.",
+    "R<sub>3</sub> − R<sub>2</sub> gives (0, 0, λ − 3 | μ − 10).",
+    "λ ≠ 3: rank A = 3 = rank [A|b] → unique solution.",
+    "λ = 3, μ = 10: both ranks 2 → infinitely many solutions.",
+    "λ = 3, μ ≠ 10: rank A = 2, rank [A|b] = 3 → <b>no solution</b>.",
+    "<b>Exam tip:</b> Reduce only the row that contains λ and μ; the other rows need no work."
+   ]
+  },
+  {
+   "text": "For A = <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">0</td><td style=\"border:none;padding:0 5px;text-align:center\">0</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">0</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">4</td><td style=\"border:none;padding:0 5px;text-align:center\">5</td><td style=\"border:none;padding:0 5px;text-align:center\">6</td></tr></table>, the trace of A³ is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "251",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> If λ is an eigenvalue of A then λ³ is an eigenvalue of A³, and trace = sum of eigenvalues.",
+    "A is lower triangular, so its eigenvalues are the diagonal entries 2, 3, 6.",
+    "Eigenvalues of A³: 8, 27, 216",
+    "trace(A³) = 8 + 27 + 216 = <b>251</b>",
+    "<b>Exam tip:</b> Never multiply out A³ in the exam. Triangular → read eigenvalues from the diagonal."
+   ]
+  },
+  {
+   "text": "An eigenvector of <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td></tr></table> corresponding to the eigenvalue 3 is",
+   "fig": null,
+   "opts": [
+    "[1, −1]ᵀ",
+    "[1, 1]ᵀ",
+    "[1, 2]ᵀ",
+    "[2, 1]ᵀ"
+   ],
+   "ans": "(B) [1, 1]ᵀ",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Solve (A − λI)x = 0 for λ = 3.",
+    "A − 3I = [−1 1; 1 −1] → −x₁ + x₂ = 0 → x₁ = x₂",
+    "Eigenvector: <b>[1, 1]ᵀ</b> (any non-zero multiple).",
+    "Check: A[1, 1]ᵀ = [3, 3]ᵀ = 3[1, 1]ᵀ ✓. [1, −1]ᵀ belongs to λ = 1.",
+    "<b>Exam tip:</b> In an MCQ, just multiply each option by A and see which comes out as λ times itself."
+   ]
+  },
+  {
+   "text": "For A = <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td></tr></table>, A⁴ can be written as pA + qI. The value of p is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "145",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Cayley–Hamilton: every square matrix satisfies its own characteristic equation.",
+    "Characteristic equation: λ² − (trace)λ + det = λ² − 5λ − 2 = 0 → A² = 5A + 2I",
+    "A³ = 5A² + 2A = 5(5A + 2I) + 2A = 27A + 10I",
+    "A⁴ = 27A² + 10A = 27(5A + 2I) + 10A = 145A + 54I",
+    "p = <b>145</b> (and q = 54)",
+    "<b>Exam tip:</b> Cayley–Hamilton also gives the inverse: A⁻¹ = (A − 5I)/2 here."
+   ]
+  },
+  {
+   "text": "Which statement about a real symmetric matrix is <b>NOT</b> always true?",
+   "fig": null,
+   "opts": [
+    "All its eigenvalues are real",
+    "Eigenvectors for distinct eigenvalues are orthogonal",
+    "It is invertible",
+    "It can be diagonalised by an orthogonal matrix"
+   ],
+   "ans": "(C) It is invertible",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The spectral theorem guarantees real eigenvalues, orthogonal eigenvectors and orthogonal diagonalisation for every real symmetric matrix.",
+    "Invertibility needs every eigenvalue to be non-zero, which is not guaranteed.",
+    "Counter-example: <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr></table> is symmetric but det = 0 (eigenvalues 0 and 2).",
+    "So '<b>It is invertible</b>' is the false statement.",
+    "<b>Exam tip:</b> Symmetric says nothing about singularity; a zero eigenvalue is allowed."
+   ]
+  },
+  {
+   "text": "A is a 4 × 5 real matrix of rank 3. The number of linearly independent solutions of Ax = 0 is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Rank–nullity theorem: rank + nullity = number of unknowns (columns).",
+    "Unknowns n = 5, rank r = 3",
+    "Nullity = n − r = 5 − 3 = <b>2</b>",
+    "<b>Exam tip:</b> Use the number of columns, not rows. 4 − 3 = 1 is the usual slip."
+   ]
+  },
+  {
+   "text": "If A = <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr></table>, the eigenvalues of A² + 2A + I are",
+   "fig": null,
+   "opts": [
+    "3 and −1",
+    "9 and 1",
+    "16 and 0",
+    "4 and 0"
+   ],
+   "ans": "(C) 16 and 0",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> If Ax = λx then f(A)x = f(λ)x for any polynomial f.",
+    "Eigenvalues of A: λ² − 2λ − 3 = 0 → λ = 3, −1",
+    "f(λ) = λ² + 2λ + 1 = (λ + 1)² → (3 + 1)² = 16 and (−1 + 1)² = 0",
+    "Eigenvalues of A² + 2A + I: <b>16 and 0</b>",
+    "<b>Exam tip:</b> Note that A² + 2A + I is singular here, because one of its eigenvalues is zero."
+   ]
+  },
+  {
+   "text": "A 3 × 3 matrix A has eigenvalues 1, 2 and 3. The determinant of adj(A) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "36",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> det(adj A) = (det A)<sup>n−1</sup> for an n × n matrix.",
+    "det A = product of eigenvalues = 1 × 2 × 3 = 6",
+    "det(adj A) = 6<sup>3−1</sup> = 6² = <b>36</b>",
+    "<b>Exam tip:</b> Also remember adj(adj A) = (det A)<sup>n−2</sup> A."
+   ]
+  },
+  {
+   "text": "Solving 2x + y − z = 1, x + 3y + 2z = 13, 3x − y + 4z = 13 by Gauss elimination, the value of z is",
+   "fig": null,
+   "opts": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "ans": "(C) 3",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Eliminate x, then y, then back-substitute.",
+    "R<sub>2</sub> → 2R<sub>2</sub> − R<sub>1</sub>: 5y + 5z = 25 → y + z = 5",
+    "R<sub>3</sub> → 2R<sub>3</sub> − 3R<sub>1</sub>: −5y + 11z = 23",
+    "Adding 5(y + z = 5): 16z = 48 → <b>z = 3</b>, then y = 2 and x = 1.",
+    "<b>Exam tip:</b> Substitute (1, 2, 3) back into all three equations. It takes 10 seconds and catches sign errors."
+   ]
+  },
+  {
+   "text": "The rank of <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td><td style=\"border:none;padding:0 5px;text-align:center\">6</td><td style=\"border:none;padding:0 5px;text-align:center\">8</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">5</td><td style=\"border:none;padding:0 5px;text-align:center\">7</td><td style=\"border:none;padding:0 5px;text-align:center\">9</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr></table> is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Rank = number of linearly independent rows.",
+    "R<sub>2</sub> = 2R<sub>1</sub>, so R<sub>2</sub> adds nothing.",
+    "R<sub>3</sub> = 2R<sub>1</sub> + R<sub>4</sub>: 2[1, 2, 3, 4] + [1, 1, 1, 1] = [3, 5, 7, 9] ✓, so R<sub>3</sub> adds nothing either.",
+    "R<sub>1</sub> and R<sub>4</sub> are not proportional → rank = <b>2</b>",
+    "<b>Exam tip:</b> Rows whose entries are in arithmetic progression (1 2 3 4, 3 5 7 9, 1 1 1 1) always give rank ≤ 2."
+   ]
+  },
+  {
+   "text": "The system kx + y = 0, x + ky = 0 has a non-trivial solution when",
+   "fig": null,
+   "opts": [
+    "k = 0 only",
+    "k = ±1",
+    "k = ±2",
+    "no real k"
+   ],
+   "ans": "(B) k = ±1",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> A homogeneous system has non-trivial solutions only if the coefficient matrix is singular.",
+    "det = k² − 1 = 0 → <b>k = ±1</b>",
+    "Check k = 1: x + y = 0 twice → x = −y, infinitely many solutions ✓",
+    "<b>Exam tip:</b> Homogeneous systems are always consistent; the only question is whether det = 0."
+   ]
+  },
+  {
+   "text": "The largest eigenvalue of <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td></tr></table> is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> A = 2I + J, where J is the all-ones matrix. J has eigenvalues 3, 0, 0.",
+    "So A has eigenvalues 2 + 3 = 5, 2 + 0 = 2, 2 + 0 = 2.",
+    "Largest = <b>5</b>. Check: trace = 9 = 5 + 2 + 2 ✓; det = 20 = 5 × 2 × 2 ✓",
+    "<b>Exam tip:</b> Equal row sums s mean s is an eigenvalue with eigenvector [1, 1, 1]ᵀ. Here every row sums to 5."
+   ]
+  },
+  {
+   "text": "The matrix <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">0</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr></table> has",
+   "fig": null,
+   "opts": [
+    "two linearly independent eigenvectors",
+    "only one linearly independent eigenvector",
+    "no real eigenvalue",
+    "eigenvalues 1 and 0"
+   ],
+   "ans": "(B) only one linearly independent eigenvector",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Number of independent eigenvectors for λ = n − rank(A − λI) (geometric multiplicity).",
+    "Eigenvalue λ = 1 is repeated (algebraic multiplicity 2).",
+    "A − I = [0 1; 0 0] has rank 1 → independent eigenvectors = 2 − 1 = <b>1</b> (only [1, 0]ᵀ).",
+    "So A is not diagonalisable.",
+    "<b>Exam tip:</b> A repeated eigenvalue does not guarantee a full set of eigenvectors; check the rank of A − λI."
+   ]
+  }
+ ]
+}
