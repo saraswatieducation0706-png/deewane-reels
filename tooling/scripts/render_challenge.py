@@ -211,8 +211,9 @@ def scene(s, t, d, lay):
                 mk = Image.new("L", (ps, ps), 0); ImageDraw.Draw(mk).ellipse([0, 0, ps - 1, ps - 1], fill=int(255 * p))
                 im = im.convert("RGBA"); im.putalpha(mk); lay.alpha_composite(im, (px, py))
                 tx = px + ps + 28
-            else:
-                tx = int(215 + dx)
+            else:  # no photo: keep a blank circle so every row lines up
+                d.ellipse([px, py, px + ps, py + ps], fill=(238, 238, 240, int(255 * p)), outline=(210, 210, 214, int(255 * p)), width=3)
+                tx = px + ps + 28
             mk_txt = str(e["marks"]); fm = fit(d, mk_txt, "ExtraBold", 50, 230, 26)
             mw = d.textlength(mk_txt, font=fm) + 50
             d.rounded_rectangle([W - 90 - mw + dx, cy - 45, W - 90 + dx, cy + 45], 45, fill=RED + (int(255 * p),))

@@ -53,11 +53,14 @@ For each day N (row N of the Master Schedule):
 ## B. Reel run (each study-day evening, after the test)
 1. Today (IST) = test day P; N = the next study day (P+1; Saturday → Monday's day). If N > 90 or N is already in
    `reel_scheduled`, stop. Read row N (and row P) from the Master Schedule.
-2. Toppers of Day P: in folder 04 Toppers, find files whose title contains `Day{P}_` (results file: sheet, xlsx, csv
-   or doc — read with `read_file_content`; photos named `Day{P}_<Student Name>.jpg/png`). Take everyone with rank 1–3
-   (ties share a rank; include all tied). Marks as "x/30" (or "x/100" for mocks). Photo only if consent is given;
-   no photo → name and marks only. Download photos with `download_file_content` (decode base64 to a file).
-   No results file → make the reel without the toppers scene (no apology, no mention).
+2. Toppers of Day P: the website cannot export results, so Naveen uploads a **screenshot of the rank list** to the
+   Drive folder 04 Toppers, titled `Day{P}_Toppers` (png/jpg; several screenshots allowed: `Day{P}_Toppers_2` …).
+   Read it with Drive `read_file_content`; if names or marks are unclear, download it (`download_file_content`),
+   decode to a file and look at the image. Take everyone with rank 1–3 (ties share a rank; include all tied).
+   Marks as shown ("x/30", or "x/100" for mocks). Photos are optional: toppers send them to Naveen, who uploads them
+   as `Day{P}_<Student Name>.jpg/png`; match by name. No photo → leave the photo out (the renderer draws a blank
+   circle). Spell names exactly as on the screenshot. No screenshot by run time → make the reel without the toppers
+   scene (no apology, no mention).
 3. Write `spec.json` for `tooling/scripts/render_challenge.py` (scene kinds: `tooling/references/scene_kinds.md`, plus
    `toppers`): see `gate90/content/day01_reel_spec.json` for the pattern.
    - `footer`: "Day N/90  •  <Days to GATE> days to GATE 2027". Never show calendar dates in the reel.
