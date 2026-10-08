@@ -41,7 +41,13 @@ For each day N (row N of the Master Schedule):
    - GATE-level, moderate to hard; plausible distractors; 1–3 sentence solution stating the principle.
    - Math as `\( ... \)`; diagrams with `gate90/tooling/figlib.py` (pin = triangle + hatched ground, roller = triangle on
      circles, fixed = hatched wall, double-headed dimension arrows, labels never overlapping lines). Look at every figure.
-   - JSON as in `build_test.py`'s docstring; build: `python3 gate90/tooling/build_test.py test.json "Day N - Test - <Topic>.docx" <figdir> GATE90:D{N}`.
+   - File name (Naveen copies it straight into the website, so follow it exactly):
+     `<ordinal day> <Month> Day <N> - Test - <Topic>.docx`, e.g. `19th October Day 1 - Test - Statics Trusses Friction.docx`.
+     Date = that day's date from the Master Schedule (1st, 2nd, 3rd, 4th…, 11th–13th, 21st, 22nd, 23rd, 31st; full month
+     name, no year). Topic = the sheet's Topic with every character other than letters, digits, hyphens and spaces removed
+     and spaces collapsed (`Formula Sprint: Mechanics & Design` → `Formula Sprint Mechanics Design`).
+     Use the same name (with .docx) for the Drive file title.
+   - JSON as in `build_test.py`'s docstring; build: `python3 gate90/tooling/build_test.py test.json "<file name>" <figdir> GATE90:D{N}`.
    - Check: pandoc round-trip shows one `correct` per table and the right counts; render to PDF and look at a page.
    - **Never commit test questions or test JSON to this public repo.**
 2. **Practice set** (public PDF): 15 questions (mix of MCQ and NAT; mocks: 15 mixed-subject), all different from the
@@ -54,7 +60,7 @@ For each day N (row N of the Master Schedule):
 3. Freshness: before writing, skim the previous days' `gate90/content/*_practice.json` for that subject and avoid
    repeating the same set-ups or numbers.
 4. Deliver: upload each test .docx to Google Drive folder "02 Test Papers (Word for website)"
-   (id `1tC1_e7ozDsQyOaBSA1M8ahrnenOVLwfF`) with `create_file`: title "Day N - Test - <Topic>.docx", base64Content,
+   (id `1tC1_e7ozDsQyOaBSA1M8ahrnenOVLwfF`) with `create_file`: title = the file name above, base64Content,
    contentMimeType `application/vnd.openxmlformats-officedocument.wordprocessingml.document`,
    disableConversionToGoogleType true (build_test.py already shrinks figures so this fits). Also send it with
    SendUserFile (status proactive) as a backup. Add N to `produced` and `test_delivered`; push.
