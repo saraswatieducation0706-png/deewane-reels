@@ -13,6 +13,7 @@ This file is read by the scheduled runs. Never put API keys or tokens in this pu
   (Make.com posts it to Telegram at 8 AM — it MUST exist before 8 AM on Day N). Reels and covers go in `gate90/reels/`.
 - Metricool brand (blogId) `7269466`, timezone `Asia/Calcutta`. Networks: YouTube Short + Instagram Reel.
 - Status file: `gate90/status.json` (`produced`, `test_delivered`, `reel_scheduled` = lists of day numbers).
+- Course (₹1, enrol once, all 90 tests): https://iurlk.courses.store/909124 . Test windows: topic/weekly/revision tests open 7–9 PM (60 min to attempt), full mocks 7–11 PM (180 min).
 - Accuracy is checked by Naveen's team, but still verify every numerical answer with Python before building.
 
 ## Setup (every run)
@@ -66,8 +67,8 @@ For each day N (row N of the Master Schedule):
    - `footer`: "Day N/90  •  <Days to GATE> days to GATE 2027". Never show calendar dates in the reel.
    - Scenes: hook ["DAY N/90", short subject or "GATE ME"] + a motivating sub; card "Today's Topic" (subject, topic);
      steps "Cover Today" (3–4 items from Topics covered, ≤ 30 chars each); card "Quick Tip" (one high-yield fact, 3 lines);
-     dates "Today's Plan" (Practice PDF → "Telegram, now"; "Test (₹1 course)" → "7 to 8 PM"; Toppers → "Next reel"; on mock
-     days the test line is "Mock (₹1 course)" → "7 to 10 PM" and the voice mentions 65 questions, 3 hours). The practice
+     dates "Today's Plan" (Practice PDF → "Telegram, now"; "Test (₹1 course)" → "7 to 9 PM"; Toppers → "Next reel"; on mock
+     days the test line is "Mock (₹1 course)" → "7 to 11 PM" and the voice mentions 65 questions, 3 hours). The practice
      PDF is free; tests are in the "GATE ME 90 Days Challenge" course (₹1, enrol once). Never call the test "free";
      never use the word "free" for anything but the practice PDF;
      LAST: `toppers` scene, title "Day P Toppers", voice congratulating them by name (ranks, shared ranks).
@@ -77,7 +78,7 @@ For each day N (row N of the Master Schedule):
    push, wait for raw URL HTTP 200.
 5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel, exactly like the Day 1
    post (title "Day N/90 | <Topic> | GATE ME 90 Days Challenge #Shorts" ≤ 95 chars; description = day line, topic,
-   today's plan (free practice PDF on Telegram; test 7–8 PM, mocks 7–10 PM, in the ₹1 "GATE ME 90 Days Challenge"
+   today's plan (free practice PDF on Telegram; test window 7–9 PM, mocks 7–11 PM, in the ₹1 "GATE ME 90 Days Challenge"
    course), "Comment GATE90 to get all the links", the course link if `course_link` is set in gate90/status.json, the 3
    links, hashtags; YouTube category EDUCATION, madeForKids
    false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true). Confirm with `getScheduledPosts`.

@@ -14,7 +14,7 @@ ASSETS = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.ab
 for f in os.listdir(ASSETS): shutil.copy(os.path.join(ASSETS, f), work)
 for f in os.listdir(figdir):
     if f.endswith(".png"): shutil.copy(os.path.join(figdir, f), work)
-win = "7 to 10 PM" if int(D.get("test_minutes", 60)) > 60 else "7 to 8 PM"
+win = "7 to 11 PM" if int(D.get("test_minutes", 60)) > 60 else "7 to 9 PM"
 nm = sum(1 for x in Q if x["t"] == "MCQ"); nn = len(Q) - nm
 nxt = (f'<b>Next, Day {D["day"]+1}/90:</b> {html.escape(D["next_day"])}.' if D.get("next_day") else "<b>That's the final day of the challenge. All the best for GATE!</b>")
 def opts_html(o):
@@ -73,13 +73,13 @@ td{{border-bottom:1px solid #e3e3e3;padding:4px 8px}}
 <div class="chip"><div class="k">Subject</div><div class="v">{D["subject"]}</div></div>
 <div class="chip"><div class="k">Today's topic</div><div class="v">{html.escape(D["topic"])}</div></div>
 <div class="chip"><div class="k">Countdown</div><div class="v">{D["days_to_gate"]} days to GATE</div></div></div>
-<div class="inst"><b>How to use this set:</b> {len(Q)} questions ({nm} MCQ, {nn} NAT) on {D["summary"]}. Try them in <b>{D["minutes"]} minutes</b> without looking at the solutions, then check the answer key and the step-by-step solutions. For NAT questions, enter the number; there is no negative marking for NAT in GATE.<br><b>Today's test:</b> open {win} in the <b>GATE ME 90 Days Challenge</b> course on our app and website (enrol once for ₹1), {D["test_qs"]} new questions on the same topic. Top scorers are announced in the next 8 AM challenge reel.</div>
+<div class="inst"><b>How to use this set:</b> {len(Q)} questions ({nm} MCQ, {nn} NAT) on {D["summary"]}. Try them in <b>{D["minutes"]} minutes</b> without looking at the solutions, then check the answer key and the step-by-step solutions. For NAT questions, enter the number; there is no negative marking for NAT in GATE.<br><b>Today's test:</b> open {win} in the <b>GATE ME 90 Days Challenge</b> course on our app and website (enrol once for ₹1: iurlk.courses.store/909124), {D["test_qs"]} new questions on the same topic. Top scorers are announced in the next 8 AM challenge reel.</div>
 <h2>Questions</h2>{qs}
 <h2 style="break-before:page">Answer Key</h2>
 <table><tr><th style="width:12%">Q</th><th style="width:12%">Type</th><th>Answer</th></tr>{key}</table>
 <h2>Detailed Solutions</h2>{sols}
 <div class="end"><h2>What next?</h2>
-<div class="cta"><div class="big">Day {D["day"]} test tonight, {win}</div>{D["test_qs"]} questions · {D["test_minutes"]} minutes · {D["test_marking"]}. Top 3 scorers are announced with name, marks and photo (if shared) in the next 8 AM challenge reel. Not enrolled yet? Join the ₹1 challenge course: comment GATE90 on our reel for the link.</div>
+<div class="cta"><div class="big">Day {D["day"]} test tonight, {win}</div>{D["test_qs"]} questions · {D["test_minutes"]} minutes · {D["test_marking"]}. Top 3 scorers are announced with name, marks and photo (if shared) in the next 8 AM challenge reel. Not enrolled yet? Join the ₹1 challenge course: iurlk.courses.store/909124</div>
 <div class="qr"><div><img src="qr_website.jpeg"><br>Website test series</div><div><img src="qr_playstore_app.jpeg"><br>Dig Career Thrust app</div><div><img src="qr_telegram.jpeg"><br>Telegram: daily PDFs</div></div>
 <div class="inst">{nxt} Comment <b>GATE90</b> on our reel to get all links.<br>Want concise revision notes? The GATE ME handwritten short notes of an AIR 16 topper are available in the Dig Career Thrust app.</div></div>
 </body></html>'''
