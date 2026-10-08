@@ -1,0 +1,275 @@
+{
+ "day": 5,
+ "subject": "Strength of Materials",
+ "topic": "Stress, Strain & Mohr's Circle",
+ "days_to_gate": 106,
+ "summary": "stress and strain, elastic constants, Poisson's ratio, Mohr's circle for plane stress and strain, and thermal stresses",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 1 Revision, a weekly test on all five topics of this week",
+ "questions": [
+  {
+   "text": "In a tensile test on a 12 mm diameter steel specimen, a load of 20 kN produces an extension of 0.042 mm over a 50 mm gauge length (within the elastic limit). Young's modulus of the material is closest to",
+   "fig": null,
+   "opts": [
+    "210.5 GPa",
+    "52.6 GPa",
+    "165.3 GPa",
+    "200.0 GPa"
+   ],
+   "ans": "(A) 210.5 GPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In the elastic range, E = stress/strain = PL/(Aδ).",
+    "A = (π/4)(12²) = 113.1 mm²",
+    "E = (20000 × 50)/(113.1 × 0.042) = 2.105 × 10⁵ N/mm² = <b>210.5 GPa</b>",
+    "<b>Exam tip:</b> Use the gauge length, not the total specimen length, and A = πd²/4 (using πd² gives the 52.6 GPa trap)."
+   ]
+  },
+  {
+   "text": "The stepped steel bar shown is fixed at the left end and pulled by 50 kN at the free end. For E = 200 GPa, the total elongation (in mm) is ______",
+   "fig": "d5p_q2.png",
+   "opts": null,
+   "ans": "0.380 (accept 0.375 to 0.385)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Each segment carries the full 50 kN; add the elongations of the segments in series: δ = (P/E) Σ L/A.",
+    "A₁ = (π/4)(30²) = 706.9 mm², A₂ = (π/4)(20²) = 314.2 mm²",
+    "δ₁ = 50000 × 400/(706.9 × 200000) = 0.1415 mm",
+    "δ₂ = 50000 × 300/(314.2 × 200000) = 0.2387 mm",
+    "δ = <b>0.380 mm</b>",
+    "<b>Exam tip:</b> The thinner segment stretches more even though it is shorter: area enters as d²."
+   ]
+  },
+  {
+   "text": "For a homogeneous isotropic linearly elastic material, the theoretical range of Poisson's ratio is",
+   "fig": null,
+   "opts": [
+    "0 to 0.5",
+    "−1 to 0.5",
+    "0 to 1",
+    "−1 to 1"
+   ],
+   "ans": "(B) −1 to 0.5",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Both G and K must be positive for a stable material.",
+    "G = E/[2(1 + ν)] &gt; 0 needs ν &gt; −1; K = E/[3(1 − 2ν)] &gt; 0 needs ν &lt; 0.5.",
+    "So <b>−1 &lt; ν &lt; 0.5</b>. Most engineering metals lie between 0.25 and 0.35; cork is close to 0 and rubber close to 0.5.",
+    "<b>Exam tip:</b> \"0 to 0.5\" is the practical range; GATE asks the theoretical one."
+   ]
+  },
+  {
+   "text": "A material has E = 200 GPa and G = 80 GPa. Its bulk modulus K (in GPa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "133.3 (accept 132.5 to 134.2)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> E = 2G(1 + ν) = 3K(1 − 2ν).",
+    "ν = E/(2G) − 1 = 200/160 − 1 = 0.25",
+    "K = E/[3(1 − 2ν)] = 200/(3 × 0.5) = <b>133.3 GPa</b>",
+    "<b>Exam tip:</b> Direct form: K = GE/[3(3G − E)] = 80 × 200/(3 × 40) = 133.3 GPa."
+   ]
+  },
+  {
+   "text": "A steel block 100 mm × 50 mm × 20 mm is subjected to σx = 100 MPa (tension) along the 100 mm side and σy = 50 MPa (compression) along the 50 mm side; σz = 0. For E = 200 GPa and ν = 0.3, the change in volume of the block is",
+   "fig": null,
+   "opts": [
+    "increase of 25 mm³",
+    "decrease of 10 mm³",
+    "increase of 4 mm³",
+    "increase of 10 mm³"
+   ],
+   "ans": "(D) increase of 10 mm³",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Volumetric strain ε<sub>v</sub> = ε<sub>x</sub> + ε<sub>y</sub> + ε<sub>z</sub> = (1 − 2ν)(σ<sub>x</sub> + σ<sub>y</sub> + σ<sub>z</sub>)/E.",
+    "Sum of stresses = 100 − 50 + 0 = 50 MPa",
+    "ε<sub>v</sub> = 0.4 × 50/200000 = 1.0 × 10⁻⁴",
+    "V = 100 × 50 × 20 = 10⁵ mm³, ΔV = <b>+10 mm³</b> (increase, since the sum is tensile)",
+    "<b>Exam tip:</b> Forgetting (1 − 2ν) gives 25 mm³."
+   ]
+  },
+  {
+   "text": "For the plane stress element shown (σx = 30 MPa compressive, σy = 50 MPa tensile, τxy = 30 MPa in the directions shown), the maximum in-plane shear stress (in MPa) is ______",
+   "fig": "d5p_q6.png",
+   "opts": null,
+   "ans": "50",
+   "sfig": "d5p_s6.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Mohr's circle: centre C = (σ<sub>x</sub> + σ<sub>y</sub>)/2, radius R = √[((σ<sub>x</sub> − σ<sub>y</sub>)/2)² + τ<sub>xy</sub>²]; τ<sub>max, in-plane</sub> = R.",
+    "C = (−30 + 50)/2 = 10 MPa",
+    "R = √(40² + 30²) = <b>50 MPa</b>; principal stresses σ₁ = 60 MPa, σ₂ = −40 MPa.",
+    "Points: X(−30, 30) and Y(50, −30), with clockwise shear plotted upward; XY is a diameter.",
+    "<b>Exam tip:</b> Here σ₁ and σ₂ have opposite signs, so the absolute maximum shear equals the in-plane value R."
+   ]
+  },
+  {
+   "text": "At a point, the principal stresses are 100 MPa and 40 MPa (both tensile, plane stress). On the plane of maximum in-plane shear stress, the normal stress and the shear stress are",
+   "fig": null,
+   "opts": [
+    "0 and 30 MPa",
+    "0 and 70 MPa",
+    "70 MPa and 30 MPa",
+    "30 MPa and 50 MPa"
+   ],
+   "ans": "(C) 70 MPa and 30 MPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The planes of maximum in-plane shear are at 45° to the principal planes; on them σ<sub>n</sub> = average stress.",
+    "τ<sub>max</sub> = (100 − 40)/2 = 30 MPa",
+    "σ<sub>n</sub> = (100 + 40)/2 = 70 MPa → <b>70 MPa and 30 MPa</b>",
+    "<b>Exam tip:</b> Maximum shear planes are NOT free of normal stress (unlike principal planes, which are free of shear)."
+   ]
+  },
+  {
+   "text": "A steel rod is placed inside a copper tube of the same length and the two are joined rigidly at the ends, as shown. The assembly is heated by 80 °C. The stress in the steel rod (in MPa) is ______",
+   "fig": "d5p_q8.png",
+   "opts": null,
+   "ans": "40 (tensile)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Copper wants to expand more than steel. The joint forces a common extension, so steel goes into tension and copper into compression. Force balance + compatibility.",
+    "Force balance: σ<sub>s</sub>A<sub>s</sub> = σ<sub>c</sub>A<sub>c</sub> → σ<sub>c</sub> = σ<sub>s</sub>(500/1000) = 0.5σ<sub>s</sub>",
+    "Compatibility: σ<sub>s</sub>/E<sub>s</sub> + σ<sub>c</sub>/E<sub>c</sub> = (α<sub>c</sub> − α<sub>s</sub>)ΔT = 5 × 10⁻⁶ × 80 = 4 × 10⁻⁴",
+    "σ<sub>s</sub>(1/200000 + 0.5/100000) = 4 × 10⁻⁴ → σ<sub>s</sub> × 10⁻⁵ = 4 × 10⁻⁴",
+    "σ<sub>s</sub> = <b>40 MPa (tension)</b>; σ<sub>c</sub> = 20 MPa (compression)",
+    "<b>Exam tip:</b> The material with the larger α always ends up in compression."
+   ]
+  },
+  {
+   "text": "A thin plate is in pure shear with τ = 60 MPa. For E = 200 GPa and ν = 0.25, the major principal strain is",
+   "fig": null,
+   "opts": [
+    "300 × 10⁻⁶",
+    "225 × 10⁻⁶",
+    "375 × 10⁻⁶",
+    "750 × 10⁻⁶"
+   ],
+   "ans": "(C) 375 × 10⁻⁶",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Pure shear τ is equivalent to σ₁ = +τ and σ₂ = −τ at 45°.",
+    "ε₁ = (σ₁ − νσ₂)/E = τ(1 + ν)/E = 60 × 1.25/200000",
+    "ε₁ = <b>375 × 10⁻⁶</b>",
+    "Check: γ = τ/G with G = 80 GPa gives γ = 750 × 10⁻⁶, and ε₁ = γ/2 = 375 × 10⁻⁶. ✔",
+    "<b>Exam tip:</b> 300 × 10⁻⁶ (= τ/E) forgets the Poisson effect of the compressive principal stress."
+   ]
+  },
+  {
+   "text": "At a point in plane strain, εx = 800 × 10⁻⁶, εy = 200 × 10⁻⁶ and γxy = −800 × 10⁻⁶. The major principal strain (in units of 10⁻⁶) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1000",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The strain Mohr's circle uses ε on the horizontal axis and γ/2 on the vertical axis.",
+    "Centre = (800 + 200)/2 = 500",
+    "Radius = √[((800 − 200)/2)² + (−800/2)²] = √(300² + 400²) = 500",
+    "ε₁ = 500 + 500 = <b>1000 × 10⁻⁶</b>, ε₂ = 0",
+    "<b>Exam tip:</b> Always halve γ before using it; the sign of γ only changes the angle, not the principal values."
+   ]
+  },
+  {
+   "text": "A conical bar and a prismatic bar of the same length and material hang vertically from their tops (the cone from its base). The ratio of the elongation of the conical bar to that of the prismatic bar under their own weights is",
+   "fig": null,
+   "opts": [
+    "1/2",
+    "1/3",
+    "1/6",
+    "2/3"
+   ],
+   "ans": "(B) 1/3",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Elongation under self-weight: prismatic bar δ = ρgL²/(2E); conical bar δ = ρgL²/(6E).",
+    "Ratio = (1/6)/(1/2) = <b>1/3</b>",
+    "The cone is lighter near the free tip, so each section carries less weight below it.",
+    "<b>Exam tip:</b> Both results are independent of the cross-sectional area."
+   ]
+  },
+  {
+   "text": "The bar AB shown is fixed at both ends and carries an axial load of 90 kN at C. The reaction at the end A (in kN) is ______",
+   "fig": "d5p_q12.png",
+   "opts": null,
+   "ans": "60",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Statically indeterminate: equilibrium + compatibility (total change of length AB = 0).",
+    "Equilibrium: R<sub>A</sub> + R<sub>B</sub> = 90 kN",
+    "Part AC (0.5 m) is in tension by R<sub>A</sub>; part CB (1.0 m) is in compression by R<sub>B</sub>. Same A and E:",
+    "R<sub>A</sub>(0.5) = R<sub>B</sub>(1.0) → R<sub>A</sub> = 2R<sub>B</sub>",
+    "R<sub>B</sub> = 30 kN, R<sub>A</sub> = <b>60 kN</b>",
+    "<b>Exam tip:</b> The nearer support takes the larger share: R<sub>A</sub> = P × CB/AB."
+   ]
+  },
+  {
+   "text": "A block is loaded by σx = 100 MPa (tension) while it is fully restrained against strain in the y-direction (εy = 0); the z faces are free (σz = 0). For E = 200 GPa and ν = 0.3, the strain εx is",
+   "fig": null,
+   "opts": [
+    "500 × 10⁻⁶",
+    "455 × 10⁻⁶",
+    "545 × 10⁻⁶",
+    "350 × 10⁻⁶"
+   ],
+   "ans": "(B) 455 × 10⁻⁶",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Generalised Hooke's law with a restraint: first find the induced stress, then the strain.",
+    "ε<sub>y</sub> = (σ<sub>y</sub> − νσ<sub>x</sub>)/E = 0 → σ<sub>y</sub> = 0.3 × 100 = 30 MPa (tensile)",
+    "ε<sub>x</sub> = (σ<sub>x</sub> − νσ<sub>y</sub>)/E = (100 − 9)/200000 = <b>455 × 10⁻⁶</b>",
+    "<b>Exam tip:</b> 500 × 10⁻⁶ (= σ<sub>x</sub>/E) ignores the restraint. A lateral restraint makes the material look stiffer."
+   ]
+  },
+  {
+   "text": "At a point, σx = 100 MPa and σy = 20 MPa (both tensile). If the major principal stress must not exceed 120 MPa, the largest permissible shear stress τxy (in MPa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "44.72 (accept 44.4 to 45.0)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> σ₁ = C + R with C = (σ<sub>x</sub> + σ<sub>y</sub>)/2 and R = √[((σ<sub>x</sub> − σ<sub>y</sub>)/2)² + τ²].",
+    "C = 60 MPa, so R ≤ 120 − 60 = 60 MPa",
+    "√(40² + τ²) ≤ 60 → τ² ≤ 3600 − 1600 = 2000",
+    "τ<sub>max</sub> = <b>44.72 MPa</b>",
+    "<b>Exam tip:</b> Work backwards from the allowable on Mohr's circle: fix the centre, then the radius."
+   ]
+  },
+  {
+   "text": "At a point in a body under plane stress, σx = σy = 60 MPa and τxy = 0. Which statement is correct?",
+   "fig": null,
+   "opts": [
+    "The maximum in-plane shear stress is 60 MPa",
+    "The principal planes are at 45° to x",
+    "The maximum in-plane shear stress is 30 MPa",
+    "Mohr's circle is a point; every plane is a principal plane"
+   ],
+   "ans": "(D) Mohr's circle is a point; every plane is a principal plane",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Radius R = √[((σ<sub>x</sub> − σ<sub>y</sub>)/2)² + τ<sub>xy</sub>²] = 0.",
+    "So Mohr's circle shrinks to the single point (60, 0): every plane through the point has σ<sub>n</sub> = 60 MPa and τ = 0.",
+    "Hence <b>every plane is a principal plane</b> and the in-plane shear stress is zero everywhere. (The out-of-plane maximum shear is still 30 MPa, since σ<sub>z</sub> = 0.)",
+    "<b>Exam tip:</b> Equal biaxial tension, like the wall of a thin spherical shell, is the classic example."
+   ]
+  }
+ ]
+}

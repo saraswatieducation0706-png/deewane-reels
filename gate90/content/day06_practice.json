@@ -1,0 +1,268 @@
+{
+ "day": 6,
+ "subject": "Weekly Revision",
+ "topic": "Week 1 Revision",
+ "days_to_gate": 105,
+ "summary": "all five topics of Week 1: statics, trusses and friction; kinematics and dynamics; linear algebra; impulse, energy and impact; stress, strain and Mohr's circle (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Strength of Materials, SFD & BMD",
+ "questions": [
+  {
+   "text": "A 1000 N block is to be pulled up a rough plane inclined at 20° (μ = 0.25) by a force P inclined at θ to the plane, as shown. The least value of P that can just start the block up the plane is",
+   "fig": "d6p_q1.png",
+   "opts": [
+    "576.9 N",
+    "559.7 N",
+    "675.4 N",
+    "342.0 N"
+   ],
+   "ans": "(B) 559.7 N",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> P is least when it is inclined to the plane at the angle of friction φ = tan⁻¹μ; then P<sub>min</sub> = W sin(α + φ).",
+    "φ = tan⁻¹(0.25) = 14.04°",
+    "P<sub>min</sub> = 1000 sin(20° + 14.04°) = 1000 sin 34.04° = <b>559.7 N</b>, at θ = 14.04°",
+    "Check: P parallel to the plane needs W(sin α + μ cos α) = 576.9 N, which is larger. ✔",
+    "<b>Exam tip:</b> \"Least force\" problems: tilt the force by φ. For a horizontal floor the answer reduces to P<sub>min</sub> = W sin φ."
+   ]
+  },
+  {
+   "text": "The beam ABC shown is supported by a pin at A and a roller at B. It carries a UDL of 10 kN/m over AB and a point load of 30 kN at the free end C. The reaction at A (in kN, upward) is ______",
+   "fig": "d6p_q2.png",
+   "opts": null,
+   "ans": "20",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Take moments about the other support to get one reaction directly.",
+    "Moments about B (clockwise +): R<sub>A</sub>(6) − 60(3) + 30(2) = 0",
+    "R<sub>A</sub> = (180 − 60)/6 = <b>20 kN</b>; R<sub>B</sub> = 60 + 30 − 20 = 70 kN",
+    "<b>Exam tip:</b> A load on the overhang relieves the far support: here it reduces R<sub>A</sub> from 30 kN to 20 kN. (Useful for Day 7: SFD & BMD.)"
+   ]
+  },
+  {
+   "text": "Block A (100 N) rests on block B (200 N), which rests on the floor. A is tied to the wall by a horizontal string, as shown. μ = 0.3 at both contact surfaces. The horizontal force P needed to just move B is",
+   "fig": "d6p_q3.png",
+   "opts": [
+    "90 N",
+    "60 N",
+    "120 N",
+    "150 N"
+   ],
+   "ans": "(C) 120 N",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Draw the FBD of B: it is resisted by friction from A on its top face and from the floor on its bottom face.",
+    "Top face: F₁ = μN₁ = 0.3 × 100 = 30 N (A is held by the string)",
+    "Bottom face: N₂ = 100 + 200 = 300 N, F₂ = 0.3 × 300 = 90 N",
+    "P = 30 + 90 = <b>120 N</b>",
+    "<b>Exam tip:</b> If A were free (no string), the blocks would move together and P = 90 N only."
+   ]
+  },
+  {
+   "text": "A ball is thrown horizontally at 20 m/s from the top of a 45 m high cliff. Its speed just before hitting the level ground below (in m/s) is ______ (g = 9.81 m/s²)",
+   "fig": null,
+   "opts": null,
+   "ans": "35.82 (accept 35.6 to 36.0)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Horizontal velocity stays constant; vertical velocity grows as in free fall.",
+    "v<sub>y</sub>² = 2gh = 2 × 9.81 × 45 = 882.9 → v<sub>y</sub> = 29.71 m/s",
+    "v = √(20² + 882.9) = <b>35.82 m/s</b>, at 56.1° below the horizontal",
+    "<b>Exam tip:</b> Energy gives it in one line: v² = u² + 2gh."
+   ]
+  },
+  {
+   "text": "Rain falls vertically at 12 m/s. A man walks on level ground at 5 m/s. To protect himself best, he should hold his umbrella tilted",
+   "fig": null,
+   "opts": [
+    "forward, at 22.6° to the vertical",
+    "backward, at 22.6° to the vertical",
+    "forward, at 67.4° to the vertical",
+    "vertically"
+   ],
+   "ans": "(A) forward, at 22.6° to the vertical",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The umbrella must face the velocity of rain relative to the man: v<sub>rain/man</sub> = v<sub>rain</sub> − v<sub>man</sub>.",
+    "Relative velocity: 12 m/s down and 5 m/s backwards; magnitude 13 m/s",
+    "Angle with the vertical: tan⁻¹(5/12) = <b>22.6°</b>, so rain appears to come from the front → tilt the umbrella <b>forward</b>.",
+    "<b>Exam tip:</b> tan⁻¹(12/5) = 67.4° is the angle with the horizontal, a common trap."
+   ]
+  },
+  {
+   "text": "A 10 kg mass hangs from a light rope wound round a drum of radius 0.25 m, which turns on a frictionless fixed axle (moment of inertia of the drum I = 0.5 kg·m²), as shown. The acceleration of the mass when released (in m/s²) is ______ (g = 9.81 m/s²)",
+   "fig": "d6p_q6.png",
+   "opts": null,
+   "ans": "5.45 (accept 5.40 to 5.50)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Mass: mg − T = ma. Drum: Tr = Iα with a = αr.",
+    "T = Ia/r² = 0.5a/0.0625 = 8a",
+    "10 × 9.81 − 8a = 10a → a = 98.1/18 = <b>5.45 m/s²</b>; T = 43.6 N",
+    "<b>Exam tip:</b> The drum adds an \"equivalent mass\" I/r² (= 8 kg here) in the denominator: a = mg/(m + I/r²)."
+   ]
+  },
+  {
+   "text": "The matrix <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">2</td><td style=\"border:none;padding:0 5px;text-align:center\">4</td><td style=\"border:none;padding:0 5px;text-align:center\">k</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">6</td><td style=\"border:none;padding:0 5px;text-align:center\">9</td></tr></table> has rank 1 when",
+   "fig": null,
+   "opts": [
+    "k = 3",
+    "k = 9",
+    "k = 0",
+    "k = 6"
+   ],
+   "ans": "(D) k = 6",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Rank 1 means every row is a multiple of the first row.",
+    "R₃ = 3R₁ already. R₂ = 2R₁ needs k = 2 × 3 = <b>6</b>.",
+    "For any other k, rows 1 and 2 are independent and the rank is 2 (it can never be 3, since R₃ = 3R₁).",
+    "<b>Exam tip:</b> For rank questions, look for proportional rows before expanding determinants."
+   ]
+  },
+  {
+   "text": "For A = <table style=\"display:inline-table;width:auto;vertical-align:middle;border-collapse:separate;border-left:1.4px solid #1a1a1a;border-right:1.4px solid #1a1a1a;border-radius:4px;margin:2px 4px;font-size:9.6pt\"><tr><td style=\"border:none;padding:0 5px;text-align:center\">3</td><td style=\"border:none;padding:0 5px;text-align:center\">1</td></tr><tr><td style=\"border:none;padding:0 5px;text-align:center\">1</td><td style=\"border:none;padding:0 5px;text-align:center\">3</td></tr></table>, the value of det(A³) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "512",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> det(A<sup>n</sup>) = (det A)<sup>n</sup>; also det A = product of eigenvalues.",
+    "det A = 9 − 1 = 8 (eigenvalues 4 and 2: 4 × 2 = 8 ✔)",
+    "det(A³) = 8³ = <b>512</b>",
+    "<b>Exam tip:</b> Never multiply the matrix out: work with the determinant or eigenvalues (here 64 × 8 = 512)."
+   ]
+  },
+  {
+   "text": "If Q is a real orthogonal matrix, which of the following is NOT necessarily true?",
+   "fig": null,
+   "opts": [
+    "Q⁻¹ = Qᵀ",
+    "det Q = ±1",
+    "All eigenvalues of Q are real",
+    "Every eigenvalue has modulus 1"
+   ],
+   "ans": "(C) All eigenvalues of Q are real",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Orthogonal: QᵀQ = I.",
+    "So Q⁻¹ = Qᵀ, det Q = ±1, and all eigenvalues have modulus 1.",
+    "But the eigenvalues need not be real: the 2-D rotation matrix [cos θ, −sin θ; sin θ, cos θ] has eigenvalues e<sup>±iθ</sup>. Hence <b>(C)</b> is not necessarily true.",
+    "<b>Exam tip:</b> Symmetric → real eigenvalues; orthogonal → |λ| = 1; skew-symmetric → zero or purely imaginary."
+   ]
+  },
+  {
+   "text": "A car moving at 72 km/h on a level road is braked to rest with all wheels locked. If μ = 0.6 between the tyres and the road, the stopping distance (in m) is ______ (g = 9.81 m/s²)",
+   "fig": null,
+   "opts": null,
+   "ans": "33.98 (accept 33.7 to 34.3)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Work–energy: friction work = loss of KE; the mass cancels.",
+    "u = 72 km/h = 20 m/s",
+    "μmg s = ½mu² → s = u²/(2μg) = 400/(2 × 0.6 × 9.81) = <b>33.98 m</b>",
+    "<b>Exam tip:</b> Stopping distance ∝ u²: doubling the speed makes it four times longer."
+   ]
+  },
+  {
+   "text": "A 3 kg ball moving at 4 m/s makes a direct central impact with a 1 kg ball at rest. If e = 0.8, the velocities of the 3 kg and 1 kg balls after impact are",
+   "fig": null,
+   "opts": [
+    "2 m/s and 6 m/s",
+    "2.2 m/s and 5.4 m/s",
+    "3 m/s and 3 m/s",
+    "1.8 m/s and 6.6 m/s"
+   ],
+   "ans": "(B) 2.2 m/s and 5.4 m/s",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Momentum + Newton's law of restitution.",
+    "3(4) = 3v₁ + v₂ and v₂ − v₁ = 0.8 × 4 = 3.2",
+    "4v₁ = 12 − 3.2 → v₁ = <b>2.2 m/s</b>, v₂ = <b>5.4 m/s</b>",
+    "Check: e = 1 gives 2 and 6 m/s; e = 0 gives 3 and 3 m/s.",
+    "<b>Exam tip:</b> General results: v₁ = (m₁ − em₂)u₁/(m₁ + m₂), v₂ = (1 + e)m₁u₁/(m₁ + m₂)."
+   ]
+  },
+  {
+   "text": "A lift of total mass 800 kg is raised at a steady 1.5 m/s. If the efficiency of the drive is 80 %, the input power needed (in kW) is ______ (g = 9.81 m/s²)",
+   "fig": null,
+   "opts": null,
+   "ans": "14.72 (accept 14.6 to 14.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> At constant speed, the pull equals the weight; power = force × velocity.",
+    "Output power = 800 × 9.81 × 1.5 = 11 772 W",
+    "Input = 11 772/0.8 = 14 715 W = <b>14.72 kW</b>",
+    "<b>Exam tip:</b> Divide by efficiency for input; multiplying (9.42 kW) is the common slip."
+   ]
+  },
+  {
+   "text": "For an isotropic material whose bulk modulus K is equal to its Young's modulus E, Poisson's ratio is",
+   "fig": null,
+   "opts": [
+    "1/3",
+    "1/4",
+    "1/2",
+    "1/6"
+   ],
+   "ans": "(A) 1/3",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> E = 3K(1 − 2ν).",
+    "K = E → 1 = 3(1 − 2ν) → 1 − 2ν = 1/3 → ν = <b>1/3</b>",
+    "Then G = E/[2(1 + 1/3)] = 3E/8.",
+    "<b>Exam tip:</b> Remember the landmarks: ν = 1/3 → K = E; ν = 0.5 → K = ∞; ν = 0 → K = E/3."
+   ]
+  },
+  {
+   "text": "At a point, σx = 40 MPa (tensile), σy = 60 MPa (compressive) and τxy = 40 MPa. The major principal stress (in MPa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "54.03 (accept 53.6 to 54.5)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> σ<sub>1</sub> = C + R from Mohr's circle.",
+    "C = (40 − 60)/2 = −10 MPa",
+    "R = √(50² + 40²) = 64.03 MPa",
+    "σ₁ = −10 + 64.03 = <b>54.03 MPa</b>; σ₂ = −74.03 MPa",
+    "<b>Exam tip:</b> Keep signs: σ<sub>y</sub> = −60, so (σ<sub>x</sub> − σ<sub>y</sub>)/2 = 50, not −10."
+   ]
+  },
+  {
+   "text": "A prismatic bar is fixed between two rigid supports and heated uniformly. The thermal stress developed in it is independent of",
+   "fig": null,
+   "opts": [
+    "the modulus of elasticity",
+    "the coefficient of thermal expansion",
+    "the temperature rise",
+    "the length of the bar"
+   ],
+   "ans": "(D) the length of the bar",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> σ = Eα ΔT for full restraint.",
+    "The strain prevented is αΔT (a strain, not a length), so the stress depends on E, α and ΔT only.",
+    "It is independent of <b>the length</b> (and of the cross-sectional area). The force, σA, does depend on the area.",
+    "<b>Exam tip:</b> Length matters only when there is a gap or a yielding support: then strain = (αΔT L − gap)/L."
+   ]
+  }
+ ]
+}
