@@ -47,8 +47,11 @@ For each day N (row N of the Master Schedule):
    - Commit the PDF, `gate90/content/dayNN_practice.json` and the figure script.
 3. Freshness: before writing, skim the previous days' `gate90/content/*_practice.json` for that subject and avoid
    repeating the same set-ups or numbers.
-4. Deliver: send each test .docx to Naveen with SendUserFile (status proactive), one line saying which day and that
-   it is ready for his team's check and website upload. Add N to `produced` and `test_delivered`; push.
+4. Deliver: upload each test .docx to Google Drive folder "02 Test Papers (Word for website)"
+   (id `1tC1_e7ozDsQyOaBSA1M8ahrnenOVLwfF`) with `create_file`: title "Day N - Test - <Topic>.docx", base64Content,
+   contentMimeType `application/vnd.openxmlformats-officedocument.wordprocessingml.document`,
+   disableConversionToGoogleType true (build_test.py already shrinks figures so this fits). Also send it with
+   SendUserFile (status proactive) as a backup. Add N to `produced` and `test_delivered`; push.
 5. If anything fails, push what is complete and send a push notification naming the day and the problem.
 
 ## B. Reel run (each study-day evening, after the test)

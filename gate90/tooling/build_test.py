@@ -15,3 +15,18 @@ res = bp.resolve(qs, seed)
 math = bp.latex_to_omml(bp.collect_math(res))
 bp.build_docx(res, out, tpl, bp.body_open_tag(tpl), math, img)
 print("wrote", out, len(qs), "questions")
+
+# shrink figures so the .docx is small enough to upload to Google Drive through the connector
+import zipfile, io
+from PIL import Image
+def _shrink(path):
+    zin = zipfile.ZipFile(path); buf = io.BytesIO(); zout = zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED)
+    for it in zin.infolist():
+        data = zin.read(it.filename)
+        if it.filename.startswith("word/media/") and it.filename.endswith(".png"):
+            im = Image.open(io.BytesIO(data)).convert("L").point(lambda v: 255 if v > 200 else (0 if v < 60 else v))
+            b = io.BytesIO(); im.quantize(8).save(b, "PNG", optimize=True); data = b.getvalue()
+        zout.writestr(it, data)
+    zout.close(); zin.close(); open(path, "wb").write(buf.getvalue())
+_shrink(out)
+print("shrunk to", os.path.getsize(out), "bytes")
