@@ -32,6 +32,12 @@ For each day N (row N of the Master Schedule):
    - Weekly test (Saturday): 4 questions on each of the week's 5 topics. Revision days: spread over the subjects named.
    - Full-length mock (65 Q, 100 marks): GA 10 (5×1 + 5×2), Engineering Mathematics ≈ 13 marks, the rest core ME
      across all subjects in GATE weightage; 30 one-mark + 35 two-mark questions in total, 1-mark questions first.
+   - Question types (website format; see build_paper.py): `"qtype": "mcq"` (4 options, 1 correct, negative 0.33 / 0.67),
+     `"qtype": "integer"` (whole-number answer in `"answer"`, negative 0), `"qtype": "fill_ups"` (numeric answer typed by
+     the student; give an accepted `"range": [low, high]` (both included) wide enough for normal rounding differences,
+     about ±0.5–1 % of the value, and ask "round off to N decimal places" in the question; negative 0).
+     Mix per 20-question test: 13 MCQ + 7 numerical (2–3 integer, 4–5 fill_ups), spread across the 1-mark and 2-mark
+     halves. Full mocks: about 20 numerical out of 65. Marks stay 1 or 2 for every type.
    - GATE-level, moderate to hard; plausible distractors; 1–3 sentence solution stating the principle.
    - Math as `\( ... \)`; diagrams with `gate90/tooling/figlib.py` (pin = triangle + hatched ground, roller = triangle on
      circles, fixed = hatched wall, double-headed dimension arrows, labels never overlapping lines). Look at every figure.

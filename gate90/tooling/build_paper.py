@@ -215,6 +215,9 @@ def latex_to_omml(snippets):
 def resolve(questions, seed_prefix):
     out = []
     for i, q in enumerate(questions):
+        if q.get("qtype", "mcq") in ("integer", "fill_ups"):
+            out.append({**q, "_opts": [], "_correct": None})
+            continue
         opts = list(q["options"])
         if len(opts) != 4:
             raise ValueError(f"Every question needs exactly 4 options; got "
@@ -286,9 +289,9 @@ def label_row(label, content_field, math_iter, imgctx):
     return f'<w:tr>{c1}{c2}</w:tr>'
 
 
-def type_row():
+def type_row(kind="multiple_choice"):
     c1 = cell(COL1, para(bold_run("Type"), bold_ppr=True))
-    c2 = cell(MERGED, para(bold_run("multiple_choice")), gridspan=2)
+    c2 = cell(MERGED, para(bold_run(kind)), gridspan=2)
     return f'<w:tr>{c1}{c2}</w:tr>'
 
 
@@ -310,15 +313,30 @@ def _num(v):
     return str(int(v)) if float(v) == int(v) else str(v)
 
 
+def _fmt(v):
+    return str(v)
+
+
 def build_table(q, math_iter, imgctx):
-    rows = [
-        label_row("Question", q["question"], math_iter, imgctx),
-        type_row(),
-    ]
-    for o in q["_opts"]:
-        rows.append(option_row(o, o == q["_correct"], math_iter, imgctx))
+    kind = q.get("qtype", "mcq")
+    rows = [label_row("Question", q["question"], math_iter, imgctx)]
+    if kind == "integer":          # whole-number answer typed by the student
+        rows.append(type_row("integer"))
+        rows.append(f'<w:tr>{cell(COL1, para(bold_run("Answer"), bold_ppr=True))}'
+                    f'{cell(MERGED, para(text_run(str(int(q["answer"])))), gridspan=2)}</w:tr>')
+    elif kind == "fill_ups":       # numeric answer accepted inside [low, high], both included
+        rows.append(type_row("fill_ups"))
+        lo, hi = q["range"]
+        rows.append(f'<w:tr>{cell(COL1, para(bold_run("Option"), bold_ppr=True))}'
+                    f'{cell(COL2, para(text_run(f"range({_fmt(lo)}:{_fmt(hi)})")))}'
+                    f'{cell(COL3, para(""))}</w:tr>')
+    else:
+        rows.append(type_row())
+        for o in q["_opts"]:
+            rows.append(option_row(o, o == q["_correct"], math_iter, imgctx))
     rows.append(label_row("Solution", q["solution"], math_iter, imgctx))
-    rows.append(marks_row(q.get("marks", 1), q.get("negative", 0.25)))
+    neg = 0 if kind in ("integer", "fill_ups") else q.get("negative", 0.25)
+    rows.append(marks_row(q.get("marks", 1), neg))
     return f'<w:tbl>{TBL_PR}{TBL_GRID}{"".join(rows)}</w:tbl>'
 
 

@@ -2,7 +2,8 @@
 """Build one GATE ME 90 Days Challenge test as a single Word file in the Dig Career Thrust
 website's MCQ-table format.
 Usage: python3 build_test.py test.json "<out.docx>" <figures_dir> <seed>
-test.json = {"questions":[{question, options[4], answer(0-based), solution, marks(1|2), negative(0.33|0.67)}...]}
+test.json = {"questions":[...]} each: qtype "mcq" {question, options[4], answer(0-based), solution, marks, negative}
+ | "integer" {question, answer(int), solution, marks} | "fill_ups" {question, range[lo,hi], solution, marks}
 Math in \\( ... \\); figures as [[IMG:name.png]] (see build_paper.py)."""
 import sys, os, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
