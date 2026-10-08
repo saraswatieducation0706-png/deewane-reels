@@ -66,15 +66,19 @@ For each day N (row N of the Master Schedule):
    - `footer`: "Day N/90  •  <Days to GATE> days to GATE 2027". Never show calendar dates in the reel.
    - Scenes: hook ["DAY N/90", short subject or "GATE ME"] + a motivating sub; card "Today's Topic" (subject, topic);
      steps "Cover Today" (3–4 items from Topics covered, ≤ 30 chars each); card "Quick Tip" (one high-yield fact, 3 lines);
-     dates "Today's Plan" (Practice PDF → "Telegram, now"; Free Test → "7:00 PM"; Toppers → "Next reel"; on mock days
-     the test line says "Mock, 7 PM" and mention 65 questions, 3 hours in the voice);
+     dates "Today's Plan" (Practice PDF → "Telegram, now"; "Test (₹1 course)" → "7 to 8 PM"; Toppers → "Next reel"; on mock
+     days the test line is "Mock (₹1 course)" → "7 to 10 PM" and the voice mentions 65 questions, 3 hours). The practice
+     PDF is free; tests are in the "GATE ME 90 Days Challenge" course (₹1, enrol once). Never call the test "free";
+     never use the word "free" for anything but the practice PDF;
      LAST: `toppers` scene, title "Day P Toppers", voice congratulating them by name (ranks, shared ranks).
    - Voice: English, "GATE M. E.", numbers in words where natural; ≤ 30 words per scene.
-   - Render, check 3 frames, then `tooling/scripts/thumbnail.py <dir>/DayN --org "GATE ME" --big "DAY N/90" --line "<Topic>" --badge "Free Test Tonight 7 PM" --badge2 "<X> Days to GATE"`.
+   - Render, check 3 frames, then `tooling/scripts/thumbnail.py <dir>/DayN --org "GATE ME" --big "DAY N/90" --line "<Topic>" --badge "Test Tonight 7 PM" --badge2 "<X> Days to GATE"`.
 4. Copy `DayN_reel.mp4` + `DayN_cover.jpg` to `gate90/reels/`, delete reels of days older than N−3 from that folder,
    push, wait for raw URL HTTP 200.
 5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel, exactly like the Day 1
    post (title "Day N/90 | <Topic> | GATE ME 90 Days Challenge #Shorts" ≤ 95 chars; description = day line, topic,
-   today's plan, "Comment GATE90 to get all the links", the 3 links, hashtags; YouTube category EDUCATION, madeForKids
+   today's plan (free practice PDF on Telegram; test 7–8 PM, mocks 7–10 PM, in the ₹1 "GATE ME 90 Days Challenge"
+   course), "Comment GATE90 to get all the links", the course link if `course_link` is set in gate90/status.json, the 3
+   links, hashtags; YouTube category EDUCATION, madeForKids
    false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true). Confirm with `getScheduledPosts`.
 6. Add N to `reel_scheduled`, push. Push-notify Naveen only if something failed (reel not booked by 2 AM = he posts by hand).

@@ -2,15 +2,63 @@
  "out": "/tmp/claude-0/d1/reel/Day1_Reel.mp4",
  "footer": "Day 1/90  •  110 days to GATE 2027",
  "scenes": [
-  {"kind":"hook","title":["DAY 1/90","GATE ME"],"sub":"The 90 Days Challenge starts today",
-   "voice":"Day one of the GATE M. E. ninety days challenge starts today! One hundred and ten days to GATE. Let's start strong."},
-  {"kind":"card","title":"Today's Topic","lines":["Engineering Mechanics","Statics, Trusses & Friction"],
-   "voice":"Today's subject is Engineering Mechanics. Our topic: statics, trusses, and friction."},
-  {"kind":"steps","title":"Cover Today","steps":["FBDs & equilibrium","Trusses: joints & sections","Zero-force members","Friction: incline, ladder, belt"],
-   "voice":"Cover free body diagrams and equilibrium, trusses by the method of joints and sections, zero force members, and friction on inclines, ladders and belts."},
-  {"kind":"card","title":"Quick Tip","lines":["Unloaded joint","2 members collinear","3rd member = ZERO force"],
-   "voice":"Quick tip. At an unloaded joint where two members are collinear, the third member carries zero force. Spot these first, and the truss becomes easy."},
-  {"kind":"dates","title":"Today's Plan","lines":[["Practice PDF","Telegram, now"],["Free Test","7:00 PM"],["Toppers","Tomorrow 8 AM"]],
-   "voice":"Your practice set with full solutions is on Telegram now. The free test is at seven P. M. tonight, and the top three scorers will be announced in tomorrow's reel."}
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 1/90",
+    "GATE ME"
+   ],
+   "sub": "The 90 Days Challenge starts today",
+   "voice": "Day one of the GATE M. E. ninety days challenge starts today! One hundred and ten days to GATE. Let's start strong."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Engineering Mechanics",
+    "Statics, Trusses & Friction"
+   ],
+   "voice": "Today's subject is Engineering Mechanics. Our topic: statics, trusses, and friction."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "FBDs & equilibrium",
+    "Trusses: joints & sections",
+    "Zero-force members",
+    "Friction: incline, ladder, belt"
+   ],
+   "voice": "Cover free body diagrams and equilibrium, trusses by the method of joints and sections, zero force members, and friction on inclines, ladders and belts."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Unloaded joint",
+    "2 members collinear",
+    "3rd member = ZERO force"
+   ],
+   "voice": "Quick tip. At an unloaded joint where two members are collinear, the third member carries zero force. Spot these first, and the truss becomes easy."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 8 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Your free practice set with full solutions is on Telegram now. Today's test is open from seven to eight P. M. in our one rupee challenge course, and the top three scorers will be announced in the next reel."
+  }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "out": "/tmp/claude-0/teasers/Teaser4.mp4",
- "footer": "GATE ME 90 Days Challenge  \u2022  Day 1 tomorrow",
+ "footer": "GATE ME 90 Days Challenge  •  Day 1 tomorrow",
  "scenes": [
   {
    "kind": "hook",
@@ -24,11 +24,11 @@
    "kind": "card",
    "title": "Get Ready Tonight",
    "lines": [
+    "Enrol in the ₹1 course",
     "Join our Telegram",
-    "Comment GATE90 for links",
-    "Set an 8 AM reminder"
+    "Comment GATE90 for links"
    ],
-   "voice": "Tonight, join our Telegram channel, comment GATE ninety for all the links, and set a reminder for eight A. M. tomorrow."
+   "voice": "Tonight, enrol in the one rupee challenge course, join our Telegram channel, and comment GATE ninety for all the links."
   },
   {
    "kind": "dates",
@@ -39,11 +39,11 @@
      "8:00 AM"
     ],
     [
-     "Free test",
-     "7:00 PM"
+     "Test",
+     "7 to 8 PM"
     ]
    ],
-   "voice": "Topic reel at eight A. M., free test at seven P. M. See you on day one!"
+   "voice": "Topic reel at eight A. M., and the test is open from seven to eight P. M. See you on day one!"
   }
  ]
 }
