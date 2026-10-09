@@ -1,0 +1,273 @@
+{
+ "day": 9,
+ "subject": "General Aptitude",
+ "topic": "Verbal Ability",
+ "days_to_gate": 101,
+ "summary": "grammar, vocabulary, sentence completion, analogies, para-jumbles and reading comprehension",
+ "minutes": 30,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Strength of Materials, Deflection of Beams",
+ "questions": [
+  {
+   "text": "Select the correct option to fill the blank: The quality of the castings ______ improved since the new furnace was installed.",
+   "fig": null,
+   "opts": [
+    "has",
+    "have",
+    "are",
+    "were"
+   ],
+   "ans": "(A) has",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The verb agrees with the head noun of the subject, not with the noun inside the 'of' phrase.",
+    "Head noun: <b>quality</b> (singular) → 'has improved'. 'Castings' is only the object of 'of'.",
+    "'Since …' needs the present perfect, which also rules out 'were'.",
+    "<b>Exam tip:</b> Strike out the 'of …' phrase and read the sentence again: 'The quality has improved'."
+   ]
+  },
+  {
+   "text": "Select the word closest in meaning to PRAGMATIC.",
+   "fig": null,
+   "opts": [
+    "practical",
+    "idealistic",
+    "dogmatic",
+    "talkative"
+   ],
+   "ans": "(A) practical",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Pragmatic = dealing with things sensibly and realistically.",
+    "Closest: <b>practical</b>. 'Idealistic' is nearly the opposite; 'dogmatic' and 'talkative' are sound or look-alike traps.",
+    "<b>Exam tip:</b> In GATE synonym questions, eliminate words with the opposite tone first."
+   ]
+  },
+  {
+   "text": "Select the word most nearly OPPOSITE in meaning to OBSCURE (as an adjective).",
+   "fig": null,
+   "opts": [
+    "evident",
+    "vague",
+    "hidden",
+    "remote"
+   ],
+   "ans": "(A) evident",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Obscure = not clear, hard to understand or little known.",
+    "Opposite: <b>evident</b> (plain, clearly seen). 'Vague' and 'hidden' are near-synonyms; 'remote' is unrelated.",
+    "<b>Exam tip:</b> Check the part of speech: 'obscure' is also a verb (to hide), but the antonym must match the adjective sense asked."
+   ]
+  },
+  {
+   "text": "Ammeter : Electric current :: Tachometer : ______",
+   "fig": null,
+   "opts": [
+    "Rotational speed",
+    "Torque",
+    "Temperature",
+    "Pressure"
+   ],
+   "ans": "(A) Rotational speed",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Instrument : quantity it measures.",
+    "An ammeter measures current; a tachometer measures <b>rotational speed</b> (rpm).",
+    "Torque: dynamometer; temperature: thermometer/pyrometer; pressure: manometer/Bourdon gauge.",
+    "<b>Exam tip:</b> State the relation in a sentence first, then test each option in the same sentence."
+   ]
+  },
+  {
+   "text": "How many of the following words are spelt correctly? necessary, recieve, occasion, accomodation, rhythm, privilege, maintainance",
+   "fig": null,
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Check each word letter by letter against the standard spelling.",
+    "Correct: necessary, occasion, rhythm, privilege → <b>4</b>.",
+    "Wrong: rec<b>ei</b>ve, acco<b>mm</b>odation, maint<b>e</b>nance.",
+    "<b>Exam tip:</b> 'i before e except after c' fixes receive; double letters (accommodation, embarrass) are frequent traps."
+   ]
+  },
+  {
+   "text": "Select the correct option to fill the blank: He is very good ______ solving numerical problems.",
+   "fig": null,
+   "opts": [
+    "at",
+    "in",
+    "on",
+    "with"
+   ],
+   "ans": "(A) at",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Fixed preposition: <b>good at</b> (a skill or activity).",
+    "'Good in' is used for a subject in some regions but 'good at + -ing' is the standard form.",
+    "<b>Exam tip:</b> Learn adjective–preposition pairs: good at, interested in, capable of, responsible for."
+   ]
+  },
+  {
+   "text": "The idiom 'a blessing in disguise' means",
+   "fig": null,
+   "opts": [
+    "something that seems bad at first but turns out to be good",
+    "a hidden danger",
+    "an undeserved reward",
+    "a polite refusal"
+   ],
+   "ans": "(A) something that seems bad at first but turns out to be good",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Meaning:</b> an apparent misfortune that later proves helpful.",
+    "Example: Missing the bus was a blessing in disguise; I met the recruiter at the station.",
+    "<b>Exam tip:</b> Idiom questions in GATE GA are usually common ones; read them literally only to discard options."
+   ]
+  },
+  {
+   "text": "Arrange the sentences to form a coherent paragraph and enter the order as a four-digit number. (1) Sensors on the shaft now report vibration levels every second. (2) In the past, a pump was repaired only after it broke down. (3) When the readings drift from normal, a technician is sent before failure occurs. (4) This shift from reactive to predictive maintenance has cut unplanned stoppages sharply.",
+   "fig": null,
+   "opts": null,
+   "ans": "2134",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Find the opening (no pronoun or connector pointing back), then follow the links.",
+    "2 sets the past situation ('In the past'); 1 the change ('now'); 3 uses 'the readings' from 1; 4 sums up with 'This shift'.",
+    "Order: <b>2134</b>",
+    "<b>Exam tip:</b> Words like 'this', 'these', 'the readings', 'however' always point to an earlier sentence."
+   ]
+  },
+  {
+   "text": "Select the pair that best fills the blanks: Although the prototype was ______, the final product proved remarkably ______.",
+   "fig": null,
+   "opts": [
+    "crude, refined",
+    "refined, elegant",
+    "crude, primitive",
+    "flawless, perfect"
+   ],
+   "ans": "(A) crude, refined",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> 'Although' signals a contrast between the two blanks.",
+    "Only (A) gives opposite ideas: <b>crude</b> prototype, <b>refined</b> final product.",
+    "(B), (C) and (D) pair similar words, which do not fit 'although'.",
+    "<b>Exam tip:</b> Spot the connector first (although, because, and, but); it tells you same or opposite."
+   ]
+  },
+  {
+   "text": "Identify the part of the sentence that contains an error: (1) One of the valves / (2) were found / (3) to be leaking / (4) during the inspection.",
+   "fig": null,
+   "opts": [
+    "Part 2",
+    "Part 1",
+    "Part 3",
+    "Part 4"
+   ],
+   "ans": "(A) Part 2",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> 'One of the + plural noun' takes a singular verb.",
+    "Subject: 'one' → 'was found'. The error is in <b>part 2</b>.",
+    "<b>Exam tip:</b> Compare with 'one of those who …', where the verb after 'who' is plural."
+   ]
+  },
+  {
+   "text": "<i>Passage:</i> “Kaizen, the Japanese practice of continuous improvement, rests on a simple idea: large gains can come from many small changes. A worker who moves a tool rack closer to a machine saves a few seconds per cycle; across thousands of cycles and hundreds of workers, the saving becomes large. Critics point out that small steps cannot replace bold redesign when a process is fundamentally flawed. Supporters reply that the two are complementary: kaizen keeps a good process improving between the rare occasions when a radical change is justified.”<br>Which of the following is supported by the passage?",
+   "fig": null,
+   "opts": [
+    "Kaizen and occasional radical redesign can work together.",
+    "Kaizen makes radical redesign unnecessary.",
+    "Small changes can never produce large gains.",
+    "Critics believe kaizen saves no time at all."
+   ],
+   "ans": "(A) Kaizen and occasional radical redesign can work together.",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Choose the option that the passage states or directly implies; reject extreme words (never, unnecessary).",
+    "The supporters' reply: 'the two are complementary' → (A).",
+    "(B) contradicts 'rare occasions when a radical change is justified'; (C) contradicts the main idea; (D) misstates the critics, who only say small steps cannot fix a flawed process.",
+    "<b>Exam tip:</b> In GATE RC, the right option is usually a paraphrase, not a copy, of one line."
+   ]
+  },
+  {
+   "text": "<i>Passage:</i> “Kaizen, the Japanese practice of continuous improvement, rests on a simple idea: large gains can come from many small changes. A worker who moves a tool rack closer to a machine saves a few seconds per cycle; across thousands of cycles and hundreds of workers, the saving becomes large. Critics point out that small steps cannot replace bold redesign when a process is fundamentally flawed. Supporters reply that the two are complementary: kaizen keeps a good process improving between the rare occasions when a radical change is justified.”<br>The example of the tool rack is used mainly to",
+   "fig": null,
+   "opts": [
+    "show how small savings add up to a large gain",
+    "argue that workers waste time",
+    "show that machines need redesign",
+    "prove that critics of kaizen are wrong"
+   ],
+   "ans": "(A) show how small savings add up to a large gain",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Ask why the author included the example.",
+    "A few seconds per cycle × thousands of cycles × hundreds of workers = large saving: it illustrates the 'many small changes' idea.",
+    "<b>Exam tip:</b> 'The example is used to …' questions are answered by the sentence just before the example."
+   ]
+  },
+  {
+   "text": "How many of the following sentences are grammatically correct? (i) Each of the boys has his own locker. (ii) I look forward to meet you. (iii) Neither of the answers is correct. (iv) He did not knew the answer. (v) The committee has submitted its report.",
+   "fig": null,
+   "opts": null,
+   "ans": "3",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Check agreement and verb forms in each sentence.",
+    "(i) correct: 'each' takes 'has'. (iii) correct: 'neither of' takes a singular verb. (v) correct: the committee acting as one body takes 'has … its'.",
+    "(ii) wrong: 'look forward to <b>meeting</b>' ('to' is a preposition here). (iv) wrong: 'did not <b>know</b>'.",
+    "Answer: <b>3</b>",
+    "<b>Exam tip:</b> After did/does/do, the verb is always in its base form."
+   ]
+  },
+  {
+   "text": "Select the most appropriate word to fill the blank: The new storage dams will help ______ the effects of the drought.",
+   "fig": null,
+   "opts": [
+    "mitigate",
+    "militate",
+    "migrate",
+    "mediate"
+   ],
+   "ans": "(A) mitigate",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Confusable words.",
+    "<b>Mitigate</b> = make less severe (fits). Militate (against) = be a strong factor against; migrate = move; mediate = act as a go-between.",
+    "<b>Exam tip:</b> GATE loves look-alike pairs: mitigate/militate, affect/effect, complement/compliment, principal/principle."
+   ]
+  },
+  {
+   "text": "Which is the odd one out? Enter its number. (1) Anemometer (2) Barometer (3) Hygrometer (4) Stethoscope",
+   "fig": null,
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Find the common group.",
+    "Anemometer (wind speed), barometer (air pressure) and hygrometer (humidity) are weather instruments.",
+    "The stethoscope is a medical instrument → <b>4</b>.",
+    "<b>Exam tip:</b> When two groupings seem possible, pick the one that leaves exactly one item out."
+   ]
+  }
+ ]
+}

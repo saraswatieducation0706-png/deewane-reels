@@ -1,0 +1,269 @@
+{
+ "day": 8,
+ "subject": "Strength of Materials",
+ "topic": "Bending & Shear Stresses",
+ "days_to_gate": 102,
+ "summary": "the flexure formula, section modulus, T- and I-sections, beams of uniform strength, flitched beams and shear stress distributions",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, Verbal Ability",
+ "questions": [
+  {
+   "text": "Which of the following is <b>not</b> an assumption of the simple bending (flexure) theory σ/y = M/I = E/R?",
+   "fig": null,
+   "opts": [
+    "Plane sections remain plane after bending",
+    "The material is homogeneous and obeys Hooke's law",
+    "E is the same in tension and in compression",
+    "Bending stress varies parabolically across the depth"
+   ],
+   "ans": "(D) Bending stress varies parabolically across the depth",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Plane sections remaining plane gives strain ε = y/R, which is <i>linear</i> in y.",
+    "With Hooke's law and the same E in tension and compression, σ = Ey/R is also linear in y, zero at the neutral axis.",
+    "A parabolic variation is the shape of the <b>shear</b> stress in a rectangular beam, not the bending stress.",
+    "<b>Exam tip:</b> Bending stress: linear, max at extreme fibres. Shear stress: parabolic (rectangle), max at the N.A."
+   ]
+  },
+  {
+   "text": "A rectangular beam 80 mm wide and 160 mm deep carries a bending moment of 8 kN·m about its horizontal axis. The maximum bending stress (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "23.44",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> σ<sub>max</sub> = M/Z with Z = bd²/6.",
+    "Z = 80 × 160²/6 = 3.413 × 10⁵ mm³",
+    "σ<sub>max</sub> = 8 × 10⁶ / 3.413 × 10⁵ = <b>23.44 MPa</b> (compression at top, tension at bottom for sagging).",
+    "<b>Exam tip:</b> Keep N and mm together: kN·m × 10⁶ = N·mm, and the answer is directly in MPa."
+   ]
+  },
+  {
+   "text": "The section modulus of a hollow circular section of outer diameter D and inner diameter d is",
+   "fig": null,
+   "opts": [
+    "π(D⁴ − d⁴)/(32D)",
+    "π(D³ − d³)/32",
+    "π(D⁴ − d⁴)/(64D)",
+    "π(D⁴ − d⁴)/(16D)"
+   ],
+   "ans": "(A) π(D⁴ − d⁴)/(32D)",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Z = I/y<sub>max</sub>, with y<sub>max</sub> = D/2.",
+    "I = π(D⁴ − d⁴)/64, so Z = [π(D⁴ − d⁴)/64]/(D/2) = <b>π(D⁴ − d⁴)/(32D)</b>.",
+    "π(D³ − d³)/32 is the common wrong answer: section moduli cannot be subtracted like moments of inertia.",
+    "<b>Exam tip:</b> Subtract I's (same axis), never Z's."
+   ]
+  },
+  {
+   "text": "The T-section shown (flange 120 mm × 20 mm, web 20 mm × 100 mm) is used with the flange on top and carries a sagging bending moment of 6 kN·m. The maximum <b>tensile</b> bending stress (in MPa, round off to one decimal place) is ______",
+   "fig": "d8p_q4.png",
+   "opts": null,
+   "ans": "87.5",
+   "sfig": "d8p_s4.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Locate the centroid, find I about it (parallel-axis theorem), then σ = My/I at the extreme tension fibre.",
+    "Areas: flange 2400 mm² (centroid 10 mm from top), web 2000 mm² (centroid 70 mm from top).",
+    "ȳ from top = (2400 × 10 + 2000 × 70)/4400 = 37.27 mm; bottom fibre is 120 − 37.27 = 82.73 mm below the N.A.",
+    "I = 120·20³/12 + 2400·27.27² + 20·100³/12 + 2000·32.73² = 5.674 × 10⁶ mm⁴",
+    "Sagging → tension at the bottom: σ<sub>t</sub> = 6 × 10⁶ × 82.73/5.674 × 10⁶ = <b>87.5 MPa</b>; compression at the top is only 39.4 MPa.",
+    "<b>Exam tip:</b> For unsymmetric sections the two extreme stresses differ; always check which fibre governs."
+   ]
+  },
+  {
+   "text": "A solid circular beam of diameter 100 mm carries a shear force of 47.12 kN. The maximum shear stress in the section is nearly",
+   "fig": null,
+   "opts": [
+    "8 MPa",
+    "6 MPa",
+    "9 MPa",
+    "12 MPa"
+   ],
+   "ans": "(A) 8 MPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For a solid circle τ<sub>max</sub> = (4/3) τ<sub>avg</sub>, at the neutral axis.",
+    "A = π × 100²/4 = 7854 mm²; τ<sub>avg</sub> = 47120/7854 = 6.0 MPa",
+    "τ<sub>max</sub> = (4/3) × 6 = <b>8 MPa</b>",
+    "<b>Exam tip:</b> Factors to remember: rectangle 3/2, circle 4/3, triangle 3/2 (at mid-height), diamond 9/8."
+   ]
+  },
+  {
+   "text": "The symmetric I-section shown (flanges 150 mm × 20 mm, web 10 mm thick, overall depth 300 mm) carries a shear force of 100 kN. The maximum shear stress in the section (in MPa, round off to one decimal place) is ______",
+   "fig": "d8p_q6.png",
+   "opts": null,
+   "ans": "38.1",
+   "sfig": "d8p_s6.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> τ = VQ/(I t); the maximum is at the neutral axis, where the width t is the web thickness.",
+    "I = (150 × 300³ − 140 × 260³)/12 = 1.3245 × 10⁸ mm⁴",
+    "Q at N.A. = flange 150 × 20 × 140 + half-web 10 × 130 × 65 = 420000 + 84500 = 504500 mm³",
+    "τ<sub>max</sub> = 100000 × 504500/(1.3245 × 10⁸ × 10) = <b>38.1 MPa</b>",
+    "At the flange–web junction τ jumps from 2.1 MPa (in the flange, t = 150) to 31.7 MPa (in the web, t = 10). The web carries about 93 % of the shear.",
+    "<b>Exam tip:</b> A quick check: V/(web area) = 100000/(300 × 10) = 33.3 MPa is close to τ<sub>max</sub> for I-beams."
+   ]
+  },
+  {
+   "text": "If the width of a rectangular beam is doubled and its depth is halved (same material), its moment-carrying capacity becomes",
+   "fig": null,
+   "opts": [
+    "half",
+    "the same",
+    "double",
+    "one-quarter"
+   ],
+   "ans": "(A) half",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> M = σZ and Z = bd²/6 ∝ bd².",
+    "New Z ∝ (2b)(d/2)² = bd²/2 → capacity becomes <b>half</b>.",
+    "Depth matters more than width because it enters squared.",
+    "<b>Exam tip:</b> Stiffness (I ∝ bd³) would fall to one-quarter in the same change."
+   ]
+  },
+  {
+   "text": "A steel wire of diameter 3 mm is to be bent into a circular arc. Taking E = 210 GPa, the smallest radius of curvature of the wire axis (in m) for which the bending stress does not exceed 210 MPa is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.5",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> From σ/y = E/R → R = E y<sub>max</sub>/σ.",
+    "y<sub>max</sub> = 1.5 mm",
+    "R = 210000 × 1.5/210 = 1500 mm = <b>1.5 m</b>",
+    "<b>Exam tip:</b> If a drum radius is asked instead, subtract the wire radius: 1500 − 1.5 = 1498.5 mm."
+   ]
+  },
+  {
+   "text": "The strongest rectangular beam (in bending) that can be cut from a circular log of diameter D has a depth-to-width ratio of",
+   "fig": null,
+   "opts": [
+    "√2",
+    "√3",
+    "2",
+    "1.5"
+   ],
+   "ans": "(A) √2",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Maximise Z = bh²/6 with b² + h² = D².",
+    "Z ∝ b(D² − b²); dZ/db = D² − 3b² = 0 → b = D/√3, h = D√(2/3)",
+    "h/b = <b>√2</b>",
+    "<b>Exam tip:</b> The <i>stiffest</i> beam (max I ∝ bh³) gives h/b = √3. Do not mix them up."
+   ]
+  },
+  {
+   "text": "A simply supported beam of span 4 m with a rectangular section 100 mm wide × 200 mm deep carries a single point load P at midspan. If the permissible bending stress is 12 MPa, the largest P (in kN) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "8",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> M<sub>max</sub> = PL/4 at midspan; set M<sub>max</sub> = σZ.",
+    "Z = 100 × 200²/6 = 6.667 × 10⁵ mm³; σZ = 12 × 6.667 × 10⁵ = 8 × 10⁶ N·mm = 8 kN·m",
+    "PL/4 = P × 4/4 = P → <b>P = 8 kN</b>",
+    "<b>Exam tip:</b> Self-weight is ignored unless the question gives the density."
+   ]
+  },
+  {
+   "text": "In the flange of an I-beam carrying a vertical shear force, the horizontal shear stress (shear flow) along the flange width varies",
+   "fig": null,
+   "opts": [
+    "linearly from zero at the flange tip to a maximum at the web",
+    "parabolically, maximum at the flange tip",
+    "uniformly across the flange",
+    "as a cubic, maximum at the flange tip"
+   ],
+   "ans": "(A) linearly from zero at the flange tip to a maximum at the web",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In the flange, Q of the part from the tip to a cut at distance s is (s t<sub>f</sub>) × (h/2), which grows linearly with s.",
+    "τ = VQ/(I t<sub>f</sub>) ∝ s → zero at the free tip, maximum where the flange meets the web.",
+    "This flange shear flow is what locates the shear centre of channel sections.",
+    "<b>Exam tip:</b> In the web the variation is parabolic; in thin flanges it is linear."
+   ]
+  },
+  {
+   "text": "A beam has a square cross-section placed with one diagonal vertical (as shown) and carries a vertical shear force. The ratio of the maximum shear stress to the average shear stress is ______",
+   "fig": "d8p_q12.png",
+   "opts": null,
+   "ans": "1.125",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> τ = VQ/(I b); for the diamond the width b falls towards the N.A. faster than Q grows near it, so τ peaks <i>away</i> from the N.A.",
+    "With half-diagonal h: b = 2(h − y), Q = (h − y)²(h + 2y)/3, so τ ∝ (h − y)(h + 2y); dτ/dy = 0 gives y = h/4 = d/8 from the N.A. (d = full diagonal)",
+    "τ<sub>max</sub> = (9/8) τ<sub>avg</sub> = <b>1.125 τ<sub>avg</sub></b>; at the N.A. itself τ = τ<sub>avg</sub>.",
+    "<b>Exam tip:</b> Diamond and triangle are the two GATE favourites where τ<sub>max</sub> is not at the N.A."
+   ]
+  },
+  {
+   "text": "A simply supported beam carries a central point load. To be a beam of uniform strength with a <b>constant depth</b>, its width must vary along the span (from a support towards the centre)",
+   "fig": null,
+   "opts": [
+    "linearly with distance from the support",
+    "with the square root of the distance",
+    "with the square of the distance",
+    "it must stay constant"
+   ],
+   "ans": "(A) linearly with distance from the support",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Uniform strength: σ = 6M(x)/(b h²) is the same at every section.",
+    "M(x) = (P/2)x for 0 ≤ x ≤ L/2; with h fixed, b ∝ M ∝ <b>x</b> (linear).",
+    "With constant width instead, h² ∝ x → h ∝ √x.",
+    "<b>Exam tip:</b> Leaf springs are a practical form of such a constant-depth, varying-width beam."
+   ]
+  },
+  {
+   "text": "A flitched beam is made of a timber section 150 mm wide × 300 mm deep with a 10 mm × 300 mm steel plate bolted on each side (as shown). E<sub>steel</sub>/E<sub>timber</sub> = 20 and the permissible stresses are 8 MPa in timber and 150 MPa in steel. The moment of resistance of the beam (in kN·m, round off to two decimal places) is ______",
+   "fig": "d8p_q14.png",
+   "opts": null,
+   "ans": "61.88",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Transform the steel into equivalent timber (width × m); strains are equal at the same depth, so σ<sub>s</sub> = m σ<sub>t</sub> at the same fibre.",
+    "Equivalent timber width = 150 + 20 × (2 × 10) = 550 mm; Z<sub>eq</sub> = 550 × 300²/6 = 8.25 × 10⁶ mm³",
+    "If timber reaches 8 MPa, steel would be 20 × 8 = 160 MPa &gt; 150 MPa. So steel governs: σ<sub>t</sub> = 150/20 = 7.5 MPa at the extreme fibre.",
+    "M = 7.5 × 8.25 × 10⁶ = 61.875 × 10⁶ N·mm = <b>61.88 kN·m</b>",
+    "<b>Exam tip:</b> Always check both materials; the one that reaches its limit first decides M."
+   ]
+  },
+  {
+   "text": "At the extreme top and bottom fibres of a beam section carrying both bending moment and shear force,",
+   "fig": null,
+   "opts": [
+    "bending stress is maximum and shear stress is zero",
+    "both stresses are maximum",
+    "bending stress is zero and shear stress is maximum",
+    "both stresses are zero"
+   ],
+   "ans": "(A) bending stress is maximum and shear stress is zero",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> σ = My/I is largest at y<sub>max</sub>.",
+    "The top and bottom surfaces are free of load, so by complementary shear the transverse shear stress there is <b>zero</b>.",
+    "At the N.A. the situation is reversed: σ = 0 and τ is (usually) maximum.",
+    "<b>Exam tip:</b> This is why principal-stress questions on beams take the extreme fibre as uniaxial."
+   ]
+  }
+ ]
+}

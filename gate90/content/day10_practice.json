@@ -1,0 +1,260 @@
+{
+ "day": 10,
+ "subject": "Strength of Materials",
+ "topic": "Deflection of Beams",
+ "days_to_gate": 100,
+ "summary": "the elastic curve equation, standard cases, superposition, Macaulay's method, moment-area theorems and propped cantilevers",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Strength of Materials, Torsion, Thin Cylinders & Springs",
+ "questions": [
+  {
+   "text": "The differential equation of the elastic curve of a beam (small deflections, y upward, sagging moment positive) is",
+   "fig": null,
+   "opts": [
+    "EI d²y/dx² = M",
+    "EI d²y/dx² = V",
+    "EI dy/dx = M",
+    "EI d⁴y/dx⁴ = M"
+   ],
+   "ans": "(A) EI d²y/dx² = M",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Curvature 1/R = M/(EI), and for small slopes 1/R ≈ d²y/dx².",
+    "So <b>EI y'' = M</b>; differentiating, EI y''' = V and EI y'''' = −w (load intensity).",
+    "<b>Exam tip:</b> Integrate M once for slope, twice for deflection; fix the two constants from the supports."
+   ]
+  },
+  {
+   "text": "A simply supported beam of span 4 m carries a 20 kN point load at midspan. With EI = 10000 kN·m², the maximum deflection (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.67",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Central point load on a simply supported beam: δ<sub>max</sub> = PL³/(48EI) at midspan.",
+    "δ = 20 × 4³/(48 × 10000) = 1280/480000 = 0.002667 m = <b>2.67 mm</b>",
+    "<b>Exam tip:</b> kN and kN·m² give metres directly; multiply by 1000 for mm."
+   ]
+  },
+  {
+   "text": "The slope at each support of a simply supported beam of span L carrying a UDL w over the whole span is",
+   "fig": null,
+   "opts": [
+    "wL³/24EI",
+    "wL³/6EI",
+    "wL³/48EI",
+    "5wL³/384EI"
+   ],
+   "ans": "(A) wL³/24EI",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> By symmetry the slope is zero at midspan; θ<sub>A</sub> = area of M/EI diagram from A to midspan.",
+    "Area of half the parabola = (2/3) × (L/2) × (wL²/8) = wL³/24 → θ<sub>A</sub> = <b>wL³/(24EI)</b>",
+    "<b>Exam tip:</b> Central point load gives θ<sub>A</sub> = PL²/(16EI)."
+   ]
+  },
+  {
+   "text": "The cantilever AB shown (fixed at A, length 3 m, EI = 9000 kN·m²) carries a UDL of 2 kN/m over its whole length and a 5 kN load at the free end B. The deflection of B (in mm, round off to two decimal places) is ______",
+   "fig": "d10p_q4.png",
+   "opts": null,
+   "ans": "7.25",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Superposition: add the deflections due to each load acting alone (linear elastic beam).",
+    "End load: PL³/(3EI) = 5 × 27/(3 × 9000) = 0.00500 m",
+    "UDL: wL⁴/(8EI) = 2 × 81/(8 × 9000) = 0.00225 m",
+    "δ<sub>B</sub> = 5.00 + 2.25 = <b>7.25 mm</b>",
+    "<b>Exam tip:</b> Memorise the 4 basic cantilever and 4 basic SS-beam cases; most GATE deflection questions are superpositions of them."
+   ]
+  },
+  {
+   "text": "A simply supported beam of rectangular section carries a central load. If the depth of the section is doubled (width unchanged), the maximum deflection becomes",
+   "fig": null,
+   "opts": [
+    "one-eighth",
+    "one-quarter",
+    "half",
+    "one-sixteenth"
+   ],
+   "ans": "(A) one-eighth",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> δ ∝ 1/I and I = bd³/12 ∝ d³.",
+    "Doubling d multiplies I by 8 → deflection becomes <b>1/8</b>.",
+    "Bending stress (∝ 1/d²) would fall to 1/4.",
+    "<b>Exam tip:</b> Depth is the cheapest way to stiffen a beam."
+   ]
+  },
+  {
+   "text": "The simply supported beam AB shown (span 6 m, EI = 30000 kN·m²) carries 20 kN loads at 2 m from each support. The deflection at midspan (in mm, round off to two decimal places) is ______",
+   "fig": "d10p_q6.png",
+   "opts": null,
+   "ans": "5.11",
+   "sfig": "d10p_s6.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept (Macaulay):</b> R<sub>A</sub> = R<sub>B</sub> = 20 kN. EI y'' = 20x − 20⟨x − 2⟩ − 20⟨x − 4⟩.",
+    "EI y = (20/6)x³ − (20/6)⟨x − 2⟩³ − (20/6)⟨x − 4⟩³ + C<sub>1</sub>x; y(0) = 0 gives C<sub>2</sub> = 0, and y(6) = 0 gives C<sub>1</sub> = −80.",
+    "At x = 3: EI y = (20/6)(27) − (20/6)(1) − 80 × 3 = 90 − 3.33 − 240 = −153.33 kN·m³",
+    "δ = 153.33/30000 = 0.00511 m = <b>5.11 mm</b> (check: Pa(3L² − 4a²)/(24EI) = 20 × 2 × 92/(24 × 30000) ✓)",
+    "<b>Exam tip:</b> Terms in Macaulay brackets are dropped whenever the bracket is negative."
+   ]
+  },
+  {
+   "text": "By the second moment-area theorem, the vertical distance of a point B on the elastic curve from the tangent drawn at point A equals",
+   "fig": null,
+   "opts": [
+    "the moment, about B, of the M/EI diagram area between A and B",
+    "the area of the M/EI diagram between A and B",
+    "the moment, about A, of the M/EI diagram area between A and B",
+    "the slope at B multiplied by AB"
+   ],
+   "ans": "(A) the moment, about B, of the M/EI diagram area between A and B",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> t<sub>B/A</sub> = ∫ (M/EI) x̄<sub>B</sub> dx from A to B, with distances measured from <b>B</b> (the point whose deviation is wanted).",
+    "Taking moments about A instead gives t<sub>A/B</sub>, the deviation of A from the tangent at B.",
+    "<b>Exam tip:</b> For a cantilever, take the tangent at the fixed end (it is horizontal), so t<sub>B/A</sub> is the deflection itself."
+   ]
+  },
+  {
+   "text": "A cantilever 2 m long (EI = 5000 kN·m²) carries a clockwise couple of 10 kN·m at its free end. The deflection of the free end (in mm) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> An end couple gives a constant bending moment M<sub>0</sub> over the whole length.",
+    "θ = M<sub>0</sub>L/EI = 10 × 2/5000 = 0.004 rad",
+    "δ = M<sub>0</sub>L²/(2EI) = 10 × 4/(2 × 5000) = 0.004 m = <b>4 mm</b>",
+    "<b>Exam tip:</b> The elastic curve under constant M is a circular arc of radius R = EI/M<sub>0</sub>."
+   ]
+  },
+  {
+   "text": "A propped cantilever of span L (fixed at A, propped at B) carries a point load P at midspan. The reaction at the prop is",
+   "fig": null,
+   "opts": [
+    "5P/16",
+    "11P/16",
+    "P/2",
+    "3P/8"
+   ],
+   "ans": "(A) 5P/16",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Compatibility: the prop deflection is zero.",
+    "Without the prop, the free end deflects 5PL³/(48EI) (load at mid-length). The prop force R lifts it by RL³/(3EI).",
+    "RL³/3EI = 5PL³/48EI → <b>R = 5P/16</b>; the fixed end takes 11P/16.",
+    "<b>Exam tip:</b> 3wL/8 is the prop reaction for a UDL. Do not mix the two."
+   ]
+  },
+  {
+   "text": "The overhanging beam ABC shown (span AB = 4 m, overhang BC = 1 m, EI = 10000 kN·m²) carries a 10 kN load at the free end C. The downward deflection of C (in mm, round off to two decimal places) is ______",
+   "fig": "d10p_q10.png",
+   "opts": null,
+   "ans": "1.67",
+   "sfig": "d10p_s10.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> δ<sub>C</sub> = (deflection of BC as a cantilever) + (rotation of the span at B) × BC.",
+    "The moment at B is Pa = 10 kN·m; it rotates the simply supported span at B by θ<sub>B</sub> = (Pa)L/(3EI) = 10 × 4/30000 = 0.001333 rad.",
+    "Cantilever part: Pa³/(3EI) = 10 × 1/30000 = 0.000333 m; rotation part: θ<sub>B</sub> × a = 0.001333 m",
+    "δ<sub>C</sub> = 0.000333 + 0.001333 = 0.001667 m = <b>1.67 mm</b> ↓ = Pa²(L + a)/(3EI). The span AB bows upward (max 1.03 mm).",
+    "<b>Exam tip:</b> In overhang problems, never forget the rotation at the support carried to the tip."
+   ]
+  },
+  {
+   "text": "For a beam of span L carrying a UDL over the whole span, the ratio of the maximum deflection with both ends fixed to that with both ends simply supported is",
+   "fig": null,
+   "opts": [
+    "1/5",
+    "1/4",
+    "1/2",
+    "1/8"
+   ],
+   "ans": "(A) 1/5",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Fixed-fixed: wL⁴/(384EI). Simply supported: 5wL⁴/(384EI).",
+    "Ratio = 1/5.",
+    "<b>Exam tip:</b> For a central point load the same ratio is 1/4 (PL³/192EI vs PL³/48EI)."
+   ]
+  },
+  {
+   "text": "A cantilever of length L carries a point load at its free end. The deflection at the mid-length, as a fraction of the free-end deflection, is ______ (round off to four decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "0.3125",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For an end load, y(x) = Px²(3L − x)/(6EI), x from the fixed end.",
+    "y(L/2) = P(L²/4)(5L/2)/(6EI) = 5PL³/(48EI); y(L) = PL³/(3EI)",
+    "Ratio = (5/48)/(1/3) = 5/16 = <b>0.3125</b>",
+    "<b>Exam tip:</b> By Maxwell's reciprocal theorem, 5PL³/48EI is also the free-end deflection for a load at mid-length."
+   ]
+  },
+  {
+   "text": "A beam is bent by equal and opposite couples at its ends (pure bending). Its elastic curve is",
+   "fig": null,
+   "opts": [
+    "a circular arc",
+    "a parabola",
+    "a cubic curve",
+    "a straight line"
+   ],
+   "ans": "(A) a circular arc",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> 1/R = M/(EI); with M constant along the beam, the curvature is constant.",
+    "Constant curvature means a <b>circular arc</b>. The small-slope equation y'' = M/EI gives a parabola, which is the same arc to first order.",
+    "<b>Exam tip:</b> A UDL gives a quartic curve and a point load a cubic between loads."
+   ]
+  },
+  {
+   "text": "A simply supported floor beam of span 8 m carries a UDL of 15 kN/m. With E = 200 GPa and a deflection limit of span/360, the minimum second moment of area required is ______ × 10⁶ mm⁴",
+   "fig": null,
+   "opts": null,
+   "ans": "180",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Serviceability: 5wL⁴/(384EI) ≤ L/360.",
+    "I ≥ 5wL³ × 360/(384E) = 5 × 15 × 8³ × 360/(384 × 200 × 10⁶) m⁴ (w in kN/m, E in kN/m²)",
+    "I ≥ 1.8 × 10⁻⁴ m⁴ = 1.8 × 10⁸ mm⁴ = <b>180 × 10⁶ mm⁴</b>",
+    "<b>Exam tip:</b> 1 m⁴ = 10¹² mm⁴; unit slips here cost marks."
+   ]
+  },
+  {
+   "text": "Two simply supported beams are identical except that the second has twice the span. Each carries the same central point load. Compared with the first, the second beam has",
+   "fig": null,
+   "opts": [
+    "2 times the maximum bending stress and 8 times the maximum deflection",
+    "2 times the stress and 4 times the deflection",
+    "4 times the stress and 8 times the deflection",
+    "the same stress and 8 times the deflection"
+   ],
+   "ans": "(A) 2 times the maximum bending stress and 8 times the maximum deflection",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> M<sub>max</sub> = PL/4 ∝ L, so σ ∝ L; δ = PL³/(48EI) ∝ L³.",
+    "Doubling L: σ × 2, δ × 8 → (A).",
+    "<b>Exam tip:</b> Long spans are usually limited by deflection, short spans by strength."
+   ]
+  }
+ ]
+}

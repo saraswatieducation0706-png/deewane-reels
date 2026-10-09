@@ -107,3 +107,17 @@ def diagrams(path,L,x,V,M,vunit="kN",munit="kN·m",vmarks=(),mmarks=(),w=3.6,h=2
     a1.spines["bottom"].set_visible(False); a1.tick_params(bottom=False)
     a2.set_xlabel("x (m)",fontsize=8); a1.set_xlim(-0.05*L,1.05*L)
     fig.tight_layout(); fig.savefig(path,dpi=150,facecolor="white"); plt.close(fig)
+# --- cross-section helpers (added Day 8) ---
+def section(ax,rects,fc="#dddddd"):
+    """rects = list of (x, y, w, h) in drawing units; drawn grey with black outline."""
+    for (x,y,w,h) in rects: ax.add_patch(Rectangle((x,y),w,h,fc=fc,ec=K,lw=1.3))
+def vdim(ax,x,y0,y1,t,side="left",fs=8,ext=None):
+    """vertical dimension line at x from y0 to y1, label to the side; ext=(xa,xb) draws thin extension ticks."""
+    arrow(ax,x,y0,x,y1,lw=0.9,both=True)
+    label(ax,x-0.08 if side=="left" else x+0.08,(y0+y1)/2,t,fs=fs,ha="right" if side=="left" else "left")
+def hdim(ax,x0,x1,y,t,above=True,fs=8):
+    arrow(ax,x0,y,x1,y,lw=0.9,both=True)
+    label(ax,(x0+x1)/2,y+0.12 if above else y-0.12,t,fs=fs,va="bottom" if above else "top")
+def ext(ax,x0,y0,x1,y1): ax.plot([x0,x1],[y0,y1],color=K,lw=0.5)
+def na_line(ax,x0,x1,y,txt="N.A.",fs=8):
+    ax.plot([x0,x1],[y,y],color=K,lw=0.9,ls="-."); label(ax,x1+0.05,y,txt,fs=fs,ha="left")
