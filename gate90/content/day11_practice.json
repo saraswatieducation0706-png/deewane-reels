@@ -1,0 +1,271 @@
+{
+ "day": 11,
+ "subject": "Strength of Materials",
+ "topic": "Torsion, Thin Cylinders & Springs",
+ "days_to_gate": 99,
+ "summary": "torsion of solid and hollow shafts, power transmission, compound shafts, thin cylindrical and spherical shells, and close-coiled helical springs",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Weekly Revision, Week 2 Revision",
+ "questions": [
+  {
+   "text": "The polar section modulus Z<sub>p</sub> of a hollow circular shaft of outer diameter D<sub>o</sub> and inner diameter D<sub>i</sub> is",
+   "fig": null,
+   "opts": [
+    "π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/(32 D<sub>o</sub>)",
+    "π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/(16 D<sub>o</sub>)",
+    "π(D<sub>o</sub><sup>3</sup> − D<sub>i</sub><sup>3</sup>)/16",
+    "π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/(16 D<sub>i</sub>)"
+   ],
+   "ans": "(B) π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/(16 D<sub>o</sub>)",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Z<sub>p</sub> = J / r<sub>max</sub>, where r<sub>max</sub> is the outer radius, because the shear stress is greatest at the outer surface.",
+    "J = π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/32 and r<sub>max</sub> = D<sub>o</sub>/2",
+    "Z<sub>p</sub> = J/(D<sub>o</sub>/2) = <b>π(D<sub>o</sub><sup>4</sup> − D<sub>i</sub><sup>4</sup>)/(16 D<sub>o</sub>)</b>, so T = τ<sub>max</sub> Z<sub>p</sub>.",
+    "<b>Exam tip:</b> Option (C) is the classic trap: the section modulus of a hollow shaft is NOT the difference of the solid moduli (πD<sub>o</sub><sup>3</sup>/16 − πD<sub>i</sub><sup>3</sup>/16), because both parts must be referred to the same outer radius."
+   ]
+  },
+  {
+   "text": "A solid shaft of 60 mm diameter runs at 180 rpm. If the maximum shear stress is limited to 50 MPa, the power it can transmit (in kW) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "39.97 (accept 39.7 to 40.2)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Torque capacity from the torsion formula, then P = 2πNT/60.",
+    "T = π d<sup>3</sup> τ/16 = π × 60<sup>3</sup> × 50/16 = 2.1206 × 10<sup>6</sup> N·mm = 2120.6 N·m",
+    "P = 2π × 180 × 2120.6/60 = 39 972 W = <b>39.97 kW</b>",
+    "<b>Exam tip:</b> Keep units straight: T in N·m and N in rpm give P in watts. A slip with N·mm makes the answer 1000 times too large."
+   ]
+  },
+  {
+   "text": "A solid steel shaft must transmit 75 kW at 300 rpm. The shear stress must not exceed 60 MPa and the angle of twist must not exceed 0.25° per metre length (G = 80 GPa). The minimum shaft diameter (in mm) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "91.4 (accept 91.0 to 91.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Design for strength and for stiffness separately; the larger diameter satisfies both.",
+    "T = 60P/(2πN) = 60 × 75 000/(2π × 300) = 2387.3 N·m",
+    "Strength: d<sup>3</sup> = 16T/(πτ) = 16 × 2.3873 × 10<sup>6</sup>/(π × 60) → d = 58.7 mm",
+    "Stiffness: θ/L = 0.25° per m = 4.363 × 10<sup>−6</sup> rad/mm = T/(GJ) → J = 2.3873 × 10<sup>6</sup>/(80 000 × 4.363 × 10<sup>−6</sup>) = 6.839 × 10<sup>6</sup> mm<sup>4</sup>",
+    "d<sup>4</sup> = 32J/π → d = <b>91.4 mm</b>. Stiffness governs.",
+    "<b>Exam tip:</b> Long transmission shafts are usually stiffness-limited. Always convert the twist limit to radians per mm before using T/J = Gθ/L."
+   ]
+  },
+  {
+   "text": "The stepped steel shaft ABC shown is fixed at A. AB is 50 mm in diameter and 1.0 m long; BC is 30 mm in diameter and 0.5 m long. Torques of 1.5 kN·m at B and 0.5 kN·m at C act in the same sense. The maximum shear stress in the shaft is",
+   "fig": "d11p_q4.png",
+   "opts": [
+    "81.5 MPa",
+    "61.1 MPa",
+    "94.3 MPa",
+    "377.3 MPa"
+   ],
+   "ans": "(C) 94.3 MPa",
+   "sfig": "d11p_s4.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Shafts in series: find the internal torque in each segment from the part to the right of a cut, then apply τ = 16T/(πd<sup>3</sup>) segment by segment.",
+    "Segment BC: T<sub>BC</sub> = 0.5 kN·m → τ = 16 × 0.5 × 10<sup>6</sup>/(π × 30<sup>3</sup>) = <b>94.3 MPa</b>",
+    "Segment AB: T<sub>AB</sub> = 1.5 + 0.5 = 2.0 kN·m → τ = 16 × 2 × 10<sup>6</sup>/(π × 50<sup>3</sup>) = 81.5 MPa",
+    "So the thin segment BC governs: τ<sub>max</sub> = <b>94.3 MPa</b>. (With G = 80 GPa, the twist at C is θ<sub>AB</sub> + θ<sub>BC</sub> = 0.0407 + 0.0393 = 0.0800 rad = 4.59°.)",
+    "<b>Exam tip:</b> The largest torque does not always give the largest stress. Compare T/d<sup>3</sup> for each segment."
+   ]
+  },
+  {
+   "text": "A composite shaft is made of a solid steel core of 40 mm diameter rigidly bonded inside a brass tube of 60 mm outer diameter, as shown. The shaft carries a torque of 2 kN·m. With G<sub>steel</sub> = 80 GPa and G<sub>brass</sub> = 40 GPa, the maximum shear stress in the brass (in MPa) is ______",
+   "fig": "d11p_q5.png",
+   "opts": null,
+   "ans": "39.38 (accept 39.0 to 39.8)",
+   "sfig": "d11p_s5.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Shafts in parallel (statically indeterminate): both parts twist through the same angle, so torque divides in proportion to the torsional rigidity GJ.",
+    "J<sub>s</sub> = π × 40<sup>4</sup>/32 = 2.513 × 10<sup>5</sup> mm<sup>4</sup>; J<sub>b</sub> = π(60<sup>4</sup> − 40<sup>4</sup>)/32 = 1.021 × 10<sup>6</sup> mm<sup>4</sup>",
+    "G<sub>s</sub>J<sub>s</sub> = 2.011 × 10<sup>10</sup>, G<sub>b</sub>J<sub>b</sub> = 4.084 × 10<sup>10</sup> N·mm<sup>2</sup> → T<sub>b</sub> = 2 × 4.084/6.095 = 1.340 kN·m, T<sub>s</sub> = 0.660 kN·m",
+    "τ<sub>b,max</sub> = T<sub>b</sub> × 30/J<sub>b</sub> = 1.340 × 10<sup>6</sup> × 30/1.021 × 10<sup>6</sup> = <b>39.38 MPa</b> (steel: 0.660 × 10<sup>6</sup> × 20/2.513 × 10<sup>5</sup> = 52.5 MPa)",
+    "<b>Exam tip:</b> Shear strain is continuous across the bond, but shear stress jumps at the interface by the ratio G<sub>s</sub>/G<sub>b</sub> (here 52.5 → 26.3 MPa)."
+   ]
+  },
+  {
+   "text": "A shaft section carries a bending moment of 2 kN·m and a torque of 1.5 kN·m. The equivalent bending moment (maximum principal stress theory) is",
+   "fig": null,
+   "opts": [
+    "2.25 kN·m",
+    "2.50 kN·m",
+    "1.75 kN·m",
+    "3.50 kN·m"
+   ],
+   "ans": "(A) 2.25 kN·m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Combined bending and torsion: M<sub>e</sub> = [M + √(M<sup>2</sup> + T<sup>2</sup>)]/2 and T<sub>e</sub> = √(M<sup>2</sup> + T<sup>2</sup>).",
+    "T<sub>e</sub> = √(2<sup>2</sup> + 1.5<sup>2</sup>) = 2.5 kN·m",
+    "M<sub>e</sub> = (2 + 2.5)/2 = <b>2.25 kN·m</b>",
+    "<b>Exam tip:</b> 2.50 kN·m is T<sub>e</sub>, which goes with the maximum shear stress theory. This topic returns in detail with shaft design."
+   ]
+  },
+  {
+   "text": "The surface of a solid 80 mm diameter shaft running at 500 rpm carries a strain gauge inclined at 45° to the shaft axis, as shown. Under steady torque the gauge reads a tensile strain of 200 × 10<sup>−6</sup>. With G = 80 GPa, the power transmitted (in kW) is ______",
+   "fig": "d11p_q7.png",
+   "opts": null,
+   "ans": "168.4 (accept 167.5 to 169.3)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> In pure torsion the surface element is in pure shear, so the principal strains at ±45° are ±γ/2.",
+    "γ = 2ε<sub>45</sub> = 2 × 200 × 10<sup>−6</sup> = 4 × 10<sup>−4</sup>; τ = Gγ = 80 000 × 4 × 10<sup>−4</sup> = 32 MPa",
+    "T = πd<sup>3</sup>τ/16 = π × 80<sup>3</sup> × 32/16 = 3.217 × 10<sup>6</sup> N·mm = 3217 N·m",
+    "P = 2π × 500 × 3217/60 = <b>168.4 kW</b>",
+    "<b>Exam tip:</b> Using γ = ε<sub>45</sub> (forgetting the factor 2) halves the answer to 84.2 kW, a favourite distractor."
+   ]
+  },
+  {
+   "text": "A thin cylinder of internal diameter 1 m and wall thickness 12 mm carries an internal pressure of 1.5 MPa (E = 200 GPa, ν = 0.3). The increase in its diameter is",
+   "fig": "d11p_q8.png",
+   "opts": [
+    "0.313 mm",
+    "0.219 mm",
+    "0.359 mm",
+    "0.266 mm"
+   ],
+   "ans": "(D) 0.266 mm",
+   "sfig": "d11p_s8.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The hoop strain controls the diameter change: ε<sub>h</sub> = (σ<sub>h</sub> − νσ<sub>l</sub>)/E, with σ<sub>h</sub> = pd/2t and σ<sub>l</sub> = pd/4t.",
+    "σ<sub>h</sub> = 1.5 × 1000/(2 × 12) = 62.5 MPa; σ<sub>l</sub> = 31.25 MPa",
+    "ε<sub>h</sub> = (62.5 − 0.3 × 31.25)/200 000 = 2.656 × 10<sup>−4</sup>",
+    "Δd = ε<sub>h</sub> d = 2.656 × 10<sup>−4</sup> × 1000 = <b>0.266 mm</b>",
+    "<b>Exam tip:</b> 0.313 mm ignores the Poisson effect of the longitudinal stress. In compact form, Δd = (pd<sup>2</sup>/4tE)(2 − ν)."
+   ]
+  },
+  {
+   "text": "A thin spherical shell of 1.2 m internal diameter and 8 mm wall thickness is subjected to an internal pressure of 1.6 MPa (E = 200 GPa, ν = 0.3). The increase in its internal volume (in cm<sup>3</sup>) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "570 (accept 565 to 575)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> In a thin sphere the wall stress pd/4t acts equally in all directions, so ε<sub>v</sub> = 3ε = 3(σ/E)(1 − ν).",
+    "σ = 1.6 × 1200/(4 × 8) = 60 MPa",
+    "ε<sub>v</sub> = 3 × (60/200 000) × 0.7 = 6.3 × 10<sup>−4</sup>",
+    "V = πd<sup>3</sup>/6 = π × 1.2<sup>3</sup>/6 = 0.9048 m<sup>3</sup> → ΔV = 6.3 × 10<sup>−4</sup> × 0.9048 = 5.70 × 10<sup>−4</sup> m<sup>3</sup> = <b>570 cm<sup>3</sup></b>",
+    "<b>Exam tip:</b> 1 m<sup>3</sup> = 10<sup>6</sup> cm<sup>3</sup> = 1000 litres. Unit conversion is where most wrong answers in this question come from."
+   ]
+  },
+  {
+   "text": "A thin cylindrical air receiver of 2 m diameter is made of 20 mm plate. The allowable tensile stress is 120 MPa, the longitudinal joint efficiency is 80 % and the circumferential joint efficiency is 50 %. The maximum safe internal pressure is",
+   "fig": null,
+   "opts": [
+    "2.40 MPa",
+    "1.20 MPa",
+    "1.92 MPa",
+    "3.84 MPa"
+   ],
+   "ans": "(C) 1.92 MPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The hoop stress is resisted by the longitudinal joint, the longitudinal stress by the circumferential joint. Check both and take the smaller pressure.",
+    "Hoop: pd/(2t) ≤ σ η<sub>l</sub> → p = 2 × 20 × 120 × 0.8/2000 = <b>1.92 MPa</b>",
+    "Longitudinal: pd/(4t) ≤ σ η<sub>c</sub> → p = 4 × 20 × 120 × 0.5/2000 = 2.40 MPa",
+    "Safe pressure = smaller value = <b>1.92 MPa</b>",
+    "<b>Exam tip:</b> Matching the joint with the stress it carries is the whole question: longitudinal joint ↔ hoop stress, circumferential joint ↔ longitudinal stress."
+   ]
+  },
+  {
+   "text": "A strain gauge fixed circumferentially on a closed thin cylinder (internal diameter 600 mm, wall thickness 6 mm) reads a hoop strain of 250 × 10<sup>−6</sup> when the cylinder is pressurised. With E = 200 GPa and ν = 0.3, the internal pressure (in MPa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.18 (accept 1.17 to 1.19)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> ε<sub>h</sub> = (σ<sub>h</sub> − νσ<sub>l</sub>)/E = (pd/4tE)(2 − ν).",
+    "p = 4tEε<sub>h</sub>/[d(2 − ν)] = 4 × 6 × 200 000 × 250 × 10<sup>−6</sup>/(600 × 1.7)",
+    "p = 1200/1020 = <b>1.18 MPa</b>",
+    "<b>Exam tip:</b> Ignoring Poisson's ratio would give 1.00 MPa; the longitudinal stress reduces the hoop strain, so the true pressure is higher."
+   ]
+  },
+  {
+   "text": "The spring system shown carries a load of 250 N. Spring 1 (k<sub>1</sub> = 10 N/mm) is connected in series with springs 2 (k<sub>2</sub> = 20 N/mm) and 3 (k<sub>3</sub> = 30 N/mm), which act in parallel. The deflection of the load is",
+   "fig": "d11p_q12.png",
+   "opts": [
+    "45.8 mm",
+    "4.2 mm",
+    "25.0 mm",
+    "30.0 mm"
+   ],
+   "ans": "(D) 30.0 mm",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Parallel springs share the deflection (stiffnesses add); series springs share the load (flexibilities add).",
+    "Parallel pair: k<sub>23</sub> = 20 + 30 = 50 N/mm",
+    "Series with k<sub>1</sub>: 1/k = 1/10 + 1/50 → k = 8.33 N/mm",
+    "δ = 250/8.33 = <b>30.0 mm</b> (= 25 mm in spring 1 + 5 mm in the parallel pair)",
+    "<b>Exam tip:</b> 45.8 mm treats all three in series and 4.2 mm all three in parallel. Read the connection from the figure before writing any formula."
+   ]
+  },
+  {
+   "text": "A close-coiled helical spring of 10 mm wire and 60 mm mean coil diameter (G = 80 GPa) must deflect 25 mm under an axial load of 800 N. The number of active turns required (whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15 (calculated 14.47; round up)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> δ = 8WD<sup>3</sup>n/(Gd<sup>4</sup>), so n = Gd<sup>4</sup>δ/(8WD<sup>3</sup>).",
+    "n = 80 000 × 10<sup>4</sup> × 25/(8 × 800 × 60<sup>3</sup>) = 2 × 10<sup>10</sup>/1.3824 × 10<sup>9</sup> = 14.47",
+    "Turns must be whole numbers, so provide <b>15 active turns</b>.",
+    "<b>Exam tip:</b> Rounding the turns up makes the spring slightly softer (more deflection), which is usually the safe side for a deflection requirement; stress is unaffected by n."
+   ]
+  },
+  {
+   "text": "The Wahl correction factor for a close-coiled helical spring with a spring index of 6 is closest to",
+   "fig": null,
+   "opts": [
+    "1.253",
+    "1.083",
+    "1.150",
+    "1.333"
+   ],
+   "ans": "(A) 1.253",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> K<sub>W</sub> = (4C − 1)/(4C − 4) + 0.615/C combines the curvature and direct-shear corrections.",
+    "K<sub>W</sub> = 23/20 + 0.615/6 = 1.150 + 0.1025 = <b>1.253</b>",
+    "<b>Exam tip:</b> 1.083 is the direct-shear factor alone (1 + 0.5/C) and 1.150 is only the first term. A smaller index C means a larger correction."
+   ]
+  },
+  {
+   "text": "A close-coiled helical spring of stiffness k is cut into three equal lengths, and the three pieces are placed side by side in parallel to carry a load. The stiffness of the arrangement is",
+   "fig": null,
+   "opts": [
+    "3k",
+    "9k",
+    "k/3",
+    "k/9"
+   ],
+   "ans": "(B) 9k",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> k = Gd<sup>4</sup>/(8D<sup>3</sup>n) ∝ 1/n. Each piece has n/3 turns, so each piece has stiffness 3k.",
+    "Three pieces in parallel: k<sub>eq</sub> = 3k + 3k + 3k = <b>9k</b>",
+    "<b>Exam tip:</b> The same rule holds for any spring or elastic bar: stiffness is inversely proportional to the active length."
+   ]
+  }
+ ]
+}

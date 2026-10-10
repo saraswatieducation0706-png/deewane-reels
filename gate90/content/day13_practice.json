@@ -1,0 +1,274 @@
+{
+ "day": 13,
+ "subject": "Strength of Materials",
+ "topic": "Columns & Energy Methods",
+ "days_to_gate": 96,
+ "summary": "Euler buckling and effective lengths, slenderness ratio, Rankine's formula, strain energy (axial, bending, torsion, impact), Castigliano's theorem, and strain gauges and rosettes",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Theory of Machines, Mechanism Analysis",
+ "questions": [
+  {
+   "text": "The steel column shown is a tube of 50 mm outer and 40 mm inner diameter, 2.5 m long, with both ends pinned. For E = 200 GPa, its Euler buckling load is nearly",
+   "fig": "d13p_q1.png",
+   "opts": [
+    "96.9 kN",
+    "57.2 kN",
+    "228.8 kN",
+    "14.3 kN"
+   ],
+   "ans": "(B) 57.2 kN",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Euler load P<sub>cr</sub> = π²EI/L<sub>e</sub>², with L<sub>e</sub> = L for both ends pinned.",
+    "I = π(D⁴ − d⁴)/64 = π(50⁴ − 40⁴)/64 = <b>1.811 × 10⁵ mm⁴</b>",
+    "P<sub>cr</sub> = π² × 200000 × 1.811 × 10⁵ / 2500² = 57 207 N = <b>57.2 kN</b>",
+    "<b>Exam tip:</b> 228.8 kN treats the ends as fixed (L<sub>e</sub> = L/2) and 14.3 kN as fixed at one end with the other end free (L<sub>e</sub> = 2L). Read the end conditions first."
+   ]
+  },
+  {
+   "text": "The aluminium strut shown (40 mm × 25 mm rectangular section, 0.8 m long) is fixed at its base and its top end is not restrained. For E = 70 GPa, the Euler buckling load (in kN, round off to two decimal places) is ______",
+   "fig": "d13p_q2.png",
+   "opts": null,
+   "ans": "14.06 (accept 13.95 to 14.15)",
+   "sfig": "d13p_s2.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> One end fixed, other end free → L<sub>e</sub> = 2L. Buckling occurs about the axis with the least I.",
+    "L<sub>e</sub> = 2 × 0.8 = <b>1.6 m</b>; I<sub>min</sub> = 40 × 25³/12 = <b>52 083 mm⁴</b>",
+    "P<sub>cr</sub> = π² × 70000 × 52 083 / 1600² = 14 056 N = <b>14.06 kN</b>",
+    "<b>Exam tip:</b> The deflected shape of a column fixed at the base and free at the top is one quarter of a sine wave; its mirror image completes the half wave of a pinned column of length 2L (figure)."
+   ]
+  },
+  {
+   "text": "A long steel column with both ends pinned has a slenderness ratio of 120. For E = 210 GPa, the Euler critical (crippling) stress is nearly",
+   "fig": null,
+   "opts": [
+    "45.8 MPa",
+    "575.7 MPa",
+    "143.9 MPa",
+    "287.9 MPa"
+   ],
+   "ans": "(C) 143.9 MPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> σ<sub>cr</sub> = P<sub>cr</sub>/A = π²EI/(AL<sub>e</sub>²) = π²E/(L<sub>e</sub>/k)², since I = Ak².",
+    "σ<sub>cr</sub> = π² × 210000 / 120² = 2 072 617 / 14 400 = <b>143.9 MPa</b>",
+    "This is below the usual proportional limit of structural steel (about 200 to 250 MPa), so Euler's formula is valid here.",
+    "<b>Exam tip:</b> 45.8 MPa uses π instead of π². Critical stress depends only on E and slenderness, not on the absolute size."
+   ]
+  },
+  {
+   "text": "A solid cast-iron column of 100 mm diameter and 3 m length has both ends pinned. Using Rankine's formula with crushing stress σ<sub>c</sub> = 550 MPa and Rankine constant a = 1/1600, the crippling load (in kN) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "432.0 (accept 429 to 435)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Rankine: P = σ<sub>c</sub>A / [1 + a(L<sub>e</sub>/k)²]. It blends crushing (short columns) and buckling (long columns).",
+    "A = π × 100²/4 = <b>7854 mm²</b>; k = d/4 = <b>25 mm</b>; L<sub>e</sub>/k = 3000/25 = <b>120</b>",
+    "1 + a(L<sub>e</sub>/k)² = 1 + 14 400/1600 = <b>10</b>",
+    "P = 550 × 7854 / 10 = 431 969 N = <b>432.0 kN</b>",
+    "<b>Exam tip:</b> For a solid circle k = d/4; for a rectangle k<sub>min</sub> = b/√12. The crushing load alone (4320 kN) is ten times higher."
+   ]
+  },
+  {
+   "text": "For the same cross-sectional area, material and length, which section gives a column the highest Euler buckling load?",
+   "fig": null,
+   "opts": [
+    "a solid square",
+    "a solid circle",
+    "a solid rectangle with depth twice the width",
+    "a thin-walled hollow circular tube"
+   ],
+   "ans": "(D) a thin-walled hollow circular tube",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> P<sub>cr</sub> = π²EAk<sub>min</sub>²/L<sub>e</sub>². With A fixed, the section with the largest least radius of gyration wins.",
+    "Pushing material away from the centroid raises I = Ak² without adding area. A tube does this equally about every axis, so it has no weak axis.",
+    "Rectangles buckle about their weak axis; a solid circle or square keeps material near the centroid.",
+    "<b>Answer: (D) the hollow circular tube.</b>",
+    "<b>Exam tip:</b> This is why scaffold poles and many struts are tubes. Very thin walls can, however, fail by local buckling."
+   ]
+  },
+  {
+   "text": "A solid steel shaft of 50 mm diameter and 1.2 m length transmits a torque of 1.5 kN·m. For G = 80 GPa, the strain energy stored in the shaft (in J, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "27.50 (accept 27.3 to 27.7)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Torsional strain energy U = T²L/(2GJ) (area under the linear T–θ graph).",
+    "J = π × 50⁴/32 = <b>6.136 × 10⁵ mm⁴</b>",
+    "U = (1.5 × 10⁶)² × 1200 / (2 × 80000 × 6.136 × 10⁵) = 27 502 N·mm = <b>27.50 J</b>",
+    "<b>Exam tip:</b> Equivalent form: U = (τ<sub>max</sub>²/4G) × volume for a solid shaft. Keep units in N and mm, then divide by 1000 for J."
+   ]
+  },
+  {
+   "text": "An axial load of 30 kN is applied suddenly (no drop height) to a steel bar of cross-sectional area 600 mm² and length 1.5 m. For E = 200 GPa, the maximum stress and the maximum elongation are",
+   "fig": null,
+   "opts": [
+    "100 MPa and 0.75 mm",
+    "50 MPa and 0.375 mm",
+    "100 MPa and 0.375 mm",
+    "200 MPa and 1.5 mm"
+   ],
+   "ans": "(A) 100 MPa and 0.75 mm",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For a suddenly applied load, work done P·δ equals strain energy σ²AL/(2E), which gives σ = 2P/A (twice the static value).",
+    "σ = 2 × 30000/600 = <b>100 MPa</b>",
+    "δ = σL/E = 100 × 1500/200000 = <b>0.75 mm</b>",
+    "<b>Exam tip:</b> 50 MPa and 0.375 mm are the gradual-load values. A sudden load doubles both stress and elongation."
+   ]
+  },
+  {
+   "text": "A 500 N weight is dropped from a height of 20 mm onto the mid-span of the simply supported beam shown (span 2 m, EI = 200 kN·m²). Neglecting the beam's mass and any loss of energy, the maximum deflection at mid-span (in mm, round off to two decimal places) is ______",
+   "fig": "d13p_q8.png",
+   "opts": null,
+   "ans": "4.52 (accept 4.48 to 4.56)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Energy balance W(h + δ) = ½kδ², with beam stiffness k = W/δ<sub>st</sub>. This gives δ = δ<sub>st</sub>[1 + √(1 + 2h/δ<sub>st</sub>)].",
+    "δ<sub>st</sub> = WL³/(48EI) = 500 × 2000³ / (48 × 200 × 10⁹) = <b>0.4167 mm</b>",
+    "Impact factor = 1 + √(1 + 2 × 20/0.4167) = 1 + √97 = <b>10.85</b>",
+    "δ<sub>max</sub> = 10.85 × 0.4167 = <b>4.52 mm</b> (equivalent static load about 5.42 kN)",
+    "<b>Exam tip:</b> The same impact-factor formula works for bars, beams and springs. Only the static deflection changes."
+   ]
+  },
+  {
+   "text": "A cantilever of length L and flexural rigidity EI carries a uniformly distributed load w over its whole length. The strain energy stored due to bending is",
+   "fig": null,
+   "opts": [
+    "w²L⁵/(20EI)",
+    "w²L⁵/(8EI)",
+    "w²L⁵/(40EI)",
+    "w²L⁵/(48EI)"
+   ],
+   "ans": "(C) w²L⁵/(40EI)",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> U = ∫ M²/(2EI) dx over the length.",
+    "From the loaded tip, M = wx²/2, so M² = w²x⁴/4",
+    "U = ∫<sub>0</sub><sup>L</sup> w²x⁴/(8EI) dx = w²L⁵/(40EI)",
+    "<b>Answer: (C) w²L⁵/(40EI).</b>",
+    "<b>Exam tip:</b> Compare an end point load P: M = Px gives U = P²L³/(6EI). Integrate M² over the length; do not just multiply the end moment by the length."
+   ]
+  },
+  {
+   "text": "The stepped cantilever ABC shown is fixed at A. Portion AB (1 m) has flexural rigidity 2EI and portion BC (1 m) has EI, with EI = 600 kN·m². Using Castigliano's theorem, the deflection of the end C under the 5 kN load (in mm, round off to two decimal places) is ______",
+   "fig": "d13p_q10.png",
+   "opts": null,
+   "ans": "12.50 (accept 12.4 to 12.6)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> δ<sub>C</sub> = ∂U/∂P = ∫ M(∂M/∂P) dx/EI, taken segment by segment with each segment's own rigidity.",
+    "Measure x from C: M = Px, ∂M/∂P = x.",
+    "BC (0 to 1 m, EI): ∫ Px² dx/EI = P/(3EI)",
+    "AB (1 to 2 m, 2EI): ∫ Px² dx/(2EI) = P(8 − 1)/(6EI) = 7P/(6EI)",
+    "δ<sub>C</sub> = (1/3 + 7/6)P/EI = 1.5 × 5/600 = 0.0125 m = <b>12.50 mm</b>",
+    "<b>Exam tip:</b> A uniform cantilever with EI throughout would give P(2)³/(3EI) = 22.2 mm. Stiffening the root section matters most because M is largest there."
+   ]
+  },
+  {
+   "text": "A propped cantilever of span L (fixed at A, propped at B at the same level) carries a UDL w over the whole span. Using the theorem of least work (Castigliano), the reaction at the prop B is",
+   "fig": null,
+   "opts": [
+    "5wL/8",
+    "3wL/8",
+    "wL/2",
+    "5wL/16"
+   ],
+   "ans": "(B) 3wL/8",
+   "sfig": "d13p_s11.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Treat the prop reaction R as redundant. Since the prop does not move, ∂U/∂R = 0.",
+    "From B: M = Rx − wx²/2, ∂M/∂R = x",
+    "∫<sub>0</sub><sup>L</sup> (Rx − wx²/2)x dx = 0 → RL³/3 − wL⁴/8 = 0",
+    "R = <b>3wL/8</b>; then R<sub>A</sub> = 5wL/8 and M<sub>A</sub> = wL²/8 (FBD below).",
+    "<b>Exam tip:</b> 5wL/8 is the fixed-end reaction, a common swap. 5P/16 is the prop reaction for a central point load."
+   ]
+  },
+  {
+   "text": "In the wall bracket shown, the inclined bar AC and the horizontal bar BC are pin-jointed at C and pinned to the wall at A and B (A is 1.2 m above B; BC = 1.6 m). Both bars have cross-sectional area 400 mm² and E = 200 GPa. Using Castigliano's theorem, the vertical deflection of C under the 30 kN load (in mm, round off to two decimal places) is ______",
+   "fig": "d13p_q12.png",
+   "opts": null,
+   "ans": "3.15 (accept 3.12 to 3.18)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For a pin-jointed frame, δ = Σ F(∂F/∂P)L/(AE) = Σ F²L/(PAE) when every F is proportional to P.",
+    "AC = √(1.6² + 1.2²) = <b>2.0 m</b>. Joint C: F<sub>AC</sub> × 1.2/2.0 = 30 → F<sub>AC</sub> = <b>50 kN (tension)</b>; F<sub>BC</sub> = 50 × 1.6/2.0 = <b>40 kN (compression)</b>",
+    "δ = (50000² × 2000 + 40000² × 1600) / (30000 × 400 × 200000)",
+    "δ = (5.0 × 10¹² + 2.56 × 10¹²)/(2.4 × 10¹²) = <b>3.15 mm</b>",
+    "<b>Exam tip:</b> Signs do not matter in F²L terms, but they do when you use a unit load in a different direction from the real load."
+   ]
+  },
+  {
+   "text": "A 45° rectangular rosette reads ε<sub>0</sub> = 300 × 10⁻⁶, ε<sub>45</sub> = 650 × 10⁻⁶ and ε<sub>90</sub> = 500 × 10⁻⁶ (angles from the x-axis). The principal strains are",
+   "fig": null,
+   "opts": [
+    "650 × 10⁻⁶ and 300 × 10⁻⁶",
+    "1057.6 × 10⁻⁶ and −257.6 × 10⁻⁶",
+    "909.9 × 10⁻⁶ and −109.9 × 10⁻⁶",
+    "669.3 × 10⁻⁶ and 130.7 × 10⁻⁶"
+   ],
+   "ans": "(D) 669.3 × 10⁻⁶ and 130.7 × 10⁻⁶",
+   "sfig": "d13p_s13.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For a 0°–45°–90° rosette: ε<sub>x</sub> = ε<sub>0</sub>, ε<sub>y</sub> = ε<sub>90</sub>, γ<sub>xy</sub> = 2ε<sub>45</sub> − ε<sub>0</sub> − ε<sub>90</sub>.",
+    "γ<sub>xy</sub> = 1300 − 300 − 500 = <b>500 × 10⁻⁶</b>",
+    "Centre = (300 + 500)/2 = 400; radius = √[((300 − 500)/2)² + (500/2)²] = √(100² + 250²) = <b>269.3</b>",
+    "ε<sub>1,2</sub> = 400 ± 269.3 = <b>669.3 × 10⁻⁶ and 130.7 × 10⁻⁶</b>; tan 2θ<sub>p</sub> = 500/(−200) gives ε<sub>1</sub> at 55.9° from the x-axis.",
+    "<b>Exam tip:</b> Gauges measure normal strain only. Shear strain always comes from the combination of the three readings, never from the 45° gauge alone."
+   ]
+  },
+  {
+   "text": "A 60° delta rosette (figure) on an aluminium plate reads ε<sub>a</sub> = 800 × 10⁻⁶, ε<sub>b</sub> = 200 × 10⁻⁶ and ε<sub>c</sub> = 500 × 10⁻⁶. For E = 70 GPa and ν = 0.33, the major principal stress (in MPa, round off to two decimal places) is ______",
+   "fig": "d13p_q14.png",
+   "opts": null,
+   "ans": "70.47 (accept 70.0 to 70.9)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For a 0°–60°–120° rosette: centre = (ε<sub>a</sub> + ε<sub>b</sub> + ε<sub>c</sub>)/3 and radius = √[(ε<sub>a</sub> − centre)² + ((ε<sub>b</sub> − ε<sub>c</sub>)/√3)²].",
+    "Centre = (800 + 200 + 500)/3 = <b>500</b>; radius = √(300² + (−300/√3)²) = √(90 000 + 30 000) = <b>346.4</b>",
+    "ε<sub>1</sub> = <b>846.4 × 10⁻⁶</b>, ε<sub>2</sub> = <b>153.6 × 10⁻⁶</b>",
+    "σ<sub>1</sub> = E(ε<sub>1</sub> + νε<sub>2</sub>)/(1 − ν²) = 70000 × (846.4 + 0.33 × 153.6) × 10⁻⁶ / 0.8911 = <b>70.47 MPa</b>",
+    "<b>Exam tip:</b> σ<sub>1</sub> ≠ Eε<sub>1</sub> (that gives 59.2 MPa). The Poisson coupling with ε<sub>2</sub> must be included."
+   ]
+  },
+  {
+   "text": "A single strain gauge is bonded on the surface of a shaft in pure torsion, at 45° to the shaft axis. It reads 400 × 10⁻⁶. For G = 80 GPa, the maximum shear stress at the surface is",
+   "fig": null,
+   "opts": [
+    "64 MPa",
+    "32 MPa",
+    "128 MPa",
+    "80 MPa"
+   ],
+   "ans": "(A) 64 MPa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Pure shear: the principal directions are at 45° to the axis, and ε<sub>45</sub> = γ/2 (the principal strain).",
+    "γ = 2 × 400 × 10⁻⁶ = <b>800 × 10⁻⁶</b>",
+    "τ = Gγ = 80000 × 800 × 10⁻⁶ = <b>64 MPa</b>",
+    "<b>Exam tip:</b> 32 MPa forgets that ε<sub>45</sub> is only half of γ. A gauge along the shaft axis would read zero in pure torsion."
+   ]
+  }
+ ]
+}
