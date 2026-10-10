@@ -1,4 +1,4 @@
-# Posting: GitHub hosting → Metricool → YouTube Shorts + Instagram Reels
+# Posting: GitHub hosting → Metricool → YouTube Shorts + Instagram Reels + Facebook Page
 
 Metricool only takes media from public URLs. Reels are hosted in the public GitHub repo
 `saraswatieducation0706-png/deewane-reels` (config `github_repo`) and served from raw.githubusercontent.com.
@@ -31,7 +31,7 @@ Check each with `curl -sI` → HTTP 200 before scheduling (allow ~1 min after pu
 - Drop (don't schedule) a reel if its slot falls less than `min_days_left_at_posting` (1 day) before the
   last date; list it in SUMMARY.md as "too close to last date to post".
 
-## 3. Create the post (one call per reel, both networks together)
+## 3. Create the post (one call per reel, all three networks together)
 
 `createScheduledPost` with `blogId` = config `metricool_blog_id`, `date` = slot as `YYYY-MM-DDTHH:MM:00+05:30`,
 and `info` JSON:
@@ -43,16 +43,24 @@ and `info` JSON:
   "media": ["<raw reel url>"],
   "videoThumbnailUrl": "<raw cover url>",
   "mediaAltText": [],
-  "providers": [{"network": "youtube"}, {"network": "instagram"}],
+  "providers": [{"network": "youtube"}, {"network": "instagram"}, {"network": "facebook"}],
   "publicationDate": {"dateTime": "YYYY-MM-DDTHH:MM:00", "timezone": "Asia/Calcutta"},
   "text": "<description from metadata.md — summary, key facts, official link, 3 DIG links, then hashtags>",
   "youtubeData": {"title": "<YouTube title, ≤ 95 chars, ends with #Shorts if room>", "type": "short",
                    "privacy": "public", "tags": ["<tag>", "..."], "category": "EDUCATION",
                    "madeForKids": false, "isAiGeneratedContent": false},
-  "instagramData": {"type": "REEL", "showReelOnFeed": true, "collaborators": [], "isAiGenerated": true}
+  "instagramData": {"type": "REEL", "showReelOnFeed": true, "collaborators": [], "isAiGenerated": true},
+  "facebookData": {"type": "POST", "title": "<YouTube title without #Shorts>"}
 }
 ```
 
+- Facebook Page (added 10 Oct 2026, Naveen's DIG Career Thrust page, Metricool facebookData id 881767725512382):
+  use `type: "POST"` (a video post), NOT `"REEL"` — Facebook's Reels API only accepts videos up to 90 s and
+  our reels run 95 s–3 min, so REEL would fail at publish time. Vertical video posts still play full-screen.
+  `title` = the YouTube title without "#Shorts". Same text and cover as the other networks.
+- If a network is disconnected in Metricool (getBrandSettings → networksData has no instagramData /
+  facebookData / youtubeData), schedule on the networks that are connected, and say at the top of SUMMARY.md
+  which network is disconnected so Naveen can reconnect it.
 - Instagram caption limit 2,200 characters and max 30 hashtags; keep the text under 2,000 characters.
 - YouTube tags: list of strings, total ≤ 450 characters.
 - `isAiGenerated: true` on Instagram (synthetic voice); `isAiGeneratedContent: false` on YouTube
@@ -67,10 +75,10 @@ and `info` JSON:
 
 When Naveen attached the notification PDF, don't use the slot queue: after upload and the 200 check, call
 `createScheduledPost` with `date` = now + 5 minutes (IST, next whole minute) and the same `publicationDate`,
-same `info` format as §3. Then confirm with `getScheduledPosts`. If it fails twice, give Naveen the MP4, cover
+same `info` format as §3 (YouTube + Instagram + Facebook). Then confirm with `getScheduledPosts`. If it fails twice, give Naveen the MP4, cover
 and metadata to post by hand.
 
 ## 4. Verify
 
-Call `getScheduledPosts` for the posting window and confirm every reel appears at its slot with both
-`youtube` and `instagram` providers. Put the result table in SUMMARY.md.
+Call `getScheduledPosts` for the posting window and confirm every reel appears at its slot with
+`youtube`, `instagram` and `facebook` providers. Put the result table in SUMMARY.md.
