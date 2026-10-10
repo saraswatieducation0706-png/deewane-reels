@@ -82,3 +82,35 @@ and metadata to post by hand.
 
 Call `getScheduledPosts` for the posting window and confirm every reel appears at its slot with
 `youtube`, `instagram` and `facebook` providers. Put the result table in SUMMARY.md.
+
+## 5. Nightly posting check (Naveen, 10 Oct 2026)
+
+Runs every night at ~22:20 IST, after the day's last post (22:00). Goal: every reel is live on **YouTube, Instagram
+and the Facebook Page**; anything that failed is re-posted the next day at an in-between time.
+
+1. `getBrandSettings` — note which networks are connected (`networksData`: youtubeData, instagramData, facebookData).
+2. `getScheduledPosts` (brandId 7269466, timezone Asia/Calcutta) from **now − 48 h to now** (results are large —
+   save to a file and parse with Python; the list includes already-published posts with per-network status).
+   Also fetch **now → now + 48 h** to know the times already booked.
+3. A post "failed" on a network when its provider status is `ERROR`, or it is still `PENDING`/`PUBLISHING`
+   more than 30 minutes after its publication time. Ignore drafts (`draft: true`) and test posts.
+4. Group by reel (same `media[0]` URL). A reel is **missing on a network** if NO post with that media URL has
+   `PUBLISHED` on that network (a later re-post may already have fixed it — then do nothing).
+   Skip a reel/network if a future post with the same media + network is already booked (re-post pending).
+   Skip a reel/network that already failed twice for the same network (≥ 2 ERRORs) — list it for Naveen to post
+   by hand instead of looping.
+   Skip job reels whose last date is less than 1 day after the new slot ("too close to last date").
+5. Re-post slots — **tomorrow**, at in-between times that never coincide with the regular slots
+   (10/12/14/16/18/20/22, GATE90 08:00) or anything already booked: try 11:00, 13:00, 15:00, 17:00, 19:00, 21:00,
+   then 11:30, 13:30, 15:30, 17:30, 19:30, 21:30, then 10:30, 12:30, 14:30, 16:30. A slot is free only if no
+   booked post is within 10 minutes of it. Oldest failures first.
+6. For each missing reel: `createScheduledPost` with **only the missing network(s)** in `providers`, same `media`,
+   `videoThumbnailUrl`, text and network data as the original post (from the getScheduledPosts record; for
+   Facebook use type "POST" if the reel is > 90 s, "REEL" otherwise — job reels are always "POST"). Remove any
+   "UNVERIFIED"/"could not verify" line from old captions. Keep `youtubeData` as is, but drop `notifySubscribers`.
+7. If a network is disconnected in step 1, still book the re-posts (Naveen usually reconnects quickly) but put
+   "RECONNECT <network> in Metricool" first in the report.
+8. Report: if anything failed, send Naveen a push notification (PushNotification tool via ToolSearch):
+   "Posting check: N reels re-booked for tomorrow (…list: reel → network → time). Reconnect: <network> (if any)."
+   If everything was published, finish with one line "All reels posted on YouTube, Instagram and Facebook" and do not
+   send a push.
