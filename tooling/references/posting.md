@@ -94,6 +94,13 @@ and the Facebook Page**; anything that failed is re-posted the next day at an in
    Also fetch **now → now + 48 h** to know the times already booked.
 3. A post "failed" on a network when its provider status is `ERROR`, or it is still `PENDING`/`PUBLISHING`
    more than 30 minutes after its publication time. Ignore drafts (`draft: true`) and test posts.
+   **NEVER post a reel twice on the same network (Naveen, 11 Oct 2026).** If the provider has a `publicUrl` / video id,
+   or `detailedStatus` says "published with some warnings" (e.g. "Could not upload video thumbnail"), the reel IS live
+   on that network — treat it as PUBLISHED and do not re-post. A thumbnail problem is fixed only on the existing video:
+   Metricool cannot change a published video's thumbnail, so list it in the push as "Fix thumbnail by hand:
+   <reel> → <publicUrl>" (cover = the post's `videoThumbnailUrl`). If an earlier run booked a re-post of a reel that is
+   already live on that network, set that booked post to `draft: true` with `updateScheduledPost` (full original
+   content, only `draft` changed) so it never publishes.
 4. Group by reel (same `media[0]` URL). A reel is **missing on a network** if NO post with that media URL has
    `PUBLISHED` on that network (a later re-post may already have fixed it — then do nothing).
    Skip a reel/network if a future post with the same media + network is already booked (re-post pending).
