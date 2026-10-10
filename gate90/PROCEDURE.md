@@ -11,7 +11,7 @@ This file is read by the scheduled runs. Never put API keys or tokens in this pu
 - Drive folder "GATE ME 90 Days Challenge" `1gWCUtcZa6GSIdXFOdpf2ZTmeWRM478JF`; toppers folder "04 Toppers" `1TI1IY4uL_sTo-GfPDYQegkETSnG8Fqnm`.
 - Public links: practice PDF `https://raw.githubusercontent.com/saraswatieducation0706-png/deewane-reels/main/gate90/pdfs/Day{N}_Practice.pdf`
   (Make.com posts it to Telegram at 8 AM — it MUST exist before 8 AM on Day N). Reels and covers go in `gate90/reels/`.
-- Metricool brand (blogId) `7269466`, timezone `Asia/Calcutta`. Networks: YouTube Short + Instagram Reel.
+- Metricool brand (blogId) `7269466`, timezone `Asia/Calcutta`. Networks: YouTube Short + Instagram Reel + Facebook Page (added 10 Oct 2026).
 - Status file: `gate90/status.json` (`produced`, `test_delivered`, `reel_scheduled` = lists of day numbers).
 - Course (₹1, enrol once, all 90 tests): https://iurlk.courses.store/909124 . Test windows: topic/weekly/revision tests open 7–9 PM (60 min to attempt), full mocks 7–11 PM (180 min).
 - Accuracy is checked by Naveen's team, but still verify every numerical answer with Python before building.
@@ -91,10 +91,11 @@ For each day N (row N of the Master Schedule):
    - Render, check 3 frames, then `tooling/scripts/thumbnail.py <dir>/DayN --org "GATE ME" --big "DAY N/90" --line "<Topic>" --badge "Test Tonight 7 PM" --badge2 "<X> Days to GATE"`.
 4. Copy `DayN_reel.mp4` + `DayN_cover.jpg` to `gate90/reels/`, delete reels of days older than N−3 from that folder,
    push, wait for raw URL HTTP 200.
-5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel, exactly like the Day 1
+5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel + Facebook Page, exactly like the Day 1
    post (title "Day N/90 | <Topic> | GATE ME 90 Days Challenge #Shorts" ≤ 95 chars; description = day line, topic,
    today's plan (free practice PDF on Telegram; test window 7–9 PM, mocks 7–11 PM, in the ₹1 "GATE ME 90 Days Challenge"
    course), "Comment GATE90 to get all the links", the course link if `course_link` is set in gate90/status.json, the 3
    links, hashtags; YouTube category EDUCATION, madeForKids
-   false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true). Confirm with `getScheduledPosts`.
+   false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true; Facebook `facebookData` {"type": "REEL", "title": <YouTube title without #Shorts>} —
+   use "POST" instead of "REEL" if the reel is longer than 90 s, Facebook's Reel limit). Confirm with `getScheduledPosts`.
 6. Add N to `reel_scheduled`, push. Push-notify Naveen only if something failed (reel not booked by 2 AM = he posts by hand).
