@@ -1,0 +1,267 @@
+{
+ "day": 14,
+ "subject": "Theory of Machines",
+ "topic": "Mechanism Analysis",
+ "days_to_gate": 95,
+ "summary": "Displacement, velocity and acceleration analysis of plane mechanisms (four-bar, slider-crank, quick-return), Grashof's law and inversions, instantaneous centres and Kennedy's theorem, and the Coriolis component",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Calculus",
+ "questions": [
+  {
+   "text": "A four-bar chain ABCD has AB = 25 mm, BC = 60 mm, CD = 45 mm and DA = 55 mm. To obtain a double-rocker mechanism, the link to be fixed is",
+   "fig": null,
+   "opts": [
+    "AB",
+    "BC",
+    "CD",
+    "DA"
+   ],
+   "ans": "(C) CD",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Grashof's law: if s + l ≤ p + q, at least one link can rotate fully. Which link is fixed then decides the type.",
+    "s + l = 25 + 60 = <b>85</b>; p + q = 45 + 55 = <b>100</b>. 85 &lt; 100, so the chain is Grashof.",
+    "Fix a link adjacent to the shortest link (BC or DA) → crank-rocker. Fix the shortest link AB → double-crank. Fix the link <b>opposite</b> the shortest (CD) → <b>double-rocker</b>.",
+    "<b>Exam tip:</b> In a Grashof chain the shortest link is the only one that can rotate fully. Find it first, then read off the type from where the fixed link sits relative to it."
+   ]
+  },
+  {
+   "text": "A planar mechanism has 8 links (including the frame), 10 binary turning pairs and 1 higher pair (cam contact). Its degree of freedom by the Kutzbach criterion is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Kutzbach (planar): F = 3(n − 1) − 2j − h, where j = lower pairs and h = higher pairs.",
+    "F = 3(8 − 1) − 2(10) − 1 = 21 − 20 − 1 = <b>0</b>",
+    "F = 0 means the assembly is a structure: no relative motion is possible.",
+    "<b>Exam tip:</b> F = 1 is a constrained mechanism, F = 0 a structure, F &lt; 0 a statically indeterminate (superstructure). Count each ternary joint as two binary joints."
+   ]
+  },
+  {
+   "text": "A planar mechanism has a total of 28 instantaneous centres. The number of links in it (including the frame) is",
+   "fig": null,
+   "opts": [
+    "7",
+    "8",
+    "14",
+    "56"
+   ],
+   "ans": "(B) 8",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> With n links there are N = n(n − 1)/2 instantaneous centres, one for each pair of links.",
+    "n(n − 1)/2 = 28 → n(n − 1) = 56 → <b>n = 8</b> (8 × 7 = 56)",
+    "<b>Exam tip:</b> 56 is n(n − 1), not n. Primary ICs are found by inspection (pins, sliders, rolling contacts); the rest come from Kennedy's theorem."
+   ]
+  },
+  {
+   "text": "Which of the following is NOT an inversion of the double slider-crank chain?",
+   "fig": null,
+   "opts": [
+    "Elliptical trammel",
+    "Scotch yoke",
+    "Oldham's coupling",
+    "Whitworth quick-return mechanism"
+   ],
+   "ans": "(D) Whitworth quick-return mechanism",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The double slider-crank chain has two turning pairs and two sliding pairs. Its three inversions are the elliptical trammel, the Scotch yoke and Oldham's coupling.",
+    "The Whitworth quick-return mechanism comes from the <b>single</b> slider-crank chain, by fixing the crank.",
+    "<b>Exam tip:</b> Single slider-crank inversions: engine (frame fixed), Whitworth / rotary engine (crank fixed), oscillating cylinder / slotted lever (connecting rod fixed), hand pump (slider fixed)."
+   ]
+  },
+  {
+   "text": "In the slider-crank mechanism shown, crank OA = 60 mm rotates at 50 rad/s and the connecting rod AP = 240 mm. When the crank is at 120° from the inner dead centre, the velocity of the slider P (in m/s) is ______",
+   "fig": "d14p_q5.png",
+   "opts": null,
+   "ans": "2.27 (accept 2.24 to 2.29)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Exact slider-crank velocity: v<sub>P</sub> = ωr sin(θ + φ)/cos φ, where sin φ = (r/l) sin θ.",
+    "n = l/r = 4; sin φ = sin 120°/4 = 0.2165 → <b>φ = 12.50°</b>",
+    "ωr = 50 × 0.06 = <b>3.0 m/s</b>",
+    "v<sub>P</sub> = 3.0 × sin 132.50°/cos 12.50° = 3.0 × 0.7373/0.9763 = <b>2.27 m/s</b>",
+    "<b>Exam tip:</b> The approximate form ωr(sin θ + sin 2θ/2n) gives 3.0 × (0.866 − 0.108) = 2.27 m/s here too. For 90° &lt; θ &lt; 180° the sin 2θ term is negative, so the slider is slower than ωr sin θ."
+   ]
+  },
+  {
+   "text": "In a slider-crank mechanism the crank is 100 mm, the connecting rod 500 mm and the crank turns uniformly at 40 rad/s. At the inner dead centre, the angular velocity of the connecting rod is",
+   "fig": null,
+   "opts": [
+    "8 rad/s",
+    "40 rad/s",
+    "200 rad/s",
+    "zero"
+   ],
+   "ans": "(A) 8 rad/s",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> ω<sub>AP</sub> = ω cos θ/√(n² − sin²θ), where n = l/r.",
+    "At θ = 0: ω<sub>AP</sub> = ω/n = 40/5 = <b>8 rad/s</b>",
+    "Equivalently, v<sub>A</sub> = 40 × 0.1 = 4 m/s is perpendicular to the rod, and the slider is momentarily at rest, so ω<sub>AP</sub> = 4/0.5 = 8 rad/s.",
+    "<b>Exam tip:</b> The rod's angular velocity is greatest at the dead centres (ω/n) and zero at θ = 90°. Don't mix this up with its angular acceleration, which is zero at the dead centres."
+   ]
+  },
+  {
+   "text": "In the four-bar mechanism shown (dimensions in mm), the crank O<sub>2</sub>A rotates at 15 rad/s counter-clockwise. Using the instantaneous centre method, the angular velocity of the rocker O<sub>4</sub>B (in rad/s) at this position is ______",
+   "fig": "d14p_q7.png",
+   "opts": null,
+   "ans": "3.15 (accept 3.12 to 3.18)",
+   "sfig": "d14p_s7.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The IC of the coupler (I<sub>13</sub>) lies where the line O<sub>2</sub>A extended meets the line O<sub>4</sub>B extended. Every point of AB moves as if rotating about it.",
+    "Coordinates (O<sub>2</sub> at the origin): A = (28.28, 28.28), B = (108.29, 69.51), O<sub>4</sub> = (100, 0)",
+    "Line O<sub>2</sub>A (y = x) meets line O<sub>4</sub>B at <b>I<sub>13</sub> = (113.54, 113.54)</b>, so IA = <b>120.57 mm</b> and IB = <b>44.34 mm</b>",
+    "v<sub>A</sub> = 15 × 40 = 600 mm/s → ω<sub>AB</sub> = 600/120.57 = <b>4.976 rad/s</b>",
+    "v<sub>B</sub> = 4.976 × 44.34 = 220.7 mm/s → ω<sub>4</sub> = 220.7/70 = <b>3.15 rad/s</b>",
+    "<b>Exam tip:</b> Short cut: ω<sub>4</sub>/ω<sub>2</sub> = (O<sub>2</sub>A/IA) × (IB/O<sub>4</sub>B). Always sketch the IC; it shows at a glance whether the answer is sensible."
+   ]
+  },
+  {
+   "text": "A slider moves radially outward along a link that rotates clockwise at constant speed. The Coriolis component of the slider's acceleration is directed",
+   "fig": null,
+   "opts": [
+    "perpendicular to the link, obtained by rotating the outward sliding velocity 90° clockwise",
+    "perpendicular to the link, obtained by rotating the outward sliding velocity 90° counter-clockwise",
+    "along the link, outward",
+    "along the link, toward the centre of rotation"
+   ],
+   "ans": "(A) perpendicular to the link, obtained by rotating the outward sliding velocity 90° clockwise",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Coriolis acceleration = 2<b>ω</b> × <b>v</b><sub>rel</sub>. Its magnitude is 2ωv and it is always perpendicular to the link.",
+    "Direction: rotate the relative (sliding) velocity vector through 90° in the same sense as ω.",
+    "ω is clockwise and v<sub>rel</sub> is outward, so rotate the outward direction 90° clockwise.",
+    "<b>Exam tip:</b> The centripetal term (rω², toward the centre) acts along the link. The Coriolis term never does."
+   ]
+  },
+  {
+   "text": "In a crank and slotted-lever quick-return mechanism, the distance between the fixed centres is 240 mm. For the ratio of the cutting-stroke time to the return-stroke time to be 1.5, the length of the crank (in mm) must be ______",
+   "fig": null,
+   "opts": null,
+   "ans": "74.16 (accept 73.8 to 74.5)",
+   "sfig": "d14p_s9.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> At the two extreme positions the slotted lever is tangent to the crank circle, so the crank is perpendicular to the lever. If β is the crank angle for the return stroke, cos(β/2) = r/d.",
+    "α/β = 1.5 and α + β = 360° → β = 360°/2.5 = <b>144°</b>, α = 216°",
+    "r = d cos(β/2) = 240 × cos 72° = 240 × 0.3090 = <b>74.16 mm</b>",
+    "<b>Exam tip:</b> The time ratio depends only on r/d. The lever length changes only the stroke length (2L·r/d)."
+   ]
+  },
+  {
+   "text": "A horizontal engine has a 75 mm crank and a 375 mm connecting rod, and runs at 900 rpm. The magnitude of the piston's acceleration at the outer dead centre (in m/s²) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "532.96 (accept 530 to 536)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Piston acceleration a = ω²r(cos θ + cos 2θ/n). At the dead centres this is exact: ω²r(1 + 1/n) at the IDC and ω²r(1 − 1/n) at the ODC.",
+    "ω = 2π × 900/60 = <b>94.25 rad/s</b>; ω² = 8882.6 s⁻²; n = 375/75 = 5",
+    "a<sub>ODC</sub> = 8882.6 × 0.075 × (1 − 1/5) = <b>532.96 m/s²</b>",
+    "<b>Exam tip:</b> The IDC value is larger: 8882.6 × 0.075 × 1.2 = 799.4 m/s². That is why the maximum inertia force acts at the inner dead centre."
+   ]
+  },
+  {
+   "text": "In the four-bar mechanism shown, O<sub>2</sub> is at the origin, A is at (30, 40) mm, B is at (130, 40) mm and O<sub>4</sub> is at (130, −60) mm. The crank O<sub>2</sub>A rotates counter-clockwise at a uniform 10 rad/s. The magnitude of the angular acceleration of the rocker O<sub>4</sub>B (in rad/s²) is ______",
+   "fig": "d14p_q11.png",
+   "opts": null,
+   "ans": "39 (accept 38.6 to 39.4)",
+   "sfig": "d14p_s11.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Velocity first, then acceleration: a<sub>B</sub> = a<sub>A</sub> + α<sub>3</sub> × AB − ω<sub>3</sub>²AB, and a<sub>B</sub> = α<sub>4</sub> × O<sub>4</sub>B − ω<sub>4</sub>²O<sub>4</sub>B.",
+    "Velocity: v<sub>A</sub> = 10k × (30, 40) = (−400, 300) mm/s. v<sub>B</sub> is horizontal (O<sub>4</sub>B is vertical), and AB is horizontal, so 300 + 100ω<sub>3</sub> = 0 → <b>ω<sub>3</sub> = −3 rad/s</b> (cw). Then v<sub>B</sub> = (−400, 0) = −100ω<sub>4</sub> → <b>ω<sub>4</sub> = 4 rad/s</b> (ccw).",
+    "a<sub>A</sub> = −ω₂²(30, 40) = (−3000, −4000) mm/s². a<sub>B</sub> = (−3000, −4000) + (0, 100α<sub>3</sub>) − 9(100, 0) = (−3900, −4000 + 100α<sub>3</sub>)",
+    "From the rocker: a<sub>B</sub> = α<sub>4</sub>k × (0, 100) − 16(0, 100) = (−100α<sub>4</sub>, −1600)",
+    "x-components: −100α<sub>4</sub> = −3900 → <b>α<sub>4</sub> = 39 rad/s²</b> (ccw); y-components give α<sub>3</sub> = 24 rad/s².",
+    "<b>Exam tip:</b> Choose components that kill unknowns. Here the rocker is vertical, so the x-equation contains only α<sub>4</sub>. Never drop the centripetal terms (ω²r) in an acceleration polygon."
+   ]
+  },
+  {
+   "text": "A crank-rocker mechanism has crank 30 mm, coupler 90 mm, rocker 80 mm and fixed link 100 mm. The minimum transmission angle during a revolution of the crank is nearly",
+   "fig": null,
+   "opts": [
+    "48.2°",
+    "99.6°",
+    "41.8°",
+    "60.0°"
+   ],
+   "ans": "(A) 48.2°",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Transmission angle μ = angle between the coupler and the rocker: cos μ = (b² + c² − BD²)/(2bc), where BD is the distance from the crank pin to the rocker pivot.",
+    "BD is smallest when the crank lies along the fixed link towards O<sub>4</sub>: BD = 100 − 30 = <b>70 mm</b>",
+    "cos μ<sub>min</sub> = (90² + 80² − 70²)/(2 × 90 × 80) = 9600/14400 = 0.6667 → <b>μ<sub>min</sub> = 48.2°</b>",
+    "When the crank points away from O<sub>4</sub>, BD = 130 mm and μ<sub>max</sub> = 99.6°.",
+    "<b>Exam tip:</b> Good designs keep μ between about 40° and 140°. The extremes always occur with the crank collinear with the fixed link."
+   ]
+  },
+  {
+   "text": "In the crank and slotted-lever mechanism shown, the crank O<sub>2</sub>A = 80 mm rotates counter-clockwise at 25 rad/s, and the lever pivot O<sub>1</sub> is 200 mm vertically below O<sub>2</sub>. When the crank is 30° above the horizontal, the angular velocity of the slotted lever (in rad/s) is ______",
+   "fig": "d14p_q13.png",
+   "opts": null,
+   "ans": "5.77 (accept 5.71 to 5.83)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The velocity of the crank pin A splits into a component along the lever (sliding velocity) and a component across it, which turns the lever: ω<sub>lever</sub> = v<sub>⊥</sub>/O<sub>1</sub>A.",
+    "A = (80 cos 30°, 200 + 80 sin 30°) = (69.28, 240) mm → O<sub>1</sub>A = <b>249.8 mm</b>; unit vector along the lever u = (0.2774, 0.9608)",
+    "v<sub>A</sub> = 25k × (69.28, 40) = (−1000, 1732) mm/s (magnitude 2000 mm/s)",
+    "Across the lever: v<sub>⊥</sub> = v<sub>A</sub> · (−0.9608, 0.2774) = 960.8 + 480.4 = <b>1441.2 mm/s</b>",
+    "ω<sub>lever</sub> = 1441.2/249.8 = <b>5.77 rad/s</b>; the sliding velocity is v<sub>A</sub> · u = 1386.8 mm/s",
+    "<b>Exam tip:</b> Both components are needed for the Coriolis term 2ω<sub>lever</sub>v<sub>s</sub> (here 2 × 5.77 × 1.387 = 16.0 m/s²)."
+   ]
+  },
+  {
+   "text": "In the offset slider-crank mechanism shown, crank r = 50 mm, connecting rod l = 150 mm and the line of stroke is offset by e = 60 mm from the crank centre. The stroke of the slider is nearly",
+   "fig": "d14p_q14.png",
+   "opts": [
+    "110.8 mm",
+    "100.0 mm",
+    "90.8 mm",
+    "120.0 mm"
+   ],
+   "ans": "(A) 110.8 mm",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The extreme slider positions occur when the crank and connecting rod are collinear: extended (distance l + r from O) and folded (l − r).",
+    "Outer: x<sub>1</sub> = √((l + r)² − e²) = √(200² − 60²) = <b>190.79 mm</b>",
+    "Inner: x<sub>2</sub> = √((l − r)² − e²) = √(100² − 60²) = <b>80.00 mm</b>",
+    "Stroke = 190.79 − 80.00 = <b>110.8 mm</b>",
+    "<b>Exam tip:</b> With an offset the stroke exceeds 2r and the two strokes take unequal crank angles, so the mechanism also gives a quick return."
+   ]
+  },
+  {
+   "text": "A slider-crank mechanism has crank OA = 50 mm and connecting rod AP = 200 mm. The crank rotates at 20 rad/s. When the crank is at 45° from the inner dead centre, the speed of the midpoint M of the connecting rod (in m/s) is ______ (round off to 3 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "0.848 (accept 0.839 to 0.856)",
+   "sfig": "d14p_s15.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The IC of the connecting rod (I) lies where line OA extended meets the vertical through P (the perpendicular to the slider's velocity). Every point's speed is ω<sub>AP</sub> × its distance from I.",
+    "A = (35.36, 35.36) mm; OP = 35.36 + √(200² − 35.36²) = <b>232.21 mm</b>; line OA is y = x, so <b>I = (232.21, 232.21)</b>",
+    "IA = 278.39 mm → ω<sub>AP</sub> = v<sub>A</sub>/IA = (20 × 50)/278.39 = <b>3.592 rad/s</b>",
+    "M = (133.78, 17.68) → IM = <b>236.03 mm</b> → v<sub>M</sub> = 3.592 × 236.03 = 847.8 mm/s = <b>0.848 m/s</b>",
+    "<b>Exam tip:</b> The slider's speed is v<sub>P</sub> = ω<sub>AP</sub> × IP = 3.592 × 232.21 = 0.834 m/s. A coupler point's speed is not the average of the speeds of its ends."
+   ]
+  }
+ ]
+}

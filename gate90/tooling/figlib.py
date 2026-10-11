@@ -121,3 +121,29 @@ def hdim(ax,x0,x1,y,t,above=True,fs=8):
 def ext(ax,x0,y0,x1,y1): ax.plot([x0,x1],[y0,y1],color=K,lw=0.5)
 def na_line(ax,x0,x1,y,txt="N.A.",fs=8):
     ax.plot([x0,x1],[y,y],color=K,lw=0.9,ls="-."); label(ax,x1+0.05,y,txt,fs=fs,ha="left")
+# --- mechanism helpers (added Day 14) ---
+def slider(ax,x,y,w=0.5,h=0.3,ang=0,fc="#dddddd"):
+    """slider block centred at (x,y), long side along angle ang (deg)"""
+    t=np.radians(ang); u=np.array([np.cos(t),np.sin(t)]); n=np.array([-u[1],u[0]]); c=np.array([x,y])
+    pts=[c-w/2*u-h/2*n,c+w/2*u-h/2*n,c+w/2*u+h/2*n,c-w/2*u+h/2*n]
+    ax.add_patch(Polygon(pts,closed=True,fc=fc,ec=K,lw=1.3,zorder=4))
+def guide(ax,x0,y0,x1,y1,side=-1,size=0.12):
+    """straight guide/line of stroke from (x0,y0) to (x1,y1), hatched on side -1 (right of direction) or +1"""
+    ax.plot([x0,x1],[y0,y1],color=K,lw=1.2)
+    d=np.array([x1-x0,y1-y0]); L=np.hypot(*d); u=d/L; n=np.array([-u[1],u[0]])*side
+    for s in np.linspace(0,L,max(3,int(L/size))):
+        p=np.array([x0,y0])+s*u; q=p+size*0.7*(n-u*0.7)/np.hypot(1,0.7)*1.2
+        ax.plot([p[0],q[0]],[p[1],q[1]],color=K,lw=0.8)
+def omega(ax,x,y,r,txt="",ccw=True,a0=200,a1=320,fs=9,lpos=None):
+    """curved arrow of radius r around (x,y) from angle a0 to a1 (deg); ccw arrowhead at a1 if ccw else at a0"""
+    a=np.radians(np.linspace(a0,a1,40)); xs,ys=x+r*np.cos(a),y+r*np.sin(a)
+    if not ccw: xs,ys=xs[::-1],ys[::-1]
+    ax.plot(xs[:-2],ys[:-2],color=K,lw=1.1); arrow(ax,xs[-3],ys[-3],xs[-1],ys[-1],lw=1.1)
+    if txt:
+        m=np.radians((a0+a1)/2); lx,ly=lpos if lpos else (x+(r+0.22)*np.cos(m),y+(r+0.22)*np.sin(m))
+        label(ax,lx,ly,txt,fs=fs)
+def angarc(ax,x,y,r,a0,a1,txt="",fs=8,lr=None):
+    a=np.radians(np.linspace(a0,a1,30)); ax.plot(x+r*np.cos(a),y+r*np.sin(a),color=K,lw=0.8)
+    if txt:
+        m=np.radians((a0+a1)/2); lr=lr or r+0.18; label(ax,x+lr*np.cos(m),y+lr*np.sin(m),txt,fs=fs)
+def dline(ax,p,q,lw=0.8): ax.plot([p[0],q[0]],[p[1],q[1]],color=K,lw=lw,ls="--")

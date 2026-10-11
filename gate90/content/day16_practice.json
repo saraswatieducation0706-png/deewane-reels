@@ -1,0 +1,272 @@
+{
+ "day": 16,
+ "subject": "Theory of Machines",
+ "topic": "Dynamics of Linkages & Flywheels",
+ "days_to_gate": 93,
+ "summary": "static and dynamic force analysis of the slider-crank and four-bar linkages (piston effort, crank effort, inertia force and torque, D'Alembert's principle, equivalent dynamical systems), turning-moment diagrams, fluctuation of energy and speed, and flywheel sizing",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Theory of Machines, Cams, Gears & Gear Trains",
+ "questions": [
+  {
+   "text": "In the horizontal engine shown, the crank OA (100 mm) is at 40° from the inner dead centre and the connecting rod AB is 450 mm long. The bore is 150 mm and the net gas pressure on the piston is 1.5 MPa (inertia of the parts neglected). The turning moment on the crankshaft (in kN·m, round off to two decimal places) is ______",
+   "fig": "d16p_q1.png",
+   "opts": null,
+   "ans": "2.00 (accept 1.98 to 2.02)",
+   "sfig": "d16p_s1.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Static force analysis of the slider-crank: piston effort F<sub>P</sub> → rod thrust F<sub>Q</sub> = F<sub>P</sub>/cos β → crank effort F<sub>T</sub> = F<sub>Q</sub> sin(θ + β) → torque T = F<sub>T</sub> r.",
+    "F<sub>P</sub> = p × πd²/4 = 1.5 × π × 150²/4 = <b>26 507 N</b>",
+    "n = l/r = 4.5; sin β = sin 40°/4.5 = 0.1428 → <b>β = 8.21°</b>",
+    "F<sub>Q</sub> = 26 507/cos 8.21° = <b>26 782 N</b>; side thrust F<sub>N</sub> = F<sub>P</sub> tan β = 3826 N",
+    "F<sub>T</sub> = 26 782 × sin 48.21° = <b>19 969 N</b>; T = 19 969 × 0.1 = 1997 N·m ≈ <b>2.00 kN·m</b>",
+    "<b>Exam tip:</b> The force diagram (figure) shows how the rod thrust at A splits into F<sub>T</sub> (turns the crank) and F<sub>R</sub> (loads the main bearing). Shortcut: T = F<sub>P</sub> r sin(θ + β)/cos β."
+   ]
+  },
+  {
+   "text": "For a reciprocating engine with connecting rod 5 times the crank radius, running at uniform speed, the ratio of the inertia force of the reciprocating parts at the inner dead centre to that at the outer dead centre (magnitudes) is",
+   "fig": null,
+   "opts": [
+    "1.0",
+    "1.22",
+    "1.5",
+    "2.0"
+   ],
+   "ans": "(C) 1.5",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> F<sub>I</sub> = m r ω² (cos θ + cos 2θ/n).",
+    "Inner dead centre, θ = 0°: F<sub>I</sub> = m r ω² (1 + 1/5) = <b>1.2 m r ω²</b>",
+    "Outer dead centre, θ = 180°: F<sub>I</sub> = m r ω² (−1 + 1/5) → magnitude <b>0.8 m r ω²</b>",
+    "Ratio = 1.2/0.8 = <b>1.5</b>",
+    "<b>Exam tip:</b> With an infinitely long rod (pure SHM) the ratio would be 1. Obliquity makes the piston accelerate harder at the dead centre nearer the cylinder head."
+   ]
+  },
+  {
+   "text": "A vertical engine has its cylinder above the crankshaft. The reciprocating parts weigh 20 kg, the crank radius is 90 mm, the connecting rod is 4 times the crank and the speed is 900 rpm. On the down (expansion) stroke, with the crank at 45° from the top dead centre, the net gas force on the piston is 18 kN downwards. The piston effort (in kN, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.89 (accept 6.85 to 6.93)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Piston effort F<sub>P</sub> = gas force − inertia force ± weight. On the down stroke the weight of the reciprocating parts helps the gas force.",
+    "ω = 2π × 900/60 = <b>94.25 rad/s</b>; m r ω² = 20 × 0.09 × 94.25² = <b>15 989 N</b>",
+    "F<sub>I</sub> = 15 989 × (cos 45° + cos 90°/4) = 15 989 × 0.7071 = <b>11 306 N</b> (opposes the motion, since the piston is still accelerating)",
+    "F<sub>P</sub> = 18 000 − 11 306 + 20 × 9.81 = <b>6890 N = 6.89 kN</b>",
+    "<b>Exam tip:</b> For the up stroke of a vertical engine, the weight is subtracted instead. Before about 75° to 80° of crank angle the inertia force reduces the piston effort; near the end of the stroke it adds to it."
+   ]
+  },
+  {
+   "text": "An engine runs at 3000 rpm. Its reciprocating parts have a mass of 1.5 kg, the crank radius is 60 mm and the connecting rod is 3.5 times the crank. The inertia torque on the crankshaft due to the reciprocating parts when the crank is at 45° from the inner dead centre (in N·m, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "320.3 (accept 318 to 322.5)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Inertia torque T<sub>I</sub> = F<sub>I</sub> × r (sin θ + sin 2θ/(2n)), the same lever arm as for the piston effort (from virtual work, v<sub>piston</sub>/ω).",
+    "ω = 314.16 rad/s; m r ω² = 1.5 × 0.06 × 314.16² = <b>8883 N</b>",
+    "F<sub>I</sub> = 8883 × (cos 45° + cos 90°/3.5) = <b>6281 N</b>",
+    "Lever arm = 0.06 × (sin 45° + sin 90°/7) = 0.06 × 0.8500 = <b>0.0510 m</b>",
+    "T<sub>I</sub> = 6281 × 0.0510 = <b>320.3 N·m</b>",
+    "<b>Exam tip:</b> The inertia torque averages to zero over a revolution: it does no net work, but it adds to the fluctuation of the turning moment at high speeds."
+   ]
+  },
+  {
+   "text": "A mechanical press is driven by a crank of radius 50 mm and a connecting rod of 200 mm. The ram (slider) must exert 50 kN when the crank is 10° before the dead centre at which the ram reaches the end of its working stroke. Neglecting friction and inertia, the torque needed on the crank is nearly",
+   "fig": null,
+   "opts": [
+    "434 N·m",
+    "541 N·m",
+    "2500 N·m",
+    "2443 N·m"
+   ],
+   "ans": "(B) 541 N·m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> T = F r sin(θ + β)/cos β with θ measured from the dead centre; it tends to zero as the crank approaches the dead centre (toggle action).",
+    "n = 200/50 = 4; sin β = sin 10°/4 → <b>β = 2.49°</b>",
+    "T = 50 000 × 0.05 × sin 12.49°/cos 2.49° = 2500 × 0.2163/0.9991 = <b>541 N·m</b>",
+    "<b>Exam tip:</b> 434 N·m ignores the rod obliquity and 2500 N·m is F r (the value at 90°). Near dead centre a small torque gives a large ram force, which is why presses and toggle clamps work there."
+   ]
+  },
+  {
+   "text": "The platform AB of the parallel linkage shown carries a load W = 600 N. Links O<sub>2</sub>A and O<sub>4</sub>B are each 0.4 m long and make 30° with the horizontal; only O<sub>2</sub>A is driven. Neglecting the weights of the links and friction, the torque on O<sub>2</sub>A needed to hold the platform is",
+   "fig": "d16p_q6.png",
+   "opts": [
+    "120.0 N·m",
+    "240.0 N·m",
+    "103.9 N·m",
+    "207.8 N·m"
+   ],
+   "ans": "(D) 207.8 N·m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Virtual work: T δθ = W δy. In a parallelogram linkage the platform translates, so every point of it moves like A.",
+    "Point A moves on a circle of radius r; its vertical velocity = ω r cos 30°.",
+    "T ω = W ω r cos 30° → T = 600 × 0.4 × 0.866 = <b>207.8 N·m</b>",
+    "<b>Exam tip:</b> The position of W on the platform does not matter, because the platform translates. 120 N·m uses sin 30° instead of cos 30°."
+   ]
+  },
+  {
+   "text": "To find its radius of gyration, a connecting rod is suspended from a knife edge through the small-end centre and allowed to swing as a compound pendulum. Its centre of mass is 160 mm below the knife edge and the measured period of small oscillations is 0.9 s. Taking g = 9.81 m/s², the radius of gyration of the rod about its centre of mass (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "81.3 (accept 80.8 to 81.7)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Compound pendulum: T<sub>p</sub> = 2π √[(k<sub>G</sub>² + h²)/(g h)], so the equivalent simple-pendulum length is L = (k<sub>G</sub>² + h²)/h.",
+    "L = g T<sub>p</sub>²/(4π²) = 9.81 × 0.81/39.48 = <b>0.2013 m</b>",
+    "k<sub>G</sub>² = L h − h² = 0.2013 × 0.16 − 0.0256 = <b>0.006 608 m²</b>",
+    "k<sub>G</sub> = <b>0.0813 m = 81.3 mm</b>",
+    "<b>Exam tip:</b> k<sub>G</sub> is needed for the dynamically equivalent two-mass model of the rod (l<sub>1</sub> l<sub>2</sub> = k<sub>G</sub>²). Do not forget to subtract h²."
+   ]
+  },
+  {
+   "text": "A flywheel of mass 250 kg and radius of gyration 0.5 m runs between 196 rpm and 204 rpm in each cycle. The maximum fluctuation of energy is nearly",
+   "fig": null,
+   "opts": [
+    "1096.6 J",
+    "548.3 J",
+    "2193.2 J",
+    "274.2 J"
+   ],
+   "ans": "(A) 1096.6 J",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> ΔE = ½ I (ω<sub>max</sub>² − ω<sub>min</sub>²) = I ω<sub>mean</sub> (ω<sub>max</sub> − ω<sub>min</sub>).",
+    "I = m k² = 250 × 0.5² = <b>62.5 kg·m²</b>",
+    "ω<sub>mean</sub> = 2π × 200/60 = 20.944 rad/s; ω<sub>max</sub> − ω<sub>min</sub> = 2π × 8/60 = 0.8378 rad/s",
+    "ΔE = 62.5 × 20.944 × 0.8378 = <b>1096.6 J</b>",
+    "<b>Exam tip:</b> Equivalently ΔE = I ω² C<sub>s</sub> with C<sub>s</sub> = 8/200 = 0.04. 2193.2 J drops the ½, and 548.3 J uses half the speed range."
+   ]
+  },
+  {
+   "text": "The turning-moment diagram of an engine for one cycle is shown, with the loop areas (in mm²) between the torque curve and the mean-torque line marked: +40 (a to b), −70 (b to c), +60 (c to d) and −30 (d to e). The flywheel speed is maximum and minimum, respectively, at",
+   "fig": "d16p_q9.png",
+   "opts": [
+    "d and c",
+    "b and c",
+    "b and e",
+    "d and a"
+   ],
+   "ans": "(B) b and c",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The flywheel speeds up while T &gt; T<sub>mean</sub> and slows down while T &lt; T<sub>mean</sub>. Track the energy relative to the start point a.",
+    "Energy at the crossings: b = E + 40, c = E − 30, d = E + 30, e = E + 0.",
+    "Maximum energy (speed) at <b>b</b>, minimum at <b>c</b>; ΔE = 40 − (−30) = 70 mm².",
+    "<b>Exam tip:</b> The largest loop (+60) does not decide the maximum: what counts is the running total. Speed extremes always lie at crossings of the mean-torque line."
+   ]
+  },
+  {
+   "text": "The turning-moment diagram of an engine for one cycle is shown. The loop areas above and below the mean-torque line, in order, are +30, −55, +70, −40, +25 and −30 mm². The scales are 1 mm = 100 N·m and 1 mm = 5°. The engine runs at a mean speed of 150 rpm and the speed must stay within ±2 % of the mean. The moment of inertia of the flywheel required (in kg·m², round off to two decimal places) is ______",
+   "fig": "d16p_q10.png",
+   "opts": null,
+   "ans": "61.89 (accept 61.5 to 62.3)",
+   "sfig": "d16p_s10.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> ΔE = (maximum − minimum of the cumulative energy) × area scale; then I = ΔE/(ω² C<sub>s</sub>).",
+    "Running total of areas: 0, +30, −25, +45, +5, +30, 0 → max +45, min −25 → <b>ΔE = 70 mm²</b> (see the energy curve).",
+    "1 mm² = 100 × (5 × π/180) = <b>8.727 J</b>, so ΔE = 70 × 8.727 = <b>610.9 J</b>",
+    "ω = 2π × 150/60 = 15.708 rad/s; C<sub>s</sub> = 0.04",
+    "I = 610.9/(15.708² × 0.04) = <b>61.89 kg·m²</b>",
+    "<b>Exam tip:</b> ±2 % means C<sub>s</sub> = 0.04, not 0.02. Convert the angle scale to radians before multiplying the scales."
+   ]
+  },
+  {
+   "text": "The turning moment of a multi-cylinder engine is T = 2000 + 800 sin 3θ N·m, where θ is the crank angle, and the resisting torque is constant. If the total fluctuation of speed must not exceed ±1 % of the mean speed of 300 rpm, the moment of inertia of the flywheel required (in kg·m², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "27.02 (accept 26.85 to 27.2)",
+   "sfig": "d16p_s11.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> With a constant resisting torque, T<sub>resisting</sub> = T<sub>mean</sub> = 2000 N·m. The excess loop is where 800 sin 3θ &gt; 0, i.e. 0 ≤ θ ≤ 60°.",
+    "ΔE = ∫<sub>0</sub><sup>π/3</sup> 800 sin 3θ dθ = 800 × 2/3 = <b>533.3 J</b> (shaded area)",
+    "ω = 2π × 300/60 = 31.416 rad/s; C<sub>s</sub> = 0.02",
+    "I = 533.3/(31.416² × 0.02) = <b>27.02 kg·m²</b>",
+    "<b>Exam tip:</b> For T = A + B sin kθ the excess energy is always 2B/k. The mean term A sets the power (P = A ω = 62.8 kW here), not the flywheel size."
+   ]
+  },
+  {
+   "text": "A four-stroke engine develops 20 kW at 600 rpm. The coefficient of fluctuation of energy is 0.1 and the speed must be kept within ±1 % of the mean speed. The moment of inertia of the flywheel required (in kg·m², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5.07 (accept 5.03 to 5.10)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> C<sub>e</sub> = ΔE / (work done per cycle); a four-stroke cycle takes two revolutions.",
+    "Cycles per minute = 600/2 = 300 → work per cycle = 20 000 × 60/300 = <b>4000 J</b>",
+    "ΔE = 0.1 × 4000 = <b>400 J</b>",
+    "I = ΔE/(ω² C<sub>s</sub>) = 400/(62.83² × 0.02) = <b>5.07 kg·m²</b>",
+    "<b>Exam tip:</b> Using 600 cycles/min (two-stroke thinking) halves ΔE and gives 2.53 kg·m². Read whether the engine is two-stroke or four-stroke."
+   ]
+  },
+  {
+   "text": "In a six-cylinder four-stroke engine with evenly spaced firing, the number of main fluctuation cycles of the turning-moment diagram per revolution of the crankshaft is",
+   "fig": null,
+   "opts": [
+    "6",
+    "1.5",
+    "12",
+    "3"
+   ],
+   "ans": "(D) 3",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Each cylinder fires once every 720° of crank rotation in a four-stroke engine.",
+    "Six cylinders → firing interval = 720°/6 = <b>120°</b>",
+    "Number of power impulses (fluctuation cycles) per 360° = 360/120 = <b>3</b>",
+    "<b>Exam tip:</b> More, closer impulses mean smaller excess-energy loops and a lighter flywheel, which is why multi-cylinder engines need small flywheels. A six-cylinder two-stroke engine would give 6."
+   ]
+  },
+  {
+   "text": "A machine has a maximum fluctuation of energy of 12 kJ. Its flywheel runs at a mean speed of 200 rpm and the speed must stay within ±1.5 % of the mean. The rim, of mean radius 0.75 m, is to provide 90 % of the required moment of inertia (the hub and arms provide the rest). The mass of the rim (in kg, round off to the nearest whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1459 (accept 1450 to 1468)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Total I = ΔE/(ω² C<sub>s</sub>); a thin rim has I<sub>rim</sub> = m R².",
+    "ω = 2π × 200/60 = 20.944 rad/s; C<sub>s</sub> = 0.03",
+    "I = 12 000/(20.944² × 0.03) = <b>911.9 kg·m²</b>",
+    "I<sub>rim</sub> = 0.9 × 911.9 = 820.7 kg·m² → m = 820.7/0.75² = <b>1459 kg</b>",
+    "<b>Exam tip:</b> The rim does almost all the work because its mass is far from the axis. Check the rim speed too: v = ωR = 15.7 m/s here, safe for cast iron."
+   ]
+  },
+  {
+   "text": "A cast-iron rim flywheel (density 7200 kg/m³) may have a maximum hoop stress of 6 MPa due to rotation. Treating it as a thin rim, the largest mean diameter it can have if it runs at 300 rpm is nearly",
+   "fig": null,
+   "opts": [
+    "0.92 m",
+    "3.68 m",
+    "1.84 m",
+    "1.20 m"
+   ],
+   "ans": "(C) 1.84 m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In a thin rotating rim the hoop stress is σ = ρ v², where v = ω R is the rim speed (it does not depend on the cross-section).",
+    "v<sub>max</sub> = √(σ/ρ) = √(6 × 10⁶/7200) = <b>28.87 m/s</b>",
+    "ω = 31.416 rad/s → R = 28.87/31.416 = 0.919 m → D = <b>1.84 m</b>",
+    "<b>Exam tip:</b> 0.92 m is the radius, not the diameter. Since the stress limits the rim speed, a flywheel cannot be made more effective without limit just by making it larger."
+   ]
+  }
+ ]
+}
