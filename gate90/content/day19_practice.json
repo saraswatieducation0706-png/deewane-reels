@@ -1,0 +1,259 @@
+{
+ "day": 19,
+ "subject": "Theory of Machines",
+ "topic": "Governors, Balancing & Gyroscope",
+ "days_to_gate": 89,
+ "summary": "Watt, Porter and Hartnell governors (equilibrium speed, sensitiveness, stability, hunting), balancing of rotating masses in one and several planes, primary and secondary balancing of reciprocating engines, hammer blow, and gyroscopic couples on ships, aeroplanes and vehicles",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Vibrations, Free Vibration",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A Watt governor has its arms and links of equal length, all pivoted on the spindle axis. It runs at 80 rpm. If its speed rises by 2 %, the rise of the sleeve (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "10.86 (accept 10.75 to 10.95)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Watt governor: h = g/ω² (h = 895/N² m). With arms and links equal and pivoted on the axis, the sleeve is at 2h below the top pivot, so sleeve lift = 2 × (fall in h).",
+    "N<sub>1</sub> = 80 rpm → h<sub>1</sub> = 9.81/(8.378)² = <b>139.78 mm</b>",
+    "N<sub>2</sub> = 81.6 rpm → h<sub>2</sub> = 9.81/(8.545)² = <b>134.35 mm</b>",
+    "Sleeve rise = 2 × (139.78 − 134.35) = <b>10.86 mm</b>",
+    "<b>Exam tip:</b> Because h ∝ 1/N², at higher speeds the change in height for a given change in speed becomes tiny. That is why the Watt governor is used only at low speeds (below about 60 to 80 rpm)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The essential difference between a governor and a flywheel is that",
+   "fig": null,
+   "opts": [
+    "the governor stores energy while the flywheel regulates the fuel supply",
+    "the governor controls the mean speed over a period when the load changes, while the flywheel limits the speed fluctuation within each cycle",
+    "both control the mean speed, but the flywheel acts faster",
+    "the governor works only for constant loads"
+   ],
+   "ans": "(B) the governor controls the mean speed over a period when the load changes, while the flywheel limits the speed fluctuation within each cycle",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A flywheel is an energy reservoir: it smooths out the cyclic variation of speed caused by the varying turning moment within each cycle, but it cannot hold the mean speed if the load changes.",
+    "A governor senses a change in mean speed (from a change in load) and adjusts the fuel or steam supply so the mean speed returns close to its set value.",
+    "<b>Exam tip:</b> One line: flywheel → within a cycle (energy storage); governor → from cycle to cycle (supply control)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the Porter governor shown, all arms and links are 300 mm long and pivoted on the spindle axis. Each ball has a mass of 6 kg and the central load is 30 kg. When the radius of rotation is 180 mm, the equilibrium speed (in rpm, round off to one decimal place) is ______",
+   "fig": "d19p_q3.png",
+   "opts": null,
+   "ans": "149.5 (accept 148.8 to 150.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a Porter governor with equal arms and links (q = 1), ω² = g(m + M)/(m h), i.e. N² = (895/h)(m + M)/m.",
+    "h = √(300² − 180²) = <b>240 mm</b>",
+    "ω² = 9.81 × (6 + 30)/(6 × 0.24) = <b>245.25</b> → ω = 15.660 rad/s → N = <b>149.5 rpm</b>",
+    "<b>Exam tip:</b> The central load raises the speed by √((m + M)/m) = √6 = 2.45 times over a Watt governor of the same height. That is why the Porter governor suits higher speeds."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Hunting of a governor is most likely when the governor is",
+   "fig": null,
+   "opts": [
+    "too stable",
+    "provided with a heavy sleeve load",
+    "fitted with too much friction",
+    "too sensitive"
+   ],
+   "ans": "(D) too sensitive",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hunting is the continuous fluctuation of the engine speed above and below the mean, caused by the governor over-correcting the supply.",
+    "A <b>very sensitive</b> governor moves the sleeve to its extreme position for a small change of speed, over-corrects, and the cycle repeats. An isochronous governor (infinite sensitivity) always hunts.",
+    "<b>Exam tip:</b> Some friction or a damping dashpot reduces hunting, at the cost of some insensitiveness."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A Hartnell governor has equal ball and sleeve arms on its bell-crank levers. Each ball has a mass of 3 kg. At a certain position the radius of rotation is 120 mm and the spring force on the sleeve is 600 N. Neglecting the sleeve mass, gravity on the balls and the obliquity of the arms, the equilibrium speed (in rpm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "275.7 (accept 274.3 to 277.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Taking moments about the bell-crank fulcrum: F × a = (S/2) × b, where F = mω²r is the centrifugal force on one ball and S is the total spring force on the sleeve (shared by two levers).",
+    "a = b → F = S/2 = <b>300 N</b>",
+    "ω² = F/(m r) = 300/(3 × 0.12) = 833.3 → ω = 28.87 rad/s → N = <b>275.7 rpm</b>",
+    "<b>Exam tip:</b> In a Hartnell governor the spring, not gravity, gives the controlling force, so it can run at high speed and be mounted in any orientation."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Four masses rotate in one plane as shown: A 10 kg at 100 mm (0°), B 8 kg at 120 mm (75°), C 6 kg at 150 mm (150°) and D 5 kg at 100 mm (260°), angles measured counter-clockwise from A. The single balancing mass to be placed at a radius of 200 mm (in kg, round off to two decimal places) is ______",
+   "fig": "d19p_q6.png",
+   "opts": null,
+   "ans": "4.82 (accept 4.78 to 4.86)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Static balance in one plane: the balancing mass must cancel the vector sum of the mr values: m<sub>b</sub>r<sub>b</sub> = √[(Σmr cos θ)² + (Σmr sin θ)²], at the opposite angle.",
+    "mr values (kg·mm): A 1000 at 0°, B 960 at 75°, C 900 at 150°, D 500 at 260°",
+    "Σmr cos θ = 1000 + 248.5 − 779.4 − 86.8 = <b>382.2</b>; Σmr sin θ = 0 + 927.3 + 450 − 492.4 = <b>884.9</b>",
+    "Resultant = <b>963.9 kg·mm</b> → m<sub>b</sub> = 963.9/200 = <b>4.82 kg</b> at θ = <b>246.6°</b> (opposite the resultant)",
+    "<b>Exam tip:</b> Work with mr, not m. Tabulate m, r, θ, mr cos θ, mr sin θ; then add the balancing mass 180° away from the resultant."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rigid rotor carries several masses in different planes. It is dynamically balanced if",
+   "fig": null,
+   "opts": [
+    "Σmr = 0 and Σmrl = 0 (vector sums), with l measured from any reference plane",
+    "Σmr = 0 only",
+    "Σmrl = 0 only, about the bearing plane",
+    "Σm = 0 and Σr = 0"
+   ],
+   "ans": "(A) Σmr = 0 and Σmrl = 0 (vector sums), with l measured from any reference plane",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Static balance: the resultant centrifugal force is zero, Σmr = 0 (vector sum). Dynamic balance additionally needs the resultant couple to be zero: Σmrl = 0.",
+    "Once Σmr = 0, the couple is the same about every plane, so any reference plane can be used.",
+    "<b>Exam tip:</b> Two masses equal and opposite in different planes are statically balanced but give a couple, a favourite GATE trap."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The shaft shown carries mass A (4 kg at 100 mm radius, 0°) at 0.2 m and mass B (3 kg at 120 mm radius, 90°) at 0.5 m from plane L. It is to be balanced by masses at a radius of 100 mm in planes L and M, plane M being 0.8 m from L. The balancing mass in plane M (in kg, round off to two decimal places) is ______",
+   "fig": "d19p_q8.png",
+   "opts": null,
+   "ans": "2.46 (accept 2.43 to 2.49)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Take plane L as the reference plane: the mass in L then produces no couple, so the couple equation Σmrl = 0 gives the mass in M directly.",
+    "mrl values (kg·m²): A 0.4 × 0.2 = 0.08 at 0°; B 0.36 × 0.5 = 0.18 at 90°",
+    "m<sub>M</sub> × 0.1 × 0.8 = √(0.08² + 0.18²) = 0.1970 → m<sub>M</sub> = <b>2.46 kg</b> at 246.0°",
+    "Then the force equation gives the mass in L: m<sub>L</sub> = 3.29 kg at 204.2°.",
+    "<b>Exam tip:</b> Always put the reference plane through one of the unknown balancing masses. That removes one unknown from the couple equation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In partial balancing of the reciprocating parts of a locomotive, the 'hammer blow' is caused by",
+   "fig": null,
+   "opts": [
+    "the unbalanced primary force along the line of stroke",
+    "the secondary unbalanced force",
+    "the vertical component of the centrifugal force of the extra balancing mass added for the reciprocating parts",
+    "the swaying couple"
+   ],
+   "ans": "(C) the vertical component of the centrifugal force of the extra balancing mass added for the reciprocating parts",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> To balance part of the reciprocating mass, an extra revolving mass is added to the driving wheel. Its centrifugal force has a vertical component B ω² b sin θ that is not balanced by anything.",
+    "This fluctuating vertical force adds to and subtracts from the static wheel load on the rail: the <b>hammer blow</b>. Its maximum is Bω²b.",
+    "<b>Exam tip:</b> The limiting speed is when the hammer blow equals the dead load on the wheel; above it the wheel would lift off the rail."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A two-cylinder in-line engine has its cranks at 180° to each other and its cylinder centre lines 300 mm apart. The reciprocating mass per cylinder is 2 kg and the crank radius is 50 mm. At 1200 rpm, the maximum unbalanced primary couple (in N·m, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "473.7 (accept 471 to 476.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With cranks at 180° the primary forces of the two cylinders are equal and opposite (balanced), but they act on lines a distance a apart and form a couple: C = m r ω² a cos θ.",
+    "ω = 125.66 rad/s → m r ω² = 2 × 0.05 × 125.66² = <b>1579.1 N</b>",
+    "C<sub>max</sub> = 1579.1 × 0.3 = <b>473.7 N·m</b>",
+    "<b>Exam tip:</b> Secondary cranks of a 180° twin are at 2 × 180° = 360°, i.e. in line, so the secondary forces add (2mrω²/n) instead of cancelling."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The rotor of a ship rotates clockwise when viewed from the stern. When the bow rises during pitching, the reactive gyroscopic couple on the ship tends to turn it",
+   "fig": null,
+   "opts": [
+    "towards port (left)",
+    "so that the stern rises",
+    "towards starboard (right)",
+    "so that it rolls to port"
+   ],
+   "ans": "(C) towards starboard (right)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Take x towards the bow, y to port, z up. Spin clockwise seen from the stern → spin vector +x. Bow rising → precession vector −y.",
+    "Active couple on the rotor = ω<sub>p</sub> × H = (−y) × (+x) = +z. Reactive couple on the ship = −z, a clockwise couple seen from above → the ship turns <b>towards starboard</b>.",
+    "When the bow dips, the ship turns towards port. The effect reverses every half-cycle of pitching.",
+    "<b>Exam tip:</b> Use the vector rule every time rather than memorising tables: active couple = ω<sub>p</sub> × (Iω); the ship feels the opposite."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A ship's turbine rotor has a mass of 3500 kg and a radius of gyration of 0.45 m, and runs at 2500 rpm. The ship pitches with simple harmonic motion: the total angular movement is 6° on either side of the mean position and the period is 20 s. The maximum gyroscopic couple on the ship (in kN·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.10 (accept 6.07 to 6.14)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In SHM pitching, the angle φ = φ<sub>0</sub> sin(2πt/T), so the maximum angular velocity of precession is ω<sub>p,max</sub> = φ<sub>0</sub>(2π/T), reached at the mean position.",
+    "I = 3500 × 0.45² = <b>708.75 kg·m²</b>; ω = 2π × 2500/60 = <b>261.80 rad/s</b>",
+    "ω<sub>p,max</sub> = (6π/180)(2π/20) = <b>0.03290 rad/s</b>",
+    "C<sub>max</sub> = I ω ω<sub>p,max</sub> = 708.75 × 261.80 × 0.03290 = 6104 N·m = <b>6.10 kN·m</b>",
+    "<b>Exam tip:</b> Convert the amplitude to radians. The couple is largest at the mean position (maximum pitching velocity), not at the extreme position."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A motorcycle and rider take a turn. Considering the gyroscopic couple of the road wheels together with the centrifugal couple, the rider",
+   "fig": null,
+   "opts": [
+    "must lean outward, because the gyroscopic couple tends to tip the vehicle inward",
+    "must lean inward, because both couples tend to overturn the vehicle outward",
+    "need not lean, because the two couples cancel",
+    "must lean inward, because the gyroscopic couple alone tips the vehicle inward"
+   ],
+   "ans": "(B) must lean inward, because both couples tend to overturn the vehicle outward",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For wheels spinning forward on a turn, the reactive gyroscopic couple acts in the same sense as the centrifugal couple: both tend to overturn the vehicle away from the centre of the turn.",
+    "The rider leans inward until the couple of the weight about the contact line (W h sin θ) balances the sum of the gyroscopic and centrifugal couples.",
+    "<b>Exam tip:</b> On a two-wheeler the gyroscopic term is proportional to v²/R, the same as the centrifugal term, so both grow quickly with speed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A car takes a curve of 80 m radius at 72 km/h. Each of its four road wheels has a moment of inertia of 1.5 kg·m² and an effective radius of 0.35 m. The engine's rotating parts have a moment of inertia of 1 kg·m², rotate in the same sense as the wheels and are geared 4 : 1 to the wheels. The total gyroscopic couple (in N·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "142.86 (accept 141.4 to 144.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Gyroscopic couple = (moment of inertia) × (spin speed) × (precession speed), summed over all rotors with the same sense.",
+    "v = 20 m/s; wheel spin ω<sub>w</sub> = v/r<sub>w</sub> = 57.14 rad/s; precession ω<sub>p</sub> = v/R = 0.25 rad/s",
+    "Wheels: 4 × 1.5 × 57.14 × 0.25 = <b>85.71 N·m</b>; engine: 1 × (4 × 57.14) × 0.25 = <b>57.14 N·m</b>",
+    "Total = <b>142.86 N·m</b> (they add because the engine turns the same way as the wheels)",
+    "<b>Exam tip:</b> If the engine rotates opposite to the wheels, subtract its couple. The gyroscopic couple shifts load to the outer wheels, like the centrifugal couple."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The propeller of an aeroplane rotates clockwise when viewed from the rear (the pilot's view). When the aeroplane turns to the left, the reactive gyroscopic couple tends to",
+   "fig": null,
+   "opts": [
+    "dip the nose and raise the tail",
+    "bank the aeroplane to the right",
+    "turn the aeroplane further left",
+    "raise the nose and dip the tail"
+   ],
+   "ans": "(D) raise the nose and dip the tail",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> x forward, y left, z up. Clockwise seen from the rear → spin vector +x (pointing forward). Left turn → precession vector +z.",
+    "Active couple on the propeller = (+z) × (+x) = +y. Reactive couple on the aeroplane = −y, which rotates the nose (+x) upward.",
+    "So the nose is <b>raised</b> and the tail dipped. For a right turn the nose dips.",
+    "<b>Exam tip:</b> This is the same geometry as a ship whose rotor turns clockwise seen from the stern steering to port: the bow rises."
+   ]
+  }
+ ]
+}

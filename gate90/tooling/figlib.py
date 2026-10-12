@@ -147,3 +147,82 @@ def angarc(ax,x,y,r,a0,a1,txt="",fs=8,lr=None):
     if txt:
         m=np.radians((a0+a1)/2); lr=lr or r+0.18; label(ax,x+lr*np.cos(m),y+lr*np.sin(m),txt,fs=fs)
 def dline(ax,p,q,lw=0.8): ax.plot([p[0],q[0]],[p[1],q[1]],color=K,lw=lw,ls="--")
+# --- gear and cam helpers (added Day 17) ---
+def gear(ax,cx,cy,r,z,internal=False,fc="#dddddd",lw=1.1,rot=0.0,hub=True,ring=0.25):
+    """spur gear of pitch radius r and z teeth drawn as a toothed outline (addendum = dedendum ~ r*2/z*0.9);
+    internal=True draws an annulus (teeth pointing inward, outer rim radius r+ring)."""
+    m=2*r/z; ha=0.9*m; n=z*16; t=np.linspace(0,2*np.pi,n,endpoint=False)+rot
+    ph=(t-rot)*z/(2*np.pi)%1.0
+    prof=np.where(ph<0.2,ph/0.2,np.where(ph<0.5,1.0,np.where(ph<0.7,(0.7-ph)/0.2,0.0)))
+    rr=(r-ha+2*ha*prof) if not internal else (r+ha-2*ha*prof)
+    xs,ys=cx+rr*np.cos(t),cy+rr*np.sin(t)
+    if internal:
+        ax.add_patch(Circle((cx,cy),r+ring,fc=fc,ec=K,lw=lw,zorder=1))
+        ax.add_patch(Polygon(np.c_[xs,ys],closed=True,fc="white",ec=K,lw=lw,zorder=1.5))
+    else:
+        ax.add_patch(Polygon(np.c_[xs,ys],closed=True,fc=fc,ec=K,lw=lw,zorder=3))
+        if hub: ax.add_patch(Circle((cx,cy),max(0.06,0.12*r),fc="white",ec=K,lw=1,zorder=4))
+    ax.add_patch(Circle((cx,cy),r,fill=False,ec=K,lw=0.5,ls="-.",zorder=5))
+def shaft_gear(ax,x,y,h,txt,w=0.16,fs=8,lab_side="top"):
+    """side-view (schematic) gear: rectangle of half-height h centred at (x,y), label above or below"""
+    ax.add_patch(Rectangle((x-w/2,y-h),w,2*h,fc="#dddddd",ec=K,lw=1.2,zorder=3))
+    label(ax,x,y+h+0.15 if lab_side=="top" else y-h-0.15,txt,fs=fs,va="bottom" if lab_side=="top" else "top")
+def shaft(ax,x0,x1,y,lw=2.2,cl=True):
+    ax.plot([x0,x1],[y,y],color=K,lw=lw,solid_capstyle="butt",zorder=2)
+    if cl: ax.plot([x0-0.15,x1+0.15],[y,y],color=K,lw=0.5,ls="-.",zorder=1)
+def bearing(ax,x,y,s=0.12):
+    for d in (1,-1): ax.add_patch(Rectangle((x-s,y+d*0.05 if d>0 else y-0.05-2*s),2*s,2*s,fc="white",ec=K,lw=0.9,hatch="////",zorder=2))
+def epicyclic(ax,zs,zp,za,m=0.05,arm=True,labels=True,lab=("S","P","A","arm")):
+    rs,rp_,ra=zs*m/2,zp*m/2,za*m/2
+    gear(ax,0,0,ra,za,internal=True,fc="#eeeeee",ring=0.3)
+    gear(ax,0,0,rs,zs,fc="#cccccc")
+    c=rs+rp_
+    for k,a in enumerate((90,210,330)):
+        x,y=c*np.cos(np.radians(a)),c*np.sin(np.radians(a)); gear(ax,x,y,rp_,zp,fc="#dddddd",rot=0.3*k)
+    if arm:
+        ax.plot([0,0],[0,c],color=K,lw=4,solid_capstyle="round",zorder=7,alpha=0.85)
+        joint(ax,0,c,0.07); joint(ax,0,0,0.07)
+    if labels:
+        bb=dict(fc="white",ec="none",pad=0.5)
+        def lead(p,q,t):
+            ax.plot([p[0],q[0]],[p[1],q[1]],color=K,lw=0.7,zorder=8); label(ax,q[0],q[1],t,fs=9,fontweight="bold",zorder=9,bbox=bb)
+        R=ra+0.75
+        lead((0.15*rs,-0.35*rs),(-R*0.75,-R*0.85),lab[0])
+        pc=(c*np.cos(np.radians(330)),c*np.sin(np.radians(330)))
+        lead((pc[0]+0.3*rp_,pc[1]-0.3*rp_),(R*0.8,-R*0.85),lab[1])
+        lead((ra*0.75,ra*0.75),(R*0.8,R*0.85),lab[2])
+        if arm: lead((0,c*0.6),(-R*0.75,R*0.85),lab[3])
+# --- slider-crank helper (added Day 18; same drawing as Day 16) ---
+def slider_crank(ax,r,l,thd,s=0.35,bw=0.8,bh=0.5):
+    """crank pivot O at origin (pin), slider B to the right on a guided line y = 0; returns A, B"""
+    t=np.radians(thd); A=(r*np.cos(t),r*np.sin(t)); B=(A[0]+np.sqrt(l*l-A[1]**2),0)
+    pin(ax,0,0,s)
+    hatch_ground(ax,B[0]-1.3,B[0]+0.7,-bh/2,down=True,size=0.14)
+    hatch_ground(ax,B[0]-bw/2,B[0]+0.7,bh/2,down=False,size=0.14)
+    ax.add_patch(Rectangle((B[0]-bw/2,-bh/2),bw,bh,fc="#dddddd",ec=K,lw=1.3,zorder=3))
+    member(ax,(0,0),A); member(ax,A,B); joint(ax,*A); joint(ax,*B)
+    return A,B
+# --- governor / balancing helpers (added Day 19) ---
+def porter(ax,r,h,ball=0.13,load=True):
+    """Porter governor with arms and links of equal length pivoted on the spindle axis: top pivot (0,0),
+    balls at (+-r,-h), sleeve at (0,-2h). Returns sleeve y."""
+    ys=-2*h
+    ax.plot([0,0],[0.45,ys-0.55],color=K,lw=2.4,zorder=1)
+    ax.plot([0,0],[0.55,ys-0.65],color=K,lw=0.5,ls="-.",zorder=0)
+    for s in (1,-1):
+        member(ax,(0,0),(s*r,-h),lw=1.6); member(ax,(s*r,-h),(0,ys),lw=1.6)
+        ax.add_patch(Circle((s*r,-h),ball,fc="#bbbbbb",ec=K,lw=1.2,zorder=6))
+    joint(ax,0,0,0.05)
+    if load:
+        ax.add_patch(Rectangle((-0.32,ys-0.12),0.64,0.24,fc="#dddddd",ec=K,lw=1.2,zorder=5))
+    else:
+        ax.add_patch(Rectangle((-0.1,ys-0.12),0.2,0.24,fc="#dddddd",ec=K,lw=1.2,zorder=5))
+    return ys
+def polar_masses(ax,items,R=1.0,fs=7.5):
+    """items = list of (angle_deg, text, rel_length 0..1); radial lines from the shaft centre with a ball at the end"""
+    ax.add_patch(Circle((0,0),0.06,fc="white",ec=K,lw=1,zorder=5))
+    ax.plot([-1.25*R,1.25*R],[0,0],color=K,lw=0.5,ls="-.",zorder=0); ax.plot([0,0],[-1.25*R,1.25*R],color=K,lw=0.5,ls="-.",zorder=0)
+    for a,t,f in items:
+        u=np.array([np.cos(np.radians(a)),np.sin(np.radians(a))]); p=f*R*u
+        member(ax,(0,0),tuple(p),lw=1.4); ax.add_patch(Circle(tuple(p),0.08*R,fc="#999999",ec=K,lw=1,zorder=6))
+        q=p+0.42*R*u; label(ax,q[0],q[1],t,fs=fs,bbox=dict(fc='white',ec='none',pad=0.3))

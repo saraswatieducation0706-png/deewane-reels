@@ -1,0 +1,258 @@
+{
+ "day": 17,
+ "subject": "Theory of Machines",
+ "topic": "Cams, Gears & Gear Trains",
+ "days_to_gate": 92,
+ "summary": "cam follower motions (SHM, uniform acceleration, cycloidal), pressure angle and cam size, gear terminology and the law of gearing, path and arc of contact, interference, helical and worm gears, and simple, compound, epicyclic and differential gear trains",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Weekly Revision, Week 3 Revision",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A cam rotating at 500 rpm raises its follower through 25 mm with cycloidal motion during 100° of cam rotation. The maximum acceleration of the follower (in m/s², round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "141.4 (accept 140.6 to 142.2)",
+   "sfig": "d17p_s1.png",
+   "solution": [
+    "<b>Concept:</b> Cycloidal motion: y = h[θ/β − sin(2πθ/β)/(2π)]. Then v<sub>max</sub> = 2hω/β (at θ = β/2) and a<sub>max</sub> = 2πhω²/β² (at θ = β/4).",
+    "ω = 2π × 500/60 = <b>52.36 rad/s</b>; β = 100° = <b>1.745 rad</b>",
+    "a<sub>max</sub> = 2π × 0.025 × 52.36² / 1.745² = <b>141.4 m/s²</b> (and v<sub>max</sub> = 2 × 0.025 × 52.36/1.745 = 1.50 m/s)",
+    "<b>Exam tip:</b> Cycloidal acceleration is zero at both ends of the rise (figure), which is why it is the choice for high-speed cams even though its peak is higher than that of SHM."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For the same lift and the same cam angle, the ratio of the maximum follower velocity with simple harmonic motion to that with uniform acceleration and retardation is",
+   "fig": null,
+   "opts": [
+    "1.00",
+    "1.571",
+    "0.785",
+    "1.273"
+   ],
+   "ans": "(C) 0.785",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> SHM: v<sub>max</sub> = πhω/(2β). Uniform acceleration and retardation: v<sub>max</sub> = 2hω/β.",
+    "Ratio = (π/2)/2 = π/4 = <b>0.785</b>",
+    "<b>Exam tip:</b> Remember the multipliers on hω/β: uniform velocity 1, SHM π/2 = 1.571, UARM 2, cycloidal 2. For acceleration on hω²/β²: SHM π²/2 = 4.93, UARM 4, cycloidal 2π = 6.28."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a cam with a roller follower, the <i>prime circle</i> is",
+   "fig": null,
+   "opts": [
+    "the smallest circle, drawn from the cam centre, that touches the pitch curve",
+    "the smallest circle, drawn from the cam centre, that touches the cam profile",
+    "the circle through the point of maximum pressure angle",
+    "the circle described by the roller centre when the follower is at its highest position"
+   ],
+   "ans": "(A) the smallest circle, drawn from the cam centre, that touches the pitch curve",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The pitch curve is the path of the trace point (roller centre) relative to the cam. The prime circle is the smallest circle from the cam centre tangent to the pitch curve.",
+    "So prime circle radius = base circle radius + roller radius. The circle touching the actual cam profile is the base circle; the circle through the point of maximum pressure angle is the pitch circle.",
+    "<b>Exam tip:</b> The pressure angle and the displacement diagram are referred to the pitch curve, not to the actual cam profile."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cam drives a translating flat-faced follower that rises 30 mm with simple harmonic motion during 90° of cam rotation. The smallest base circle radius (in mm) for which the cam profile does not develop a cusp (radius of curvature ≥ 0) during the rise is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "30",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a flat-faced follower the radius of curvature of the cam profile is ρ = r<sub>b</sub> + y + d²y/dθ². It must stay positive, otherwise the profile forms a cusp and the follower cannot follow the motion.",
+    "SHM: y = (h/2)(1 − cos πθ/β), d²y/dθ² = (h/2)(π/β)² cos πθ/β. ρ is least at the end of the rise (θ = β): ρ<sub>min</sub> = r<sub>b</sub> + h − (h/2)(π/β)²",
+    "π/β = 2 → ρ<sub>min</sub> = r<sub>b</sub> + 30 − 15 × 4 = r<sub>b</sub> − 30 ≥ 0 → <b>r<sub>b</sub> = 30 mm</b>",
+    "<b>Exam tip:</b> Flat-faced followers are limited by cusps (radius of curvature); roller followers are limited by the pressure angle and by undercutting when ρ of the pitch curve is less than the roller radius."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The cam shown has an in-line roller follower that rises 40 mm with SHM during 120° of cam rotation. The prime circle radius is 50 mm. The pressure angle when the cam has turned 60° from the start of the rise is",
+   "fig": "d17p_q5.png",
+   "opts": [
+    "16.7°",
+    "30.9°",
+    "8.1°",
+    "23.2°"
+   ],
+   "ans": "(D) 23.2°",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an in-line (zero-offset) translating roller follower, tan α = (dy/dθ)/(r<sub>p</sub> + y).",
+    "At θ = 60° (mid-rise): y = (40/2)(1 − cos 90°) = <b>20 mm</b>; dy/dθ = (h/2)(π/β) sin(πθ/β) = 20 × 1.5 × 1 = <b>30 mm/rad</b>",
+    "tan α = 30/(50 + 20) = 0.4286 → <b>α = 23.2°</b>",
+    "<b>Exam tip:</b> For SHM the slope dy/dθ peaks at mid-rise, which is close to where the pressure angle is largest. Keep α below about 30° for translating followers."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The main reason involute profiles are used for almost all power-transmission gears is that",
+   "fig": null,
+   "opts": [
+    "they have a smaller pressure angle than cycloidal teeth",
+    "a small change in centre distance does not change the velocity ratio",
+    "they never suffer interference",
+    "their teeth have convex and concave flanks that give low contact stress"
+   ],
+   "ans": "(B) a small change in centre distance does not change the velocity ratio",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With involute teeth the common normal is always the common tangent to the two base circles, so the pitch point stays fixed and the velocity ratio = ratio of base circle radii, whatever the centre distance.",
+    "Pulling the gears slightly apart only increases the working pressure angle and backlash; the velocity ratio stays the same. Involute teeth can still interfere, and convex-concave flanks with low contact stress describe cycloidal teeth.",
+    "<b>Exam tip:</b> Involute teeth also have a constant pressure angle (constant direction of tooth load) and are easy to cut with a straight-sided rack cutter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two spur gears with 24 and 36 teeth, module 6 mm, 20° pressure angle and addendum of one module are in mesh. The length of the arc of contact (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "31.05 (accept 30.85 to 31.25)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Path of contact = path of approach (set by the wheel's addendum) + path of recess (set by the pinion's addendum). Arc of contact = path of contact / cos φ.",
+    "R<sub>1</sub> = 72 mm, R<sub>2</sub> = 108 mm, addendum 6 mm",
+    "Approach = √(114² − (108 cos 20°)²) − 108 sin 20° = <b>14.99 mm</b>; recess = √(78² − (72 cos 20°)²) − 72 sin 20° = <b>14.19 mm</b>",
+    "Path = 29.18 mm → arc = 29.18/cos 20° = <b>31.05 mm</b>; contact ratio = 31.05/(π × 6) = 1.65",
+    "<b>Exam tip:</b> Do not forget the cos φ when going from path to arc. A contact ratio above 1 (ideally 1.4 or more) means a new pair engages before the previous pair leaves."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two equal spur gears (gear ratio 1) with 20° involute teeth and an addendum of one module are to mesh without interference. The minimum number of teeth on each gear is",
+   "fig": null,
+   "opts": [
+    "12",
+    "17",
+    "18",
+    "13"
+   ],
+   "ans": "(D) 13",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> z<sub>min</sub> = 2a<sub>w</sub> / {G[√(1 + (1/G)(1/G + 2) sin²φ) − 1]}, where G is the gear ratio and a<sub>w</sub> the addendum in modules.",
+    "G = 1: z<sub>min</sub> = 2/[√(1 + 3 sin²20°) − 1] = 2/(1.1623 − 1) = <b>12.3</b> → 13 teeth",
+    "<b>Exam tip:</b> The minimum rises with the gear ratio, from about 13 (equal gears) to 17.1, i.e. 18 (rack), for 20° full-depth teeth. Round up, never down."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A helical gear has 30 teeth, a normal module of 3 mm and a helix angle of 25°. Its pitch circle diameter (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "99.3 (accept 98.8 to 99.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a helical gear the pitch circle is measured in the transverse plane: d = m<sub>t</sub> z = m<sub>n</sub> z / cos ψ.",
+    "d = 3 × 30 / cos 25° = 90/0.9063 = <b>99.3 mm</b>",
+    "<b>Exam tip:</b> The virtual (formative) number of teeth used for strength calculations is z/cos³ψ = 30/0.744 = 40.3."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A triple-start worm drives a worm wheel of 60 teeth. If the worm runs at 1200 rpm, the speed of the wheel is",
+   "fig": null,
+   "opts": [
+    "60 rpm",
+    "20 rpm",
+    "180 rpm",
+    "400 rpm"
+   ],
+   "ans": "(A) 60 rpm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> One turn of an n-start worm advances the wheel by n teeth. Velocity ratio = z<sub>wheel</sub>/n<sub>starts</sub>.",
+    "VR = 60/3 = 20 → wheel speed = 1200/20 = <b>60 rpm</b>",
+    "<b>Exam tip:</b> More starts give a larger lead angle and higher efficiency, but the drive is then less likely to be self-locking."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the compound gear train shown (numbers of teeth in brackets), gear A on the input shaft runs at 1500 rpm. Gears B and C are keyed to the same shaft. The speed of gear D (in rpm) is ______",
+   "fig": "d17p_q11.png",
+   "opts": null,
+   "ans": "300",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a compound train, speed ratio = product of driven teeth / product of driving teeth.",
+    "N<sub>D</sub> = 1500 × (20/50) × (30/60) = <b>300 rpm</b>",
+    "Two external meshes (A–B and C–D): D turns in the <b>same</b> direction as A.",
+    "<b>Exam tip:</b> B and C on one shaft have the same speed (600 rpm here). That is what lets a compound train give a large ratio with small gears."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the epicyclic train shown, the sun S (24 teeth) is fixed and the arm carrying the planets turns at 150 rpm. The speed of the annulus A (84 teeth) (in rpm, round off to two decimal places) is ______",
+   "fig": "d17p_q12.png",
+   "opts": null,
+   "ans": "192.86 (accept 191.9 to 193.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Tabular method: first fix the arm and give the sun +x turns, then add the arm speed y to every member.",
+    "Arm fixed, sun +x → planet −x(24/30) → annulus −x(24/84) (internal mesh keeps the planet's sense).",
+    "Sun fixed: y + x = 0 → x = −y. Annulus = y − x(24/84) = y(1 + 24/84) = 150 × 1.2857 = <b>192.86 rpm</b>, same sense as the arm",
+    "<b>Exam tip:</b> Check the teeth: z<sub>A</sub> = z<sub>S</sub> + 2z<sub>P</sub> = 24 + 60 = 84 ✓. This relation is often what the examiner expects you to use to find a missing tooth number."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an epicyclic train the sun gear (24 teeth) is fixed and the arm turns at 100 rpm. The planet has 30 teeth. The absolute speed of the planet about its own axis is",
+   "fig": null,
+   "opts": [
+    "80 rpm",
+    "20 rpm",
+    "180 rpm",
+    "100 rpm"
+   ],
+   "ans": "(C) 180 rpm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Absolute speed = speed relative to the arm + arm speed.",
+    "Arm fixed, sun +x → planet −x(24/30). Sun fixed → x = −y = −100. Planet = y − x(24/30) = 100 + 100 × 0.8 = <b>180 rpm</b>, same sense as the arm",
+    "<b>Exam tip:</b> 80 rpm is only the planet's speed relative to the arm. Absolute speeds are what you need for bearing speeds and for kinetic energy."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An epicyclic gearbox has a fixed annulus of 80 teeth and a sun of 20 teeth. The sun is driven by a 5 kW motor at 1500 rpm and the output is taken from the arm. Neglecting losses, the output torque on the arm (in N·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "159.15 (accept 158.4 to 159.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find the arm speed from the tabular method, then use power balance: P = Tω.",
+    "Annulus fixed: N<sub>arm</sub> = N<sub>sun</sub> × z<sub>S</sub>/(z<sub>S</sub> + z<sub>A</sub>) = 1500 × 20/100 = <b>300 rpm</b>",
+    "T<sub>arm</sub> = 5000 / (2π × 300/60) = <b>159.15 N·m</b>; T<sub>sun</sub> = 31.83 N·m",
+    "Holding torque on the annulus = 159.15 − 31.83 = 127.32 N·m (from ΣT = 0).",
+    "<b>Exam tip:</b> Torques: input + output + holding = 0 (with signs). The fixed member always takes the difference."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A car's rear axle differential has its crown wheel turning at 200 rpm. One driving wheel is held stationary (on a jacked-up car, by the brake). The speed of the other wheel is",
+   "fig": null,
+   "opts": [
+    "100 rpm",
+    "400 rpm",
+    "200 rpm",
+    "0 rpm"
+   ],
+   "ans": "(B) 400 rpm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The differential is an epicyclic train with equal bevel side gears: the crown wheel (cage) speed is the average of the two wheel speeds, N<sub>cage</sub> = (N<sub>L</sub> + N<sub>R</sub>)/2.",
+    "200 = (0 + N<sub>R</sub>)/2 → N<sub>R</sub> = <b>400 rpm</b>",
+    "<b>Exam tip:</b> On a straight road both wheels run at the cage speed and the bevel pinions do not spin on their own axes; on a turn the outer wheel speeds up exactly as much as the inner one slows down."
+   ]
+  }
+ ]
+}

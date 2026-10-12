@@ -1,0 +1,260 @@
+{
+ "day": 18,
+ "subject": "Weekly Revision",
+ "topic": "Week 3 Revision",
+ "days_to_gate": 91,
+ "summary": "all five topics of Week 3: columns and energy methods; mechanism analysis; calculus; dynamics of linkages and flywheels; cams, gears and gear trains (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Theory of Machines, Governors, Balancing & Gyroscope",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A solid steel column of 80 mm diameter and 4 m length has both ends fixed. For E = 210 GPa, the Euler buckling load (in kN, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1041.8 (accept 1036 to 1047)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> P<sub>cr</sub> = π²EI/L<sub>e</sub>², with L<sub>e</sub> = L/2 for both ends fixed.",
+    "I = πd⁴/64 = π × 80⁴/64 = <b>2.0106 × 10⁶ mm⁴</b>; L<sub>e</sub> = 4000/2 = <b>2000 mm</b>",
+    "P<sub>cr</sub> = π² × 210 000 × 2.0106 × 10⁶ / 2000² = 1041811 N = <b>1041.8 kN</b>",
+    "<b>Exam tip:</b> Effective lengths: both pinned L, fixed-free 2L, fixed-pinned L/√2, both fixed L/2. A fixed-fixed column is 4 times as strong as a pinned one of the same length."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A simply supported beam of span L and flexural rigidity EI carries a central point load P. The strain energy stored in bending is",
+   "fig": null,
+   "opts": [
+    "P²L³/(48EI)",
+    "P²L³/(6EI)",
+    "P²L³/(192EI)",
+    "P²L³/(96EI)"
+   ],
+   "ans": "(D) P²L³/(96EI)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> U = ∫M²/(2EI) dx. By symmetry take twice the left half, where M = Px/2.",
+    "U = 2 ∫<sub>0</sub><sup>L/2</sup> (Px/2)²/(2EI) dx = (P²/4EI) × (L/2)³/3 = <b>P²L³/(96EI)</b>",
+    "Check with Castigliano: δ = ∂U/∂P = 2PL³/(96EI) = PL³/(48EI) ✓, the familiar central deflection.",
+    "<b>Exam tip:</b> For a single load, U = Pδ/2, so knowing δ = PL³/48EI gives U directly. P²L³/(6EI) is the cantilever result."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A weight of 100 N falls through 50 mm onto a collar at the lower end of a vertical steel bar 2 m long with a cross-sectional area of 1000 mm². For E = 200 GPa, the maximum stress induced in the bar (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "31.72 (accept 31.5 to 31.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Impact loading: equate the work done by the falling weight to the strain energy: W(h + δ) = σ²AL/(2E), which gives σ = (W/A)[1 + √(1 + 2hAE/(WL))].",
+    "W/A = 100/1000 = <b>0.1 MPa</b>; 2hAE/(WL) = 2 × 50 × 1000 × 200 000/(100 × 2000) = <b>100 000</b>",
+    "σ = 0.1 × (1 + √100 001) = 0.1 × 317.23 = <b>31.72 MPa</b>",
+    "<b>Exam tip:</b> Even a small drop multiplies the static stress (0.1 MPa) by over 300. With h = 0 (sudden load) the bracket becomes 2: a suddenly applied load doubles the stress."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Fixing the slider (piston) of a single slider-crank chain gives",
+   "fig": null,
+   "opts": [
+    "the Whitworth quick-return mechanism",
+    "the pendulum pump (bull engine)",
+    "the oscillating cylinder engine",
+    "the rotary (Gnome) engine"
+   ],
+   "ans": "(B) the pendulum pump (bull engine)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The four inversions of the single slider-crank chain: frame fixed → reciprocating engine; crank fixed → Whitworth quick-return, rotary engine; connecting rod fixed → oscillating cylinder engine, crank and slotted-lever quick-return; slider fixed → pendulum pump (hand pump).",
+    "So fixing the slider gives the <b>pendulum pump</b>.",
+    "<b>Exam tip:</b> Learn the list as 'frame, crank, rod, slider' and their two examples each. GATE often asks the odd one out."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The rod AB shown (0.5 m long) slides with end A on the floor and end B against a vertical wall. When the rod makes 30° with the floor, end A moves away from the wall at 2 m/s. The speed of end B (in m/s, round off to two decimal places) is ______",
+   "fig": "d18p_q5.png",
+   "opts": null,
+   "ans": "3.46 (accept 3.43 to 3.49)",
+   "sfig": "d18p_s5.png",
+   "solution": [
+    "<b>Concept:</b> The instantaneous centre I lies where the normals to the two velocities meet: the vertical through A and the horizontal through B (figure).",
+    "IA = L sin 30° = 0.25 m → ω = v<sub>A</sub>/IA = 2/0.25 = <b>8 rad/s</b>",
+    "IB = L cos 30° = 0.433 m → v<sub>B</sub> = ω × IB = 8 × 0.433 = <b>3.46 m/s</b> (downward)",
+    "<b>Exam tip:</b> Shortcut: v<sub>B</sub>/v<sub>A</sub> = cot θ = cot 30° = 1.732, where θ is the angle with the floor."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a crank and slotted-lever quick-return mechanism, the distance between the fixed centres is 200 mm and the crank is 100 mm long. The ratio of the time of the cutting stroke to the time of the return stroke is",
+   "fig": null,
+   "opts": [
+    "2.0",
+    "1.5",
+    "1.67",
+    "2.5"
+   ],
+   "ans": "(A) 2.0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At the extreme positions the crank is perpendicular to the slotted lever, so cos(α/2) = r/d, where α is the crank angle for the return stroke.",
+    "cos(α/2) = 100/200 = 0.5 → α/2 = 60° → <b>α = 120°</b> (return), cutting = 360° − 120° = <b>240°</b>",
+    "Ratio = 240/120 = <b>2.0</b>",
+    "<b>Exam tip:</b> The stroke length depends on the slotted-lever length, but the time ratio depends only on r/d."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The value of lim<sub>x→0</sub> (sin x / x)<sup>1/x²</sup> is",
+   "fig": null,
+   "opts": [
+    "1",
+    "e<sup>1/6</sup>",
+    "e<sup>−1/6</sup>",
+    "e<sup>−1/3</sup>"
+   ],
+   "ans": "(C) e<sup>−1/6</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A 1<sup>∞</sup> form: take logs. ln L = lim (1/x²) ln(sin x/x).",
+    "sin x/x = 1 − x²/6 + … → ln(sin x/x) ≈ −x²/6",
+    "ln L = −1/6 → <b>L = e<sup>−1/6</sup></b>",
+    "<b>Exam tip:</b> For 1<sup>∞</sup> forms, L = e<sup>lim g(f − 1)</sup> when f → 1 and g → ∞. Here (f − 1)g = (−x²/6)(1/x²) = −1/6."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The value of ∫<sub>0</sub><sup>π/2</sup> sin⁴x cos²x dx (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.098 (accept 0.097 to 0.099)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Walli's formula: ∫<sub>0</sub><sup>π/2</sup> sin<sup>m</sup>x cos<sup>n</sup>x dx = [(m−1)(m−3)…][(n−1)(n−3)…]/[(m+n)(m+n−2)…] × k, where k = π/2 if m and n are both even, otherwise k = 1.",
+    "m = 4, n = 2: (3 × 1)(1)/(6 × 4 × 2) × π/2 = (3/48)(π/2) = <b>π/32</b>",
+    "π/32 = <b>0.098</b>",
+    "<b>Exam tip:</b> Only use the π/2 factor when both powers are even. For ∫ sin³x cos²x the answer is (2)(1)/(5 × 3 × 1) = 2/15, with no π."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The area enclosed between the curves y = x² and y = 2x is",
+   "fig": null,
+   "opts": [
+    "8/3",
+    "2/3",
+    "4/3",
+    "4"
+   ],
+   "ans": "(C) 4/3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find the intersections, then integrate (upper − lower).",
+    "x² = 2x → x = 0, 2. On (0, 2) the line is above the parabola.",
+    "A = ∫<sub>0</sub><sup>2</sup> (2x − x²) dx = 4 − 8/3 = <b>4/3</b>",
+    "<b>Exam tip:</b> Shortcut: the area between y = x² and any straight line cutting it at x = a and x = b is (b − a)³/6. Here (2 − 0)³/6 = 4/3."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "During a punching operation a flywheel must give out 4.5 kJ of energy while its speed falls from 240 rpm to 216 rpm. If the radius of gyration of the flywheel is 0.6 m, its mass (in kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "208.3 (accept 206.3 to 210.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The energy given out equals the drop in kinetic energy: ΔE = ½ I (ω<sub>1</sub>² − ω<sub>2</sub>²), with I = mk².",
+    "ω<sub>1</sub> = 25.133 rad/s, ω<sub>2</sub> = 22.619 rad/s → ω<sub>1</sub>² − ω<sub>2</sub>² = <b>120.01</b>",
+    "I = 2 × 4500/120.01 = <b>74.99 kg·m²</b> → m = 74.99/0.6² = <b>208.3 kg</b>",
+    "<b>Exam tip:</b> ΔE = Iω²C<sub>s</sub> with the mean speed (228 rpm) gives the same answer, because ½I(ω<sub>1</sub>² − ω<sub>2</sub>²) = Iω<sub>mean</sub>(ω<sub>1</sub> − ω<sub>2</sub>) exactly when ω<sub>mean</sub> = (ω<sub>1</sub> + ω<sub>2</sub>)/2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A connecting rod is replaced by a dynamically equivalent system of two point masses at distances l<sub>1</sub> and l<sub>2</sub> on either side of its centre of gravity. If k is its radius of gyration about the centre of gravity, the condition to be satisfied is",
+   "fig": null,
+   "opts": [
+    "l<sub>1</sub> l<sub>2</sub> = k²",
+    "l<sub>1</sub> + l<sub>2</sub> = k",
+    "l<sub>1</sub> = l<sub>2</sub> = k/2",
+    "l<sub>1</sub>² + l<sub>2</sub>² = k²"
+   ],
+   "ans": "(A) l<sub>1</sub> l<sub>2</sub> = k²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Dynamic equivalence needs (i) the same total mass, (ii) the same CG position: m<sub>1</sub>l<sub>1</sub> = m<sub>2</sub>l<sub>2</sub>, and (iii) the same moment of inertia: m<sub>1</sub>l<sub>1</sub>² + m<sub>2</sub>l<sub>2</sub>² = mk².",
+    "Combining the three gives <b>l<sub>1</sub>l<sub>2</sub> = k²</b>.",
+    "<b>Exam tip:</b> If one mass is placed at the small end, the other must be at the centre of percussion (l<sub>2</sub> = k²/l<sub>1</sub>), usually not at the big end. Placing them at both ends needs a correction couple."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the horizontal engine shown, the net force on the piston is 20 kN, the crank radius is 100 mm and the connecting rod is 500 mm long. With the crank at 120° from the inner dead centre, the turning moment on the crankshaft (in kN·m, round off to two decimal places) is ______",
+   "fig": "d18p_q12.png",
+   "opts": null,
+   "ans": "1.56 (accept 1.54 to 1.57)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> T = F r sin(θ + β)/cos β, where sin β = sin θ/n.",
+    "n = 5: sin β = sin 120°/5 = 0.1732 → <b>β = 9.97°</b>",
+    "T = 20 000 × 0.1 × sin 129.97° / cos 9.97° = 1556 N·m ≈ <b>1.56 kN·m</b>",
+    "<b>Exam tip:</b> At θ = 90° the expression gives exactly F r (sin(90° + β) = cos β), a quick check. Past 90° the obliquity reduces the torque below F r sin θ (1.73 kN·m here) because the rod pulls at an angle."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A compound gear train has two stages: a 20-tooth pinion drives a 60-tooth gear, and an 18-tooth pinion on the same shaft as that gear drives a 54-tooth gear. If the input runs at 1440 rpm, the output speed is",
+   "fig": null,
+   "opts": [
+    "480 rpm",
+    "240 rpm",
+    "120 rpm",
+    "160 rpm"
+   ],
+   "ans": "(D) 160 rpm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Train value = product of (driver teeth/driven teeth) for each stage.",
+    "N<sub>out</sub> = 1440 × (20/60) × (18/54) = 1440/9 = <b>160 rpm</b>, in the same direction as the input (two external meshes)",
+    "<b>Exam tip:</b> In a compound train each stage ratio multiplies, so a 9:1 reduction needs only two 3:1 stages instead of one huge gear."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the epicyclic train shown, the sun S (20 teeth) is driven at 1000 rpm clockwise and the annulus A (60 teeth) at 200 rpm counter-clockwise. The speed of the arm carrying the planets (in rpm) is ______",
+   "fig": "d18p_q14.png",
+   "opts": null,
+   "ans": "100 (clockwise)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Tabular method: arm fixed, sun +x gives planet −x(20/20) and annulus −x(20/60). Then add the arm speed y to every member.",
+    "Clockwise positive: sun y + x = 1000; annulus y − x/3 = −200",
+    "Subtract: (4/3)x = 1200 → x = 900, y = <b>100 rpm clockwise</b>",
+    "<b>Exam tip:</b> Check the teeth: 20 + 2 × 20 = 60 ✓. Always write each member's speed as y ± (ratio)x and solve the two given conditions."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If the speed of a cam is doubled while the lift, the cam angles and the follower motion stay the same, the maximum acceleration of the follower becomes",
+   "fig": null,
+   "opts": [
+    "2 times",
+    "4 times",
+    "the same",
+    "8 times"
+   ],
+   "ans": "(B) 4 times",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For every standard motion (SHM, UARM, cycloidal), a<sub>max</sub> ∝ hω²/β², while v<sub>max</sub> ∝ hω/β.",
+    "Doubling ω multiplies the acceleration by 2² = <b>4</b> (and the velocity by 2).",
+    "<b>Exam tip:</b> Inertia force (and contact stress, spring force needed to keep contact) therefore grows with the square of speed. This is why high-speed cams need careful motion design."
+   ]
+  }
+ ]
+}
