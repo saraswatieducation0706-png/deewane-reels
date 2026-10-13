@@ -1,0 +1,246 @@
+{
+ "day": 20,
+ "subject": "Vibrations",
+ "topic": "Free Vibration",
+ "days_to_gate": 88,
+ "summary": "undamped free vibration of single-DOF systems (equivalent springs, energy and Rayleigh methods, torsional and pendulum systems), viscous damping, damping ratio, logarithmic decrement and Coulomb damping",
+ "minutes": 40,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, Quantitative Aptitude I",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A 4 kg block is held between two vertical springs, k<sub>1</sub> = 2000 N/m above it and k<sub>2</sub> = 3000 N/m below it, both ends fixed, as shown. The natural frequency of vertical vibration (in Hz, round off to two decimal places) is ______",
+   "fig": "d20p_q1.png",
+   "opts": null,
+   "ans": "5.63 (accept 5.59 to 5.66)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> When the block moves down by x, the upper spring stretches by x and the lower spring compresses by x. Both forces oppose the motion, so the springs act <b>in parallel</b> even though they are on opposite sides.",
+    "k<sub>e</sub> = k<sub>1</sub> + k<sub>2</sub> = <b>5000 N/m</b>",
+    "ω<sub>n</sub> = √(5000/4) = <b>35.36 rad/s</b> → f<sub>n</sub> = ω<sub>n</sub>/2π = <b>5.63 Hz</b>",
+    "<b>Exam tip:</b> Ask “do the springs share the same displacement or the same force?” Same displacement → parallel (add k). Same force → series (add 1/k)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The static deflection of a machine on its spring mounts is increased four times (by using softer springs). Its natural frequency becomes",
+   "fig": null,
+   "opts": [
+    "four times",
+    "twice",
+    "one-half",
+    "one-quarter"
+   ],
+   "ans": "(C) one-half",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ω<sub>n</sub> = √(k/m) = √(g/δ<sub>st</sub>), since mg = kδ<sub>st</sub>.",
+    "So f<sub>n</sub> ∝ 1/√δ<sub>st</sub>; δ<sub>st</sub> × 4 → f<sub>n</sub> × 1/2.",
+    "<b>Exam tip:</b> Handy shortcut: f<sub>n</sub> (Hz) ≈ 15.76/√δ<sub>st</sub> with δ<sub>st</sub> in mm. For 1 mm deflection, f<sub>n</sub> ≈ 15.8 Hz."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A helical spring of stiffness 3000 N/m has a mass of 1.5 kg and carries a 6 kg mass at its lower end. Accounting for the inertia of the spring (Rayleigh's method), the natural frequency (in rad/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "21.48 (accept 21.35 to 21.61)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Assuming a linear velocity profile along the spring, its kinetic energy equals that of one-third of its mass moving with the end mass.",
+    "m<sub>eff</sub> = m + m<sub>s</sub>/3 = 6 + 0.5 = <b>6.5 kg</b>",
+    "ω<sub>n</sub> = √(3000/6.5) = <b>21.48 rad/s</b> (ignoring the spring mass would give 22.36 rad/s)",
+    "<b>Exam tip:</b> Spring mass adds m<sub>s</sub>/3; for a cantilever beam the effective end mass is 33/140 of the beam mass, and for a simply supported beam (central mass) it is 17/35."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A U-tube manometer contains a liquid column of total length 0.6 m. If the liquid is disturbed, it oscillates in the tube. Neglecting friction, the natural circular frequency of oscillation (in rad/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5.72 (accept 5.68 to 5.75)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Displace the liquid by x on one side. The level difference is 2x, so the restoring force is ρgA(2x), acting on the whole column of mass ρAL.",
+    "ρAL ẍ + 2ρgA x = 0 → ω<sub>n</sub> = √(2g/L)",
+    "ω<sub>n</sub> = √(2 × 9.81/0.6) = <b>5.72 rad/s</b>",
+    "<b>Exam tip:</b> The result is independent of density and tube area. It equals a simple pendulum of length L/2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A cylinder floats upright in water with an immersed depth d. When pushed down slightly and released, it bobs up and down. Neglecting the added mass of water and damping, its natural frequency is",
+   "fig": null,
+   "opts": [
+    "√(g/d)",
+    "√(2g/d)",
+    "√(d/g)",
+    "√(g/2d)"
+   ],
+   "ans": "(A) √(g/d)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An extra depth x adds buoyancy ρ<sub>w</sub>gAx, so the stiffness is k = ρ<sub>w</sub>gA.",
+    "In equilibrium the weight is m g = ρ<sub>w</sub>gAd, so m = ρ<sub>w</sub>Ad.",
+    "ω<sub>n</sub> = √(k/m) = √(ρ<sub>w</sub>gA/(ρ<sub>w</sub>Ad)) = <b>√(g/d)</b>",
+    "<b>Exam tip:</b> It is the same √(g/δ) rule again: the immersed depth plays the role of the static deflection."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A disc with mass moment of inertia 0.02 kg·m² hangs from a steel wire of diameter 2 mm and length 0.8 m (G = 80 GPa). The period of torsional oscillation (in s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.24 (accept 2.23 to 2.26)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Torsional stiffness of a shaft or wire: k<sub>t</sub> = GJ/L, with J = πd<sup>4</sup>/32.",
+    "J = π(0.002)<sup>4</sup>/32 = 1.5708 × 10<sup>−12</sup> m<sup>4</sup> → k<sub>t</sub> = 80×10<sup>9</sup> × 1.5708×10<sup>−12</sup>/0.8 = <b>0.1571 N·m/rad</b>",
+    "ω<sub>n</sub> = √(k<sub>t</sub>/I) = <b>2.802 rad/s</b> → T = 2π/ω<sub>n</sub> = <b>2.24 s</b>",
+    "<b>Exam tip:</b> This is how moments of inertia are measured in the lab: time the torsional pendulum, then I = k<sub>t</sub>T²/(4π²)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A uniform bar of mass 2 kg and length 1 m is hinged at its lower end and stands vertical. Two horizontal springs, each of stiffness 500 N/m, are attached at its top end, as shown. The natural frequency of small oscillations (in rad/s, round off to two decimal places) is ______",
+   "fig": "d20p_q7.png",
+   "opts": null,
+   "ans": "38.54 (accept 38.31 to 38.77)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an inverted pendulum gravity is <b>destabilising</b>: it adds a negative stiffness −mg(L/2) to the springs' restoring moment.",
+    "Restoring moment for a small tilt θ: (2kL² − mgL/2)θ = (1000 − 9.81)θ = <b>990.19 θ</b> N·m",
+    "I<sub>O</sub> = mL²/3 = 0.6667 kg·m² → ω<sub>n</sub> = √(990.19/0.6667) = <b>38.54 rad/s</b>",
+    "<b>Exam tip:</b> The system is stable only if 2kL² > mgL/2. Hanging (pendulum below the hinge), the gravity term would add instead of subtract."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A spring-mass-damper system has m = 2 kg, k = 800 N/m and c = 40 N·s/m. The system is",
+   "fig": null,
+   "opts": [
+    "critically damped",
+    "overdamped with ζ = 2",
+    "underdamped with ζ = 0.5",
+    "underdamped with ζ = 0.05"
+   ],
+   "ans": "(C) underdamped with ζ = 0.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ζ = c/c<sub>c</sub> with c<sub>c</sub> = 2√(km) = 2mω<sub>n</sub>.",
+    "c<sub>c</sub> = 2√(800 × 2) = <b>80 N·s/m</b> → ζ = 40/80 = <b>0.5</b> (< 1, underdamped)",
+    "<b>Exam tip:</b> ω<sub>n</sub> = 20 rad/s and ω<sub>d</sub> = 20√(1 − 0.25) = 17.32 rad/s: the system still oscillates, but the amplitude dies quickly."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a free vibration test the amplitude falls from 12 mm to 3 mm in 4 complete cycles. The damping ratio (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.0551 (accept 0.0545 to 0.0556)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Logarithmic decrement over n cycles: δ = (1/n) ln(x<sub>0</sub>/x<sub>n</sub>); then ζ = δ/√(4π² + δ²).",
+    "δ = (1/4) ln(12/3) = (1/4) ln 4 = <b>0.3466</b>",
+    "ζ = 0.3466/√(39.478 + 0.1201) = <b>0.0551</b>",
+    "<b>Exam tip:</b> For small damping ζ ≈ δ/2π = 0.0552: the approximation is good to better than 0.2 % here."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A system with m = 8 kg and k = 12.8 kN/m is to have a damping ratio of 0.25. The required damping coefficient (in N·s/m) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "160",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> c = ζ c<sub>c</sub> = ζ × 2√(km).",
+    "c<sub>c</sub> = 2√(12800 × 8) = 2 × 320 = <b>640 N·s/m</b>",
+    "c = 0.25 × 640 = <b>160 N·s/m</b>",
+    "<b>Exam tip:</b> Write c<sub>c</sub> = 2mω<sub>n</sub>: here ω<sub>n</sub> = 40 rad/s, so c<sub>c</sub> = 2 × 8 × 40 = 640 N·s/m. Same number, often faster."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Door closers and the recoil mechanisms of guns are designed to be close to critically damped because such a system",
+   "fig": null,
+   "opts": [
+    "oscillates many times with a small amplitude",
+    "returns to its equilibrium position in the shortest time without overshooting",
+    "never returns to equilibrium",
+    "has the highest natural frequency"
+   ],
+   "ans": "(B) returns to its equilibrium position in the shortest time without overshooting",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Underdamped systems overshoot and oscillate; overdamped systems creep back slowly. Critical damping (ζ = 1) is the fastest non-oscillatory return.",
+    "x(t) = (A + Bt)e<sup>−ω<sub>n</sub>t</sup> for ζ = 1: no oscillatory term.",
+    "<b>Exam tip:</b> Measuring instruments (galvanometers, pointer gauges) use ζ ≈ 0.6 to 0.7 instead: a small overshoot buys a faster settling time."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 5 kg block on a rough horizontal surface (μ = 0.15) is attached to a spring of stiffness 2000 N/m. It is pulled 50 mm from the unstretched position and released. Taking g = 9.81 m/s², the amplitude after 2 complete cycles (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "20.57 (accept 20.45 to 20.69)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Coulomb damping: the friction force F = μmg is constant, so the amplitude drops by 2F/k every half-cycle, i.e. 4F/k per cycle (a straight-line decay).",
+    "F = 0.15 × 5 × 9.81 = <b>7.3575 N</b>; 4F/k = <b>14.715 mm per cycle</b>",
+    "After 2 cycles: 50 − 2 × 14.715 = <b>20.57 mm</b> (still larger than F/k = 3.68 mm, so it keeps moving)",
+    "<b>Exam tip:</b> Viscous damping: amplitudes fall in a geometric ratio. Coulomb damping: they fall by equal steps. The shape of the decay curve tells you the damping type."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 2 kg mass hangs from a light inextensible rope passing over a pulley (a solid disc of mass 4 kg and radius 100 mm, frictionless bearing). The other end of the rope is tied to a spring of stiffness 1200 N/m anchored to the ground, as shown. If the rope does not slip on the pulley, the natural frequency (in rad/s, round off to two decimal places) is ______",
+   "fig": "d20p_q13.png",
+   "opts": null,
+   "ans": "17.32 (accept 17.22 to 17.42)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Energy method. Rope does not slip, so the pulley turns at θ̇ = ẋ/r and the spring stretches by x.",
+    "KE = ½mẋ² + ½(½Mr²)(ẋ/r)² = ½(m + M/2)ẋ²; PE = ½kx²",
+    "m<sub>eff</sub> = 2 + 4/2 = <b>4 kg</b> → ω<sub>n</sub> = √(1200/4) = <b>17.32 rad/s</b>",
+    "<b>Exam tip:</b> A solid-disc pulley adds half its mass to the moving mass; a ring-type pulley (I = Mr²) would add its full mass."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A light simply supported beam of span L and flexural rigidity EI carries a mass m at mid-span. The natural frequency of transverse vibration is",
+   "fig": null,
+   "opts": [
+    "√(3EI/(mL³))",
+    "√(192EI/(mL³))",
+    "√(384EI/(5mL³))",
+    "√(48EI/(mL³))"
+   ],
+   "ans": "(D) √(48EI/(mL³))",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The beam acts as a spring of stiffness k = P/δ for a load at the mass position.",
+    "Central load on a simply supported beam: δ = PL³/(48EI) → k = <b>48EI/L³</b>",
+    "ω<sub>n</sub> = √(k/m) = <b>√(48EI/(mL³))</b>",
+    "<b>Exam tip:</b> Remember the four: cantilever end load 3EI/L³; simply supported centre 48EI/L³; fixed-fixed centre 192EI/L³; propped cantilever centre 768EI/(7L³)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A lightly damped structure has damping ratio 0.02. The number of cycles needed for the free-vibration amplitude to fall to half its initial value (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5.51 (accept 5.46 to 5.57)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> After n cycles x<sub>n</sub> = x<sub>0</sub>e<sup>−nδ</sup>, with δ = 2πζ/√(1 − ζ²).",
+    "δ = 2π(0.02)/√(1 − 0.0004) = <b>0.12569</b>",
+    "n = ln 2/δ = 0.69315/0.12569 = <b>5.51 cycles</b>",
+    "<b>Exam tip:</b> For small ζ, n<sub>1/2</sub> ≈ 0.11/ζ. Half-amplitude in about 5.5 cycles means ζ ≈ 0.02, a quick estimate from a recorded trace."
+   ]
+  }
+ ]
+}

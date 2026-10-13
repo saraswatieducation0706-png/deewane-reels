@@ -226,3 +226,21 @@ def polar_masses(ax,items,R=1.0,fs=7.5):
         u=np.array([np.cos(np.radians(a)),np.sin(np.radians(a))]); p=f*R*u
         member(ax,(0,0),tuple(p),lw=1.4); ax.add_patch(Circle(tuple(p),0.08*R,fc="#999999",ec=K,lw=1,zorder=6))
         q=p+0.42*R*u; label(ax,q[0],q[1],t,fs=fs,bbox=dict(fc='white',ec='none',pad=0.3))
+# --- vibration helpers (added Day 20) ---
+def spring(ax,p,q,n=6,w=0.12,lead=0.12,lw=1.2):
+    """zig-zag spring from p to q with n coils, half-width w, straight leads of length `lead` at both ends"""
+    p,q=np.array(p,float),np.array(q,float); d=q-p; L=np.hypot(*d); u=d/L; nrm=np.array([-u[1],u[0]])
+    pts=[p,p+lead*u]; m=2*n; seg=(L-2*lead)/m
+    for i in range(m): pts.append(p+(lead+(i+0.5)*seg)*u+(w if i%2==0 else -w)*nrm)
+    pts+= [q-lead*u,q]; pts=np.array(pts); ax.plot(pts[:,0],pts[:,1],color=K,lw=lw,solid_joinstyle="miter")
+def damper(ax,p,q,w=0.14,lw=1.2):
+    """dashpot from p to q: rod from p, open cylinder near q, piston plate inside"""
+    p,q=np.array(p,float),np.array(q,float); d=q-p; L=np.hypot(*d); u=d/L; n=np.array([-u[1],u[0]])
+    a=p+0.45*L*u; b=p+0.8*L*u; c=p+0.6*L*u
+    ax.plot(*np.c_[p,c],color=K,lw=lw); ax.plot(*np.c_[c-w*0.8*n,c+w*0.8*n],color=K,lw=lw*1.3)
+    for s in (1,-1): ax.plot(*np.c_[a+s*w*n,b+s*w*n],color=K,lw=lw)
+    ax.plot(*np.c_[b-w*n,b+w*n],color=K,lw=lw); ax.plot(*np.c_[b,q],color=K,lw=lw)
+def block(ax,x,y,w,h,txt="",fs=9,fc="#dddddd"):
+    """mass block centred at (x,y)"""
+    ax.add_patch(Rectangle((x-w/2,y-h/2),w,h,fc=fc,ec=K,lw=1.3,zorder=4))
+    if txt: label(ax,x,y,txt,fs=fs,zorder=5)

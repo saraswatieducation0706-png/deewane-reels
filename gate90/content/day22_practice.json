@@ -1,0 +1,242 @@
+{
+ "day": 22,
+ "subject": "Vibrations",
+ "topic": "Forced Vibration",
+ "days_to_gate": 86,
+ "summary": "harmonically forced vibration of single-DOF systems: magnification factor and phase, resonance, rotating unbalance, base excitation, transmissibility and vibration isolation, half-power bandwidth, seismic instruments, and whirling (critical speed) of shafts including Dunkerley's method",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Machine Design, Static & Fatigue Design",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "An undamped spring-mass system is driven by a harmonic force at 80 % of its natural frequency. The magnification factor (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.78 (accept 2.76 to 2.79)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Undamped forced vibration: X/(F<sub>0</sub>/k) = 1/|1 − r²|, r = ω/ω<sub>n</sub>.",
+    "r = 0.8 → 1 − r² = 0.36",
+    "MF = 1/0.36 = <b>2.78</b>",
+    "<b>Exam tip:</b> Below resonance the response is in phase with the force; above resonance it is 180° out of phase (for zero damping)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a damped single-degree-of-freedom system under harmonic forcing at resonance (ω = ω<sub>n</sub>), which statement is correct?",
+   "fig": null,
+   "opts": [
+    "The spring force balances the exciting force",
+    "The inertia force balances the exciting force",
+    "The damping force balances the exciting force, while the spring and inertia forces cancel each other",
+    "All three forces are in phase with the displacement"
+   ],
+   "ans": "(C) The damping force balances the exciting force, while the spring and inertia forces cancel each other",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In the force polygon, the spring force kX and inertia force mω²X act along the displacement (opposite to each other); the damping force cωX is 90° ahead.",
+    "At ω = ω<sub>n</sub>: mω²X = kX, so these two cancel and F<sub>0</sub> = cω<sub>n</sub>X.",
+    "Hence X<sub>res</sub> = F<sub>0</sub>/(cω<sub>n</sub>): only damping limits the resonant amplitude.",
+    "<b>Exam tip:</b> This is also why the phase angle is exactly 90° at resonance for any damping."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 50 kg machine has a rotating unbalance (me) of 0.02 kg·m and is mounted on springs and dampers with ζ = 0.1. The amplitude of vibration when it runs at the natural frequency (in mm) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Rotating unbalance: X = (me/M)·r²/√((1 − r²)² + (2ζr)²).",
+    "At r = 1: X = (me/M)/(2ζ) = (0.02/50)/(0.2) = 0.002 m = <b>2 mm</b>",
+    "<b>Exam tip:</b> For unbalance excitation the force amplitude itself grows as meω², so the plot of MX/(me) starts at 0 and tends to 1 at high speed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A machine running at 1200 rpm is to be mounted on undamped isolators so that only 20 % of the unbalanced force reaches the foundation. The minimum static deflection of the isolators (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.73 (accept 3.70 to 3.75)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Undamped isolation: TR = 1/(r² − 1) for r > √2; and ω<sub>n</sub>² = g/δ<sub>st</sub>.",
+    "TR = 0.2 → r² − 1 = 5 → r² = 6",
+    "ω = 2π(1200)/60 = 125.66 rad/s → ω<sub>n</sub> = ω/√6 = <b>51.30 rad/s</b>",
+    "δ<sub>st</sub> = g/ω<sub>n</sub>² = 9.81/2631.9 = <b>3.73 mm</b>",
+    "<b>Exam tip:</b> Softer mounts (bigger static deflection) give better isolation, which is why heavy machines sit on rubber pads or springs."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For any value of the damping ratio, the transmissibility of a spring-damper mount equals 1 at a frequency ratio of",
+   "fig": null,
+   "opts": [
+    "1",
+    "0.707",
+    "√2",
+    "2"
+   ],
+   "ans": "(C) √2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> TR = √(1 + (2ζr)²)/√((1 − r²)² + (2ζr)²). TR = 1 requires (1 − r²)² = 1.",
+    "So r² = 2 → r = <b>√2</b> (all TR curves cross at this point).",
+    "<b>Exam tip:</b> r < √2: amplification (damping helps). r > √2: isolation (damping hurts)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A lightly damped system with damping ratio 0.05 has a natural frequency of 40 Hz. The half-power bandwidth of its response curve (in Hz) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For light damping the half-power points (amplitude = peak/√2) are at r ≈ 1 ± ζ.",
+    "Bandwidth Δf = f<sub>2</sub> − f<sub>1</sub> = 2ζf<sub>n</sub> = 2(0.05)(40) = <b>4 Hz</b>",
+    "<b>Exam tip:</b> The quality factor Q = 1/(2ζ) = f<sub>n</sub>/Δf = 10: the peak amplitude is 10 times the static deflection."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A delicate instrument is mounted on undamped isolators with a natural frequency of 10 Hz. The panel it sits on vibrates at 30 Hz with an amplitude of 0.5 mm. The amplitude of the instrument (in mm, round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.0625 (accept 0.0621 to 0.0629)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Base excitation: X/Y = TR = √(1 + (2ζr)²)/√((1 − r²)² + (2ζr)²); with ζ = 0, X/Y = 1/|1 − r²|.",
+    "r = 30/10 = 3 → |1 − r²| = 8",
+    "X = 0.5/8 = <b>0.0625 mm</b>",
+    "<b>Exam tip:</b> The same TR formula serves both problems: force transmitted to the floor and motion transmitted from the floor."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An 8 kg disc is mounted at the free end of a steel shaft of diameter 25 mm that overhangs 300 mm from a rigid bearing housing (treat as a cantilever, E = 210 GPa), as shown. Neglecting the shaft mass and the gyroscopic effect of the disc, the critical speed (in rpm, round off to the nearest integer) is ______",
+   "fig": "d22p_q8.png",
+   "opts": null,
+   "ans": "2258 (accept 2245 to 2272)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Critical speed = natural frequency of transverse vibration: ω<sub>c</sub> = √(k/m), k = 3EI/L³ for an end load on a cantilever.",
+    "I = π(0.025)<sup>4</sup>/64 = 1.9175 × 10<sup>−8</sup> m<sup>4</sup> → k = 3EI/L³ = <b>447.4 kN/m</b>",
+    "ω<sub>c</sub> = √(447411/8) = <b>236.49 rad/s</b> → N<sub>c</sub> = <b>2258 rpm</b>",
+    "<b>Exam tip:</b> The shaft must never run continuously near N<sub>c</sub>. Running above it is fine if the machine passes through the critical speed quickly."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A disc with eccentricity e runs on a light shaft below its critical speed. Neglecting damping, the shaft deflection y and the position of the heavy side are",
+   "fig": null,
+   "opts": [
+    "y = e r²/(1 − r²), heavy side outward (in phase with the deflection)",
+    "y = e r²/(1 − r²), heavy side inward",
+    "y = e/(1 − r²), heavy side inward",
+    "y = 0, no whirl below the critical speed"
+   ],
+   "ans": "(A) y = e r²/(1 − r²), heavy side outward (in phase with the deflection)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Equilibrium of the rotating disc: k y = m ω²(y + e) → y = e r²/(1 − r²).",
+    "For r < 1, y and e have the same sign: the mass centre G lies outside the geometric centre (heavy side out).",
+    "For r > 1, y becomes negative: G moves in towards the bearing axis.",
+    "<b>Exam tip:</b> At r = 1 (no damping) y → ∞; with damping the phase passes through 90° at the critical speed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A shaft alone has a critical speed of 2000 rpm. When it carries a rotor (with the shaft mass neglected) the critical speed is 1200 rpm. By Dunkerley's method, the critical speed of the actual shaft with the rotor (in rpm, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1029 (accept 1023 to 1035)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Dunkerley: 1/N² = 1/N<sub>shaft</sub>² + 1/N<sub>rotor</sub>².",
+    "1/N² = 1/2000² + 1/1200² = 9.4444 × 10<sup>−7</sup>",
+    "N = <b>1029 rpm</b>",
+    "<b>Exam tip:</b> The combined value is always lower than the lowest individual critical speed, and Dunkerley slightly underestimates the true value."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the system shown, m = 20 kg, k = 8000 N/m and c = 200 N·s/m. A force F<sub>0</sub> sin ωt with F<sub>0</sub> = 100 N and ω = 25 rad/s acts on the mass. The steady-state amplitude (in mm, round off to two decimal places) is ______",
+   "fig": "d22p_q11.png",
+   "opts": null,
+   "ans": "14.87 (accept 14.78 to 14.96)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> X = (F<sub>0</sub>/k)/√((1 − r²)² + (2ζr)²).",
+    "ω<sub>n</sub> = √(8000/20) = <b>20 rad/s</b>; ζ = 200/(2√(8000 × 20)) = <b>0.25</b>; r = 25/20 = <b>1.25</b>",
+    "(1 − r²)² + (2ζr)² = (-0.5625)² + (0.625)² = 0.7070",
+    "X = 12.5 mm/0.8409 = <b>14.87 mm</b>",
+    "<b>Exam tip:</b> The phase lag is φ = tan<sup>−1</sup>(2ζr/(1 − r²)) = 132.0° (above 90° because r > 1). Use the second-quadrant angle when 1 − r² is negative."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The sensitivity of a vibrometer (seismic displacement pick-up) is best when its natural frequency is",
+   "fig": null,
+   "opts": [
+    "much higher than the frequency being measured",
+    "equal to the frequency being measured",
+    "much lower than the frequency being measured",
+    "exactly √2 times the frequency being measured"
+   ],
+   "ans": "(C) much lower than the frequency being measured",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a seismic instrument the relative displacement Z/Y = r²/√((1 − r²)² + (2ζr)²).",
+    "For r ≫ 1, Z/Y → 1: the seismic mass stays still and the case motion is recorded directly. So ω<sub>n</sub> ≪ ω (a soft, heavy instrument).",
+    "<b>Exam tip:</b> The accelerometer is the opposite: r ≪ 1 (very stiff, light), so Z ∝ acceleration. Vibrometer: low ω<sub>n</sub>; accelerometer: high ω<sub>n</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 100 kg machine (total mass) on undamped springs has a 0.5 kg unbalanced mass rotating at 40 mm radius. It runs at three times its natural frequency. The amplitude of the machine (in mm, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.225 (accept 0.224 to 0.226)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> X = (me/M) r²/|1 − r²| for undamped rotating unbalance.",
+    "me/M = 0.5 × 0.04/100 = 0.0002 m = <b>0.2 mm</b>",
+    "X = 0.2 × 9/8 = <b>0.225 mm</b>",
+    "<b>Exam tip:</b> At high speeds X approaches me/M = 0.2 mm from above; it never drops below this without balancing the rotor."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A car's suspension has a natural frequency of 1.5 Hz. It travels over a road with a sinusoidal profile of wavelength 6 m. The speed at which resonance occurs (in km/h, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "32.4 (accept 32.2 to 32.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Base excitation frequency f = v/λ (one wave passes per λ of travel).",
+    "Resonance when v/λ = f<sub>n</sub> → v = f<sub>n</sub>λ = 1.5 × 6 = <b>9 m/s</b>",
+    "v = 9 × 3.6 = <b>32.4 km/h</b>",
+    "<b>Exam tip:</b> Above this speed the ride gets smoother: the car is in its isolation region once v > √2 × 32.4 = 45.8 km/h."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A system with damping ratio 0.2 is excited by a harmonic force of constant amplitude whose frequency is varied slowly. The maximum value of the magnification factor (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.552 (accept 2.536 to 2.567)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> d(MF)/dr = 0 gives the peak at r<sub>p</sub> = √(1 − 2ζ²), slightly below resonance, with MF<sub>max</sub> = 1/(2ζ√(1 − ζ²)).",
+    "r<sub>p</sub> = √(1 − 0.08) = <b>0.9592</b>",
+    "MF<sub>max</sub> = 1/(2 × 0.2 × √0.96) = <b>2.552</b> (compared with 1/(2ζ) = 2.5 at r = 1)",
+    "<b>Exam tip:</b> For ζ ≥ 0.707 there is no peak at all: MF falls steadily from 1 as r increases."
+   ]
+  }
+ ]
+}
