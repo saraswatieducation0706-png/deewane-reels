@@ -1,0 +1,249 @@
+{
+ "day": 25,
+ "subject": "Machine Design",
+ "topic": "Joints",
+ "days_to_gate": 82,
+ "summary": "riveted joints (modes of failure, strength and efficiency, boiler joints), welded joints (butt, transverse and parallel fillet welds, circular welds, eccentrically loaded welds) and bolted joints (preload, joint stiffness, separation, eccentric loading in shear and in tension)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Machine Design, Machine Elements",
+ "questions": [
+  {
+   "text": "Caulking and fullering are done on riveted joints of boilers and pressure vessels to",
+   "fig": null,
+   "opts": [
+    "reduce the stress concentration at the rivet holes",
+    "allow for corrosion of the plates",
+    "increase the shearing strength of the rivets",
+    "make the joint leak-proof"
+   ],
+   "ans": "(D) make the joint leak-proof",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In caulking, the bevelled plate edge is hammered with a blunt tool so that it presses tightly on the other plate; fullering uses a tool as wide as the plate edge.",
+    "Both close the gap between the plates so that steam or fluid cannot leak: the joint becomes <b>leak-proof (fluid-tight)</b>. They add no strength.",
+    "<b>Exam tip:</b> For caulking, the plate edge is planed at about 75–80° before hammering."
+   ]
+  },
+  {
+   "text": "A double-riveted lap joint (two rivets per pitch length, single shear) joins 12 mm plates. Hole diameter = 22 mm, pitch = 75 mm. Permissible stresses: σ<sub>t</sub> = 90 MPa, τ = 70 MPa, σ<sub>c</sub> = 150 MPa. The efficiency of the joint (in %, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "65.7 (accept 65.3 to 66.1)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Work out all three strengths over one pitch length and divide the least by the strength of the solid plate.",
+    "Tearing: P<sub>t</sub> = (p − d)tσ<sub>t</sub> = (75 − 22) × 12 × 90 = <b>57240 N</b>",
+    "Shearing: P<sub>s</sub> = 2 × (π/4) × 22² × 70 = <b>53219 N</b>",
+    "Crushing: P<sub>c</sub> = 2 × 22 × 12 × 150 = <b>79200 N</b>",
+    "Solid plate: p t σ<sub>t</sub> = 75 × 12 × 90 = 81000 N → η = 53219/81000 = <b>65.7 %</b>",
+    "<b>Exam tip:</b> Shearing governs here, so increasing the rivet diameter (not the pitch) is the way to raise this joint's efficiency."
+   ]
+  },
+  {
+   "text": "A boiler shell of 1200 mm internal diameter is made of 14 mm plates. The permissible tensile stress is 90 MPa and the efficiency of the longitudinal riveted joint is 80 %. The maximum allowable steam pressure (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.68 (accept 1.67 to 1.69)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The longitudinal joint resists the hoop stress: σ = pD/(2tη).",
+    "p = 2tση/D = 2 × 14 × 90 × 0.8/1200 = <b>1.68 MPa</b>",
+    "<b>Exam tip:</b> The circumferential joint carries only the longitudinal stress pD/4t, so it may have about half the efficiency of the longitudinal joint."
+   ]
+  },
+  {
+   "text": "A 75 mm wide plate is lap-welded to another plate by a transverse fillet weld across its full width plus two parallel fillet welds of equal length, all of 10 mm leg size, as shown. The joint carries 200 kN. The permissible stresses in the weld are 90 MPa in tension (transverse weld) and 70 MPa in shear (parallel welds). The length of each parallel weld (in mm, round off to one decimal place) is ______",
+   "fig": "d25p_q4.png",
+   "opts": null,
+   "ans": "153.8 (accept 152.9 to 154.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The welds share the load: transverse weld 0.707 s l σ<sub>t</sub> + parallel welds 2 × 0.707 s l τ.",
+    "Transverse weld: 0.707 × 10 × 75 × 90 = <b>47722 N</b>",
+    "Remaining load = 200000 − 47722 = 152278 N = 2 × 0.707 × 10 × l × 70 = 989.8 l",
+    "l = <b>153.8 mm</b>",
+    "<b>Exam tip:</b> A single transverse weld across the end of a lap joint is used here; a double transverse lap joint has welds at both plate ends."
+   ]
+  },
+  {
+   "text": "The polar moment of inertia of a straight weld line of length l about its own centre, per unit throat thickness (the 'unit' polar moment), is",
+   "fig": null,
+   "opts": [
+    "l³/12",
+    "l³/6",
+    "l³/3",
+    "l²/12"
+   ],
+   "ans": "(A) l³/12",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Treat the weld as a line. About its centre, the unit moment of inertia about the perpendicular axis is ∫x² dx from −l/2 to l/2.",
+    "J<sub>u</sub> = <b>l³/12</b>. The actual polar moment is J = 0.707 s × J<sub>u</sub>.",
+    "<b>Exam tip:</b> For a weld group, shift each line to the group centroid with J<sub>u</sub> = l³/12 + l × (distance)²."
+   ]
+  },
+  {
+   "text": "A bracket is welded to a column by two horizontal fillet welds, each 100 mm long and 120 mm apart, as shown. A vertical load of 15 kN acts in the plane of the welds at 150 mm from the centroid of the weld group. For a permissible shear stress of 80 MPa, the leg size of the welds (in mm, round off to two decimal places) is ______",
+   "fig": "d25p_q6.png",
+   "opts": null,
+   "ans": "4.47 (accept 4.43 to 4.51)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Eccentric load in the plane of the welds = direct shear P/A + torsional shear Pe·r/J. Work per unit throat t, then find t.",
+    "Unit polar moment of the two lines about the centroid: J<sub>u</sub> = b(3d² + b²)/6 = 100(3 × 120² + 100²)/6 = <b>886667 mm³</b>",
+    "Critical point: weld end nearest the load, at x = 50, y = 60 mm (r = 78.1 mm)",
+    "Vertical: P/(2b) + Pe·x/J<sub>u</sub> = 75 + 126.88 = <b>201.88/t</b>; horizontal: Pe·y/J<sub>u</sub> = <b>152.26/t</b>",
+    "Resultant = √(201.88² + 152.26²)/t = 252.86/t = 80 → t = 3.161 mm, s = t/0.707 = <b>4.47 mm</b>",
+    "<b>Exam tip:</b> Add the components vectorially; adding the magnitudes of the direct and torsional shear overestimates the stress."
+   ]
+  },
+  {
+   "text": "An M16 bolt is to be given an initial tension of 30 kN. Taking the torque coefficient as 0.2, the wrench torque required (in N·m) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "96",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> T = K F<sub>i</sub> d.",
+    "T = 0.2 × 30000 N × 0.016 m = <b>96 N·m</b>",
+    "<b>Exam tip:</b> K ≈ 0.2 for dry, unlubricated threads; lubrication lowers it to about 0.15, so the same torque gives more preload."
+   ]
+  },
+  {
+   "text": "A bolted joint has an initial preload of 30 kN and a joint constant C = k<sub>b</sub>/(k<sub>b</sub> + k<sub>m</sub>) = 0.25. The external tensile load at which the clamped members just separate (in kN) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "40",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Member compression = F<sub>i</sub> − (1 − C)P. Separation when this becomes zero.",
+    "P<sub>sep</sub> = F<sub>i</sub>/(1 − C) = 30/(1 − 0.25) = <b>40 kN</b>",
+    "At that load the bolt carries the whole external load: F<sub>b</sub> = 30 + 0.25 × 40 = 40 kN = P.",
+    "<b>Exam tip:</b> Beyond separation every extra newton of external load goes into the bolt; a joint must never be designed to separate."
+   ]
+  },
+  {
+   "text": "A 'bolt of uniform strength' has its shank turned down to the core diameter of the threads (or a hole drilled along its axis). The main purpose is to",
+   "fig": null,
+   "opts": [
+    "make it easier to tighten",
+    "increase its capacity to absorb shock (impact) energy",
+    "increase its stiffness",
+    "increase its static tensile strength"
+   ],
+   "ans": "(B) increase its capacity to absorb shock (impact) energy",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Under impact, energy absorbed = σ²V/(2E). In a normal bolt the threaded part (smaller area) reaches the limiting stress while the thicker shank is lightly stressed.",
+    "Reducing the shank to the core area makes the stress uniform along the length, so the whole volume works at the limiting stress and the bolt <b>absorbs more shock energy</b>.",
+    "<b>Exam tip:</b> It also lowers the bolt's stiffness, which helps under fluctuating loads, but its static strength (set by the core area) does not change."
+   ]
+  },
+  {
+   "text": "A plate is bolted to a column by three bolts in a vertical line at a pitch of 80 mm, as shown. A vertical load of 12 kN acts at a horizontal distance of 250 mm from the middle bolt. The resultant shear force on the most heavily loaded bolt (in kN, round off to two decimal places) is ______",
+   "fig": "d25p_q10.png",
+   "opts": null,
+   "ans": "19.17 (accept 19.06 to 19.29)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Direct shear P/n on every bolt plus secondary shear F<sub>i</sub>'' = P e r<sub>i</sub>/Σr² perpendicular to each radius.",
+    "Direct shear = 12/3 = <b>4 kN</b> (vertical)",
+    "Secondary on top and bottom bolts (r = 80 mm; middle bolt r = 0): 12 × 250 × 80/(2 × 80²) = <b>18.75 kN</b>, horizontal",
+    "Resultant = √(4² + 18.75²) = <b>19.17 kN</b> (top and bottom bolts)",
+    "<b>Exam tip:</b> Here the two components are perpendicular; for bolts arranged in a square they meet at 45°, so use the cosine rule."
+   ]
+  },
+  {
+   "text": "A bracket is fixed to a wall by four bolts, two at 40 mm and two at 240 mm from the lower edge about which it tends to tilt, as shown. A load of 30 kN acts at 200 mm from the wall. The maximum tensile load on a bolt due to the overturning moment (in kN, round off to two decimal places) is ______",
+   "fig": "d25p_q11.png",
+   "opts": null,
+   "ans": "12.16 (accept 12.09 to 12.24)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The bracket tends to rotate about the tilting edge; bolt elongation, and hence bolt load, is proportional to the distance from that edge: F = w l.",
+    "P L = 2w(l<sub>1</sub>² + l<sub>2</sub>²): w = 30 × 200/(2 × (40² + 240²)) = 0.05068 kN/mm",
+    "F<sub>max</sub> = w × 240 = <b>12.16 kN</b> (the two upper bolts)",
+    "<b>Exam tip:</b> Each bolt also carries direct shear 30/4 = 7.5 kN; combine both for the bolt size with a theory of failure."
+   ]
+  },
+  {
+   "text": "In designing a single-V butt weld loaded in tension, the strength is calculated as",
+   "fig": null,
+   "opts": [
+    "1.414 t l σ<sub>t</sub>",
+    "(t + reinforcement) l σ<sub>t</sub>",
+    "0.707 t l σ<sub>t</sub>, where t is the plate thickness",
+    "t l σ<sub>t</sub>, where t is the plate thickness (reinforcement neglected)"
+   ],
+   "ans": "(D) t l σ<sub>t</sub>, where t is the plate thickness (reinforcement neglected)",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In a butt weld the throat equals the thickness of the thinner plate.",
+    "P = <b>t l σ<sub>t</sub></b>. The reinforcement (about 10 % of t) is ignored as a margin of safety.",
+    "<b>Exam tip:</b> The factor 0.707 belongs to fillet welds, whose throat is 0.707 × leg size."
+   ]
+  },
+  {
+   "text": "A 50 mm diameter rod is welded to a plate by a circumferential fillet weld of 6 mm leg size. The rod is subjected to a bending moment of 500 N·m. The maximum bending stress in the weld (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "60.03 (accept 59.67 to 60.39)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Treat the weld as a thin ring of diameter d and thickness t (throat): Z = π t d²/4.",
+    "t = 0.707 × 6 = <b>4.242 mm</b>",
+    "σ<sub>b</sub> = M/Z = 4M/(π t d²) = 4 × 500000/(π × 4.242 × 50²) = <b>60.03 MPa</b>",
+    "<b>Exam tip:</b> Under torsion the same weld gives τ = 2T/(π t d²), exactly half of 4T/(π t d²)."
+   ]
+  },
+  {
+   "text": "In a riveted joint, the margin (distance from the centre of a rivet hole to the edge of the plate) is usually taken as about",
+   "fig": null,
+   "opts": [
+    "0.5 d",
+    "3 d",
+    "1.5 d",
+    "5 d"
+   ],
+   "ans": "(C) 1.5 d",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The margin must be large enough that the plate does not tear or shear out between the hole and the edge.",
+    "Standard practice: m = <b>1.5 d</b> (d = rivet hole diameter). The minimum pitch is about 2 d to leave room for the rivet head and tools.",
+    "<b>Exam tip:</b> Do not confuse margin (hole centre to plate edge) with pitch (hole centre to hole centre along a row)."
+   ]
+  },
+  {
+   "text": "The cover of a cylinder of 300 mm inside diameter is held by 12 bolts. The gas pressure is 2 MPa and the permissible tensile stress in the bolts is 80 MPa. Neglecting the preload, the minimum core diameter of the bolts (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "13.69 (accept 13.61 to 13.78)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The total gas force on the cover is shared equally by the bolts.",
+    "F = (π/4)D²p = (π/4) × 300² × 2 = <b>141372 N</b>",
+    "Per bolt = 141372/12 = <b>11781 N</b>",
+    "d<sub>c</sub> = √(4 × 11781/(π × 80)) = <b>13.69 mm</b>; choose the next standard size (M16, d<sub>c</sub> ≈ 13.8 mm).",
+    "<b>Exam tip:</b> Bolts must be sized on the core (root) diameter, which is about 0.84 times the nominal diameter."
+   ]
+  }
+ ]
+}

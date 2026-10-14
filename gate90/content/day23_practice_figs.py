@@ -1,0 +1,37 @@
+import sys,os; sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","tooling"))
+from figlib import *
+F=(sys.argv[1] if len(sys.argv)>1 else "fig")+"/"
+os.makedirs(F,exist_ok=True)
+def fin(fig,ax,x0,x1,y0,y1,name): ax.set_xlim(x0,x1); ax.set_ylim(y0,y1); save(fig,F+name)
+# P11 fatigue diagram: Soderberg (1), Goodman (2), Gerber (3)
+fig,ax=new(3.4,2.5)
+Se,Syt,Sut=1.4,2.4,3.4
+arrow(ax,0,0,3.9,0,lw=1.1); arrow(ax,0,0,0,1.95,lw=1.1)
+label(ax,3.95,-0.05,"σm",fs=9,ha="left",va="top"); label(ax,-0.08,1.98,"σa",fs=9,ha="right")
+ax.plot([0,Syt],[Se,0],color=K,lw=1.3,ls="--")
+ax.plot([0,Sut],[Se,0],color=K,lw=1.6)
+xs=np.linspace(0,Sut,60); ax.plot(xs,Se*(1-(xs/Sut)**2),color=K,lw=1.3,ls=":")
+label(ax,-0.08,Se,"Se",fs=8,ha="right")
+for x,t in ((Syt,"Syt"),(Sut,"Sut")): ax.plot([x,x],[0,-0.06],color=K,lw=1); label(ax,x,-0.16,t,fs=8,va="top")
+label(ax,1.05,0.62,"1",fs=9,bbox=dict(boxstyle="circle,pad=0.15",fc="white",ec=K,lw=0.8))
+label(ax,2.15,0.8,"2",fs=9,bbox=dict(boxstyle="circle,pad=0.15",fc="white",ec=K,lw=0.8))
+label(ax,2.55,1.0,"3",fs=9,bbox=dict(boxstyle="circle,pad=0.15",fc="white",ec=K,lw=0.8))
+fin(fig,ax,-0.45,4.3,-0.45,2.1,"d23p_q11.png")
+# P15 rotating stepped shaft with a shoulder fillet under bending
+fig,ax=new(3.8,1.9)
+r=0.18
+for s in (1,-1):
+    ax.plot([-0.2,2.0],[0.75*s,0.75*s],color=K,lw=1.4)
+    ax.plot([2.0,2.0],[0.75*s,(0.5+r)*s],color=K,lw=1.4)
+    th=np.linspace(np.pi,1.5*np.pi,20)
+    ax.plot(2.0+r+r*np.cos(th), s*(0.5+r+r*np.sin(th)),color=K,lw=1.4)
+    ax.plot([2.0+r,4.2],[0.5*s,0.5*s],color=K,lw=1.4)
+ax.plot([-0.2,-0.2],[-0.75,0.75],color=K,lw=1.4); ax.plot([4.2,4.2],[-0.5,0.5],color=K,lw=1.4)
+ax.plot([-0.4,4.4],[0,0],color=K,lw=0.6,ls="-.")
+omega(ax,-0.2,0,0.95,"M",ccw=True,a0=140,a1=220,fs=9,lpos=(-1.25,0))
+omega(ax,4.2,0,0.75,"M",ccw=False,a0=-40,a1=40,fs=9,lpos=(5.1,0))
+vdim(ax,3.5,-0.5,0.5,"",fs=8); label(ax,3.5,-0.68,"d = 30 mm",fs=8,va="top")
+label(ax,1.0,0.35,"D",fs=9)
+arrow(ax,2.6,1.25,2.12,0.66,lw=0.8); label(ax,2.65,1.33,"fillet",fs=8,ha="left")
+omega(ax,0.7,-1.15,0.2,"",ccw=True,a0=200,a1=500); label(ax,1.0,-1.15,"rotating",fs=8,ha="left")
+fin(fig,ax,-1.6,5.4,-1.5,1.55,"d23p_q15.png")

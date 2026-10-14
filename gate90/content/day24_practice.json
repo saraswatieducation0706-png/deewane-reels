@@ -1,0 +1,245 @@
+{
+ "day": 24,
+ "subject": "Weekly Revision",
+ "topic": "Week 4 Revision",
+ "days_to_gate": 84,
+ "summary": "all five topics of Week 4: governors, balancing and gyroscope; free vibration; quantitative aptitude I; forced vibration; static and fatigue design (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Machine Design, Joints",
+ "questions": [
+  {
+   "text": "A Watt governor runs at 60 rpm. Its height (vertical distance from the plane of rotation of the balls to the point where the arms meet the spindle axis), in mm, round off to one decimal place, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "248.6 (accept 247.1 to 250.1)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For a Watt governor, tan θ = ω²r/g gives h = g/ω² = 895/N² m (N in rpm).",
+    "h = 895/60² = 895/3600 = <b>0.2486 m = 248.6 mm</b>",
+    "<b>Exam tip:</b> h ∝ 1/N², so the Watt governor is useful only at low speeds; at 300 rpm h is barely 10 mm."
+   ]
+  },
+  {
+   "text": "The rotor of an aeroplane engine has a mass of 400 kg and a radius of gyration of 0.3 m, and spins at 3000 rpm. The aeroplane takes a turn of 100 m radius at 360 km/h. The gyroscopic couple on the aircraft (in kN·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11.31 (accept 11.24 to 11.38)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> C = Iωω<sub>p</sub>, with ω<sub>p</sub> = v/R for a turn.",
+    "I = mk² = 400 × 0.3² = <b>36 kg·m²</b>; ω = 2π × 3000/60 = <b>314.16 rad/s</b>",
+    "v = 360/3.6 = 100 m/s; ω<sub>p</sub> = 100/100 = <b>1 rad/s</b>",
+    "C = 36 × 314.16 × 1 = 11310 N·m = <b>11.31 kN·m</b>",
+    "<b>Exam tip:</b> Convert km/h to m/s and rpm to rad/s before multiplying; most wrong answers in GATE come from units."
+   ]
+  },
+  {
+   "text": "For a reciprocating mass m with crank radius r, crank angle θ, angular speed ω and obliquity ratio n = l/r, the secondary unbalanced force is",
+   "fig": null,
+   "opts": [
+    "m ω² r cos 2θ",
+    "m ω² r cos θ/n",
+    "m ω² r cos 2θ/n",
+    "m ω² r cos θ"
+   ],
+   "ans": "(C) m ω² r cos 2θ/n",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The inertia force of the reciprocating parts ≈ mω²r(cos θ + cos 2θ/n).",
+    "Primary part: mω²r cos θ (varies at crank speed). Secondary part: <b>mω²r cos 2θ/n</b> (varies at twice the crank speed, smaller by the factor n).",
+    "<b>Exam tip:</b> The secondary force acts like an imaginary crank of radius r/(4n) rotating at 2ω, which is how secondary balancing of multi-cylinder engines is done."
+   ]
+  },
+  {
+   "text": "In the system shown, springs k<sub>1</sub> = 2000 N/m and k<sub>2</sub> = 3000 N/m act side by side between the support and a light rigid plate, and spring k<sub>3</sub> = 5000 N/m connects the plate to a 10 kg mass. The natural frequency of vertical vibration (in Hz, round off to three decimal places) is ______",
+   "fig": "d24p_q4.png",
+   "opts": null,
+   "ans": "2.516 (accept 2.501 to 2.532)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Springs sharing the same deflection are in parallel (k add); springs carrying the same force are in series (1/k add).",
+    "k<sub>1</sub> ∥ k<sub>2</sub> = 2000 + 3000 = <b>5000 N/m</b>",
+    "In series with k<sub>3</sub>: k<sub>e</sub> = 5000 × 5000/(5000 + 5000) = <b>2500 N/m</b>",
+    "f<sub>n</sub> = (1/2π)√(2500/10) = <b>2.516 Hz</b>",
+    "<b>Exam tip:</b> Don't be misled by how the springs are drawn; ask which springs share the deflection and which share the force."
+   ]
+  },
+  {
+   "text": "The critical damping coefficient c<sub>c</sub> of a spring-mass system (mass m, stiffness k, natural frequency ω<sub>n</sub>) is",
+   "fig": null,
+   "opts": [
+    "2k/ω<sub>n</sub>²",
+    "√(km) = mω<sub>n</sub>",
+    "2√(km) = 2mω<sub>n</sub>",
+    "√(k/m)"
+   ],
+   "ans": "(C) 2√(km) = 2mω<sub>n</sub>",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Critical damping is the value at which the roots of ms² + cs + k = 0 just become equal: c² = 4km.",
+    "c<sub>c</sub> = <b>2√(km) = 2mω<sub>n</sub> = 2k/ω<sub>n</sub></b>; damping ratio ζ = c/c<sub>c</sub>.",
+    "<b>Exam tip:</b> 2k/ω<sub>n</sub>² has units of mass, not of a damping coefficient; check units to eliminate options quickly."
+   ]
+  },
+  {
+   "text": "A solid cylinder of mass 6 kg rolls without slipping on a horizontal floor. Its centre is attached to a horizontal spring of stiffness 900 N/m, as shown. The natural circular frequency of small oscillations (in rad/s) is ______",
+   "fig": "d24p_q6.png",
+   "opts": null,
+   "ans": "10",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Energy method. Rolling without slip: KE = ½mv² + ½(½mR²)(v/R)² = ¾mv².",
+    "Equivalent mass = 3m/2 = 9 kg; spring stiffness at the centre = k = 900 N/m",
+    "ω<sub>n</sub> = √(k/(1.5m)) = √(2k/3m) = √(1800/18) = <b>10 rad/s</b>",
+    "<b>Exam tip:</b> If the spring were attached at the top of the cylinder, its stretch would be 2x and ω<sub>n</sub> = √(8k/3m)."
+   ]
+  },
+  {
+   "text": "A car goes from P to Q at 40 km/h and returns from Q to P along the same road at 60 km/h. Its average speed for the whole journey (in km/h) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "48",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For equal distances, average speed = 2v<sub>1</sub>v<sub>2</sub>/(v<sub>1</sub> + v<sub>2</sub>) (harmonic mean), not the simple average.",
+    "Average = 2 × 40 × 60/(40 + 60) = <b>48 km/h</b>",
+    "<b>Exam tip:</b> 50 km/h (the arithmetic mean) is the trap option. It is correct only when equal <i>times</i> are spent at each speed."
+   ]
+  },
+  {
+   "text": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C is",
+   "fig": null,
+   "opts": [
+    "8 : 12 : 15",
+    "2 : 3 : 5",
+    "8 : 12 : 5",
+    "2 : 12 : 15"
+   ],
+   "ans": "(A) 8 : 12 : 15",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Make the common term (B) equal in both ratios.",
+    "A : B = 2 : 3 = 8 : 12; B : C = 4 : 5 = 12 : 15",
+    "A : B : C = <b>8 : 12 : 15</b>",
+    "<b>Exam tip:</b> Multiply the first ratio by B's value in the second and the second ratio by B's value in the first."
+   ]
+  },
+  {
+   "text": "By selling an article for ₹540, a trader loses 10 %. At what price (in ₹) should he sell it to gain 15 %? ______",
+   "fig": null,
+   "opts": null,
+   "ans": "690",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Find the cost price first; all percentages refer to CP.",
+    "CP = 540/(1 − 0.10) = <b>₹600</b>",
+    "Required SP = 600 × 1.15 = <b>₹690</b>",
+    "<b>Exam tip:</b> Shortcut: SP<sub>2</sub> = SP<sub>1</sub> × (100 + gain)/(100 − loss) = 540 × 115/90."
+   ]
+  },
+  {
+   "text": "A lightly damped system (ζ = 0.08) is excited at resonance by a harmonic force whose amplitude would produce a static deflection of 2 mm. The resonant amplitude (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12.5",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> At r = 1, the magnification factor is 1/(2ζ).",
+    "X = X<sub>st</sub>/(2ζ) = 2/(2 × 0.08) = <b>12.5 mm</b>",
+    "<b>Exam tip:</b> The true peak (at r = √(1 − 2ζ²)) is 1/(2ζ√(1 − ζ²)), only about 0.3 % larger here; GATE accepts 1/(2ζ) unless it asks for the exact maximum."
+   ]
+  },
+  {
+   "text": "A disc is mounted at the middle of a light shaft between bearings. The static deflection of the shaft under the weight of the disc is 0.5 mm. The critical (whirling) speed of the shaft is about",
+   "fig": null,
+   "opts": [
+    "2675 rpm",
+    "946 rpm",
+    "140 rpm",
+    "1338 rpm"
+   ],
+   "ans": "(D) 1338 rpm",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Critical speed equals the natural frequency of transverse vibration: ω<sub>c</sub> = √(k/m) = √(g/δ).",
+    "ω<sub>c</sub> = √(9.81/0.0005) = <b>140.1 rad/s</b>",
+    "N<sub>c</sub> = 60 × 140.1/2π = <b>1338 rpm</b>",
+    "<b>Exam tip:</b> 140 is ω in rad/s; confusing rad/s with rpm is the common trap here."
+   ]
+  },
+  {
+   "text": "A machine on spring-damper mounts (ζ = 0.2) runs at twice the natural frequency of the mounting. The force transmissibility (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.412 (accept 0.410 to 0.415)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> T = √(1 + (2ζr)²)/√((1 − r²)² + (2ζr)²).",
+    "2ζr = 0.8; 1 − r² = -3",
+    "T = √(1 + 0.64)/√(9 + 0.64) = 1.2806/3.1048 = <b>0.412</b>",
+    "<b>Exam tip:</b> Without damping T would be 1/(r² − 1) = 0.333; damping raises T above r = √2."
+   ]
+  },
+  {
+   "text": "A component has σ<sub>m</sub> = 80 MPa and σ<sub>a</sub> = 60 MPa. Its corrected endurance limit is 180 MPa and S<sub>yt</sub> = 320 MPa. The factor of safety by the Soderberg criterion (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.71 (accept 1.70 to 1.72)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Soderberg: σ<sub>a</sub>/S<sub>e</sub> + σ<sub>m</sub>/S<sub>yt</sub> = 1/N.",
+    "1/N = 60/180 + 80/320 = 0.3333 + 0.2500 = 0.5833",
+    "N = <b>1.71</b>",
+    "<b>Exam tip:</b> Soderberg also guards against yielding, so no separate yield check is needed."
+   ]
+  },
+  {
+   "text": "Which theory of failure is most suitable for designing a component made of grey cast iron?",
+   "fig": null,
+   "opts": [
+    "Maximum strain energy theory",
+    "Maximum shear stress theory",
+    "Maximum principal stress theory",
+    "Maximum distortion energy theory"
+   ],
+   "ans": "(C) Maximum principal stress theory",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Grey cast iron is brittle: it fractures without yielding when the largest normal stress reaches S<sub>ut</sub>.",
+    "So the <b>maximum principal stress (Rankine)</b> theory is used. Tresca and von Mises describe <i>yielding</i> of ductile metals.",
+    "<b>Exam tip:</b> Brittle → Rankine (or Coulomb-Mohr when S<sub>uc</sub> ≠ S<sub>ut</sub>); ductile → von Mises (or Tresca)."
+   ]
+  },
+  {
+   "text": "The principal stresses at a point in a ductile steel part are σ<sub>1</sub> = 150 MPa, σ<sub>2</sub> = -50 MPa and σ<sub>3</sub> = 0. For S<sub>yt</sub> = 300 MPa, the factor of safety by the maximum shear stress theory (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.5",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Tresca: τ<sub>max</sub> = (σ<sub>max</sub> − σ<sub>min</sub>)/2 among all three principal stresses; yield when τ<sub>max</sub> = S<sub>yt</sub>/2.",
+    "σ<sub>max</sub> = 150, σ<sub>min</sub> = -50: τ<sub>max</sub> = (150 − (-50))/2 = <b>100 MPa</b>",
+    "N = (300/2)/100 = <b>1.50</b>",
+    "<b>Exam tip:</b> When σ<sub>1</sub> and σ<sub>2</sub> have the same sign, σ<sub>3</sub> = 0 becomes σ<sub>min</sub>, and τ<sub>max</sub> = σ<sub>1</sub>/2."
+   ]
+  }
+ ]
+}

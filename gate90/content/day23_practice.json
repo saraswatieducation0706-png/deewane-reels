@@ -1,0 +1,249 @@
+{
+ "day": 23,
+ "subject": "Machine Design",
+ "topic": "Static & Fatigue Design",
+ "days_to_gate": 85,
+ "summary": "design for static loading with the theories of failure (Rankine, Tresca, von Mises), stress concentration and notch sensitivity, fluctuating stresses, the endurance limit and its modifying factors, the S-N diagram, Soderberg, Goodman and Gerber criteria, and Miner's rule for cumulative damage",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Weekly Revision, Week 4 Revision",
+ "questions": [
+  {
+   "text": "In the σ1–σ2 plane, the safe (non-yielding) region predicted by the maximum shear stress (Tresca) theory for plane stress is bounded by",
+   "fig": null,
+   "opts": [
+    "a hexagon",
+    "a square",
+    "a circle",
+    "an ellipse"
+   ],
+   "ans": "(A) a hexagon",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Tresca: yielding when the largest of |σ1|, |σ2| and |σ1 − σ2| reaches S<sub>yt</sub>.",
+    "In the first and third quadrants the limit is |σ1| = S<sub>yt</sub> or |σ2| = S<sub>yt</sub> (square edges); in the second and fourth quadrants it is |σ1 − σ2| = S<sub>yt</sub> (inclined lines). Together they form a <b>hexagon</b>.",
+    "The von Mises locus σ1² − σ1σ2 + σ2² = S<sub>yt</sub>² is an <b>ellipse</b> that passes through all six corners of the hexagon; Rankine gives a <b>square</b>.",
+    "<b>Exam tip:</b> The largest gap between Tresca and von Mises is in pure shear (σ1 = −σ2): 0.5 S<sub>yt</sub> versus 0.577 S<sub>yt</sub>."
+   ]
+  },
+  {
+   "text": "A point on the surface of a shaft has a bending stress of 80 MPa and a torsional shear stress of 60 MPa. The material has S<sub>yt</sub> = 300 MPa. The factor of safety by the von Mises theory (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.29 (accept 2.27 to 2.30)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For σ<sub>y</sub> = 0, the von Mises stress is σ<sub>e</sub> = √(σ² + 3τ²).",
+    "σ<sub>e</sub> = √(80² + 3 × 60²) = √17200 = <b>131.15 MPa</b>",
+    "N = S<sub>yt</sub>/σ<sub>e</sub> = 300/131.15 = <b>2.29</b>",
+    "<b>Exam tip:</b> Tresca would use √(σ² + 4τ²) = 144.2 MPa, giving N = 2.08. Read carefully which theory the question asks for."
+   ]
+  },
+  {
+   "text": "A cast-iron bracket (brittle, S<sub>ut</sub> = 200 MPa) has, at its critical point, a normal stress of 40 MPa and a shear stress of 30 MPa. The factor of safety by the maximum principal stress theory (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.57 (accept 3.55 to 3.59)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Brittle materials fail when the largest principal stress reaches S<sub>ut</sub> (Rankine theory).",
+    "σ<sub>1</sub> = σ/2 + √((σ/2)² + τ²) = 20 + √(20² + 30²) = 20 + 36.06 = <b>56.06 MPa</b>",
+    "N = 200/56.06 = <b>3.57</b>",
+    "<b>Exam tip:</b> Use Rankine (or Coulomb-Mohr) for brittle materials and von Mises/Tresca for ductile ones. GATE often tests just this choice."
+   ]
+  },
+  {
+   "text": "For a ductile material in pure shear, the ratio of the shear yield strength predicted by the maximum shear stress theory to that predicted by the von Mises theory is",
+   "fig": null,
+   "opts": [
+    "0.707",
+    "0.866",
+    "0.5",
+    "1.155"
+   ],
+   "ans": "(B) 0.866",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Tresca: S<sub>sy</sub> = 0.5 S<sub>yt</sub>. von Mises: S<sub>sy</sub> = S<sub>yt</sub>/√3 = 0.577 S<sub>yt</sub>.",
+    "Ratio = 0.5/0.577 = √3/2 = <b>0.866</b>",
+    "<b>Exam tip:</b> So Tresca is up to about 13 % conservative compared with von Mises; 1.155 is the inverse ratio."
+   ]
+  },
+  {
+   "text": "A solid shaft transmits a torque of 1000 N·m and carries a bending moment of 800 N·m. It is made of steel with S<sub>yt</sub> = 320 MPa. Using the von Mises theory and a factor of safety of 2, the minimum diameter (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "42.2 (accept 41.9 to 42.4)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> σ = 32M/πd³, τ = 16T/πd³; von Mises: √(σ² + 3τ²) = (32/πd³)√(M² + ¾T²) = S<sub>yt</sub>/N.",
+    "Equivalent moment √(M² + 0.75T²) = √(800² + 0.75 × 1000²) = <b>1179.0 N·m</b>",
+    "Allowable stress = 320/2 = 160 MPa",
+    "d³ = 32 × 1178983/(π × 160) = 75056 mm³ → d = <b>42.2 mm</b>",
+    "<b>Exam tip:</b> Tresca uses √(M² + T²) instead of √(M² + 0.75T²), so it always gives a slightly larger shaft."
+   ]
+  },
+  {
+   "text": "A notched specimen has a theoretical stress concentration factor of 2.5. Fatigue tests show that its endurance limit is 1/2.05 of that of an unnotched specimen. The notch sensitivity of the material (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.7",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> K<sub>f</sub> = (endurance limit unnotched)/(endurance limit notched) and K<sub>f</sub> = 1 + q(K<sub>t</sub> − 1).",
+    "K<sub>f</sub> = <b>2.05</b>",
+    "q = (K<sub>f</sub> − 1)/(K<sub>t</sub> − 1) = (2.05 − 1)/(2.5 − 1) = <b>0.70</b>",
+    "<b>Exam tip:</b> q lies between 0 (no notch effect) and 1 (full theoretical effect). It rises with the notch radius and with material strength."
+   ]
+  },
+  {
+   "text": "Which of the following treatments <b>increases</b> the fatigue strength of a steel spring?",
+   "fig": null,
+   "opts": [
+    "Decarburisation of the surface during heat treatment",
+    "Shot peening the surface",
+    "Rough machining of the surface",
+    "Electroplating with chromium"
+   ],
+   "ans": "(B) Shot peening the surface",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Fatigue cracks start at the surface under tensile stress.",
+    "<b>Shot peening</b> leaves a layer of compressive residual stress that delays crack initiation and raises fatigue strength.",
+    "Chromium plating leaves tensile residual stress and micro-cracks; decarburisation softens the surface; rough machining adds stress raisers. All three lower it.",
+    "<b>Exam tip:</b> Other beneficial treatments: surface rolling, nitriding, case carburising, polishing."
+   ]
+  },
+  {
+   "text": "A steel component has S<sub>ut</sub> = 600 MPa. Surface factor = 0.78, size factor = 0.85, reliability factor = 0.868 (95 %), and the fatigue stress concentration factor is 1.6 (applied to the endurance limit). Taking S<sub>e</sub>' = 0.5 S<sub>ut</sub>, the corrected endurance limit (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "107.9 (accept 107.3 to 108.6)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Marin equation S<sub>e</sub> = k<sub>a</sub> k<sub>b</sub> k<sub>c</sub> k<sub>d</sub> S<sub>e</sub>', where the notch factor is k<sub>d</sub> = 1/K<sub>f</sub>.",
+    "S<sub>e</sub>' = 0.5 × 600 = <b>300 MPa</b>",
+    "S<sub>e</sub> = 0.78 × 0.85 × 0.868 × (1/1.6) × 300 = <b>107.9 MPa</b>",
+    "<b>Exam tip:</b> Apply K<sub>f</sub> either to the endurance limit or to the alternating stress, never to both."
+   ]
+  },
+  {
+   "text": "A 20 mm diameter rod is under an axial tensile load that varies between 10 kN and 40 kN. Its corrected endurance limit is 180 MPa and S<sub>ut</sub> = 540 MPa. The factor of safety by the Goodman criterion (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.42 (accept 2.41 to 2.44)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Goodman: σ<sub>a</sub>/S<sub>e</sub> + σ<sub>m</sub>/S<sub>ut</sub> = 1/N.",
+    "A = π/4 × 20² = 314.16 mm². P<sub>m</sub> = 25 kN, P<sub>a</sub> = 15 kN",
+    "σ<sub>m</sub> = <b>79.58 MPa</b>, σ<sub>a</sub> = <b>47.75 MPa</b>",
+    "1/N = 47.75/180 + 79.58/540 = 0.2653 + 0.1474 = 0.4126 → N = <b>2.42</b>",
+    "<b>Exam tip:</b> Always split the load into mean and amplitude first; σ<sub>max</sub> alone tells you nothing in fatigue."
+   ]
+  },
+  {
+   "text": "A tie rod carries a steady axial load of 30 kN plus a completely reversed axial load of ±20 kN. The corrected endurance limit is 200 MPa and S<sub>yt</sub> = 350 MPa. Using the Soderberg criterion with a factor of safety of 2, the minimum rod diameter (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "21.75 (accept 21.62 to 21.88)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Soderberg: σ<sub>a</sub>/S<sub>e</sub> + σ<sub>m</sub>/S<sub>yt</sub> = 1/N with σ = P/A.",
+    "A = N(P<sub>a</sub>/S<sub>e</sub> + P<sub>m</sub>/S<sub>yt</sub>) = 2 × (20000/200 + 30000/350) = 2 × (100.0 + 85.71) = <b>371.43 mm²</b>",
+    "d = √(4A/π) = <b>21.75 mm</b>",
+    "<b>Exam tip:</b> Soderberg is the usual choice when the question gives S<sub>yt</sub> and asks for a 'safe' design; Goodman needs S<sub>ut</sub>."
+   ]
+  },
+  {
+   "text": "The figure shows three fatigue failure lines on the σ<sub>m</sub>–σ<sub>a</sub> diagram. Line 2 (straight, from S<sub>e</sub> to S<sub>ut</sub>) is the",
+   "fig": "d23p_q11.png",
+   "opts": [
+    "Goodman line",
+    "Gerber parabola",
+    "Langer (first-cycle yield) line",
+    "Soderberg line"
+   ],
+   "ans": "(A) Goodman line",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> All three start at S<sub>e</sub> on the σ<sub>a</sub> axis; they differ in where and how they meet the σ<sub>m</sub> axis.",
+    "Line 1 (straight, ends at S<sub>yt</sub>) = <b>Soderberg</b>; Line 2 (straight, ends at S<sub>ut</sub>) = <b>Goodman</b>; Curve 3 (parabola to S<sub>ut</sub>) = <b>Gerber</b>.",
+    "<b>Exam tip:</b> Langer's line runs from S<sub>yt</sub> on one axis to S<sub>yt</sub> on the other and checks yielding in the first cycle."
+   ]
+  },
+  {
+   "text": "A steel has S<sub>ut</sub> = 900 MPa and a corrected endurance limit of 400 MPa at 10⁶ cycles. Assuming a straight S-N line on log-log axes from 0.9 S<sub>ut</sub> at 10³ cycles to S<sub>e</sub> at 10⁶ cycles, the fatigue strength for a life of 10⁵ cycles (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "506.1 (accept 503.0 to 509.1)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> On log-log axes, log S falls linearly with log N between (10³, 0.9S<sub>ut</sub>) and (10⁶, S<sub>e</sub>).",
+    "0.9 S<sub>ut</sub> = <b>810 MPa</b>. From 10³ to 10⁵ is 2 of the 3 decades.",
+    "S = 810 × (400/810)<sup>2/3</sup> = 810 × 0.6248 = <b>506.1 MPa</b>",
+    "<b>Exam tip:</b> Check your answer lies between S<sub>e</sub> and 0.9S<sub>ut</sub>, and closer to S<sub>e</sub> the larger N is."
+   ]
+  },
+  {
+   "text": "A crane hook sees a repeating block of loading: 100 cycles at stress σ1 (life 5 × 10⁴ cycles), 1000 cycles at σ2 (life 5 × 10⁵ cycles) and 10 000 cycles at σ3, which is below the endurance limit. By Miner's rule, the number of blocks to failure is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "250",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Miner's rule: failure when Σ n<sub>i</sub>/N<sub>i</sub> = 1. Stresses below the endurance limit cause no damage (N = ∞).",
+    "Damage per block = 100/(5 × 10⁴) + 1000/(5 × 10⁵) + 0 = 0.002 + 0.002 = <b>0.004</b>",
+    "Blocks to failure = 1/0.004 = <b>250</b>",
+    "<b>Exam tip:</b> The order in which the stress levels are applied does not matter in Miner's rule; that is its main limitation."
+   ]
+  },
+  {
+   "text": "A stress that varies from zero to a maximum value σ<sub>max</sub> and back to zero (repeated stress, stress ratio R = 0) has",
+   "fig": null,
+   "opts": [
+    "σ<sub>m</sub> = 0, σ<sub>a</sub> = σ<sub>max</sub>",
+    "σ<sub>m</sub> = σ<sub>max</sub>/2, σ<sub>a</sub> = σ<sub>max</sub>",
+    "σ<sub>m</sub> = σ<sub>max</sub>, σ<sub>a</sub> = 0",
+    "σ<sub>m</sub> = σ<sub>a</sub> = σ<sub>max</sub>/2"
+   ],
+   "ans": "(D) σ<sub>m</sub> = σ<sub>a</sub> = σ<sub>max</sub>/2",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> σ<sub>m</sub> = (σ<sub>max</sub> + σ<sub>min</sub>)/2 and σ<sub>a</sub> = (σ<sub>max</sub> − σ<sub>min</sub>)/2.",
+    "With σ<sub>min</sub> = 0: σ<sub>m</sub> = σ<sub>a</sub> = <b>σ<sub>max</sub>/2</b>.",
+    "<b>Exam tip:</b> R = −1 is completely reversed (σ<sub>m</sub> = 0), R = 0 is repeated, R = 1 is static."
+   ]
+  },
+  {
+   "text": "The rotating stepped shaft shown has a smaller diameter of 30 mm at the fillet. For the fillet, K<sub>t</sub> = 1.8 and q = 0.9. The corrected endurance limit of the unnotched shaft material is 250 MPa. For a factor of safety of 2, the largest bending moment the shaft can carry at the fillet (in N·m, round off to one decimal place) is ______",
+   "fig": "d23p_q15.png",
+   "opts": null,
+   "ans": "192.6 (accept 191.5 to 193.8)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> A rotating shaft under a steady bending moment sees a completely reversed bending stress, so σ<sub>a</sub> = 32M/πd³ and σ<sub>m</sub> = 0.",
+    "K<sub>f</sub> = 1 + 0.9(1.8 − 1) = <b>1.72</b>",
+    "Allowable nominal stress = S<sub>e</sub>/(K<sub>f</sub> N) = 250/(1.72 × 2) = <b>72.67 MPa</b>",
+    "M = σ πd³/32 = 72.67 × π × 30³/32 = <b>192.6 N·m</b>",
+    "<b>Exam tip:</b> Use the smaller diameter at the fillet, because that is where the nominal stress is calculated for K<sub>t</sub>."
+   ]
+  }
+ ]
+}
