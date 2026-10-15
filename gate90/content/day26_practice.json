@@ -1,0 +1,253 @@
+{
+ "day": 26,
+ "subject": "Machine Design",
+ "topic": "Machine Elements",
+ "days_to_gate": 81,
+ "summary": "design of shafts (combined bending and torsion), spur gears (Lewis beam strength, Buckingham wear strength), rolling bearings (rating life), sliding bearings (Petroff, Sommerfeld number), clutches, brakes and leaf and helical springs",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Vector Calculus",
+ "questions": [
+  {
+   "text": "The steel shaft shown runs in bearings A and B, 600 mm apart. A 400 mm diameter pulley at C, 200 mm from A, has both belt tensions acting vertically downward: T<sub>1</sub> = 6.75 kN and T<sub>2</sub> = 2.25 kN (pulley weight neglected). The shaft transmits the torque from the belt. Using the maximum shear stress theory with an allowable shear stress of 50 MPa, the minimum shaft diameter (in mm, round off to one decimal place) is ______",
+   "fig": "d26p_q1.png",
+   "opts": null,
+   "ans": "53.5 (accept 53.2 to 53.7)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For combined bending and torsion, the maximum shear stress theory gives the equivalent torque T<sub>e</sub> = √(M² + T²) and d³ = 16T<sub>e</sub>/(πτ).",
+    "Torque: T = (T<sub>1</sub> − T<sub>2</sub>) × R = (6.75 − 2.25) × 0.2 = <b>0.9 kN·m</b>",
+    "Bending: total belt pull 9 kN at C → R<sub>A</sub> = 9 × 400/600 = 6 kN, M<sub>C</sub> = 6 × 0.2 = <b>1.2 kN·m</b>",
+    "T<sub>e</sub> = √(1.2² + 0.9²) = <b>1.5 kN·m</b>",
+    "d³ = 16 × 1.5 × 10⁶/(π × 50) = 152 789 mm³ → d = <b>53.5 mm</b>",
+    "<b>Exam tip:</b> With the maximum normal stress theory you would use M<sub>e</sub> = ½[M + √(M² + T²)] and σ instead; GATE states which theory to use."
+   ]
+  },
+  {
+   "text": "A hollow shaft with inner diameter = 0.5 × outer diameter is to transmit the same torque at the same maximum shear stress as a solid shaft of the same material and length. The ratio of the weight of the hollow shaft to that of the solid shaft (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.78 (accept 0.77 to 0.79)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Equal strength means equal polar section modulus: D<sub>o</sub>³(1 − k⁴) = d³ with k = 0.5.",
+    "D<sub>o</sub>/d = (1/(1 − 0.0625))<sup>1/3</sup> = <b>1.0217</b>",
+    "Weight ratio = D<sub>o</sub>²(1 − k²)/d² = 1.0439 × 0.75 = <b>0.78</b>",
+    "<b>Exam tip:</b> A hollow shaft saves about 22 % of the material here for the same strength, and it is also stiffer in torsion."
+   ]
+  },
+  {
+   "text": "A spur pinion has 20 teeth, module 4 mm and face width 40 mm, and runs at 1200 rpm. The Lewis form factor (module basis) is Y = 0.32, the allowable bending stress is 120 MPa and the velocity factor is C<sub>v</sub> = 3/(3 + v) with v in m/s. The power that the pinion can transmit on the basis of beam strength (in kW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11.54 (accept 11.45 to 11.63)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Lewis equation with dynamic effect: F<sub>t</sub> = σ<sub>b</sub> b m Y C<sub>v</sub>; power = F<sub>t</sub> × v.",
+    "d = mz = 80 mm, v = π × 0.08 × 1200/60 = <b>5.027 m/s</b>, C<sub>v</sub> = 3/8.027 = <b>0.3738</b>",
+    "F<sub>t</sub> = 120 × 40 × 4 × 0.32 × 0.3738 = <b>2296 N</b>",
+    "Power = 2296 × 5.027 = <b>11.54 kW</b>",
+    "<b>Exam tip:</b> 3/(3 + v) is Barth's factor for ordinary cut gears (v &lt; 10 m/s); carefully cut gears use 6/(6 + v)."
+   ]
+  },
+  {
+   "text": "Which of the following is <b>NOT</b> an assumption of the Lewis bending equation for gear teeth?",
+   "fig": null,
+   "opts": [
+    "the tooth acts as a cantilever beam",
+    "the full load acts at the tip of a single tooth",
+    "the load is always shared equally by two pairs of teeth",
+    "the radial component of the tooth load is neglected"
+   ],
+   "ans": "(C) the load is always shared equally by two pairs of teeth",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Lewis treats one tooth as a cantilever (parabola of uniform strength inscribed in the tooth) loaded at its tip.",
+    "Assumptions: full load on <b>one pair</b> of teeth at the tip, radial component neglected, no stress concentration, load uniform across the face. Load sharing between two pairs is <b>not</b> assumed (that would be less conservative).",
+    "<b>Exam tip:</b> The fatigue stress concentration at the root is added later through K<sub>f</sub> or included in modern geometry factors."
+   ]
+  },
+  {
+   "text": "A pinion of 20 teeth meshes with a gear of 40 teeth (module 5 mm, face width 50 mm). The load-stress factor is K = 1.2 MPa. The wear strength of the gear pair by Buckingham's equation (in N) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "8000 (accept 7960 to 8040)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Buckingham wear strength: F<sub>w</sub> = d<sub>p</sub> b Q K, with ratio factor Q = 2z<sub>g</sub>/(z<sub>g</sub> + z<sub>p</sub>) for external gears.",
+    "d<sub>p</sub> = 5 × 20 = 100 mm, Q = 2 × 40/60 = <b>1.333</b>",
+    "F<sub>w</sub> = 100 × 50 × 1.333 × 1.2 = <b>8000 N</b>",
+    "<b>Exam tip:</b> For internal gears Q = 2z<sub>g</sub>/(z<sub>g</sub> − z<sub>p</sub>), which is larger: internal gears resist pitting better."
+   ]
+  },
+  {
+   "text": "A deep-groove ball bearing has a basic dynamic load rating of 30 kN and carries an equivalent radial load of 5 kN at 1200 rpm. Its rating life L<sub>10</sub> (in hours) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3000",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Rating life L<sub>10</sub> = (C/P)<sup>k</sup> million revolutions; k = 3 for ball bearings, 10/3 for roller bearings.",
+    "L<sub>10</sub> = (30/5)³ = <b>216 million rev</b>",
+    "Hours = 216 × 10⁶/(1200 × 60) = <b>3000 h</b>",
+    "<b>Exam tip:</b> L<sub>10</sub> is the life that 90 % of a large group of identical bearings reach or exceed."
+   ]
+  },
+  {
+   "text": "The equivalent load on a cylindrical roller bearing is doubled, the speed being unchanged. Its rating life becomes about",
+   "fig": null,
+   "opts": [
+    "1/2 of the original life",
+    "1/8 of the original life",
+    "1/10 of the original life",
+    "1/16 of the original life"
+   ],
+   "ans": "(C) 1/10 of the original life",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> L ∝ (1/P)<sup>10/3</sup> for roller bearings.",
+    "L<sub>2</sub>/L<sub>1</sub> = (1/2)<sup>10/3</sup> = <b>0.0992 ≈ 1/10</b>",
+    "<b>Exam tip:</b> For a ball bearing the same change gives (1/2)³ = 1/8."
+   ]
+  },
+  {
+   "text": "A lightly loaded journal bearing (60 mm diameter, 60 mm long, radial clearance 0.05 mm) carries a radial load of 3 kN at 1500 rpm. The oil viscosity is 0.02 Pa·s. Using Petroff's equation, the power lost in friction (in W, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "100.5 (accept 99.5 to 101.5)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Petroff's equation (concentric journal): f = 2π²(μN/p)(r/c), with N in rev/s and p = W/(Ld).",
+    "p = 3000/(60 × 60) = <b>0.833 MPa</b>; μN/p = 0.02 × 25/(0.833 × 10⁶) = 6 × 10⁻⁷; r/c = 30/0.05 = 600",
+    "f = 2π² × 6 × 10⁻⁷ × 600 = <b>0.00711</b>",
+    "Friction torque = fWr = 0.00711 × 3000 × 0.03 = 0.640 N·m; power = Tω = 0.640 × 157.08 = <b>100.5 W</b>",
+    "<b>Exam tip:</b> Petroff ignores eccentricity, so it is valid only for light loads and high speeds (large Sommerfeld number)."
+   ]
+  },
+  {
+   "text": "The Sommerfeld number of a hydrodynamic journal bearing (r = journal radius, c = radial clearance, μ = absolute viscosity, N = speed in rev/s, p = unit bearing pressure) is",
+   "fig": null,
+   "opts": [
+    "(r/c)² μN/p",
+    "(c/r)² μN/p",
+    "(r/c) p/(μN)",
+    "(r/c)² p/(μN)"
+   ],
+   "ans": "(A) (r/c)² μN/p",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> The Sommerfeld number S = (r/c)²(μN/p) is the dimensionless bearing characteristic number used in Raimondi–Boyd charts.",
+    "A <b>larger</b> S (light load, high speed, thick oil) gives a smaller eccentricity ratio and a thicker minimum film.",
+    "<b>Exam tip:</b> μN/p alone (the bearing modulus) has a minimum value at which the friction coefficient is least; operate at about 3 times this value."
+   ]
+  },
+  {
+   "text": "A single-plate clutch with both sides effective has friction lining of 300 mm outer and 200 mm inner diameter, μ = 0.3 and an axial spring force of 4 kN. Assuming uniform wear, the power it can transmit at 1000 rpm (in kW, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "31.4 (accept 31.1 to 31.7)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Uniform wear: T = n μ W R<sub>m</sub> with R<sub>m</sub> = (R<sub>o</sub> + R<sub>i</sub>)/2 and n = number of friction surfaces.",
+    "T = 2 × 0.3 × 4000 × 0.125 = <b>300 N·m</b>",
+    "Power = 300 × 2π × 1000/60 = <b>31.4 kW</b>",
+    "<b>Exam tip:</b> Uniform pressure gives R<sub>f</sub> = (2/3)(R<sub>o</sub>³ − R<sub>i</sub>³)/(R<sub>o</sub>² − R<sub>i</sub>²), slightly larger than R<sub>m</sub>."
+   ]
+  },
+  {
+   "text": "Friction clutches are normally designed on the uniform-wear theory because",
+   "fig": null,
+   "opts": [
+    "it gives a higher torque than the uniform-pressure theory",
+    "after the initial running-in, the wear rate becomes uniform and this theory gives a lower, safer torque",
+    "the pressure is the same at all radii in a worn clutch",
+    "it makes the axial force independent of the friction radius"
+   ],
+   "ans": "(B) after the initial running-in, the wear rate becomes uniform and this theory gives a lower, safer torque",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Wear ∝ pressure × rubbing velocity, so after running-in p × r = constant (uniform wear); the outer part carries less pressure.",
+    "For the same axial force this gives a <b>smaller</b> friction torque than uniform pressure, so a design based on it is on the safe side.",
+    "<b>Exam tip:</b> In uniform wear the maximum pressure is at the inner radius: p<sub>max</sub> × r<sub>i</sub> = C."
+   ]
+  },
+  {
+   "text": "In the simple band brake shown, the drum (400 mm diameter) rotates clockwise. The band has a lap of 270° and μ = 0.25. The tight end of the band is fixed at the fulcrum O and the slack end is pinned to the lever 80 mm from O. For a braking torque of 400 N·m, the force P needed at 600 mm from O (in N, round off to one decimal place) is ______",
+   "fig": "d26p_q11.png",
+   "opts": null,
+   "ans": "118.6 (accept 117.8 to 119.4)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Band tensions: T<sub>1</sub>/T<sub>2</sub> = e<sup>μθ</sup>; braking torque = (T<sub>1</sub> − T<sub>2</sub>)r. Only the slack end has a moment arm about O.",
+    "e<sup>μθ</sup> = e<sup>0.25 × 3π/2</sup> = <b>3.248</b>",
+    "T<sub>1</sub> − T<sub>2</sub> = 400/0.2 = 2000 N → T<sub>2</sub> = 2000/(3.248 − 1) = <b>889.6 N</b> (T<sub>1</sub> = 2889.6 N)",
+    "Moments about O: P × 600 = T<sub>2</sub> × 80 → P = <b>118.6 N</b>",
+    "<b>Exam tip:</b> Attach the tight end to the fulcrum; if the drum turned the other way, the 2889.6 N tension would act at the 80 mm arm and P would be 3.25 times larger."
+   ]
+  },
+  {
+   "text": "In a single block brake the friction force on the block acts at a perpendicular distance a from the fulcrum and helps the applied force, so that P l = R<sub>n</sub>(x − μa), where x is the arm of the normal reaction R<sub>n</sub> and l the arm of P. The brake becomes self-locking when",
+   "fig": null,
+   "opts": [
+    "x ≤ μa",
+    "a ≤ μx",
+    "x ≥ μa",
+    "l ≤ μx"
+   ],
+   "ans": "(A) x ≤ μa",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Self-locking means no applied force is needed: P ≤ 0.",
+    "P = R<sub>n</sub>(x − μa)/l ≤ 0 → <b>x ≤ μa</b>",
+    "<b>Exam tip:</b> A partly self-energising brake (x slightly larger than μa) is useful; a fully self-locking one is used only as a back-stop."
+   ]
+  },
+  {
+   "text": "A semi-elliptic leaf spring of span 1 m has 10 graduated leaves, each 60 mm wide and 10 mm thick, and carries a central load of 10 kN (E = 210 GPa). Neglecting the effect of any full-length leaves, the central deflection (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "29.8 (accept 29.5 to 30.1)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Graduated leaves act like a triangular plate (uniform strength): for central load W and span L, σ = 3WL/(2nbt²) and δ = 3WL³/(8Enbt³).",
+    "Bending stress = 3 × 10 000 × 1000/(2 × 10 × 60 × 100) = <b>250 MPa</b>",
+    "δ = 3 × 10 000 × 1000³/(8 × 210 000 × 10 × 60 × 1000) = <b>29.8 mm</b>",
+    "<b>Exam tip:</b> With extra full-length leaves the full-length leaves are stressed 50 % more; nipping (pre-stressing) equalises the stresses."
+   ]
+  },
+  {
+   "text": "In a concentric (nested) helical compression spring set, the inner and outer springs are wound in opposite hands (one right-hand, one left-hand) mainly to",
+   "fig": null,
+   "opts": [
+    "make both springs equally stiff",
+    "increase the total load capacity",
+    "reduce the shear stress due to curvature",
+    "prevent the coils of one spring from getting locked in the coils of the other"
+   ],
+   "ans": "(D) prevent the coils of one spring from getting locked in the coils of the other",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> If both springs had the same hand, a coil of one could slip between the coils of the other under lateral movement and jam.",
+    "Opposite hands also cancel most of the twisting tendency on the end seats.",
+    "<b>Exam tip:</b> Concentric springs are usually designed for equal solid length and equal stress in both springs."
+   ]
+  }
+ ]
+}
