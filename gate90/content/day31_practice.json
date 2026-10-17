@@ -1,0 +1,248 @@
+{
+ "day": 31,
+ "subject": "Fluid Mechanics",
+ "topic": "Momentum, Flow Measurement & Dimensional Analysis",
+ "days_to_gate": 75,
+ "summary": "the momentum equation (jets on plates and vanes, pipe bends, nozzles), correction factors, flow measurement with venturimeters, orifice meters, orifices and pitot tubes, and dimensional analysis with model laws",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Fluid Mechanics, Viscous Flow & Boundary Layer",
+ "questions": [
+  {
+   "text": "A water jet of 40 mm diameter and velocity 15 m/s strikes a fixed smooth flat plate inclined at 30° to the axis of the jet, as shown. The force exerted by the jet on the plate, normal to the plate, is",
+   "fig": "d31p_q1.png",
+   "opts": [
+    "244.9 N",
+    "141.4 N",
+    "282.7 N",
+    "70.7 N"
+   ],
+   "ans": "(B) 141.4 N",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> On a smooth plate there is no friction along it, so only the jet's momentum component normal to the plate is destroyed: F<sub>n</sub> = ρaV² sin θ.",
+    "a = π/4 × 0.04² = 1.2566 × 10⁻³ m², ρaV² = 1000 × 1.2566 × 10⁻³ × 15² = 282.7 N",
+    "F<sub>n</sub> = 282.7 × sin 30° = <b>141.4 N</b>",
+    "<b>Exam tip:</b> Its component along the jet is F<sub>n</sub> sin θ = ρaV² sin²θ = 70.7 N; read the question for which direction is asked."
+   ]
+  },
+  {
+   "text": "A water jet strikes a series of flat plates mounted radially on the rim of a wheel (each plate normal to the jet). The maximum hydraulic efficiency attainable, and the plate speed u at which it occurs (V = jet velocity), are",
+   "fig": null,
+   "opts": [
+    "50 %, u = V/3",
+    "100 %, u = V/2",
+    "50 %, u = V/2",
+    "29.6 %, u = V/3"
+   ],
+   "ans": "(C) 50 %, u = V/2",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> With a series of plates the whole jet ρaV is used: work/s = ρaV(V − u)u, input = ρaV³/2.",
+    "η = 2u(V − u)/V²; dη/du = 0 gives u = V/2 and η<sub>max</sub> = <b>50 %</b>.",
+    "<b>Exam tip:</b> For a <b>single</b> moving plate, mass striking/s is ρa(V − u); then the optimum is u = V/3 with η = 8/27 = 29.6 %. A Pelton bucket (180° deflection) can approach 100 %."
+   ]
+  },
+  {
+   "text": "Water flows at 0.15 m³/s through the horizontal 45° bend of uniform 250 mm diameter shown. The pressure is 200 kPa (gauge) throughout the bend (losses neglected). The magnitude of the resultant force exerted by the water on the bend (in kN, round off to two decimal places) is ______",
+   "fig": "d31p_q3.png",
+   "opts": null,
+   "ans": "7.86 (accept 7.82 to 7.91)",
+   "sfig": "d31p_q3s.png",
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Momentum equation on a control volume: Σ(forces on fluid) = ρQ(V<sub>out</sub> − V<sub>in</sub>), component by component.",
+    "A = 0.04909 m², V = 0.15/0.04909 = 3.056 m/s; pA = 9.817 kN, ρQV = 0.458 kN, so pA + ρQV = 10.276 kN",
+    "x: F<sub>x</sub> = (pA + ρQV)(1 − cos 45°) = 3.010 kN",
+    "y: F<sub>y</sub> = (pA + ρQV) sin 45° = 7.266 kN",
+    "Resultant = √(F<sub>x</sub>² + F<sub>y</sub>²) = 2(pA + ρQV) sin 22.5° = <b>7.86 kN</b>. The bend pushes the water up and back (figure); the water pushes the bend equally outward, along the bisector of the bend angle.",
+    "<b>Exam tip:</b> For equal inlet and outlet pressure and area, R = 2(pA + ρQV) sin(θ/2). The pressure term usually dominates the momentum term."
+   ]
+  },
+  {
+   "text": "A nozzle at the end of an 80 mm diameter horizontal pipe discharges a 30 mm diameter water jet into the atmosphere at 10 litres per second. Neglecting losses, the force that the bolts at the flange must withstand (in N, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "371.5 (accept 369.3 to 373.7)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Bernoulli gives the flange pressure; the momentum equation on the nozzle gives the force.",
+    "V₁ = 0.01/(5.0265 × 10⁻³) = 1.989 m/s, V₂ = 0.01/(7.0686 × 10⁻⁴) = 14.147 m/s",
+    "p₁ = ρ(V₂² − V₁²)/2 = 98.09 kPa (jet at atmospheric pressure), p₁A₁ = 493.1 N",
+    "p₁A₁ − F = ρQ(V₂ − V₁) ⟹ F = 493.1 − 1000 × 0.01 × 12.158 = <b>371.5 N</b> (the water pushes the nozzle downstream, trying to pull it off the pipe)",
+    "<b>Exam tip:</b> Forgetting the momentum term gives p₁A₁ ≈ 493 N, a typical wrong option."
+   ]
+  },
+  {
+   "text": "The velocity profile in a circular pipe of radius R is u = U<sub>max</sub>(1 − r/R). The momentum correction factor β for this profile (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.50 (accept 1.48 to 1.51)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> β = (1/AV²)∫u² dA, with V the mean velocity.",
+    "V = (2/R²)∫U<sub>max</sub>(1 − r/R) r dr = 2U<sub>max</sub>(1/2 − 1/3) = U<sub>max</sub>/3",
+    "∫u² dA/A = 2U<sub>max</sub>²(1/2 − 2/3 + 1/4) = U<sub>max</sub>²/6",
+    "β = (U<sub>max</sub>²/6)/(U<sub>max</sub>²/9) = <b>1.50</b>",
+    "<b>Exam tip:</b> β = 1 for uniform flow, 4/3 for laminar (parabolic), about 1.02 for turbulent flow. The more non-uniform the profile, the larger β."
+   ]
+  },
+  {
+   "text": "A vertical venturimeter (inlet 150 mm, throat 75 mm diameter) carries water upward; the throat is 300 mm above the inlet section. The differential mercury manometer shown reads 120 mm. With C<sub>d</sub> = 0.97, the discharge (in litres per second, round off to two decimal places) is ______",
+   "fig": "d31p_q6.png",
+   "opts": null,
+   "ans": "24.11 (accept 23.96 to 24.25)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The manometer measures the piezometric head difference h = x(S<sub>m</sub>/S − 1); the elevation of the throat is already included in it.",
+    "h = 0.12 × (13.6 − 1) = 1.512 m of water",
+    "a₁ = 176.715 × 10⁻⁴ m², a₂ = 44.179 × 10⁻⁴ m²",
+    "Q = C<sub>d</sub> a₁a₂√(2gh)/√(a₁² − a₂²) = <b>24.11 L/s</b>",
+    "<b>Exam tip:</b> The 300 mm height difference is a distractor: the reading of a differential manometer is the same whether the venturimeter is horizontal, inclined or vertical."
+   ]
+  },
+  {
+   "text": "An orifice meter with a 100 mm diameter orifice is fitted in a 200 mm diameter horizontal water pipe. The pressure difference between the upstream tapping and the vena contracta tapping is 50 kPa. Taking C<sub>d</sub> = 0.62, the discharge (in litres per second, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "50.3 (accept 50.0 to 50.6)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Same equation as the venturimeter, but C<sub>d</sub> is much lower (0.6–0.65) because of the vena contracta and the large eddy losses.",
+    "h = Δp/ρg = 5.097 m; √(2gh) = √(2Δp/ρ) = 10.000 m/s",
+    "Q = 0.62 × a₀A₁ × 10/√(A₁² − a₀²) = 0.62 × a₀ × 10/√(1 − (d/D)⁴) = <b>50.3 L/s</b>",
+    "<b>Exam tip:</b> The orifice meter is cheap and compact but has a high permanent pressure loss; the venturimeter (C<sub>d</sub> ≈ 0.98) loses very little."
+   ]
+  },
+  {
+   "text": "A pitot tube is placed in an open channel facing the flow, as shown. Water in the tube rises 0.3 m above the free surface of the stream. Taking the coefficient of the pitot tube as 0.98, the velocity of flow at the tip (in m/s, round off to two decimal places) is ______",
+   "fig": "d31p_q8.png",
+   "opts": null,
+   "ans": "2.38 (accept 2.36 to 2.39)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The tip is a stagnation point: the extra rise above the free surface is the velocity head V²/2g.",
+    "V = C√(2gh) = 0.98 × √(2 × 9.81 × 0.3) = <b>2.38 m/s</b>",
+    "<b>Exam tip:</b> In a closed pipe a pitot tube alone cannot work; you need the static pressure too (pitot-static tube or a differential manometer)."
+   ]
+  },
+  {
+   "text": "The wave-making resistance of a ship is to be predicted from tests on a scale model. The model law to be satisfied is",
+   "fig": null,
+   "opts": [
+    "Reynolds model law",
+    "Froude model law",
+    "Weber model law",
+    "Mach model law"
+   ],
+   "ans": "(B) Froude model law",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Waves at a free surface are governed by gravity, so the Froude number V/√(gL) must be the same for model and prototype.",
+    "Skin-friction resistance (Reynolds-dependent) is computed separately, because both Fr and Re cannot be matched with the same fluid.",
+    "<b>Exam tip:</b> Pipe flow, aircraft at low speed, submarines (fully submerged) → Reynolds; spillways, ships, open channels → Froude; high-speed aircraft → Mach; capillary flows → Weber."
+   ]
+  },
+  {
+   "text": "The thrust T of a marine propeller depends on its diameter D, speed of advance V, rotational speed N, fluid density ρ and viscosity μ. The number of dimensionless π terms is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Buckingham π theorem: number of π terms = n − m.",
+    "n = 6 (T, D, V, N, ρ, μ), m = 3 (M, L, T) ⟹ <b>3</b> π terms, e.g. T/(ρV²D²), ND/V, ρVD/μ.",
+    "<b>Exam tip:</b> Choose repeating variables (here ρ, V, D) that together contain M, L and T and are not themselves dimensionless as a group."
+   ]
+  },
+  {
+   "text": "In very slow (creeping) flow the drag force F on a sphere depends only on the fluid viscosity μ, the velocity V and the diameter D. Dimensional analysis gives",
+   "fig": null,
+   "opts": [
+    "F ∝ ρV²D²",
+    "F ∝ μV²D",
+    "F ∝ μVD",
+    "F ∝ μV/D"
+   ],
+   "ans": "(C) F ∝ μVD",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Write F = kμ<sup>a</sup>V<sup>b</sup>D<sup>c</sup> and equate the powers of M, L and T.",
+    "[MLT⁻²] = [ML⁻¹T⁻¹]<sup>a</sup>[LT⁻¹]<sup>b</sup>[L]<sup>c</sup>: M: a = 1; T: −a − b = −2 ⟹ b = 1; L: −a + b + c = 1 ⟹ c = 1.",
+    "So F = kμVD; Stokes' solution gives <b>k = 3π</b>, F = 3πμVD.",
+    "<b>Exam tip:</b> Stokes' law holds for Re < 1 and gives C<sub>D</sub> = 24/Re."
+   ]
+  },
+  {
+   "text": "Oil (kinematic viscosity 1.2 × 10⁻⁵ m²/s) flows at 1.5 m/s in a 600 mm diameter pipe. A model test uses water (kinematic viscosity 1.0 × 10⁻⁶ m²/s) in a 150 mm pipe. For dynamic similarity, the velocity of water in the model (in m/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.50 (accept 0.49 to 0.51)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Viscous pipe flow → equal Reynolds numbers: V<sub>m</sub>D<sub>m</sub>/ν<sub>m</sub> = V<sub>p</sub>D<sub>p</sub>/ν<sub>p</sub>.",
+    "V<sub>m</sub> = 1.5 × (0.6/0.15) × (1.0 × 10⁻⁶/1.2 × 10⁻⁵) = 1.5 × 4 × 0.0833 = <b>0.50 m/s</b>",
+    "<b>Exam tip:</b> Using a less viscous fluid lets a smaller model run at a modest speed; with the same fluid the model would need 4 × 1.5 = 6 m/s."
+   ]
+  },
+  {
+   "text": "A 1 : 50 model of a ship, tested in sea water under Froude similarity, experiences a wave resistance of 2.5 N. The corresponding wave resistance of the prototype (in kN, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "312.5 (accept 311.6 to 313.4)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Under Froude law with the same fluid, F<sub>r</sub> = ρ<sub>r</sub>L<sub>r</sub>²V<sub>r</sub>² = L<sub>r</sub>² × L<sub>r</sub> = L<sub>r</sub>³.",
+    "F<sub>p</sub> = 2.5 × 50³ = 312500 N = <b>312.5 kN</b>",
+    "<b>Exam tip:</b> Froude scale ratios: velocity L<sub>r</sub><sup>1/2</sup>, time L<sub>r</sub><sup>1/2</sup>, discharge L<sub>r</sub><sup>5/2</sup>, force L<sub>r</sub>³, power L<sub>r</sub><sup>7/2</sup>."
+   ]
+  },
+  {
+   "text": "For steady flow of a liquid through a pipeline, which statement about the energy grade line (EGL) and hydraulic grade line (HGL) is correct?",
+   "fig": null,
+   "opts": [
+    "The HGL always lies above the EGL by V²/2g",
+    "The EGL lies above the HGL by V²/2g and never rises in the flow direction unless a pump adds energy",
+    "The HGL can never rise in the direction of flow",
+    "The EGL and HGL coincide wherever the pipe is horizontal"
+   ],
+   "ans": "(B) The EGL lies above the HGL by V²/2g and never rises in the flow direction unless a pump adds energy",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> EGL = p/ρg + z + V²/2g (total head); HGL = p/ρg + z (piezometric head).",
+    "So the EGL is above the HGL by the velocity head. Losses make the EGL fall steadily; only a pump makes it jump up.",
+    "The HGL <b>can</b> rise, e.g. in a diverging section where velocity falls and pressure recovers.",
+    "<b>Exam tip:</b> Where the HGL drops below the pipe centreline the pressure is below atmospheric (as at a siphon summit)."
+   ]
+  },
+  {
+   "text": "Water flows out of a tank through a 25 mm diameter sharp-edged orifice under a constant head of 3 m. The measured discharge is 2.3 litres per second and the coefficient of contraction is 0.64. The coefficient of velocity (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.954 (accept 0.950 to 0.958)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> C<sub>d</sub> = Q<sub>actual</sub>/(a√(2gH)) and C<sub>d</sub> = C<sub>c</sub>C<sub>v</sub>.",
+    "Q<sub>th</sub> = 4.9087 × 10⁻⁴ × √(2 × 9.81 × 3) = 3.766 L/s, so C<sub>d</sub> = 2.3/3.766 = 0.6107",
+    "C<sub>v</sub> = C<sub>d</sub>/C<sub>c</sub> = 0.6107/0.64 = <b>0.954</b>",
+    "<b>Exam tip:</b> Typical sharp-edged orifice: C<sub>c</sub> ≈ 0.62–0.65, C<sub>v</sub> ≈ 0.95–0.99, C<sub>d</sub> ≈ 0.6–0.64."
+   ]
+  }
+ ]
+}

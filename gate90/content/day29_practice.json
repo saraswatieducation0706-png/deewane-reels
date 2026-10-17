@@ -1,0 +1,253 @@
+{
+ "day": 29,
+ "subject": "Fluid Mechanics",
+ "topic": "Fluid Kinematics & Bernoulli",
+ "days_to_gate": 78,
+ "summary": "streamlines, stream function and velocity potential, continuity and control-volume mass balance, acceleration of fluid particles, vorticity and circulation, basic potential flows, and Bernoulli's equation",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Weekly Revision, Week 5 Revision",
+ "questions": [
+  {
+   "text": "The streamlines of the two-dimensional flow u = x, v = −y are",
+   "fig": null,
+   "opts": [
+    "straight lines through the origin",
+    "rectangular hyperbolas xy = constant",
+    "circles centred at the origin",
+    "parabolas y = constant × x²"
+   ],
+   "ans": "(B) rectangular hyperbolas xy = constant",
+   "sfig": "d29p_s1.png",
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> A streamline is everywhere tangent to the velocity: dx/u = dy/v.",
+    "dx/x = dy/(−y) → ln x = −ln y + c → <b>xy = constant</b> (rectangular hyperbolas, with a stagnation point at the origin; see the sketch).",
+    "<b>Exam tip:</b> This is the flow towards a flat wall (stagnation-point flow). Its ψ is xy, and its φ is (x² − y²)/2."
+   ]
+  },
+  {
+   "text": "For a three-dimensional incompressible flow, u = 3x² and v = −2xy, and w = 0 on the plane z = 0. The value of w at the point (1, 1, 2) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "-8",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Continuity for incompressible flow: ∂u/∂x + ∂v/∂y + ∂w/∂z = 0.",
+    "∂u/∂x + ∂v/∂y = 6x − 2x = 4x, so ∂w/∂z = −4x and w = −4xz + f(x, y).",
+    "w = 0 at z = 0 gives f = 0, so w = −4xz = −4 × 1 × 2 = <b>-8</b>",
+    "<b>Exam tip:</b> When integrating with respect to z, the 'constant' can be a function of x and y; use the boundary condition to fix it."
+   ]
+  },
+  {
+   "text": "The stream function of a two-dimensional flow is ψ = 3xy (SI units). The speed at the point (2, 1) (in m/s, round off to two decimal places) is ______ (Take u = ∂ψ/∂y, v = −∂ψ/∂x and u = ∂φ/∂x, v = ∂φ/∂y.)",
+   "fig": null,
+   "opts": null,
+   "ans": "6.71 (accept 6.67 to 6.75)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Velocity components from the stream function: u = ∂ψ/∂y, v = −∂ψ/∂x.",
+    "u = 3x = 6 m/s, v = −3y = −3 m/s",
+    "|V| = √(6² + (−3)²) = √45 = <b>6.71 m/s</b>",
+    "<b>Exam tip:</b> Check the sign convention in the question; some books use u = −∂ψ/∂y. The speed comes out the same either way."
+   ]
+  },
+  {
+   "text": "A velocity potential φ exists for a flow only if the flow is",
+   "fig": null,
+   "opts": [
+    "incompressible",
+    "steady",
+    "irrotational",
+    "two-dimensional"
+   ],
+   "ans": "(C) irrotational",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> If V = ∇φ, then curl V = curl(∇φ) = 0 identically. So φ can exist only where the vorticity is zero.",
+    "Compressibility, steadiness or dimension do not matter; the flow must be <b>irrotational</b>.",
+    "<b>Exam tip:</b> ψ needs continuity (2-D); φ needs irrotationality. Both exist together only for 2-D, incompressible, irrotational (potential) flow, and then both satisfy Laplace's equation."
+   ]
+  },
+  {
+   "text": "The velocity potential of a two-dimensional flow is φ = 3xy (SI units). If the stream function is zero at the origin, its value at the point (1, 3) is ______ (Take u = ∂ψ/∂y, v = −∂ψ/∂x and u = ∂φ/∂x, v = ∂φ/∂y.)",
+   "fig": null,
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Use u = ∂φ/∂x = ∂ψ/∂y and v = ∂φ/∂y = −∂ψ/∂x (Cauchy–Riemann relations).",
+    "u = 3y = ∂ψ/∂y → ψ = 1.5y² + f(x)",
+    "v = 3x = −∂ψ/∂x = −f′(x) → f = −1.5x²; so ψ = 1.5(y² − x²)",
+    "ψ(1, 3) = 1.5(9 − 1) = <b>12</b>",
+    "<b>Exam tip:</b> Lines of constant φ (hyperbolas xy = c) and constant ψ (hyperbolas y² − x² = c) cross at right angles: a flow net."
+   ]
+  },
+  {
+   "text": "A two-dimensional unsteady flow has u = 2xt and v = −2yt (SI units). The magnitude of the acceleration of a fluid particle at the point (1, 2) at t = 1 s (in m/s², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.21 (accept 7.17 to 7.25)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Total acceleration = local (∂V/∂t) + convective (u ∂V/∂x + v ∂V/∂y).",
+    "a<sub>x</sub> = ∂u/∂t + u ∂u/∂x + v ∂u/∂y = 2x + (2xt)(2t) + 0 = 2 + 4 = <b>6 m/s²</b>",
+    "a<sub>y</sub> = ∂v/∂t + u ∂v/∂x + v ∂v/∂y = −2y + 0 + (−2yt)(−2t) = −4 + 8 = <b>4 m/s²</b>",
+    "|a| = √(6² + 4²) = <b>7.21 m/s²</b>",
+    "<b>Exam tip:</b> Don't drop the local term: in unsteady flow ∂u/∂t is non-zero even at a fixed point."
+   ]
+  },
+  {
+   "text": "Which statement about a flow net is <b>NOT</b> correct?",
+   "fig": null,
+   "opts": [
+    "Streamlines and equipotential lines intersect at right angles",
+    "The discharge between any two adjacent streamlines is the same",
+    "Where streamlines crowd together the velocity is high",
+    "A flow net can be drawn for rotational flows near solid boundaries"
+   ],
+   "ans": "(D) A flow net can be drawn for rotational flows near solid boundaries",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> A flow net is the grid of streamlines (ψ = const) and equipotential lines (φ = const). It needs φ, so the flow must be irrotational (potential flow).",
+    "(A), (B) and (C) are true: the two families are orthogonal, the discharge between adjacent streamlines is constant, and closer streamlines mean higher velocity.",
+    "(D) is false: near walls viscous effects make the flow rotational (boundary layer), where no φ and hence no flow net exists. <b>Answer (D)</b>",
+    "<b>Exam tip:</b> Flow nets are used for seepage under dams and for flow outside the boundary layer."
+   ]
+  },
+  {
+   "text": "For the velocity field u = −3y, v = 3x (SI units), the circulation around a circle of radius 0.5 m centred at the origin (in m²/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4.71 (accept 4.68 to 4.74)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Stokes' theorem: circulation Γ = ∮V·dr = ∬ω<sub>z</sub> dA, with vorticity ω<sub>z</sub> = ∂v/∂x − ∂u/∂y.",
+    "ω<sub>z</sub> = 3 − (−3) = <b>6 s⁻¹</b> (uniform: a forced vortex rotating at 3 rad/s)",
+    "Γ = 6 × π(0.5)² = <b>4.71 m²/s</b>",
+    "Check directly: on r = 0.5 the speed is 3r = 1.5 m/s, so Γ = 1.5 × 2π(0.5) = 4.71 m²/s.",
+    "<b>Exam tip:</b> Angular velocity = vorticity/2 = 3 rad/s."
+   ]
+  },
+  {
+   "text": "Water flows at 0.08 m³/s through the horizontal pipe shown, which tapers from 250 mm diameter at section 1 to 125 mm at section 2. The gauge pressure at section 1 is 150 kPa. Neglecting losses, the gauge pressure at section 2 (in kPa, round off to two decimal places) is ______",
+   "fig": "d29p_q9.png",
+   "opts": null,
+   "ans": "130.08 (accept 129.43 to 130.73)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Continuity gives the velocities; Bernoulli (z<sub>1</sub> = z<sub>2</sub>) then gives the pressure drop.",
+    "V<sub>1</sub> = 0.08/(π/4 × 0.25²) = <b>1.630 m/s</b>, V<sub>2</sub> = 4V<sub>1</sub> = <b>6.519 m/s</b>",
+    "p<sub>2</sub> = p<sub>1</sub> − ρ(V<sub>2</sub>² − V<sub>1</sub>²)/2 = 150000 − 500(42.50 − 2.66) = <b>130.08 kPa</b>",
+    "<b>Exam tip:</b> Halving the diameter makes V four times larger and the kinetic head sixteen times larger."
+   ]
+  },
+  {
+   "text": "At a point in a pipeline carrying water, the velocity is 4 m/s, the gauge pressure is 40 kPa and the elevation above the datum is 6 m. The total energy head at the point (in m of water, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "10.89 (accept 10.84 to 10.95)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Total head H = p/(ρg) + V²/(2g) + z (pressure head + velocity head + datum head).",
+    "p/(ρg) = 40000/9810 = 4.077 m; V²/(2g) = 16/19.62 = 0.815 m; z = 6 m",
+    "H = <b>10.89 m</b>",
+    "<b>Exam tip:</b> The hydraulic grade line is p/ρg + z (here 10.08 m); the energy line is a velocity head above it."
+   ]
+  },
+  {
+   "text": "A water jet issues from a nozzle at 20 m/s, inclined at 60° to the horizontal. Neglecting air resistance, the maximum height reached by the jet above the nozzle is",
+   "fig": null,
+   "opts": [
+    "15.29 m",
+    "20.39 m",
+    "5.10 m",
+    "17.66 m"
+   ],
+   "ans": "(A) 15.29 m",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In a free jet the pressure is atmospheric throughout and the horizontal velocity component stays constant. At the top only V cos θ remains.",
+    "Bernoulli between the nozzle and the top: V²/2g = (V cos θ)²/2g + h → h = V² sin²θ/(2g)",
+    "h = 400 × 0.75/19.62 = <b>15.29 m</b>",
+    "<b>Exam tip:</b> 20.39 m is the height for a vertical jet (θ = 90°); 5.10 m uses cos²θ by mistake."
+   ]
+  },
+  {
+   "text": "Air leaks from a rigid tank of volume 0.5 m³ through a small hole of area 50 mm². At an instant the air in the hole has a density of 6 kg/m³ and a velocity of 200 m/s. The rate of change of the density of the air in the tank at that instant (in kg/m³ per s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "-0.12 (accept −0.13 to −0.11)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Unsteady control-volume mass balance: d(ρV<sub>tank</sub>)/dt + ṁ<sub>out</sub> = 0.",
+    "ṁ<sub>out</sub> = ρAV = 6 × 50 × 10⁻⁶ × 200 = <b>0.06 kg/s</b>",
+    "dρ/dt = −ṁ<sub>out</sub>/V<sub>tank</sub> = −0.06/0.5 = <b>-0.12 kg/m³ per s</b> (density falling)",
+    "<b>Exam tip:</b> The sign matters in NAT: a decreasing density gives a negative answer."
+   ]
+  },
+  {
+   "text": "The flow past a long circular cylinder (without circulation) can be obtained by superposing a uniform flow on a",
+   "fig": null,
+   "opts": [
+    "source",
+    "doublet",
+    "free vortex",
+    "sink"
+   ],
+   "ans": "(B) doublet",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> A doublet is a source and sink of equal strength brought together. Added to a uniform flow U, the streamline ψ = 0 becomes a circle of radius a = √(μ/2πU).",
+    "Uniform flow + source → Rankine half-body; uniform flow + source + sink (separated) → Rankine oval; uniform flow + <b>doublet</b> → circular cylinder; adding a free vortex gives lift (Magnus effect).",
+    "<b>Exam tip:</b> On the cylinder surface the speed is 2U sin θ: maximum 2U at the top and bottom, zero at the two stagnation points."
+   ]
+  },
+  {
+   "text": "A closed tank contains water with air at 50 kPa (gauge) above it. Water discharges to the atmosphere through a small nozzle 2 m below the water surface, as shown. Neglecting losses, the velocity of the jet (in m/s, round off to two decimal places) is ______",
+   "fig": "d29p_q14.png",
+   "opts": null,
+   "ans": "11.80 (accept 11.74 to 11.86)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Bernoulli from the water surface (V ≈ 0, p = 50 kPa gauge) to the jet (p = 0 gauge): V = √[2(p/ρ + gh)].",
+    "The air pressure is equivalent to an extra head of 50000/9810 = <b>5.10 m</b> of water, so the effective head is 7.10 m.",
+    "V = √[2(50 + 19.62)] = √139.24 = <b>11.80 m/s</b>",
+    "<b>Exam tip:</b> Ignoring the air pressure gives √(2g × 2) = 6.26 m/s, a common slip."
+   ]
+  },
+  {
+   "text": "Which statement about a free (irrotational) vortex is correct?",
+   "fig": null,
+   "opts": [
+    "The tangential velocity varies inversely with the radius, and Bernoulli's constant is the same for all streamlines",
+    "The tangential velocity is proportional to the radius, and the free surface is a paraboloid",
+    "The vorticity is uniform and equal to twice the angular velocity",
+    "The pressure decreases with increasing radius"
+   ],
+   "ans": "(A) The tangential velocity varies inversely with the radius, and Bernoulli's constant is the same for all streamlines",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Free vortex: no external torque, so angular momentum is conserved: V r = constant (V ∝ 1/r). The flow is irrotational everywhere except at the centre.",
+    "Because it is irrotational, p/ρ + V²/2 + gz is the <b>same constant on every streamline</b>. In a forced vortex (V = ωr) the flow is rotational and the constant changes from one streamline to another.",
+    "<b>Exam tip:</b> Examples: free vortex — water draining from a basin, flow in a whirlpool chamber; forced vortex — a liquid rotating with its container (paraboloid surface)."
+   ]
+  }
+ ]
+}

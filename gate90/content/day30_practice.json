@@ -1,0 +1,251 @@
+{
+ "day": 30,
+ "subject": "Weekly Revision",
+ "topic": "Week 5 Revision",
+ "days_to_gate": 77,
+ "summary": "all five topics of Week 5: riveted, bolted and welded joints; machine elements; vector calculus; fluid properties and statics; fluid kinematics and Bernoulli (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Fluid Mechanics, Momentum, Flow Measurement & Dimensional Analysis",
+ "questions": [
+  {
+   "text": "A double-strap butt joint has one rivet per pitch length in double shear. Plate thickness = 12 mm, rivet-hole diameter = 20 mm, pitch = 70 mm. Permissible stresses: tension 90 MPa, shear 75 MPa, crushing 150 MPa. Taking the double-shear area as twice the single-shear area, the efficiency of the joint (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "47.62 (accept 47.33 to 47.90)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Find the tearing, shearing and crushing strengths per pitch; the least of them divided by the strength of the solid plate is the efficiency.",
+    "Tearing: (p − d)tσ<sub>t</sub> = 50 × 12 × 90 = <b>54.0 kN</b>",
+    "Shearing (double): 2 × (π/4)(20²) × 75 = <b>47.12 kN</b>",
+    "Crushing: d t σ<sub>c</sub> = 20 × 12 × 150 = <b>36.0 kN</b> (least)",
+    "Solid plate: p t σ<sub>t</sub> = 70 × 12 × 90 = 75.6 kN, so η = 36.0/75.6 = <b>47.62 %</b>",
+    "<b>Exam tip:</b> Many codes take the double-shear area as 1.875 × single shear; use whatever factor the question states."
+   ]
+  },
+  {
+   "text": "A plate is joined to another by two parallel fillet welds of 10 mm leg size and carries a load of 80 kN along the welds. If the permissible shear stress in the weld is 56 MPa, the required length of each weld (neglecting end allowances) is about",
+   "fig": null,
+   "opts": [
+    "71.4 mm",
+    "202.1 mm",
+    "101.0 mm",
+    "142.9 mm"
+   ],
+   "ans": "(C) 101.0 mm",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> A parallel fillet weld fails in shear across its throat, t = 0.707 s.",
+    "P = 2 × 0.707 s l τ → l = 80 000/(2 × 0.707 × 10 × 56) = <b>101.0 mm</b>",
+    "Add about 12.5 mm to each weld for starting and stopping in practice.",
+    "<b>Exam tip:</b> Forgetting the 0.707 gives 71.4 mm, an unsafe answer; a single weld would need 202 mm."
+   ]
+  },
+  {
+   "text": "In a single-riveted lap joint, the rivet-hole diameter is 20 mm and the plates are 10 mm thick. Permissible stresses: tension 80 MPa, shear 60 MPa. The pitch (in mm, round off to two decimal places) at which the tearing strength of the plate equals the shearing strength of the rivet is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "43.56 (accept 43.30 to 43.82)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Equate the two strengths per pitch length: (p − d) t σ<sub>t</sub> = (π/4) d² τ.",
+    "(π/4)(20²)(60) = <b>18850 N</b>",
+    "p − 20 = 18 850/(10 × 80) = 23.56 mm → p = <b>43.56 mm</b>",
+    "<b>Exam tip:</b> A larger pitch makes the rivet weaker than the plate; a smaller one makes the plate weaker. Equal strengths give the best design."
+   ]
+  },
+  {
+   "text": "A cone clutch has a semi-cone angle of 12.5°, a mean diameter of 250 mm and μ = 0.3. The axial force is 1 kN. Using the uniform-wear theory, the torque it can transmit (in N·m, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "173.3 (accept 172.2 to 174.3)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For a cone clutch, T = μ W R<sub>m</sub>/sin α (uniform wear, R<sub>m</sub> = mean radius).",
+    "T = 0.3 × 1000 × 0.125/sin 12.5° = 37.5/0.2164 = <b>173.3 N·m</b>",
+    "<b>Exam tip:</b> The 1/sin α factor (= 4.62 here) is the wedge action; it is why small cone angles give large torque but can make the clutch hard to disengage."
+   ]
+  },
+  {
+   "text": "The minimum number of teeth on a 20° full-depth involute pinion (addendum = 1 module) that meshes with a rack without interference is",
+   "fig": null,
+   "opts": [
+    "17",
+    "18",
+    "32",
+    "14"
+   ],
+   "ans": "(B) 18",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> For a rack, interference is avoided when the pinion has at least z = 2a<sub>w</sub>/sin²φ teeth, a<sub>w</sub> = addendum in modules.",
+    "z = 2 × 1/sin²20° = 2/0.1170 = 17.10",
+    "The number of teeth must be a whole number not below this, so <b>18</b>.",
+    "<b>Exam tip:</b> Rounding down to 17 is the trap. For 14.5° full depth the answer is 32."
+   ]
+  },
+  {
+   "text": "A helical compression spring is made of 8 mm wire with a mean coil diameter of 48 mm and carries an axial load of 500 N. Using Wahl's factor, the maximum shear stress in the wire (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "149.5 (accept 148.6 to 150.4)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> τ = K × 8PD/(πd³), with Wahl's factor K = (4C − 1)/(4C − 4) + 0.615/C accounting for direct shear and curvature.",
+    "C = D/d = 6, K = 23/20 + 0.615/6 = <b>1.2525</b>",
+    "τ = 1.2525 × 8 × 500 × 48/(π × 8³) = <b>149.5 MPa</b>",
+    "<b>Exam tip:</b> Without Wahl's factor the stress would be only 119.4 MPa; springs of small index C need the full correction."
+   ]
+  },
+  {
+   "text": "The vector field <b>F</b> = (x + 3y) <b>i</b> + (y − 2z) <b>j</b> + (x + pz) <b>k</b> is solenoidal. The value of p is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "−2",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> A field is solenoidal when its divergence is zero everywhere.",
+    "∇·<b>F</b> = 1 + 1 + p = 0 → <b>p = −2</b>",
+    "<b>Exam tip:</b> Solenoidal = divergence-free (no sources or sinks); irrotational = curl-free. Do not mix them up."
+   ]
+  },
+  {
+   "text": "Using Stokes' theorem, the value of ∮<sub>C</sub> (z dx + x dy + y dz), where C is the circle x² + y² = 1, z = 0, traversed anticlockwise when seen from above, is",
+   "fig": null,
+   "opts": [
+    "2π",
+    "π",
+    "0",
+    "3π"
+   ],
+   "ans": "(B) π",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> ∮ <b>F</b>·d<b>r</b> = ∬ (∇×<b>F</b>)·<b>n</b> dS over any surface bounded by C.",
+    "<b>F</b> = (z, x, y) → ∇×<b>F</b> = (1, 1, 1). Take the flat unit disc, <b>n</b> = <b>k</b>.",
+    "∬ (∇×<b>F</b>)·<b>k</b> dS = ∬ 1 dS = area = <b>π</b>",
+    "<b>Exam tip:</b> Check directly: x = cos t, y = sin t, z = 0 gives ∫ cos²t dt over 0 to 2π = π."
+   ]
+  },
+  {
+   "text": "The acute angle between the surfaces x² + y² + z² = 9 and z = x² + y² − 3 at the point (2, −1, 2) (in degrees, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "54.41 (accept 54.31 to 54.52)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The angle between two surfaces at a point is the angle between their normals, i.e. their gradients.",
+    "∇(x² + y² + z²) = (2x, 2y, 2z) = (4, −2, 4); ∇(x² + y² − z) = (2x, 2y, −1) = (4, −2, −1)",
+    "cos θ = (16 + 4 − 4)/(6 × √21) = 16/27.50 = 0.5819 → θ = <b>54.41°</b>",
+    "<b>Exam tip:</b> First check the point lies on both surfaces: 4 + 1 + 4 = 9 and 4 + 1 − 3 = 2. ✓"
+   ]
+  },
+  {
+   "text": "In the inclined-tube manometer shown, the tube is at 20° to the horizontal and the reservoir area is 100 times the tube area. The gauge liquid has S = 0.85. When pressure p<sub>1</sub> is applied to the reservoir, the meniscus moves L = 150 mm along the tube from its zero mark. The pressure difference p<sub>1</sub> − p<sub>2</sub> (in Pa, round off to one decimal place) is ______",
+   "fig": "d30p_q10.png",
+   "opts": null,
+   "ans": "440.3 (accept 437.7 to 442.9)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> The liquid that rises in the tube comes from the reservoir, whose level drops by L(a/A). The true vertical difference is L sin θ + L(a/A).",
+    "Δh = 0.15 × (sin 20° + 0.01) = 0.15 × 0.35202 = 52.80 mm",
+    "p<sub>1</sub> − p<sub>2</sub> = ρgΔh = 850 × 9.81 × 0.05280 = <b>440.3 Pa</b>",
+    "<b>Exam tip:</b> Ignoring the reservoir drop gives 427.8 Pa. Inclining the tube magnifies the reading by 1/sin θ ≈ 2.9 here."
+   ]
+  },
+  {
+   "text": "An open rectangular tank partly filled with water moves horizontally with a constant acceleration of 4.905 m/s². The angle the free surface makes with the horizontal is",
+   "fig": null,
+   "opts": [
+    "30.00°",
+    "45.00°",
+    "63.43°",
+    "26.57°"
+   ],
+   "ans": "(D) 26.57°",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> In rigid-body linear acceleration the free surface is perpendicular to the effective gravity, so tan θ = a<sub>x</sub>/(g + a<sub>z</sub>).",
+    "tan θ = 4.905/9.81 = 0.5 → θ = <b>26.57°</b>",
+    "The surface falls towards the front (direction of acceleration) and rises at the rear.",
+    "<b>Exam tip:</b> 63.43° is tan⁻¹(g/a), the angle of the effective gravity with the horizontal, not of the surface."
+   ]
+  },
+  {
+   "text": "A triangular plate with base 2 m and height 3 m is immersed vertically in water with its apex at the free surface and its base horizontal, as shown. The depth of the centre of pressure below the free surface (in m, round off to two decimal places) is ______",
+   "fig": "d30p_q12.png",
+   "opts": null,
+   "ans": "2.25 (accept 2.24 to 2.26)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> h<sub>cp</sub> = h̄ + I<sub>G</sub>/(A h̄) for a vertical plane; for a triangle I<sub>G</sub> = bh³/36 about its centroid.",
+    "Centroid is 2h/3 = 2 m below the apex (the free surface): h̄ = 2 m, A = 3 m²",
+    "I<sub>G</sub> = 2 × 27/36 = 1.5 m⁴ → h<sub>cp</sub> = 2 + 1.5/(3 × 2) = <b>2.25 m</b>",
+    "Total force F = ρgAh̄ = 9810 × 3 × 2 = 58.86 kN",
+    "<b>Exam tip:</b> With the apex down and base at the surface, h̄ = 1 m and h<sub>cp</sub> = 1.5 m. Always measure h̄ from the free surface."
+   ]
+  },
+  {
+   "text": "The velocity potential of a 2-D flow is φ = x² − y². With u = ∂φ/∂x = ∂ψ/∂y and v = ∂φ/∂y = −∂ψ/∂x, the stream function ψ (taking ψ = 0 at the origin) is",
+   "fig": null,
+   "opts": [
+    "2xy",
+    "−2xy",
+    "x² + y²",
+    "xy"
+   ],
+   "ans": "(A) 2xy",
+   "sfig": null,
+   "type": "MCQ",
+   "solution": [
+    "<b>Concept:</b> Integrate the two velocity components into ψ and match the arbitrary functions.",
+    "u = ∂φ/∂x = 2x = ∂ψ/∂y → ψ = 2xy + f(x)",
+    "v = ∂φ/∂y = −2y = −∂ψ/∂x = −2y − f′(x) → f′(x) = 0, so <b>ψ = 2xy</b>",
+    "<b>Exam tip:</b> φ and ψ of a potential flow are harmonic conjugates: the lines φ = const and ψ = const cut at right angles. Some books use u = −∂φ/∂x, which flips the sign; read the convention given."
+   ]
+  },
+  {
+   "text": "An open vertical cylindrical tank of 1.5 m diameter drains through a 50 mm diameter orifice in its base (C<sub>d</sub> = 0.62), as shown. The time for the water level to fall from 4 m to 1 m above the orifice (in s, round off to the nearest whole number) is ______",
+   "fig": "d30p_q14.png",
+   "opts": null,
+   "ans": "655 (accept 648 to 662)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> Continuity on the falling level with Torricelli's outflow: −A dH/dt = C<sub>d</sub> a √(2gH). Integrating gives t = 2A(√H<sub>1</sub> − √H<sub>2</sub>)/(C<sub>d</sub> a √(2g)).",
+    "A = π(1.5)²/4 = 1.7671 m², a = π(0.05)²/4 = 0.001963 m²",
+    "t = 2 × 1.7671 × (2 − 1)/(0.62 × 0.001963 × 4.429) = <b>655 s</b> (about 10.9 min)",
+    "<b>Exam tip:</b> Draining the last 1 m takes as long as falling from 4 m to 1 m, because the time depends on √H differences."
+   ]
+  },
+  {
+   "text": "A steady 2-D velocity field is <b>V</b> = 2xy <b>i</b> − y² <b>j</b> (m/s, x and y in m). The magnitude of the fluid acceleration at the point (1, 2) (in m/s², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "17.89 (accept 17.82 to 17.96)",
+   "sfig": null,
+   "type": "NAT",
+   "solution": [
+    "<b>Concept:</b> For steady flow only the convective acceleration remains: a<sub>x</sub> = u ∂u/∂x + v ∂u/∂y, a<sub>y</sub> = u ∂v/∂x + v ∂v/∂y.",
+    "At (1, 2): u = 4, v = −4; ∂u/∂x = 2y = 4, ∂u/∂y = 2x = 2, ∂v/∂x = 0, ∂v/∂y = −2y = −4",
+    "a<sub>x</sub> = 4 × 4 + (−4) × 2 = <b>8 m/s²</b>; a<sub>y</sub> = 0 + (−4)(−4) = <b>16 m/s²</b>",
+    "|a| = √(64 + 256) = <b>17.89 m/s²</b>",
+    "<b>Exam tip:</b> Check continuity first: ∂u/∂x + ∂v/∂y = 2y − 2y = 0, so the field is a possible incompressible flow."
+   ]
+  }
+ ]
+}
