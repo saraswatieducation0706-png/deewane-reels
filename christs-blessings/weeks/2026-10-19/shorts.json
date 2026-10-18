@@ -1,0 +1,93 @@
+[
+ {"id": "s1", "date": "2026-10-19", "template": "A", "scene": "dawn_lake", "seed": 1, "music_key": "D",
+  "cover": ["Read this", "slowly"],
+  "title": "When your mind won't stop racing, read this slowly 🕊️",
+  "description": "A one-minute prayer for anyone whose mind won't slow down. Philippians 4:6-7 (KJV).\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#prayer #anxiety #bibleverse #christianshorts",
+  "tags": ["prayer for anxiety", "philippians 4 6-7", "peace of god", "christian short", "bible verse for worry", "short prayer"],
+  "segments": [
+   {"role": "hook", "text": "If your thoughts have been loud today, take one slow breath with me."},
+   {"role": "ref", "text": "Philippians 4, verses 6 and 7.", "label": "Philippians 4:6-7"},
+   {"role": "verse", "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.", "label": "Philippians 4:6-7"},
+   {"role": "reflection", "text": "Paul wrote this from a prison cell. He wasn't writing from an easy life. He was telling us that peace doesn't wait for every problem to be solved. You can hand each worry to God, one at a time, and let His peace stand guard over your heart."},
+   {"role": "prayer", "text": "Lord, here is what is weighing on me today. I give it to You. Guard my heart and my mind. Amen."},
+   {"role": "close", "text": "If you prayed this with me, you're not alone. Come back tomorrow."}
+  ]},
+ {"id": "s2", "date": "2026-10-20", "template": "B", "scene": "hills_sunset", "seed": 2, "music_key": "C",
+  "cover": ["Quietly", "exhausted?"],
+  "title": "For the one who is quietly exhausted",
+  "description": "For anyone carrying more than people can see. Matthew 11:28 (KJV).\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#jesus #rest #bibleverse #christianshorts",
+  "tags": ["matthew 11 28", "come unto me", "prayer when tired", "christian encouragement", "rest in jesus", "bible verse for exhaustion"],
+  "segments": [
+   {"role": "hook", "text": "Some tiredness sleep doesn't fix. If that's you today, this is for you."},
+   {"role": "ref", "text": "Jesus said in Matthew 11, verse 28.", "label": "Matthew 11:28"},
+   {"role": "verse", "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.", "label": "Matthew 11:28"},
+   {"role": "reflection", "text": "Notice what He didn't say. He didn't say \"fix yourself first\" or \"try harder\". The invitation is simply: come. Come as you are, with the job, the bills, the family worries, the things no one else sees you carrying. The rest He offers starts the moment you stop pretending you can hold it all alone."},
+   {"role": "prayer", "text": "Jesus, I'm tired. I come to You as I am. Give me Your rest today. Amen."},
+   {"role": "close", "text": "Share this with someone who's been carrying too much."}
+  ]},
+ {"id": "s3", "date": "2026-10-21", "template": "C", "scene": "dark_gold", "seed": 3, "music_key": "Eb",
+  "cover": ["Fear", "thou not"],
+  "title": "God's answer to the fear you haven't told anyone about",
+  "description": "Five promises from Isaiah 41:10 (KJV) for the fear you carry quietly.\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#fear #faith #bibleverse #christianshorts",
+  "tags": ["isaiah 41 10", "fear not", "bible verse for fear", "god is with you", "christian motivation", "prayer for courage"],
+  "segments": [
+   {"role": "hook", "text": "There's a fear you haven't said out loud. God already knows it, and He has something to say to you."},
+   {"role": "ref", "text": "Isaiah 41, verse 10.", "label": "Isaiah 41:10"},
+   {"role": "verse", "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.", "label": "Isaiah 41:10"},
+   {"role": "reflection", "text": "Count the promises. I am with you. I am your God. I will strengthen you. I will help you. I will hold you up. Five promises, and not one of them depends on how brave you feel today. Your courage can be small. His hand is not."},
+   {"role": "prayer", "text": "Father, You know what I'm afraid of. Hold me up today. Amen."},
+   {"role": "close", "text": "Save this for the next time fear shows up."}
+  ]},
+ {"id": "s4", "date": "2026-10-22", "template": "A", "scene": "sunrise_lake", "seed": 4, "music_key": "F",
+  "cover": ["New every", "morning"],
+  "title": "Yesterday doesn't get the final word",
+  "description": "A morning reminder from Lamentations 3:22-23 (KJV): God's mercy is new every day.\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#morningprayer #godsmercy #bibleverse #christianshorts",
+  "tags": ["lamentations 3 22-23", "new every morning", "morning prayer", "great is thy faithfulness", "fresh start", "christian devotional"],
+  "segments": [
+   {"role": "hook", "text": "If yesterday went badly, you need to hear this before today starts."},
+   {"role": "ref", "text": "Lamentations 3, verses 22 and 23.", "label": "Lamentations 3:22-23"},
+   {"role": "verse", "text": "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.", "label": "Lamentations 3:22-23"},
+   {"role": "reflection", "text": "These words were written in the middle of ruin. The city had fallen and everything familiar was gone. And still the writer found this: God's mercy didn't run out overnight. Whatever you said or did yesterday, this morning comes with a fresh supply of grace."},
+   {"role": "prayer", "text": "Lord, thank You for new mercy today. Help me begin again with You. Amen."},
+   {"role": "close", "text": "Good morning. Start again."}
+  ]},
+ {"id": "s5", "date": "2026-10-23", "template": "D", "scene": "candle", "seed": 5, "music_key": "C",
+  "cover": ["He is", "near"],
+  "title": "If your heart is broken right now, God is closer than you think",
+  "description": "Psalm 34:18 (KJV) for anyone carrying grief or heartbreak. Leave a prayer request below and we'll pray for you.\n\nWe will never ask you for money or to message us privately.\n\n#grief #comfort #bibleverse #christianshorts",
+  "tags": ["psalm 34 18", "broken hearted", "prayer for grief", "god is near", "christian comfort", "healing heart prayer"],
+  "segments": [
+   {"role": "hook", "text": "If you're grieving something or someone today, stay for one minute."},
+   {"role": "ref", "text": "Psalm 34, verse 18.", "label": "Psalm 34:18"},
+   {"role": "verse", "text": "The LORD is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.", "label": "Psalm 34:18"},
+   {"role": "reflection", "text": "We often feel that pain pushes God far away. This verse says the opposite. When your heart breaks, He draws near. You don't have to find the right words or stop crying first. Your broken heart is not a barrier to Him. It's where He chooses to come close."},
+   {"role": "prayer", "text": "Lord, my heart hurts. Thank You for being near. Hold what I can't. Amen."},
+   {"role": "close", "text": "If you're hurting, you're welcome to share a prayer request below. We'll pray for you."}
+  ]},
+ {"id": "s6", "date": "2026-10-24", "template": "B", "scene": "forest_fork", "seed": 6, "music_key": "D",
+  "cover": ["Which", "way?"],
+  "title": "Stuck on a big decision? Pray this first",
+  "description": "Proverbs 3:5-6 (KJV) for anyone facing a hard decision.\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#trustgod #guidance #bibleverse #christianshorts",
+  "tags": ["proverbs 3 5-6", "trust in the lord", "prayer for guidance", "decision making christian", "direct my path", "faith and decisions"],
+  "segments": [
+   {"role": "hook", "text": "If you're standing at a crossroads and every option feels uncertain, this is for you."},
+   {"role": "ref", "text": "Proverbs 3, verses 5 and 6.", "label": "Proverbs 3:5-6"},
+   {"role": "verse", "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.", "label": "Proverbs 3:5-6"},
+   {"role": "reflection", "text": "This doesn't tell you to stop thinking. It tells you not to lean your whole weight on your own thinking. Bring God into the decision, not just the outcome. Ask Him first, not last. The promise isn't that you'll see the whole road, only that He will direct your steps."},
+   {"role": "prayer", "text": "Lord, I don't know which way to go. I trust You more than my own understanding. Lead me. Amen."},
+   {"role": "close", "text": "Tell us below what decision you're praying about."}
+  ]},
+ {"id": "s7", "date": "2026-10-25", "template": "E", "scene": "parchment", "seed": 7, "music_key": "F",
+  "cover": ["Pray over", "your week"],
+  "title": "Pray this over your week before Monday comes",
+  "description": "A Sunday prayer for the week ahead, from Joshua 1:9 (KJV).\n\nNew Shorts every morning, with longer prayers and Bible stories every week.\n\n#sundayprayer #courage #bibleverse #christianshorts",
+  "tags": ["joshua 1 9", "be strong and courageous", "prayer for the week", "sunday prayer", "god is with you", "christian encouragement"],
+  "segments": [
+   {"role": "hook", "text": "Before the new week starts, let's pray over it together."},
+   {"role": "ref", "text": "Joshua 1, verse 9.", "label": "Joshua 1:9"},
+   {"role": "verse", "text": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.", "label": "Joshua 1:9"},
+   {"role": "reflection", "text": "Joshua was about to lead a nation into the unknown. God didn't give him a map. He gave him a promise: I go wherever you go. Your week ahead has meetings, appointments, worries and surprises. God is already in every one of them."},
+   {"role": "prayer", "text": "Lord, I give You this week. Go before me into every room and every conversation. Make me strong and of good courage. Amen."},
+   {"role": "close", "text": "Have a blessed week. See you tomorrow morning."}
+  ]}
+]
