@@ -172,7 +172,7 @@ def scene(s, t, d, lay, T):
             p = ease((t - 0.6 - 0.5 * n) / 0.4); ftext(d, 880, s["note"], "Bold", 46, WHITE, p, W - 300)
     elif k == "grid":  # tiles [head, sub] 2-8 (2 rows max)
         tl = s["tiles"]; n = len(tl); cols = n if n <= 4 else math.ceil(n / 2); rows = 1 if n <= 4 else 2
-        tw = (W - 200 - (cols - 1) * 40) / cols; th = 300 if rows == 1 else 250; y0 = 380 if rows == 1 else 300
+        tw = (W - 200 - (cols - 1) * 40) / cols; th = 300 if rows == 1 else 290; y0 = 380 if rows == 1 else 280
         for j, (hd, sb) in enumerate(tl):
             r_, c_ = divmod(j, cols); x = 100 + c_ * (tw + 40); y = y0 + r_ * (th + 40)
             p = back((t - 0.35 - 0.25 * j) / 0.45); a2 = ease((t - 0.35 - 0.25 * j) / 0.3)
@@ -181,9 +181,9 @@ def scene(s, t, d, lay, T):
             d.rounded_rectangle([cx_ - w2, cy_ - h2, cx_ + w2, cy_ - h2 + 16], 8, fill=col(RED, a2))
             fh = fit(d, hd, "ExtraBold", 50, tw - 50, 26)
             ctext(d, y + 50, hd, fh, RED, a2, cx_)
-            f = F("SemiBold", 38); ls = wrap(d, sb, f, tw - 60)
+            f = F("SemiBold", 34); ls = wrap(d, sb, f, tw - 60)
             yy = y + 70 + fh.size * 1.3
-            for ln in ls[:4]: ctext(d, yy, ln, f, INK, a2, cx_); yy += 48
+            for ln in ls[:4]: ctext(d, yy, ln, f, INK, a2, cx_); yy += 44
     elif k == "chips":  # popping pills (e.g. organisations), optional note
         ch = s["chips"]; f = F("ExtraBold", 54); rows, cur, wsum = [], [], 0
         for c in ch:
