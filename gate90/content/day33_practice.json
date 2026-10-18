@@ -1,0 +1,269 @@
+{
+ "day": 33,
+ "subject": "General Aptitude",
+ "topic": "Analytical Reasoning",
+ "days_to_gate": 73,
+ "summary": "syllogisms, if-then logic, number and letter series, coding, blood relations, directions, clocks and calendars, data sufficiency, seating arrangement, ranking and figure counting",
+ "minutes": 40,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Fluid Mechanics, Turbulent Flow & Pipe Losses",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Statements: No engineer is lazy. All managers are engineers.<br>Conclusions: I. No manager is lazy. II. Some engineers are managers.<br>Which conclusion(s) follow(s)?",
+   "fig": null,
+   "opts": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "ans": "(C) Both I and II",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Draw the Venn diagram: the managers circle lies inside the engineers circle, which is completely separate from the lazy circle.",
+    "I: managers sit inside engineers, so none of them can be lazy → follows. II: \"All managers are engineers\" converts to \"Some engineers are managers\" → follows.",
+    "<b>Answer: both I and II.</b>",
+    "<b>Exam tip:</b> \"All A are B\" converts only to \"Some B are A\", never to \"All B are A\"."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "\"The pump delivers water only if it is primed.\" The pump delivered water this morning. Which conclusion is certain?",
+   "fig": null,
+   "opts": [
+    "The pump was primed this morning",
+    "The pump was not primed this morning",
+    "A primed pump always delivers water",
+    "Nothing can be concluded"
+   ],
+   "ans": "(A) The pump was primed this morning",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> \"P only if Q\" means \"if P then Q\": delivery ⟹ primed.",
+    "The pump delivered water (P is true), so it <b>was primed</b> (Q is true).",
+    "Option (C) is the converse (Q ⟹ P), which is not implied.",
+    "<b>Exam tip:</b> \"only if\" introduces the necessary condition; \"if\" introduces the sufficient condition."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The next term in the series 2, 6, 12, 20, 30, ___ is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "42",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Look at the differences: 4, 6, 8, 10, so the next difference is 12.",
+    "Next term = 30 + 12 = <b>42</b> (the terms are n(n + 1): 1×2, 2×3, …, 6×7).",
+    "<b>Exam tip:</b> If first differences form an AP, the series is quadratic in n."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Find the next letter in the series: B, E, I, N, ___",
+   "fig": null,
+   "opts": [
+    "S",
+    "T",
+    "U",
+    "R"
+   ],
+   "ans": "(B) T",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Convert letters to positions: B = 2, E = 5, I = 9, N = 14.",
+    "Gaps are +3, +4, +5, so the next gap is +6: 14 + 6 = 20 = <b>T</b>.",
+    "<b>Exam tip:</b> Remember the EJOTY markers: E = 5, J = 10, O = 15, T = 20, Y = 25."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a certain code, GATE = 33 and MECH = 29. In the same code, PUMP = ______",
+   "fig": null,
+   "opts": null,
+   "ans": "66",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The code is the sum of the alphabet positions of the letters.",
+    "GATE = 7 + 1 + 20 + 5 = 33 ✓; MECH = 13 + 5 + 3 + 8 = 29 ✓",
+    "PUMP = 16 + 21 + 13 + 16 = <b>66</b>",
+    "<b>Exam tip:</b> When a number code is given for a word, test the position sum, the product and the reverse positions (27 − n) first."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A is B's brother. C is A's mother. D is C's father. How is A related to D?",
+   "fig": null,
+   "opts": [
+    "Son",
+    "Grandson",
+    "Nephew",
+    "Great-grandson"
+   ],
+   "ans": "(B) Grandson",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Build the family tree generation by generation.",
+    "D is C's father; C is A's mother, so D is A's maternal grandfather. A is male (a brother), so A is D's <b>grandson</b>.",
+    "<b>Exam tip:</b> Fix the gender of each person as soon as a word like brother, mother or father reveals it."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A person walks 5 km east, turns left and walks 3 km, turns left again and walks 9 km, then turns left again and walks 6 km. His distance from the starting point (in km) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Track the coordinates (east = +x, north = +y).",
+    "East 5 → (5, 0); left = north 3 → (5, 3); left = west 9 → (−4, 3); left = south 6 → (−4, −3).",
+    "Distance = √(4² + 3²) = <b>5 km</b> (towards the south-west).",
+    "<b>Exam tip:</b> Three left turns in a row bring you back to facing the original direction's right."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The hands of a clock coincide for the first time after 3 o'clock at how many minutes past 3 (round off to two decimal places)? ______",
+   "fig": null,
+   "opts": null,
+   "ans": "16.36 (accept 16.30 to 16.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The minute hand gains 5.5° per minute on the hour hand.",
+    "At 3:00 the hour hand is 90° ahead. Time to close the gap = 90/5.5 = 180/11 min",
+    "= 16 4/11 min = <b>16.36 min</b> past 3.",
+    "<b>Exam tip:</b> The hands coincide 11 times in 12 hours, every 65 5/11 minutes."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "1 January 2027 is a Friday. What day of the week is 1 March 2028?",
+   "fig": null,
+   "opts": [
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "ans": "(B) Wednesday",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Count odd days (days beyond complete weeks).",
+    "1 Jan 2027 → 1 Jan 2028: 365 days = 1 odd day → Saturday.",
+    "1 Jan 2028 → 1 Mar 2028: January 31 + February 29 (2028 is a leap year) = 60 days = 4 odd days → Saturday + 4 = <b>Wednesday</b>.",
+    "<b>Exam tip:</b> A century year is a leap year only if divisible by 400; other years if divisible by 4."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Question: Is x &gt; y, where x and y are real numbers?<br>Statement I: x² &gt; y²<br>Statement II: x + y &gt; 0",
+   "fig": null,
+   "opts": [
+    "Statement I alone is sufficient",
+    "Statement II alone is sufficient",
+    "Both statements together are sufficient, but neither alone is",
+    "Both statements together are not sufficient"
+   ],
+   "ans": "(C) Both statements together are sufficient, but neither alone is",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Test each statement with counter-examples, then combine.",
+    "I alone: x = −3, y = 1 gives x² &gt; y² but x &lt; y; x = 3, y = 1 gives x &gt; y. Not sufficient.",
+    "II alone: x = 1, y = 2 (no) and x = 2, y = 1 (yes). Not sufficient.",
+    "Together: x² − y² = (x − y)(x + y) &gt; 0 with x + y &gt; 0 forces x − y &gt; 0. <b>Both together are sufficient.</b>",
+    "<b>Exam tip:</b> Factorising is often the fastest way to combine two inequality statements."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Six friends A, B, C, D, E and F sit around a circular table facing the centre. A sits opposite D. B sits immediately to the right of A. C is not an immediate neighbour of D. E does not sit opposite B. Who sits opposite C?",
+   "fig": null,
+   "opts": [
+    "B",
+    "E",
+    "F",
+    "A"
+   ],
+   "ans": "(B) E",
+   "sfig": "d33p_s11.png",
+   "solution": [
+    "<b>Concept:</b> Fix A, then place the others clockwise (facing the centre, a person's right neighbour is the next seat anticlockwise).",
+    "Seats clockwise from A: A, 2, 3, D, 5, B (B is to A's right, D is opposite A).",
+    "C cannot be next to D (seats 3 and 5), so C = seat 2. E is not opposite B (seat 3), so E = seat 5 and F = seat 3.",
+    "Clockwise order: A, C, F, D, E, B. Opposite pairs: A–D, C–E, F–B. So <b>E</b> is opposite C.",
+    "<b>Exam tip:</b> In a circle facing the centre, left = clockwise and right = anticlockwise; facing outward, they swap."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Ravi is 14th from the top and 27th from the bottom in his class. The number of students in the class is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "40",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Total = rank from top + rank from bottom − 1 (Ravi is counted twice).",
+    "Total = 14 + 27 − 1 = <b>40</b>",
+    "<b>Exam tip:</b> Between-two-people questions: number between = |difference of positions| − 1."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The number of triangles in the figure shown is ______",
+   "fig": "d33p_q13.png",
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Every triangle here has its apex at the top vertex; its base is any segment between two of the four points on a horizontal line.",
+    "On the base line there are 4 points (the two corners and the two feet of the inner lines): C(4, 2) = 6 triangles.",
+    "On the middle horizontal line there are also 4 points: C(4, 2) = 6 triangles.",
+    "Total = 6 + 6 = <b>12</b>",
+    "<b>Exam tip:</b> For n lines from one apex (counting the two sides) cut by k horizontal lines (counting the base), the count is k × C(n, 2) = 2 × C(4, 2) here."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Statements: Some bolts are nuts. All nuts are screws.<br>Conclusions: I. Some bolts are screws. II. All screws are nuts.<br>Which conclusion(s) follow(s)?",
+   "fig": null,
+   "opts": [
+    "Only I",
+    "Only II",
+    "Both I and II",
+    "Neither I nor II"
+   ],
+   "ans": "(A) Only I",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The bolts that are nuts lie inside the screws circle.",
+    "So some bolts are screws: I follows. \"All nuts are screws\" does not mean all screws are nuts: II does not follow.",
+    "<b>Answer: only I.</b>",
+    "<b>Exam tip:</b> Some + All (in that order) gives a \"Some\" conclusion; All + Some gives no definite conclusion."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "One of three suspects A, B and C broke a gauge. A says, \"B did it.\" B says, \"I did not do it.\" C says, \"A did not do it.\" Exactly one of the three statements is true. Who broke the gauge?",
+   "fig": null,
+   "opts": [
+    "A",
+    "B",
+    "C",
+    "Cannot be determined"
+   ],
+   "ans": "(A) A",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Try each suspect as the culprit and count the true statements.",
+    "If A did it: A's statement false, B's true, C's false → exactly one true ✓.",
+    "If B did it: A's true, B's false, C's true → two true ✗. If C did it: A's false, B's true, C's true → two true ✗.",
+    "So <b>A</b> broke the gauge.",
+    "<b>Exam tip:</b> With a small number of cases, test every case systematically instead of reasoning in circles."
+   ]
+  }
+ ]
+}

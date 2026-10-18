@@ -1,0 +1,262 @@
+{
+ "day": 32,
+ "subject": "Fluid Mechanics",
+ "topic": "Viscous Flow & Boundary Layer",
+ "days_to_gate": 74,
+ "summary": "viscous flow between plates and in pipes (Couette and Poiseuille flow, Hagen–Poiseuille), bearings, Stokes' law, and laminar boundary layers (Blasius, displacement and momentum thickness, drag, separation)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, Analytical Reasoning",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A 0.5 m × 0.5 m plate is pulled at 0.6 m/s over a 0.4 mm thick oil film resting on a fixed surface, as shown. The force required is 15 N. Assuming a linear velocity profile, the dynamic viscosity of the oil is",
+   "fig": "d32p_q1.png",
+   "opts": [
+    "0.04 Pa·s",
+    "0.4 Pa·s",
+    "0.004 Pa·s",
+    "0.024 Pa·s"
+   ],
+   "ans": "(A) 0.04 Pa·s",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Newton's law of viscosity for a thin film with a linear (Couette) profile: τ = μU/h.",
+    "τ = F/A = 15/(0.5 × 0.5) = 60 Pa",
+    "μ = τh/U = 60 × 0.0004/0.6 = <b>0.04 Pa·s</b>",
+    "<b>Exam tip:</b> Convert the film thickness to metres first; a missed 10⁻³ gives the distractor 40 or 0.04 × 10³."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil (dynamic viscosity 0.5 Pa·s) flows in laminar regime between two fixed parallel plates 10 mm apart. The maximum velocity is 0.6 m/s. The shear stress at the plates (in Pa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "120",
+   "sfig": "d32p_s2.png",
+   "solution": [
+    "<b>Concept:</b> Plane Poiseuille flow: u<sub>max</sub> = (−dp/dx)h²/(8μ) and τ<sub>w</sub> = (−dp/dx)h/2.",
+    "−dp/dx = 8μu<sub>max</sub>/h² = 8 × 0.5 × 0.6/(0.01)² = 24 000 Pa/m",
+    "τ<sub>w</sub> = 24 000 × 0.01/2 = <b>120 Pa</b>",
+    "Short cut: τ<sub>w</sub> = μ(du/dy)<sub>wall</sub> = 4μu<sub>max</sub>/h = 4 × 0.5 × 0.6/0.01 = 120 Pa.",
+    "<b>Exam tip:</b> Between plates ū = (2/3)u<sub>max</sub>; in a pipe ū = u<sub>max</sub>/2. Do not mix them up."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Oil flows in laminar regime through a pipe under a fixed pressure difference between its ends. If the pipe diameter is increased by 10 %, the discharge increases by about",
+   "fig": null,
+   "opts": [
+    "10 %",
+    "21 %",
+    "33.1 %",
+    "46.4 %"
+   ],
+   "ans": "(D) 46.4 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hagen–Poiseuille: Q = πΔpD⁴/(128μL), so Q ∝ D⁴ at a fixed Δp.",
+    "Q₂/Q₁ = 1.1⁴ = 1.4641 ⟹ increase ≈ <b>46.4 %</b>",
+    "<b>Exam tip:</b> At a fixed Q the head loss scales as 1/D⁴; at a fixed Δp the flow scales as D⁴. 21 % is 1.1², 33.1 % is 1.1³."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil (density 850 kg/m³, dynamic viscosity 0.1 Pa·s) is pumped at 8 litres/s through a horizontal pipe of 100 mm diameter and 200 m length. Take g = 9.81 m/s². The head loss due to friction (in m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.82 (accept 7.75 to 7.88)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Check the regime first; if laminar, h<sub>f</sub> = 32μVL/(ρgD²).",
+    "V = 0.008/(π/4 × 0.1²) = 1.0186 m/s; Re = 850 × 1.0186 × 0.1/0.1 = 866 &lt; 2000 → laminar",
+    "Δp = 32 × 0.1 × 1.0186 × 200/0.1² = 65190 Pa; h<sub>f</sub> = Δp/(ρg) = 65190/(850 × 9.81) = <b>7.82 m</b>",
+    "Pumping power = ΔpQ = 522 W.",
+    "<b>Exam tip:</b> The same answer comes from Darcy–Weisbach with f = 64/Re; use whichever is faster."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A vertical shaft of 200 mm diameter rotates at 400 rpm in a footstep bearing. The end of the shaft is separated from the bearing surface by an oil film 1 mm thick (dynamic viscosity 0.15 Pa·s). The power absorbed in overcoming viscous resistance (in W, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "41.3 (accept 40.9 to 41.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At radius r the film velocity is ωr, so τ = μωr/t. Torque on a ring: dT = τ(2πr dr)r.",
+    "T = ∫₀<sup>R</sup> (μωr/t)(2πr²) dr = πμωR⁴/(2t)",
+    "ω = 2π × 400/60 = 41.8879 rad/s; T = π × 0.15 × 41.8879 × 0.1⁴/(2 × 0.001) = 0.9870 N·m",
+    "P = Tω = <b>41.3 W</b>",
+    "<b>Exam tip:</b> In a journal bearing every point of the film moves at the same speed, so T = τ(πDL)(D/2) directly; a footstep or collar bearing needs the integral because the speed varies with r."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement is <b>NOT</b> correct?",
+   "fig": null,
+   "opts": [
+    "Flow in a circular pipe is usually laminar for Re (based on diameter) below about 2000",
+    "The boundary layer on a smooth flat plate usually becomes turbulent at Re<sub>x</sub> of about 5 × 10⁵",
+    "In fully developed laminar pipe flow, the Darcy friction factor depends on the pipe roughness",
+    "In fully developed pipe flow the velocity profile no longer changes along the pipe"
+   ],
+   "ans": "(C) In fully developed laminar pipe flow, the Darcy friction factor depends on the pipe roughness",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In laminar flow the viscous effects dominate and the roughness elements are buried in the slow-moving fluid.",
+    "Laminar pipe flow: f = 64/Re, independent of roughness. So (C) is the incorrect statement.",
+    "<b>Exam tip:</b> Roughness matters only in turbulent flow (transitional and fully rough zones of the Moody chart)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For the boundary layer on a flat plate shown, with δ = boundary-layer thickness, δ* = displacement thickness and θ = momentum thickness, the correct relation is",
+   "fig": "d32p_q7.png",
+   "opts": [
+    "δ > θ > δ*",
+    "δ* > δ > θ",
+    "δ > δ* > θ",
+    "θ > δ* > δ"
+   ],
+   "ans": "(C) δ > δ* > θ",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> δ* = ∫(1 − u/U)dy and θ = ∫(u/U)(1 − u/U)dy; since 0 ≤ u/U ≤ 1, the integrand of θ is smaller than that of δ*, and both are smaller than δ.",
+    "Hence <b>δ > δ* > θ</b>, and the shape factor H = δ*/θ &gt; 1 (2.59 for Blasius laminar flow, about 1.3 to 1.4 for turbulent flow).",
+    "<b>Exam tip:</b> δ* is the distance by which the wall would have to be displaced outward to carry the same flow in an ideal (inviscid) stream."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The velocity profile in a laminar boundary layer is approximated by u/U = 2(y/δ) − (y/δ)². The shape factor H = δ*/θ (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Integrate with η = y/δ from 0 to 1.",
+    "δ*/δ = ∫(1 − 2η + η²)dη = 1 − 1 + 1/3 = 1/3",
+    "θ/δ = ∫(2η − η²)(1 − 2η + η²)dη = 2/15",
+    "H = (1/3)/(2/15) = <b>2.5</b>",
+    "<b>Exam tip:</b> Linear profile: H = 3; parabolic: 2.5; Blasius exact: 2.59."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (kinematic viscosity 1.5 × 10⁻⁵ m²/s) flows at 2 m/s over a smooth flat plate. Using δ = 5x/√Re<sub>x</sub>, the distance from the leading edge at which the laminar boundary layer is 5 mm thick (in mm, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "133 (accept 132 to 134)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> δ = 5x/√(Ux/ν) = 5√(νx/U), so x = Uδ²/(25ν).",
+    "x = 2 × (0.005)²/(25 × 1.5 × 10⁻⁵) = 0.1333 m = <b>133 mm</b>",
+    "Check: Re<sub>x</sub> = 17778 &lt; 5 × 10⁵, so the laminar formula applies.",
+    "<b>Exam tip:</b> Since δ ∝ √x, doubling the distance multiplies δ by √2 only."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A laminar boundary layer exists over the whole length of a flat plate. If the free-stream velocity is doubled (the boundary layer stays laminar), the skin-friction drag becomes",
+   "fig": null,
+   "opts": [
+    "2 times",
+    "2.83 times",
+    "4 times",
+    "1.41 times"
+   ],
+   "ans": "(B) 2.83 times",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> F<sub>D</sub> = C<sub>D</sub>(½ρU²)A with C<sub>D</sub> = 1.328/√Re<sub>L</sub> ∝ U<sup>−1/2</sup>.",
+    "So F<sub>D</sub> ∝ U<sup>3/2</sup>; doubling U gives 2<sup>1.5</sup> = <b>2.83 times</b>.",
+    "<b>Exam tip:</b> In laminar flow F<sub>D</sub> ∝ U<sup>1.5</sup>L<sup>0.5</sup>; in turbulent flow (C<sub>D</sub> ∝ Re<sup>−1/5</sup>) F<sub>D</sub> ∝ U<sup>1.8</sup>L<sup>0.8</sup>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which of the following does <b>NOT</b> help to delay boundary-layer separation?",
+   "fig": null,
+   "opts": [
+    "Suction of the slow fluid near the wall through slots",
+    "Making the boundary layer turbulent with a trip wire or vortex generators",
+    "Increasing the adverse pressure gradient by a sharper divergence of the passage",
+    "Streamlining the body so that the pressure rises gently"
+   ],
+   "ans": "(C) Increasing the adverse pressure gradient by a sharper divergence of the passage",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Separation happens when the near-wall fluid, already slowed by friction, cannot climb an adverse pressure gradient.",
+    "Suction removes the slow fluid; a turbulent layer carries more momentum near the wall; streamlining keeps dp/dx small. A sharper divergence makes dp/dx more adverse and <b>promotes</b> separation, so (C).",
+    "<b>Exam tip:</b> This is why diffuser half-angles are kept small (about 3° to 4°) and why golf balls have dimples."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A sand grain of 0.1 mm diameter (density 2650 kg/m³) settles in still water (density 1000 kg/m³, dynamic viscosity 10⁻³ Pa·s). Take g = 9.81 m/s². Using Stokes' law, its terminal settling velocity (in mm/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "8.99 (accept 8.90 to 9.08)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At terminal velocity, weight − buoyancy = Stokes drag 3πμVd ⟹ V = (ρ<sub>s</sub> − ρ)gd²/(18μ).",
+    "V = 1650 × 9.81 × (10⁻⁴)²/(18 × 10⁻³) = 0.00899 m/s = <b>8.99 mm/s</b>",
+    "Check: Re = ρVd/μ = 0.90 &lt; 1, so Stokes' law is valid.",
+    "<b>Exam tip:</b> Stokes drag means C<sub>D</sub> = 24/Re; always check Re &lt; 1 before trusting it."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In fully developed laminar flow through a pipe, the flow rate is doubled while the flow remains laminar. The Darcy friction factor f and the head loss h<sub>f</sub> become, respectively,",
+   "fig": null,
+   "opts": [
+    "half and double",
+    "double and double",
+    "half and four times",
+    "unchanged and double"
+   ],
+   "ans": "(A) half and double",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> f = 64/Re ∝ 1/V, and h<sub>f</sub> = fLV²/(2gD) ∝ (1/V)V² = V.",
+    "Doubling Q doubles V: f is <b>halved</b> and h<sub>f</sub> is <b>doubled</b>.",
+    "<b>Exam tip:</b> Laminar h<sub>f</sub> ∝ V; fully rough turbulent h<sub>f</sub> ∝ V²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Using the von Kármán momentum-integral equation with the linear profile u/U = y/δ for a laminar boundary layer on a flat plate, the boundary-layer thickness is",
+   "fig": null,
+   "opts": [
+    "δ/x = 5.0/√Re<sub>x</sub>",
+    "δ/x = 3.46/√Re<sub>x</sub>",
+    "δ/x = 5.48/√Re<sub>x</sub>",
+    "δ/x = 4.64/√Re<sub>x</sub>"
+   ],
+   "ans": "(B) δ/x = 3.46/√Re<sub>x</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ<sub>w</sub> = ρU² dθ/dx with τ<sub>w</sub> = μU/δ and θ = δ/6.",
+    "μU/δ = ρU²(1/6)dδ/dx ⟹ δ dδ = 6ν dx/U ⟹ δ² = 12νx/U",
+    "δ/x = √12/√Re<sub>x</sub> = <b>3.46/√Re<sub>x</sub></b>",
+    "<b>Exam tip:</b> Parabolic profile gives 5.48, cubic gives 4.64, Blasius exact gives 5.0 (4.91 to 99 %)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil (dynamic viscosity 0.8 Pa·s) flows between a fixed lower plate and an upper plate moving at 1.2 m/s, 10 mm apart, with a pressure gradient dp/dx = −1500 Pa/m in the direction of motion, as shown. The shear stress on the fixed plate (in Pa, round off to one decimal place) is ______",
+   "fig": "d32p_q15.png",
+   "opts": null,
+   "ans": "103.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Couette–Poiseuille flow: u = Uy/h + (1/(2μ))(−dp/dx)(hy − y²).",
+    "du/dy at y = 0: U/h + (−dp/dx)h/(2μ)",
+    "τ<sub>0</sub> = μU/h + (−dp/dx)h/2 = 0.8 × 1.2/0.01 + 1500 × 0.01/2 = 96 + 7.5 = <b>103.5 Pa</b>",
+    "<b>Exam tip:</b> A favourable gradient adds to the Couette shear on the fixed plate; an adverse one subtracts and can even reverse the flow near that plate."
+   ]
+  }
+ ]
+}

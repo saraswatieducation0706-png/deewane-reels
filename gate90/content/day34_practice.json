@@ -1,0 +1,261 @@
+{
+ "day": 34,
+ "subject": "Fluid Mechanics",
+ "topic": "Turbulent Flow & Pipe Losses",
+ "days_to_gate": 72,
+ "summary": "turbulent pipe flow (Blasius and Moody chart, velocity profiles, viscous sublayer, mixing length), Darcy–Weisbach losses, minor losses at enlargements, contractions, exits and fittings, pipes in series and parallel, siphons and power transmission",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Thermodynamics, Basics & Pure Substances",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "Water (kinematic viscosity 10⁻⁶ m²/s) flows at 2 m/s through a smooth 50 mm diameter pipe. Using the Blasius correlation f = 0.316/Re<sup>0.25</sup> and g = 9.81 m/s², the head loss per 100 m of pipe (in m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.25 (accept 7.18 to 7.32)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find Re, then f from Blasius, then use Darcy–Weisbach h<sub>f</sub> = fLV²/(2gD).",
+    "Re = VD/ν = 2 × 0.05/10⁻⁶ = 10⁵ (turbulent, within the Blasius range)",
+    "f = 0.316/(10⁵)<sup>0.25</sup> = 0.01777",
+    "h<sub>f</sub> = 0.01777 × (100/0.05) × 2²/(2 × 9.81) = <b>7.25 m</b>",
+    "<b>Exam tip:</b> Blasius gives h<sub>f</sub> ∝ V<sup>1.75</sup> for smooth pipes; fully rough pipes give h<sub>f</sub> ∝ V²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement about the Moody chart is <b>NOT</b> correct?",
+   "fig": null,
+   "opts": [
+    "In laminar flow f = 64/Re for all pipes, rough or smooth",
+    "In the transition zone f depends on both Re and ε/D (Colebrook equation)",
+    "In the fully rough zone f increases steadily with Re",
+    "For a given Re in turbulent flow, a rougher pipe has a larger f"
+   ],
+   "ans": "(C) In the fully rough zone f increases steadily with Re",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The Moody chart has laminar, critical, transitional-turbulent and fully rough zones.",
+    "In the fully rough zone the curves are <b>horizontal</b>: f depends only on ε/D, not on Re. So (C) is wrong.",
+    "<b>Exam tip:</b> Fully rough: 1/√f = 2 log₁₀(3.7D/ε). Smooth: Blasius or Prandtl's 1/√f = 2 log₁₀(Re√f) − 0.8."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A horizontal pipe carrying 0.1 m³/s of water suddenly enlarges from 150 mm to 300 mm diameter, as shown. Take g = 9.81 m/s². The head loss at the enlargement (in m, round off to two decimal places) is ______",
+   "fig": "d34p_q3.png",
+   "opts": null,
+   "ans": "0.92 (accept 0.91 to 0.93)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Borda–Carnot loss at a sudden enlargement: h<sub>L</sub> = (V₁ − V₂)²/(2g).",
+    "V₁ = 0.1/(π/4 × 0.15²) = 5.6588 m/s; V₂ = V₁ × (150/300)² = 1.4147 m/s",
+    "h<sub>L</sub> = (5.6588 − 1.4147)²/19.62 = <b>0.92 m</b>",
+    "The pressure still <b>rises</b> across the enlargement: (p₂ − p₁)/ρg = V₂(V₁ − V₂)/g = 0.612 m.",
+    "<b>Exam tip:</b> When the larger pipe is a reservoir (V₂ = 0), the same formula gives the exit loss V₁²/2g."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For the sudden enlargement in Q3, the rise in pressure head from section 1 to section 2 is about",
+   "fig": null,
+   "opts": [
+    "0.61 m",
+    "1.53 m",
+    "0.92 m",
+    "0 (pressure falls)"
+   ],
+   "ans": "(A) 0.61 m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Energy equation: p₁/ρg + V₁²/2g = p₂/ρg + V₂²/2g + h<sub>L</sub>.",
+    "(p₂ − p₁)/ρg = (V₁² − V₂²)/2g − (V₁ − V₂)²/2g = V₂(V₁ − V₂)/g",
+    "= 1.4147 × 4.2441/9.81 = <b>0.61 m</b>",
+    "<b>Exam tip:</b> Without losses the rise would be (V₁² − V₂²)/2g = 1.53 m; the loss eats exactly the difference."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For turbulent pipe flow with the one-seventh power-law profile u = u<sub>max</sub>(y/R)<sup>1/7</sup>, the momentum correction factor β is about",
+   "fig": null,
+   "opts": [
+    "1.33",
+    "1.02",
+    "2.00",
+    "1.06"
+   ],
+   "ans": "(B) 1.02",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> β = (1/A)∫(u/ū)² dA. For the 1/n power law in a pipe, ū/u<sub>max</sub> = 2n²/((n + 1)(2n + 1)) and β = (n + 1)(2n + 1)²/(4n²(n + 2)).",
+    "n = 7: ū/u<sub>max</sub> = 98/120 = 0.817; β = 8 × 225/(4 × 49 × 9) = <b>1.02</b>",
+    "<b>Exam tip:</b> Turbulent profiles are flat, so α ≈ 1.06 and β ≈ 1.02 are usually taken as 1. Laminar pipe flow: α = 2, β = 4/3."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two reservoirs with a 15 m difference in water level are connected by two pipes in series, as shown: 400 m of 300 mm diameter followed by 300 m of 200 mm diameter, both with f = 0.02. Neglecting minor losses (g = 9.81 m/s²), the discharge (in L/s, round off to one decimal place) is ______",
+   "fig": "d34p_q6.png",
+   "opts": null,
+   "ans": "90.8 (accept 90.0 to 91.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In series the same Q flows through both pipes and the friction losses add up to the level difference. Write h<sub>f</sub> = 8fLQ²/(π²gD⁵).",
+    "15 = (8 × 0.02 Q²/(π² × 9.81)) × (400/0.3⁵ + 300/0.2⁵) = 1821.3 Q²",
+    "Q = √(15/1821.3) = 0.09075 m³/s = <b>90.8 L/s</b>",
+    "<b>Exam tip:</b> The 200 mm pipe contributes 300/0.2⁵ = 9.4 × 10⁵ against 1.6 × 10⁵ for the bigger pipe: the smaller pipe controls the flow."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two pipes A and B connect the same two junctions (in parallel). Pipe B has the same length and friction factor as A but twice its diameter. The ratio of discharges Q<sub>B</sub>/Q<sub>A</sub> is about",
+   "fig": null,
+   "opts": [
+    "2",
+    "4",
+    "5.66",
+    "32"
+   ],
+   "ans": "(C) 5.66",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Parallel pipes have the same head loss: fLQ²/D⁵ is equal ⟹ Q ∝ D<sup>2.5</sup> (same f and L).",
+    "Q<sub>B</sub>/Q<sub>A</sub> = 2<sup>2.5</sup> = <b>5.66</b>",
+    "<b>Exam tip:</b> Velocity ratio is 2<sup>0.5</sup> = 1.41 (V ∝ √D at the same h<sub>f</sub>/L); discharge picks up another D²."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water (density 1000 kg/m³, kinematic viscosity 10⁻⁶ m²/s) flows at 2 m/s in a pipe with Darcy friction factor 0.02. Using δ′ = 11.6ν/u<sub>*</sub>, the thickness of the viscous sublayer (in mm, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.116",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ<sub>w</sub> = fρV²/8 and friction velocity u<sub>*</sub> = √(τ<sub>w</sub>/ρ).",
+    "τ<sub>w</sub> = 0.02 × 1000 × 2²/8 = 10 Pa; u<sub>*</sub> = √(10/1000) = 0.1 m/s",
+    "δ′ = 11.6 × 10⁻⁶/0.1 = 1.16 × 10⁻⁴ m = <b>0.116 mm</b>",
+    "<b>Exam tip:</b> A roughness of 0.05 mm here gives k/δ′ = 0.43, between 0.25 and 6: the pipe is in the transition regime."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A pipe 1500 m long and 150 mm in diameter (Darcy f = 0.02) ends in a nozzle. Neglecting losses other than pipe friction, the nozzle diameter that gives maximum power in the jet (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "33.5 (accept 33.2 to 33.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Jet power is maximum when h<sub>f</sub> = H/3, i.e. jet velocity head v²/2g = 2h<sub>f</sub>.",
+    "v²/2g = 2fLV²/(2gD) and v = V(D/d)² ⟹ (D/d)⁴ = 2fL/D ⟹ d = (D⁵/(2fL))<sup>1/4</sup>",
+    "d = (0.15⁵/(2 × 0.02 × 1500))<sup>1/4</sup> = 0.03354 m = <b>33.5 mm</b>",
+    "<b>Exam tip:</b> If the question uses the Fanning-type f in h<sub>f</sub> = 4fLV²/(2gD), the formula becomes d = (D⁵/(8fL))<sup>1/4</sup>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Water flows from a pipe into a large reservoir with velocity V. The head lost at the outlet is",
+   "fig": null,
+   "opts": [
+    "0.5V²/2g",
+    "V²/2g",
+    "zero, since the reservoir is large",
+    "2V²/2g"
+   ],
+   "ans": "(B) V²/2g",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The jet's kinetic energy is entirely dissipated in the still reservoir: a sudden enlargement with V₂ = 0.",
+    "h<sub>exit</sub> = (V − 0)²/2g = <b>V²/2g</b> (K = 1.0).",
+    "<b>Exam tip:</b> Typical K values: sharp entrance 0.5, rounded entrance 0.04, exit 1.0, 90° elbow about 0.9."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 100 mm diameter siphon, 300 m long (f = 0.02), connects two reservoirs whose water levels differ by 6 m, as shown. Its summit S is 4 m above the upper water level and 100 m (of pipe length) from the inlet. Neglecting minor losses (g = 9.81 m/s²), the gauge pressure head at S (in m of water, round off to one decimal place) is ______",
+   "fig": "d34p_q11.png",
+   "opts": null,
+   "ans": "-6.1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> All of the 6 m difference is spent in friction over 300 m; then apply energy from the upper free surface to S.",
+    "6 = (fL/D)(V²/2g) = 60 × V²/2g ⟹ V²/2g = 0.1 m (V = 1.401 m/s)",
+    "Friction from inlet to S: h<sub>f1</sub> = 0.02 × (100/0.1) × 0.1 = 2.0 m",
+    "0 = p<sub>S</sub>/ρg + V²/2g + 4 + h<sub>f1</sub> ⟹ p<sub>S</sub>/ρg = −(4 + 0.1 + 2.0) = <b>-6.1 m</b>",
+    "Absolute: 10.3 − 6.1 = 4.2 m of water, safely above the vapour-pressure limit.",
+    "<b>Exam tip:</b> The pressure is lowest at the summit, not at the highest velocity point, because elevation dominates."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Near a smooth wall in turbulent flow, Prandtl's mixing length l is taken proportional to the distance y from the wall (l = κy, κ ≈ 0.4). Combined with τ ≈ τ<sub>w</sub> near the wall, this gives a velocity profile that is",
+   "fig": null,
+   "opts": [
+    "parabolic in y",
+    "linear in y",
+    "logarithmic in y",
+    "a 1/7 power of y exactly"
+   ],
+   "ans": "(C) logarithmic in y",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ<sub>w</sub> = ρκ²y²(du/dy)² ⟹ du/dy = u<sub>*</sub>/(κy).",
+    "Integrating: u/u<sub>*</sub> = (1/κ) ln y + C, i.e. the <b>logarithmic</b> law (u/u<sub>*</sub> = 5.75 log₁₀(yu<sub>*</sub>/ν) + 5.5 for smooth pipes).",
+    "<b>Exam tip:</b> Inside the viscous sublayer the profile is linear: u/u<sub>*</sub> = yu<sub>*</sub>/ν."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A 90° elbow has a loss coefficient K = 0.9. In a 100 mm diameter pipe with Darcy f = 0.02, its equivalent length of straight pipe is",
+   "fig": null,
+   "opts": [
+    "4.5 m",
+    "0.45 m",
+    "45 m",
+    "2.25 m"
+   ],
+   "ans": "(A) 4.5 m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Equivalent length: K V²/2g = f(L<sub>e</sub>/D)V²/2g ⟹ L<sub>e</sub> = KD/f.",
+    "L<sub>e</sub> = 0.9 × 0.1/0.02 = <b>4.5 m</b>",
+    "<b>Exam tip:</b> Adding equivalent lengths of all fittings to the pipe length lets you do the whole system with one Darcy–Weisbach term."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a long pipeline operating in the fully rough turbulent regime, the discharge is increased by 20 %. The frictional head loss increases by about",
+   "fig": null,
+   "opts": [
+    "20 %",
+    "32 %",
+    "44 %",
+    "73 %"
+   ],
+   "ans": "(C) 44 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Fully rough: f is constant, so h<sub>f</sub> ∝ Q².",
+    "h<sub>f2</sub>/h<sub>f1</sub> = 1.2² = 1.44 ⟹ increase ≈ <b>44 %</b>",
+    "<b>Exam tip:</b> Pumping power ∝ Qh<sub>f</sub> ∝ Q³, so the power rises by 1.2³ − 1 = 73 %."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A pipeline 1000 m long must carry 0.06 m³/s of water with a frictional head loss of 10 m. Taking Darcy f = 0.02 and g = 9.81 m/s², the required pipe diameter (in mm, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "226 (accept 225 to 228)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In terms of discharge, h<sub>f</sub> = 8fLQ²/(π²gD⁵); solve for D.",
+    "D⁵ = 8 × 0.02 × 1000 × 0.06²/(π² × 9.81 × 10) = 5.9491e-04 m⁵",
+    "D = <b>226 mm</b> (choose the next standard size, e.g. 250 mm).",
+    "<b>Exam tip:</b> D ∝ Q<sup>0.4</sup>: doubling the flow at the same head loss needs only 2<sup>0.4</sup> = 1.32 times the diameter."
+   ]
+  }
+ ]
+}
