@@ -96,7 +96,11 @@ handles US daylight-saving changes.
    list from `<out>_chapters.txt`.
    `isAiGeneratedContent` stays false while visuals are stylised illustrations (not realistic people or
    events); set it true for any video showing realistic AI-made people or scenes.
-6. Confirm with `getScheduledPosts` (brand 7503136, next 8 days) that every video is booked once.
+6. Confirm with `getScheduledPosts` (brand 7503136, next 8 days) that every video is booked once **and at the
+   requested IST time**. Metricool's servers run on Madrid time and shift posts by ±1 hour near the European
+   clock changes (last Sunday of March and October): on 25 Oct 2026 a 05:30 IST booking was stored as 06:30,
+   and 05:29 as 04:29. If a stored time is off, update the post and re-check; any time between 18:00 and 22:00
+   US Eastern is acceptable for long videos, 06:00–08:00 US Eastern for Shorts.
 7. Posting check for the past 7 days: `getScheduledPosts` (now − 7 days → now). Any post with provider status
    ERROR, or still PENDING/PUBLISHING > 30 min after its time, and not live elsewhere: re-book it once at the
    next free 2-hour gap before Tuesday. Never post a video twice.
