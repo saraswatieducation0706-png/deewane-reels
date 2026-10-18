@@ -4,7 +4,9 @@ Channel: "Christ's Blessings" (YouTube `UCfIz3Cf_fpfaNhHe0LiQOqw`), mostly US/UK
 Owner: Naveen. Lane: comfort and prayer for everyday struggles (anxiety, sleep, grief, tiredness, decisions,
 fresh starts), plus Bible stories explained simply. Non-denominational. Scripture: **KJV only**.
 
-Every week = 7 Shorts (one per day) + 2 long videos (a guided prayer and a Bible story).
+Every week = 7 Shorts (one per day) + 3 long videos (two guided prayers and a Bible story). Goal: 4,000 public
+watch hours for ad revenue, so long videos (above all sleep prayers, which people leave playing) carry the plan;
+Shorts bring discovery and point viewers to the long videos.
 Two scheduled tasks run this runbook:
 
 | Task | When (IST) | Job |
@@ -22,7 +24,7 @@ Two scheduled tasks run this runbook:
    Metricool brand id `7503136`, timezone.
 
 "Next week" = the Monday after the run date. `python3 $CB/tooling/slots.py <monday>` prints the IST posting
-times (Shorts 07:00 US Eastern daily; long videos 20:00 US Eastern on Wednesday and Saturday). The script
+times (Shorts 07:00 US Eastern daily; long videos 20:00 US Eastern on Monday, Thursday and Saturday). The script
 handles US daylight-saving changes.
 
 ## 1. Weekly scripts task
@@ -35,17 +37,26 @@ handles US daylight-saving changes.
      on two days in a row (A dawn/sunrise lake, B illustrated hills or forest path, C gold text on dark,
      D candle, E parchment "pray with me"). Scenes: `dawn_lake`, `sunrise_lake`, `hills_sunset`, `forest_fork`,
      `dark_gold`, `candle`, `parchment`.
-   - long1 (Wednesday ET) = a guided prayer (sleep, anxiety, morning, healing of the heart, gratitude…), about
-     25–30 min including a 15–18 min music-only tail when it is a sleep prayer.
-   - long2 (Saturday ET) = a Bible story explained, 10–14 min: the story, its background, 3–4 lessons, a prayer.
+   - long1 (Monday ET) = a guided SLEEP prayer, about 28–32 min: 11–14 min of narration with pauses, then a
+     17–18 min music-only tail. Rotate themes (anxiety, grief, worry about family, letting go of the day,
+     Psalm 91, Psalm 121, Psalm 139, the Lord's Prayer slowly, promises of peace…).
+   - long2 (Thursday ET) = a second guided prayer, 25–30 min: alternate weekly between another sleep prayer and a
+     different prayer type (morning prayer, prayer for healing of the heart, prayer for your family, gratitude,
+     scripture meditation with soft music). Sleep and meditation formats end with a music-only tail too.
+   - long3 (Saturday ET) = a Bible story explained, 9–14 min: the story, its background, 3–4 lessons, a prayer.
+   - Use a different scene, music key and seed for each long video, and never reuse a script structure word
+     for word: vary openings, chapter names and the order of elements.
    - Advent override (see §5).
 4. Write each Short exactly in the Week 1 structure (see `weeks/2026-10-19/shorts.json`): hook (honest, one
    sentence), ref ("Book N, verse M."), verse (KJV, word for word), reflection (original, 50–70 words, concrete),
    prayer (one or two sentences, ends "Amen."), close (gentle; invite prayer requests or a share). 110–150 words.
    Title ≤ 70 chars, description with the reference "(KJV)", 4 hashtags, 6 tags, a cover of 2–3 words.
+   Every Short description also carries this line before the hashtags: "🌙 Can't sleep? Our full guided sleep
+   prayers are on the channel: open Christ's Blessings and look under Videos." On 2 of the 7 days, the Short's
+   theme matches that week's sleep prayer so the viewer has a natural reason to watch it.
 5. **Verify every verse** against a KJV source with WebFetch (e.g. kingjamesbibleonline.org or biblegateway
    KJV). Fix any wording difference. Never paraphrase inside the "verse" segment.
-6. Long scripts: write `weeks/<monday>/long1_script.txt` and `long2_script.txt` in the format read by
+6. Long scripts: write `weeks/<monday>/long1_script.txt`, `long2_script.txt` and `long3_script.txt` in the format read by
    `tooling/script_to_spec.py` (see Week 1 files): `## Chapter | scene`, `[pause]` (6 s), `[long pause]`
    (10 s), a paragraph ending `| scene` switches scenery. Scenes for long videos: `night_lake` (sleep),
    `galilee_dusk`, `storm` (rain added), `calm_dawn`, `sunrise_lake`, `dawn_lake`, `hills_sunset`, `candle`,
@@ -56,7 +67,7 @@ handles US daylight-saving changes.
 7. Commit the week folder (`git -c user.name="Christ's Blessings Bot" -c user.email=bot@digcareerthrust.com`),
    rebase on origin/main, push.
 8. Make a Claude Doc "Christ's Blessings — Week of <Mon d Mon>" (docs tools) with: the posting schedule, then
-   every Short (title, script, description) and both long scripts. At the top: "Edit anything directly. To
+   every Short (title, script, description) and all three long scripts. At the top: "Edit anything directly. To
    stop a video, write HOLD in its heading. Production runs Saturday morning; no reply needed."
 9. Send Naveen a push notification: "Next week's Christ's Blessings scripts are ready for review: <doc link>.
    Production runs Saturday morning." (PushNotification via ToolSearch.)
@@ -67,7 +78,7 @@ handles US daylight-saving changes.
    Any video whose heading contains HOLD is skipped (list it in the report). Re-verify edited verses.
 3. Render:
    - Shorts: `cd $CB/tooling && python3 render_week_shorts.py ../weeks/<monday>` (≈1 min each).
-   - Long: `python3 script_to_spec.py ../weeks/<monday>/long1_script.txt <abs out mp4> '<json>'` with
+   - Long (long1, long2, long3 one after another): `python3 script_to_spec.py ../weeks/<monday>/longN_script.txt <abs out mp4> '<json>'` with
      `{"intro": "<title>", "subtitles": "dim", "seed": <n>, "music_key": "D", "music_db": -16, "lufs": -20}` for
      sleep prayers, `{"subtitles": "normal", "music_db": -23, "lufs": -16}` for stories; then
      `python3 render_long.py <spec>` (≈1.3× real time — run in the background, long timeouts).
@@ -105,7 +116,7 @@ handles US daylight-saving changes.
    ERROR, or still PENDING/PUBLISHING > 30 min after its time, and not live elsewhere: re-book it once at the
    next free 2-hour gap before Tuesday. Never post a video twice.
 8. Append next week's entries to `topics_log.json`, commit, push.
-9. Push notification to Naveen: "Christ's Blessings: next week booked — 7 Shorts + 2 long videos (list any HOLD or
+9. Push notification to Naveen: "Christ's Blessings: next week booked — 7 Shorts + 3 long videos (list any HOLD or
    failures)." If everything failed, say what failed in one line.
 
 ## 3. Content rules (YouTube policies)
@@ -124,7 +135,7 @@ blocked words: whatsapp, telegram, crypto, bitcoin, investment, forex, contact m
 verification, channel verification for custom thumbnails, monetization status under Earn.
 
 ## 5. Advent "24 Days to Christmas" (2026)
-- Week of Mon 23 Nov: normal Shorts Mon–Sat. That week's long2 (Sat 28 Nov 20:00 ET = Sunday 29 Nov morning
+- Week of Mon 23 Nov: normal Shorts Mon–Sat. That week's long3 (Sat 28 Nov 20:00 ET = Sunday 29 Nov morning
   IST) is the Hope Sunday kickoff: "Advent Begins: Waiting with Hope" (Isaiah 40:31). Sunday 29 Nov Short:
   "Advent starts today" teaser.
 - 1–24 Dec: the daily Short is the Advent Short for that day (opener "Day N of 24 Days to Christmas"; scene
@@ -134,6 +145,6 @@ verification, channel verification for custom thumbnails, monetization status un
   13 Luke 2:10 (Joy Sunday) · 14 Luke 2:4-5 · 15 Luke 2:7 · 16 Luke 2:8-9 · 17 Luke 2:13-14 · 18 Luke 2:19 ·
   19 Luke 2:29-32 · 20 John 3:16 (Love Sunday) · 21 Luke 2:36-38 · 22 John 1:14 · 23 John 1:5 · 24 Luke 2:11.
 - Long videos in December: Peace Sunday (Isaiah 9:6), Joy Sunday (Luke 2:10), Love Sunday (John 3:16) — each
-  booked Saturday 20:00 ET; the midweek long video stays a guided prayer (Christmas-themed). Christmas Day long
+  booked as long3 (Saturday 20:00 ET); long1 and long2 stay guided prayers (Christmas-themed sleep prayers work well). Christmas Day long
   video: "The Christmas Story, Read Slowly" (Luke 2:1-20) with a family prayer, booked 24 Dec 20:00 ET.
 - Scripts for Advent weeks are still written the Wednesday before, as usual.
