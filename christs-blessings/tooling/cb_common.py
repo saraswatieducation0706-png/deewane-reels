@@ -159,7 +159,7 @@ def music_loop(path, seed=1, key="D", chord_s=12.0, sr=44100, brightness=1.0):
     return path
 
 
-def mix(voice_wav, music_wav, out_m4a, duration, music_db=-21, fade_out=2.5, lufs=-16):
+def mix(voice_wav, music_wav, out_m4a, duration, music_db=-21, fade_out=2.5, lufs=-16, abr="160k"):
     """Loop music under voice with ducking, fade, loudness-normalise."""
     fc = (f"[1:a]volume={music_db}dB,atrim=0:{duration:.3f},afade=t=in:d=2,"
           f"afade=t=out:st={max(0, duration - fade_out):.3f}:d={fade_out}[m];"
@@ -168,7 +168,7 @@ def mix(voice_wav, music_wav, out_m4a, duration, music_db=-21, fade_out=2.5, luf
           f"[v][md]amix=inputs=2:duration=longest:normalize=0,"
           f"atrim=0:{duration:.3f},loudnorm=I={lufs}:TP=-1.5:LRA=11[a]")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", voice_wav, "-stream_loop", "-1", "-i", music_wav,
-                    "-filter_complex", fc, "-map", "[a]", "-ar", "44100", "-c:a", "aac", "-b:a", "160k",
+                    "-filter_complex", fc, "-map", "[a]", "-ar", "44100", "-c:a", "aac", "-b:a", abr,
                     out_m4a], check=True)
 
 

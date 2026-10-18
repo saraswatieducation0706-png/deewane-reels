@@ -66,7 +66,7 @@ def main(spec_path):
     mus = cb.music_loop(os.path.join(cb.CACHE, f"loop_{spec['music_key']}_{spec['seed']}_long.wav"),
                         seed=spec["seed"], key=spec["music_key"], chord_s=14.0, brightness=0.8)
     audio = os.path.join(work, "mix.m4a")
-    cb.mix(vw, mus, audio, total, music_db=spec.get("music_db", -20), fade_out=8, lufs=spec.get("lufs", -18))
+    cb.mix(vw, mus, audio, total, music_db=spec.get("music_db", -20), fade_out=8, lufs=spec.get("lufs", -18), abr="112k")
 
     # chapters file for the description
     out = spec["out"]; os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -95,7 +95,7 @@ def main(spec_path):
               for ch in chap if ch["title"]}
     cards = {ch["card"]: cb.Faded(cb.text_block(W, ch["card"], "serif_italic", 72, (230, 226, 240), W - 360))
              for ch in chap if ch["card"]}
-    stars = cb.Particles(W, H, 28, spec["seed"], color=(255, 240, 210), rise=True, size=(3, 9))
+    stars = cb.Particles(W, H, 16, spec["seed"], color=(255, 240, 210), rise=False, size=(3, 7))
     rain = cb.Rain(W, H)
 
     def fade(t, a, b, f=0.6):
@@ -105,12 +105,11 @@ def main(spec_path):
 
     def frame_for(ch, tt):
         b = bases[(ch["scene"], ch["dim"])]
-        k = (tt - ch["t0"]) / max(1, ch["t1"] - ch["t0"])
-        ox, oy = int((BW - W) * (0.15 + 0.7 * k)), int((BH - H) * 0.5)
+        ox, oy = int((BW - W) * 0.5), int((BH - H) * 0.5)
         return b.crop((ox, oy, ox + W, oy + H))
 
-    p = subprocess.Popen(cb.encode_cmd(out, W, H, fps, audio, crf=26, preset="veryfast", tune="stillimage",
-                                       maxrate="1800k"), stdin=subprocess.PIPE)
+    p = subprocess.Popen(cb.encode_cmd(out, W, H, fps, audio, crf=27, preset="veryfast", tune="stillimage",
+                                       maxrate="1500k"), stdin=subprocess.PIPE)
     n = int(total * fps)
     ci = 0
     for fi in range(n):
