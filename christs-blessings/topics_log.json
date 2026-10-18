@@ -1,0 +1,11 @@
+[
+ {"week": "2026-10-19", "id": "s1", "theme": "anxiety", "ref": "Philippians 4:6-7", "template": "A"},
+ {"week": "2026-10-19", "id": "s2", "theme": "exhaustion/rest", "ref": "Matthew 11:28", "template": "B"},
+ {"week": "2026-10-19", "id": "s3", "theme": "fear", "ref": "Isaiah 41:10", "template": "C"},
+ {"week": "2026-10-19", "id": "s4", "theme": "fresh start/mercy", "ref": "Lamentations 3:22-23", "template": "A"},
+ {"week": "2026-10-19", "id": "s5", "theme": "grief/broken heart", "ref": "Psalm 34:18", "template": "D"},
+ {"week": "2026-10-19", "id": "s6", "theme": "guidance/decisions", "ref": "Proverbs 3:5-6", "template": "B"},
+ {"week": "2026-10-19", "id": "s7", "theme": "prayer for the week/courage", "ref": "Joshua 1:9", "template": "E"},
+ {"week": "2026-10-19", "id": "long1", "theme": "sleep prayer", "ref": "Psalm 23; Psalm 4:8; 1 Peter 5:7; John 14:27", "template": "sleep"},
+ {"week": "2026-10-19", "id": "long2", "theme": "Bible story: Jesus calms the storm", "ref": "Mark 4:35-41", "template": "story"}
+]
