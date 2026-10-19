@@ -1,0 +1,5651 @@
+{
+ "topics": [
+  {
+   "id": "T001",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA1",
+   "name": "Grammar, articles, tenses, subject-verb agreement",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T002",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA1",
+   "name": "Vocabulary: words, idioms, phrases in context",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T003",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA1",
+   "name": "Reading comprehension & inference",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T004",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA1",
+   "name": "Sentence ordering / completion, critical reasoning",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T005",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA1",
+   "name": "Narrative sequencing",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    2,
+    2,
+    2,
+    7
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T006",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Percentages, ratio & proportion, averages",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T007",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Time-speed-distance, time & work",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T008",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Data interpretation (tables, bar & pie charts)",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T009",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Number system, powers, logarithms, series",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    7,
+    10,
+    12,
+    14
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T010",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Permutations, combinations & basic probability",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    6,
+    7,
+    8,
+    12,
+    12,
+    12
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T011",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA2",
+   "name": "Mensuration & elementary statistics",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    7,
+    7,
+    12,
+    12,
+    12
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T012",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA3",
+   "name": "Logical deduction & syllogisms",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T013",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA3",
+   "name": "Arrangement, ordering & grouping puzzles",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T014",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA3",
+   "name": "Spatial: folding, cutting, rotation, mirror images",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "revisions": 13
+  },
+  {
+   "id": "T015",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA3",
+   "name": "Patterns in 2D/3D figures, counting figures",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    7,
+    7,
+    12,
+    12,
+    12
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T016",
+   "subject": "GA",
+   "subject_name": "General Aptitude",
+   "tt": "GA3",
+   "name": "Direction sense, blood relations, coding",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    2,
+    2,
+    2
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T017",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM1",
+   "name": "Matrix algebra, rank, determinants",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T018",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM1",
+   "name": "Systems of linear equations, consistency",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T019",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM1",
+   "name": "Eigenvalues & eigenvectors, Cayley-Hamilton",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T020",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM1",
+   "name": "Special matrices (symmetric, orthogonal), diagonalisation",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T021",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Limits, continuity, mean value theorems",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T022",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Maxima-minima (single & multivariable), Taylor series",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T023",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Definite & improper integrals, area/volume",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T024",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Partial derivatives, double & triple integrals",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T025",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Gradient, divergence, curl; line & surface integrals",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T026",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM2",
+   "name": "Gauss, Stokes & Green theorems",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T027",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "First-order ODEs (separable, exact, linear)",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T028",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "Higher-order linear ODEs with constant coefficients",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T029",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "Cauchy-Euler equation, initial & boundary value problems",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T030",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "Laplace transforms",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    1,
+    5,
+    9,
+    13
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T031",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "PDEs: heat, wave, Laplace equations, separation of variables",
+   "imp": "B",
+   "tt_q": 4,
+   "st_q": 1,
+   "mocks": [
+    3,
+    7,
+    11,
+    11
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T032",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "Analytic functions, Cauchy-Riemann, Cauchy integral, residues",
+   "imp": "B",
+   "tt_q": 4,
+   "st_q": 1,
+   "mocks": [
+    3,
+    7,
+    11,
+    11
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T033",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM3",
+   "name": "Taylor & Laurent series (complex)",
+   "imp": "C",
+   "tt_q": 3,
+   "st_q": 1,
+   "mocks": [
+    3,
+    3
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T034",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Probability, conditional probability, Bayes theorem",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T035",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Random variables; binomial, Poisson, normal, exponential distributions",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T036",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Mean, median, mode, standard deviation, correlation & regression",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    3,
+    7,
+    11,
+    11
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T037",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Numerical solution of equations (Newton-Raphson, bisection)",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T038",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Numerical integration (trapezoidal, Simpson)",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T039",
+   "subject": "EM",
+   "subject_name": "Engineering Mathematics",
+   "tt": "EM4",
+   "name": "Numerical solution of ODEs (Euler, RK)",
+   "imp": "B",
+   "tt_q": 4,
+   "st_q": 1,
+   "mocks": [
+    3,
+    7,
+    7,
+    7
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T040",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC1",
+   "name": "Free-body diagrams & equilibrium",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T041",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC1",
+   "name": "Plane trusses (joints & sections), zero-force members",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T042",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC1",
+   "name": "Friction: dry friction, wedges, belt/rope friction",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T043",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC1",
+   "name": "Virtual work",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    5,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T044",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC1",
+   "name": "Centroid & moment of inertia",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    9,
+    14
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T045",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC2",
+   "name": "Kinematics of particles & rigid bodies in plane motion",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    7,
+    10,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T046",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC2",
+   "name": "Newton's laws, D'Alembert, dynamics of rigid bodies",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    2,
+    4,
+    7,
+    10,
+    14
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T047",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC2",
+   "name": "Work-energy principle",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    7,
+    10,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T048",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC2",
+   "name": "Impulse-momentum (linear & angular)",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    0,
+    5,
+    14
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T049",
+   "subject": "MEC",
+   "subject_name": "Engineering Mechanics",
+   "tt": "MEC2",
+   "name": "Impact & coefficient of restitution",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    5,
+    9,
+    9
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T050",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Stress-strain, elastic constants, Poisson's ratio",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T051",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Mohr's circle for plane stress & plane strain",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T052",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Thermal stresses & compound bars",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T053",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Theories of failure",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T054",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Strain gauges & rosettes",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    5
+   ],
+   "revisions": 2
+  },
+  {
+   "id": "T055",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM1",
+   "name": "Testing: tensile, hardness, impact",
+   "imp": "C",
+   "tt_q": 3,
+   "st_q": 1,
+   "mocks": [
+    9
+   ],
+   "revisions": 2
+  },
+  {
+   "id": "T056",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM2",
+   "name": "Shear force & bending moment diagrams",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T057",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM2",
+   "name": "Bending stresses in beams",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T058",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM2",
+   "name": "Shear stress distribution in beams",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T059",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM2",
+   "name": "Composite/flitched beams",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 1,
+   "mocks": [
+    0
+   ],
+   "revisions": 2
+  },
+  {
+   "id": "T060",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM3",
+   "name": "Deflection of beams (double integration, Macaulay)",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T061",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM3",
+   "name": "Moment-area & superposition",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T062",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM3",
+   "name": "Strain energy & Castigliano's theorem",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T063",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM3",
+   "name": "Euler buckling of columns, end conditions",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T064",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM4",
+   "name": "Torsion of circular shafts (solid, hollow, stepped)",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T065",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM4",
+   "name": "Thin cylinders & spheres",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    2,
+    4,
+    7,
+    10,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T066",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM4",
+   "name": "Combined bending, torsion & axial loading",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T067",
+   "subject": "SOM",
+   "subject_name": "Strength of Materials",
+   "tt": "SOM4",
+   "name": "Close-coiled helical springs (as SOM)",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    14
+   ],
+   "revisions": 2
+  },
+  {
+   "id": "T068",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM1",
+   "name": "Mobility (Grubler), kinematic chains & inversions",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T069",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM1",
+   "name": "Velocity analysis, instantaneous centres",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T070",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM1",
+   "name": "Acceleration analysis, Coriolis component",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    5,
+    9,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T071",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM1",
+   "name": "Slider-crank kinematics & dynamics",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T072",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Gear terminology, interference, contact ratio",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    5,
+    9,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T073",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Simple, compound & epicyclic gear trains",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T074",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Flywheel: turning moment, fluctuation of energy & speed",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T075",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Governors",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    0,
+    7
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T076",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Balancing of rotating & reciprocating masses",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T077",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM2",
+   "name": "Gyroscopic couple & effects",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T078",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM3",
+   "name": "Free undamped SDOF, natural frequency (energy/equilibrium)",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T079",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM3",
+   "name": "Damped free vibration, logarithmic decrement",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T080",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM3",
+   "name": "Forced vibration, resonance, magnification factor",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T081",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM3",
+   "name": "Vibration isolation & transmissibility",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T082",
+   "subject": "TOM",
+   "subject_name": "Theory of Machines & Vibrations",
+   "tt": "TOM3",
+   "name": "Critical speed of shafts (whirling)",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    0,
+    7,
+    7,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T083",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD1",
+   "name": "Design for static loading, failure theories in design",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T084",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD1",
+   "name": "Fatigue: S-N curve, endurance limit, modifying factors",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T085",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD1",
+   "name": "Goodman, Soderberg, Gerber criteria",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T086",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD1",
+   "name": "Stress concentration & notch sensitivity",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T087",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD1",
+   "name": "Shaft design under combined loading",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T088",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Bolted, riveted & welded joints (incl. eccentric)",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T089",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Spur & helical gear design (Lewis, wear)",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 3,
+   "mocks": [
+    0,
+    6,
+    8,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T090",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Rolling-contact bearings: life & load",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    10,
+    12,
+    14
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T091",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Sliding (journal) bearings, Petroff",
+   "imp": "C",
+   "tt_q": 3,
+   "st_q": 2,
+   "mocks": [
+    4,
+    10
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T092",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Brakes & clutches (uniform pressure/wear)",
+   "imp": "A",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    0,
+    2,
+    4,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T093",
+   "subject": "MD",
+   "subject_name": "Machine Design",
+   "tt": "MD2",
+   "name": "Helical springs design",
+   "imp": "B",
+   "tt_q": 5,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    10,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T094",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM1",
+   "name": "Fluid properties: viscosity, surface tension, capillarity",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    5,
+    9,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T095",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM1",
+   "name": "Pressure, manometry",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T096",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM1",
+   "name": "Hydrostatic forces on plane & curved surfaces",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T097",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM1",
+   "name": "Buoyancy & stability (metacentre)",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    5,
+    9,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T098",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM2",
+   "name": "Fluid kinematics: stream function, potential, vorticity",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T099",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM2",
+   "name": "Continuity, Bernoulli equation & applications",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T100",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM2",
+   "name": "Control-volume momentum (forces on bends, jets)",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T101",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM2",
+   "name": "Flow measurement: venturi, orifice, pitot",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T102",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM3",
+   "name": "Laminar flow: Hagen-Poiseuille, Couette",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T103",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM3",
+   "name": "Turbulent pipe flow, friction factor, Moody",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T104",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM3",
+   "name": "Major & minor losses, pipes in series/parallel",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T105",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM3",
+   "name": "Navier-Stokes exact solutions",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T106",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM4",
+   "name": "Boundary layer: thicknesses, momentum integral",
+   "imp": "A",
+   "tt_q": 12,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T107",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM4",
+   "name": "Drag & lift basics",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    7,
+    7
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T108",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM4",
+   "name": "Dimensional analysis, Buckingham pi",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    0,
+    7,
+    14
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T109",
+   "subject": "FM",
+   "subject_name": "Fluid Mechanics",
+   "tt": "FM4",
+   "name": "Similitude & model studies",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    0,
+    7,
+    14
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T110",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT1",
+   "name": "1-D steady conduction, thermal resistance networks",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 9
+  },
+  {
+   "id": "T111",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT1",
+   "name": "Critical radius of insulation",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T112",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT1",
+   "name": "Heat generation in solids",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    0,
+    6,
+    8,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T113",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT1",
+   "name": "Fins: efficiency & effectiveness",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T114",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT1",
+   "name": "Unsteady conduction: lumped capacitance, Biot number",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T115",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT2",
+   "name": "Forced convection, dimensionless numbers, correlations",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 4,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T116",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT2",
+   "name": "Free convection",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    4,
+    10
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T117",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT2",
+   "name": "Radiation: black/grey bodies, view factors, radiation networks",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T118",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT2",
+   "name": "Heat exchangers: LMTD method",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    2,
+    4,
+    6,
+    10,
+    12,
+    14
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T119",
+   "subject": "HT",
+   "subject_name": "Heat Transfer",
+   "tt": "HT2",
+   "name": "Heat exchangers: effectiveness-NTU method",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    2,
+    4,
+    8,
+    10,
+    12,
+    14
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T120",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD1",
+   "name": "Systems, work & heat, zeroth law",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 3,
+   "mocks": [
+    2,
+    5,
+    9,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T121",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD1",
+   "name": "First law for closed systems",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T122",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD1",
+   "name": "First law for open systems (SFEE)",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T123",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD1",
+   "name": "Pure substances, steam tables, Mollier chart",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T124",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD2",
+   "name": "Second law, heat engines, refrigerators, Carnot",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T125",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD2",
+   "name": "Entropy, entropy generation",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T126",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD2",
+   "name": "Availability (exergy) & irreversibility",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T127",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD2",
+   "name": "Clausius inequality",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    2,
+    12
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T128",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD3",
+   "name": "Ideal & real gases, compressibility",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T129",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD3",
+   "name": "Maxwell relations, Clapeyron, Tds equations",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12,
+    14
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T130",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD3",
+   "name": "Ideal gas mixtures",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    0,
+    7
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T131",
+   "subject": "TD",
+   "subject_name": "Thermodynamics",
+   "tt": "TD3",
+   "name": "Processes of ideal gases (polytropic, isentropic)",
+   "imp": "A",
+   "tt_q": 12,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T132",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP1",
+   "name": "Rankine cycle, reheat & regeneration",
+   "imp": "A",
+   "tt_q": 12,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T133",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP1",
+   "name": "Brayton cycle, regeneration, intercooling",
+   "imp": "A",
+   "tt_q": 12,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T134",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP1",
+   "name": "Reciprocating air compressors, volumetric efficiency",
+   "imp": "B",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    2,
+    7,
+    12,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T135",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP2",
+   "name": "Otto, Diesel & dual cycles",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T136",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP2",
+   "name": "Engine performance parameters",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T137",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP2",
+   "name": "Vapour-compression refrigeration (incl. modifications)",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    1,
+    3,
+    6,
+    8,
+    11,
+    13
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T138",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP2",
+   "name": "Gas & vapour-absorption refrigeration",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T139",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP2",
+   "name": "Psychrometry & air-conditioning processes",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T140",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP3",
+   "name": "Velocity triangles, Euler turbine equation",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T141",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP3",
+   "name": "Impulse & reaction steam turbines",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 2,
+   "mocks": [
+    2,
+    7,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T142",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP3",
+   "name": "Pelton, Francis & Kaplan turbines",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T143",
+   "subject": "APP",
+   "subject_name": "Thermal Applications",
+   "tt": "APP3",
+   "name": "Centrifugal pumps, specific speed, NPSH",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 3,
+   "mocks": [
+    0,
+    4,
+    5,
+    9,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T144",
+   "subject": "MAT",
+   "subject_name": "Engineering Materials",
+   "tt": "MAT1",
+   "name": "Crystal structures, defects",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 6,
+   "mocks": [
+    2,
+    11
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T145",
+   "subject": "MAT",
+   "subject_name": "Engineering Materials",
+   "tt": "MAT1",
+   "name": "Phase diagrams, iron-carbon diagram, lever rule",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 9,
+   "mocks": [
+    1,
+    4,
+    7,
+    10,
+    13
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T146",
+   "subject": "MAT",
+   "subject_name": "Engineering Materials",
+   "tt": "MAT1",
+   "name": "Heat treatment (annealing, normalising, hardening, tempering)",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 9,
+   "mocks": [
+    0,
+    3,
+    6,
+    9,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T147",
+   "subject": "MAT",
+   "subject_name": "Engineering Materials",
+   "tt": "MAT1",
+   "name": "Stress-strain behaviour of engineering materials",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 6,
+   "mocks": [
+    5,
+    8
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T148",
+   "subject": "MAT",
+   "subject_name": "Engineering Materials",
+   "tt": "MAT1",
+   "name": "Strengthening mechanisms",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 3,
+   "mocks": [
+    14
+   ],
+   "revisions": 2
+  },
+  {
+   "id": "T149",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG1",
+   "name": "Patterns & allowances, moulding sands",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 1,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T150",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG1",
+   "name": "Gating design: filling time, Bernoulli",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T151",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG1",
+   "name": "Riser design: Chvorinov's rule, modulus",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T152",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG1",
+   "name": "Solidification & casting defects",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    0,
+    14
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T153",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG2",
+   "name": "Plastic deformation, hot & cold working",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T154",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG2",
+   "name": "Rolling: draft, bite angle, roll force",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T155",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG2",
+   "name": "Forging, extrusion & wire drawing loads",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T156",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG2",
+   "name": "Sheet metal: blanking, punching, deep drawing",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T157",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG3",
+   "name": "Arc welding: power, heat input, arc characteristics",
+   "imp": "A",
+   "tt_q": 13,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T158",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG3",
+   "name": "Resistance, gas & solid-state welding",
+   "imp": "B",
+   "tt_q": 9,
+   "st_q": 1,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T159",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG3",
+   "name": "Brazing, soldering, welding defects & HAZ",
+   "imp": "C",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    0,
+    14
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T160",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG3",
+   "name": "Powder metallurgy fundamentals",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    0,
+    14
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T161",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG4",
+   "name": "Merchant's circle, cutting forces, shear angle",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T162",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG4",
+   "name": "Tool life (Taylor), economics of machining",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+   ],
+   "revisions": 8
+  },
+  {
+   "id": "T163",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG4",
+   "name": "Machining time: turning, drilling, milling, grinding",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 2,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T164",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG4",
+   "name": "Tool geometry & materials, chip formation",
+   "imp": "B",
+   "tt_q": 6,
+   "st_q": 1,
+   "mocks": [
+    2,
+    6,
+    8,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T165",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG5",
+   "name": "ECM, EDM, USM, AJM, LBM & EBM",
+   "imp": "A",
+   "tt_q": 12,
+   "st_q": 1,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T166",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG5",
+   "name": "Jigs & fixtures, 3-2-1 principle",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 1,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T167",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG5",
+   "name": "CNC part programming, CAD/CAM, CIM basics",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 1,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T168",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG5",
+   "name": "Additive manufacturing",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 1,
+   "mocks": [
+    0,
+    14
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T169",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG6",
+   "name": "Limits, fits & tolerances, GO/NO-GO gauges",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 1,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T170",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG6",
+   "name": "Linear & angular measurement, slip gauges, sine bar",
+   "imp": "A",
+   "tt_q": 9,
+   "st_q": 1,
+   "mocks": [
+    0,
+    4,
+    6,
+    8,
+    10,
+    14
+   ],
+   "revisions": 7
+  },
+  {
+   "id": "T171",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG6",
+   "name": "Comparators, interferometry",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 1,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T172",
+   "subject": "MFG",
+   "subject_name": "Manufacturing & Metrology",
+   "tt": "MFG6",
+   "name": "Surface roughness & form measurement",
+   "imp": "B",
+   "tt_q": 7,
+   "st_q": 1,
+   "mocks": [
+    2,
+    4,
+    10,
+    12
+   ],
+   "revisions": 5
+  },
+  {
+   "id": "T173",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE1",
+   "name": "Forecasting models (moving average, exponential smoothing)",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 4,
+   "mocks": [
+    1,
+    4,
+    7,
+    10,
+    13
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T174",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE1",
+   "name": "Aggregate planning, MRP",
+   "imp": "B",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    2,
+    6,
+    12
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T175",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE1",
+   "name": "Scheduling: Johnson's rule, priority rules",
+   "imp": "A",
+   "tt_q": 10,
+   "st_q": 4,
+   "mocks": [
+    1,
+    4,
+    7,
+    10,
+    13
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T176",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE1",
+   "name": "Lean manufacturing, line balancing",
+   "imp": "C",
+   "tt_q": 5,
+   "st_q": 2,
+   "mocks": [
+    5,
+    9
+   ],
+   "revisions": 3
+  },
+  {
+   "id": "T177",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE2",
+   "name": "EOQ & deterministic models (incl. production, discounts)",
+   "imp": "A",
+   "tt_q": 19,
+   "st_q": 3,
+   "mocks": [
+    1,
+    4,
+    7,
+    10,
+    13
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T178",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE2",
+   "name": "Safety stock, reorder point, inventory systems",
+   "imp": "B",
+   "tt_q": 14,
+   "st_q": 3,
+   "mocks": [
+    3,
+    8,
+    11
+   ],
+   "revisions": 4
+  },
+  {
+   "id": "T179",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE3",
+   "name": "Linear programming: graphical & simplex",
+   "imp": "A",
+   "tt_q": 8,
+   "st_q": 3,
+   "mocks": [
+    0,
+    3,
+    6,
+    9,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T180",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE3",
+   "name": "Transportation & assignment problems",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    2,
+    5,
+    8,
+    11,
+    14
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T181",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE3",
+   "name": "PERT & CPM",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    0,
+    3,
+    6,
+    9,
+    12
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T182",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE3",
+   "name": "Simple queuing models (M/M/1)",
+   "imp": "A",
+   "tt_q": 7,
+   "st_q": 3,
+   "mocks": [
+    2,
+    5,
+    8,
+    11,
+    14
+   ],
+   "revisions": 6
+  },
+  {
+   "id": "T183",
+   "subject": "IE",
+   "subject_name": "Industrial Engineering",
+   "tt": "IE3",
+   "name": "Network flow models",
+   "imp": "C",
+   "tt_q": 4,
+   "st_q": 2,
+   "mocks": [
+    0,
+    14
+   ],
+   "revisions": 3
+  }
+ ],
+ "tts": [
+  {
+   "code": "GA1",
+   "subject": "GA",
+   "title": "Verbal Aptitude",
+   "no": 1,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "GA2",
+   "subject": "GA",
+   "title": "Quantitative Aptitude",
+   "no": 2,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "GA3",
+   "subject": "GA",
+   "title": "Analytical & Spatial Aptitude",
+   "no": 3,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "EM1",
+   "subject": "EM",
+   "title": "Linear Algebra",
+   "no": 4,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "EM2",
+   "subject": "EM",
+   "title": "Calculus & Vector Calculus",
+   "no": 5,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "EM3",
+   "subject": "EM",
+   "title": "Differential Equations & Complex Variables",
+   "no": 6,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "EM4",
+   "subject": "EM",
+   "title": "Probability, Statistics & Numerical Methods",
+   "no": 7,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "MEC1",
+   "subject": "MEC",
+   "title": "Statics",
+   "no": 8,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "MEC2",
+   "subject": "MEC",
+   "title": "Dynamics",
+   "no": 9,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "SOM1",
+   "subject": "SOM",
+   "title": "Stress, Strain & Failure Theories",
+   "no": 10,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "SOM2",
+   "subject": "SOM",
+   "title": "SFD, BMD & Stresses in Beams",
+   "no": 11,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "SOM3",
+   "subject": "SOM",
+   "title": "Deflection, Energy Methods & Columns",
+   "no": 12,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "SOM4",
+   "subject": "SOM",
+   "title": "Torsion, Pressure Vessels & Combined Loading",
+   "no": 13,
+   "date": "2026-11-09"
+  },
+  {
+   "code": "TOM1",
+   "subject": "TOM",
+   "title": "Kinematics of Mechanisms",
+   "no": 14,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "TOM2",
+   "subject": "TOM",
+   "title": "Gears, Flywheels, Governors, Balancing, Gyroscope",
+   "no": 15,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "TOM3",
+   "subject": "TOM",
+   "title": "Vibrations",
+   "no": 16,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "MD1",
+   "subject": "MD",
+   "title": "Static & Fatigue Design, Shafts",
+   "no": 17,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "MD2",
+   "subject": "MD",
+   "title": "Joints, Gears, Bearings, Brakes, Clutches & Springs",
+   "no": 18,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "FM1",
+   "subject": "FM",
+   "title": "Fluid Properties & Fluid Statics",
+   "no": 20,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "FM2",
+   "subject": "FM",
+   "title": "Kinematics, Bernoulli & Control-Volume Analysis",
+   "no": 21,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "FM3",
+   "subject": "FM",
+   "title": "Viscous & Pipe Flow",
+   "no": 22,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "FM4",
+   "subject": "FM",
+   "title": "Boundary Layer & Dimensional Analysis",
+   "no": 23,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "HT1",
+   "subject": "HT",
+   "title": "Conduction & Fins",
+   "no": 24,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "HT2",
+   "subject": "HT",
+   "title": "Convection, Radiation & Heat Exchangers",
+   "no": 25,
+   "date": "2026-11-23"
+  },
+  {
+   "code": "TD1",
+   "subject": "TD",
+   "title": "First Law & Properties",
+   "no": 26,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "TD2",
+   "subject": "TD",
+   "title": "Second Law, Entropy & Exergy",
+   "no": 27,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "TD3",
+   "subject": "TD",
+   "title": "Thermodynamic Relations & Gas Mixtures",
+   "no": 28,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "APP1",
+   "subject": "APP",
+   "title": "Power Cycles & Compressors",
+   "no": 29,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "APP2",
+   "subject": "APP",
+   "title": "IC Engines, Refrigeration & Air-conditioning",
+   "no": 30,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "APP3",
+   "subject": "APP",
+   "title": "Turbomachinery",
+   "no": 31,
+   "date": "2026-11-30"
+  },
+  {
+   "code": "MAT1",
+   "subject": "MAT",
+   "title": "Engineering Materials",
+   "no": 19,
+   "date": "2026-11-16"
+  },
+  {
+   "code": "MFG1",
+   "subject": "MFG",
+   "title": "Casting",
+   "no": 32,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "MFG2",
+   "subject": "MFG",
+   "title": "Metal Forming",
+   "no": 33,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "MFG3",
+   "subject": "MFG",
+   "title": "Joining & Powder Metallurgy",
+   "no": 34,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "MFG4",
+   "subject": "MFG",
+   "title": "Machining Mechanics & Tool Life",
+   "no": 35,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "MFG5",
+   "subject": "MFG",
+   "title": "Non-traditional Machining, Tooling & CIM",
+   "no": 36,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "MFG6",
+   "subject": "MFG",
+   "title": "Metrology & Inspection",
+   "no": 37,
+   "date": "2026-12-07"
+  },
+  {
+   "code": "IE1",
+   "subject": "IE",
+   "title": "Production Planning & Control",
+   "no": 38,
+   "date": "2026-12-14"
+  },
+  {
+   "code": "IE2",
+   "subject": "IE",
+   "title": "Inventory Control",
+   "no": 39,
+   "date": "2026-12-14"
+  },
+  {
+   "code": "IE3",
+   "subject": "IE",
+   "title": "Operations Research",
+   "no": 40,
+   "date": "2026-12-14"
+  }
+ ],
+ "mock_content": [
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T009"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T045",
+    "T047",
+    "T048"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T059"
+   ],
+   "TOM": [
+    "T078",
+    "T079",
+    "T080",
+    "T082",
+    "T075"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T089",
+    "T093"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T108",
+    "T109"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T112"
+   ],
+   "TD": [
+    "T125",
+    "T126",
+    "T131",
+    "T130"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T146"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T152",
+    "T159",
+    "T160",
+    "T168"
+   ],
+   "IE": [
+    "T179",
+    "T181",
+    "T183"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T020",
+    "T021",
+    "T024",
+    "T026",
+    "T029",
+    "T030"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T068",
+    "T069",
+    "T071",
+    "T073",
+    "T074"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T123",
+    "T124"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T145"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T173",
+    "T175",
+    "T177"
+   ]
+  },
+  {
+   "GA": [
+    "T009",
+    "T010",
+    "T011",
+    "T015",
+    "T005",
+    "T005",
+    "T005",
+    "T016",
+    "T016",
+    "T016"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T046",
+    "T043",
+    "T044"
+   ],
+   "SOM": [
+    "T065",
+    "T053",
+    "T061",
+    "T062",
+    "T066"
+   ],
+   "TOM": [
+    "T070",
+    "T072",
+    "T076",
+    "T077",
+    "T081"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T086",
+    "T087"
+   ],
+   "FM": [
+    "T094",
+    "T097",
+    "T101",
+    "T103",
+    "T105"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T111"
+   ],
+   "TD": [
+    "T120",
+    "T128",
+    "T129",
+    "T127"
+   ],
+   "APP": [
+    "T134",
+    "T136",
+    "T141",
+    "T138"
+   ],
+   "MAT": [
+    "T144"
+   ],
+   "MFG": [
+    "T149",
+    "T153",
+    "T158",
+    "T164",
+    "T166",
+    "T167",
+    "T171",
+    "T172"
+   ],
+   "IE": [
+    "T180",
+    "T182",
+    "T174"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T031",
+    "T032",
+    "T036",
+    "T039",
+    "T033",
+    "T033"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T068",
+    "T069",
+    "T071",
+    "T073",
+    "T074"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T123",
+    "T124"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T146"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T179",
+    "T181",
+    "T178"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T009"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T045",
+    "T046",
+    "T047"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T065"
+   ],
+   "TOM": [
+    "T078",
+    "T079",
+    "T080",
+    "T076",
+    "T077"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T093",
+    "T091"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T101",
+    "T103"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T116"
+   ],
+   "TD": [
+    "T125",
+    "T126",
+    "T131",
+    "T128"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T145"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T166",
+    "T167",
+    "T171",
+    "T172"
+   ],
+   "IE": [
+    "T173",
+    "T175",
+    "T177"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T020",
+    "T021",
+    "T024",
+    "T026",
+    "T029",
+    "T030"
+   ],
+   "MEC": [
+    "T043",
+    "T048",
+    "T049"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T054"
+   ],
+   "TOM": [
+    "T068",
+    "T079",
+    "T080",
+    "T070",
+    "T072"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T094",
+    "T097"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T131",
+    "T120"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T147"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T180",
+    "T182",
+    "T176"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T010"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T069",
+    "T071",
+    "T073",
+    "T074",
+    "T078"
+   ],
+   "MD": [
+    "T090",
+    "T086",
+    "T087",
+    "T089"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T111",
+    "T112"
+   ],
+   "TD": [
+    "T123",
+    "T124",
+    "T125",
+    "T126"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T146"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T149",
+    "T153",
+    "T158",
+    "T164"
+   ],
+   "IE": [
+    "T179",
+    "T181",
+    "T174"
+   ]
+  },
+  {
+   "GA": [
+    "T004",
+    "T009",
+    "T010",
+    "T011",
+    "T011",
+    "T011",
+    "T015",
+    "T015",
+    "T015",
+    "T005"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T031",
+    "T032",
+    "T036",
+    "T039",
+    "T039",
+    "T039"
+   ],
+   "MEC": [
+    "T045",
+    "T046",
+    "T047"
+   ],
+   "SOM": [
+    "T065",
+    "T053",
+    "T061",
+    "T062",
+    "T066"
+   ],
+   "TOM": [
+    "T068",
+    "T081",
+    "T082",
+    "T082",
+    "T075"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T105",
+    "T108",
+    "T109",
+    "T107",
+    "T107"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T129",
+    "T130"
+   ],
+   "APP": [
+    "T134",
+    "T136",
+    "T141",
+    "T138"
+   ],
+   "MAT": [
+    "T145"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T173",
+    "T175",
+    "T177"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T010"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T069",
+    "T071",
+    "T073",
+    "T074",
+    "T078"
+   ],
+   "MD": [
+    "T092",
+    "T086",
+    "T087",
+    "T089"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T110",
+    "T119",
+    "T111",
+    "T112"
+   ],
+   "TD": [
+    "T123",
+    "T124",
+    "T125",
+    "T126"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T147"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T149",
+    "T153",
+    "T158",
+    "T164"
+   ],
+   "IE": [
+    "T180",
+    "T182",
+    "T178"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T020",
+    "T021",
+    "T024",
+    "T026",
+    "T029",
+    "T030"
+   ],
+   "MEC": [
+    "T044",
+    "T049",
+    "T049"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T055"
+   ],
+   "TOM": [
+    "T068",
+    "T079",
+    "T080",
+    "T070",
+    "T072"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T094",
+    "T097"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T131",
+    "T120"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T146"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T179",
+    "T181",
+    "T176"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T009"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T045",
+    "T046",
+    "T047"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T065"
+   ],
+   "TOM": [
+    "T078",
+    "T079",
+    "T080",
+    "T076",
+    "T077"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T093",
+    "T091"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T101",
+    "T103"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T116"
+   ],
+   "TD": [
+    "T125",
+    "T126",
+    "T131",
+    "T128"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T145"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T166",
+    "T167",
+    "T171",
+    "T172"
+   ],
+   "IE": [
+    "T173",
+    "T175",
+    "T177"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T031",
+    "T031",
+    "T032",
+    "T032",
+    "T036",
+    "T036"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T068",
+    "T069",
+    "T071",
+    "T073",
+    "T074"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T123",
+    "T124"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T144"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T180",
+    "T182",
+    "T178"
+   ]
+  },
+  {
+   "GA": [
+    "T009",
+    "T010",
+    "T010",
+    "T010",
+    "T011",
+    "T011",
+    "T011",
+    "T015",
+    "T015",
+    "T015"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T045",
+    "T047",
+    "T043"
+   ],
+   "SOM": [
+    "T065",
+    "T053",
+    "T061",
+    "T062",
+    "T066"
+   ],
+   "TOM": [
+    "T070",
+    "T072",
+    "T076",
+    "T077",
+    "T081"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T086",
+    "T087"
+   ],
+   "FM": [
+    "T094",
+    "T097",
+    "T101",
+    "T103",
+    "T105"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T111"
+   ],
+   "TD": [
+    "T120",
+    "T128",
+    "T129",
+    "T127"
+   ],
+   "APP": [
+    "T134",
+    "T134",
+    "T136",
+    "T141"
+   ],
+   "MAT": [
+    "T146"
+   ],
+   "MFG": [
+    "T149",
+    "T153",
+    "T158",
+    "T164",
+    "T166",
+    "T167",
+    "T171",
+    "T172"
+   ],
+   "IE": [
+    "T179",
+    "T181",
+    "T174"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T004"
+   ],
+   "EM": [
+    "T035",
+    "T037",
+    "T038",
+    "T020",
+    "T021",
+    "T024",
+    "T026",
+    "T029",
+    "T030"
+   ],
+   "MEC": [
+    "T040",
+    "T041",
+    "T042"
+   ],
+   "SOM": [
+    "T050",
+    "T051",
+    "T052",
+    "T056",
+    "T057"
+   ],
+   "TOM": [
+    "T068",
+    "T069",
+    "T071",
+    "T073",
+    "T074"
+   ],
+   "MD": [
+    "T083",
+    "T084",
+    "T085",
+    "T088"
+   ],
+   "FM": [
+    "T095",
+    "T096",
+    "T098",
+    "T099",
+    "T100"
+   ],
+   "HT": [
+    "T113",
+    "T114",
+    "T115",
+    "T117"
+   ],
+   "TD": [
+    "T121",
+    "T122",
+    "T123",
+    "T124"
+   ],
+   "APP": [
+    "T132",
+    "T133",
+    "T135",
+    "T137"
+   ],
+   "MAT": [
+    "T145"
+   ],
+   "MFG": [
+    "T150",
+    "T151",
+    "T154",
+    "T155",
+    "T156",
+    "T157",
+    "T161",
+    "T162"
+   ],
+   "IE": [
+    "T173",
+    "T175",
+    "T177"
+   ]
+  },
+  {
+   "GA": [
+    "T001",
+    "T002",
+    "T003",
+    "T006",
+    "T007",
+    "T008",
+    "T012",
+    "T013",
+    "T014",
+    "T009"
+   ],
+   "EM": [
+    "T017",
+    "T018",
+    "T019",
+    "T022",
+    "T023",
+    "T025",
+    "T027",
+    "T028",
+    "T034"
+   ],
+   "MEC": [
+    "T046",
+    "T044",
+    "T048"
+   ],
+   "SOM": [
+    "T058",
+    "T060",
+    "T063",
+    "T064",
+    "T067"
+   ],
+   "TOM": [
+    "T078",
+    "T079",
+    "T080",
+    "T081",
+    "T082"
+   ],
+   "MD": [
+    "T090",
+    "T092",
+    "T089",
+    "T093"
+   ],
+   "FM": [
+    "T102",
+    "T104",
+    "T106",
+    "T108",
+    "T109"
+   ],
+   "HT": [
+    "T110",
+    "T118",
+    "T119",
+    "T112"
+   ],
+   "TD": [
+    "T125",
+    "T126",
+    "T131",
+    "T129"
+   ],
+   "APP": [
+    "T139",
+    "T140",
+    "T142",
+    "T143"
+   ],
+   "MAT": [
+    "T148"
+   ],
+   "MFG": [
+    "T163",
+    "T165",
+    "T169",
+    "T170",
+    "T152",
+    "T159",
+    "T160",
+    "T168"
+   ],
+   "IE": [
+    "T180",
+    "T182",
+    "T183"
+   ]
+  }
+ ],
+ "releases": [
+  [
+   "2026-11-09",
+   "TT01",
+   "Topic test",
+   "General Aptitude - Verbal Aptitude",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT02",
+   "Topic test",
+   "General Aptitude - Quantitative Aptitude",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT03",
+   "Topic test",
+   "General Aptitude - Analytical & Spatial Aptitude",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT04",
+   "Topic test",
+   "Engineering Mathematics - Linear Algebra",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT05",
+   "Topic test",
+   "Engineering Mathematics - Calculus & Vector Calculus",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT06",
+   "Topic test",
+   "Engineering Mathematics - Differential Equations & Complex Variables",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT07",
+   "Topic test",
+   "Engineering Mathematics - Probability, Statistics & Numerical Methods",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT08",
+   "Topic test",
+   "Engineering Mechanics - Statics",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT09",
+   "Topic test",
+   "Engineering Mechanics - Dynamics",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT10",
+   "Topic test",
+   "Strength of Materials - Stress, Strain & Failure Theories",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT11",
+   "Topic test",
+   "Strength of Materials - SFD, BMD & Stresses in Beams",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT12",
+   "Topic test",
+   "Strength of Materials - Deflection, Energy Methods & Columns",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-09",
+   "TT13",
+   "Topic test",
+   "Strength of Materials - Torsion, Pressure Vessels & Combined Loading",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT14",
+   "Topic test",
+   "Theory of Machines & Vibrations - Kinematics of Mechanisms",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT15",
+   "Topic test",
+   "Theory of Machines & Vibrations - Gears, Flywheels, Governors, Balancing, Gyroscope",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT16",
+   "Topic test",
+   "Theory of Machines & Vibrations - Vibrations",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT17",
+   "Topic test",
+   "Machine Design - Static & Fatigue Design, Shafts",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT18",
+   "Topic test",
+   "Machine Design - Joints, Gears, Bearings, Brakes, Clutches & Springs",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-16",
+   "TT19",
+   "Topic test",
+   "Engineering Materials - Engineering Materials",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT20",
+   "Topic test",
+   "Fluid Mechanics - Fluid Properties & Fluid Statics",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT21",
+   "Topic test",
+   "Fluid Mechanics - Kinematics, Bernoulli & Control-Volume Analysis",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT22",
+   "Topic test",
+   "Fluid Mechanics - Viscous & Pipe Flow",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT23",
+   "Topic test",
+   "Fluid Mechanics - Boundary Layer & Dimensional Analysis",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT24",
+   "Topic test",
+   "Heat Transfer - Conduction & Fins",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-23",
+   "TT25",
+   "Topic test",
+   "Heat Transfer - Convection, Radiation & Heat Exchangers",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT26",
+   "Topic test",
+   "Thermodynamics - First Law & Properties",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT27",
+   "Topic test",
+   "Thermodynamics - Second Law, Entropy & Exergy",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT28",
+   "Topic test",
+   "Thermodynamics - Thermodynamic Relations & Gas Mixtures",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT29",
+   "Topic test",
+   "Thermal Applications - Power Cycles & Compressors",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT30",
+   "Topic test",
+   "Thermal Applications - IC Engines, Refrigeration & Air-conditioning",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-11-30",
+   "TT31",
+   "Topic test",
+   "Thermal Applications - Turbomachinery",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-06",
+   "FLT01",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 1",
+   65,
+   100,
+   180
+  ],
+  [
+   "2026-12-07",
+   "TT32",
+   "Topic test",
+   "Manufacturing & Metrology - Casting",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-07",
+   "TT33",
+   "Topic test",
+   "Manufacturing & Metrology - Metal Forming",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-07",
+   "TT34",
+   "Topic test",
+   "Manufacturing & Metrology - Joining & Powder Metallurgy",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-07",
+   "TT35",
+   "Topic test",
+   "Manufacturing & Metrology - Machining Mechanics & Tool Life",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-07",
+   "TT36",
+   "Topic test",
+   "Manufacturing & Metrology - Non-traditional Machining, Tooling & CIM",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-07",
+   "TT37",
+   "Topic test",
+   "Manufacturing & Metrology - Metrology & Inspection",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-13",
+   "FLT02",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 2",
+   65,
+   100,
+   180
+  ],
+  [
+   "2026-12-14",
+   "TT38",
+   "Topic test",
+   "Industrial Engineering - Production Planning & Control",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-14",
+   "TT39",
+   "Topic test",
+   "Industrial Engineering - Inventory Control",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-14",
+   "TT40",
+   "Topic test",
+   "Industrial Engineering - Operations Research",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-20",
+   "FLT03",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 3",
+   65,
+   100,
+   180
+  ],
+  [
+   "2026-12-21",
+   "ST01",
+   "Subject test",
+   "General Aptitude (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-21",
+   "ST02",
+   "Subject test",
+   "Engineering Mathematics (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-21",
+   "ST03",
+   "Subject test",
+   "Engineering Mechanics (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-21",
+   "ST04",
+   "Subject test",
+   "Strength of Materials (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-23",
+   "FLT04",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 4",
+   65,
+   100,
+   180
+  ],
+  [
+   "2026-12-27",
+   "FLT05",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 5",
+   65,
+   100,
+   180
+  ],
+  [
+   "2026-12-28",
+   "ST05",
+   "Subject test",
+   "Theory of Machines & Vibrations (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-28",
+   "ST06",
+   "Subject test",
+   "Machine Design (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-28",
+   "ST07",
+   "Subject test",
+   "Engineering Materials (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-28",
+   "ST08",
+   "Subject test",
+   "Fluid Mechanics (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2026-12-30",
+   "FLT06",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 6",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-03",
+   "FLT07",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 7",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-04",
+   "ST09",
+   "Subject test",
+   "Heat Transfer (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2027-01-04",
+   "ST10",
+   "Subject test",
+   "Thermodynamics (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2027-01-04",
+   "ST11",
+   "Subject test",
+   "Thermal Applications (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2027-01-04",
+   "ST12",
+   "Subject test",
+   "Manufacturing & Metrology (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2027-01-04",
+   "ST13",
+   "Subject test",
+   "Industrial Engineering (full subject)",
+   33,
+   50,
+   90
+  ],
+  [
+   "2027-01-06",
+   "FLT08",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 8",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-10",
+   "FLT09",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 9",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-13",
+   "FLT10",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 10",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-17",
+   "FLT11",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 11",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-20",
+   "FLT12",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 12",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-24",
+   "FLT13",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 13",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-27",
+   "FLT14",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 14",
+   65,
+   100,
+   180
+  ],
+  [
+   "2027-01-31",
+   "FLT15",
+   "Full-length mock",
+   "GATE ME Full-Length Mock 15",
+   65,
+   100,
+   180
+  ]
+ ]
+}

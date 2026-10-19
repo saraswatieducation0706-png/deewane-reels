@@ -1,0 +1,276 @@
+{
+ "batches": [
+  {
+   "batch": 1,
+   "planned": "Tue 20 Oct 7 AM",
+   "items": [
+    "TT01",
+    "TT02",
+    "TT03",
+    "TT04"
+   ]
+  },
+  {
+   "batch": 2,
+   "planned": "Tue 20 Oct 6 PM",
+   "items": [
+    "TT05",
+    "TT06",
+    "TT07"
+   ]
+  },
+  {
+   "batch": 3,
+   "planned": "Wed 21 Oct 7 AM",
+   "items": [
+    "TT08",
+    "TT09",
+    "TT10"
+   ]
+  },
+  {
+   "batch": 4,
+   "planned": "Thu 22 Oct 7 AM",
+   "items": [
+    "TT11",
+    "TT13",
+    "TT14"
+   ]
+  },
+  {
+   "batch": 5,
+   "planned": "Thu 22 Oct 6 PM",
+   "items": [
+    "TT15",
+    "TT16",
+    "TT17"
+   ]
+  },
+  {
+   "batch": 6,
+   "planned": "Fri 23 Oct 7 AM",
+   "items": [
+    "TT18",
+    "TT19",
+    "TT20"
+   ]
+  },
+  {
+   "batch": 7,
+   "planned": "Fri 23 Oct 6 PM",
+   "items": [
+    "TT21",
+    "TT22",
+    "TT23"
+   ]
+  },
+  {
+   "batch": 8,
+   "planned": "Sat 24 Oct 6 PM",
+   "items": [
+    "TT24",
+    "TT25",
+    "TT26"
+   ]
+  },
+  {
+   "batch": 9,
+   "planned": "Sun 25 Oct 7 AM",
+   "items": [
+    "TT27",
+    "TT28",
+    "TT29"
+   ]
+  },
+  {
+   "batch": 10,
+   "planned": "Sun 25 Oct 6 PM",
+   "items": [
+    "TT30",
+    "TT31",
+    "TT32"
+   ]
+  },
+  {
+   "batch": 11,
+   "planned": "Mon 26 Oct 7 AM",
+   "items": [
+    "TT33",
+    "TT34",
+    "TT35"
+   ]
+  },
+  {
+   "batch": 12,
+   "planned": "Mon 26 Oct 6 PM",
+   "items": [
+    "TT36",
+    "TT37",
+    "TT38"
+   ]
+  },
+  {
+   "batch": 13,
+   "planned": "Tue 27 Oct 7 AM",
+   "items": [
+    "TT39",
+    "TT40",
+    "FLT01"
+   ]
+  },
+  {
+   "batch": 14,
+   "planned": "Tue 27 Oct 6 PM",
+   "items": [
+    "PDF:EM",
+    "PDF:MEC",
+    "PDF:SOM"
+   ]
+  },
+  {
+   "batch": 15,
+   "planned": "Wed 28 Oct 7 AM",
+   "items": [
+    "FLT02",
+    "ST01"
+   ]
+  },
+  {
+   "batch": 16,
+   "planned": "Thu 29 Oct 7 AM",
+   "items": [
+    "FLT03",
+    "ST02"
+   ]
+  },
+  {
+   "batch": 17,
+   "planned": "Thu 29 Oct 6 PM",
+   "items": [
+    "PDF:TOM",
+    "PDF:MD",
+    "PDF:MAT"
+   ]
+  },
+  {
+   "batch": 18,
+   "planned": "Fri 30 Oct 7 AM",
+   "items": [
+    "FLT04",
+    "ST03"
+   ]
+  },
+  {
+   "batch": 19,
+   "planned": "Fri 30 Oct 6 PM",
+   "items": [
+    "FLT05",
+    "ST04"
+   ]
+  },
+  {
+   "batch": 20,
+   "planned": "Sat 31 Oct 6 PM",
+   "items": [
+    "FLT06",
+    "ST05"
+   ]
+  },
+  {
+   "batch": 21,
+   "planned": "Sun 1 Nov 7 AM",
+   "items": [
+    "PDF:FM",
+    "PDF:HT",
+    "PDF:TD"
+   ]
+  },
+  {
+   "batch": 22,
+   "planned": "Sun 1 Nov 6 PM",
+   "items": [
+    "FLT07",
+    "ST06"
+   ]
+  },
+  {
+   "batch": 23,
+   "planned": "Mon 2 Nov 7 AM",
+   "items": [
+    "FLT08",
+    "ST07"
+   ]
+  },
+  {
+   "batch": 24,
+   "planned": "Mon 2 Nov 6 PM",
+   "items": [
+    "FLT09",
+    "ST08"
+   ]
+  },
+  {
+   "batch": 25,
+   "planned": "Tue 3 Nov 7 AM",
+   "items": [
+    "PDF:APP",
+    "PDF:MFG",
+    "PDF:IE"
+   ]
+  },
+  {
+   "batch": 26,
+   "planned": "Tue 3 Nov 6 PM",
+   "items": [
+    "FLT10",
+    "ST09"
+   ]
+  },
+  {
+   "batch": 27,
+   "planned": "Wed 4 Nov 7 AM",
+   "items": [
+    "FLT11",
+    "ST10"
+   ]
+  },
+  {
+   "batch": 28,
+   "planned": "Thu 5 Nov 7 AM",
+   "items": [
+    "FLT12",
+    "ST11"
+   ]
+  },
+  {
+   "batch": 29,
+   "planned": "Thu 5 Nov 6 PM",
+   "items": [
+    "FLT13",
+    "ST12"
+   ]
+  },
+  {
+   "batch": 30,
+   "planned": "Fri 6 Nov 7 AM",
+   "items": [
+    "FLT14",
+    "ST13"
+   ]
+  },
+  {
+   "batch": 31,
+   "planned": "Fri 6 Nov 6 PM",
+   "items": [
+    "FLT15"
+   ]
+  },
+  {
+   "batch": 32,
+   "planned": "Sat 7 Nov 6 PM",
+   "items": [
+    "SPARE: catch-up and fixes from team review"
+   ]
+  }
+ ]
+}
