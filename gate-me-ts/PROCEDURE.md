@@ -17,7 +17,7 @@ this public repo.** They go to the PRIVATE repo `saraswatieducation0706-png/gate
   00 Planning `11q1hDm-AX6UOVZXhPcUy2xL2fkob8kce` · 99 Question source files `1wZLZqV0h6BJtpdnrSc-s9w7maZdGymYh`.
 - Drive copy: Make scenario **8054068** ("GATE ME TS – copy file from private repo to Drive"), run with
   `scenarios_run` (responsive true) and data `{path, folder_id, file_name}` where `path` is the file's path inside
-  gate-me-ts-files (URL-encode spaces as %20). One run per file. Never upload files through the Drive connector as
+  gate-me-ts-files, URL-encoded with Python `urllib.parse.quote(path)` (spaces, & etc.). Tested OK with TT12 on 19 Oct. One run per file. Never upload files through the Drive connector as
   base64 (far too costly).
 
 ## Question rules (every test)

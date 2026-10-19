@@ -2,8 +2,11 @@
  "done": [
   "TT12"
  ],
- "drive_saved": [],
+ "drive_saved": [
+  "TT12 docx",
+  "TT12.json"
+ ],
  "notes": [
-  "TT12 made in chat on 19 Oct; source in private repo src/TT12.json once that repo exists"
+  "TT12 made in chat on 19 Oct (quality reference, src/TT12.json in gate-me-ts-files)"
  ]
 }
