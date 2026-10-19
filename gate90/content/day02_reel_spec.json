@@ -1,0 +1,23 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/293741bd-7202-55e5-844a-45e5aac7d74f/scratchpad/d2/Day2_reel.mp4",
+ "footer": "Day 2/90  •  109 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 2/90", "GATE ME"], "sub": "Keep the streak alive",
+   "voice": "Day two of the GATE M. E. ninety days challenge! One hundred and nine days to GATE. Keep the streak alive."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Engineering Mechanics", "Kinematics & Dynamics"],
+   "voice": "Today's subject is Engineering Mechanics. Our topic: kinematics and dynamics."},
+  {"kind": "steps", "title": "Cover Today",
+   "steps": ["Particle kinematics", "Relative velocity", "Rigid bodies: plane motion", "Newton's laws & D'Alembert"],
+   "voice": "Cover particle kinematics, relative velocity, plane motion of rigid bodies, and Newton's laws with D'Alembert's principle."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["Rolling without slip", "Contact point: v = 0", "Top point: v = 2v(centre)"],
+   "voice": "Quick tip. For a wheel rolling without slipping, the contact point has zero velocity, and the top point moves at twice the centre's speed."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "Your free practice set with full solutions is on Telegram now. Today's test is open from seven to nine P. M. in our one rupee challenge course, and the toppers come in the next reel."},
+  {"kind": "toppers", "title": "Day 1 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "30/30"},
+               {"rank": 2, "name": "Shubham Kumar", "marks": "19.66/30"},
+               {"rank": 3, "name": "1RIAEM", "marks": "18.33/30"}],
+   "voice": "Day one toppers! Rank one, Sweta Rani Sahoo, with a perfect thirty out of thirty. Rank two, Shubham Kumar. Rank three, one R I A E M. Congratulations!"}
+ ]
+}
