@@ -67,6 +67,8 @@ For each day N (row N of the Master Schedule):
 5. If anything fails, push what is complete and send a push notification naming the day and the problem.
 
 ## B. Reel run (each study-day evening, after the test)
+**Follow `/YOUTUBE_RULES.md` (repo root) and run its pre-publish check on the reel before booking.**
+
 1. Today (IST) = test day P; N = the next study day (P+1; Saturday → Monday's day). If N > 90 or N is already in
    `reel_scheduled`, stop. Read row N (and row P) from the Master Schedule.
 2. Toppers of Day P: the website cannot export results, so Naveen uploads a **screenshot of the rank list** to the

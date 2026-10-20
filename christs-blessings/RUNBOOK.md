@@ -133,6 +133,7 @@ handles US daylight-saving changes.
    failures)." If everything failed, say what failed in one line.
 
 ## 3. Content rules (YouTube policies)
+- **Also follow `/YOUTUBE_RULES.md` (repo root) and run its pre-publish check on every video before booking.**
 - Every script carries an original reflection; never a bare reading over a background (inauthentic-content
   policy). Vary templates, scenes, music keys and seeds week to week.
 - No fear or guilt bait ("God's warning", "don't skip", "if you ignore this"), no prophecies, no miracle or

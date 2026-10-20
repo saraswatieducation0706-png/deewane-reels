@@ -1,5 +1,7 @@
 # Posting: GitHub hosting → Metricool → YouTube Shorts + Instagram Reels + Facebook Page
 
+**Before booking any reel, follow `/YOUTUBE_RULES.md` (repo root) and run its pre-publish check.**
+
 Metricool only takes media from public URLs. Reels are hosted in the public GitHub repo
 `saraswatieducation0706-png/deewane-reels` (config `github_repo`) and served from raw.githubusercontent.com.
 Metricool copies the video and cover into its own storage when the post is created (tested 7 Oct 2026),
