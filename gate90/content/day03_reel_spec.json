@@ -1,0 +1,86 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/bf51fe53-155f-5f1c-ba22-b62db29dbb3b/scratchpad/d3/Day3_reel.mp4",
+ "footer": "Day 3/90  •  108 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 3/90",
+    "MATHS"
+   ],
+   "sub": "Easy marks, if you practise",
+   "voice": "Day three of the GATE M. E. ninety days challenge! One hundred and eight days to GATE. Maths marks are the easiest to secure, so let's lock them in."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Engineering Mathematics",
+    "Linear Algebra"
+   ],
+   "voice": "Today's subject is Engineering Mathematics. Our topic: linear algebra."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Matrix algebra",
+    "Rank of a matrix",
+    "Systems of linear equations",
+    "Eigenvalues & eigenvectors"
+   ],
+   "voice": "Cover matrix algebra, rank of a matrix, systems of linear equations, and eigenvalues with eigenvectors."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Sum of eigenvalues = Trace",
+    "Product = Determinant",
+    "Rank + Nullity = n"
+   ],
+   "voice": "Quick tip. The sum of the eigenvalues equals the trace, their product equals the determinant, and rank plus nullity equals the number of columns."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Your free practice set with full solutions is on Telegram now. Today's test is open from seven to nine P. M. in our one rupee challenge course, and the toppers come in the next reel."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 2 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "27.33/30"
+    },
+    {
+     "rank": 2,
+     "name": "Shubham Kumar",
+     "marks": "20/30"
+    },
+    {
+     "rank": 3,
+     "name": "Atharva Vyas",
+     "marks": "12.67/30"
+    }
+   ],
+   "voice": "Day two toppers! Rank one, Sweta Rani Sahoo, top again with twenty seven point three three. Rank two, Shubham Kumar. Rank three, Atharva Vyas. Congratulations!"
+  }
+ ]
+}
