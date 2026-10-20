@@ -1,12 +1,27 @@
 {
  "done": [
-  "TT12"
+  "TT12",
+  "TT01",
+  "TT02",
+  "TT03",
+  "TT04"
  ],
  "drive_saved": [
   "TT12 docx",
   "TT12.json"
  ],
  "notes": [
-  "TT12 made in chat on 19 Oct (quality reference, src/TT12.json in gate-me-ts-files)"
+  "TT12 made in chat on 19 Oct (quality reference, src/TT12.json in gate-me-ts-files)",
+  "20 Oct run: TT01-TT04 made; gate-me-ts-files not attachable (no add_repo tool), so not in private repo or Drive. Files + sources zip sent to Naveen in chat; upload pending."
+ ],
+ "drive_pending": [
+  "TT01 docx",
+  "TT01.json",
+  "TT02 docx",
+  "TT02.json",
+  "TT03 docx",
+  "TT03.json",
+  "TT04 docx",
+  "TT04.json"
  ]
 }
