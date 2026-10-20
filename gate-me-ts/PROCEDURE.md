@@ -2,7 +2,10 @@
 
 Paid test series sold by Naveen Yadav (Dig Career Thrust). Blueprint, coverage plan and quality bar were agreed on
 19 Oct 2026. **Test questions, answer keys, test JSON and Word/PDF outputs are paid content: never commit them to
-this public repo.** They go to the PRIVATE repo `saraswatieducation0706-png/gate-me-ts-files` and to Google Drive.
+this public repo in plain form.** They are stored ENCRYPTED in `gate-me-ts/vault/` (tooling/vault.py, key in env
+GMTS_KEY given by the scheduled task's prompt — never print, log or commit the key) and copied to Google Drive.
+Scheduled runs cannot write to the private repo gate-me-ts-files (GitHub write access is blocked there), so do not
+use it in runs.
 
 ## Fixed facts
 - Series: 40 topic tests (TT01–TT40), 13 full-subject tests (ST01–ST13), 15 full-length mocks (FLT01–FLT15),
@@ -15,10 +18,13 @@ this public repo.** They go to the PRIVATE repo `saraswatieducation0706-png/gate
   01 Topic Tests `1NXc7zhvfoN57iOuU8pmd9zOOOoEOfbiq` · 02 Subject Tests `16dXs-DXJzrYts5A8pbGcJpwUdFQHeMf4` ·
   03 Full-Length Mocks `1BLtHgJsaJcOh1M2x7gpyUz4hINC10DEr` · 04 Formula Notes PDFs `1GfSHTKL4CYvXhrW6VCTH5-Iy1OZ2k2Zy` ·
   00 Planning `11q1hDm-AX6UOVZXhPcUy2xL2fkob8kce` · 99 Question source files `1wZLZqV0h6BJtpdnrSc-s9w7maZdGymYh`.
-- Drive copy: Make scenario **8054068** ("GATE ME TS – copy file from private repo to Drive"), run with
-  `scenarios_run` (responsive true) and data `{path, folder_id, file_name}` where `path` is the file's path inside
-  gate-me-ts-files, URL-encoded with Python `urllib.parse.quote(path)` (spaces, & etc.). Tested OK with TT12 on 19 Oct. One run per file. Never upload files through the Drive connector as
-  base64 (far too costly).
+- Drive copy: Make scenario **8060538** ("GATE ME TS – vault to Drive"), run with `scenarios_run`
+  (responsive true) and data `{"path": "<vault path>.enc", "folder_id": ..., "file_name": ...}` — e.g. path
+  `TT05/GATE ME TS - TT05 - Calculus & Vector Calculus.docx.enc` (plain path, Make encodes it). The file must already
+  be pushed to main: after pushing, wait 60 s before the first copy. One run per file. Then confirm with the Drive
+  connector `search_files` (`parentId = '<folder>'`) that each file is there with a non-zero size; if a file is
+  missing, wait 60 s and run the copy once more. Never upload files through the Drive connector as base64 (far too
+  costly). Tested OK with TT12 on 20 Oct.
 
 ## Question rules (every test)
 - Topic and subject tests: 33 Q = Q1–16 one-mark + Q17–33 two-mark = 50 marks, 90 min.
@@ -38,10 +44,11 @@ this public repo.** They go to the PRIVATE repo `saraswatieducation0706-png/gate
 - Figures wherever geometry/loading/flow carries information (~20 % of core questions; more in Mechanics, SOM,
   TOM, FM): matplotlib with `gate90/tooling/figlib.py`, clean black line drawings, labelled, no answer leaks.
   Render all figures into one contact sheet and LOOK at it before building.
-- Freshness: no question may repeat one already in the series or in GATE90. Before writing, read the private
-  repo's `src/*.json` for the same subject and skim `gate90/content/*_practice.json` for the same topic.
+- Freshness: no question may repeat one already in the series or in GATE90. Before writing, decrypt the earlier
+  tests of the same subject (`python3 tooling/vault.py get <ID>/<ID>.json /tmp/<ID>.json`) and skim
+  `gate90/content/*_practice.json` for the same topic.
 - Verify EVERY numerical answer and every MCQ key in Python with asserts (see `tooling/example_verify_TT12.py`).
-  Quality bar: TT12 (`src/TT12.json` in the private repo; figures `tooling/example_figs_TT12.py`).
+  Quality bar: TT12 (`vault/TT12/TT12.json.enc`; figures `tooling/example_figs_TT12.py`).
 - Math: `\(...\)`, no space just inside the delimiters, powers with braces (`\cos^{2}30°`, not `\cos^230°`).
 
 ## Formula notes (PDF per subject)
@@ -51,24 +58,28 @@ this public repo.** They go to the PRIVATE repo `saraswatieducation0706-png/gate
   conversions that catch students, assumptions of the derivation, valid when / not valid when, a figure where it
   aids understanding, common traps. A4 portrait, 2–3 cards per page, contents page, QR codes page last
   (website web.digcareerthrust.com/login and app play.google.com/store/apps/details?id=co.jack.iurlk).
-- The first notes batch builds `tooling/build_notes.py` (commit it here; content JSON goes to the private repo),
+- The first notes batch builds `tooling/build_notes.py` (commit it here; content JSON goes to the vault encrypted),
   renders pages to PNG and looks at them. Send that first PDF for Naveen's approval in the final message.
 
 ## A run (one batch)
-1. Clone this repo (and run `add_repo` for gate-me-ts-files with access "push", then clone it to ~/gate-me-ts-files).
-   If gate-me-ts-files cannot be attached, keep outputs locally, send them with SendUserFile, and push-notify
-   Naveen: "GATE ME TS: Drive save failed for <items> — private repo not reachable."
+1. Clone this repo (add_repo deewane-reels if that tool exists, then clone). Do NOT try gate-me-ts-files.
+   `export GMTS_KEY=<key from the task prompt>`.
 2. Read `queue.json` + `status.json`; the batch to make = the first batch with any item not in `done`
    (catch-up is automatic if a run was missed). Make every item of that batch not yet done.
-3. For each test: write `src/<ID>.json` + `src/<ID>_figs.py` (private repo), verify, build with
-   `python3 tooling/build_ts.py src/<ID>.json "out/<file name>" <figdir> GATEMETS:<ID>` (mocks: add `--mock`),
-   check with pandoc (counts of correct/incorrect, integer, fill_ups; marks), render one page to PNG and look.
+   Also first copy to Drive anything listed in `status.json` `drive_pending` that is already in the vault.
+3. For each test, work in /tmp/gmts/<ID>/ (never inside the repo): write `<ID>.json` + `<ID>_figs.py` +
+   `<ID>_verify.py`, verify, build with
+   `python3 ~/deewane-reels/gate-me-ts/tooling/build_ts.py <ID>.json "<file name>" fig GATEMETS:<ID>` (mocks: add
+   `--mock`), check with pandoc (counts of correct/incorrect, integer, fill_ups; marks), render one page to PNG, look.
    File names: `GATE ME TS - TTnn - <title>.docx`, `GATE ME TS - STnn - <subject>.docx`,
    `GATE ME TS - FLTnn - Section A - General Aptitude.docx` and `GATE ME TS - FLTnn - Section B - Technical.docx`.
-4. Commit outputs + sources to gate-me-ts-files (`out/`, `src/`) and push (fetch + rebase first).
-5. Copy every new output file to its Drive folder with Make scenario 8054068 and also the `src/<ID>.json` to
-   folder 99. Check each run's status; on any failure retry once, then push-notify Naveen naming the files that
-   did not reach Drive. Add each saved file to `status.json` `drive_saved`.
-6. Add finished IDs to `status.json` `done`; commit and push this repo (fetch + rebase first).
+4. Encrypt into the vault: `python3 tooling/vault.py put "<file>" "<ID>/<file name>"` for every Word/PDF output and
+   for `<ID>.json`, `<ID>_figs.py`, `<ID>_verify.py`. Run `git status` and make sure NO plain question file is staged
+   (only `vault/**/*.enc`, queue/status). Commit and push (fetch + rebase first).
+5. Wait 60 s, then copy every Word/PDF output to its Drive folder and `<ID>.json` to folder 99 with Make scenario
+   8060538; confirm in Drive as above. On a failure after the retry, push-notify Naveen (PushNotification via
+   ToolSearch) naming the files that did not reach Drive, and add them to `status.json` `drive_pending`.
+   Add each saved file to `drive_saved`.
+6. Add finished IDs to `status.json` `done`; commit and push (fetch + rebase first).
 7. Send each finished Word/PDF file with SendUserFile (status proactive) as a backup.
 8. Finish with one short message: items made, Drive status, anything that failed. Do not touch GATE90 files.

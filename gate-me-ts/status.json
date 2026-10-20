@@ -11,8 +11,8 @@
   "TT12.json"
  ],
  "notes": [
-  "TT12 made in chat on 19 Oct (quality reference, src/TT12.json in gate-me-ts-files)",
-  "20 Oct run: TT01-TT04 made; gate-me-ts-files not attachable (no add_repo tool), so not in private repo or Drive. Files + sources zip sent to Naveen in chat; upload pending."
+  "TT12 made in chat on 19 Oct (quality reference, in vault/TT12/).",
+  "20 Oct morning run: TT01-TT04 made but not saved (private repo unreachable from scheduled runs). Naveen has the zip; to be put in the vault from chat."
  ],
  "drive_pending": [
   "TT01 docx",
