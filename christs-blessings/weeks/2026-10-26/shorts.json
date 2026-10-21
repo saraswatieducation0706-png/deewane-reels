@@ -1,0 +1,352 @@
+[
+ {
+  "id": "s1",
+  "date": "2026-10-26",
+  "template": "D",
+  "scene": "candle",
+  "seed": 8,
+  "music_key": "E",
+  "cover": [
+   "Still",
+   "awake?"
+  ],
+  "title": "Awake in the night? Someone is still keeping watch",
+  "description": "For anyone lying awake while the house is quiet. Psalm 121:4 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#prayer #sleep #bibleverse #christianshorts",
+  "tags": [
+   "psalm 121 4",
+   "prayer when you can't sleep",
+   "neither slumber nor sleep",
+   "night prayer",
+   "god watches over you",
+   "christian short"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're awake in the middle of the night and sleep won't come, stay with me for one minute."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 121, verse 4.",
+    "label": "Psalm 121:4"
+   },
+   {
+    "role": "verse",
+    "text": "Behold, he that keepeth Israel shall neither slumber nor sleep.",
+    "label": "Psalm 121:4"
+   },
+   {
+    "role": "reflection",
+    "text": "Travellers sang this psalm on the long road up to Jerusalem, sleeping outdoors with no walls around them. They found rest by remembering who stayed awake. At night every worry feels bigger and closer. But you don't have to keep watch over your life tonight. That job is already taken, by Someone who never gets tired."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You are awake, so I can rest. I hand You the night and everything in it. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Save this for tonight. Our full Psalm 121 sleep prayer is on the channel too."
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "date": "2026-10-27",
+  "template": "B",
+  "scene": "hills_sunset",
+  "seed": 9,
+  "music_key": "G",
+  "cover": [
+   "You are",
+   "not left"
+  ],
+  "title": "When the people you counted on let you down",
+  "description": "For anyone who feels let down or left out by people they trusted. Psalm 27:10 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#loneliness #comfort #bibleverse #christianshorts",
+  "tags": [
+   "psalm 27 10",
+   "prayer for loneliness",
+   "feeling abandoned",
+   "god will take me up",
+   "christian comfort",
+   "bible verse for rejection"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If someone you trusted walked away, or just wasn't there when you needed them, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 27, verse 10.",
+    "label": "Psalm 27:10"
+   },
+   {
+    "role": "verse",
+    "text": "When my father and my mother forsake me, then the LORD will take me up.",
+    "label": "Psalm 27:10"
+   },
+   {
+    "role": "reflection",
+    "text": "David picked the closest people anyone could imagine: a father and a mother. Even if they let go, he says, God won't. For you it might be a friend who stopped calling, or family who doesn't understand. That hurt is real. But the words here are \"take me up\", like lifting a child who has been left waiting. You have not been left at the door."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You know who has let me down. Take me up, and keep my heart from growing hard. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If you feel alone today, leave a heart below, and we'll pray for you."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-10-28",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 10,
+  "music_key": "A",
+  "cover": [
+   "Wonderfully",
+   "made"
+  ],
+  "title": "For the one who keeps comparing themselves to everyone",
+  "description": "For anyone tired of measuring themselves against other people. Psalm 139:14 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#selfworth #faith #bibleverse #christianshorts",
+  "tags": [
+   "psalm 139 14",
+   "fearfully and wonderfully made",
+   "stop comparing yourself",
+   "christian self worth",
+   "bible verse identity",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you've spent today measuring yourself against everyone else's life, pause here."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 139, verse 14.",
+    "label": "Psalm 139:14"
+   },
+   {
+    "role": "verse",
+    "text": "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+    "label": "Psalm 139:14"
+   },
+   {
+    "role": "reflection",
+    "text": "David wasn't admiring a mirror when he wrote this. He was thinking of God shaping him before anyone else ever saw him. Your worth wasn't decided by a feed, a job title, or somebody else's highlight reel. It was settled by the One who made you on purpose. And notice the last line: my soul knoweth right well. This is something to know, not just to hear."
+   },
+   {
+    "role": "prayer",
+    "text": "Father, quiet the comparing in me. Help me see myself the way You made me. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Send this to someone who forgets how much they're worth."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-10-29",
+  "template": "A",
+  "scene": "dawn_lake",
+  "seed": 11,
+  "music_key": "Bb",
+  "cover": [
+   "Still",
+   "waiting?"
+  ],
+  "title": "Still waiting on a prayer? This is for you",
+  "description": "For anyone who has been praying about the same thing for a long time. Psalm 130:5 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#waitingongod #prayer #bibleverse #christianshorts",
+  "tags": [
+   "psalm 130 5",
+   "waiting on god",
+   "unanswered prayer",
+   "hope in his word",
+   "christian encouragement",
+   "prayer for patience"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you've been praying about the same thing for a long time, and nothing has changed yet, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 130, verse 5.",
+    "label": "Psalm 130:5"
+   },
+   {
+    "role": "verse",
+    "text": "I wait for the LORD, my soul doth wait, and in his word do I hope.",
+    "label": "Psalm 130:5"
+   },
+   {
+    "role": "reflection",
+    "text": "This psalm opens with the words \"out of the depths\", so it comes from someone in a hard place, not a comfortable one. He says \"wait\" twice, because waiting takes more than one try. And he doesn't hang his hope on the timing. He hangs it on God's word. Time spent waiting with God isn't wasted. It's time spent leaning on Someone who keeps His word."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I'm still waiting. Give me patience for today, and keep my hope in Your word. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tell us below what you're waiting on, and we'll pray with you."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-10-30",
+  "template": "D",
+  "scene": "candle",
+  "seed": 12,
+  "music_key": "F",
+  "cover": [
+   "Lie down",
+   "in peace"
+  ],
+  "title": "Afraid to lie down at night? Pray this first",
+  "description": "A short bedtime prayer for anyone whose worries get loud at night. Proverbs 3:24 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#bedtimeprayer #peace #bibleverse #christianshorts",
+  "tags": [
+   "proverbs 3 24",
+   "bedtime prayer",
+   "thy sleep shall be sweet",
+   "prayer for worry at night",
+   "christian sleep",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Some people dread bedtime, because that's when the worries get loud. If that's you, listen."
+   },
+   {
+    "role": "ref",
+    "text": "Proverbs 3, verse 24.",
+    "label": "Proverbs 3:24"
+   },
+   {
+    "role": "verse",
+    "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
+    "label": "Proverbs 3:24"
+   },
+   {
+    "role": "reflection",
+    "text": "This verse comes near the end of a passage about walking with God's wisdom through the day. Rest at night grows out of trust in the daytime. So tonight, before you lie down, try something simple. Name each worry out loud, and hand it to God by name. You're not ignoring your problems. You're just not taking them to bed with you."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I give You each worry by name. Let me lie down tonight without fear. Amen."
+   },
+   {
+    "role": "close",
+    "text": "For a longer prayer to fall asleep to, look for our sleep prayers on the channel."
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-10-31",
+  "template": "A",
+  "scene": "sunrise_lake",
+  "seed": 13,
+  "music_key": "D",
+  "cover": [
+   "In every",
+   "thing"
+  ],
+  "title": "How to give thanks when life isn't going well",
+  "description": "Giving thanks in a hard season, from 1 Thessalonians 5:18 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#gratitude #faith #bibleverse #christianshorts",
+  "tags": [
+   "1 thessalonians 5 18",
+   "in every thing give thanks",
+   "gratitude in hard times",
+   "thankful prayer",
+   "christian devotional",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Giving thanks is easy on good days. This is about the other days."
+   },
+   {
+    "role": "ref",
+    "text": "First Thessalonians 5, verse 18.",
+    "label": "1 Thessalonians 5:18"
+   },
+   {
+    "role": "verse",
+    "text": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+    "label": "1 Thessalonians 5:18"
+   },
+   {
+    "role": "reflection",
+    "text": "Paul says in every thing, not for every thing. You don't have to be thankful for the loss, the bill, or the bad news. But in the middle of it, there is still something to thank God for: a friend who called, a warm meal, the fact that He hasn't left. Gratitude doesn't deny the hard thing. It just refuses to let the hard thing be the only thing."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, this season isn't easy, but thank You for the good I can still see today. Open my eyes to more of it. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Comment one thing you're thankful for today, even a small one."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-11-01",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 14,
+  "music_key": "C",
+  "cover": [
+   "Bless your",
+   "family"
+  ],
+  "title": "Speak this blessing over your family this Sunday",
+  "description": "Pray the blessing of Numbers 6:24-26 (KJV) over the people you love.\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#sundayprayer #family #bibleverse #christianshorts",
+  "tags": [
+   "numbers 6 24-26",
+   "the lord bless thee and keep thee",
+   "prayer for family",
+   "sunday blessing",
+   "aaronic blessing",
+   "christian family"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "This is one of the oldest blessings in the Bible. Let's speak it together over the people we love."
+   },
+   {
+    "role": "ref",
+    "text": "Numbers 6, verses 24 to 26.",
+    "label": "Numbers 6:24-26"
+   },
+   {
+    "role": "verse",
+    "text": "The LORD bless thee, and keep thee: The LORD make his face shine upon thee, and be gracious unto thee: The LORD lift up his countenance upon thee, and give thee peace.",
+    "label": "Numbers 6:24-26"
+   },
+   {
+    "role": "reflection",
+    "text": "God gave these words to Aaron and his sons to speak over His people, and families have spoken them ever since. Listen to the movement: bless, keep, shine, be gracious, give peace. This week, before you talk with your family about schedules and chores, try speaking this over them. Picture each face as you say the words."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, bless my family. Keep them, shine on them, and give them Your peace this week. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with your family, or with someone who feels like family."
+   }
+  ]
+ }
+]

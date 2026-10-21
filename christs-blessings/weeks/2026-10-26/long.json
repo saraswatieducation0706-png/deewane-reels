@@ -1,0 +1,29 @@
+{
+ "long1": {
+  "date_et": "2026-10-26", "slot_ist": "2026-10-27T05:30:00", "type": "sleep prayer", "script": "long1_script.txt",
+  "scene": "night_lake", "seed": 32, "music_key": "F",
+  "render": {"intro": "Sleep Prayer with Psalm 121", "subtitles": "dim", "seed": 32, "music_key": "F", "music_db": -16, "lufs": -20},
+  "title": "Sleep Prayer with Psalm 121 | The One Who Watches Over You Never Sleeps",
+  "thumb_big": "He Never Sleeps", "thumb_small": "Psalm 121 sleep prayer", "thumb_scene": "night_lake",
+  "description": "A gentle guided sleep prayer for the end of the day. We rest the body one part at a time, walk slowly through Psalm 121, leave tomorrow in God's hands with Matthew 6:34, and breathe with Isaiah 26:3 before a closing blessing. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 127:2, Psalm 121:1-8, Matthew 6:34, Isaiah 26:3, Psalm 3:5.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #psalm121 #bedtimeprayer #christianmeditation",
+  "tags": ["sleep prayer", "psalm 121", "guided sleep prayer", "christian sleep meditation", "bedtime prayer", "prayer for peace at night", "he that keepeth thee will not slumber", "fall asleep with scripture", "kjv sleep", "christ's blessings"]
+ },
+ "long2": {
+  "date_et": "2026-10-29", "slot_ist": "2026-10-30T05:30:00", "type": "scripture meditation with soft music", "script": "long2_script.txt",
+  "scene": "calm_dawn", "seed": 33, "music_key": "G",
+  "render": {"intro": "Be Still and Know", "subtitles": "dim", "seed": 33, "music_key": "G", "music_db": -16, "lufs": -20},
+  "title": "Be Still and Know | A Psalm 46 Scripture Meditation with Soft Music",
+  "thumb_big": "Be Still", "thumb_small": "Psalm 46 meditation", "thumb_scene": "calm_dawn",
+  "description": "A slow scripture meditation on Psalm 46 for anxious, unsettled days. We read the psalm a few verses at a time with pauses to reflect: God our refuge when the ground shifts, the river that makes glad the city of God, holding our peace (Exodus 14:14), and \"Be still, and know that I am God.\" After the meditation, about 15 minutes of soft music to keep resting or praying.\n\nScripture (KJV): Psalm 46:1-5, 10-11; Exodus 14:14.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#bestill #psalm46 #scripturemeditation #christianmeditation",
+  "tags": ["be still and know that i am god", "psalm 46", "scripture meditation", "christian meditation", "prayer for anxiety", "soft music prayer", "god is our refuge and strength", "kjv meditation", "quiet time with god", "christ's blessings"]
+ },
+ "long3": {
+  "date_et": "2026-10-31", "slot_ist": "2026-11-01T05:30:00", "type": "Bible story explained", "script": "long3_script.txt",
+  "scene": "hills_sunset", "seed": 34, "music_key": "C",
+  "render": {"subtitles": "normal", "seed": 34, "music_key": "C", "music_db": -23, "lufs": -16},
+  "title": "Elijah Under the Juniper Tree: When You Have Nothing Left (1 Kings 19 Explained)",
+  "thumb_big": "Nothing Left?", "thumb_small": "Elijah's story, 1 Kings 19", "thumb_scene": "hills_sunset",
+  "description": "Right after his greatest victory on Mount Carmel, the prophet Elijah ran into the wilderness, sat under a juniper tree and told God, \"It is enough.\" In this video we walk through 1 Kings 19: the background, the angel with bread and water, the wind, earthquake and fire, and the still small voice. Four lessons for anyone who feels worn out, and a closing prayer.\n\nScripture (KJV): 1 Kings 19:3-13, 15, 18.\n\nThis video is spiritual encouragement, not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#elijah #biblestory #1kings19 #christianencouragement",
+  "tags": ["elijah", "1 kings 19", "elijah under the juniper tree", "still small voice", "bible story explained", "burnout bible", "elijah and the angel", "bible stories for adults", "christian encouragement", "christ's blessings"]
+ }
+}
