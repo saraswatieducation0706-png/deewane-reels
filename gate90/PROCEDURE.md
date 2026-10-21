@@ -90,7 +90,7 @@ For each day N (row N of the Master Schedule):
      never use the word "free" for anything but the practice PDF;
      LAST: `toppers` scene, title "Day P Toppers", voice congratulating them by name (ranks, shared ranks).
    - Voice: English, "GATE M. E.", numbers in words where natural; ≤ 30 words per scene.
-   - Render, check 3 frames, then `tooling/scripts/thumbnail.py <dir>/DayN --org "GATE ME" --big "DAY N/90" --line "<Topic>" --badge "Test Tonight 7 PM" --badge2 "<X> Days to GATE"`.
+   - Render, check 3 frames, then `tooling/scripts/thumbnail.py <dir>/DayN --org "GATE ME" --big "DAY N/90" --line "<Topic>" --badge "Test Tonight 7 PM" --badge2 "<X> Days to GATE" --header "90 DAYS CHALLENGE"` (never the default "NEW GOVT JOB" header: misleading on a study reel, YOUTUBE_RULES §7).
 4. Copy `DayN_reel.mp4` + `DayN_cover.jpg` to `gate90/reels/`, delete reels of days older than N−3 from that folder,
    push, wait for raw URL HTTP 200.
 5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel + Facebook Page, exactly like the Day 1

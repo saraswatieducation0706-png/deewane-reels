@@ -1,0 +1,25 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/c45c65f0-d436-5907-9414-8ea1a7d75113/scratchpad/d4/Day4_reel.mp4",
+ "footer": "Day 4/90  •  107 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 4/90", "MECHANICS"], "sub": "One idea, many marks",
+   "voice": "Day four of the GATE M. E. ninety days challenge! One hundred and seven days to GATE. Today, impact problems stop being scary."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Engineering Mechanics", "Impulse, Energy & Impact"],
+   "voice": "We are back to Engineering Mechanics. Today's topic: impulse, energy and impact."},
+  {"kind": "steps", "title": "Cover Today",
+   "steps": ["Linear & angular impulse", "Work-energy method", "Collisions & restitution", "Virtual work"],
+   "voice": "Cover linear and angular impulse-momentum, the work-energy method, collisions with the coefficient of restitution, and virtual work."},
+  {"kind": "card", "title": "Quick Tip",
+   "lines": ["Impulse = change in momentum", "e = separation ÷ approach", "e = 1: no KE lost"],
+   "voice": "Quick tip. Impulse equals change in momentum. Restitution is separation speed over approach speed. Only when e equals one is no kinetic energy lost."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "Grab the free practice set with full solutions on Telegram. Tonight's test runs seven to nine P. M. in our one rupee challenge course. Toppers in the next reel."},
+  {"kind": "toppers", "title": "Day 3 Toppers",
+   "entries": [
+    {"rank": 1, "name": "Rajeev Kumar", "marks": "30/30"},
+    {"rank": 1, "name": "Atharva Vyas", "marks": "30/30"},
+    {"rank": 3, "name": "Sweta Rani Sahoo", "marks": "23.34/30"}],
+   "voice": "Day three toppers! Rajeev Kumar and Atharva Vyas share rank one with a perfect thirty out of thirty. Rank three, Sweta Rani Sahoo. Congratulations!"}
+ ]
+}

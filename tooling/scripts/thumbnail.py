@@ -34,6 +34,7 @@ def pill(d, xy, text, fill, tcol, size, maxw):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("out")
     for k in ["org", "big", "line", "badge", "badge2"]: ap.add_argument("--" + k, default="")
+    ap.add_argument("--header", default="NEW GOVT JOB")  # cover top line; GATE90 uses "90 DAYS CHALLENGE"
     a = ap.parse_args()
     logo = Image.open(os.path.join(A, "logo_white.png")).convert("RGBA")
 
@@ -53,7 +54,7 @@ def main():
     W, H = 1080, 1920; im = bg(W, H); d = ImageDraw.Draw(im)
     im.alpha_composite(logo.resize((150, 140)), (465, 120))
     def c(y, t, f, col): d.text(((W - d.textlength(t, font=f)) / 2, y), t, font=f, fill=col)
-    c(300, "NEW GOVT JOB", F("ExtraBold", 90), WHITE)
+    if a.header: c(300, a.header, fit(d, a.header, "ExtraBold", 90, W - 100), WHITE)
     c(560, a.org.upper(), fit(d, a.org.upper(), "ExtraBold", 150, W - 100), WHITE)
     c(800, a.big, fit(d, a.big, "ExtraBold", 130, W - 100), YEL)
     if a.line: c(1010, a.line, fit(d, a.line, "Bold", 60, W - 100), WHITE)
