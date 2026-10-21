@@ -1,0 +1,257 @@
+{
+ "day": 36,
+ "subject": "Weekly Revision",
+ "topic": "Week 6 Revision",
+ "days_to_gate": 70,
+ "summary": "all five topics of Week 6: momentum, flow measurement and dimensional analysis; viscous flow and boundary layer; analytical reasoning; turbulent flow and pipe losses; thermodynamics basics and pure substances (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Thermodynamics, First Law",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A pitot-static tube is placed at the centre of an air duct. The differential water manometer connected to it reads 40 mm. Taking the density of air as 1.2 kg/m³, the density of water as 1000 kg/m³, the pitot-tube coefficient as 0.98 and g = 9.81 m/s², the air velocity (in m/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "25.06 (accept 24.81 to 25.31)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A pitot-static tube measures the dynamic pressure Δp = ½ρ<sub>air</sub>V², and V = C√(2Δp/ρ<sub>air</sub>).",
+    "Δp = ρ<sub>w</sub>gh = 1000 × 9.81 × 0.040 = 392.4 Pa (the air column in the manometer is negligible)",
+    "V = 0.98 × √(2 × 392.4/1.2) = 0.98 × 25.57 = <b>25.06 m/s</b>",
+    "<b>Exam tip:</b> Use the density of the <b>flowing</b> fluid (air) under the square root, and the manometer liquid only to convert the reading into Δp."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The drag on a submarine moving at 2 m/s in sea water is to be found from a 1 : 20 model tested in the same sea water under Reynolds similarity. The ratio of the drag on the model to the drag on the prototype is",
+   "fig": null,
+   "opts": [
+    "1/400",
+    "1/20",
+    "1",
+    "20"
+   ],
+   "ans": "(C) 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A fully submerged body has no free-surface waves, so viscous forces dominate and Reynolds similarity applies.",
+    "Same fluid: V<sub>m</sub>L<sub>m</sub> = V<sub>p</sub>L<sub>p</sub> → V<sub>m</sub> = 20 × 2 = 40 m/s",
+    "F ∝ ρV²L², so F<sub>m</sub>/F<sub>p</sub> = (V<sub>m</sub>/V<sub>p</sub>)² (L<sub>m</sub>/L<sub>p</sub>)² = 20² × (1/20)² = <b>1</b>",
+    "<b>Exam tip:</b> Under Reynolds similarity with the same fluid, forces are equal in model and prototype; that is why such model tests need very high speeds or a different fluid."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 30 mm diameter water jet with velocity 25 m/s strikes a fixed, smooth curved vane and is deflected through 150°, as shown. Taking the density of water as 1000 kg/m³ and neglecting friction, the force exerted by the jet on the vane in the direction of the jet (in N, round off to one decimal place) is ______",
+   "fig": "d36p_q3.png",
+   "opts": null,
+   "ans": "824.4 (accept 820.3 to 828.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Momentum equation along the jet axis: F = ṁ(V<sub>in,x</sub> − V<sub>out,x</sub>). On a smooth fixed vane the speed stays V.",
+    "ṁ = ρAV = 1000 × (π/4)(0.03)² × 25 = 17.67 kg/s",
+    "V<sub>out,x</sub> = V cos150° = −0.866V, so F = ṁV(1 + cos30°) = 17.67 × 25 × 1.866 = <b>824.4 N</b>",
+    "<b>Exam tip:</b> A 180° turn (U-shaped cup, as in a Pelton bucket) gives the maximum, 2ρAV²; a flat plate normal to the jet gives ρAV²."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A shaft of 80 mm diameter rotates at 1200 rpm in a journal bearing 120 mm long. The radial clearance of 0.1 mm is filled with oil of dynamic viscosity 0.08 Pa·s. Assuming a linear velocity profile in the oil film, the power lost in the bearing (in W, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "610 (accept 604 to 616)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Thin oil film → Couette flow: τ = μU/h. Viscous torque = τ × (πDL) × D/2, power = Tω.",
+    "U = πDN/60 = π × 0.08 × 1200/60 = 5.027 m/s; τ = 0.08 × 5.027/0.0001 = 4021 Pa",
+    "F = τπDL = 4021 × π × 0.08 × 0.12 = 121.3 N; T = F × 0.04 = 4.851 N·m",
+    "P = Tω = 4.851 × 125.66 = <b>610 W</b>",
+    "<b>Exam tip:</b> P ∝ μN²D³L/h: doubling the speed quadruples the loss, halving the clearance doubles it."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For fully developed laminar flow in a circular pipe, the kinetic-energy correction factor α and the momentum correction factor β are, respectively,",
+   "fig": null,
+   "opts": [
+    "1.0 and 1.0",
+    "2.0 and 1.33",
+    "1.5 and 1.2",
+    "1.33 and 2.0"
+   ],
+   "ans": "(B) 2.0 and 1.33",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> α = (1/A)∫(u/V)³dA and β = (1/A)∫(u/V)²dA, with the parabolic profile u = 2V(1 − r²/R²).",
+    "Integrating gives α = <b>2</b> and β = <b>4/3 ≈ 1.33</b>.",
+    "Turbulent profiles are much flatter: α ≈ 1.03–1.1 and β ≈ 1.01–1.04.",
+    "<b>Exam tip:</b> Always α &gt; β &gt; 1 for a non-uniform profile; both equal 1 only for uniform flow."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A thin flat plate 1.5 m long (in the flow direction) and 0.6 m wide is towed edgewise at 0.2 m/s through still water (density 1000 kg/m³, kinematic viscosity 1.0 × 10⁻⁶ m²/s). Using the Blasius result C<sub>D</sub> = 1.328/√Re<sub>L</sub> for a laminar boundary layer, the total skin-friction drag on <b>both sides</b> of the plate (in N, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.087 (accept 0.086 to 0.088)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Check that the boundary layer is laminar (Re<sub>L</sub> &lt; 5 × 10⁵), then F = C<sub>D</sub> × ½ρU² × area.",
+    "Re<sub>L</sub> = UL/ν = 0.2 × 1.5/10⁻⁶ = 3 × 10⁵ (laminar over the whole plate)",
+    "C<sub>D</sub> = 1.328/√(3 × 10⁵) = 0.002425",
+    "F = 0.002425 × ½ × 1000 × 0.2² × (1.5 × 0.6) × 2 = <b>0.087 N</b>",
+    "<b>Exam tip:</b> Don't forget the factor 2 for both faces; the local coefficient at x is 0.664/√Re<sub>x</sub>, exactly half the average coefficient."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a certain code, FLOW is written as GNRA. How is PUMP written in that code?",
+   "fig": null,
+   "opts": [
+    "QWPT",
+    "QVNQ",
+    "QWPS",
+    "RWPT"
+   ],
+   "ans": "(A) QWPT",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Compare letter positions: F→G (+1), L→N (+2), O→R (+3), W→A (+4, wrapping past Z).",
+    "Apply the same +1, +2, +3, +4 to PUMP: P→Q, U→W, M→P, P→T",
+    "Code = <b>QWPT</b>",
+    "<b>Exam tip:</b> Write the alphabet positions (A = 1 … Z = 26) once and count forward; remember to wrap Z → A."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Pointing to a girl in a photograph, Ravi says, \"She is the daughter of the only son of my grandfather.\" Assuming Ravi's father is that only son, how is the girl related to Ravi?",
+   "fig": null,
+   "opts": [
+    "Cousin",
+    "Niece",
+    "Sister",
+    "Aunt"
+   ],
+   "ans": "(C) Sister",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Decode the chain from the far end.",
+    "The only son of Ravi's grandfather = Ravi's father.",
+    "The daughter of Ravi's father = Ravi's <b>sister</b>.",
+    "<b>Exam tip:</b> 'Only son' removes uncles from the picture; draw a small family tree with + and − for male and female."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a class of 60 students, 35 study Thermodynamics, 30 study Fluid Mechanics and 12 study neither. The number of students who study both subjects is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "17",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> n(A ∪ B) = n(A) + n(B) − n(A ∩ B).",
+    "Students studying at least one subject = 60 − 12 = 48",
+    "48 = 35 + 30 − n(both) → n(both) = <b>17</b>",
+    "<b>Exam tip:</b> Check: only Thermo = 18, only Fluids = 13, both = 17, neither = 12; total 60."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A pipeline consists of 600 m of 300 mm diameter pipe followed by 400 m of 200 mm diameter pipe, both with the same friction factor. Neglecting minor losses, the length of a single 250 mm diameter pipe (same friction factor) that gives the same head loss at the same discharge (in m, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1462 (accept 1447 to 1477)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At fixed Q and f, h<sub>f</sub> = 8fLQ²/(π²gD⁵) ∝ L/D⁵ (Dupuit's equation for equivalent pipes).",
+    "L<sub>e</sub>/D⁵ = L₁/D₁⁵ + L₂/D₂⁵ → L<sub>e</sub> = 600(250/300)⁵ + 400(250/200)⁵",
+    "L<sub>e</sub> = 600 × 0.4019 + 400 × 3.0518 = 241.1 + 1220.7 = <b>1462 m</b>",
+    "<b>Exam tip:</b> The small-diameter segment dominates: halving D raises the loss 32 times."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In turbulent pipe flow the thickness of the viscous sublayer is 0.05 mm, and the average height of the wall roughness is 0.15 mm. According to the usual criterion (smooth if ε/δ′ &lt; 0.25, rough if ε/δ′ &gt; 6), the pipe behaves as",
+   "fig": null,
+   "opts": [
+    "hydraulically smooth",
+    "hydraulically rough",
+    "in the transition regime between smooth and rough",
+    "laminar"
+   ],
+   "ans": "(C) in the transition regime between smooth and rough",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Compare the roughness height ε with the viscous-sublayer thickness δ′ = 11.6ν/u*.",
+    "ε/δ′ = 0.15/0.05 = 3, which lies between 0.25 and 6.",
+    "So the pipe is in the <b>transition regime</b>: f depends on both Re and ε/D (Colebrook).",
+    "<b>Exam tip:</b> The same pipe can be smooth at low Re and rough at high Re, because δ′ shrinks as velocity rises."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water flows from a large open tank through a 50 m long, 50 mm diameter horizontal pipe (Darcy f = 0.025) with a sharp-edged entrance (K = 0.5) and discharges as a free jet into the atmosphere, as shown. The water level is 10 m above the pipe centreline. Taking g = 9.81 m/s², the discharge (in litres per second, round off to two decimal places) is ______",
+   "fig": "d36p_q12.png",
+   "opts": null,
+   "ans": "5.34 (accept 5.29 to 5.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Energy equation from the free surface to the jet: H = V²/2g (jet) + 0.5V²/2g (entry) + fLV²/(2gD) (friction).",
+    "10 = (V²/2g)(1 + 0.5 + 0.025 × 50/0.05) = (V²/2g)(26.5)",
+    "V = √(2 × 9.81 × 10/26.5) = 2.721 m/s",
+    "Q = (π/4)(0.05)² × 2.721 = 5.343 × 10⁻³ m³/s = <b>5.34 L/s</b>",
+    "<b>Exam tip:</b> For a free jet, the 1.0 in the bracket is the jet's kinetic energy; for a pipe ending under water, it is the exit loss. The total is the same."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "On a new temperature scale °N, the ice point is 25 °N and the steam point is 175 °N, with the scale linear in Celsius. The temperature at which the Celsius and °N readings are numerically equal is",
+   "fig": null,
+   "opts": [
+    "−50",
+    "50",
+    "−40",
+    "−25"
+   ],
+   "ans": "(A) −50",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Two linear scales are related by (N − ice)/(steam − ice) on each scale.",
+    "(N − 25)/(175 − 25) = C/100 → N = 25 + 1.5C",
+    "Equal readings: t = 25 + 1.5t → t = <b>−50</b>",
+    "<b>Exam tip:</b> The zeroth law makes such scales possible: any thermometric property gives a linear scale once two fixed points are chosen. For °C and °F the equal reading is −40."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas in a piston–cylinder device, restrained by a linear spring, expands so that its pressure varies linearly with volume from 150 kPa at 0.02 m³ to 450 kPa at 0.06 m³. The work done by the gas (in kJ) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Boundary work W = ∫p dV is the area under the process line on the p–V diagram.",
+    "For a straight line the area is a trapezium: W = ½(p₁ + p₂)(V₂ − V₁)",
+    "W = ½ × (150 + 450) × (0.06 − 0.02) = <b>12 kJ</b>",
+    "<b>Exam tip:</b> kPa × m³ = kJ. Work and heat are path functions: the same end states joined by a different path give different work."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Superheated steam at 10 MPa and 400 °C has a specific volume of 0.02641 m³/kg (from steam tables). Taking the gas constant of steam as 0.4615 kJ/kg·K, the compressibility factor Z of the steam (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.850 (accept 0.846 to 0.855)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Z = pv/(RT) measures the departure from ideal-gas behaviour (Z = 1 for an ideal gas).",
+    "Z = (10 000 × 0.02641)/(0.4615 × 673.15) = 264.1/310.66 = <b>0.850</b>",
+    "So the ideal-gas equation would overpredict the specific volume by about 1/0.85 − 1 ≈ 18 %.",
+    "<b>Exam tip:</b> Steam behaves as an ideal gas only at low pressure (roughly below 10 kPa) or very high temperature; near the saturation dome use the tables."
+   ]
+  }
+ ]
+}

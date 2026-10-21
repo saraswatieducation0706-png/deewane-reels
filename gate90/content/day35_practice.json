@@ -1,0 +1,258 @@
+{
+ "day": 35,
+ "subject": "Thermodynamics",
+ "topic": "Basics & Pure Substances",
+ "days_to_gate": 71,
+ "summary": "thermodynamic systems and properties, zeroth law and temperature scales, displacement work along different paths, phase change of water, steam quality from property tables, the T–v diagram, ideal-gas equation, compressibility factor and the van der Waals gas",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Weekly Revision, Week 6 Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A pressure cooker is on the stove; steam escapes intermittently through the weight valve while the food cooks. Taking the cooker and its contents as the system, it is",
+   "fig": null,
+   "opts": [
+    "a closed system",
+    "an open system",
+    "an isolated system",
+    "an adiabatic closed system"
+   ],
+   "ans": "(B) an open system",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A system is open (a control volume) if <b>mass</b> crosses its boundary; closed if only energy crosses; isolated if neither does.",
+    "Heat enters from the stove and steam (mass) leaves through the valve, so mass crosses the boundary: an <b>open system</b>.",
+    "<b>Exam tip:</b> A sealed rigid tank being heated is closed; a thermos flask (ideally) is isolated; turbines, nozzles, pumps and compressors are open systems."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A thermocouple used as a thermometer gives an emf e = 0.2t − 5 × 10⁻⁴ t² (mV), where t is in °C. It is calibrated to read 0 at the ice point and 100 at the steam point, its scale being linear in e. When the gas thermometer reads 50 °C, the thermocouple thermometer reads (round off to two decimal places) ______",
+   "fig": null,
+   "opts": null,
+   "ans": "58.33 (accept 58.0 to 58.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A thermometer scale linear in its thermometric property: t* = 100 × (e − e<sub>ice</sub>)/(e<sub>steam</sub> − e<sub>ice</sub>).",
+    "e(0) = 0; e(100) = 20 − 5 = 15 mV; e(50) = 10 − 1.25 = 8.75 mV",
+    "t* = 100 × 8.75/15 = <b>58.33</b>",
+    "<b>Exam tip:</b> Two thermometers agree only at their fixed points; between them they differ when the property is not linear in t. The ideal-gas scale is the reference."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement about a quasi-static process is NOT correct?",
+   "fig": null,
+   "opts": [
+    "It is a succession of equilibrium states",
+    "It can be shown as a continuous line on a property diagram",
+    "Free expansion of a gas into vacuum is a quasi-static process",
+    "Work in a quasi-static compression of a gas is ∫p dV"
+   ],
+   "ans": "(C) Free expansion of a gas into vacuum is a quasi-static process",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A quasi-static process is carried out infinitely slowly, so the system passes through equilibrium states only.",
+    "Free (unresisted) expansion is sudden and far from equilibrium: intermediate states are undefined and cannot be drawn. So (C) is wrong.",
+    "<b>Exam tip:</b> ∫p dV gives the work only for a quasi-static process; in free expansion ∫p dV ≠ 0 but the actual work is zero."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas expands quasi-statically from 0.1 m³ to 0.3 m³ following the law p = c/V², the initial pressure being 600 kPa. The work done by the gas (in kJ) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "40",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> W = ∫p dV along the given path.",
+    "c = p₁V₁² = 600 × 0.1² = 6 kPa·m⁶",
+    "W = ∫ c/V² dV = c (1/V₁ − 1/V₂) = 6 × (10 − 3.333) = <b>40 kJ</b>",
+    "<b>Exam tip:</b> Do not use the polytropic formula blindly; here n = 2, and (p₁V₁ − p₂V₂)/(n − 1) = (60 − 20)/1 = 40 kJ gives the same result as a check."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas is held in a vertical cylinder of cross-section 0.01 m² by a frictionless piston of mass 50 kg, as shown; the atmosphere above is at 100 kPa. The gas is heated slowly and its volume increases by 0.002 m³. Take g = 9.81 m/s². The work done by the gas (in J, round off to one decimal place) is ______",
+   "fig": "d35p_q5.png",
+   "opts": null,
+   "ans": "298.1 (accept 296.6 to 299.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A free piston keeps the gas pressure constant at p = p<sub>atm</sub> + mg/A, so W = pΔV.",
+    "p = 100 + (50 × 9.81/0.01)/1000 = 100 + 49.05 = 149.05 kPa",
+    "W = 149.05 × 0.002 kJ = 0.2981 kJ = <b>298.1 J</b>",
+    "Of this, 200 J pushes back the atmosphere and 98.1 J lifts the piston (mgΔh = 50 × 9.81 × 0.2).",
+    "<b>Exam tip:</b> Forgetting p<sub>atm</sub> (using only mg/A) is the most common mistake."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Wet steam at 1 MPa has a specific enthalpy of 2000 kJ/kg. At 1 MPa, h<sub>f</sub> = 762.8 kJ/kg and h<sub>fg</sub> = 2015.3 kJ/kg. Its dryness fraction is about",
+   "fig": null,
+   "opts": [
+    "0.992",
+    "0.381",
+    "0.614",
+    "0.719"
+   ],
+   "ans": "(C) 0.614",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a wet mixture h = h<sub>f</sub> + x h<sub>fg</sub>.",
+    "x = (2000 − 762.8)/2015.3 = 1237.2/2015.3 = <b>0.614</b>",
+    "<b>Exam tip:</b> 0.992 comes from 2000/2015.3, i.e. forgetting h<sub>f</sub>. Remember h<sub>fg</sub> (not h<sub>g</sub>) multiplies x."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Wet steam at 200 kPa has a dryness fraction of 0.85. At 200 kPa, v<sub>f</sub> = 0.001061 m³/kg and v<sub>g</sub> = 0.8857 m³/kg. Its specific volume (in m³/kg, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.753 (accept 0.749 to 0.757)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> v = v<sub>f</sub> + x(v<sub>g</sub> − v<sub>f</sub>) ≈ x v<sub>g</sub> at low pressure.",
+    "v = 0.001061 + 0.85 × (0.8857 − 0.001061) = <b>0.753 m³/kg</b>",
+    "Approximation x v<sub>g</sub> = 0.7528, almost the same because v<sub>f</sub> ≪ v<sub>g</sub>.",
+    "<b>Exam tip:</b> The approximation fails near the critical point, where v<sub>f</sub> and v<sub>g</sub> are comparable."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The T–v diagram of water shows the saturation dome with critical point C and one constant-pressure line through the points O, P, Q, R and S. Which statement is correct?",
+   "fig": "d35p_q8.png",
+   "opts": [
+    "O is compressed liquid, Q is a wet mixture, S is superheated vapour",
+    "O is a wet mixture, R is saturated liquid, S is compressed liquid",
+    "P is saturated vapour and R is saturated liquid",
+    "Q is superheated vapour because its temperature equals that at R"
+   ],
+   "ans": "(A) O is compressed liquid, Q is a wet mixture, S is superheated vapour",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Left of the saturated-liquid line: compressed (subcooled) liquid; under the dome: liquid–vapour mixture; right of the saturated-vapour line: superheated vapour.",
+    "O lies left of the dome (compressed liquid); P is saturated liquid; Q is a wet mixture; R is saturated vapour; S is superheated.",
+    "Along P–Q–R both T and p stay constant (phase change), so the isobar is horizontal inside the dome.",
+    "<b>Exam tip:</b> Inside the dome p and T are not independent; you need x (or v, h, s) to fix the state."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When ice is heated slowly at a constant pressure BELOW the triple-point pressure, it",
+   "fig": null,
+   "opts": [
+    "melts first and then evaporates",
+    "melts and the water then freezes again",
+    "remains solid at all temperatures",
+    "sublimes directly into vapour"
+   ],
+   "ans": "(D) sublimes directly into vapour",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> On the p–T phase diagram the liquid phase exists only above the triple-point pressure (0.6117 kPa for water).",
+    "Below this pressure, the constant-pressure line crosses only the sublimation curve: solid → vapour directly.",
+    "<b>Exam tip:</b> Water's fusion line slopes backwards (ice is less dense than water), so raising the pressure lowers the melting point; CO₂ sublimes at 1 atm because its triple point is at 5.1 atm."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "0.5 kg of an ideal gas occupies 0.2 m³ at 300 kPa and 87 °C. Taking the universal gas constant as 8.314 kJ/kmol·K, the molar mass of the gas (in kg/kmol, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "24.94 (accept 24.8 to 25.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> pV = mRT gives R; then M = R̄/R.",
+    "R = pV/(mT) = 300 × 0.2/(0.5 × 360) = 0.3333 kJ/kg·K (T = 87 + 273 = 360 K)",
+    "M = 8.314/0.3333 = <b>24.94 kg/kmol</b>",
+    "<b>Exam tip:</b> Using 87 instead of 360 K gives an absurd molar mass of about 6.0; always convert to kelvin."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the van der Waals equation (p + a/v²)(v − b) = RT, the constants a and b account respectively for",
+   "fig": null,
+   "opts": [
+    "the finite volume of the molecules and intermolecular attraction",
+    "intermolecular attraction and the finite volume of the molecules",
+    "molecular collisions with the wall and molecular vibration",
+    "the compressibility of the gas and its specific heat"
+   ],
+   "ans": "(B) intermolecular attraction and the finite volume of the molecules",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> a/v² is a pressure correction: attraction between molecules reduces the pressure they exert on the wall, so it is added to p.",
+    "b is the co-volume: the space taken up by the molecules themselves is subtracted from v.",
+    "<b>Exam tip:</b> From the critical-point conditions (∂p/∂v)<sub>T</sub> = 0 and (∂²p/∂v²)<sub>T</sub> = 0: a = 27R²T<sub>c</sub>²/(64p<sub>c</sub>), b = RT<sub>c</sub>/(8p<sub>c</sub>)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Nitrogen (R = 0.2968 kJ/kg·K) at 10 MPa and 150 K has a measured specific volume of 0.00375 m³/kg. Its compressibility factor (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.842 (accept 0.838 to 0.846)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Z = pv/(RT) compares the real volume with the ideal-gas volume.",
+    "Z = 10000 × 0.00375/(0.2968 × 150) = 37.5/44.52 = <b>0.842</b>",
+    "Z < 1: attractive forces dominate at this state (close to the critical point of N₂: 126 K, 3.4 MPa).",
+    "<b>Exam tip:</b> With p in kPa, R in kJ/kg·K and v in m³/kg, the units cancel directly."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An ideal gas in a sealed rigid container at 200 kPa is heated from 27 °C to 127 °C. Its final pressure is",
+   "fig": null,
+   "opts": [
+    "940.7 kPa",
+    "150.0 kPa",
+    "254.0 kPa",
+    "266.7 kPa"
+   ],
+   "ans": "(D) 266.7 kPa",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Rigid and sealed: m and V constant, so p/T = constant (absolute T).",
+    "p₂ = 200 × (127 + 273)/(27 + 273) = 200 × 400/300 = <b>266.7 kPa</b>",
+    "<b>Exam tip:</b> 940.7 kPa comes from using Celsius temperatures (200 × 127/27). Absolute pressure and absolute temperature, always."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas expands quasi-statically and polytropically (pV<sup>n</sup> = constant) from 1000 kPa, 0.1 m³ to 200 kPa, 0.4 m³. The work done by the gas (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "124.3 (accept 123.0 to 125.5)",
+   "sfig": "d35p_q14.png",
+   "solution": [
+    "<b>Concept:</b> Find n from the end states, then W = (p₁V₁ − p₂V₂)/(n − 1).",
+    "n = ln(p₁/p₂)/ln(V₂/V₁) = ln 5/ln 4 = 1.161",
+    "W = (1000 × 0.1 − 200 × 0.4)/(1.161 − 1) = 20/0.161 = <b>124.3 kJ</b> (the shaded area in the figure)",
+    "<b>Exam tip:</b> The result is very sensitive to n; keep at least three decimals of n (rounding n to 1.16 gives 125.0 kJ)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rigid, insulated tank is divided into two equal parts by a partition. One part contains an ideal gas; the other is evacuated. The partition is removed. For the gas, the work done W and the final temperature T₂ (initial T₁) are",
+   "fig": null,
+   "opts": [
+    "W > 0, T₂ < T₁",
+    "W = 0, T₂ < T₁",
+    "W = 0, T₂ = T₁",
+    "W = p₁V₁ ln 2, T₂ = T₁"
+   ],
+   "ans": "(C) W = 0, T₂ = T₁",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In free expansion against vacuum there is no resistance, so no work is done; the tank is insulated, so Q = 0.",
+    "First law: ΔU = Q − W = 0. For an ideal gas U depends only on T, so T₂ = T₁ (the pressure halves).",
+    "<b>Exam tip:</b> p₁V₁ ln 2 is the work of a reversible isothermal expansion between the same states; free expansion is irreversible and does no work."
+   ]
+  }
+ ]
+}

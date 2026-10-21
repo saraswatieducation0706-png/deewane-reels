@@ -1,0 +1,268 @@
+{
+ "day": 37,
+ "subject": "Thermodynamics",
+ "topic": "First Law",
+ "days_to_gate": 68,
+ "summary": "the first law for closed systems (cycles, processes, sign convention, piston–cylinder devices) and for control volumes: the steady flow energy equation for turbines, compressors, pumps, nozzles, diffusers, throttling valves, heat exchangers and mixing chambers, and the filling of tanks",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Thermodynamics, Second Law & Entropy",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Which of the following is <b>NOT</b> a thermodynamic property of a system?",
+   "fig": null,
+   "opts": [
+    "Internal energy U",
+    "Enthalpy H = U + pV",
+    "The integral ∫p dV between two states",
+    "Specific volume v"
+   ],
+   "ans": "(C) The integral ∫p dV between two states",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A property depends only on the state; its change between two states is independent of the path.",
+    "U, H and v are point functions. ∫p dV is the boundary work, which is the area under the process curve on the p–V diagram, so it changes with the path.",
+    "δQ and δW are inexact differentials; dU = δQ − δW is exact.",
+    "<b>Exam tip:</b> If a quantity's cyclic integral is zero for every cycle, it is a property (that is how the first law proves U is a property)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A closed system contains 2 kg of gas. During a compression process 120 kJ of work is done on the gas and 50 kJ of heat is rejected. The change in specific internal energy (in kJ/kg) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "35",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> First law for a closed system: Q = ΔU + W, with W positive when done by the system and Q positive when supplied.",
+    "Q = −50 kJ, W = −120 kJ",
+    "ΔU = Q − W = −50 − (−120) = +70 kJ",
+    "Δu = 70/2 = <b>35 kJ/kg</b>",
+    "<b>Exam tip:</b> Write the signs first and then substitute; most errors in first-law questions are sign errors."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (R = 0.287, c<sub>v</sub> = 0.718 kJ/kg·K) at 300 kPa and 300 K occupies 0.02 m³ under a frictionless piston, as shown. Heat is added until the piston just reaches the stops (V = 0.05 m³), and then further heat is added until the pressure is 600 kPa. The total heat supplied (in kJ, round off to one decimal place) is ______",
+   "fig": "d37p_q3.png",
+   "opts": null,
+   "ans": "69.0 (accept 68.5 to 69.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Process 1–2 at constant pressure (piston free) gives boundary work; process 2–3 at constant volume (piston on stops) gives no work. Then Q = ΔU + W.",
+    "m = pV/RT = 300 × 0.02/(0.287 × 300) = 0.06969 kg",
+    "W = p(V₂ − V₁) = 300 × (0.05 − 0.02) = 9 kJ (no work in 2–3)",
+    "T₃ = p₃V₃/(mR) = 600 × 0.05/(0.06969 × 0.287) = 1500 K",
+    "ΔU = m c<sub>v</sub>(T₃ − T₁) = 0.06969 × 0.718 × 1200 = 60.04 kJ",
+    "Q = 60.04 + 9 = <b>69.0 kJ</b>",
+    "<b>Exam tip:</b> Draw the path on the p–V diagram: a horizontal line then a vertical line. Work is only the area under the horizontal part."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An ideal gas is compressed slowly and isothermally in a closed system. Which statement is correct?",
+   "fig": null,
+   "opts": [
+    "ΔU > 0 because work is done on the gas",
+    "ΔU = 0, and the heat rejected equals the work done on the gas",
+    "Q = 0 because the temperature does not change",
+    "ΔU = W because there is no heat transfer"
+   ],
+   "ans": "(B) ΔU = 0, and the heat rejected equals the work done on the gas",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an ideal gas, U depends only on T.",
+    "Isothermal → ΔU = 0, so Q = W. In compression W is negative, so Q is equally negative: all the work done on the gas leaves as heat.",
+    "Option (C) confuses temperature change with heat transfer: an isothermal process is not adiabatic.",
+    "<b>Exam tip:</b> \"No temperature change\" does not mean \"no heat\". Heat and temperature change are different things."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "1 kg of air (R = 0.287 kJ/kg·K) expands reversibly and isothermally at 400 K from 500 kPa to 100 kPa. The heat supplied (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "184.8 (accept 183.5 to 186.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Isothermal ideal gas: ΔU = 0, so Q = W = mRT ln(p₁/p₂).",
+    "Q = 1 × 0.287 × 400 × ln(500/100) = 114.8 × 1.6094",
+    "Q = <b>184.8 kJ</b>",
+    "<b>Exam tip:</b> For isothermal work use ln(V₂/V₁) = ln(p₁/p₂); note the pressure ratio is inverted."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Steam flows steadily through the turbine shown at 5 kg/s. The inlet is 5 m above the exit. Taking g = 9.81 m/s², the power output (in kW, round off to the nearest integer) is ______",
+   "fig": "d37p_q6.png",
+   "opts": null,
+   "ans": "3918 (accept 3900 to 3936)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady flow energy equation: Ẇ = ṁ[(h₁ − h₂) + (V₁² − V₂²)/2 + g(z₁ − z₂)] + Q̇, with Q̇ = −50 kW (heat lost).",
+    "Δh = 3300 − 2500 = 800 kJ/kg",
+    "ΔKE = (40² − 120²)/2000 = −6.4 kJ/kg; ΔPE = 9.81 × 5/1000 = 0.049 kJ/kg",
+    "Ẇ = 5 × (800 − 6.4 + 0.049) − 50 = 3968.2 − 50 = <b>3918 kW</b>",
+    "<b>Exam tip:</b> PE terms are usually tiny (1 kJ/kg ≈ 102 m of height). Always divide V² and gz by 1000 to get kJ/kg."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Steam at negligible velocity enters an adiabatic nozzle at 2 kg/s. Its enthalpy falls by 300 kJ/kg, and the specific volume at exit is 0.8 m³/kg. The exit area of the nozzle is about",
+   "fig": null,
+   "opts": [
+    "14.6 cm²",
+    "41.3 cm²",
+    "29.2 cm²",
+    "20.7 cm²"
+   ],
+   "ans": "(D) 20.7 cm²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Nozzle energy balance gives the exit velocity; continuity ṁ = AV/v gives the area.",
+    "V₂ = √(2 × 300 000) = 774.6 m/s",
+    "A₂ = ṁv₂/V₂ = 2 × 0.8/774.6 = 2.066 × 10⁻³ m² = <b>20.7 cm²</b>",
+    "(C) comes from forgetting the 2 in √(2Δh); (B) doubles the mass flow.",
+    "<b>Exam tip:</b> A quick check: V = 44.72√(Δh in kJ/kg) m/s for negligible inlet velocity."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (c<sub>p</sub> = 1.005 kJ/kg·K) enters a steady-flow compressor at 1.2 kg/s and 290 K. The power input is 180 kW and 12 kW of heat is lost from the casing. Neglecting kinetic and potential energy changes, the exit temperature (in K, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "429.3 (accept 427.5 to 431.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> SFEE for a compressor: ṁ c<sub>p</sub>(T₂ − T₁) = Ẇ<sub>in</sub> − Q̇<sub>loss</sub>.",
+    "ṁ c<sub>p</sub>ΔT = 180 − 12 = 168 kW",
+    "ΔT = 168/(1.2 × 1.005) = 139.3 K",
+    "T₂ = 290 + 139.3 = <b>429.3 K</b>",
+    "<b>Exam tip:</b> Heat lost from a compressor reduces the exit enthalpy; the same power without heat loss would give 439.3 K."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a condenser, 0.5 kg/s of steam enters with h = 2400 kJ/kg and leaves as condensate with h = 190 kJ/kg. Cooling water (c<sub>p</sub> = 4.18 kJ/kg·K) rises in temperature by 10 °C. The required cooling-water flow rate is about",
+   "fig": null,
+   "opts": [
+    "26.4 kg/s",
+    "52.9 kg/s",
+    "28.7 kg/s",
+    "2.6 kg/s"
+   ],
+   "ans": "(A) 26.4 kg/s",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a heat exchanger with no work and no heat loss, the enthalpy given up by one stream equals the enthalpy gained by the other.",
+    "Heat rejected by steam = 0.5 × (2400 − 190) = 1105 kW",
+    "ṁ<sub>w</sub> = 1105/(4.18 × 10) = <b>26.4 kg/s</b>",
+    "<b>Exam tip:</b> Condensers need roughly 50 kg of water per kg of steam: the steam's latent heat is very large."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A rigid insulated tank of 0.5 m³ contains air at 100 kPa and 300 K. It is connected through a valve to a supply line carrying air at 600 kPa and 300 K, as shown. The valve is opened and closed when the tank pressure reaches 600 kPa. Taking c<sub>p</sub> = 1.005 and c<sub>v</sub> = 0.718 kJ/kg·K (ideal gas), the final temperature in the tank (in K, round off to one decimal place) is ______",
+   "fig": "d37p_q10.png",
+   "opts": null,
+   "ans": "393.7 (accept 391.7 to 395.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Uniform-state filling: m₂u₂ − m₁u₁ = (m₂ − m₁)h<sub>line</sub> (no heat, no work).",
+    "With m = pV/RT: c<sub>v</sub>(p₂ − p₁)V/R = c<sub>p</sub>T<sub>L</sub>(p₂/T₂ − p₁/T₁)V/R",
+    "0.718 × 500 = 1.005 × 300 × (600/T₂ − 100/300) → 600/T₂ = 1.1907 + 0.3333 = 1.5240",
+    "T₂ = 600/1.5240 = <b>393.7 K</b> (m₁ = 0.581 kg, m₂ = 2.655 kg)",
+    "<b>Exam tip:</b> An evacuated tank would reach γT<sub>line</sub> = 420 K; the gas already present lowers the final temperature."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A closed system executes the cycle 1–2–3–1 shown on the p–V diagram. The net heat transfer during the cycle is",
+   "fig": "d37p_q11.png",
+   "opts": [
+    "60 kJ rejected",
+    "60 kJ supplied",
+    "120 kJ supplied",
+    "30 kJ rejected"
+   ],
+   "ans": "(B) 60 kJ supplied",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a cycle ∮δQ = ∮δW, and the net work is the area enclosed on the p–V diagram.",
+    "Area of the triangle = ½ × (0.6 − 0.2) × (400 − 100) = 60 kJ",
+    "The cycle runs clockwise (1→2 up, 2→3 down-right, 3→1 left), so the net work is done by the system and net heat is <b>60 kJ supplied</b>.",
+    "<b>Exam tip:</b> Clockwise on p–V = work output (engine); anticlockwise = work input (refrigerator/heat pump)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement follows from the first law of thermodynamics?",
+   "fig": null,
+   "opts": [
+    "No engine working in a cycle can convert all the heat supplied into work",
+    "Heat cannot flow by itself from a colder body to a hotter body",
+    "A perpetual motion machine of the first kind (producing work continuously without any energy input) is impossible",
+    "Two bodies in thermal equilibrium with a third are in thermal equilibrium with each other"
+   ],
+   "ans": "(C) A perpetual motion machine of the first kind (producing work continuously without any energy input) is impossible",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The first law is the conservation of energy: in a cycle, net work output cannot exceed net heat input.",
+    "(A) is the Kelvin–Planck statement and (B) the Clausius statement of the second law; (D) is the zeroth law.",
+    "So a PMM1 is impossible: <b>(C)</b>.",
+    "<b>Exam tip:</b> PMM1 violates the first law; PMM2 (100 % heat-to-work in a cycle) violates the second law."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "2 kg of wet steam (dryness 0.4) at 200 kPa is heated at constant pressure in a piston–cylinder device until it reaches 200 °C. At 200 kPa: h<sub>f</sub> = 504.7 kJ/kg, h<sub>fg</sub> = 2201.6 kJ/kg; at 200 kPa, 200 °C: h = 2870.5 kJ/kg. The heat supplied (in kJ, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2970 (accept 2955 to 2985)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Quasi-static constant-pressure process in a closed system: Q = ΔH = m(h₂ − h₁).",
+    "h₁ = h<sub>f</sub> + x h<sub>fg</sub> = 504.7 + 0.4 × 2201.6 = 1385.3 kJ/kg",
+    "Q = 2 × (2870.5 − 1385.3) = <b>2970 kJ</b>",
+    "<b>Exam tip:</b> Using h instead of u at constant pressure accounts for the boundary work automatically."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a reversible steady-flow pump, water (v = 0.001 m³/kg, incompressible) is raised from 100 kPa to 5 MPa. Neglecting kinetic and potential energy changes, the work input per kg is",
+   "fig": null,
+   "opts": [
+    "5.0 kJ/kg",
+    "0.49 kJ/kg",
+    "49 kJ/kg",
+    "4.9 kJ/kg"
+   ],
+   "ans": "(D) 4.9 kJ/kg",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a reversible steady-flow process with negligible ΔKE and ΔPE, w = −∫v dp (work done by the fluid).",
+    "Work input = v(p₂ − p₁) = 0.001 × (5000 − 100) = <b>4.9 kJ/kg</b>",
+    "Contrast with closed-system work ∫p dV, which is zero for an incompressible liquid.",
+    "<b>Exam tip:</b> Pump work is tiny compared with turbine work because v of liquid is about 1000 times smaller than v of steam."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two air streams mix in a steady-flow chamber: 2 kg/s at 400 K and 3 kg/s at 300 K. The chamber loses 20 kW of heat. With c<sub>p</sub> = 1.005 kJ/kg·K and negligible KE and PE changes, the exit temperature (in K, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "336.0 (accept 334.5 to 337.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Mixing chamber SFEE: Σṁh<sub>in</sub> − Q̇<sub>loss</sub> = Σṁh<sub>out</sub>.",
+    "Without heat loss: T = (2 × 400 + 3 × 300)/5 = 340 K",
+    "Heat loss lowers it by 20/(5 × 1.005) = 3.98 K",
+    "T<sub>3</sub> = 340 − 3.98 = <b>336.0 K</b>",
+    "<b>Exam tip:</b> For the same c<sub>p</sub>, adiabatic mixing gives the mass-weighted mean temperature."
+   ]
+  }
+ ]
+}
