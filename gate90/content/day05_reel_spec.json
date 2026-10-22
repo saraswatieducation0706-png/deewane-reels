@@ -1,0 +1,86 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/4af82372-1d12-583f-ac57-f705fc955acd/scratchpad/d5/Day5_reel.mp4",
+ "footer": "Day 5/90  •  106 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 5/90",
+    "SOM BEGINS"
+   ],
+   "sub": "Draw the circle, find the stress",
+   "voice": "Day five of the GATE M. E. ninety days challenge! One hundred and six days to GATE. Today we start Strength of Materials, a big scoring subject."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Strength of Materials",
+    "Stress, Strain & Mohr's Circle"
+   ],
+   "voice": "New subject: Strength of Materials. Today's topic: stress, strain and Mohr's circle."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Stress, strain & elastic constants",
+    "Poisson's ratio",
+    "Mohr's circle: stress & strain",
+    "Thermal stresses"
+   ],
+   "voice": "Cover stress and strain with the elastic constants, Poisson's ratio, Mohr's circle for plane stress and plane strain, and thermal stresses."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Centre = avg normal stress",
+    "Radius = max in-plane shear",
+    "E = 2G (1 + Poisson ratio)"
+   ],
+   "voice": "Quick tip. The centre of Mohr's circle is the average normal stress. Its radius is the maximum in-plane shear stress. And E equals two G times one plus nu."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "The free practice set with step by step solutions is on Telegram now. Tonight's test runs seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 4 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Atharva Vyas",
+     "marks": "10.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Akshay W",
+     "marks": "9.66/30"
+    },
+    {
+     "rank": 3,
+     "name": "Bhikya Naik",
+     "marks": "7.34/30"
+    }
+   ],
+   "voice": "Day four toppers! Rank one, Atharva Vyas. Rank two, Akshay W. Rank three, Bhikya Naik. A tough test, and you led the way. Congratulations!"
+  }
+ ]
+}
