@@ -13,7 +13,10 @@
   "TT10",
   "TT11",
   "TT13",
-  "TT14"
+  "TT14",
+  "TT15",
+  "TT16",
+  "TT17"
  ],
  "drive_saved": [
   "TT01 docx",
@@ -43,13 +46,20 @@
   "TT13 docx",
   "TT13.json",
   "TT14 docx",
-  "TT14.json"
+  "TT14.json",
+  "TT15 docx",
+  "TT15.json",
+  "TT16 docx",
+  "TT16.json",
+  "TT17 docx",
+  "TT17.json"
  ],
  "notes": [
   "TT12 made in chat on 19 Oct (quality reference, in vault/TT12/).",
   "TT01-TT04 made by the 20 Oct morning run; Word files + sources put in the vault from chat on 20 Oct (names: TT03 title uses 'and' instead of '&').",
   "TT05-TT07 made by the 20 Oct evening run (batch 2); Word + JSON copied to Drive via Make and confirmed.",
   "TT08-TT10 made by the 21 Oct morning run (batch 3); Word + JSON copied to Drive via Make and confirmed.",
-  "TT11, TT13, TT14 made by the 22 Oct morning run (batch 4); Word + JSON copied to Drive via Make and confirmed."
+  "TT11, TT13, TT14 made by the 22 Oct morning run (batch 4); Word + JSON copied to Drive via Make and confirmed.",
+  "TT15-TT17 made by the 22 Oct evening run (batch 5); Word + JSON copied to Drive via Make and confirmed."
  ]
 }
