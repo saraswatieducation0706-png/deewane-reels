@@ -1,0 +1,19 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/d44a6c55-07e5-59e7-ab23-92c8aad6bad6/scratchpad/d6/Day6_reel.mp4",
+ "footer": "Day 6/90  •  105 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 6/90", "WEEK 1 TEST"], "sub": "Five topics, one test, one week done",
+   "voice": "Day six of the GATE M. E. ninety days challenge! One hundred and five days to GATE. Week one ends today, so let's lock in everything we learned."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Weekly Revision", "Week 1: all five topics"],
+   "voice": "Today is revision day. No new topic. We go back over all five topics of week one."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Statics, trusses & friction", "Kinematics, impulse & energy", "Linear algebra", "Stress, strain & Mohr"],
+   "voice": "Revise statics, trusses and friction, kinematics with impulse and energy, linear algebra, and stress, strain and Mohr's circle. Redo the questions you got wrong."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["Angle of repose = friction angle", "tan(phi) = mu", "Block slides if tan(theta) > mu"],
+   "voice": "Quick tip. The angle of repose equals the angle of friction, so tan phi equals mu. A block on an incline starts to slide once tan theta is greater than mu."},
+  {"kind": "dates", "title": "Today's Plan", "lines": [["Practice PDF", "Telegram, now"], ["Weekly test (₹1)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "The free week one practice set with full solutions is on Telegram now. Tonight's weekly test has twenty questions, open seven to nine P. M. in our one rupee challenge course."},
+  {"kind": "toppers", "title": "Day 5 Toppers",
+   "entries": [{"rank": 1, "name": "Atharva Vyas", "marks": "9.33/30"}, {"rank": 2, "name": "Akshay W", "marks": "8.66/30"}, {"rank": 3, "name": "1RIAEM", "marks": "5.34/30"}],
+   "voice": "Day five toppers! Rank one, Atharva Vyas, again at the top. Rank two, Akshay W. Rank three, one R I A E M. Mohr's circle was tough, and you stayed ahead. Congratulations!"}
+ ]
+}
