@@ -77,6 +77,7 @@ def main(spec_path):
 
     # ---- visuals
     BW, BH = int(W * 1.05), int(H * 1.05)
+    cb.CANDLE_WIDE = (0.53, 0.075, 0.17)
     bases = {}
     for ch in chap:
         k = (ch["scene"], ch["dim"])
@@ -120,6 +121,8 @@ def main(spec_path):
         fr = frame_for(ch, tt)
         if ci and tt - ch["t0"] < 2.0 and (chap[ci - 1]["scene"], chap[ci - 1]["dim"]) != (ch["scene"], ch["dim"]):
             fr = Image.blend(frame_for(chap[ci - 1], tt), fr, (tt - ch["t0"]) / 2.0)
+        if ch["scene"] == "candle":
+            cb.flame(fr, tt, W, H)
         stars.draw(fr, tt)
         if ch["rain"]:
             rain.draw(fr, tt)

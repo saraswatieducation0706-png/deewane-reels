@@ -362,8 +362,8 @@ def paint(scene, W, H, seed=0, warm=0.0):
             bd.ellipse([x - r, y - r, x + r, y + r], fill=(255, 190, 110, int(rng.uniform(18, 45))))
         img = Image.alpha_composite(img.convert("RGBA"), bok.filter(ImageFilter.GaussianBlur(W * 0.006))).convert("RGB")
         d = ImageDraw.Draw(img)
-        cw, ch = W * 0.11, H * 0.16 if H > W else H * 0.24
-        cx, cy = W * 0.5, H * (0.78 if H > W else 0.72)
+        cw, ch = W * (0.11 if H > W else CANDLE_WIDE[1]), H * 0.16 if H > W else H * CANDLE_WIDE[2]
+        cx, cy = W * 0.5, H * (0.78 if H > W else CANDLE_WIDE[0])
         d.rounded_rectangle([cx - cw / 2, cy, cx + cw / 2, cy + ch], radius=int(cw * 0.08), fill=(236, 222, 200))
         d.rectangle([cx - cw / 2, cy, cx - cw / 2 + cw * 0.18, cy + ch], fill=(214, 198, 176))
         d.line([(cx, cy), (cx, cy - cw * 0.15)], fill=(40, 30, 24), width=max(2, int(cw * 0.03)))
@@ -432,9 +432,14 @@ class Rain:
             dr.rectangle([0, 0, self.W, self.H], fill=(220, 230, 255, 40))
 
 
+# 16:9 candle (y, width, height as fractions of the frame). render_long raises and shrinks it so
+# subtitles at 0.80H never cover it.
+CANDLE_WIDE = (0.72, 0.11, 0.24)
+
+
 def flame(img, t, W, H):
-    cx, cy = W * 0.5, H * (0.78 if H > W else 0.72)
-    cw = W * 0.11
+    cx, cy = W * 0.5, H * (0.78 if H > W else CANDLE_WIDE[0])
+    cw = W * (0.11 if H > W else CANDLE_WIDE[1])
     f = 1 + 0.08 * math.sin(t * 9.1) + 0.05 * math.sin(t * 13.7)
     g = Image.new("RGBA", img.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(g)

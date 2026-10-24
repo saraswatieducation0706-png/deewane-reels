@@ -1,11 +1,135 @@
 [
- {"week": "2026-10-19", "id": "s1", "theme": "anxiety", "ref": "Philippians 4:6-7", "template": "A"},
- {"week": "2026-10-19", "id": "s2", "theme": "exhaustion/rest", "ref": "Matthew 11:28", "template": "B"},
- {"week": "2026-10-19", "id": "s3", "theme": "fear", "ref": "Isaiah 41:10", "template": "C"},
- {"week": "2026-10-19", "id": "s4", "theme": "fresh start/mercy", "ref": "Lamentations 3:22-23", "template": "A"},
- {"week": "2026-10-19", "id": "s5", "theme": "grief/broken heart", "ref": "Psalm 34:18", "template": "D"},
- {"week": "2026-10-19", "id": "s6", "theme": "guidance/decisions", "ref": "Proverbs 3:5-6", "template": "B"},
- {"week": "2026-10-19", "id": "s7", "theme": "prayer for the week/courage", "ref": "Joshua 1:9", "template": "E"},
- {"week": "2026-10-19", "id": "long1", "theme": "sleep prayer", "ref": "Psalm 23; Psalm 4:8; 1 Peter 5:7; John 14:27", "template": "sleep"},
- {"week": "2026-10-19", "id": "long2", "theme": "Bible story: Jesus calms the storm", "ref": "Mark 4:35-41", "template": "story"}
+ {
+  "week": "2026-10-19",
+  "id": "s1",
+  "theme": "anxiety",
+  "ref": "Philippians 4:6-7",
+  "template": "A"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s2",
+  "theme": "exhaustion/rest",
+  "ref": "Matthew 11:28",
+  "template": "B"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s3",
+  "theme": "fear",
+  "ref": "Isaiah 41:10",
+  "template": "C"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s4",
+  "theme": "fresh start/mercy",
+  "ref": "Lamentations 3:22-23",
+  "template": "A"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s5",
+  "theme": "grief/broken heart",
+  "ref": "Psalm 34:18",
+  "template": "D"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s6",
+  "theme": "guidance/decisions",
+  "ref": "Proverbs 3:5-6",
+  "template": "B"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "s7",
+  "theme": "prayer for the week/courage",
+  "ref": "Joshua 1:9",
+  "template": "E"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "long1",
+  "theme": "sleep prayer",
+  "ref": "Psalm 23; Psalm 4:8; 1 Peter 5:7; John 14:27",
+  "template": "sleep"
+ },
+ {
+  "week": "2026-10-19",
+  "id": "long2",
+  "theme": "Bible story: Jesus calms the storm",
+  "ref": "Mark 4:35-41",
+  "template": "story"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s1",
+  "theme": "sleeplessness/night worry",
+  "ref": "Psalm 121:4",
+  "template": "D"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s2",
+  "theme": "let down/abandoned",
+  "ref": "Psalm 27:10",
+  "template": "B"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s3",
+  "theme": "comparison/self-worth",
+  "ref": "Psalm 139:14",
+  "template": "C"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s4",
+  "theme": "waiting on God",
+  "ref": "Psalm 130:5",
+  "template": "A"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s5",
+  "theme": "bedtime worry",
+  "ref": "Proverbs 3:24",
+  "template": "D"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s6",
+  "theme": "gratitude in hard times",
+  "ref": "1 Thessalonians 5:18",
+  "template": "A"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "s7",
+  "theme": "family blessing",
+  "ref": "Numbers 6:24-26",
+  "template": "E"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "long1",
+  "theme": "sleep prayer: Psalm 121",
+  "ref": "Psalm 127:2; Psalm 121:1-8; Matthew 6:34; Isaiah 26:3; Psalm 3:5",
+  "template": "sleep"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "long2",
+  "theme": "scripture meditation: be still",
+  "ref": "Psalm 46:1-5,10-11; Exodus 14:14",
+  "template": "meditation"
+ },
+ {
+  "week": "2026-10-26",
+  "id": "long3",
+  "theme": "Bible story: Elijah under the juniper tree",
+  "ref": "1 Kings 19:3-13,15,18",
+  "template": "story"
+ }
 ]
