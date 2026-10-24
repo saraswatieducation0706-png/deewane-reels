@@ -1,0 +1,19 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/66afe009-f643-5c68-969d-74ac3962ab6a/scratchpad/d7/Day7_reel.mp4",
+ "footer": "Day 7/90  •  103 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 7/90", "SFD & BMD"], "sub": "Week 2 begins: master beam diagrams",
+   "voice": "Day seven of the GATE M. E. ninety days challenge! Week two begins, and one hundred and three days are left. Today we draw beams with confidence."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Strength of Materials", "Shear Force & Bending Moment"],
+   "voice": "Today's subject is Strength of Materials. Our topic: shear force and bending moment diagrams."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Cantilevers", "Simply supported beams", "Overhangs & couples", "UDL & varying loads"],
+   "voice": "Cover cantilevers, simply supported and overhanging beams, applied couples, and beams carrying uniform and varying loads."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["dM/dx = V", "Max BM where SF = 0", "SS beam + UDL: wL²/8"],
+   "voice": "Quick tip. The slope of the bending moment diagram equals the shear force, so the maximum bending moment occurs where shear force is zero. For a simply supported beam with U. D. L., it is w L squared by eight."},
+  {"kind": "dates", "title": "Today's Plan", "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "Your free practice set with step by step solutions is on Telegram now. Today's test runs seven to nine P. M. in our one rupee challenge course. Top three in the next reel."},
+  {"kind": "toppers", "title": "Day 6 Toppers",
+   "entries": [{"rank": 1, "name": "Atharva Vyas", "marks": "19.67/30"}, {"rank": 2, "name": "Sweta Rani Sahoo", "marks": "18.67/30"}, {"rank": 3, "name": "Akshay W", "marks": "14/30"}],
+   "voice": "Week one test toppers! Rank one, Atharva Vyas, top once again. Rank two, Sweta Rani Sahoo. Rank three, Akshay W. Brilliant scores on the weekly test. Congratulations!"}
+ ]
+}
