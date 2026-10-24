@@ -1,0 +1,265 @@
+{
+ "day": 39,
+ "subject": "Engineering Mathematics",
+ "topic": "Differential Equations",
+ "days_to_gate": 66,
+ "summary": "first-order ODEs (separable, linear, exact, Bernoulli), higher-order linear ODEs with constant coefficients, complementary function and particular integral, the Euler–Cauchy equation, Laplace transforms and their use in initial-value problems, and the heat, wave and Laplace equations",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Thermodynamics, Availability & Relations",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The differential equation whose general solution is y = A cos 3x + B sin 3x (A, B arbitrary constants) is",
+   "fig": null,
+   "opts": [
+    "y″ − 9y = 0",
+    "y″ + 3y = 0",
+    "y″ + 9y = 0",
+    "y′ + 3y = 0"
+   ],
+   "ans": "(C) y″ + 9y = 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Two arbitrary constants → eliminate them by differentiating twice; the result is a 2nd-order ODE.",
+    "y′ = −3A sin 3x + 3B cos 3x, y″ = −9A cos 3x − 9B sin 3x = −9y",
+    "So <b>y″ + 9y = 0</b>.",
+    "<b>Exam tip:</b> Number of arbitrary constants = order of the ODE of the family."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "If dy/dx = xy and y(0) = 1, then y(2) (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.39 (accept 7.35 to 7.43)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Variables separable: dy/y = x dx.",
+    "ln y = x²/2 + C; y(0) = 1 gives C = 0, so y = e<sup>x²/2</sup>",
+    "y(2) = e² = <b>7.39</b>",
+    "<b>Exam tip:</b> Always apply the initial condition before substituting the final x."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The solution of x dy/dx + 2y = x² (x > 0) with y(1) = 1 is evaluated at x = 2. The value of y(2) (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.1875",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Write in standard linear form dy/dx + P(x)y = Q(x) before finding the integrating factor.",
+    "dy/dx + (2/x)y = x, so IF = e<sup>∫2/x dx</sup> = x²",
+    "d(x²y)/dx = x³ → x²y = x⁴/4 + C; y(1) = 1 gives C = 3/4",
+    "y = x²/4 + 3/(4x²), so y(2) = 1 + 3/16 = <b>1.1875</b>",
+    "<b>Exam tip:</b> Divide by the coefficient of dy/dx first; using P = 2 instead of 2/x is the classic slip."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The general solution of y″ + 6y′ + 9y = 0 is",
+   "fig": null,
+   "opts": [
+    "y = Ae<sup>−3x</sup> + Be<sup>3x</sup>",
+    "y = (A + Bx)e<sup>−3x</sup>",
+    "y = A cos 3x + B sin 3x",
+    "y = Ae<sup>−3x</sup>"
+   ],
+   "ans": "(B) y = (A + Bx)e<sup>−3x</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Auxiliary equation m² + 6m + 9 = 0 → (m + 3)² = 0, a repeated root m = −3.",
+    "For a repeated root the second solution is x e<sup>mx</sup>: <b>y = (A + Bx)e<sup>−3x</sup></b>.",
+    "In a spring–mass–damper this is the critically damped case (ζ = 1).",
+    "<b>Exam tip:</b> Repeated root → multiply by x; complex roots α ± iβ → e<sup>αx</sup>(A cos βx + B sin βx)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The solution of y″ − y = 0 with y(0) = 0 and y′(0) = 2, evaluated at x = 1 (round off to three decimal places), is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.350 (accept 2.338 to 2.362)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> m² − 1 = 0 → m = ±1, so y = Ae<sup>x</sup> + Be<sup>−x</sup>.",
+    "y(0) = A + B = 0 and y′(0) = A − B = 2 → A = 1, B = −1",
+    "y = e<sup>x</sup> − e<sup>−x</sup> = 2 sinh x",
+    "y(1) = e − 1/e = <b>2.350</b>",
+    "<b>Exam tip:</b> With y(0) = 0, the hyperbolic form (sinh) is quicker than solving for A and B."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A particular integral of y″ + 4y = sin 2x is",
+   "fig": null,
+   "opts": [
+    "−(x/4) cos 2x",
+    "(1/4) sin 2x",
+    "−(1/4) cos 2x",
+    "(x/4) sin 2x"
+   ],
+   "ans": "(A) −(x/4) cos 2x",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> sin 2x is already a solution of the homogeneous equation (roots ±2i) — this is resonance, so multiply the trial by x.",
+    "Using 1/(D² + a²) sin ax = −(x/2a) cos ax with a = 2:",
+    "y<sub>p</sub> = <b>−(x/4) cos 2x</b> (check: substitution gives sin 2x ✓)",
+    "<b>Exam tip:</b> Resonant forcing makes the amplitude grow linearly with time — the reason operating near natural frequency is dangerous."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "For the Euler–Cauchy equation x²y″ + xy′ − 4y = 0 with y(1) = 2 and y′(1) = 0, the value of y(2) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4.25",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Substitute y = x<sup>m</sup>: m(m − 1) + m − 4 = 0 → m² = 4 → m = ±2.",
+    "y = Ax² + Bx<sup>−2</sup>; y(1) = A + B = 2, y′(1) = 2A − 2B = 0 → A = B = 1",
+    "y(2) = 4 + 1/4 = <b>4.25</b>",
+    "<b>Exam tip:</b> For Euler–Cauchy the auxiliary equation is m(m − 1) + am + b = 0, not m² + am + b = 0."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Laplace transform of t sin t is",
+   "fig": null,
+   "opts": [
+    "1/(s² + 1)²",
+    "2/(s² + 1)²",
+    "(s² − 1)/(s² + 1)²",
+    "2s/(s² + 1)²"
+   ],
+   "ans": "(D) 2s/(s² + 1)²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Multiplication by t: L{t f(t)} = −dF/ds.",
+    "L{sin t} = 1/(s² + 1); −d/ds [1/(s² + 1)] = <b>2s/(s² + 1)²</b>",
+    "<b>Exam tip:</b> Each extra factor of t means one more derivative with respect to s, with a sign of (−1)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Using Laplace transforms, solve y′ + 3y = e<sup>−t</sup> with y(0) = 0. The value of y at t = 1 (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.159 (accept 0.158 to 0.160)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> L{y′} = sY − y(0); transform, solve for Y(s), then use partial fractions.",
+    "sY + 3Y = 1/(s + 1) → Y = 1/[(s + 1)(s + 3)] = ½[1/(s + 1) − 1/(s + 3)]",
+    "y(t) = ½(e<sup>−t</sup> − e<sup>−3t</sup>)",
+    "y(1) = ½(0.36788 − 0.04979) = <b>0.159</b>",
+    "<b>Exam tip:</b> Check y(0) = 0 from your answer before moving on."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If F(s) = (3s + 1)/(s² + 2s + 5) is the Laplace transform of f(t), then f(0<sup>+</sup>) is",
+   "fig": null,
+   "opts": [
+    "0",
+    "1/5",
+    "3",
+    "∞"
+   ],
+   "ans": "(C) 3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Initial value theorem: f(0<sup>+</sup>) = lim<sub>s→∞</sub> sF(s).",
+    "sF(s) = (3s² + s)/(s² + 2s + 5) → 3 as s → ∞",
+    "f(0<sup>+</sup>) = <b>3</b>. (Check: f = e<sup>−t</sup>(3 cos 2t − sin 2t), f(0) = 3 ✓)",
+    "<b>Exam tip:</b> Initial value: s → ∞. Final value: s → 0, and only if all poles of sF(s) are in the left half-plane."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The partial differential equation u<sub>xx</sub> + 2u<sub>xy</sub> + 5u<sub>yy</sub> = 0 is",
+   "fig": null,
+   "opts": [
+    "parabolic",
+    "elliptic",
+    "hyperbolic",
+    "none of these, since it has a mixed term"
+   ],
+   "ans": "(B) elliptic",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For Au<sub>xx</sub> + Bu<sub>xy</sub> + Cu<sub>yy</sub>: B² − 4AC < 0 elliptic, = 0 parabolic, > 0 hyperbolic.",
+    "B² − 4AC = 4 − 20 = −16 < 0 → <b>elliptic</b>",
+    "<b>Exam tip:</b> Laplace equation: elliptic; heat equation: parabolic; wave equation: hyperbolic. Here B is the full coefficient of u<sub>xy</sub> (not B/2)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The 2 kg block shown is attached to a spring of stiffness 800 N/m on a smooth floor. It is pulled 10 mm to the right and released from rest, so that 2ẍ + 800x = 0, x(0) = 0.01 m, ẋ(0) = 0. The time at which the block first passes through the equilibrium position (in s, round off to four decimal places) is ______",
+   "fig": "d39p_q12.png",
+   "opts": null,
+   "ans": "0.0785 (accept 0.0781 to 0.0790)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ẍ + ω²x = 0 with ω = √(k/m).",
+    "ω = √(800/2) = 20 rad/s; with ẋ(0) = 0, x = 0.01 cos 20t",
+    "First zero when 20t = π/2 → t = π/40 = <b>0.0785 s</b> (a quarter period)",
+    "<b>Exam tip:</b> Released from rest at an extreme, the block reaches equilibrium after T/4, whatever the amplitude."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The general solution of (y cos x + 2x e<sup>y</sup>) dx + (sin x + x²e<sup>y</sup> + 2) dy = 0 is",
+   "fig": null,
+   "opts": [
+    "y sin x + x²e<sup>y</sup> + 2y = C",
+    "y sin x + x²e<sup>y</sup> = C",
+    "y cos x + x²e<sup>y</sup> + 2y = C",
+    "sin x + x²e<sup>y</sup> + 2y = C"
+   ],
+   "ans": "(A) y sin x + x²e<sup>y</sup> + 2y = C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Check exactness: ∂M/∂y = cos x + 2x e<sup>y</sup> = ∂N/∂x ✓",
+    "Integrate M with respect to x: y sin x + x²e<sup>y</sup>; add the terms of N free of x: 2y",
+    "Solution: <b>y sin x + x²e<sup>y</sup> + 2y = C</b>",
+    "<b>Exam tip:</b> After integrating M, add only those terms of N that do not contain x."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A rod of unit length, shown in the figure, obeys u<sub>t</sub> = u<sub>xx</sub> with u(0, t) = u(1, t) = 0 and u(x, 0) = sin πx. The temperature at the mid-point x = 0.5 at t = 0.1 (round off to three decimal places) is ______",
+   "fig": "d39p_q14.png",
+   "opts": null,
+   "ans": "0.373 (accept 0.371 to 0.375)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Separation of variables gives modes sin(nπx) e<sup>−n²π²t</sup>; the initial profile contains only n = 1.",
+    "u(x, t) = sin(πx) e<sup>−π²t</sup>",
+    "u(0.5, 0.1) = 1 × e<sup>−0.98696</sup> = <b>0.373</b>",
+    "<b>Exam tip:</b> Higher modes decay as n², so after a short time only the first mode matters."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Bernoulli equation dy/dx + y = y² is reduced to a linear equation by the substitution v = 1/y. The resulting equation is",
+   "fig": null,
+   "opts": [
+    "dv/dx + v = 1",
+    "dv/dx − v = −1",
+    "dv/dx + v = −1",
+    "dv/dx − v = 1"
+   ],
+   "ans": "(B) dv/dx − v = −1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For dy/dx + Py = Qy<sup>n</sup>, put v = y<sup>1−n</sup>; here n = 2, so v = 1/y.",
+    "dv/dx = −y<sup>−2</sup> dy/dx. Divide the ODE by y²: y<sup>−2</sup>dy/dx + y<sup>−1</sup> = 1 → −dv/dx + v = 1",
+    "So <b>dv/dx − v = −1</b> (solution v = 1 + Ce<sup>x</sup>, i.e. y = 1/(1 + Ce<sup>x</sup>)).",
+    "<b>Exam tip:</b> Watch the sign that comes from differentiating 1/y."
+   ]
+  }
+ ]
+}

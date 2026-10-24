@@ -1,0 +1,268 @@
+{
+ "day": 40,
+ "subject": "Thermodynamics",
+ "topic": "Availability & Relations",
+ "days_to_gate": 65,
+ "summary": "available and unavailable energy, exergy of heat, closed systems and flow streams, irreversibility (Gouy–Stodola) and second-law efficiency, the Maxwell relations, Clapeyron and Clausius–Clapeyron equations, c<sub>p</sub> − c<sub>v</sub> relations and the Joule–Thomson coefficient",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Heat Transfer, 1-D Conduction",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Heat Q is received reversibly at a constant temperature T, as shown on the T–s diagram; the environment is at T₀. Which statement about the shaded areas is correct?",
+   "fig": "d40p_q1.png",
+   "opts": [
+    "X is the unavailable energy and Y the available energy",
+    "X is the available energy and Y the unavailable energy",
+    "X + Y is the available energy",
+    "Y is the irreversibility of the process"
+   ],
+   "ans": "(B) X is the available energy and Y the unavailable energy",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Of heat Q received at T, the most that can be converted to work is Q(1 − T₀/T), the Carnot fraction with the environment as sink.",
+    "Area X (between T and T₀) = (T − T₀)Δs = <b>available energy</b>",
+    "Area Y (below T₀) = T₀Δs = <b>unavailable energy</b>, rejected to the environment even by a reversible engine.",
+    "<b>Exam tip:</b> Unavailable energy = T₀ × ΔS of the heat source; it is never zero unless T₀ = 0 K."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "2000 kJ of heat is supplied from a reservoir at 800 K; the surroundings are at 300 K. The available energy (in kJ) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1250",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> AE = Q(1 − T₀/T) for heat drawn from a reservoir at constant T.",
+    "AE = 2000 × (1 − 300/800) = <b>1250 kJ</b>; unavailable = 750 kJ",
+    "<b>Exam tip:</b> This is the work a Carnot engine would give using the surroundings as its sink."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "1000 kJ of heat flows from a reservoir at 1200 K to a reservoir at 600 K. With the surroundings at 300 K, the loss of available energy (in kJ) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "250",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Available energy before: Q(1 − T₀/T₁); after: Q(1 − T₀/T₂). The difference is T₀S<sub>gen</sub>.",
+    "AE at 1200 K = 1000(1 − 300/1200) = 750 kJ; AE at 600 K = 1000(1 − 300/600) = 500 kJ",
+    "Loss = 750 − 500 = <b>250 kJ</b> = 300 × 1000(1/600 − 1/1200) ✓",
+    "<b>Exam tip:</b> Heat 'degrades' when it flows down a temperature gradient: same energy, less exergy."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Maxwell relation obtained from the Gibbs function (dg = v dp − s dT) is",
+   "fig": null,
+   "opts": [
+    "(∂s/∂p)<sub>T</sub> = −(∂v/∂T)<sub>p</sub>",
+    "(∂s/∂v)<sub>T</sub> = (∂p/∂T)<sub>v</sub>",
+    "(∂T/∂p)<sub>s</sub> = (∂v/∂s)<sub>p</sub>",
+    "(∂s/∂p)<sub>T</sub> = (∂v/∂T)<sub>p</sub>"
+   ],
+   "ans": "(A) (∂s/∂p)<sub>T</sub> = −(∂v/∂T)<sub>p</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an exact differential dz = M dx + N dy, (∂M/∂y)<sub>x</sub> = (∂N/∂x)<sub>y</sub>.",
+    "With dg = v dp − s dT: (∂v/∂T)<sub>p</sub> = −(∂s/∂p)<sub>T</sub>",
+    "So <b>(∂s/∂p)<sub>T</sub> = −(∂v/∂T)<sub>p</sub></b>.",
+    "<b>Exam tip:</b> Memory aid: the four relations come from du, dh, da, dg; the minus sign appears for du and dg."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "3 kg of air (c<sub>p</sub> = 1.005 kJ/kg·K) is cooled at constant pressure from 800 K to the surroundings temperature of 300 K. The available energy of the heat given out (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "620.3 (accept 616.6 to 624.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a finite source the temperature falls as heat leaves, so AE = Q − T₀ΔS (not Q(1 − T₀/T)).",
+    "Q = mc<sub>p</sub>(T₁ − T₀) = 3 × 1.005 × 500 = 1507.5 kJ",
+    "T₀ΔS = 300 × 3 × 1.005 × ln(800/300) = 887.2 kJ",
+    "AE = 1507.5 − 887.2 = <b>620.3 kJ</b>",
+    "<b>Exam tip:</b> Using the initial temperature 800 K in the Carnot factor would give 942 kJ, an overestimate."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A real gas is throttled through a valve and its temperature falls. At that state its Joule–Thomson coefficient μ = (∂T/∂p)<sub>h</sub> is",
+   "fig": null,
+   "opts": [
+    "zero",
+    "negative",
+    "positive, and the state lies below the inversion curve",
+    "infinite"
+   ],
+   "ans": "(C) positive, and the state lies below the inversion curve",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Throttling is isenthalpic and the pressure falls (dp < 0).",
+    "A temperature drop (dT < 0) with dp < 0 means μ = dT/dp > 0.",
+    "μ > 0 inside (below) the inversion curve: <b>positive</b>. This is how gases are liquefied in the Linde process.",
+    "<b>Exam tip:</b> Ideal gas: μ = 0. Hydrogen and helium at room temperature have μ < 0 (they warm on throttling) and must be pre-cooled."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "At 200 °C, saturated water has v<sub>f</sub> = 0.001157 m³/kg, v<sub>g</sub> = 0.12736 m³/kg and h<sub>fg</sub> = 1940.7 kJ/kg. The slope dp/dT of the saturation curve at 200 °C from the Clapeyron equation (in kPa/K, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "32.50 (accept 32.34 to 32.66)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Clapeyron: dp/dT = h<sub>fg</sub>/(T v<sub>fg</sub>), exact for any phase change.",
+    "v<sub>fg</sub> = 0.12736 − 0.001157 = 0.126203 m³/kg; T = 473.15 K",
+    "dp/dT = 1940.7/(473.15 × 0.12620) = <b>32.50 kPa/K</b>",
+    "<b>Exam tip:</b> kJ/m³ = kPa, so with h in kJ/kg and v in m³/kg the slope comes out directly in kPa/K."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement about the specific heats of a substance is correct?",
+   "fig": null,
+   "opts": [
+    "c<sub>p</sub> − c<sub>v</sub> = R for every substance",
+    "c<sub>p</sub> < c<sub>v</sub> for water between 0 °C and 4 °C",
+    "c<sub>p</sub> = c<sub>v</sub> for an ideal gas",
+    "c<sub>p</sub> − c<sub>v</sub> = R for an ideal gas and is nearly zero for liquids and solids"
+   ],
+   "ans": "(D) c<sub>p</sub> − c<sub>v</sub> = R for an ideal gas and is nearly zero for liquids and solids",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> General relation: c<sub>p</sub> − c<sub>v</sub> = Tvβ²/κ.",
+    "Ideal gas: β = 1/T, κ = 1/p → c<sub>p</sub> − c<sub>v</sub> = pv/T = R.",
+    "Liquids and solids have very small β, so c<sub>p</sub> ≈ c<sub>v</sub>, which is why a single 'c' is quoted for them.",
+    "So the correct choice is <b>(D)</b>.",
+    "<b>Exam tip:</b> Since κ > 0 always, c<sub>p</sub> can never be less than c<sub>v</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (an ideal gas, R = 0.287 kJ/kg·K) is throttled adiabatically from 800 kPa to 200 kPa. With T₀ = 300 K, the exergy destroyed per kg of air (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "119.4 (accept 118.4 to 120.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Throttling an ideal gas: h and T stay constant, but entropy rises.",
+    "s<sub>gen</sub> = R ln(p₁/p₂) = 0.287 ln 4 = 0.39787 kJ/kg·K",
+    "i = T₀s<sub>gen</sub> = 300 × 0.39787 = <b>119.4 kJ/kg</b>",
+    "<b>Exam tip:</b> No energy is lost in a valve, but exergy is — that is why expansion valves are replaced by turbines in large plants."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A refrigerator keeps a cold space at −20 °C and rejects heat to a kitchen at 30 °C. Its actual COP is 2.5. Its second-law efficiency is about",
+   "fig": null,
+   "opts": [
+    "49 %",
+    "25 %",
+    "2.5 %",
+    "100 %"
+   ],
+   "ans": "(A) 49 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>II</sub> = COP/COP<sub>rev</sub>.",
+    "COP<sub>rev</sub> = T<sub>L</sub>/(T<sub>H</sub> − T<sub>L</sub>) = 253.15/50 = 5.06",
+    "η<sub>II</sub> = 2.5/5.06 = <b>0.494</b> ≈ 49 %",
+    "<b>Exam tip:</b> Second-law efficiency compares with the best possible device between the same temperatures; it can never exceed 1."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (c<sub>p</sub> = 1.005 kJ/kg·K, R = 0.287 kJ/kg·K) is compressed in the adiabatic steady-flow compressor shown from 100 kPa, 300 K to 600 kPa, 550 K. With T₀ = 300 K, the exergy destroyed per kg of air (in kJ/kg, round off to one decimal place) is ______",
+   "fig": "d40p_q11.png",
+   "opts": null,
+   "ans": "28.5 (accept 28.2 to 28.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Adiabatic device: s<sub>gen</sub> = s₂ − s₁; Gouy–Stodola: i = T₀s<sub>gen</sub>.",
+    "s₂ − s₁ = 1.005 ln(550/300) − 0.287 ln 6 = 0.60915 − 0.51424 = 0.09493 kJ/kg·K",
+    "i = 300 × 0.09493 = <b>28.5 kJ/kg</b>",
+    "Actual work = 1.005 × 250 = 251.2 kJ/kg, so about 11 % of the input is destroyed.",
+    "<b>Exam tip:</b> The minimum (reversible) work = actual work − T₀s<sub>gen</sub> for an adiabatic compressor."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a closed system that can exchange heat only with the atmosphere at T₀ and p₀ and ends at T₀ and p₀, the maximum useful work obtainable equals the decrease in its",
+   "fig": null,
+   "opts": [
+    "internal energy",
+    "Gibbs function, G = H − TS",
+    "Helmholtz function, A = U − TS",
+    "enthalpy"
+   ],
+   "ans": "(B) Gibbs function, G = H − TS",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Useful work excludes the work done against the atmosphere, p₀ΔV.",
+    "At constant T₀ and p₀, W<sub>useful,max</sub> = −ΔG = G₁ − G₂.",
+    "At constant T and V (no atmospheric work), the maximum work is −ΔA (Helmholtz function A = U − TS).",
+    "So the answer is the <b>Gibbs function</b>.",
+    "<b>Exam tip:</b> Helmholtz → constant T and V; Gibbs → constant T and p."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air flows steadily at 500 K and 400 kPa with negligible velocity. With the dead state at 300 K and 100 kPa (c<sub>p</sub> = 1.005 kJ/kg·K, R = 0.287 kJ/kg·K), its specific flow exergy (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "166.3 (accept 165.3 to 167.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Flow exergy ψ = (h − h₀) − T₀(s − s₀) + V²/2 + gz.",
+    "h − h₀ = 1.005 × 200 = 201.0 kJ/kg",
+    "s − s₀ = 1.005 ln(5/3) − 0.287 ln 4 = 0.51338 − 0.39787 = 0.11551 kJ/kg·K",
+    "ψ = 201.0 − 300 × 0.11551 = <b>166.3 kJ/kg</b>",
+    "<b>Exam tip:</b> Flow exergy uses h (it includes flow work); non-flow exergy uses u + p₀v."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Using the relation (∂u/∂v)<sub>T</sub> = T(∂p/∂T)<sub>v</sub> − p for a van der Waals gas, (p + a/v²)(v − b) = RT, the value of (∂u/∂v)<sub>T</sub> is",
+   "fig": null,
+   "opts": [
+    "0",
+    "RT/(v − b)",
+    "a/v²",
+    "b/v²"
+   ],
+   "ans": "(C) a/v²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> From the van der Waals equation, p = RT/(v − b) − a/v², so (∂p/∂T)<sub>v</sub> = R/(v − b).",
+    "T(∂p/∂T)<sub>v</sub> − p = RT/(v − b) − [RT/(v − b) − a/v²] = <b>a/v²</b>",
+    "For an ideal gas (a = 0) it is zero: u depends on T only (Joule's law).",
+    "<b>Exam tip:</b> Internal energy of a real gas rises with volume at fixed T because molecules move apart against attraction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Water boils at 100 °C at 101.325 kPa, with h<sub>fg</sub> = 2257 kJ/kg (assume constant) and R = 0.4615 kJ/kg·K for the vapour. Using the Clausius–Clapeyron equation, the boiling point at a hill station where the pressure is 70 kPa is closest to",
+   "fig": null,
+   "opts": [
+    "80 °C",
+    "90 °C",
+    "95 °C",
+    "100 °C"
+   ],
+   "ans": "(B) 90 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Clausius–Clapeyron (ideal vapour, v<sub>f</sub> neglected): ln(p₂/p₁) = (h<sub>fg</sub>/R)(1/T₁ − 1/T₂).",
+    "1/T₂ = 1/373.15 − (0.4615/2257) ln(70/101.325) = 0.0026799 + 0.0000756",
+    "T₂ = 362.9 K = <b>89.8 °C ≈ 90 °C</b>",
+    "<b>Exam tip:</b> Lower pressure → lower boiling point; this is why a pressure cooker (higher p) cooks faster."
+   ]
+  }
+ ]
+}

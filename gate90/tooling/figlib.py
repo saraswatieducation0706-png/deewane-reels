@@ -244,3 +244,26 @@ def block(ax,x,y,w,h,txt="",fs=9,fc="#dddddd"):
     """mass block centred at (x,y)"""
     ax.add_patch(Rectangle((x-w/2,y-h/2),w,h,fc=fc,ec=K,lw=1.3,zorder=4))
     if txt: label(ax,x,y,txt,fs=fs,zorder=5)
+# --- thermodynamics helpers (added Day 38) ---
+def reservoir(ax,x,y,txt,w=1.5,h=0.42,fs=8,fc="#f3d9d9"):
+    """thermal reservoir: wide box centred at (x,y)"""
+    ax.add_patch(Rectangle((x-w/2,y-h/2),w,h,fc=fc,ec=K,lw=1.3,zorder=3)); label(ax,x,y,txt,fs=fs,zorder=4)
+def device(ax,x,y,txt,r=0.3,fs=8.5):
+    """cyclic device (HE, R, HP) as a circle"""
+    ax.add_patch(Circle((x,y),r,fc="white",ec=K,lw=1.4,zorder=4)); label(ax,x,y,txt,fs=fs,zorder=5)
+def flow(ax,x1,y1,x2,y2,txt="",side="right",fs=8,lw=1.3,off=0.08):
+    """heat/work arrow with a label beside its midpoint"""
+    arrow(ax,x1,y1,x2,y2,lw=lw); mx,my=(x1+x2)/2,(y1+y2)/2
+    if txt: label(ax,mx+(off if side=="right" else -off),my,txt,fs=fs,ha="left" if side=="right" else "right")
+def ts_axes(ax,xmax,ymax,xl="s",yl="T"):
+    arrow(ax,0,0,xmax,0,lw=1.0); arrow(ax,0,0,0,ymax,lw=1.0)
+    label(ax,xmax+0.05,0,xl,fs=10,ha="left"); label(ax,0,ymax+0.12,yl,fs=10)
+def cycle(ax,pts,names=None,offs=None,lw=1.5,arrows=True,fs=9):
+    """closed polygon cycle through pts (plot coords) with mid-segment direction arrows and corner labels"""
+    n=len(pts)
+    for i in range(n):
+        a,b=np.array(pts[i]),np.array(pts[(i+1)%n]); ax.plot([a[0],b[0]],[a[1],b[1]],color=K,lw=lw)
+        if arrows:
+            m=(a+b)/2; d=(b-a)/np.hypot(*(b-a))*0.06; arrow(ax,*(m-d),*(m+d),lw=1.2)
+        ax.add_patch(Circle(tuple(a),0.035,fc=K,zorder=6))
+        if names: label(ax,a[0]+(offs[i][0] if offs else 0),a[1]+(offs[i][1] if offs else 0.12),names[i],fs=fs)

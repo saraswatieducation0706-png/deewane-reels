@@ -1,0 +1,266 @@
+{
+ "day": 38,
+ "subject": "Thermodynamics",
+ "topic": "Second Law & Entropy",
+ "days_to_gate": 67,
+ "summary": "the Kelvin–Planck and Clausius statements, heat engines, refrigerators and heat pumps, the Carnot cycle and reversed Carnot cycle, the Clausius inequality, entropy change of solids, liquids and ideal gases, T–s diagrams, isentropic efficiency and entropy generation",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Differential Equations",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Which statement about the Kelvin–Planck (K–P) and Clausius statements of the second law is correct?",
+   "fig": null,
+   "opts": [
+    "The two statements are independent; one may be violated without the other",
+    "A device violating the Clausius statement can be combined with an ordinary engine to violate the K–P statement",
+    "The Clausius statement applies only to refrigerators, so it cannot be compared with the K–P statement",
+    "The K–P statement follows from the first law"
+   ],
+   "ans": "(B) A device violating the Clausius statement can be combined with an ordinary engine to violate the K–P statement",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The two statements are equivalent: violating either one implies violating the other.",
+    "Let a 'Clausius-violating' device move Q₂ from the cold to the hot reservoir with no work. Pair it with an ordinary engine that takes Q₁ from the hot reservoir and rejects Q₂ to the cold one.",
+    "The cold reservoir then has no net exchange, and the combination takes (Q₁ − Q₂) from the hot reservoir alone and turns it all into work: a K–P violation.",
+    "<b>Exam tip:</b> Equivalence is proved by such combinations; both statements say the same thing in different words."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A reversible heat engine works between reservoirs at 900 K and 300 K and receives 1800 kJ of heat per cycle. The work output per cycle (in kJ) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1200",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a reversible engine Q₂/Q₁ = T₂/T₁, so η = 1 − T₂/T₁.",
+    "η = 1 − 300/900 = 0.6667",
+    "W = 0.6667 × 1800 = <b>1200 kJ</b> (heat rejected = 600 kJ)",
+    "<b>Exam tip:</b> Q ∝ T only for reversible devices; for any real engine the heat rejected is larger."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A refrigerator keeps its freezer compartment at −13 °C while the kitchen is at 37 °C. If heat leaks into the freezer at 2 kW, the minimum power needed to run the refrigerator (in W, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "384.6 (accept 382.6 to 386.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The minimum power corresponds to a reversible (Carnot) refrigerator.",
+    "COP<sub>max</sub> = T<sub>L</sub>/(T<sub>H</sub> − T<sub>L</sub>) = 260.15/50 ≈ 5.2",
+    "P<sub>min</sub> = 2000/5.2 = <b>384.6 W</b>",
+    "<b>Exam tip:</b> Convert both temperatures to kelvin; COP uses the absolute temperature of the cold space."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two reversible engines E₁ and E₂ work in series between 1600 K and 400 K as shown, E₂ receiving all the heat rejected by E₁ at the intermediate temperature T. If the two engines have equal thermal efficiencies, T is",
+   "fig": "d38p_q4.png",
+   "opts": [
+    "1000 K",
+    "1200 K",
+    "800 K",
+    "600 K"
+   ],
+   "ans": "(C) 800 K",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For each reversible engine η = 1 − T<sub>low</sub>/T<sub>high</sub>.",
+    "Equal efficiencies: T/1600 = 400/T",
+    "T = √(1600 × 400) = <b>800 K</b> (each engine has η = 50 %)",
+    "For equal WORK instead, T would be the arithmetic mean, (1600 + 400)/2 = 1000 K.",
+    "<b>Exam tip:</b> Equal efficiency → geometric mean; equal work → arithmetic mean."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 2 kg copper block (c = 0.4 kJ/kg·K) at 500 K is dropped into a large lake at 300 K and comes to equilibrium. The total entropy generated (in kJ/K, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.125 (accept 0.124 to 0.126)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> S<sub>gen</sub> = ΔS<sub>block</sub> + ΔS<sub>lake</sub>; the lake is a reservoir, so ΔS<sub>lake</sub> = Q/T<sub>lake</sub>.",
+    "ΔS<sub>block</sub> = mc ln(T₂/T₁) = 2 × 0.4 × ln(300/500) = -0.4087 kJ/K",
+    "Heat to lake = mc(500 − 300) = 160 kJ, so ΔS<sub>lake</sub> = 160/300 = 0.5333 kJ/K",
+    "S<sub>gen</sub> = -0.4087 + 0.5333 = <b>0.125 kJ/K</b>",
+    "<b>Exam tip:</b> The block's entropy falls; only the total (block + lake) must rise."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An engine receives 500 kJ from a reservoir at 1000 K and rejects 300 kJ to a reservoir at 500 K in each cycle. Applying the Clausius inequality, the engine is",
+   "fig": null,
+   "opts": [
+    "irreversible but possible",
+    "reversible",
+    "impossible",
+    "a heat pump"
+   ],
+   "ans": "(A) irreversible but possible",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ∮δQ/T = 0 for a reversible cycle, < 0 for an irreversible one, > 0 for an impossible one.",
+    "∮δQ/T = 500/1000 − 300/500 = 0.5 − 0.6 = -0.1 kJ/K < 0",
+    "So the cycle is possible but irreversible. Check: η = 200/500 = 40 % < η<sub>Carnot</sub> = 50 %.",
+    "<b>Exam tip:</b> Heat rejected enters the sum with a negative sign."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (c<sub>v</sub> = 0.718 kJ/kg·K) in a rigid tank is heated from 300 K to 900 K. The entropy change per kg (in kJ/kg·K, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.789 (accept 0.785 to 0.793)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Ideal gas: Δs = c<sub>v</sub> ln(T₂/T₁) + R ln(v₂/v₁).",
+    "Rigid tank: v₂ = v₁, so the second term is zero.",
+    "Δs = 0.718 × ln 3 = <b>0.789 kJ/kg·K</b>",
+    "<b>Exam tip:</b> Use c<sub>v</sub> with the volume form and c<sub>p</sub> with the pressure form of the entropy equation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Curves A and B on the T–s diagram both start at state 1 of an ideal gas; one is a constant-pressure line and the other a constant-volume line. Which statement is correct?",
+   "fig": "d38p_q8.png",
+   "opts": [
+    "A is the constant-pressure line, because c<sub>p</sub> > c<sub>v</sub>",
+    "Both lines have the same slope at state 1",
+    "A is the constant-pressure line, because its slope is T/c<sub>p</sub>",
+    "A is the constant-volume line, because its slope T/c<sub>v</sub> is greater than T/c<sub>p</sub>"
+   ],
+   "ans": "(D) A is the constant-volume line, because its slope T/c<sub>v</sub> is greater than T/c<sub>p</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> From T ds = c<sub>v</sub> dT + p dv and T ds = c<sub>p</sub> dT − v dp:",
+    "(∂T/∂s)<sub>v</sub> = T/c<sub>v</sub> and (∂T/∂s)<sub>p</sub> = T/c<sub>p</sub>.",
+    "Since c<sub>p</sub> > c<sub>v</sub>, the constant-volume line is steeper: <b>A is constant volume</b>, B is constant pressure. Both curves are exponential, T ∝ e<sup>s/c</sup>.",
+    "<b>Exam tip:</b> On T–s, isochores are steeper than isobars; on p–v, adiabats are steeper than isotherms."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (γ = 1.4) expands adiabatically in a turbine from 800 kPa, 1000 K to 100 kPa. The actual exit temperature is 620 K. The isentropic efficiency of the turbine (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.848 (accept 0.844 to 0.852)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>T</sub> = actual work / isentropic work = (T₁ − T₂)/(T₁ − T₂<sub>s</sub>) for an ideal gas with constant c<sub>p</sub>.",
+    "T₂<sub>s</sub> = 1000 × (100/800)<sup>0.4/1.4</sup> = 552.0 K",
+    "η<sub>T</sub> = (1000 − 620)/(1000 − 552.0) = 380/448.0 = <b>0.848</b>",
+    "<b>Exam tip:</b> For a turbine the actual exit is hotter than isentropic; for a compressor the actual exit is also hotter, but η = isentropic/actual work."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A Carnot cycle 1–2–3–4 is drawn on the T–S diagram shown. The net work per cycle is",
+   "fig": "d38p_q10.png",
+   "opts": [
+    "1600 kJ",
+    "1000 kJ",
+    "600 kJ",
+    "2200 kJ"
+   ],
+   "ans": "(B) 1000 kJ",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> On a T–S diagram the area enclosed by a reversible cycle equals the net work (= net heat).",
+    "Heat in (1–2) = 800 × (3 − 1) = 1600 kJ; heat out (3–4) = 300 × 2 = 600 kJ",
+    "W<sub>net</sub> = (800 − 300) × 2 = <b>1000 kJ</b>; η = 1000/1600 = 62.5 % = 1 − 300/800 ✓",
+    "<b>Exam tip:</b> A Carnot cycle is always a rectangle on T–s, whatever the working fluid."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A reversible engine HE takes Q₁ = 100 kJ from a source at 1000 K and rejects heat to the atmosphere at 300 K. All its work drives a reversible refrigerator R that removes Q₃ from a cold space at 250 K and rejects heat to the atmosphere, as shown. Q₃ (in kJ) is ______",
+   "fig": "d38p_q11.png",
+   "opts": null,
+   "ans": "350",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Chain the two reversible devices through the common work W.",
+    "W = (1 − 300/1000) × 100 = 70 kJ",
+    "COP<sub>R</sub> = 250/(300 − 250) = 5",
+    "Q₃ = 5 × 70 = <b>350 kJ</b> (atmosphere receives 30 + 420 = 450 kJ)",
+    "<b>Exam tip:</b> The refrigerator can remove more heat than the source supplies, because the atmosphere absorbs it all."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following processes can be reversible (in the ideal limit)?",
+   "fig": null,
+   "opts": [
+    "Throttling of a gas through a porous plug",
+    "Mixing of two different gases",
+    "Slow, frictionless adiabatic expansion of a gas behind a piston",
+    "Stirring of a liquid in an insulated tank by a paddle wheel"
+   ],
+   "ans": "(C) Slow, frictionless adiabatic expansion of a gas behind a piston",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A process is reversible only if it is quasi-static, frictionless and involves no heat transfer across a finite temperature difference.",
+    "Throttling (A) involves friction; mixing of two gases (B) is spontaneous; stirring work (D) is dissipated by friction.",
+    "Slow, frictionless adiabatic expansion is the isentropic process: <b>reversible</b>.",
+    "<b>Exam tip:</b> Paddle-wheel (stirring) work can be done ON a system but never extracted, so it is always irreversible."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (an ideal gas, R = 0.287 kJ/kg·K) is throttled steadily from 1 MPa to 200 kPa in an insulated valve; kinetic energy changes are negligible. The entropy generated per kg of air (in kJ/kg·K, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.462 (accept 0.459 to 0.465)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Throttling: h₂ = h₁. For an ideal gas h = h(T), so T₂ = T₁.",
+    "Δs = c<sub>p</sub> ln(T₂/T₁) − R ln(p₂/p₁) = 0 − 0.287 ln(0.2/1) = 0.4619 kJ/kg·K",
+    "The valve is adiabatic, so s<sub>gen</sub> = Δs = <b>0.462 kJ/kg·K</b>",
+    "<b>Exam tip:</b> Throttling is isenthalpic, not isentropic; entropy always rises."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Heat flows steadily at 2 kW through a wall whose inner surface is at 300 K and outer surface at 275 K. The rate of entropy generation within the wall is",
+   "fig": null,
+   "opts": [
+    "0.606 W/K",
+    "6.67 W/K",
+    "7.27 W/K",
+    "zero, since the wall is in steady state"
+   ],
+   "ans": "(A) 0.606 W/K",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady state: the wall's entropy is constant, so S<sub>gen</sub> = entropy out − entropy in.",
+    "S<sub>gen</sub> = 2000/275 − 2000/300 = 7.273 − 6.667 = <b>0.606 W/K</b>",
+    "<b>Exam tip:</b> Take the boundary temperatures of the system you choose; a wider boundary (room air to outside air) gives a larger S<sub>gen</sub>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A reversible heat pump working between two reservoirs has a COP of 5. When the same machine is run as a refrigerator between the same two reservoirs, its COP is",
+   "fig": null,
+   "opts": [
+    "6",
+    "5",
+    "0.2",
+    "4"
+   ],
+   "ans": "(D) 4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> COP<sub>HP</sub> = Q<sub>H</sub>/W and COP<sub>R</sub> = Q<sub>L</sub>/W, with Q<sub>H</sub> = Q<sub>L</sub> + W.",
+    "COP<sub>R</sub> = COP<sub>HP</sub> − 1 = 5 − 1 = <b>4</b>",
+    "Check: T<sub>H</sub>/(T<sub>H</sub> − T<sub>L</sub>) = 5 gives T<sub>L</sub>/T<sub>H</sub> = 0.8, so COP<sub>R</sub> = 0.8/0.2 = 4 ✓",
+    "<b>Exam tip:</b> The '+1' is just the work itself, which ends up in the hot reservoir."
+   ]
+  }
+ ]
+}
