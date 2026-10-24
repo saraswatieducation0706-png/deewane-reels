@@ -14,3 +14,9 @@ All 7 Shorts + long1/long2/long3 checked against the 10 points. Result: PASS for
 10. madeForKids=false.
 
 Metricool analytics (last 14 days): no YouTube video rows yet (channel's first posts are this week) — no performance steer applied.
+
+## Production (24 Oct 2026)
+- Doc re-read: no edits after approval, no HOLDs. All 10 videos rendered, frames checked, pre-publish check re-run: PASS.
+- Fix: candle scene in 16:9 long videos had no flame and sat under the captions; render_long now draws the flame and raises the candle (long2, long3 re-rendered from cached voice).
+- Booked in Metricool (IST): Shorts YT+IG 26-31 Oct 16:30, 1 Nov 17:30; long1 27 Oct 05:30, long2 30 Oct 05:30, long3 1 Nov 05:30 (YouTube video + IG teaser each). Times verified with getScheduledPosts.
+- Last-7-day check: all due posts published on both networks; none failed.
