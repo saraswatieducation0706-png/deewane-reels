@@ -4,10 +4,15 @@
 A record (covered or candidate) is a JSON object:
   {"org": "Oil and Natural Gas Corporation", "org_short": "ONGC", "advt_no": "ONGC/GT/2026/01",
    "post": "Graduate Trainee", "last_date": "2026-10-30", "official_url": "https://...",
-   "status": "covered" | "skipped", "reason": "...", "run_date": "2026-10-07", "reel": "file.mp4"}
+   "status": "covered" | "skipped" | "weekly_queue", "reason": "...", "run_date": "2026-10-07", "reel": "file.mp4",
+   "job_type": "permanent" | "apprentice" | "contract", "facts": {...}}
+  weekly_queue = apprentice/contract job waiting for the Sunday roundup (facts kept so Sunday needn't re-read it).
+  When the roundup is made, the job is written again with status "covered" and "reel": "roundup_<date>".
 
 Commands
   tracker.py merge a.json b.json ...            -> prints one merged JSON list (all past run files)
+  tracker.py queue covered.json [YYYY-MM-DD]     -> prints the weekly_queue jobs not yet covered, sorted by last date
+                                                  (with a date: only those whose last_date >= that date)
   tracker.py check covered.json candidates.json -> prints JSON: {"new": [...], "dup": [[cand, matched_id], ...]}
                                                   (also collapses duplicates *within* the candidate list,
                                                    e.g. the same job found on 3 different websites)
@@ -60,6 +65,17 @@ def main():
             m = next((x for x in covered if same(c, x)), None) or next((x for x in new if same(c, x)), None)
             (dup.append([c, rid(m)]) if m else new.append(c))
         print(json.dumps({"new": new, "dup": dup}, ensure_ascii=False, indent=1))
+    elif cmd == "queue":
+        recs = json.load(open(sys.argv[2])); since = sys.argv[3] if len(sys.argv) > 3 else ""
+        done = [r for r in recs if r.get("status") == "covered"]
+        q, seen = [], []
+        for r in recs:
+            if r.get("status") != "weekly_queue": continue
+            if any(same(r, c) for c in done) or any(same(r, x) for x in seen): continue
+            if since and (r.get("last_date") or "9999") < since: continue
+            seen.append(r); q.append(r)
+        q.sort(key=lambda r: r.get("last_date") or "9999")
+        print(json.dumps(q, ensure_ascii=False, indent=1))
     else:
         sys.exit(__doc__)
 

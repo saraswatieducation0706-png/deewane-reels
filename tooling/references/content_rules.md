@@ -2,6 +2,9 @@
 
 ## A. Which notifications qualify
 
+> From 27 Oct 2026 the output format and the daily/Sunday routing by job type (permanent vs apprentice /
+> contract) are in `job_videos.md`. The qualifying filters below still apply to every job.
+
 All four must hold:
 
 1. **Government** — central/state government departments, PSUs, public sector banks, RBI/SEBI/NABARD and
@@ -44,6 +47,9 @@ fact was found (page/section). Nothing goes into the script that is not in `fact
 
 ## C. Writing the reel script
 
+> Job notifications now use the 16:9 video script, Sunday roundup and teaser rules in `job_videos.md` §2–3.
+> The hook, emotional line and accuracy rules below still apply.
+
 Order (skip a scene only when the notification truly has nothing for it):
 1. `hook` — emotional line + the news (see below)
 2. `card` — who is hiring: organisation, post, job type (Regular/Contract), location if notable
@@ -68,6 +74,9 @@ Accuracy: numbers, dates, ages and percentages on screen and in voice must match
 When the notification is ambiguous, say "as per notification" rather than guessing.
 
 ## D. Metadata (`metadata.md` per reel)
+
+> Job videos use the metadata template in `job_videos.md` §5 (YouTube title/description/tags + teaser caption,
+> optimised with vidIQ per §4). The template below is kept for reference only.
 
 ```
 # <reel number>. <Org short> — <post>

@@ -34,3 +34,28 @@ Voice-text rules (ElevenLabs reads exactly what is written):
 - Money in Indian words: "forty thousand rupees", "one lakh forty thousand rupees per month".
 - Dates spoken naturally: "thirtieth October", not "30/10/2026".
 - Keep each scene's voice ≤ ~30 words; one idea per scene.
+
+
+## 16:9 job videos — `render_job_landscape.py` (from 27 Oct 2026)
+
+Same spec file and the same scene kinds (`hook`, `card`, `count`, `table`, `pattern`, `steps`, `dates`), rendered
+at 1920x1080 with the landscape welcome and a website/QR + "Subscribe" end scene. Differences and additions:
+- Any scene may carry `"chapter": "<label>"` → YouTube chapters in `<out>.chapters.txt` ("0:00 Intro" is added;
+  chapters under 10 s are merged; fewer than 3 → none). Also returned in the script's JSON output.
+- `hook`: `title` 1–2 lines (≤ 22 chars each; line 2 is gold), `sub` ≤ 60 chars.
+- `card`: 1–5 lines, ≤ 40 chars each.
+- `count`: optional `notes` list (≤ 3 pills on the right; first is white, others dark red) instead of `note`.
+- `table`: label ≤ 34 chars, value ≤ 14 chars, ≤ 7 rows.
+- `steps`: 2–5 steps shown left→right; each label wraps to ≤ 3 lines (≤ ~30 chars is best).
+- `dates`: 2–4 columns; values may wrap to 2 lines.
+- `pattern`: table on the left, `chips` (≤ 3) stacked on the right.
+- `job` (Sunday roundup, one per job): `title` ("Job 3 of 12"), `org`, `post`, `type`, `posts`, `rows` ≤ 5
+  [label, value ≤ 60 chars], `last_date`.
+- `index` (Sunday roundup overview): `title`, `rows` ≤ 10 [name ≤ 32 chars, last date ≤ 8 chars, e.g. "30 Oct"].
+Render time ≈ 1x real time (a 4-minute video takes ~4 minutes).
+
+## 9:16 teaser — `render_reel.py` with `"teaser": true`
+
+Spec as for a reel plus `"teaser": true`: no welcome scene; the renderer appends a 6 s end card "Full details
+video on our YouTube channel — Deewane: IES & GATE Point". Use `hook` + 1–2 `card` scenes; keep the total at
+30–45 s (check the `duration_s` the script prints).
