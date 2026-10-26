@@ -1,0 +1,86 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/7f780fe0-6f3c-55a9-8bac-80348aade03c/scratchpad/d8/Day8_reel.mp4",
+ "footer": "Day 8/90  •  102 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 8/90",
+    "BENDING STRESS"
+   ],
+   "sub": "From the beam diagram to the real stress",
+   "voice": "Day eight of the GATE M. E. ninety days challenge! One hundred and two days to GATE. Yesterday you drew the diagrams. Today you find the stresses they cause."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Strength of Materials",
+    "Bending & Shear Stresses"
+   ],
+   "voice": "Today's subject is Strength of Materials. Our topic: bending and shear stresses in beams."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Bending eq. M/I = f/y = E/R",
+    "Section modulus Z = I/y",
+    "T, I & flitched sections",
+    "Shear stress distribution"
+   ],
+   "voice": "Cover the flexure formula, section modulus, T, I and flitched sections, and how shear stress is distributed across a beam section."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Max shear stress / average",
+    "Rectangle: 1.5 times",
+    "Circle: 4/3 times"
+   ],
+   "voice": "Quick tip. Maximum shear stress is one and a half times the average for a rectangle, and four by three times for a circle, both at the neutral axis."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Grab the free practice set with worked solutions on Telegram now. Tonight's test opens seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 7 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "19.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Marndi",
+     "marks": "12.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "Akshay W",
+     "marks": "8.33/30"
+    }
+   ],
+   "voice": "Day seven toppers! Rank one, Sweta Rani Sahoo, with a superb nineteen point six seven. Rank two, Marndi. Rank three, Akshay W. Congratulations to all three!"
+  }
+ ]
+}
