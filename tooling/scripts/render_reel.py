@@ -28,6 +28,8 @@ WELCOME = dict(kind="welcome", voice="Hello Everyone, I hope your preparations f
                title="Hello Everyone!", sub="Hope your preparation is going well")
 END = dict(kind="end", voice="For test series and study material, visit web dot D. I. G. career thrust dot com. "
            "Scan the codes to get our app and join our Telegram. Follow for daily job updates!", min_dur=7.0)
+TEASER_END = dict(kind="teaser_end", voice="Watch the full video with every detail on our YouTube channel, "
+                  "Deewane I. E. S. and GATE Point. Follow us for daily government job updates!", min_dur=5.0)
 QRS = [("Mobile App", "qr_playstore_app.jpeg"), ("Telegram", "qr_telegram.jpeg"), ("Website", "qr_website.jpeg")]
 
 # ---------------- TTS ----------------
@@ -97,6 +99,19 @@ def scene(s, t, d, lay):
         p2 = ease((t - 0.7) / 0.4)
         d.rounded_rectangle([70, 960, W - 70, 1080], 60, fill=WHITE + (int(255 * p2),))
         ftext(d, 988, s.get("sub", ""), "Bold", 44, RED, p2, W - 200)
+        return
+    if k == "teaser_end":
+        p = ease((t - 0.2) / 0.5)
+        d.rounded_rectangle([60, 520, W - 60, 1300], 44, fill=WHITE + (int(255 * p),))
+        ctext(d, 570, "FULL DETAILS VIDEO", F("ExtraBold", 72), RED, p)
+        ctext(d, 670, "on our YouTube channel", F("SemiBold", 46), INK, p)
+        p1 = ease((t - 0.7) / 0.4)
+        d.rounded_rectangle([110, 780, W - 110, 900], 60, fill=RED + (int(255 * p1),))
+        ftext(d, 806, "Deewane: IES & GATE Point", "ExtraBold", 54, WHITE, p1, W - 300)
+        ctext(d, 960, "Search on YouTube  •  @deewaneiesgate", F("SemiBold", 40), INK, p1)
+        p2 = ease((t - 1.3) / 0.4)
+        d.rounded_rectangle([170, 1080, W - 170, 1190], 55, fill=INK + (int(255 * p2),))
+        ctext(d, 1100, "FOLLOW for daily updates", F("Bold", 46), WHITE, p2)
         return
     if k == "end":
         p = ease((t - 0.3) / 0.5)
@@ -211,7 +226,10 @@ def main():
     global LOGO_R, QR_IMGS
     spec_path = sys.argv[1]; use_api = "--no-tts" not in sys.argv
     spec = json.load(open(spec_path))
-    scenes = [dict(WELCOME)] + spec["scenes"] + [dict(END)]
+    if spec.get("teaser"):   # 30-45 s Instagram/Facebook teaser: no welcome, YouTube call-to-action at the end
+        scenes = spec["scenes"] + [dict(TEASER_END)]
+    else:
+        scenes = [dict(WELCOME)] + spec["scenes"] + [dict(END)]
     assert spec["scenes"][0]["kind"] == "hook", "first spec scene must be the hook"
     out = spec["out"]; work = out + ".work"; os.makedirs(work, exist_ok=True)
     cache = os.path.join(os.path.dirname(os.path.abspath(out)), ".tts_cache"); os.makedirs(cache, exist_ok=True)
