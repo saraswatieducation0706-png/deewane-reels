@@ -1,0 +1,19 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/866ac6e4-c16c-5279-838c-87b3f4c5b018/scratchpad/d9/Day9_reel.mp4",
+ "footer": "Day 9/90  •  101 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 9/90", "VERBAL ABILITY"], "sub": "General Aptitude carries 15 marks",
+   "voice": "Day nine of the GATE M. E. ninety days challenge! One hundred and one days to go. Today we switch to General Aptitude, fifteen marks every paper carries."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["General Aptitude", "Verbal Ability"],
+   "voice": "Today's subject is General Aptitude. Our topic: verbal ability, the English part of the paper."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Grammar & error spotting", "Vocabulary & word usage", "Sentence completion", "Analogies & reading comp."],
+   "voice": "Cover grammar and error spotting, vocabulary and word usage, sentence completion, verbal analogies and reading comprehension."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["Neither A nor B + verb", "Verb agrees with B", "the nearer subject"],
+   "voice": "Quick tip. With either or and neither nor, the verb agrees with the nearer subject. Neither the teacher nor the students are late."},
+  {"kind": "dates", "title": "Today's Plan", "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "The free practice set with full explanations is waiting on Telegram. Tonight's verbal test runs seven to nine P. M. in our one rupee challenge course."},
+  {"kind": "toppers", "title": "Day 8 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "22.67/30"}, {"rank": 2, "name": "Atharva Vyas", "marks": "17/30"}, {"rank": 3, "name": "Akshay W", "marks": "14.67/30"}],
+   "voice": "Day eight toppers! Rank one, Sweta Rani Sahoo, with a brilliant twenty two point six seven. Rank two, Atharva Vyas. Rank three, Akshay W. Congratulations to all three!"}
+ ]
+}
