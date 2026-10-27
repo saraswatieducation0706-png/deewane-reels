@@ -1,0 +1,258 @@
+{
+ "day": 42,
+ "subject": "Weekly Revision",
+ "topic": "Week 7 Revision",
+ "days_to_gate": 63,
+ "summary": "all five topics of Week 7: first law for closed systems and control volumes; second law and entropy; differential equations; availability and thermodynamic relations; 1-D steady conduction (3 questions each)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Heat Transfer, Fins & Unsteady Conduction",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A rigid, insulated tank holds 0.8 kg of air (c<sub>v</sub> = 0.718 kJ/kg·K). A paddle wheel driven from outside, as shown, does 40 kJ of work on the air. The rise in air temperature (in K, round off to two decimal places) is ______",
+   "fig": "d42p_q1.png",
+   "opts": null,
+   "ans": "69.64 (accept 69.0 to 70.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> First law, closed system: Q − W = ΔU. Rigid tank → no boundary work, but shaft (paddle) work is still work.",
+    "Q = 0, W = −40 kJ (work done on the air), so ΔU = +40 kJ",
+    "ΔT = 40/(0.8 × 0.718) = <b>69.64 K</b>",
+    "<b>Exam tip:</b> 'Rigid' kills only p dV work; paddle-wheel and electrical work still cross the boundary."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A closed system goes from state 1 to state 2 along different paths. Which quantity is the same for every path?",
+   "fig": null,
+   "opts": [
+    "Q",
+    "W",
+    "Q − W",
+    "Q + W"
+   ],
+   "ans": "(C) Q − W",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Q and W are path functions (inexact differentials), but their difference equals ΔU.",
+    "Since U is a property, Q − W = U₂ − U₁ is fixed by the end states alone.",
+    "<b>Exam tip:</b> This is the first law's corollary: energy (U) is a property of the system."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air enters an adiabatic diffuser at 250 m/s and leaves at 30 m/s (c<sub>p</sub> = 1.005 kJ/kg·K). The rise in air temperature (in K, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "30.65 (accept 30.3 to 31.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> SFEE with Q = W = 0 and Δz = 0: h₁ + V₁²/2 = h₂ + V₂²/2.",
+    "ΔT = (V₁² − V₂²)/(2c<sub>p</sub>) = (62 500 − 900)/(2 × 1005)",
+    "ΔT = <b>30.65 K</b>",
+    "<b>Exam tip:</b> Use c<sub>p</sub> in J/kg·K (1005) when velocities are in m/s."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For an adiabatic process in a closed system, the entropy of the system",
+   "fig": null,
+   "opts": [
+    "always remains constant",
+    "may decrease if the process is irreversible",
+    "remains constant if reversible and increases if irreversible",
+    "always decreases"
+   ],
+   "ans": "(C) remains constant if reversible and increases if irreversible",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ΔS = ∫δQ/T + S<sub>gen</sub>. With δQ = 0, ΔS = S<sub>gen</sub> ≥ 0.",
+    "Reversible adiabatic (isentropic): S<sub>gen</sub> = 0, ΔS = 0. Irreversible adiabatic (friction, stirring): ΔS > 0.",
+    "Entropy of an adiabatic closed system can never decrease.",
+    "<b>Exam tip:</b> 'Adiabatic' ≠ 'isentropic' unless the process is also reversible."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A reversible heat engine takes heat from a source at 900 K and rejects heat to the atmosphere at 300 K. All its work drives a reversible heat pump that takes heat from the atmosphere at 300 K and delivers it to a building at 350 K, as shown. The heat delivered to the building per kJ of heat taken from the 900 K source (round off to two decimal places) is ______",
+   "fig": "d42p_q5.png",
+   "opts": null,
+   "ans": "4.67 (accept 4.62 to 4.71)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Chain the two devices through their common work: W = η<sub>HE</sub>Q<sub>1</sub> and Q<sub>building</sub> = COP<sub>HP</sub> × W.",
+    "η<sub>HE</sub> = 1 − 300/900 = 0.6667; COP<sub>HP</sub> = 350/(350 − 300) = 7",
+    "Q<sub>building</sub>/Q<sub>1</sub> = 0.6667 × 7 = <b>4.67</b>",
+    "<b>Exam tip:</b> More heat reaches the building than leaves the source: the heat pump pulls extra energy from the atmosphere."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "1 kg of ice at 0 °C melts completely to water at 0 °C (latent heat 333.5 kJ/kg). The entropy change of the ice (in kJ/K, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.221 (accept 1.209 to 1.233)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Melting at constant temperature is internally reversible: ΔS = Q/T with T in kelvin.",
+    "ΔS = 333.5/273.15",
+    "ΔS = <b>1.221 kJ/K</b>",
+    "<b>Exam tip:</b> Using 0 °C instead of 273.15 K is the classic mistake (it would divide by zero)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A particular integral of y″ − 4y′ + 4y = e<sup>2x</sup> is",
+   "fig": null,
+   "opts": [
+    "e<sup>2x</sup>/4",
+    "x e<sup>2x</sup>",
+    "(x²/2) e<sup>2x</sup>",
+    "x² e<sup>2x</sup>"
+   ],
+   "ans": "(C) (x²/2) e<sup>2x</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The auxiliary equation (m − 2)² = 0 has a double root 2, which matches the exponent of the RHS; so try y<sub>p</sub> = A x² e<sup>2x</sup>.",
+    "For (D − 2)²y = e<sup>2x</sup>: y<sub>p</sub> = x²e<sup>2x</sup>/2! (rule for a root repeated twice)",
+    "Check: with y = (x²/2)e<sup>2x</sup>, (D − 2)y = x e<sup>2x</sup> and (D − 2)²y = e<sup>2x</sup> ✓, so y<sub>p</sub> = <b>(x²/2) e<sup>2x</sup></b>",
+    "<b>Exam tip:</b> If e<sup>ax</sup> on the RHS repeats a root k times, multiply the trial solution by x<sup>k</sup>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The solution of dy/dx = −2xy with y(0) = 3 is evaluated at x = 1. The value of y(1) (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.104 (accept 1.093 to 1.115)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Variables separable: dy/y = −2x dx.",
+    "ln y = −x² + C ⇒ y = 3e<sup>−x²</sup> using y(0) = 3",
+    "y(1) = 3e<sup>−1</sup> = <b>1.104</b>",
+    "<b>Exam tip:</b> Always apply the initial condition before substituting the final x."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If F(s) is the Laplace transform of f(t) = e<sup>−2t</sup> cos 3t, the value of F(1) is",
+   "fig": null,
+   "opts": [
+    "1/6",
+    "1/10",
+    "1/5",
+    "1/3"
+   ],
+   "ans": "(A) 1/6",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> First shifting theorem: L{e<sup>−at</sup>g(t)} = G(s + a), with L{cos bt} = s/(s² + b²).",
+    "F(s) = (s + 2)/[(s + 2)² + 9]",
+    "F(1) = 3/(9 + 9) = 3/18 = <b>1/6</b>",
+    "<b>Exam tip:</b> Shift s, not t: replacing s by s − 2 instead of s + 2 gives (−1)/(1 + 9) = −1/10, a common slip."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A room is kept at 22 °C by an electric resistance heater when the outdoor temperature is 2 °C. Treating the outdoors as the dead state, the second-law efficiency of the heater (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.78 (accept 6.71 to 6.85)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>II</sub> = minimum work needed / actual work used. The minimum is a reversible heat pump between 275.15 K and 295.15 K.",
+    "COP<sub>rev</sub> = 295.15/20 = 14.76; the heater has COP = 1",
+    "η<sub>II</sub> = 1/14.76 = 20/295.15 = <b>6.78 %</b>",
+    "<b>Exam tip:</b> First-law efficiency of a resistance heater is 100 %, yet it wastes over 93 % of the exergy of electricity."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For an incompressible liquid, the difference between the specific heats c<sub>p</sub> − c<sub>v</sub> is",
+   "fig": null,
+   "opts": [
+    "R",
+    "zero",
+    "T v β²/κ, which is large",
+    "equal to c<sub>v</sub>"
+   ],
+   "ans": "(B) zero",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> General relation: c<sub>p</sub> − c<sub>v</sub> = T v β²/κ (β = volume expansivity, κ = isothermal compressibility).",
+    "For an incompressible substance v is constant, so β = 0 and c<sub>p</sub> − c<sub>v</sub> = 0.",
+    "So liquids and solids have a single specific heat c.",
+    "<b>Exam tip:</b> c<sub>p</sub> ≥ c<sub>v</sub> always, because κ > 0 for every stable substance."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a process the total entropy generated is 0.4 kJ/K. The surroundings are at 27 °C. The lost work (irreversibility) is",
+   "fig": null,
+   "opts": [
+    "10.8 kJ",
+    "120.1 kJ",
+    "0.4 kJ",
+    "750.4 kJ"
+   ],
+   "ans": "(B) 120.1 kJ",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Gouy–Stodola theorem: I = T₀S<sub>gen</sub>, with T₀ in kelvin.",
+    "I = 300.15 × 0.4",
+    "I = <b>120.1 kJ</b> (≈ 120 kJ)",
+    "<b>Exam tip:</b> Using 27 instead of 300.15 gives 10.8 kJ, the trap option."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A furnace wall has 0.2 m of firebrick (k = 1.2 W/m·K) on the inside and 0.1 m of insulating brick (k = 0.15 W/m·K) outside it. The inner face is at 900 °C and the outer face at 60 °C. The temperature at the firebrick–insulation interface (in °C) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "732",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Same heat flux through both layers; find q from the total resistance, then step through the first layer.",
+    "R″ = 0.2/1.2 + 0.1/0.15 = 0.1667 + 0.6667 = 0.8333 m²K/W; q = 840/0.8333 = 1008 W/m²",
+    "T<sub>i</sub> = 900 − 1008 × 0.1667 = <b>732 °C</b>",
+    "<b>Exam tip:</b> Check from the other side: 60 + 1008 × 0.6667 = 732 °C ✓."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A bare steam pipe has an outer radius larger than the critical radius of insulation. Adding insulation to it will",
+   "fig": null,
+   "opts": [
+    "first increase and then decrease the heat loss",
+    "always decrease the heat loss",
+    "always increase the heat loss",
+    "not change the heat loss"
+   ],
+   "ans": "(B) always decrease the heat loss",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Heat loss versus outer radius peaks at r<sub>c</sub> = k/h.",
+    "If the bare radius already exceeds r<sub>c</sub>, we are on the falling side of the curve: every extra layer reduces heat loss.",
+    "This is the normal case for steam pipes (r<sub>c</sub> of a few mm to a few cm).",
+    "<b>Exam tip:</b> The 'increase first' behaviour matters only for thin wires and small tubes."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A spherical liquid-nitrogen vessel has an inner radius of 0.5 m and is covered with 50 mm of insulation (k = 0.02 W/m·K). The inner surface is at −196 °C and the outer surface at 25 °C. The heat gain (in W, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "305.5 (accept 302.4 to 308.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Spherical shell: Q = 4πk r₁r₂(T₂ − T₁)/(r₂ − r₁).",
+    "r₁ = 0.5 m, r₂ = 0.55 m, ΔT = 25 − (−196) = 221 K",
+    "Q = 4π × 0.02 × 0.5 × 0.55 × 221/0.05 = <b>305.5 W</b>",
+    "<b>Exam tip:</b> At this heat gain about 305.5/199 000 ≈ 1.5 g of N₂ boils off per second (h<sub>fg</sub> ≈ 199 kJ/kg)."
+   ]
+  }
+ ]
+}

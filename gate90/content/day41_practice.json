@@ -1,0 +1,266 @@
+{
+ "day": 41,
+ "subject": "Heat Transfer",
+ "topic": "1-D Conduction",
+ "days_to_gate": 64,
+ "summary": "modes of heat transfer, Fourier's law, 1-D steady conduction in plane walls, cylinders and spheres, the thermal-resistance network (series and parallel), variable conductivity, heat generation, contact resistance and the critical radius of insulation",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 7 Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "In a pure metal such as copper, heat is conducted mainly by",
+   "fig": null,
+   "opts": [
+    "lattice vibrations (phonons) alone",
+    "free electrons",
+    "radiation between atoms",
+    "bulk motion of the atoms"
+   ],
+   "ans": "(B) free electrons",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Conduction in solids has two carriers: free electrons and lattice vibrations (phonons).",
+    "In pure metals the free-electron contribution dominates, which is why good electrical conductors are also good thermal conductors (Wiedemann–Franz law).",
+    "Alloying scatters electrons, so alloys (e.g. stainless steel) have much lower k than pure metals.",
+    "<b>Exam tip:</b> Order of k: pure metals > alloys > non-metallic solids > liquids > gases."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plane wall 0.15 m thick (k = 1.2 W/m·K) has its faces at 150 °C and 30 °C. The steady heat flux (in W/m²) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "960",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Fourier's law for 1-D steady conduction with constant k: q = k(T₁ − T₂)/L.",
+    "q = 1.2 × (150 − 30)/0.15 = 1.2 × 800",
+    "q = <b>960 W/m²</b>",
+    "<b>Exam tip:</b> In a plane wall with constant k and no generation, the profile is a straight line."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The double-glazed window shown (area 1.5 m²) has two 4 mm glass panes (k = 0.78 W/m·K) separated by a 10 mm stagnant air gap (k = 0.026 W/m·K). The room is at 22 °C (h = 10 W/m²·K) and outside air at −8 °C (h = 40 W/m²·K). The heat loss through the window (in W, round off to one decimal place) is ______",
+   "fig": "d41p_q3.png",
+   "opts": null,
+   "ans": "86.6 (accept 85.8 to 87.4)",
+   "sfig": "d41p_s3.png",
+   "solution": [
+    "<b>Concept:</b> Series resistances per m² add: 1/h<sub>i</sub> + L<sub>g</sub>/k<sub>g</sub> + L<sub>a</sub>/k<sub>a</sub> + L<sub>g</sub>/k<sub>g</sub> + 1/h<sub>o</sub> (circuit below).",
+    "R″ = 1/10 + 0.004/0.78 + 0.010/0.026 + 0.004/0.78 + 1/40 = 0.1 + 0.00513 + 0.38462 + 0.00513 + 0.025 = 0.5199 m²K/W",
+    "q = 30/0.5199 = 57.71 W/m²; Q = 57.71 × 1.5 = <b>86.6 W</b>",
+    "<b>Exam tip:</b> The thin air gap gives about 74 % of the total resistance; the glass itself hardly matters."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The conduction resistance of a hollow cylinder of inner radius r₁, outer radius r₂, length L and conductivity k is",
+   "fig": null,
+   "opts": [
+    "(r₂ − r₁)/(kL)",
+    "ln(r₂/r₁)/(2πkL)",
+    "(r₂ − r₁)/(4πk r₁r₂)",
+    "2πkL/ln(r₂/r₁)"
+   ],
+   "ans": "(B) ln(r₂/r₁)/(2πkL)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a cylinder the area 2πrL grows with r, so Q = −k(2πrL) dT/dr is integrated with Q constant.",
+    "Q = 2πkL(T₁ − T₂)/ln(r₂/r₁), so R = ln(r₂/r₁)/(2πkL)",
+    "Option (C) is the resistance of a spherical shell; option (D) is the conductance, not the resistance.",
+    "<b>Exam tip:</b> For a thin tube (r₂ ≈ r₁) the cylinder result reduces to the plane-wall value t/(kA)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A tube of inner radius 25 mm and outer radius 35 mm is 2 m long (k = 15 W/m·K). Its inner and outer surfaces are at 120 °C and 100 °C. The heat flow through the tube wall (in W, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11204 (accept 11148 to 11260)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Q = 2πkL(T₁ − T₂)/ln(r₂/r₁).",
+    "ln(35/25) = ln 1.4 = 0.33647",
+    "Q = 2π × 15 × 2 × 20/0.33647 = 3769.9/0.33647 = <b>11204 W</b>",
+    "<b>Exam tip:</b> Keep radii as a ratio: units cancel inside the logarithm."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An electric wire whose radius is smaller than the critical radius of insulation is covered with a thin layer of insulation. The effect is that",
+   "fig": null,
+   "opts": [
+    "the heat dissipated decreases and the wire runs hotter",
+    "the heat dissipated is unchanged",
+    "the heat dissipated increases, so the wire runs cooler for the same current",
+    "the wire cannot reach steady state"
+   ],
+   "ans": "(C) the heat dissipated increases, so the wire runs cooler for the same current",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Insulation adds conduction resistance but also increases the outer surface area, reducing convection resistance 1/(2πrLh).",
+    "For r < r<sub>c</sub> = k/h the drop in convection resistance is larger, so the total resistance falls and heat loss rises.",
+    "Heat loss is maximum at r = r<sub>c</sub>; beyond it insulation reduces heat loss.",
+    "<b>Exam tip:</b> This is why thin wires are insulated: the insulation helps cooling while giving electrical safety."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A wire of 3 mm diameter is to be insulated with a material of k = 0.18 W/m·K; the outside heat transfer coefficient is 12 W/m²·K. The insulation thickness (in mm, round off to one decimal place) for maximum heat dissipation is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "13.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Critical radius for a cylinder r<sub>c</sub> = k/h.",
+    "r<sub>c</sub> = 0.18/12 = 0.015 m = 15 mm",
+    "Thickness = r<sub>c</sub> − r<sub>wire</sub> = 15 − 1.5 = <b>13.5 mm</b>",
+    "<b>Exam tip:</b> The question asks for thickness, not radius: subtract the wire radius."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A nuclear fuel rod of radius 10 mm (k = 25 W/m·K) generates heat uniformly at 5 × 10⁷ W/m³. Its surface is held at 300 °C. The centre-line temperature is",
+   "fig": null,
+   "opts": [
+    "325 °C",
+    "400 °C",
+    "350 °C",
+    "312.5 °C"
+   ],
+   "ans": "(C) 350 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Solid cylinder with uniform generation: T(r) = T<sub>s</sub> + q<sub>g</sub>(R² − r²)/(4k), maximum on the axis.",
+    "T<sub>max</sub> − T<sub>s</sub> = q<sub>g</sub>R²/(4k) = 5 × 10⁷ × 10⁻⁴/(4 × 25) = 50 °C",
+    "T<sub>max</sub> = <b>350 °C</b>",
+    "<b>Exam tip:</b> Denominator: 2k for a plane wall (half-thickness L), 4k for a cylinder, 6k for a sphere."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A flat plate surface at 400 K (emissivity 0.8) loses heat to still air at 300 K (h = 10 W/m²·K) and to large surroundings also at 300 K. Taking σ = 5.67 × 10⁻⁸ W/m²·K⁴, the total heat loss per m² (in W/m², round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1794 (accept 1785 to 1803)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Convection and radiation act in parallel from the same surface: q = h(T<sub>s</sub> − T<sub>∞</sub>) + εσ(T<sub>s</sub>⁴ − T<sub>sur</sub>⁴).",
+    "Convection: 10 × 100 = 1000 W/m²",
+    "Radiation: 0.8 × 5.67 × 10⁻⁸ × (400⁴ − 300⁴) = 0.8 × 5.67 × 10⁻⁸ × 1.75 × 10¹⁰ = 793.8 W/m²",
+    "Total = <b>1794 W/m²</b>",
+    "<b>Exam tip:</b> Even at modest temperatures radiation is comparable to free convection; never ignore it unless told."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two slabs of the same thickness L and equal face areas are placed side by side between the same two isothermal surfaces, as shown. Their conductivities are k and 3k. The equivalent conductivity of the combination is",
+   "fig": "d41p_q10.png",
+   "opts": [
+    "1.5k",
+    "4k",
+    "0.75k",
+    "2k"
+   ],
+   "ans": "(D) 2k",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Side-by-side layers see the same ΔT, so their conductances add (parallel resistances).",
+    "Q = [k(A/2) + 3k(A/2)]ΔT/L = 2kAΔT/L, so k<sub>eq</sub> = <b>2k</b>",
+    "If the same slabs were in series (one after the other, each L/2 thick): k<sub>eq</sub> = L/(L/2k + L/6k) = 1.5k.",
+    "<b>Exam tip:</b> Parallel → area-weighted mean of k; series → thickness-weighted harmonic mean."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steam pipe of outer radius 50 mm is at 200 °C. It carries two insulation layers: the inner one (k = 0.05 W/m·K) up to a radius of 75 mm and the outer one (k = 0.1 W/m·K) up to 100 mm, as shown. The outer surface is at 40 °C. The heat loss per metre (in W/m, round off to one decimal place) is ______",
+   "fig": "d41p_q11.png",
+   "opts": null,
+   "ans": "91.5 (accept 90.6 to 92.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cylindrical layers in series: R′ = Σ ln(r<sub>out</sub>/r<sub>in</sub>)/(2πk).",
+    "Inner: ln(75/50)/(2π × 0.05) = 0.4055/0.3142 = 1.2906 K·m/W",
+    "Outer: ln(100/75)/(2π × 0.1) = 0.2877/0.6283 = 0.4579 K·m/W",
+    "Q′ = (200 − 40)/1.7485 = <b>91.5 W/m</b>",
+    "<b>Exam tip:</b> The interface is at 200 − 91.5 × 1.2906 = 81.9 °C; check the inner layer is rated for 200 °C."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In steady 1-D conduction through a composite plane wall with no heat generation, which quantity is the same for every layer?",
+   "fig": null,
+   "opts": [
+    "Temperature drop",
+    "Temperature gradient",
+    "Heat flux",
+    "Thermal resistance"
+   ],
+   "ans": "(C) Heat flux",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In steady state no energy is stored in any layer, so whatever enters a layer must leave it.",
+    "Hence the heat flux q is the same through all layers (series circuit: same 'current').",
+    "Temperature drop and gradient differ from layer to layer (ΔT = qL/k).",
+    "<b>Exam tip:</b> The layer with the largest L/k takes the largest share of the total temperature drop."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plane wall 50 mm thick (k = 25 W/m·K) generates heat uniformly at 10⁶ W/m³. One face is perfectly insulated and the other is held at 60 °C. The maximum temperature in the wall (in °C) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "110",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With one face insulated, dT/dx = 0 there, so the wall behaves like half of a symmetric wall of thickness 2L; the maximum is at the insulated face.",
+    "T<sub>max</sub> − T<sub>s</sub> = q<sub>g</sub>L²/(2k) with L = full thickness = 0.05 m",
+    "= 10⁶ × 0.0025/50 = 50 °C, so T<sub>max</sub> = <b>110 °C</b>",
+    "<b>Exam tip:</b> Insulated face = plane of symmetry. Use the full thickness here, the half-thickness for a wall cooled on both sides."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Thermal contact resistance between two pressed metal surfaces can be reduced by",
+   "fig": null,
+   "opts": [
+    "polishing one surface and roughening the other",
+    "increasing the contact pressure and filling the gaps with a thermal grease",
+    "evacuating the gaps between the surfaces",
+    "coating the surfaces with a thin plastic film"
+   ],
+   "ans": "(B) increasing the contact pressure and filling the gaps with a thermal grease",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Real surfaces touch only at peaks; the gaps (usually air, low k) create the contact resistance R<sub>c</sub> = 1/h<sub>c</sub>.",
+    "Higher pressure flattens the peaks (more true contact area); a grease or soft metal foil replaces air in the gaps.",
+    "A vacuum or plastic film would increase the resistance.",
+    "<b>Exam tip:</b> This is why CPU heat sinks use thermal paste."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Heat is conducted steadily along a solid truncated cone with its curved surface insulated, from the larger end to the smaller end, as shown. With constant k, the magnitude of the temperature gradient along the axis is",
+   "fig": "d41p_q15.png",
+   "opts": [
+    "the same everywhere",
+    "largest at the smaller end",
+    "largest at the larger end",
+    "zero at the smaller end"
+   ],
+   "ans": "(B) largest at the smaller end",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In steady state with an insulated side, Q = −kA(x) dT/dx is the same at every section.",
+    "So |dT/dx| = Q/(kA): where A is smallest, the gradient is steepest.",
+    "The temperature profile is therefore curved, not linear, even with constant k.",
+    "<b>Exam tip:</b> 'Linear profile' needs constant k AND constant area AND no generation."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "day": 43,
+ "subject": "Heat Transfer",
+ "topic": "Fins & Unsteady Conduction",
+ "days_to_gate": 61,
+ "summary": "the fin equation, long and insulated-tip fins, corrected length, fin efficiency and effectiveness, lumped-capacitance (Biot number, time constant), Fourier number, Heisler charts and the semi-infinite solid",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Heat Transfer, Convection",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The basic assumption of the lumped capacitance method of transient conduction is that",
+   "fig": null,
+   "opts": [
+    "the surface temperature is constant",
+    "the heat transfer coefficient is zero",
+    "the temperature of the body is uniform in space at every instant and changes only with time",
+    "the body is semi-infinite"
+   ],
+   "ans": "(C) the temperature of the body is uniform in space at every instant and changes only with time",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> When internal conduction resistance is negligible (Bi < 0.1), spatial temperature differences inside the body are small.",
+    "Then T = T(t) only, and an energy balance gives ρVc dT/dt = −hA<sub>s</sub>(T − T<sub>∞</sub>).",
+    "Solution: θ/θ<sub>i</sub> = exp(−t/τ) with τ = ρVc/(hA<sub>s</sub>).",
+    "<b>Exam tip:</b> Always check Bi = hL<sub>c</sub>/k with L<sub>c</sub> = V/A<sub>s</sub> before using the lumped formula."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A long steel cylinder of 40 mm diameter (k = 15 W/m·K) is cooled in a fluid with h = 60 W/m²·K. The Biot number based on the lumped characteristic length (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.04",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Lumped Bi uses L<sub>c</sub> = V/A<sub>s</sub>; for a long cylinder L<sub>c</sub> = πR²L/(2πRL) = R/2.",
+    "L<sub>c</sub> = 0.02/2 = 0.01 m",
+    "Bi = hL<sub>c</sub>/k = 60 × 0.01/15 = <b>0.04</b> (< 0.1, so lumped analysis is valid)",
+    "<b>Exam tip:</b> Heisler charts use L<sub>c</sub> = R (not R/2) for cylinders; do not mix the two definitions."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A copper sphere of 30 mm diameter (ρ = 8900 kg/m³, c = 385 J/kg·K, k = 400 W/m·K) at 200 °C is cooled in air at 25 °C with h = 25 W/m²·K. The time for it to reach 80 °C (in s, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "793 (accept 787 to 799)",
+   "sfig": "d43p_s3.png",
+   "solution": [
+    "<b>Concept:</b> Bi = h(D/6)/k = 25 × 0.005/400 = 0.0003 < 0.1, so lumped: t = τ ln(θ<sub>i</sub>/θ).",
+    "τ = ρcL<sub>c</sub>/h = 8900 × 385 × 0.005/25 = 685.3 s",
+    "t = 685.3 × ln(175/55) = 685.3 × 1.1575 = <b>793 s</b>",
+    "<b>Exam tip:</b> Work with temperature excesses θ = T − T<sub>∞</sub>, never with T directly."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "To make a thermocouple respond faster to temperature changes in a gas stream, one should",
+   "fig": null,
+   "opts": [
+    "use a larger bead",
+    "use a smaller bead and increase the gas velocity",
+    "use a bead material of higher density and specific heat",
+    "reduce the gas velocity"
+   ],
+   "ans": "(B) use a smaller bead and increase the gas velocity",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Time constant τ = ρcV/(hA<sub>s</sub>) = ρcD/(6h) for a spherical bead.",
+    "A smaller D reduces τ directly; a higher gas velocity raises h and reduces τ further.",
+    "Higher ρc (option C) or lower velocity (option D) would slow the response.",
+    "<b>Exam tip:</b> After one τ the bead has covered 63.2 % of the step change; after 5τ, over 99 %."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A very long brass rod of 8 mm diameter (k = 110 W/m·K) projects from a furnace wall into air with h = 15 W/m²·K, as shown. Its base is 60 °C above the air temperature. The heat lost by the rod (in W, round off to two decimal places) is ______",
+   "fig": "d43p_q5.png",
+   "opts": null,
+   "ans": "2.74 (accept 2.71 to 2.77)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Infinitely long fin: Q = √(hPkA<sub>c</sub>) θ<sub>b</sub>, with the temperature excess falling as θ = θ<sub>b</sub>e<sup>−mx</sup>.",
+    "P = πD = 0.02513 m; A<sub>c</sub> = πD²/4 = 5.027 × 10⁻⁵ m²",
+    "√(15 × 0.02513 × 110 × 5.027 × 10⁻⁵) = √(2.084 × 10⁻³) = 0.04566 W/K",
+    "Q = 0.04566 × 60 = <b>2.74 W</b>",
+    "<b>Exam tip:</b> m = √(4h/(kD)) = 8.26 m⁻¹ here, so a rod longer than about 3/m ≈ 0.36 m already acts as 'infinite'."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Fin effectiveness is defined as the ratio of",
+   "fig": null,
+   "opts": [
+    "heat transfer from the fin to the heat that would be transferred from the base area alone without the fin",
+    "heat transfer from the fin to the heat it would transfer if the whole fin were at base temperature",
+    "fin surface area to base area",
+    "fin length to fin thickness"
+   ],
+   "ans": "(A) heat transfer from the fin to the heat that would be transferred from the base area alone without the fin",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Effectiveness ε<sub>f</sub> = Q<sub>fin</sub>/(hA<sub>c</sub>θ<sub>b</sub>), the gain over the bare base.",
+    "Option (B) is the definition of fin efficiency η<sub>f</sub>, a different quantity.",
+    "Fins are justified only when ε<sub>f</sub> is well above 1 (≥ 2 in practice).",
+    "<b>Exam tip:</b> For a long fin, ε<sub>f</sub> = √(kP/(hA<sub>c</sub>)), so thin, closely spaced, high-k fins in gases work best."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A straight rectangular aluminium fin (k = 200 W/m·K) is 2 mm thick and 20 mm long; h = 50 W/m²·K. Using the corrected length L<sub>c</sub> = L + t/2 with an insulated-tip formula, the fin efficiency (in %, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "96.5 (accept 96.2 to 96.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a thin rectangular fin (width ≫ t), m = √(2h/(kt)); the convecting tip is handled by extending the length by t/2.",
+    "m = √(2 × 50/(200 × 0.002)) = √250 = 15.81 m⁻¹; L<sub>c</sub> = 20 + 1 = 21 mm",
+    "mL<sub>c</sub> = 0.332; η = tanh(0.332)/0.332 = <b>96.5 %</b>",
+    "<b>Exam tip:</b> For a pin fin the corrected length is L + D/4."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a very long fin, the temperature excess θ = T − T<sub>∞</sub> varies along the fin length x as",
+   "fig": null,
+   "opts": [
+    "θ = θ<sub>b</sub>(1 − mx)",
+    "θ = θ<sub>b</sub>cosh(mx)",
+    "θ = θ<sub>b</sub>/(1 + mx)",
+    "θ = θ<sub>b</sub>e<sup>−mx</sup>"
+   ],
+   "ans": "(D) θ = θ<sub>b</sub>e<sup>−mx</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The fin equation d²θ/dx² − m²θ = 0 has solution θ = C₁e<sup>mx</sup> + C₂e<sup>−mx</sup>.",
+    "For an infinitely long fin θ → 0 as x → ∞, so C₁ = 0 and C₂ = θ<sub>b</sub>.",
+    "Hence θ = <b>θ<sub>b</sub>e<sup>−mx</sup></b>, an exponential decay.",
+    "<b>Exam tip:</b> For an insulated tip, θ/θ<sub>b</sub> = cosh m(L − x)/cosh mL."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel ball of 40 mm diameter (ρ = 7800 kg/m³, c = 460 J/kg·K, k = 40 W/m·K) at 420 °C is placed in air at 20 °C with h = 40 W/m²·K. The heat it loses in the first 300 s (in kJ, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "18.97 (accept 18.78 to 19.16)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bi = h(D/6)/k = 40 × 0.00667/40 = 0.0067, so lumped. Heat lost in time t: Q = mcθ<sub>i</sub>(1 − e<sup>−t/τ</sup>).",
+    "m = 7800 × π(0.04)³/6 = 0.2614 kg; τ = ρcL<sub>c</sub>/h = 7800 × 460 × 0.00667/40 = 598 s",
+    "mcθ<sub>i</sub> = 0.2614 × 460 × 400 = 48.10 kJ; 1 − e<sup>−300/598</sup> = 0.3945",
+    "Q = 48.10 × 0.3945 = <b>18.97 kJ</b>",
+    "<b>Exam tip:</b> mcθ<sub>i</sub> is the maximum heat the body can ever lose (as t → ∞)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The one-term approximation used in the Heisler charts for transient conduction is accurate (within about 2 %) when",
+   "fig": null,
+   "opts": [
+    "Bi < 0.1",
+    "the Fourier number Fo > 0.2",
+    "the Fourier number Fo < 0.05",
+    "Bi > 100 only"
+   ],
+   "ans": "(B) the Fourier number Fo > 0.2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The exact solution is an infinite series in exp(−λ<sub>n</sub>²Fo); higher terms decay quickly as Fo grows.",
+    "For Fo > 0.2 only the first term matters, and the charts (θ₀/θ<sub>i</sub> versus Fo with 1/Bi as parameter) are built on it.",
+    "Bi < 0.1 is the lumped criterion, a different simplification.",
+    "<b>Exam tip:</b> For very short times (small Fo) treat the body as a semi-infinite solid instead."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A large steel plate 50 mm thick (α = 1.2 × 10⁻⁵ m²/s) is suddenly exposed to hot gases on both faces. The Fourier number based on the half-thickness after 10 minutes (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11.52 (accept 11.40 to 11.64)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Fo = αt/L², with L the half-thickness for a plate heated on both sides.",
+    "L = 0.025 m, t = 600 s",
+    "Fo = 1.2 × 10⁻⁵ × 600/0.025² = <b>11.52</b>",
+    "<b>Exam tip:</b> Fo > 0.2 here, so the one-term (Heisler) solution applies."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A thick concrete slab (α = 5 × 10⁻⁷ m²/s) is initially at 30 °C throughout. Its surface is suddenly raised to and held at 80 °C, as shown. Taking erf(0.5) = 0.5205, the temperature 60 mm below the surface after 2 hours is about",
+   "fig": "d43p_q12.png",
+   "opts": [
+    "56.0 °C",
+    "26.0 °C",
+    "54.0 °C",
+    "46.0 °C"
+   ],
+   "ans": "(C) 54.0 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Semi-infinite solid with a step change in surface temperature: (T − T<sub>s</sub>)/(T<sub>i</sub> − T<sub>s</sub>) = erf[x/(2√(αt))].",
+    "√(αt) = √(5 × 10⁻⁷ × 7200) = 0.06 m, so x/(2√(αt)) = 0.06/0.12 = 0.5",
+    "T = 80 + (30 − 80) × 0.5205 = 80 − 26.0 = <b>54.0 °C</b>",
+    "<b>Exam tip:</b> At the surface erf(0) = 0 gives T = T<sub>s</sub>; deep inside erf → 1 gives T = T<sub>i</sub>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A tube in a heat exchanger carries water inside, while air flows over its outside. To increase the heat transfer most effectively, fins should be attached",
+   "fig": null,
+   "opts": [
+    "on the water side (inside)",
+    "on the air side (outside)",
+    "equally on both sides",
+    "on neither side, since fins always reduce heat transfer"
+   ],
+   "ans": "(B) on the air side (outside)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The overall rate is limited by the larger resistance 1/(hA). Gas-side h (10–100 W/m²·K) is far lower than water-side h (thousands).",
+    "Adding area where h is low cuts the controlling resistance.",
+    "This is why car radiators and AC condensers have fins on the air side.",
+    "<b>Exam tip:</b> Fins pay off where hA is smallest."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An aluminium pin fin (k = 100 W/m·K) of 4 mm diameter and 60 mm length has an insulated tip, as shown. Its base is at 100 °C and the surrounding air is at 25 °C with h = 25 W/m²·K. The tip temperature (in °C, round off to one decimal place) is ______",
+   "fig": "d43p_q14.png",
+   "opts": null,
+   "ans": "75.5 (accept 75.0 to 76.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Insulated tip: θ(x)/θ<sub>b</sub> = cosh m(L − x)/cosh mL, so at the tip θ<sub>L</sub> = θ<sub>b</sub>/cosh mL.",
+    "m = √(4h/(kD)) = √(100/0.4) = 15.81 m⁻¹; mL = 0.949; cosh 0.949 = 1.485",
+    "θ<sub>L</sub> = 75/1.485 = 50.5 K, so T<sub>tip</sub> = 25 + 50.5 = <b>75.5 °C</b>",
+    "<b>Exam tip:</b> A tip far hotter than the air means the fin is short (mL small) and highly efficient."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two solid spheres of the same material, of diameters D and 2D, are cooled from the same initial temperature in the same fluid (lumped behaviour). The time taken by the larger sphere to reach a given temperature is",
+   "fig": null,
+   "opts": [
+    "the same as for the smaller sphere",
+    "twice that of the smaller sphere",
+    "four times that of the smaller sphere",
+    "half that of the smaller sphere"
+   ],
+   "ans": "(B) twice that of the smaller sphere",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For the same θ/θ<sub>i</sub>, t ∝ τ = ρcL<sub>c</sub>/h with L<sub>c</sub> = D/6.",
+    "Doubling D doubles L<sub>c</sub> and hence τ.",
+    "So the larger sphere takes <b>twice</b> as long.",
+    "<b>Exam tip:</b> In the non-lumped (Heisler) regime, time at equal Fo scales with D² instead."
+   ]
+  }
+ ]
+}
