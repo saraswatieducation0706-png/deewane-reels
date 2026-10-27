@@ -40,7 +40,10 @@
   "TT38",
   "TT39",
   "TT40",
-  "FLT01"
+  "FLT01",
+  "PDF:EM",
+  "PDF:MEC",
+  "PDF:SOM"
  ],
  "drive_saved": [
   "TT01 docx",
@@ -125,7 +128,13 @@
   "TT40.json",
   "FLT01 Section A docx",
   "FLT01 Section B docx",
-  "FLT01.json"
+  "FLT01.json",
+  "PDF:EM pdf",
+  "notes_EM.json",
+  "PDF:MEC pdf",
+  "notes_MEC.json",
+  "PDF:SOM pdf",
+  "notes_SOM.json"
  ],
  "notes": [
   "TT12 made in chat on 19 Oct (quality reference, in vault/TT12/).",
@@ -141,6 +150,7 @@
   "TT30-TT32 made by the 25 Oct evening run (batch 10); Word + JSON copied to Drive via Make and confirmed.",
   "TT33-TT35 made by the 26 Oct morning run (batch 11); Word + JSON copied to Drive via Make and confirmed.",
   "TT36-TT38 made by the 26 Oct evening-slot run (batch 12, ran 12:23 UTC); Word + JSON copied to Drive via Make and confirmed.",
-  "TT39, TT40, FLT01 made by the 27 Oct run (batch 13); Word + JSON copied to Drive via Make and confirmed."
+  "TT39, TT40, FLT01 made by the 27 Oct run (batch 13); Word + JSON copied to Drive via Make and confirmed.",
+  "PDF:EM, PDF:MEC, PDF:SOM made by the 27 Oct evening-slot run (batch 14, ran ~13:00 UTC); tooling/build_notes.py added; PDFs + JSON copied to Drive via Make and confirmed. First notes batch: sent to Naveen for approval."
  ]
 }
