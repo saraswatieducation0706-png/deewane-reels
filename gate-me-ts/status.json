@@ -37,7 +37,10 @@
   "TT35",
   "TT36",
   "TT37",
-  "TT38"
+  "TT38",
+  "TT39",
+  "TT40",
+  "FLT01"
  ],
  "drive_saved": [
   "TT01 docx",
@@ -115,7 +118,14 @@
   "TT37 docx",
   "TT37.json",
   "TT38 docx",
-  "TT38.json"
+  "TT38.json",
+  "TT39 docx",
+  "TT39.json",
+  "TT40 docx",
+  "TT40.json",
+  "FLT01 Section A docx",
+  "FLT01 Section B docx",
+  "FLT01.json"
  ],
  "notes": [
   "TT12 made in chat on 19 Oct (quality reference, in vault/TT12/).",
@@ -130,6 +140,7 @@
   "TT27-TT29 made by the 25 Oct morning run (batch 9); Word + JSON copied to Drive via Make and confirmed.",
   "TT30-TT32 made by the 25 Oct evening run (batch 10); Word + JSON copied to Drive via Make and confirmed.",
   "TT33-TT35 made by the 26 Oct morning run (batch 11); Word + JSON copied to Drive via Make and confirmed.",
-  "TT36-TT38 made by the 26 Oct evening-slot run (batch 12, ran 12:23 UTC); Word + JSON copied to Drive via Make and confirmed."
+  "TT36-TT38 made by the 26 Oct evening-slot run (batch 12, ran 12:23 UTC); Word + JSON copied to Drive via Make and confirmed.",
+  "TT39, TT40, FLT01 made by the 27 Oct run (batch 13); Word + JSON copied to Drive via Make and confirmed."
  ]
 }
