@@ -1,16 +1,86 @@
 {
- "out": "/tmp/claude-0/-home-claude-deewane-reels/4b78ab53-55fb-53c1-8a2e-4dcb71a3807f/scratchpad/d10/Day10_reel.mp4",
+ "out": "/tmp/claude-0/d10/Day10_v2_reel.mp4",
  "footer": "Day 10/90  •  100 days to GATE 2027",
  "scenes": [
-  {"kind": "hook", "title": ["DAY 10/90", "BEAM DEFLECTION"], "sub": "100 days to GATE: how far does it bend?",
-   "voice": "Day ten of the GATE M. E. ninety days challenge, and exactly one hundred days to GATE! Back to Strength of Materials: today we ask how far a loaded beam actually bends."},
-  {"kind": "card", "title": "Today's Topic", "lines": ["Strength of Materials", "Deflection of Beams"],
-   "voice": "Today's subject is Strength of Materials. Our topic: deflection of beams, a favourite for two mark numericals."},
-  {"kind": "steps", "title": "Cover Today", "steps": ["EI y'' = M (double integ.)", "Macaulay's method", "Moment-area theorems", "Standard slope & deflection"],
-   "voice": "Cover the double integration method, Macaulay's method for multiple loads, the moment area theorems, and the standard slope and deflection results."},
-  {"kind": "card", "title": "Quick Tip", "lines": ["Cantilever, tip load: PL³/3EI", "Simply supp., centre: PL³/48EI", "Same P, L: 16 times more"],
-   "voice": "Quick tip. A cantilever with a tip load deflects P L cubed by three E I. A simply supported beam with a central load, P L cubed by forty eight E I. Sixteen times less!"},
-  {"kind": "dates", "title": "Today's Plan", "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
-   "voice": "Solve the free practice set on Telegram first. Then take tonight's deflection test, seven to nine P. M., in our one rupee challenge course. Toppers in the next reel!"}
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 10/90",
+    "BEAM DEFLECTION"
+   ],
+   "sub": "100 days to GATE: how far does it bend?",
+   "voice": "Day ten of the GATE M. E. ninety days challenge, and exactly one hundred days to GATE! Back to Strength of Materials: today we ask how far a loaded beam actually bends."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Strength of Materials",
+    "Deflection of Beams"
+   ],
+   "voice": "Today's subject is Strength of Materials. Our topic: deflection of beams, a favourite for two mark numericals."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "EI y'' = M (double integ.)",
+    "Macaulay's method",
+    "Moment-area theorems",
+    "Standard slope & deflection"
+   ],
+   "voice": "Cover the double integration method, Macaulay's method for multiple loads, the moment area theorems, and the standard slope and deflection results."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Cantilever, tip load: PL³/3EI",
+    "Simply supp., centre: PL³/48EI",
+    "Same P, L: 16 times more"
+   ],
+   "voice": "Quick tip. A cantilever with a tip load deflects P L cubed by three E I. A simply supported beam with a central load, P L cubed by forty eight E I. Sixteen times less!"
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Solve the free practice set on Telegram first. Then take tonight's deflection test, seven to nine P. M., in our one rupee challenge course. Toppers in the next reel!"
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 9 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "26.33/30"
+    },
+    {
+     "rank": 2,
+     "name": "Divyanshi Pandey",
+     "marks": "20.33/30"
+    },
+    {
+     "rank": 3,
+     "name": "Atharva Vyas",
+     "marks": "19.34/30"
+    }
+   ],
+   "voice": "Day nine toppers! Rank one, Sweta Rani Sahoo, top again with twenty six point three three! Rank two, Divyanshi Pandey. Rank three, Atharva Vyas. Congratulations!"
+  }
  ]
 }
