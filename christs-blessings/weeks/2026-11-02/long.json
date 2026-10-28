@@ -1,0 +1,103 @@
+{
+ "long1": {
+  "date_et": "2026-11-02",
+  "slot_ist": "2026-11-03T06:30:00",
+  "type": "sleep prayer",
+  "script": "long1_script.txt",
+  "scene": "night_lake",
+  "seed": 35,
+  "music_key": "A",
+  "render": {
+   "intro": "Sleep Prayer with Psalm 91",
+   "subtitles": "dim",
+   "seed": 35,
+   "music_key": "A",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer with Psalm 91 | Rest Under the Shadow of His Wings",
+  "thumb_big": "Under His Wings",
+  "thumb_small": "Psalm 91 sleep prayer",
+  "thumb_scene": "night_lake",
+  "description": "A gentle guided sleep prayer from Psalm 91 for nights when you need a safe place to rest. We come into the secret place, say the words of trust slowly, rest the body under the picture of His wings, hand over the fears that come after dark, and remember God's help with David's bedtime words from Psalm 63, before a closing blessing. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 91:1-2, 4-5, 11; Psalm 63:6-8.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #psalm91 #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer",
+   "psalm 91",
+   "psalm 91 sleep prayer",
+   "guided sleep prayer",
+   "under his wings",
+   "bedtime prayer",
+   "prayer for peace at night",
+   "christian sleep meditation",
+   "kjv sleep",
+   "christ's blessings"
+  ]
+ },
+ "long2": {
+  "date_et": "2026-11-05",
+  "slot_ist": "2026-11-06T06:30:00",
+  "type": "sleep prayer for family",
+  "script": "long2_script.txt",
+  "scene": "candle",
+  "seed": 36,
+  "music_key": "Eb",
+  "render": {
+   "intro": "Sleep Prayer for the People You Love",
+   "subtitles": "dim",
+   "seed": 36,
+   "music_key": "Eb",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer for Your Family | Leave the People You Love in God's Hands",
+  "thumb_big": "Rest, They're Held",
+  "thumb_small": "Sleep prayer for your family",
+  "thumb_scene": "candle",
+  "description": "A guided sleep prayer for nights when worry about your family keeps you awake. We bring each person to God by name, rest in Isaiah's picture of the Shepherd carrying the lambs, pray Jesus' own words from John 17 over the ones we love, set our worries down one at a time, and close with a blessing of peace for the whole household. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 145:18; Isaiah 40:11; John 17:15; Psalm 103:13; 2 Thessalonians 3:16.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #prayerforfamily #bedtimeprayer #christianprayer",
+  "tags": [
+   "sleep prayer for family",
+   "prayer for my family",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "prayer for my children",
+   "worry about family",
+   "isaiah 40 11",
+   "christian sleep meditation",
+   "kjv prayer",
+   "christ's blessings"
+  ]
+ },
+ "long3": {
+  "date_et": "2026-11-07",
+  "slot_ist": "2026-11-08T06:30:00",
+  "type": "Bible story explained",
+  "script": "long3_script.txt",
+  "scene": "parchment",
+  "seed": 37,
+  "music_key": "D",
+  "render": {
+   "subtitles": "normal",
+   "seed": 37,
+   "music_key": "D",
+   "music_db": -23,
+   "lufs": -16
+  },
+  "title": "Ruth and Naomi: When Grief Leaves You Empty (The Book of Ruth Explained)",
+  "thumb_big": "Call Me Bitter",
+  "thumb_small": "Ruth and Naomi's story",
+  "thumb_scene": "parchment",
+  "description": "Naomi lost her husband and both sons in a foreign land, came home to Bethlehem and told her neighbours, \"Call me Mara\", bitter. Her daughter-in-law Ruth refused to leave her. In this video we walk through the whole book of Ruth: the background, \"whither thou goest, I will go\", gleaning in the barley field of Boaz, and how an empty life was filled again. Four lessons for anyone who is grieving, and a closing prayer.\n\nScripture (KJV): Ruth 1:1, 3, 5-6, 8, 14, 16-17, 19-22; Ruth 2:2-3, 10-12, 16, 20; Ruth 4:13-17.\n\nThis video is spiritual encouragement, not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#ruthandnaomi #biblestory #bookofruth #christianencouragement",
+  "tags": [
+   "ruth and naomi",
+   "book of ruth",
+   "whither thou goest i will go",
+   "bible story explained",
+   "bible verses for grief",
+   "naomi call me mara",
+   "boaz and ruth",
+   "bible stories for adults",
+   "christian encouragement",
+   "christ's blessings"
+  ]
+ }
+}

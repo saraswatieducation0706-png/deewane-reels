@@ -1,0 +1,352 @@
+[
+ {
+  "id": "s1",
+  "date": "2026-11-02",
+  "template": "A",
+  "scene": "dawn_lake",
+  "seed": 15,
+  "music_key": "G",
+  "cover": [
+   "This is",
+   "the day"
+  ],
+  "title": "Dreading Monday? Start with this one verse",
+  "description": "For anyone who woke up already dreading the week. Psalm 118:24 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#mondayprayer #faith #bibleverse #christianshorts",
+  "tags": [
+   "psalm 118 24",
+   "this is the day which the lord hath made",
+   "monday prayer",
+   "morning prayer",
+   "christian encouragement",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you woke up already dreading this week, give me one minute before you check your phone."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 118, verse 24.",
+    "label": "Psalm 118:24"
+   },
+   {
+    "role": "verse",
+    "text": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+    "label": "Psalm 118:24"
+   },
+   {
+    "role": "reflection",
+    "text": "This line was sung by someone who had just come through real trouble. Earlier in the same psalm he says he was pushed hard, and nearly fell. So it isn't a cheerful slogan for people with easy lives. It's a choice made on purpose. You don't have to love everything on today's list. Just remember who made this day, and that He's in it with you."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, this is Your day before it is mine. Walk into it ahead of me. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Save this for next Monday, or send it to someone starting a hard week."
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "date": "2026-11-03",
+  "template": "D",
+  "scene": "candle",
+  "seed": 16,
+  "music_key": "Eb",
+  "cover": [
+   "Under His",
+   "shadow"
+  ],
+  "title": "When the night feels heavy and you need a safe place to rest",
+  "description": "For anyone who needs a safe place to rest tonight. Psalm 91:1 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#nightprayer #psalm91 #bibleverse #christianshorts",
+  "tags": [
+   "psalm 91 1",
+   "secret place of the most high",
+   "shadow of the almighty",
+   "night prayer",
+   "prayer for peace",
+   "christian sleep"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If the night feels heavy and you just want somewhere safe to rest, this verse is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 91, verse 1.",
+    "label": "Psalm 91:1"
+   },
+   {
+    "role": "verse",
+    "text": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty.",
+    "label": "Psalm 91:1"
+   },
+   {
+    "role": "reflection",
+    "text": "A secret place is hidden and close, like a room only family is invited into. And a shadow only falls on you when you're standing near the one who casts it. So this verse isn't about a fortress far away. It's about nearness. Tonight, before sleep, you can step into that place with one honest sentence: Lord, I'm coming close. That's enough to begin."
+   },
+   {
+    "role": "prayer",
+    "text": "Almighty God, let me rest tonight in Your shadow. Keep me close until morning. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our full Psalm 91 sleep prayer is on the channel. Save it for tonight."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-11-04",
+  "template": "B",
+  "scene": "forest_fork",
+  "seed": 17,
+  "music_key": "D",
+  "cover": [
+   "You will",
+   "rise"
+  ],
+  "title": "When you've failed and it feels like everyone saw it",
+  "description": "For anyone getting back up after a public mistake or a hard fall. Micah 7:8 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#startagain #hope #bibleverse #christianshorts",
+  "tags": [
+   "micah 7 8",
+   "when i fall i shall arise",
+   "bible verse after failure",
+   "starting over",
+   "christian hope",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you messed up recently, and it feels like everyone noticed, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Micah 7, verse 8.",
+    "label": "Micah 7:8"
+   },
+   {
+    "role": "verse",
+    "text": "Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light unto me.",
+    "label": "Micah 7:8"
+   },
+   {
+    "role": "reflection",
+    "text": "Micah wrote in a dark season, and he doesn't pretend nobody falls. He says when I fall, not if. But he won't let the people watching have the last word. Falling is something that happened. It isn't who you are. And even while you're still sitting in the dark, before you're back on your feet, God is already your light. Getting up can start small, today."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I fell. Help me get up, one honest step at a time, with You as my light. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If you're starting over this week, type \"rising\" below, and we'll pray for you."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-11-05",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 18,
+  "music_key": "A",
+  "cover": [
+   "Grace is",
+   "enough"
+  ],
+  "title": "For the days you feel like you're just not enough",
+  "description": "For anyone who feels weak, behind, or not enough. 2 Corinthians 12:9 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#grace #encouragement #bibleverse #christianshorts",
+  "tags": [
+   "2 corinthians 12 9",
+   "my grace is sufficient for thee",
+   "strength in weakness",
+   "feeling not enough",
+   "christian encouragement",
+   "bible verse for weakness"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you've been feeling weak, behind, or just not enough lately, listen to what God told Paul."
+   },
+   {
+    "role": "ref",
+    "text": "Second Corinthians 12, verse 9.",
+    "label": "2 Corinthians 12:9"
+   },
+   {
+    "role": "verse",
+    "text": "And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me.",
+    "label": "2 Corinthians 12:9"
+   },
+   {
+    "role": "reflection",
+    "text": "Paul had asked God three times to take away something that was hurting him. This was the answer. Not a quick fix, but grace that would be enough for each day. And notice, God doesn't call weakness shameful. He calls it the place where His strength shows up best. You don't have to pretend to be strong today."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I'm not enough on my own. Let Your grace be enough for me today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Send this to someone who's been trying so hard to be strong."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-11-06",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 19,
+  "music_key": "C",
+  "cover": [
+   "Pray with",
+   "me tonight"
+  ],
+  "title": "A short bedtime prayer for when you're too tired to pray",
+  "description": "A bedtime prayer to pray along with, from Psalm 63:6-7 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#bedtimeprayer #psalm63 #bibleverse #christianshorts",
+  "tags": [
+   "psalm 63 6-7",
+   "bedtime prayer",
+   "shadow of thy wings",
+   "night watches",
+   "prayer before sleep",
+   "christian sleep"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're too tired to find your own words tonight, pray these with me."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 63, verses 6 and 7.",
+    "label": "Psalm 63:6-7"
+   },
+   {
+    "role": "verse",
+    "text": "When I remember thee upon my bed, and meditate on thee in the night watches. Because thou hast been my help, therefore in the shadow of thy wings will I rejoice.",
+    "label": "Psalm 63:6-7"
+   },
+   {
+    "role": "reflection",
+    "text": "David wrote this in the wilderness of Judah, far from home and his own bed. Back then the night was split into watches, like a guard's shifts. David used his wakeful watches to remember. Not to replay his problems, but to recall each time God had helped him. So tonight, before you sleep, name one time He helped you. Then rest in the shadow of His wings."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You have been my help before. Hold me tonight in the shadow of Your wings. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our full Psalm 91 sleep prayer is on the channel too."
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-11-07",
+  "template": "A",
+  "scene": "sunrise_lake",
+  "seed": 20,
+  "music_key": "F",
+  "cover": [
+   "Missing",
+   "someone?"
+  ],
+  "title": "Missing someone as the holidays get closer",
+  "description": "For anyone missing a loved one as the holiday season comes near. Revelation 21:4 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#grief #comfort #bibleverse #christianshorts",
+  "tags": [
+   "revelation 21 4",
+   "god shall wipe away all tears",
+   "grief at the holidays",
+   "missing a loved one",
+   "christian comfort",
+   "prayer for grief"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "As the holidays get closer, some of us miss someone more than ever. If that's you, stay a moment."
+   },
+   {
+    "role": "ref",
+    "text": "Revelation 21, verse 4.",
+    "label": "Revelation 21:4"
+   },
+   {
+    "role": "verse",
+    "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.",
+    "label": "Revelation 21:4"
+   },
+   {
+    "role": "reflection",
+    "text": "These words come near the very end of the Bible. God doesn't hand out tissues from a distance. He wipes the tears away Himself, the way a parent would. Grief often feels sharper when the calendar fills up and there's an empty chair. Your tears aren't a lack of faith. They're love with nowhere to go, and God sees every one."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You know who I'm missing. Hold my heart this season, and wipe my tears. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If you'd like us to pray for you, write your loved one's first name below."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-11-08",
+  "template": "B",
+  "scene": "hills_sunset",
+  "seed": 21,
+  "music_key": "Bb",
+  "cover": [
+   "He goes",
+   "before you"
+  ],
+  "title": "Before this week starts, remember who walks ahead of you",
+  "description": "A Sunday prayer for the week ahead, from Deuteronomy 31:8 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#sundayprayer #courage #bibleverse #christianshorts",
+  "tags": [
+   "deuteronomy 31 8",
+   "he will not fail thee",
+   "prayer for the week",
+   "sunday prayer",
+   "god goes before you",
+   "christian courage"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Before a new week begins, here's something to know about the road ahead."
+   },
+   {
+    "role": "ref",
+    "text": "Deuteronomy 31, verse 8.",
+    "label": "Deuteronomy 31:8"
+   },
+   {
+    "role": "verse",
+    "text": "And the LORD, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.",
+    "label": "Deuteronomy 31:8"
+   },
+   {
+    "role": "reflection",
+    "text": "Moses spoke these words to Joshua just before Israel crossed into a land they had never seen. Moses himself wasn't going with them. But God was, and He was going first. Whatever is waiting for you this week, a hard meeting, a test result, a difficult conversation, you won't walk into it alone. He's already there before you arrive."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, go before me into this week, and walk beside me in every part of it. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with someone who has a big week ahead."
+   }
+  ]
+ }
+]
