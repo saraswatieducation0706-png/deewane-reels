@@ -1,0 +1,86 @@
+{
+ "out": "/tmp/claude-0/-home-claude-deewane-reels/a8fe422c-82e5-59b7-a56e-89825ca43ee8/scratchpad/d11/Day11_reel.mp4",
+ "footer": "Day 11/90  •  99 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 11/90",
+    "TWIST & PRESSURE"
+   ],
+   "sub": "Shafts, cylinders and springs in one day",
+   "voice": "Day eleven of the GATE M. E. ninety days challenge, ninety nine days to go! Today we twist shafts, pressurise cylinders and compress springs."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Strength of Materials",
+    "Torsion, Thin Cylinders & Springs"
+   ],
+   "voice": "Today's subject is Strength of Materials. Our topic: torsion, thin cylinders and springs, the last topic before the weekly test."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Torsion equation T/J",
+    "Hollow vs solid shafts",
+    "Hoop & longitudinal stress",
+    "Close-coiled helical springs"
+   ],
+   "voice": "Cover the torsion equation, hollow versus solid shafts, hoop and longitudinal stress in thin cylinders, and close coiled helical springs."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Hoop stress = pd/2t",
+    "Longitudinal = pd/4t",
+    "Hoop is TWICE: seam splits"
+   ],
+   "voice": "Quick tip. In a thin cylinder, hoop stress is p d by two t, exactly twice the longitudinal stress. That is why boilers split along their length."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Grab the free practice set on Telegram and work every solution. Tonight's torsion test opens seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 10 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "24.66/30"
+    },
+    {
+     "rank": 2,
+     "name": "Akshay W",
+     "marks": "20.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "Rajeev Kumar",
+     "marks": "20/30"
+    }
+   ],
+   "voice": "Day ten toppers! Rank one again, Sweta Rani Sahoo, with twenty four point six six. Rank two, Akshay W. And Rajeev Kumar is back on the board at rank three. Congratulations!"
+  }
+ ]
+}
