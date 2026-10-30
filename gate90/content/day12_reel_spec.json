@@ -35,11 +35,11 @@
    "kind": "card",
    "title": "Quick Tip",
    "lines": [
-    "Cantilever (end W): WL³/3EI",
-    "SS (centre W): WL³/48EI",
-    "SS beam: 16x stiffer"
+    "Spring k = Gd^4 / 8D^3n",
+    "Halve D: k goes 8x",
+    "Halve n: k only doubles"
    ],
-   "voice": "Quick tip. Cantilever with end load: W L cubed by three E I. Simply supported with central load: W L cubed by forty eight E I. Sixteen times stiffer!"
+   "voice": "Quick tip. Spring stiffness is G d to the fourth over eight D cubed n. Halve the coil diameter, stiffness jumps eight times. Halve the turns, it only doubles."
   },
   {
    "kind": "dates",
