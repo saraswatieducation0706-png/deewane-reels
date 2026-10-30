@@ -1,0 +1,86 @@
+{
+ "out": "Day12_reel.mp4",
+ "footer": "Day 12/90  •  98 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 12/90",
+    "WEEK 2 TEST"
+   ],
+   "sub": "Beams, shafts and words: prove it tonight",
+   "voice": "Day twelve of the GATE M. E. ninety days challenge, ninety eight days to go! Let's check how much of week two really stuck."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Weekly Revision",
+    "Week 2: all five topics"
+   ],
+   "voice": "No new chapter today. It is week two revision: four strength of materials topics and one verbal ability topic, all in one test."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "SFD, BMD & bending stress",
+    "Deflection of beams",
+    "Torsion, cylinders, springs",
+    "Verbal ability"
+   ],
+   "voice": "Revise shear force and bending moment diagrams with bending stress, beam deflection, torsion with cylinders and springs, and verbal ability. Rework every question you missed."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Cantilever (end W): WL³/3EI",
+    "SS (centre W): WL³/48EI",
+    "SS beam: 16x stiffer"
+   ],
+   "voice": "Quick tip. Cantilever with end load: W L cubed by three E I. Simply supported with central load: W L cubed by forty eight E I. Sixteen times stiffer!"
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Weekly test (₹1)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "The free week two practice set with full solutions is on Telegram now. Tonight's weekly test, twenty questions, opens seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 11 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "28/30"
+    },
+    {
+     "rank": 2,
+     "name": "Atharva Vyas",
+     "marks": "16.33/30"
+    },
+    {
+     "rank": 3,
+     "name": "Akshay W",
+     "marks": "7.67/30"
+    }
+   ],
+   "voice": "Day eleven toppers! Sweta Rani Sahoo takes rank one with twenty eight out of thirty. Atharva Vyas returns at rank two, and Akshay W holds rank three. Congratulations!"
+  }
+ ]
+}
