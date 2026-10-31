@@ -1,0 +1,86 @@
+{
+ "out": "Day13_reel.mp4",
+ "footer": "Day 13/90  •  96 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 13/90",
+    "COLUMNS"
+   ],
+   "sub": "Week 3 starts: when does a column buckle?",
+   "voice": "Day thirteen of the GATE M. E. ninety days challenge. Week three starts now, ninety six days to GATE. Today we close strength of materials."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Strength of Materials",
+    "Columns & Energy Methods"
+   ],
+   "voice": "Today's subject is strength of materials. Our topic: columns and energy methods, the last big piece of the subject."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Euler buckling load",
+    "End conditions & Le",
+    "Strain energy, Castigliano",
+    "Strain gauges & rosettes"
+   ],
+   "voice": "Cover Euler's buckling load, end conditions and effective length, strain energy with Castigliano's theorem, and strain gauges with rosettes."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "P = pi^2 EI / Le^2",
+    "Both ends fixed: 4x load",
+    "Fixed-free: only 1/4"
+   ],
+   "voice": "Quick tip. Euler load is pi squared E I over effective length squared. Fix both ends: four times the pinned load. Fixed and free: only one quarter."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "The free practice set with full solutions is on Telegram now. Today's test opens from seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 12 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "20.66/30"
+    },
+    {
+     "rank": 2,
+     "name": "Rajeev Kumar",
+     "marks": "8.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "Akshay W",
+     "marks": "8/30"
+    }
+   ],
+   "voice": "Week two test toppers! Sweta Rani Sahoo tops again with twenty point six six out of thirty. Rajeev Kumar takes rank two, and Akshay W holds rank three. Congratulations!"
+  }
+ ]
+}
