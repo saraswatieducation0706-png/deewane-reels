@@ -1,0 +1,86 @@
+{
+ "out": "Day15_reel.mp4",
+ "footer": "Day 15/90  •  94 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 15/90",
+    "CALCULUS"
+   ],
+   "sub": "Engineering Maths is back: calculus day",
+   "voice": "Day fifteen of the GATE M. E. ninety days challenge. Ninety four days to GATE, and today we switch to engineering mathematics: calculus."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Engineering Mathematics",
+    "Calculus"
+   ],
+   "voice": "Today's subject is engineering mathematics. Our topic: calculus, which shows up in almost every GATE mechanical paper."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Limits & continuity",
+    "Mean value theorems",
+    "Maxima & minima",
+    "Definite & multiple integrals"
+   ],
+   "voice": "Cover limits and continuity, Rolle's and Lagrange's mean value theorems, maxima and minima, and definite, improper and multiple integrals."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Limits -a to a? Check parity",
+    "Odd f(x): integral = 0",
+    "Even f(x): 2 x (0 to a)"
+   ],
+   "voice": "Quick tip. For limits minus a to a, check the function first. Odd function: the integral is zero. Even function: twice the integral from zero to a."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Download the free practice set with step by step solutions on Telegram now. Tonight's test is from seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 14 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Sweta Rani Sahoo",
+     "marks": "24/30"
+    },
+    {
+     "rank": 2,
+     "name": "Rahul Yadav",
+     "marks": "18.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "PRANSHU KUMAR Yadav",
+     "marks": "13.66/30"
+    }
+   ],
+   "voice": "Day fourteen toppers! Sweta Rani Sahoo tops with twenty four out of thirty. Rahul Yadav takes rank two, and Pranshu Kumar Yadav takes rank three. Congratulations to all three!"
+  }
+ ]
+}
