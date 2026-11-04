@@ -1,0 +1,86 @@
+{
+ "out": "Day16_reel.mp4",
+ "footer": "Day 16/90  •  93 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 16/90",
+    "FLYWHEELS"
+   ],
+   "sub": "Theory of Machines: forces in motion",
+   "voice": "Day sixteen of the GATE M. E. ninety days challenge, ninety three days to go. Today, machines start storing energy: linkages and flywheels."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Theory of Machines",
+    "Dynamics of Linkages & Flywheels"
+   ],
+   "voice": "Today's subject is theory of machines. Our topic: dynamics of linkages, turning moment diagrams, and flywheels."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Inertia forces in linkages",
+    "Turning moment diagrams",
+    "Fluctuation of energy",
+    "Flywheel sizing"
+   ],
+   "voice": "Cover inertia forces in a slider crank, turning moment diagrams, maximum fluctuation of energy, and how to size a flywheel."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Max fluctuation of energy",
+    "= I x omega² x Cs",
+    "Cs = speed swing / mean"
+   ],
+   "voice": "Quick tip. Maximum fluctuation of energy equals I omega squared times C s, where C s is the coefficient of fluctuation of speed. Find delta E from the turning moment diagram first."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Grab the free practice PDF on Telegram now. The topic test opens at seven and closes at nine P. M., inside our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 15 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Ayush Naik",
+     "marks": "28/30"
+    },
+    {
+     "rank": 2,
+     "name": "Sweta Rani Sahoo",
+     "marks": "18.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "Rahul Yadav",
+     "marks": "14/30"
+    }
+   ],
+   "voice": "Day fifteen toppers! Ayush Naik leads the calculus test with twenty eight out of thirty. Sweta Rani Sahoo takes rank two, and Rahul Yadav rank three. Well done!"
+  }
+ ]
+}
