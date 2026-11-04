@@ -83,3 +83,20 @@ use it in runs.
 6. Add finished IDs to `status.json` `done`; commit and push (fetch + rebase first).
 7. Send each finished Word/PDF file with SendUserFile (status proactive) as a backup.
 8. Finish with one short message: items made, Drive status, anything that failed. Do not touch GATE90 files.
+
+## Parallel catch-up mode (5 Nov 2026)
+Used when the task prompt says "PARALLEL MODE — make batch N". Several runs work at the same time, so:
+1. Make exactly the items of batch N in `queue.json` (ignore `status.json` for choosing). Skip an item only if
+   `gate-me-ts/done/<ID>.txt` already exists.
+2. Do NOT edit `status.json` or `queue.json` (other runs are writing at the same time).
+3. Freshness: other mocks/subject tests are being written in parallel and cannot be checked. Still decrypt and check
+   all tests already in the vault; and for every numerical set-up choose values derived from your own item ID
+   (e.g. FLT07 → numbers no one else would pick), never the classic textbook numbers.
+4. Make scenario 8060538 cannot run twice at once: on "already being executed" (or a similar busy error) wait
+   30 s and retry, up to 10 times, before treating it as a failure.
+5. After every file of an item is confirmed in Drive, write `gate-me-ts/done/<ID>.txt` containing one line per
+   Drive file: `<file name> | <folder> | <size bytes>`. Commit vault files + this marker together.
+6. Push with a retry loop: `for i in 1 2 3 4 5 6; do git fetch -q origin main && git rebase -q origin/main && git push -q origin HEAD:main && break; sleep $((RANDOM%20+10)); done`.
+7. If an item fails (or Drive save fails after retries), write `gate-me-ts/done/<ID>.FAILED.txt` with the reason,
+   push it, and push-notify Naveen naming the item.
+Everything else (question rules, file names, Drive folders, quality bar, vault, SendUserFile backup) is unchanged.
