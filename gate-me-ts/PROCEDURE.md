@@ -99,4 +99,5 @@ Used when the task prompt says "PARALLEL MODE — make batch N". Several runs wo
 6. Push with a retry loop: `for i in 1 2 3 4 5 6; do git fetch -q origin main && git rebase -q origin/main && git push -q origin HEAD:main && break; sleep $((RANDOM%20+10)); done`.
 7. If an item fails (or Drive save fails after retries), write `gate-me-ts/done/<ID>.FAILED.txt` with the reason,
    push it, and push-notify Naveen naming the item.
+Marker file names use the ID with ":" replaced by "_" (PDF:TOM → done/PDF_TOM.txt).
 Everything else (question rules, file names, Drive folders, quality bar, vault, SendUserFile backup) is unchanged.
