@@ -1,0 +1,43 @@
+{
+ "course_key": "bel-pe-me-2026",
+ "course_title": "BEL Probationary Engineer Mechanical CBT Test Series 2026",
+ "running_since": null,
+ "done": [
+  "STAGE1",
+  "STAGE2",
+  "FL-01"
+ ],
+ "drive_pending": [],
+ "next_batch": 2,
+ "total_batches": 33,
+ "interim_upload_done": false,
+ "production_done": false,
+ "upload_done": false,
+ "video_done": false,
+ "report_done": false,
+ "drive_folders": {
+  "course": "1zxIlTS4n0E9Crbc0C8t--9Tu-uQtIzC7",
+  "01": "1rIL5OZcAGrtybZ5Qsh6KXyOoFMF_rRwM",
+  "02": "1hrdgkFsC2HwpQSF3VRVqL6T0wiOxNU05",
+  "03": "18YjiPdM3csetFtH7KMWcSBQzjtZ5502k",
+  "03/Full Length Mock Tests": "1a0jiSnUp6MSuaNdAZrTJIBGR1cYg2CmB",
+  "04": "1sCELJ8zymO1suuzzzgshxLpULlclSnRh",
+  "05": "1AoCl10MofF3lpV7UX-nanTujZRsTm1H2",
+  "06": "1ATCuWJiYs9wz8x2LWUU9ZymDNNoPK3DL",
+  "07": "1IFYccJxfCPeDdGLVO3_Hg3CQRZ1EmESS"
+ },
+ "vault": {
+  "plan": "dct/bel-pe-me-2026/02/plan.json",
+  "tests_dir": "dct/bel-pe-me-2026/03/<FL|SUB|TOP|SEC>/",
+  "notes_dir": "dct/bel-pe-me-2026/04/",
+  "question_sources": "dct/bel-pe-me-2026/src/<ITEM>-src.tar.gz (check earlier sources to avoid repeating questions)",
+  "tools": "dct/_tools/dct_tools.tar.gz (build_section.py + build_paper.py + template.docx: python3 tools/build_section.py --input q.json --output X.docx --seed <id> --images-dir figs)"
+ },
+ "files": {
+  "FL-01": [
+   "03/Full Length Mock Tests/Technical - Test 1.docx",
+   "03/Full Length Mock Tests/General Aptitude - Test 1.docx"
+  ]
+ },
+ "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25."
+}
