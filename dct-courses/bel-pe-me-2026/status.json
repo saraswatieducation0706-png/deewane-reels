@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-me-2026",
  "course_title": "BEL Probationary Engineer Mechanical CBT Test Series 2026",
- "running_since": "2026-11-05T23:49:49Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -16,10 +16,14 @@
   "SUB-02",
   "SUB-03",
   "SUB-04",
-  "FL-03"
+  "FL-03",
+  "SUB-05",
+  "SUB-06",
+  "SUB-07",
+  "SUB-08"
  ],
  "drive_pending": [],
- "next_batch": 6,
+ "next_batch": 7,
  "total_batches": 33,
  "interim_upload_done": false,
  "production_done": false,
@@ -85,7 +89,19 @@
   "FL-03": [
    "03/Full Length Mock Tests/Technical - Test 3.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 3.docx"
+  ],
+  "SUB-05": [
+   "03/Subject Tests/Subject Test 05 - Fluid Mechanics & Hydraulic Machines.docx"
+  ],
+  "SUB-06": [
+   "03/Subject Tests/Subject Test 06 - Thermodynamics.docx"
+  ],
+  "SUB-07": [
+   "03/Subject Tests/Subject Test 07 - Applied Thermodynamics (Power Plant, IC Engines, RAC).docx"
+  ],
+  "SUB-08": [
+   "03/Subject Tests/Subject Test 08 - Heat Transfer.docx"
   ]
  },
- "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz)."
+ "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz). SUB-05..08 (FM, TD, ATD, HT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-05-08-src.tar.gz)."
 }
