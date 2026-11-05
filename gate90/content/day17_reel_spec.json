@@ -1,0 +1,47 @@
+{
+ "out": "Day17_reel.mp4",
+ "footer": "Day 17/90  •  92 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": ["DAY 17/90", "GEAR TRAINS"],
+   "sub": "Cams and gears: turn motion into marks",
+   "voice": "Day seventeen of the GATE M. E. ninety days challenge. Ninety two days left. Today we shift gears, literally: cams, gears and gear trains."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": ["Theory of Machines", "Cams, Gears & Gear Trains"],
+   "voice": "Today's subject is theory of machines. Our topic: cams and followers, gears, and simple, compound and epicyclic gear trains."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": ["Cam follower motions", "Law of gearing", "Interference & min teeth", "Epicyclic gear trains"],
+   "voice": "Cover follower motions like S H M and uniform acceleration, the law of gearing, interference and minimum teeth, and epicyclic trains."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": ["Epicyclic train:", "(N_last − N_arm) / (N_first − N_arm)", "= ± driver teeth / driven teeth"],
+   "voice": "Quick tip. For an epicyclic train, subtract the arm speed first. Then the train value is the product of driver teeth over driven teeth, with the right sign."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "Solve the free practice PDF on Telegram first. Then take tonight's test, seven to nine P. M., in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 16 Toppers",
+   "entries": [
+    {"rank": 1, "name": "Sweta Rani Sahoo", "marks": "21.33/30"},
+    {"rank": 2, "name": "Sagar", "marks": "14.67/30"},
+    {"rank": 3, "name": "sai avinash", "marks": "13/30"},
+    {"rank": 3, "name": "Megha", "marks": "13/30"}
+   ],
+   "voice": "Day sixteen toppers! Sweta Rani Sahoo tops the flywheel test with twenty one point three three. Sagar takes rank two. Sai Avinash and Megha share rank three. Brilliant!"
+  }
+ ]
+}
