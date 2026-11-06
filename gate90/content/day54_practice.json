@@ -1,0 +1,264 @@
+{
+ "day": 54,
+ "subject": "Weekly Revision",
+ "topic": "Week 9 Revision",
+ "days_to_gate": 49,
+ "summary": "a mixed revision of the week: IC engine cycles, combustion and performance, refrigeration and air-conditioning, complex integration and numerical methods, steam and hydraulic turbines, and the iron–carbon diagram and heat treatment of steels",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Manufacturing, Casting",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Detonation (knock) in a spark-ignition engine is caused by",
+   "fig": null,
+   "opts": [
+    "auto-ignition of the end gas ahead of the advancing flame front",
+    "a long ignition delay of the fuel injected",
+    "pre-ignition of the charge by the spark plug before the spark occurs",
+    "incomplete combustion due to a lean mixture"
+   ],
+   "ans": "(A) auto-ignition of the end gas ahead of the advancing flame front",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an SI engine the flame travels from the spark plug across the chamber, compressing the unburnt end gas ahead of it.",
+    "If the end gas reaches its self-ignition temperature before the flame arrives, it auto-ignites almost instantaneously, producing pressure waves and the knocking sound: <b>(A)</b>.",
+    "A long ignition delay is the cause of knock in CI (diesel) engines; pre-ignition by hot spots is a different phenomenon.",
+    "<b>Exam tip:</b> SI knock is reduced by high-octane fuel, retarded spark, lower compression ratio and cooler charge — the opposite of what reduces CI knock."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a trial on a diesel engine, fuel (calorific value 42 000 kJ/kg) is burnt at 8 kg/h, and cooling water flows at 0.2 kg/s with a temperature rise of 15 °C (c = 4.18 kJ/kg·K). The percentage of the fuel energy carried away by the cooling water (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "13.44 (accept 13.31 to 13.57)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Heat balance sheet: each item is expressed as a percentage of the fuel energy supplied.",
+    "Fuel energy = 8 × 42 000/3600 = 93.33 kW",
+    "Cooling water = 0.2 × 4.18 × 15 = 12.54 kW, so the share = 12.54/93.33 = <b>13.44 %</b>",
+    "<b>Exam tip:</b> A typical diesel engine heat balance: brake power 30–35 %, cooling water 25–30 %, exhaust 25–35 %, unaccounted the rest."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard Diesel cycle (γ = 1.4) has a compression ratio of 16, and the fuel is cut off at 6 % of the stroke. Its thermal efficiency (in %, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "61.9 (accept 61.5 to 62.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cut-off at k % of the stroke: V<sub>3</sub> = V<sub>c</sub> + k V<sub>s</sub>, so ρ = 1 + k(r − 1).",
+    "ρ = 1 + 0.06 × 15 = 1.9",
+    "η = 1 − (1/r<sup>γ−1</sup>)(ρ<sup>γ</sup> − 1)/[γ(ρ − 1)] = 1 − (1/3.031)(2.456 − 1)/(1.4 × 0.9) = 1 − 0.3299 × 1.1557 = <b>61.9 %</b>",
+    "<b>Exam tip:</b> Do not take ρ = 0.06 or 1.06; the cut-off percentage refers to the swept volume, not the clearance volume."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a lithium bromide–water vapour-absorption refrigeration system,",
+   "fig": null,
+   "opts": [
+    "lithium bromide is the refrigerant and water the absorbent",
+    "water is the refrigerant, so the system cannot produce temperatures below about 0 °C",
+    "ammonia is added as the refrigerant",
+    "a mechanical compressor raises the pressure of the refrigerant vapour"
+   ],
+   "ans": "(B) water is the refrigerant, so the system cannot produce temperatures below about 0 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In absorption systems the refrigerant is the volatile component and the absorbent takes it up in the absorber.",
+    "In LiBr–water units, water evaporates at very low pressure in the evaporator (refrigerant) and LiBr solution absorbs it; water freezes at 0 °C, so these units are used for air-conditioning (chilled water at 5–10 °C): <b>(B)</b>.",
+    "In the NH<sub>3</sub>–water system ammonia is the refrigerant and water the absorbent, so sub-zero temperatures are possible.",
+    "<b>Exam tip:</b> The generator, absorber and pump replace the compressor; the input is mainly heat, not work."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 5 TR ammonia refrigerator (1 TR = 3.517 kW) has a refrigerant enthalpy of 100 kJ/kg at evaporator inlet and 245 kJ/kg at evaporator exit. The specific volume of the vapour at compressor suction is 0.5 m³/kg and the volumetric efficiency of the compressor is 80 %. The swept-volume rate needed (in m³/s, round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.0758 (accept 0.0754 to 0.0762)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Mass flow = capacity/refrigerating effect; actual suction volume = ṁv; swept volume = actual volume/η<sub>v</sub>.",
+    "ṁ = 5 × 3.517/(245 − 100) = 17.585/145 = 0.1213 kg/s",
+    "Swept volume rate = 0.1213 × 0.5/0.8 = <b>0.0758 m³/s</b>",
+    "<b>Exam tip:</b> Lower evaporator pressure → larger suction specific volume → a bigger compressor for the same capacity."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A room has a sensible heat load of 25 kW and a latent heat load of 5 kW. Its room sensible heat factor (RSHF), and the effect of a rise in occupancy that adds mainly latent load, are",
+   "fig": null,
+   "opts": [
+    "0.83; the RSHF rises and the supply air may be more humid",
+    "0.83; the RSHF falls and the supply air must be drier",
+    "0.20; the RSHF falls",
+    "5.0; the RSHF is unaffected"
+   ],
+   "ans": "(B) 0.83; the RSHF falls and the supply air must be drier",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> RSHF = room sensible heat/(sensible + latent heat).",
+    "RSHF = 25/(25 + 5) = 0.83.",
+    "More latent (moisture) load makes the RSHF smaller; to absorb the extra moisture the supply air must have a lower specific humidity, and the RSHF line on the psychrometric chart becomes steeper: <b>(B)</b>.",
+    "<b>Exam tip:</b> Auditoriums and kitchens (many people, cooking) have a low RSHF; computer rooms have an RSHF close to 1."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Let C be the circle |z| = 1 traversed anticlockwise. The value of ∮<sub>C</sub> dz/(z² + 4) is",
+   "fig": null,
+   "opts": [
+    "πi/2",
+    "π/2",
+    "2πi",
+    "0"
+   ],
+   "ans": "(D) 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cauchy's theorem: the integral of a function analytic on and inside a closed curve is zero.",
+    "The singularities of 1/(z² + 4) are z = ±2i, both with |z| = 2 > 1, i.e. outside C.",
+    "The integrand is analytic inside C, so the integral is <b>0</b>: <b>(D)</b>.",
+    "<b>Exam tip:</b> Always locate the poles first; only those inside the contour contribute residues."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The root of x = cos x (x in radians) is sought by the Newton–Raphson method starting from x<sub>0</sub> = 0.5. The value of x<sub>1</sub> (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.7552 (accept 0.7550 to 0.7554)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> x<sub>1</sub> = x<sub>0</sub> − f(x<sub>0</sub>)/f′(x<sub>0</sub>) with f(x) = x − cos x, f′(x) = 1 + sin x.",
+    "f(0.5) = 0.5 − 0.87758 = −0.37758; f′(0.5) = 1 + 0.47943 = 1.47943",
+    "x<sub>1</sub> = 0.5 + 0.37758/1.47943 = <b>0.7552</b> (the root is 0.7391)",
+    "<b>Exam tip:</b> Keep the calculator in radian mode for trigonometric equations."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of x⁴ from x = 0 to x = 3 is evaluated by Simpson's 3/8 rule with three equal strips (h = 1). The value obtained (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "49.5 (accept 49.4 to 49.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Simpson's 3/8 rule: I = (3h/8)[f<sub>0</sub> + 3f<sub>1</sub> + 3f<sub>2</sub> + f<sub>3</sub>]; it is exact for cubics only.",
+    "f = 0, 1, 16, 81 at x = 0, 1, 2, 3",
+    "I = (3/8)(0 + 3 + 48 + 81) = (3/8)(132) = <b>49.5</b> (exact value 3<sup>5</sup>/5 = 48.6)",
+    "<b>Exam tip:</b> Simpson's 3/8 rule needs the number of strips to be a multiple of 3; the 1/3 rule needs an even number."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The hydraulic turbine whose runner blades can be rotated about their own axes while the turbine is running, giving a high efficiency at part load, is the",
+   "fig": null,
+   "opts": [
+    "Pelton wheel",
+    "Francis turbine",
+    "Kaplan turbine",
+    "propeller turbine with fixed blades"
+   ],
+   "ans": "(C) Kaplan turbine",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Part-load efficiency depends on how well the blade angles match the changed velocity triangles.",
+    "In a Kaplan turbine both the guide vanes and the runner blades are adjustable (double regulation), so the efficiency curve is flat: <b>(C)</b>.",
+    "A fixed-blade propeller turbine has a sharply peaked efficiency curve; a Francis turbine adjusts only its guide (wicket) gates.",
+    "<b>Exam tip:</b> Kaplan turbines suit low heads (about 2–70 m) with large, variable flows, e.g. run-of-river plants."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The isentropic enthalpy drop in the nozzle of an impulse steam turbine is 180 kJ/kg and the nozzle efficiency is 92 %. Neglecting the velocity of approach, the steam velocity at nozzle exit (in m/s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "575.5 (accept 572.6 to 578.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady-flow energy equation for an adiabatic nozzle: V<sub>2</sub> = √(2 η<sub>n</sub> Δh<sub>s</sub>), with Δh in J/kg.",
+    "Actual drop = 0.92 × 180 = 165.6 kJ/kg",
+    "V<sub>2</sub> = √(2 × 165 600) = <b>575.5 m/s</b>",
+    "<b>Exam tip:</b> The shortcut V = 44.72√Δh (Δh in kJ/kg) gives the same result."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a given head and power, choosing a turbine of higher specific speed means that",
+   "fig": null,
+   "opts": [
+    "the turbine runs faster, so the turbine and generator are smaller and cheaper",
+    "the turbine runs slower and needs a larger generator",
+    "the turbine must be of the Pelton type",
+    "the risk of cavitation is reduced"
+   ],
+   "ans": "(A) the turbine runs faster, so the turbine and generator are smaller and cheaper",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> N<sub>s</sub> = N√P/H<sup>5/4</sup>; for fixed P and H, N is proportional to N<sub>s</sub>.",
+    "A higher speed means a smaller runner and a smaller, cheaper generator (fewer poles): <b>(A)</b>.",
+    "But high-specific-speed (Kaplan) runners have high relative velocities and low pressures at exit, so they are more prone to cavitation and need a lower setting.",
+    "<b>Exam tip:</b> Thoma's critical cavitation factor rises steeply with specific speed."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The engineering stress–strain curve of mild steel is shown with points A to E. The lower yield point is",
+   "fig": "d54p_q13.png",
+   "opts": [
+    "B",
+    "D",
+    "E",
+    "C"
+   ],
+   "ans": "(D) C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Mild steel shows a sharp yield point: the stress drops from the upper yield point and then fluctuates about a lower value while Lüders bands spread.",
+    "A = proportional limit, B = upper yield point, C = lower yield point, D = ultimate tensile stress, E = fracture (engineering stress falls after necking).",
+    "The lower yield point C is taken as the yield strength in design: <b>(D)</b>.",
+    "<b>Exam tip:</b> The yield-point phenomenon is caused by carbon and nitrogen atoms pinning dislocations (Cottrell atmospheres)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plain carbon steel with 1.0 % C is slowly cooled to room temperature. With the eutectoid at 0.76 % C and cementite at 6.67 % C, the mass percentage of pearlite in its microstructure (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "95.94 (accept 95.45 to 96.43)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A hypereutectoid steel consists of pearlite plus proeutectoid cementite (at the grain boundaries); use the lever rule just below 727 °C.",
+    "Pearlite = (6.67 − 1.0)/(6.67 − 0.76) = 5.67/5.91",
+    "Pearlite = <b>95.94 %</b>, proeutectoid cementite = 4.06 %",
+    "<b>Exam tip:</b> The grain-boundary cementite network makes slowly cooled hypereutectoid steels brittle; they are spheroidised before use."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The amount of retained austenite in a hardened high-carbon steel can be reduced by",
+   "fig": null,
+   "opts": [
+    "tempering at 150 °C only",
+    "quenching from a higher austenitising temperature",
+    "sub-zero (cryogenic) treatment immediately after quenching",
+    "adding more nickel or manganese"
+   ],
+   "ans": "(C) sub-zero (cryogenic) treatment immediately after quenching",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> As carbon and alloy content rise, M<sub>f</sub> falls below room temperature, so some austenite remains untransformed after quenching.",
+    "Cooling the steel to −80 °C or below (sub-zero treatment) takes it past M<sub>f</sub> and converts most of the remaining austenite into martensite: <b>(C)</b>.",
+    "A higher austenitising temperature dissolves more carbon and Ni/Mn lower M<sub>s</sub>, both <i>increasing</i> retained austenite.",
+    "<b>Exam tip:</b> Gauges and bearings get sub-zero treatment for dimensional stability."
+   ]
+  }
+ ]
+}

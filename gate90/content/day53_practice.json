@@ -1,0 +1,264 @@
+{
+ "day": 53,
+ "subject": "Engineering Materials",
+ "topic": "Materials & Heat Treatment",
+ "days_to_gate": 50,
+ "summary": "crystal structures and defects, phase rule and lever rule, the iron–carbon diagram and its microstructures, TTT diagrams, annealing, normalising, hardening, tempering and surface hardening, and the stress–strain behaviour of metals",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 9 Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "For the face-centred cubic (FCC) crystal structure, the coordination number and the atomic packing factor are",
+   "fig": null,
+   "opts": [
+    "8 and 0.68",
+    "12 and 0.74",
+    "12 and 0.68",
+    "6 and 0.52"
+   ],
+   "ans": "(B) 12 and 0.74",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Coordination number = number of nearest neighbours; APF = volume of atoms in the cell/cell volume.",
+    "FCC has 4 atoms per cell with a = 2√2 r: APF = 4 × (4/3)πr³/(2√2 r)³ = π/(3√2) = 0.74, and each atom touches 12 others.",
+    "So the answer is <b>(B) 12 and 0.74</b>. BCC: 8 and 0.68; simple cubic: 6 and 0.52; HCP (ideal): 12 and 0.74.",
+    "<b>Exam tip:</b> FCC and HCP are both close-packed (0.74); they differ only in the stacking sequence ABCABC… vs ABAB…."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Copper has an FCC structure with a lattice parameter of 0.3615 nm. Its atomic radius (in nm, round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.1278 (accept 0.1276 to 0.1280)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In FCC the atoms touch along the face diagonal: √2 a = 4r.",
+    "r = √2 a/4 = 1.4142 × 0.3615/4",
+    "r = <b>0.1278 nm</b>",
+    "<b>Exam tip:</b> In BCC the atoms touch along the body diagonal instead: √3 a = 4r."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "At the eutectic point of a binary alloy system at constant (atmospheric) pressure, the number of degrees of freedom given by the Gibbs phase rule is",
+   "fig": null,
+   "opts": [
+    "2",
+    "1",
+    "0",
+    "3"
+   ],
+   "ans": "(C) 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Gibbs phase rule at constant pressure (condensed systems): F = C − P + 1.",
+    "At the eutectic point C = 2 and three phases (L, α, β) coexist: F = 2 − 3 + 1 = <b>0</b>, answer <b>(C)</b>.",
+    "The eutectic temperature and the three phase compositions are therefore fixed: the reaction is invariant, which is why the cooling curve shows a thermal arrest.",
+    "<b>Exam tip:</b> Eutectic, eutectoid and peritectic points are all invariant (F = 0) in a binary system."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Taking the eutectoid composition as 0.76 % C, the carbon content of ferrite as 0.022 % and of cementite as 6.67 %, the mass percentage of ferrite in pearlite (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "88.9 (accept 88.4 to 89.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Pearlite is the eutectoid mixture; apply the lever rule across the α + Fe<sub>3</sub>C tie line at 0.76 % C.",
+    "Ferrite fraction = (6.67 − 0.76)/(6.67 − 0.022) = 5.91/6.648",
+    "Ferrite = <b>88.9 %</b>, cementite = 11.1 % (about 8 : 1).",
+    "<b>Exam tip:</b> Because ferrite plates are about 8 times as thick as cementite plates, pearlite looks like thin dark lines on a light background."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Three invariant points A, B and C are marked on the iron–cementite diagram shown. The reaction that takes place on cooling through point B is",
+   "fig": "d53p_q5.png",
+   "opts": [
+    "δ + L → γ (peritectic)",
+    "γ → α + Fe<sub>3</sub>C (eutectoid)",
+    "L → γ + δ",
+    "L → γ + Fe<sub>3</sub>C (eutectic, forming ledeburite)"
+   ],
+   "ans": "(D) L → γ + Fe<sub>3</sub>C (eutectic, forming ledeburite)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The Fe–Fe<sub>3</sub>C diagram has three invariant reactions: peritectic (1493 °C, 0.17 % C), eutectic (1147 °C, 4.3 % C) and eutectoid (727 °C, 0.76 % C).",
+    "Point B is at 4.3 % C and 1147 °C, where liquid freezes into austenite and cementite at once: L → γ + Fe<sub>3</sub>C.",
+    "The eutectic mixture is called <b>ledeburite</b>: answer <b>(D)</b>. A is the peritectic and C the eutectoid (pearlite) point.",
+    "<b>Exam tip:</b> Eutectic: liquid → two solids; eutectoid: solid → two solids; peritectic: liquid + solid → another solid."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A slowly cooled plain carbon steel is found to contain 30 % pearlite and 70 % proeutectoid ferrite at room temperature. Taking the eutectoid at 0.76 % C and ferrite at 0.022 % C, the carbon content of the steel (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.24 (accept 0.23 to 0.25)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Lever rule just below 727 °C between ferrite (0.022 %) and pearlite (0.76 %).",
+    "Pearlite fraction = (C − 0.022)/(0.76 − 0.022) = 0.30",
+    "C = 0.022 + 0.30 × 0.738 = <b>0.24 %</b>",
+    "<b>Exam tip:</b> A quick estimate ignoring the carbon in ferrite is C ≈ 0.76 × (pearlite fraction) = 0.23 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Compared with a fully annealed specimen of the same hypoeutectoid steel, a normalised specimen has",
+   "fig": null,
+   "opts": [
+    "coarser pearlite and lower strength",
+    "finer pearlite, a finer grain and higher strength and hardness",
+    "a martensitic structure",
+    "less pearlite and more ferrite with the same strength"
+   ],
+   "ans": "(B) finer pearlite, a finer grain and higher strength and hardness",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Annealing = furnace cooling from the austenite field; normalising = cooling in still air from about 40 °C above A<sub>3</sub> (or A<sub>cm</sub>).",
+    "The faster air cooling lowers the transformation temperature, giving finer pearlite and a finer grain, and also slightly more pearlite (quasi-eutectoid).",
+    "Hence higher strength and hardness with good toughness: <b>(B)</b>.",
+    "<b>Exam tip:</b> Annealing → maximum softness and ductility; normalising → grain refinement and uniform structure (e.g. after forging or casting)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The yield strength of a steel obeys the Hall–Petch relation σ<sub>y</sub> = σ<sub>0</sub> + k/√d. It is 250 MPa for a grain size of 16 μm and 190 MPa for a grain size of 64 μm. The yield strength for a grain size of 36 μm (in MPa) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "210",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Two data points fix σ<sub>0</sub> and k; then substitute the new grain size.",
+    "1/√(16 μm) = 250 m<sup>−1/2</sup>, 1/√(64 μm) = 125 m<sup>−1/2</sup>: k × (250 − 125) = 60 → k = 0.48 MPa·√m, σ<sub>0</sub> = 250 − 0.48 × 250 = 130 MPa",
+    "1/√(36 μm) = 166.7 m<sup>−1/2</sup>: σ<sub>y</sub> = 130 + 0.48 × 166.7 = <b>210 MPa</b>",
+    "<b>Exam tip:</b> Grain refinement is the only strengthening mechanism that also improves toughness."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The maximum hardness that can be obtained in the martensite of a plain carbon steel depends mainly on",
+   "fig": null,
+   "opts": [
+    "the cooling rate, once it exceeds the critical cooling rate",
+    "the austenite grain size",
+    "the carbon content of the steel",
+    "the hardenability of the steel"
+   ],
+   "ans": "(C) the carbon content of the steel",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Martensite hardness comes from the carbon trapped in the BCT lattice.",
+    "Once the critical cooling rate is exceeded, cooling faster does not increase hardness; the hardness rises with carbon up to about 0.6–0.8 % C: <b>(C)</b>.",
+    "Alloying elements raise <i>hardenability</i> (depth of hardening), not the maximum hardness.",
+    "<b>Exam tip:</b> Hardness ≠ hardenability: a 0.4 % C alloy steel can harden deeper than a 0.8 % C plain steel, yet be less hard at the surface."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel has a yield strength of 400 MPa and an elastic modulus of 200 GPa. Its modulus of resilience (in kJ/m³) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "400",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Modulus of resilience = strain energy per unit volume up to the elastic limit = σ<sub>y</sub><sup>2</sup>/(2E).",
+    "U = (400 × 10<sup>6</sup>)<sup>2</sup>/(2 × 200 × 10<sup>9</sup>) = 1.6 × 10<sup>17</sup>/4 × 10<sup>11</sup> = 4 × 10<sup>5</sup> J/m³",
+    "U = <b>400 kJ/m³</b>",
+    "<b>Exam tip:</b> Spring materials need a high σ<sub>y</sub><sup>2</sup>/E; toughness (area under the whole curve) is a different property."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The TTT diagram of a eutectoid steel is shown with four cooling paths 1–4 (path 4 is held isothermally at 300 °C until transformation is complete). The path that gives a mixture of fine pearlite and martensite is",
+   "fig": "d53p_q11.png",
+   "opts": [
+    "path 1",
+    "path 2",
+    "path 3",
+    "path 4"
+   ],
+   "ans": "(B) path 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A path that misses the start curve gives martensite; one that crosses both start and finish curves gives pearlite; one that crosses only the start curve transforms partly.",
+    "Path 2 passes through the nose region between the start and finish curves, so part of the austenite becomes fine pearlite and the rest turns to martensite below M<sub>s</sub>: <b>(B)</b>.",
+    "Path 1 (fastest) → martensite; path 3 (slow) → coarse pearlite; path 4 → lower bainite (austempering).",
+    "<b>Exam tip:</b> The critical cooling rate is the slope of the line just touching the nose of the start curve."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cylindrical bar of 12.5 mm diameter and 50 mm gauge length is stretched uniformly (no necking) to a gauge length of 60 mm, the load then being 50 kN. Assuming constant volume, the true stress (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "488.9 (accept 486.4 to 491.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In uniform plastic deformation the volume is constant: A L = A<sub>0</sub> L<sub>0</sub>, and true stress = load/current area.",
+    "A<sub>0</sub> = π/4 × 12.5² = 122.72 mm²; A = 122.72 × 50/60 = 102.27 mm²",
+    "σ<sub>true</sub> = 50 000/102.27 = <b>488.9 MPa</b> (engineering stress 407.4 MPa; σ<sub>true</sub> = σ<sub>eng</sub>(1 + e) = 407.4 × 1.2).",
+    "<b>Exam tip:</b> The true strain here is ln(60/50) = 0.182, smaller than the engineering strain 0.2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following is a planar (two-dimensional) crystal defect?",
+   "fig": null,
+   "opts": [
+    "Vacancy",
+    "Edge dislocation",
+    "Interstitial atom",
+    "Grain boundary"
+   ],
+   "ans": "(D) Grain boundary",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Defects are classified by dimension.",
+    "Point (0-D): vacancies, interstitial and substitutional atoms. Line (1-D): edge and screw dislocations. Planar (2-D): grain boundaries, twin boundaries, stacking faults, free surfaces. Volume (3-D): voids, inclusions.",
+    "Answer: <b>(D) grain boundary</b>.",
+    "<b>Exam tip:</b> Plastic deformation in metals takes place by the motion of dislocations (line defects)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Aluminium is FCC with a lattice parameter of 0.405 nm. The interplanar spacing of its (111) planes (in nm, round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.2338 (accept 0.2336 to 0.2340)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For cubic crystals d<sub>hkl</sub> = a/√(h² + k² + l²).",
+    "d<sub>111</sub> = 0.405/√3 = 0.405/1.7321",
+    "d<sub>111</sub> = <b>0.2338 nm</b>",
+    "<b>Exam tip:</b> The (111) planes are the most widely spaced (close-packed) planes in FCC, which is why slip occurs on them."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a eutectoid steel, the microconstituents arranged in decreasing order of hardness are",
+   "fig": null,
+   "opts": [
+    "martensite, bainite, fine pearlite, coarse pearlite, spheroidite",
+    "bainite, martensite, coarse pearlite, fine pearlite, spheroidite",
+    "martensite, fine pearlite, bainite, spheroidite, coarse pearlite",
+    "spheroidite, coarse pearlite, fine pearlite, bainite, martensite"
+   ],
+   "ans": "(A) martensite, bainite, fine pearlite, coarse pearlite, spheroidite",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hardness rises as the carbide becomes finer and as carbon is trapped in the iron lattice.",
+    "Martensite (supersaturated BCT) is the hardest; bainite has very fine carbides; fine pearlite has thinner lamellae than coarse pearlite; spheroidite (globular carbides) is the softest.",
+    "Answer: <b>(A)</b>. Ductility follows the reverse order.",
+    "<b>Exam tip:</b> Spheroidising is used on high-carbon steels to give the best machinability and cold formability."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "day": 55,
+ "subject": "Manufacturing",
+ "topic": "Casting",
+ "days_to_gate": 47,
+ "summary": "sand casting, pattern allowances and pattern types, moulding sand properties, cores and core prints, solidification of pure metals and alloys, Chvorinov's rule, design of sprues and gating systems (filling time, aspiration, gating ratio) and riser design by the modulus and shrinkage-volume methods",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Manufacturing, Forming",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Draft (taper) allowance is provided on the vertical surfaces of a pattern in order to",
+   "fig": null,
+   "opts": [
+    "compensate for the contraction of the casting",
+    "allow the pattern to be withdrawn from the mould without damaging the mould walls",
+    "provide stock for machining",
+    "compensate for the distortion of long castings"
+   ],
+   "ans": "(B) allow the pattern to be withdrawn from the mould without damaging the mould walls",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Each allowance on a pattern has a specific purpose.",
+    "A slight taper (about 0.5–2° externally, more on internal surfaces) on faces parallel to the direction of withdrawal lets the pattern come out cleanly: <b>(B)</b>.",
+    "Shrinkage allowance → contraction; machining allowance → finishing stock; camber (distortion) allowance → warping of long, thin castings.",
+    "<b>Exam tip:</b> Internal surfaces (pockets) need more draft than external ones, because the sand inside a pocket is held on all sides by the pattern and tears away easily."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel plate casting 300 mm × 150 mm × 20 mm loses heat from all its faces. If the mould constant in Chvorinov's rule t = B(V/A)² is 2 s/mm², the solidification time (in s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "138.9 (accept 138.2 to 139.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Chvorinov's rule: solidification time is proportional to the square of the casting modulus V/A.",
+    "V = 300 × 150 × 20 = 9 × 10<sup>5</sup> mm³; A = 2(300 × 150 + 300 × 20 + 150 × 20) = 1.08 × 10<sup>5</sup> mm²",
+    "V/A = 8.333 mm; t = 2 × 8.333² = <b>138.9 s</b>",
+    "<b>Exam tip:</b> For a large thin plate V/A ≈ thickness/2 = 10 mm; the edges reduce it here to 8.33 mm."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the CO<sub>2</sub> process of making moulds and cores, the sand is bonded by",
+   "fig": null,
+   "opts": [
+    "sodium silicate, hardened by passing carbon dioxide gas through the sand",
+    "bentonite clay and water, dried by CO<sub>2</sub>",
+    "a phenolic resin cured by heating to 250 °C",
+    "linseed oil baked in an oven"
+   ],
+   "ans": "(A) sodium silicate, hardened by passing carbon dioxide gas through the sand",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> CO<sub>2</sub> moulding is a no-bake chemical bonding process.",
+    "Sand mixed with 3–6 % sodium silicate is rammed, and CO<sub>2</sub> gassing forms a silica gel that hardens the mould or core within seconds: <b>(A)</b>.",
+    "No baking is needed, so cores are made quickly and accurately; the drawback is poor collapsibility after casting.",
+    "<b>Exam tip:</b> Oil-sand cores are baked; shell moulds use resin cured on a hot pattern."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An 18 kg steel casting (density 7800 kg/m³) is to be poured in 6 s through a sprue 180 mm high (liquid level kept at the top of the sprue). Neglecting friction (g = 9.81 m/s²), the area of the sprue at its base (choke area) (in mm², round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "204.7 (accept 203.0 to 206.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Choke area = volume flow rate/velocity at the sprue base, with v = √(2gh).",
+    "Q = 18/(7800 × 6) = 3.846 × 10<sup>−4</sup> m³/s; v = √(2 × 9.81 × 0.18) = 1.879 m/s",
+    "A = 3.846 × 10<sup>−4</sup>/1.879 = 2.047 × 10<sup>−4</sup> m² = <b>204.7 mm²</b>",
+    "<b>Exam tip:</b> With friction losses a discharge coefficient (≈ 0.8–0.9) is applied, which increases the choke area."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A metal contracts in three stages as it cools from the pouring temperature to room temperature. The shrinkage allowance given on the pattern compensates for",
+   "fig": null,
+   "opts": [
+    "liquid contraction only",
+    "solidification shrinkage only",
+    "solid contraction from the solidus to room temperature",
+    "all three stages together"
+   ],
+   "ans": "(C) solid contraction from the solidus to room temperature",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Liquid contraction and solidification shrinkage occur while metal can still flow; solid contraction occurs after the shape is fixed.",
+    "Liquid contraction and solidification shrinkage are made up by feeding from the riser; the pattern is enlarged only for solid (patternmaker's) contraction: <b>(C)</b>.",
+    "Typical values: grey cast iron ≈ 1 %, steel ≈ 2 %, aluminium ≈ 1.3 %.",
+    "<b>Exam tip:</b> Grey iron has a low shrinkage allowance because graphite expansion offsets part of the contraction."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plate casting 250 mm × 250 mm × 25 mm is fed by a cylindrical side riser of height equal to its diameter. The top of the riser is covered with an insulating compound (no heat loss from the top), so the riser loses heat only through its side and bottom, while the casting loses heat from all its faces. For the riser modulus to be 1.2 times the casting modulus, the riser diameter (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "62.5 (accept 62.0 to 63.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Modulus method: M<sub>riser</sub> ≥ 1.2 M<sub>casting</sub>, with M = V/A over the cooling surfaces.",
+    "Casting: V = 1.5625 × 10<sup>6</sup> mm³, A = 2 × 250² + 4 × 250 × 25 = 1.5 × 10<sup>5</sup> mm², M<sub>c</sub> = 10.42 mm",
+    "Riser (H = D, top insulated): A = πD² + πD²/4 = 5πD²/4, V = πD³/4, so M<sub>r</sub> = D/5",
+    "D/5 = 1.2 × 10.42 → D = <b>62.5 mm</b>",
+    "<b>Exam tip:</b> Insulating the riser top raises its modulus from D/6 to D/5, so a smaller riser does the same job."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The property of moulding sand that allows the mould and core to give way to the contracting casting, so that hot tears and cracks are avoided, is",
+   "fig": null,
+   "opts": [
+    "permeability",
+    "refractoriness",
+    "cohesiveness",
+    "collapsibility"
+   ],
+   "ans": "(D) collapsibility",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Moulding sand needs several properties: permeability (gas escape), refractoriness (resistance to heat), strength/cohesion and collapsibility.",
+    "Collapsibility is the ability of the sand to break down under the contraction stresses of the cooling casting: <b>(D)</b>.",
+    "It also makes shake-out and core removal easy; additives such as cereal binders and wood flour improve it.",
+    "<b>Exam tip:</b> Hot tears form when contraction is hindered while the metal is weak (hot-short) — poor collapsibility is a main cause."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A casting of volume 0.006 m³ is fed by a riser. The solidification shrinkage of the metal is 4 % by volume, and the riser must feed the shrinkage of both the casting and itself. If only 20 % of the riser volume can be drawn into the casting before the riser itself freezes, the minimum riser volume (in litres, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.5 (accept 1.4 to 1.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Volume balance: usable riser metal = shrinkage of (casting + riser).",
+    "0.20 V<sub>r</sub> = 0.04 (V<sub>c</sub> + V<sub>r</sub>) → V<sub>r</sub> = 0.04 V<sub>c</sub>/(0.20 − 0.04)",
+    "V<sub>r</sub> = 0.04 × 0.006/0.16 = 0.0015 m³ = <b>1.5 litres</b>",
+    "<b>Exam tip:</b> Insulating or exothermic sleeves raise the usable fraction (to 30–60 %), allowing much smaller risers."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The cooling curves of two materials, P and Q, cast under identical conditions are shown. Which statement is correct?",
+   "fig": "d55p_q9.png",
+   "opts": [
+    "P is a solid-solution alloy and Q a pure metal",
+    "P is a pure metal (or eutectic) that freezes at one temperature, and Q is an alloy that freezes over a temperature range",
+    "Both P and Q are pure metals with different melting points",
+    "Q freezes at a constant temperature and has the better fluidity"
+   ],
+   "ans": "(B) P is a pure metal (or eutectic) that freezes at one temperature, and Q is an alloy that freezes over a temperature range",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> During freezing the latent heat released balances the heat lost to the mould.",
+    "A pure metal or a eutectic freezes at a single temperature, so its cooling curve shows a horizontal arrest (curve P).",
+    "A solid-solution alloy freezes between its liquidus and solidus, so the curve only changes slope over a range (curve Q): <b>(B)</b>.",
+    "<b>Exam tip:</b> The undercooling dip just before the arrest in P shows that nucleation needs some undercooling."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A grey-iron casting is to be 300 mm long. The pattern for it is to be made in aluminium by casting from a wooden master pattern. Taking the shrinkage allowances of grey iron and aluminium as 1 % and 1.3 %, and applying each as size × (1 + allowance), the length of the master pattern (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "306.94 (accept 306.80 to 307.08)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A double-shrinkage master pattern allows for both the contraction of the metal pattern and that of the final casting.",
+    "Aluminium pattern = 300 × 1.01 = 303.00 mm",
+    "Master pattern = 303.00 × 1.013 = <b>306.94 mm</b>",
+    "<b>Exam tip:</b> Adding the percentages (2.3 % → 306.90 mm) is only an approximation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Compared with top gating, bottom gating of a tall casting",
+   "fig": null,
+   "opts": [
+    "fills the mould with less turbulence and mould erosion, but gives an unfavourable temperature gradient for directional solidification",
+    "fills the mould faster for the same gate area and head",
+    "gives the most favourable temperature gradient, with the hottest metal at the top",
+    "is used only for small, shallow castings"
+   ],
+   "ans": "(A) fills the mould with less turbulence and mould erosion, but gives an unfavourable temperature gradient for directional solidification",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In bottom gating the metal rises gently from below.",
+    "There is no free fall, so turbulence, oxidation and mould erosion are minimal; but the last (hottest) metal stays near the gate at the bottom while the top is coolest, which works against feeding from a top riser: <b>(A)</b>.",
+    "Bottom gating also takes longer to fill, because the effective head falls as the cavity fills.",
+    "<b>Exam tip:</b> Top gating gives a favourable gradient but causes erosion and splashing; parting-line gating is a compromise."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A large plate solidifies from both faces, and the thickness of the solid skin grows as d = k√t with k = 20 mm/√min. The time for complete solidification of a plate 100 mm thick (in min, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.25 (accept 6.19 to 6.31)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Square-root law of skin growth; cooling from both faces means each skin needs to grow to half the thickness.",
+    "Each skin must reach 50 mm: 50 = 20√t",
+    "√t = 2.5, so t = <b>6.25 min</b>",
+    "<b>Exam tip:</b> This is consistent with Chvorinov's rule: doubling the thickness quadruples the time."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A match-plate pattern is most suitable for",
+   "fig": null,
+   "opts": [
+    "large single castings such as machine beds",
+    "axisymmetric castings like bells",
+    "mass production of small castings on moulding machines",
+    "castings that have projections which would prevent withdrawal"
+   ],
+   "ans": "(C) mass production of small castings on moulding machines",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a match plate, the cope and drag halves of the pattern (often several, with gates and runners) are mounted on opposite sides of one plate.",
+    "The plate is placed between the flasks and both halves of the mould are rammed and drawn quickly, with accurate alignment: <b>(C)</b>.",
+    "Sweep patterns suit axisymmetric shapes, and loose-piece patterns handle projections.",
+    "<b>Exam tip:</b> Cost of pattern ↑ (wood → metal, loose → match plate), but cost per casting ↓ as production volume rises."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A flat plate casting 400 mm × 300 mm is moulded entirely in the drag, with its top face at the parting plane, as shown. The liquid metal (density 7000 kg/m³) stands 150 mm above the parting plane in the sprue. Taking g = 9.81 m/s², the upward metallostatic force on the cope (in N, round off to one decimal place) is ______",
+   "fig": "d55p_q14.png",
+   "opts": null,
+   "ans": "1236.1 (accept 1229.9 to 1242.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The liquid pressure at the parting plane, ρgh, acts upward over the projected area of the cavity on the cope.",
+    "p = 7000 × 9.81 × 0.15 = 10 300.5 Pa; A = 0.4 × 0.3 = 0.12 m²",
+    "F = 10 300.5 × 0.12 = <b>1236.1 N</b>",
+    "<b>Exam tip:</b> If the cope (with its sand) weighs less than this force, it must be clamped or weighted, or metal will run out at the parting line."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which of the following is a correct guideline for placing risers?",
+   "fig": null,
+   "opts": [
+    "Risers should be placed at the thinnest section so that they solidify first",
+    "Risers should be placed at or next to the heaviest sections (hot spots), so that they solidify after the sections they feed",
+    "A riser can feed any distance along a casting, so one riser is always enough",
+    "Blind risers must always be open to the atmosphere"
+   ],
+   "ans": "(B) Risers should be placed at or next to the heaviest sections (hot spots), so that they solidify after the sections they feed",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A riser can feed only a section that freezes before it does, and only over a limited feeding distance.",
+    "So risers go on the heaviest sections (largest modulus), and long castings need several risers or chills to create directional solidification towards them: <b>(B)</b>.",
+    "A blind riser is closed at the top (inside the mould) and needs an atmospheric vent (e.g. a permeable core) to work well.",
+    "<b>Exam tip:</b> Feeding distance for a steel plate is roughly 4.5 times its thickness (with an end-effect contribution)."
+   ]
+  }
+ ]
+}
