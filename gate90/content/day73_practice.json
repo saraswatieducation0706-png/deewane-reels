@@ -1,0 +1,277 @@
+{
+ "day": 73,
+ "subject": "Thermodynamics + Applied Thermodynamics",
+ "topic": "Thermo & Applied Thermo Revision",
+ "days_to_gate": 26,
+ "summary": "a full revision of Thermodynamics (pure substances, ideal-gas entropy, the second law with several reservoirs, the third law, throttling) and Applied Thermodynamics (Rankine and binary cycles, gas-turbine behaviour, multi-stage compressors, SI and CI engine performance, psychrometry, vapour-compression refrigeration and compounded steam turbines)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Materials & Processes Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The third law of thermodynamics states that",
+   "fig": null,
+   "opts": [
+    "the entropy of every substance is zero at 0 K",
+    "the entropy of a pure, perfectly crystalline substance is zero at absolute zero",
+    "the entropy of an isolated system can never decrease",
+    "absolute zero can be reached in a finite number of steps"
+   ],
+   "ans": "(B) the entropy of a pure, perfectly crystalline substance is zero at absolute zero",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The third law fixes the zero of entropy: S → 0 as T → 0 for a pure substance in perfect crystalline equilibrium (Planck statement).",
+    "Glasses, mixtures and imperfect crystals keep a residual entropy at 0 K, so option A is too broad.",
+    "Option C is the increase-of-entropy principle (second law); the third law in fact implies that 0 K <i>cannot</i> be reached in a finite number of steps.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> The third law is what makes <i>absolute</i> entropy values (used in combustion and chemical equilibrium) possible."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A rigid tank contains dry saturated steam at 300 kPa (v<sub>g</sub> = 0.6058 m³/kg). It is cooled until the pressure falls to 100 kPa, where v<sub>f</sub> = 0.001043 m³/kg and v<sub>g</sub> = 1.6941 m³/kg. The dryness fraction at the final state (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.357 (accept 0.354 to 0.360)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a rigid closed tank the mass and the volume are fixed, so the specific volume stays constant during cooling.",
+    "v<sub>2</sub> = v<sub>1</sub> = 0.6058 m³/kg, which lies between v<sub>f</sub> and v<sub>g</sub> at 100 kPa, so the steam is wet.",
+    "x<sub>2</sub> = (v − v<sub>f</sub>)/(v<sub>g</sub> − v<sub>f</sub>) = (0.6058 − 0.001043)/(1.6941 − 0.001043) = 0.60476/1.69306",
+    "x<sub>2</sub> = <b>0.357</b>",
+    "<b>Exam tip:</b> On a T–v diagram a rigid-tank process is a vertical line; cooling dry steam drops it into the wet region."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Air (c<sub>p</sub> = 1.005 kJ/kg·K, R = 0.287 kJ/kg·K) is compressed from 100 kPa, 300 K to 500 kPa, 450 K. The change in its specific entropy is about",
+   "fig": null,
+   "opts": [
+    "+0.407 kJ/kg·K",
+    "−0.462 kJ/kg·K",
+    "+0.054 kJ/kg·K",
+    "−0.054 kJ/kg·K"
+   ],
+   "ans": "(D) −0.054 kJ/kg·K",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an ideal gas, Δs = c<sub>p</sub> ln(T<sub>2</sub>/T<sub>1</sub>) − R ln(p<sub>2</sub>/p<sub>1</sub>).",
+    "Temperature term: 1.005 ln(450/300) = 1.005 × 0.4055 = 0.4075 kJ/kg·K",
+    "Pressure term: 0.287 ln 5 = 0.287 × 1.6094 = 0.4619 kJ/kg·K",
+    "Δs = 0.4075 − 0.4619 = <b>−0.054 kJ/kg·K</b>",
+    "<b>Exam tip:</b> A negative Δs is allowed here: the compressor is not adiabatic in this data (heat leaves the air), so entropy can fall."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A reversible engine receives 3000 kJ from a reservoir at 1000 K, exchanges heat with two other reservoirs at 600 K and 300 K, and produces 1500 kJ of work, as shown. The heat rejected to the 300 K reservoir (in kJ) is ______",
+   "fig": "d73p_q4.png",
+   "opts": null,
+   "ans": "300",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a reversible engine both laws apply as equalities: Σ Q = W and Σ Q/T = 0 (Clausius).",
+    "First law: Q<sub>2</sub> + Q<sub>3</sub> = 3000 − 1500 = 1500 kJ (heat rejected at 600 K and 300 K)",
+    "Second law: 3000/1000 = Q<sub>2</sub>/600 + Q<sub>3</sub>/300 → 3 = Q<sub>2</sub>/600 + (1500 − Q<sub>2</sub>)/300 = 5 − Q<sub>2</sub>/600",
+    "Q<sub>2</sub> = 1200 kJ and Q<sub>3</sub> = <b>300 kJ</b> (both positive, so both are rejections, as assumed)",
+    "<b>Exam tip:</b> If a solution gives a negative Q, that reservoir is actually supplying heat; the sign tells you the direction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a mercury–steam binary vapour cycle, mercury is used as the working fluid of the topping cycle mainly because",
+   "fig": null,
+   "opts": [
+    "its critical temperature is low",
+    "its saturation pressure is low even at high temperatures, so heat can be added at a high temperature without very high pressures",
+    "its latent heat of vaporisation is very large",
+    "it does not need a condenser"
+   ],
+   "ans": "(B) its saturation pressure is low even at high temperatures, so heat can be added at a high temperature without very high pressures",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Rankine efficiency rises with the mean temperature of heat addition, but steam needs enormous pressures to boil at high temperatures.",
+    "Mercury boils at about 500 °C at only about 10 bar, so the topping cycle adds heat at a high temperature at a modest pressure.",
+    "Its condenser rejects heat to boil water for the steam (bottoming) cycle. Its latent heat is actually small, so a large mass of mercury must circulate.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> Binary cycles try to make the overall cycle look like a Carnot cycle by stacking fluids that suit different temperature ranges."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In an ideal Rankine cycle, steam enters the turbine at 6 MPa and 500 °C (h = 3423.1 kJ/kg, s = 6.8826 kJ/kg·K) and the condenser pressure is 10 kPa. At 10 kPa: h<sub>f</sub> = 191.81 kJ/kg, h<sub>fg</sub> = 2392.1 kJ/kg, s<sub>f</sub> = 0.6492 kJ/kg·K, s<sub>fg</sub> = 7.4996 kJ/kg·K and v<sub>f</sub> = 0.00101 m³/kg. The thermal efficiency of the cycle (in %, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "38.4 (accept 38.1 to 38.6)",
+   "sfig": "d73p_s6.png",
+   "solution": [
+    "<b>Concept:</b> Ideal Rankine: isentropic turbine and pump; η = (W<sub>T</sub> − W<sub>P</sub>)/Q<sub>in</sub> (cycle shown below).",
+    "x<sub>2</sub> = (6.8826 − 0.6492)/7.4996 = 0.8312; h<sub>2</sub> = 191.81 + 0.8312 × 2392.1 = 2180.0 kJ/kg; W<sub>T</sub> = 1243.1 kJ/kg",
+    "W<sub>P</sub> = v<sub>f</sub>Δp = 0.00101 × (6000 − 10) = 6.05 kJ/kg; h<sub>4</sub> = 197.86 kJ/kg",
+    "Q<sub>in</sub> = 3423.1 − 197.86 = 3225.2 kJ/kg; η = (1243.1 − 6.05)/3225.2 = <b>38.4 %</b>",
+    "<b>Exam tip:</b> The exhaust dryness here is only 0.83; below about 0.88 blade erosion becomes a concern, which is why reheat is used."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When the ambient (compressor inlet) temperature of a simple gas turbine plant with real (non-isentropic) compressor and turbine rises on a hot day, with the same pressure ratio and turbine inlet temperature,",
+   "fig": null,
+   "opts": [
+    "the net output and the thermal efficiency both increase",
+    "the net output increases but the thermal efficiency falls",
+    "the net output and the thermal efficiency both fall",
+    "the net output falls but the thermal efficiency is unaffected"
+   ],
+   "ans": "(C) the net output and the thermal efficiency both fall",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Compressor work per kg is proportional to the inlet temperature, while the turbine work depends on the (unchanged) turbine inlet temperature.",
+    "A hotter intake raises the compressor work and lowers the air density, so the mass flow falls: the net output drops.",
+    "With real (non-ideal) machines the efficiency also falls, because the compressor work rises while the heat added (T<sub>3</sub> − T<sub>2</sub>) shrinks less than the net work.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> This is why inlet-air cooling (evaporative or chiller) is used on gas turbines in hot climates."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following is NOT an advantage of multi-stage compression with intercooling over single-stage compression to the same delivery pressure?",
+   "fig": null,
+   "opts": [
+    "Less work input per kg of air",
+    "Higher volumetric efficiency of the first stage",
+    "Lower delivery temperature in each stage",
+    "Fewer moving parts and a simpler machine"
+   ],
+   "ans": "(D) Fewer moving parts and a simpler machine",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Staging with intercooling brings the compression closer to isothermal and reduces the pressure ratio per stage.",
+    "Work input falls (shaded area saved on the p–V diagram), each stage delivers cooler air, and the lower stage pressure ratio raises the volumetric efficiency.",
+    "The price is more cylinders, valves and an intercooler: the machine becomes more complex.",
+    "<b>Answer: (D)</b>",
+    "<b>Exam tip:</b> Optimum intermediate pressure for two stages is √(p<sub>1</sub>p<sub>3</sub>), which gives equal work in both stages."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A four-stroke SI engine of 2.0 L displacement runs at 3000 rpm with a volumetric efficiency of 85 % (based on an air density of 1.18 kg/m³). The air–fuel ratio is 14.7, the calorific value of the fuel is 44 000 kJ/kg and the brake thermal efficiency is 30 %. The brake power (in kW, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "45.0 (accept 44.6 to 45.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Air flow = η<sub>v</sub> ρ<sub>a</sub> V<sub>s</sub> (N/2) for a four-stroke engine; fuel flow = air flow/(A/F); BP = η<sub>bth</sub> ṁ<sub>f</sub> CV.",
+    "ṁ<sub>a</sub> = 0.85 × 1.18 × 0.002 × (3000/120) = 0.05015 kg/s",
+    "ṁ<sub>f</sub> = 0.05015/14.7 = 0.003412 kg/s",
+    "BP = 0.30 × 0.003412 × 44 000 = <b>45.0 kW</b>",
+    "<b>Exam tip:</b> In a four-stroke engine each cylinder breathes once every two revolutions; forgetting N/2 doubles the answer."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The power output of an SI engine is controlled by ____, whereas that of a CI engine is controlled by ____.",
+   "fig": null,
+   "opts": [
+    "throttling the air–fuel mixture (quantity governing); varying the fuel quantity injected with unthrottled air (quality governing)",
+    "varying the fuel quantity at a fixed air flow (quality governing); throttling the mixture (quantity governing)",
+    "advancing the spark; retarding the injection",
+    "changing the compression ratio; changing the injection pressure"
+   ],
+   "ans": "(A) throttling the air–fuel mixture (quantity governing); varying the fuel quantity injected with unthrottled air (quality governing)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An SI engine must burn a near-stoichiometric mixture for reliable flame propagation, so it is throttled: less mixture, same ratio (quantity governing).",
+    "A CI engine draws unthrottled air and the load is set by how much fuel is injected, so the A/F ratio varies (quality governing).",
+    "Throttling losses (pumping work) are one reason SI engines are less efficient at part load.",
+    "<b>Answer: (A)</b>",
+    "<b>Exam tip:</b> 'Quantity' and 'quality' refer to the mixture: its amount (SI) or its strength (CI)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Moist air at 25 °C and a total pressure of 101.325 kPa has a specific humidity of 0.012 kg/kg of dry air. The saturation pressure of water at 25 °C is 3.169 kPa. The degree of saturation of the air (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.598 (accept 0.594 to 0.601)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Degree of saturation μ = ω/ω<sub>s</sub>, where ω<sub>s</sub> is the specific humidity of saturated air at the same temperature and total pressure.",
+    "ω<sub>s</sub> = 0.622 × 3.169/(101.325 − 3.169) = 0.020081 kg/kg",
+    "μ = 0.012/0.020081 = <b>0.598</b>",
+    "For comparison, p<sub>v</sub> = ωp/(0.622 + ω) = 1.918 kPa, so φ = 1.918/3.169 = 0.605: μ is slightly smaller than φ.",
+    "<b>Exam tip:</b> μ = φ(p − p<sub>s</sub>)/(p − p<sub>v</sub>); the two are nearly equal at room conditions and both equal 1 for saturated air."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a vapour-compression refrigerator, the condenser temperature rises (on a hot day) while the evaporator temperature stays the same. Then",
+   "fig": null,
+   "opts": [
+    "the refrigerating effect per kg increases and the COP increases",
+    "the refrigerating effect per kg is unchanged but the COP decreases",
+    "the refrigerating effect per kg and the COP both decrease, and the compressor work per kg increases",
+    "the compressor work per kg decreases and the COP increases"
+   ],
+   "ans": "(C) the refrigerating effect per kg and the COP both decrease, and the compressor work per kg increases",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> On the p–h diagram, a higher condensing pressure moves the saturated-liquid point (and the throttled state) to a higher enthalpy, and lengthens the compression line.",
+    "Refrigerating effect h<sub>1</sub> − h<sub>4</sub> falls because h<sub>4</sub> = h<sub>3</sub> rises; compressor work h<sub>2</sub> − h<sub>1</sub> rises.",
+    "So COP = (h<sub>1</sub> − h<sub>4</sub>)/(h<sub>2</sub> − h<sub>1</sub>) falls on both counts.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> Keep condensers clean and well ventilated: every degree of extra condensing temperature costs roughly 2–3 % in COP."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A room is kept at 25 °C. Its sensible heat load is 20 kW, and conditioned air is supplied at 14 °C. Taking the humid specific heat of the supply air as 1.022 kJ/kg·K (per kg of dry air), the required supply air flow (in kg of dry air per second, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.78 (accept 1.76 to 1.79)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The supply air absorbs the room sensible heat as it warms from the supply temperature to the room temperature: RSH = ṁ<sub>a</sub> c<sub>pm</sub> (t<sub>room</sub> − t<sub>supply</sub>).",
+    "ṁ<sub>a</sub> = 20/(1.022 × (25 − 14)) = 20/11.242",
+    "ṁ<sub>a</sub> = <b>1.78 kg/s</b>",
+    "<b>Exam tip:</b> The latent load does not enter this sizing; it fixes how dry the supply air must be (the RSHF line on the chart)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A velocity-compounded (Curtis) impulse stage has two rows of moving blades. Steam leaves the nozzle at 800 m/s at 16° to the plane of the wheel. With symmetrical, frictionless blades, the blade speed for maximum diagram efficiency (in m/s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "192.3 (accept 191.3 to 193.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an impulse stage with n rows of moving blades (symmetrical, frictionless), the optimum blade-speed ratio is u/V<sub>1</sub> = cos α/(2n) and the maximum diagram efficiency is cos²α.",
+    "Two rows: u/V<sub>1</sub> = cos 16°/4 = 0.9613/4 = 0.2403",
+    "u = 0.2403 × 800 = <b>192.3 m/s</b> (maximum diagram efficiency cos²16° = 92.4 %)",
+    "<b>Exam tip:</b> Curtis stages handle a large enthalpy drop at a low blade speed, but their actual efficiency falls quickly as rows are added."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When wet steam at a high pressure is throttled to a low pressure (for example in a throttling calorimeter), its",
+   "fig": null,
+   "opts": [
+    "enthalpy stays the same and its dryness fraction increases (it may become superheated)",
+    "enthalpy and dryness fraction both stay the same",
+    "entropy stays the same and its dryness fraction decreases",
+    "enthalpy decreases and its temperature stays the same"
+   ],
+   "ans": "(A) enthalpy stays the same and its dryness fraction increases (it may become superheated)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Throttling is adiabatic with no work and negligible KE change, so h<sub>1</sub> = h<sub>2</sub>; it is irreversible, so entropy rises.",
+    "At the lower pressure h<sub>f</sub> is much smaller, so the same enthalpy corresponds to a larger dryness fraction; if h exceeds h<sub>g</sub> at the low pressure, the steam becomes superheated.",
+    "On the h–s (Mollier) chart throttling is a horizontal line moving to the right.",
+    "<b>Answer: (A)</b>",
+    "<b>Exam tip:</b> A throttling calorimeter works only for nearly dry steam (x above about 0.95); wetter steam needs a separating calorimeter first."
+   ]
+  }
+ ]
+}

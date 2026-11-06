@@ -1,0 +1,279 @@
+{
+ "day": 74,
+ "subject": "Materials + Casting, Forming, Joining",
+ "topic": "Materials & Processes Revision",
+ "days_to_gate": 25,
+ "summary": "a full revision of Engineering Materials (point defects, planar density, stainless steels, hardness testing, surface hardening), Casting (riser modulus, gas porosity, the Chvorinov exponent), Forming (superplasticity, rolling passes, upsetting force, press dies) and Joining (explosive welding, resistance spot welding, weld decay)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Machining & Metrology Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "In an ionic crystal, a Frenkel defect consists of",
+   "fig": null,
+   "opts": [
+    "a cation–anion vacancy pair",
+    "a cation that has left its lattice site and sits in an interstitial position, leaving a vacancy behind",
+    "an impurity atom replacing a host atom",
+    "a missing half-plane of atoms"
+   ],
+   "ans": "(B) a cation that has left its lattice site and sits in an interstitial position, leaving a vacancy behind",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Point defects in ionic solids must keep the crystal electrically neutral.",
+    "Schottky defect: a pair of vacancies (one cation, one anion). Frenkel defect: an ion (usually the smaller cation) moves to an interstitial site, creating a vacancy–interstitial pair.",
+    "Option C is a substitutional impurity and option D an edge dislocation (a line defect).",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> Neither defect changes the composition; a Schottky defect lowers the density, a Frenkel defect does not."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Aluminium is FCC with a lattice parameter of 0.405 nm. The planar density of atoms on its (100) plane (in atoms per nm², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12.19 (accept 12.10 to 12.28)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Planar density = number of atom centres lying in the plane within one cell face ÷ area of that face.",
+    "The (100) face of an FCC cell has 4 corner atoms (each shared by 4 faces → 1) and 1 face-centre atom (fully in the plane) = 2 atoms.",
+    "Area = a² = 0.405² = 0.1640 nm²",
+    "Planar density = 2/0.1640 = <b>12.19 atoms/nm²</b>",
+    "<b>Exam tip:</b> In FCC the (111) plane is the most densely packed (2.31/a² vs 2/a² for (100)); slip occurs on it."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Stainless steels resist corrosion mainly because",
+   "fig": null,
+   "opts": [
+    "their carbon content is very high",
+    "nickel forms a thick protective oxide scale",
+    "at least about 11–12 % chromium forms a thin, adherent, self-healing chromium-oxide (passive) film",
+    "they have a BCC structure at all temperatures"
+   ],
+   "ans": "(C) at least about 11–12 % chromium forms a thin, adherent, self-healing chromium-oxide (passive) film",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Passivity: a very thin Cr<sub>2</sub>O<sub>3</sub>-rich film forms on the surface and re-forms quickly when scratched.",
+    "It needs a minimum of about 11–12 % Cr dissolved in the matrix. Nickel stabilises the austenitic (FCC) structure (e.g. 18-8), giving toughness and formability.",
+    "Carbon is kept low, because chromium carbides remove Cr from the matrix.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> Austenitic grades (304, 316) are non-magnetic FCC; ferritic and martensitic grades are magnetic."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A Brinell hardness test on a steel uses a 10 mm ball and a load of 3000 kgf, as shown. The diameter of the indentation is 4.0 mm. The Brinell hardness number (round off to the nearest integer) is ______",
+   "fig": "d74p_q4.png",
+   "opts": null,
+   "ans": "229 (accept 227 to 231)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> BHN = load (kgf)/curved area of the indentation (mm²) = 2P/[πD(D − √(D² − d²))].",
+    "√(D² − d²) = √(100 − 16) = 9.165 mm; D − 9.165 = 0.835 mm",
+    "Curved area = (π × 10 × 0.835)/2 = 13.11 mm²",
+    "BHN = 3000/13.11 = <b>229</b>",
+    "<b>Exam tip:</b> For steels the UTS (MPa) is roughly 3.45 × BHN, so this steel has a UTS of about 790 MPa."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In induction hardening of a steel shaft, the depth of the hardened case is controlled mainly by",
+   "fig": null,
+   "opts": [
+    "the carbon content of the core",
+    "the frequency of the alternating current: the higher the frequency, the deeper the case",
+    "the quenching medium only",
+    "the frequency of the alternating current: the higher the frequency, the shallower the case"
+   ],
+   "ans": "(D) the frequency of the alternating current: the higher the frequency, the shallower the case",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Eddy currents concentrate near the surface (skin effect); the current penetration depth is proportional to 1/√f.",
+    "High frequency (hundreds of kHz) heats a thin skin quickly, giving a shallow case; lower frequency (a few kHz) gives a deeper case.",
+    "Only the heated skin is austenitised and transformed to martensite on quenching; the core stays unchanged.",
+    "<b>Answer: (D)</b>",
+    "<b>Exam tip:</b> Surface hardening by induction or flame needs a medium-carbon steel (about 0.4–0.5 % C); low-carbon steels must be carburised first."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel casting has a modulus (volume/cooling surface area) of 10 mm. A cylindrical side riser with height H = 1.5D, cooling from all its surfaces, is to have a modulus 1.2 times that of the casting. The riser diameter (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "64.0 (accept 63.5 to 64.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Modulus method: the riser freezes after the casting if M<sub>riser</sub> ≥ 1.2 M<sub>casting</sub>.",
+    "V = (πD²/4)(1.5D) = 0.375πD³; A = πD(1.5D) + 2(πD²/4) = 2πD²",
+    "M = V/A = 0.375D/2 = 0.1875D",
+    "0.1875D = 1.2 × 10 = 12 → D = <b>64.0 mm</b> (H = 96 mm)",
+    "<b>Exam tip:</b> Learn the riser moduli: H = D all faces D/6; H = D top riser (base not cooling) D/5; H = 1.5D all faces 0.1875D."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Fine, scattered pinholes in aluminium-alloy sand castings are caused mainly by ____ and are reduced by ____.",
+   "fig": null,
+   "opts": [
+    "hydrogen dissolved in the melt that comes out of solution on freezing; degassing the melt (e.g. by bubbling nitrogen or argon, or with chlorine-based fluxes)",
+    "insufficient riser volume; using larger risers",
+    "too high a pouring temperature; pouring colder",
+    "low permeability of the sand; ramming the sand harder"
+   ],
+   "ans": "(A) hydrogen dissolved in the melt that comes out of solution on freezing; degassing the melt (e.g. by bubbling nitrogen or argon, or with chlorine-based fluxes)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hydrogen is much more soluble in liquid aluminium than in solid aluminium, so it is rejected as gas bubbles during solidification.",
+    "Sources: moisture in the charge, fluxes, tools and the atmosphere. Remedy: degas with inert-gas purging (N<sub>2</sub>/Ar, often with a rotary impeller) or chlorine-releasing tablets, and keep charge and tools dry.",
+    "Larger risers cure shrinkage, not gas porosity; harder ramming lowers permeability and makes blowholes worse.",
+    "<b>Answer: (A)</b>",
+    "<b>Exam tip:</b> Gas porosity gives smooth, round holes; shrinkage porosity gives jagged, dendritic holes at hot spots."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a foundry, a 50 mm cube solidifies in 2.0 min and a 100 mm cube of the same metal solidifies in 7.0 min in the same sand mould. Taking Chvorinov's rule as t = B(V/A)ⁿ, the exponent n (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.81 (accept 1.79 to 1.83)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For geometrically similar castings the modulus V/A scales with size, so the ratio of times gives the exponent directly.",
+    "Cube modulus = a/6: M<sub>1</sub> = 8.33 mm, M<sub>2</sub> = 16.67 mm, ratio = 2",
+    "7.0/2.0 = 2ⁿ → n = ln 3.5/ln 2 = 1.2528/0.6931",
+    "n = <b>1.81</b>",
+    "<b>Exam tip:</b> GATE uses n = 2 unless told otherwise; real data usually give n between 1.5 and 2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Superplastic forming (elongations of several hundred per cent) of alloys such as Ti-6Al-4V is possible mainly because these alloys, when fine-grained and deformed at about 0.5 T<sub>m</sub> and low strain rates, have",
+   "fig": null,
+   "opts": [
+    "a very high strain-hardening exponent",
+    "a very low elastic modulus",
+    "a very high strain-rate sensitivity exponent m (about 0.5 or more)",
+    "a coarse-grained structure that resists necking"
+   ],
+   "ans": "(C) a very high strain-rate sensitivity exponent m (about 0.5 or more)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ = Cε̇<sup>m</sup>. When a neck starts, the local strain rate rises, so with a large m the neck becomes much stronger and the deformation spreads to the rest of the part.",
+    "This needs very fine, stable grains (a few μm), a temperature around half the melting point and slow strain rates (grain-boundary sliding).",
+    "Strain hardening (n) delays necking only up to ε = n at room temperature; it cannot give huge elongations.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> Superplastic forming is slow and is usually combined with diffusion bonding for aerospace titanium panels."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plate 50 mm thick is to be hot rolled to 30 mm thick between rolls of 600 mm diameter, with a coefficient of friction of 0.1 between the rolls and the plate. Taking the largest possible draft in every pass, the minimum number of passes needed is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The rolls can draw the plate in only if Δh ≤ μ²R (maximum draft).",
+    "Δh<sub>max</sub> = 0.1² × 300 = 3 mm per pass",
+    "Total reduction = 50 − 30 = 20 mm; 20/3 = 6.67",
+    "Passes must be a whole number → <b>7 passes</b>",
+    "<b>Exam tip:</b> Use the roll <i>radius</i> in μ²R; using the diameter doubles the draft and is a classic trap."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cylindrical billet of 40 mm diameter and 60 mm height is upset between flat, frictionless platens to a height of 30 mm, as shown. The flow curve of the material is σ = 700ε<sup>0.2</sup> MPa. The forging force at the end of the stroke (in kN, round off to the nearest integer) is ______",
+   "fig": "d74p_q11.png",
+   "opts": null,
+   "ans": "1635 (accept 1620 to 1650)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Without friction, the forging pressure equals the flow stress at the current strain, and the area follows from volume constancy.",
+    "True strain ε = ln(60/30) = 0.6931; flow stress = 700 × 0.6931<sup>0.2</sup> = 650.5 MPa",
+    "Final area = A<sub>0</sub>h<sub>0</sub>/h = (π/4 × 40²) × 2 = 2513.3 mm² (diameter 56.6 mm)",
+    "F = 650.5 × 2513.3 = 1.635 × 10⁶ N = <b>1635 kN</b>",
+    "<b>Exam tip:</b> With friction the average pressure rises roughly as (1 + 2μr/3h); always use the <i>final</i> area for the end-of-stroke force."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A washer is produced from strip by piercing the hole and blanking the outside diameter at the same station in a single stroke of the press. The die used is a",
+   "fig": null,
+   "opts": [
+    "progressive die",
+    "compound die",
+    "combination die",
+    "transfer die"
+   ],
+   "ans": "(B) compound die",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Die types are named by how many cutting/forming operations are done and at how many stations.",
+    "Compound die: two or more <i>cutting</i> operations (here piercing + blanking) at one station in one stroke; it gives an accurately concentric washer.",
+    "Progressive die: operations at successive stations as the strip advances; combination die: a cutting and a forming operation (e.g. blanking + drawing) at one station.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> In a compound die the blanking die is usually on the punch holder (inverted), and the part is pushed back into the strip."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Explosive welding is mainly used to",
+   "fig": null,
+   "opts": [
+    "clad large plates of one metal onto another, often dissimilar metals that cannot be fusion welded",
+    "join thin aluminium foils",
+    "repair cast-iron machine beds",
+    "weld thermoplastic pipes"
+   ],
+   "ans": "(A) clad large plates of one metal onto another, often dissimilar metals that cannot be fusion welded",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An explosive charge drives the flyer plate onto the base plate at an angle at high velocity; the impact jets away surface films and forms a solid-state bond.",
+    "There is little or no melting, so metals such as titanium, zirconium or stainless steel can be clad onto carbon steel.",
+    "The bond interface is typically wavy, which adds mechanical interlocking.",
+    "<b>Answer: (A)</b>",
+    "<b>Exam tip:</b> Solid-state processes: forge, friction, friction stir, ultrasonic, diffusion, explosive and cold (roll) welding."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A spot weld must melt a nugget of 30 mm³ of steel, which needs 10 J/mm³. Only 25 % of the electrical energy generated goes into the nugget. The effective resistance of the joint is 100 μΩ and the current flows for 0.2 s. The welding current required (in A, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7746 (accept 7700 to 7790)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Joule heating: H = I²Rt, of which only a fraction reaches the nugget.",
+    "Heat needed in the nugget = 30 × 10 = 300 J → heat to be generated = 300/0.25 = 1200 J",
+    "I² = 1200/(100 × 10⁻⁶ × 0.2) = 6 × 10⁷ A²",
+    "I = <b>7746 A</b>",
+    "<b>Exam tip:</b> Heat goes as I², so current is the most powerful variable in resistance welding; time and electrode force come next."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When an unstabilised austenitic stainless steel (e.g. 18-8 with 0.08 % C) is welded, the heat-affected zone sometimes corrodes rapidly in service ('weld decay'). The cause and a remedy are",
+   "fig": null,
+   "opts": [
+    "hydrogen cracking; preheating the plates",
+    "sigma-phase formation; quenching the weld",
+    "grain growth in the HAZ; hammering the weld",
+    "precipitation of chromium carbides at grain boundaries in the region held at about 500–800 °C, depleting Cr locally; using low-carbon (L) grades or Ti/Nb-stabilised grades"
+   ],
+   "ans": "(D) precipitation of chromium carbides at grain boundaries in the region held at about 500–800 °C, depleting Cr locally; using low-carbon (L) grades or Ti/Nb-stabilised grades",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Sensitisation: between about 500 and 800 °C carbon combines with chromium at the grain boundaries as Cr<sub>23</sub>C<sub>6</sub>.",
+    "The adjacent zone drops below about 12 % Cr, loses passivity and is attacked intergranularly.",
+    "Remedies: low carbon (304L, 316L), stabilising elements (Ti in 321, Nb in 347) that tie up the carbon, or a solution anneal and water quench after welding.",
+    "<b>Answer: (D)</b>",
+    "<b>Exam tip:</b> Weld decay appears a short distance away from the weld, not in the weld bead itself, because that is where the HAZ sat longest in the sensitising range."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,277 @@
+{
+ "day": 75,
+ "subject": "Machining + Metrology + CIM",
+ "topic": "Machining & Metrology Revision",
+ "days_to_gate": 24,
+ "summary": "a full revision of machining (chip types, shear-plane stress, the extended Taylor equation, drilling MRR), machine tools (gear hobbing and shaping, milling time), non-traditional machining (EDM dielectric, electron beam drilling, electrochemical grinding), metrology (ISO fits, accuracy and precision, process capability) and CIM (SCARA robots, Bézier curves)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "IE Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Titanium alloys machined at moderate to high cutting speeds usually produce serrated (saw-tooth, segmented) chips. The main reason is",
+   "fig": null,
+   "opts": [
+    "their high thermal conductivity",
+    "their low thermal conductivity, which concentrates heat in narrow shear bands (adiabatic shear) where the metal softens and shears in bursts",
+    "their very low hardness",
+    "the formation of a stable built-up edge"
+   ],
+   "ans": "(B) their low thermal conductivity, which concentrates heat in narrow shear bands (adiabatic shear) where the metal softens and shears in bursts",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Chip type depends on the work material and cutting conditions: continuous (ductile), discontinuous (brittle), with BUE (low speed, adhesive), serrated (thermoplastic instability).",
+    "Titanium conducts heat poorly, so the heat of shearing stays in a thin band; the local softening exceeds strain hardening and shear localises periodically.",
+    "The same makes the tool tip run very hot, which is why titanium is cut at low speeds with sharp, positive-rake carbide tools and plenty of coolant.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> Serrated chips cause force fluctuations and chatter; hardened steels and nickel alloys give them too."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting with a tool of rake angle 6°, the uncut chip thickness is 0.25 mm, the width of cut is 2.5 mm and the chip thickness ratio is 0.42. The cutting force is 1000 N and the thrust force is 420 N. The mean shear stress on the shear plane (in MPa, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "479 (accept 474 to 484)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Shear angle from tan φ = r cos α/(1 − r sin α); shear force F<sub>s</sub> = F<sub>c</sub> cos φ − F<sub>t</sub> sin φ acts on the shear-plane area A<sub>s</sub> = tw/sin φ.",
+    "tan φ = 0.42 × 0.9945/(1 − 0.42 × 0.1045) = 0.4177/0.9561 = 0.4369 → φ = 23.60°",
+    "F<sub>s</sub> = 1000 × 0.9164 − 420 × 0.4004 = 916.4 − 168.2 = 748.2 N; A<sub>s</sub> = 0.25 × 2.5/0.4004 = 1.561 mm²",
+    "τ<sub>s</sub> = 748.2/1.561 = <b>479 MPa</b>",
+    "<b>Exam tip:</b> The shear-plane area is larger than the uncut chip area tw by the factor 1/sin φ; forgetting it overestimates τ by about 2.5 times here."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the extended Taylor equation VT<sup>n</sup>f<sup>a</sup>d<sup>b</sup> = C for carbide tools (typically n ≈ 0.25, a ≈ 0.5–0.75, b ≈ 0.15–0.35), the cutting variables arranged in decreasing order of their effect on tool life are",
+   "fig": null,
+   "opts": [
+    "depth of cut > feed > cutting speed",
+    "feed > cutting speed > depth of cut",
+    "cutting speed > feed > depth of cut",
+    "all three have equal effect"
+   ],
+   "ans": "(C) cutting speed > feed > depth of cut",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Solving for T: T = C<sup>1/n</sup> V<sup>−1/n</sup> f<sup>−a/n</sup> d<sup>−b/n</sup>; the larger the exponent, the stronger the effect.",
+    "With n = 0.25: exponent of V is 4, of f about 2–3, of d about 0.6–1.4.",
+    "So speed has by far the biggest effect, then feed, then depth of cut.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> For productivity with long tool life, take the largest depth of cut first, then the largest feed, and then choose the speed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 20 mm diameter twist drill runs at 400 rpm with a feed of 0.2 mm/rev, drilling into solid metal. The material removal rate (in mm³/s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "418.9 (accept 414.7 to 423.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In drilling solid metal, MRR = (πD²/4) × feed per minute.",
+    "Feed velocity = f N = 0.2 × 400 = 80 mm/min = 1.333 mm/s",
+    "Area = π × 20²/4 = 314.16 mm²",
+    "MRR = 314.16 × 1.333 = <b>418.9 mm³/s</b>",
+    "<b>Exam tip:</b> For enlarging an existing hole of diameter d<sub>0</sub>, use π(D² − d<sub>0</sub>²)/4 instead."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement about gear hobbing and gear shaping is correct?",
+   "fig": null,
+   "opts": [
+    "Gear hobbing can cut internal gears and cluster gears close to a shoulder, but gear shaping cannot",
+    "Both processes form each tooth space separately with a form cutter and an indexing head",
+    "Gear shaping can cut internal gears and gears close to a shoulder, which gear hobbing cannot",
+    "Gear shaping is faster than hobbing for long runs of external spur gears"
+   ],
+   "ans": "(C) Gear shaping can cut internal gears and gears close to a shoulder, which gear hobbing cannot",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Both are generating processes: the cutter and blank rotate in a fixed ratio, like meshing gears, so one cutter cuts all tooth numbers of a given module.",
+    "The hob is a worm-like cutter that needs clearance past the gear face, so it cannot reach internal teeth or teeth close to a shoulder.",
+    "The gear-shaper cutter reciprocates like a pinion, so it can cut internal gears and cluster gears; hobbing is faster for external spur and helical gears because cutting is continuous.",
+    "<b>Answer: (C)</b>",
+    "<b>Exam tip:</b> Form milling with a dividing head is the non-generating method; it needs a different cutter for each range of tooth numbers."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A through slot is cut along the full 100 mm length of a block in one pass, as shown, by an end mill of 16 mm diameter with 4 teeth, running at 1200 rpm with a feed of 0.05 mm per tooth. The cutter starts with its edge just touching the block and travels until it has completely cleared the far end. The machining time (in seconds, round off to one decimal place) is ______",
+   "fig": "d75p_q6.png",
+   "opts": null,
+   "ans": "29.0 (accept 28.7 to 29.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Table feed v<sub>f</sub> = f<sub>z</sub> z N; the cutter travel = work length + approach + over-travel.",
+    "v<sub>f</sub> = 0.05 × 4 × 1200 = 240 mm/min",
+    "The cutter centre starts D/2 before the block and must finish D/2 beyond it: travel = 100 + 8 + 8 = 116 mm",
+    "Time = 116/240 = 0.4833 min = <b>29.0 s</b>",
+    "<b>Exam tip:</b> For slab milling the approach is √(d(D − d)); for face milling with a centred cutter it is D/2 (or D for a full-width finish)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following is NOT a function of the dielectric fluid in electric discharge machining?",
+   "fig": null,
+   "opts": [
+    "Acting as an insulator until the breakdown voltage is reached, then ionising to form the spark channel",
+    "Flushing the eroded debris out of the gap",
+    "Cooling the electrode and workpiece",
+    "Conducting the machining current continuously between tool and work, as an electrolyte does in ECM"
+   ],
+   "ans": "(D) Conducting the machining current continuously between tool and work, as an electrolyte does in ECM",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EDM needs a non-conducting fluid (kerosene-based oil or deionised water) so that discrete sparks occur at the closest points.",
+    "The dielectric holds off the voltage, then ionises to confine the spark; it quenches and flushes away the molten debris and cools the surfaces.",
+    "Continuous conduction would be ECM-like electrolysis, not spark erosion; it would stop the sparking altogether.",
+    "<b>Answer: (D)</b>",
+    "<b>Exam tip:</b> Poor flushing causes arcing and short circuits; graphite and copper are the usual tool materials."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An electron beam of 150 kV and 20 mA drills a hole of 0.5 mm diameter through a steel sheet 2 mm thick. Only 80 % of the beam power is used in removing metal, and the energy needed to remove (melt and vaporise) the steel is 10 J/mm³. The time taken to drill the hole (in milliseconds, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.64 (accept 1.62 to 1.65)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Time = energy needed/useful power; the energy needed = volume × specific removal energy.",
+    "Beam power = 150 × 10³ × 20 × 10⁻³ = 3000 W; useful power = 0.8 × 3000 = 2400 W",
+    "Volume = π/4 × 0.5² × 2 = 0.3927 mm³ → energy = 3.927 J",
+    "t = 3.927/2400 = 1.636 × 10⁻³ s = <b>1.64 ms</b>",
+    "<b>Exam tip:</b> EBM needs a vacuum chamber (electrons scatter in air); LBM works in air but metals reflect much of the light."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Electrochemical grinding (ECG) is used for sharpening carbide cutting tools. In ECG,",
+   "fig": null,
+   "opts": [
+    "about 90 % or more of the material is removed by electrolytic dissolution, the metal-bonded abrasive wheel mainly scraping away the passive film",
+    "the material is removed entirely by the abrasive grains, the electrolyte only cooling the work",
+    "the wheel is made the anode and the work the cathode",
+    "sparks between the wheel and the work remove the material"
+   ],
+   "ans": "(A) about 90 % or more of the material is removed by electrolytic dissolution, the metal-bonded abrasive wheel mainly scraping away the passive film",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ECG combines ECM and grinding: a conductive (metal-bonded diamond) wheel is the cathode and the work the anode, with electrolyte in the gap kept by the protruding grains.",
+    "Most of the stock goes by anodic dissolution; the grains remove the oxide film and maintain the gap, so there is little heat, no burrs and very low wheel wear.",
+    "Option D describes electro-discharge grinding.",
+    "<b>Answer: (A)</b>",
+    "<b>Exam tip:</b> ECG is ideal for burr-free, stress-free grinding of hard, conductive materials such as cemented carbides."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For an ISO hole designated with the letter H (e.g. 40 H7),",
+   "fig": null,
+   "opts": [
+    "the upper deviation is zero",
+    "the lower deviation is zero, so the minimum hole size equals the basic size",
+    "the tolerance is symmetrical about the basic size",
+    "the fundamental deviation depends on the tolerance grade"
+   ],
+   "ans": "(B) the lower deviation is zero, so the minimum hole size equals the basic size",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The letter gives the fundamental deviation (position of the tolerance zone); the number gives the tolerance grade (its width).",
+    "For the H hole the fundamental deviation is the lower deviation = 0, so the hole ranges from the basic size to basic size + IT.",
+    "Likewise an h shaft has upper deviation 0 (shaft-basis system); JS/js zones are symmetrical.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> H is the basis of the hole-basis system: one set of reamers and plug gauges serves all the fits."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A fit is specified as 40 H7/k6, with the hole 40.000–40.025 mm and the shaft 40.002–40.018 mm. The maximum clearance of the fit (in μm) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "23",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Maximum clearance = largest hole − smallest shaft; maximum interference = largest shaft − smallest hole.",
+    "Maximum clearance = 40.025 − 40.002 = 0.023 mm = <b>23 μm</b>",
+    "Maximum interference = 40.018 − 40.000 = 18 μm",
+    "Since the fit can give either a clearance or an interference, it is a transition fit.",
+    "<b>Exam tip:</b> Draw the two tolerance zones on a line; if they overlap, the fit is a transition fit."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A gauge block of true length 25.000 mm is measured ten times with an instrument. The readings are all between 25.041 mm and 25.043 mm. The instrument is",
+   "fig": null,
+   "opts": [
+    "accurate and precise",
+    "accurate but not precise",
+    "neither accurate nor precise",
+    "precise but not accurate, showing a systematic error of about +0.042 mm that can be removed by calibration"
+   ],
+   "ans": "(D) precise but not accurate, showing a systematic error of about +0.042 mm that can be removed by calibration",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Precision = closeness of repeated readings to one another (repeatability); accuracy = closeness of the mean reading to the true value.",
+    "The spread is only 0.002 mm (high precision), but the mean, about 25.042 mm, is 0.042 mm off the true value (poor accuracy).",
+    "A constant offset is a systematic error: it can be found by calibration against a standard and corrected.",
+    "<b>Answer: (D)</b>",
+    "<b>Exam tip:</b> Random errors set the precision and cannot be calibrated out; systematic errors set the bias and can."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A shaft diameter is specified as 50 ± 0.06 mm. The machining process produces diameters that are normally distributed with a mean of 50.02 mm and a standard deviation of 0.01 mm. The process capability index C<sub>pk</sub> (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.33 (accept 1.32 to 1.34)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> C<sub>pk</sub> = min(USL − μ, μ − LSL)/(3σ); it accounts for the process not being centred, while C<sub>p</sub> = (USL − LSL)/(6σ) does not.",
+    "USL − μ = 50.06 − 50.02 = 0.04 mm; μ − LSL = 50.02 − 49.94 = 0.08 mm",
+    "C<sub>pk</sub> = 0.04/(3 × 0.01) = <b>1.33</b> (C<sub>p</sub> = 0.12/0.06 = 2.00)",
+    "<b>Exam tip:</b> C<sub>pk</sub> ≥ 1.33 is the usual minimum for a capable process; re-centring this process would raise C<sub>pk</sub> to 2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A SCARA robot, widely used for pick-and-place and assembly, has",
+   "fig": null,
+   "opts": [
+    "three prismatic joints at right angles (Cartesian)",
+    "two rotary joints with parallel vertical axes and one vertical prismatic joint, giving compliance in the horizontal plane and rigidity vertically",
+    "one rotary base joint and two prismatic joints (cylindrical)",
+    "six rotary joints (articulated arm)"
+   ],
+   "ans": "(B) two rotary joints with parallel vertical axes and one vertical prismatic joint, giving compliance in the horizontal plane and rigidity vertically",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> SCARA = Selective Compliance Assembly Robot Arm.",
+    "Its two shoulder/elbow joints rotate about parallel vertical axes, so the arm is compliant sideways (helping to insert pins into holes) but stiff vertically; a vertical prismatic axis (plus a wrist roll) does the insertion.",
+    "Its work envelope is a thick, kidney-shaped cylinder region.",
+    "<b>Answer: (B)</b>",
+    "<b>Exam tip:</b> Count joints: Cartesian PPP, cylindrical RPP, spherical (polar) RRP, SCARA RRP with parallel R axes, articulated RRR(+wrist)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cubic Bézier curve has the control points P<sub>0</sub>(0, 0), P<sub>1</sub>(1, 3), P<sub>2</sub>(3, 3) and P<sub>3</sub>(4, 0). The y-coordinate of the point on the curve at parameter u = 0.4 (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.16 (accept 2.14 to 2.18)",
+   "sfig": "d75p_s14.png",
+   "solution": [
+    "<b>Concept:</b> P(u) = (1 − u)³P<sub>0</sub> + 3u(1 − u)²P<sub>1</sub> + 3u²(1 − u)P<sub>2</sub> + u³P<sub>3</sub> (Bernstein polynomials; curve below).",
+    "At u = 0.4 the weights are 0.216, 0.432, 0.288 and 0.064 (sum = 1).",
+    "y = 0.216 × 0 + 0.432 × 3 + 0.288 × 3 + 0.064 × 0 = 1.296 + 0.864 = <b>2.16</b> (x = 0.432 + 0.864 + 0.256 = 1.552)",
+    "<b>Exam tip:</b> The curve passes through P<sub>0</sub> and P<sub>3</sub> only, is tangent to P<sub>0</sub>P<sub>1</sub> and P<sub>2</sub>P<sub>3</sub> at its ends, and stays inside the convex hull of the control points."
+   ]
+  }
+ ]
+}
