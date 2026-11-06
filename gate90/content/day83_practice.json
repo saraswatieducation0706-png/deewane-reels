@@ -1,0 +1,264 @@
+{
+ "day": 83,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 5",
+ "days_to_gate": 15,
+ "summary": "a mixed full-syllabus warm-up for the fifth full-length mock: instrument analogies, train-and-platform speed, inverse Laplace transforms, the trapezoidal rule, lifting-machine efficiency, shear in I-beams, shaft torsion, the steering-gear condition, natural frequency from static deflection, Petroff's bearing equation, hydraulic turbine power, composite walls, the Carnot refrigerator, non-consumable electrodes and pull production control",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Formula Sprint: Manufacturing & IE",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Thermometer : Temperature :: Anemometer : ______",
+   "fig": null,
+   "opts": [
+    "Pressure",
+    "Humidity",
+    "Wind speed",
+    "Rainfall"
+   ],
+   "ans": "(C) Wind speed",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The pair links an instrument to the quantity it measures.",
+    "A thermometer measures temperature. A barometer measures pressure, a hygrometer humidity and a rain gauge rainfall.",
+    "An anemometer measures <b>wind speed</b>, option (C).",
+    "<b>Exam tip:</b> State the relation in a short sentence ('X measures Y') and test each option in the same sentence."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A train 180 m long crosses a platform 120 m long in 15 seconds. The speed of the train (in km/h) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "72",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> To cross a platform the train must cover its own length plus the platform length.",
+    "Distance = 180 + 120 = 300 m; speed = 300/15 = 20 m/s.",
+    "20 m/s × 18/5 = <b>72 km/h</b>.",
+    "<b>Exam tip:</b> Crossing a pole or a person needs only the train's own length; crossing a platform or bridge needs both lengths."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The inverse Laplace transform of F(s) = 1/[s(s + 1)] is",
+   "fig": null,
+   "opts": [
+    "e<sup>−t</sup>",
+    "1 − e<sup>−t</sup>",
+    "1 + e<sup>−t</sup>",
+    "t e<sup>−t</sup>"
+   ],
+   "ans": "(B) 1 − e<sup>−t</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Split into partial fractions, then use L<sup>−1</sup>{1/s} = 1 and L<sup>−1</sup>{1/(s + a)} = e<sup>−at</sup>.",
+    "1/[s(s + 1)] = 1/s − 1/(s + 1).",
+    "So f(t) = <b>1 − e<sup>−t</sup></b>, option (B).",
+    "<b>Exam tip:</b> Check with the initial value theorem: sF(s) → 0 as s → ∞, so f(0) = 0, which only 1 − e<sup>−t</sup> satisfies."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of x³ from x = 0 to x = 1 is evaluated by the trapezoidal rule with four equal strips (h = 0.25). The value obtained (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.266 (accept 0.265 to 0.267)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Trapezoidal rule: I ≈ (h/2)[y<sub>0</sub> + 2(y<sub>1</sub> + y<sub>2</sub> + y<sub>3</sub>) + y<sub>4</sub>].",
+    "y at x = 0, 0.25, 0.5, 0.75, 1: 0, 0.015625, 0.125, 0.421875, 1.",
+    "I ≈ 0.125 × [0 + 2(0.5625) + 1] = 0.125 × 2.125 = <b>0.266</b> (exact value 0.25).",
+    "<b>Exam tip:</b> For a function that curves upward (convex), the trapezoidal rule always over-estimates the integral."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a lifting machine with a velocity ratio of 20, an effort of 50 N just lifts a load of 800 N. The efficiency of the machine (in %) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "80",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Efficiency = mechanical advantage ÷ velocity ratio, where MA = load/effort.",
+    "MA = 800/50 = 16.",
+    "η = 16/20 = 0.80 = <b>80 %</b>.",
+    "<b>Exam tip:</b> An ideal (frictionless) machine would lift VR × effort = 1000 N; the 'lost' 200 N of load is the effect of friction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The I-section beam shown carries a vertical shear force. Which statement about the transverse shear stress in the section is correct?",
+   "fig": "d83p_q6.png",
+   "opts": [
+    "It is greatest at the top and bottom fibres",
+    "It is uniform over the whole depth",
+    "The flanges carry most of the shear force",
+    "The web carries most of the shear force, and the stress is greatest at the neutral axis"
+   ],
+   "ans": "(D) The web carries most of the shear force, and the stress is greatest at the neutral axis",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ = VQ/(Ib): the shear stress depends on the first moment Q of the area beyond the level and on the width b at that level.",
+    "Q is zero at the top and bottom fibres and greatest at the neutral axis, so τ is greatest there.",
+    "Where the width drops from the flange width to the thin web, τ jumps up sharply; the web therefore carries most (typically 90–95 %) of the vertical shear: option <b>(D)</b>.",
+    "<b>Exam tip:</b> For design, the web shear stress of an I-beam is often taken as V/(web depth × web thickness)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A solid circular shaft of 40 mm diameter is subjected to a torque of 1 kN·m. The maximum shear stress in the shaft (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "79.6 (accept 79.2 to 80.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a solid circular shaft, τ<sub>max</sub> = 16T/(πd<sup>3</sup>), at the outer surface.",
+    "T = 1 × 10<sup>6</sup> N·mm; d<sup>3</sup> = 64 000 mm³.",
+    "τ<sub>max</sub> = 16 × 10<sup>6</sup>/(π × 64 000) = <b>79.6 MPa</b>.",
+    "<b>Exam tip:</b> Keep N and mm together so the answer comes out directly in MPa (N/mm²)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For correct steering (pure rolling of all four wheels about a common centre) of a car with wheelbase b and distance c between the front stub-axle pivots, the angles turned by the outer front wheel (φ) and the inner front wheel (θ) must satisfy",
+   "fig": null,
+   "opts": [
+    "cot φ − cot θ = c/b",
+    "tan φ − tan θ = c/b",
+    "cot φ + cot θ = c/b",
+    "cos φ − cos θ = b/c"
+   ],
+   "ans": "(A) cot φ − cot θ = c/b",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> All wheel axes must meet at one point (the instantaneous centre) on the line of the rear axle.",
+    "If that point is at distance x from the inner pivot along the rear axle line: cot θ = x/b and cot φ = (x + c)/b.",
+    "Subtracting: <b>cot φ − cot θ = c/b</b>, option (A). The outer wheel turns through the smaller angle.",
+    "<b>Exam tip:</b> The Davis gear satisfies this condition exactly at all angles; the Ackermann linkage satisfies it only at three positions, but is simpler (only turning pairs)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A machine mounted on springs deflects them statically by 2.5 mm under its own weight. Taking g = 9.81 m/s², the natural frequency of its vertical vibration (in Hz, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9.97 (accept 9.92 to 10.02)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> mg = kδ gives k/m = g/δ, so f<sub>n</sub> = (1/2π)√(g/δ).",
+    "g/δ = 9.81/0.0025 = 3924 s<sup>−2</sup>; √3924 = 62.64 rad/s.",
+    "f<sub>n</sub> = 62.64/(2π) = <b>9.97 Hz</b>.",
+    "<b>Exam tip:</b> A handy shortcut is f<sub>n</sub> ≈ 15.76/√δ with δ in mm (here 15.76/1.581 = 9.97 Hz)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Petroff's equation for the friction coefficient of a journal bearing applies to",
+   "fig": null,
+   "opts": [
+    "a heavily loaded bearing with a large eccentricity",
+    "a bearing working with boundary lubrication",
+    "a lightly loaded bearing in which the journal is taken as concentric with the bearing",
+    "a rolling-contact (ball) bearing"
+   ],
+   "ans": "(C) a lightly loaded bearing in which the journal is taken as concentric with the bearing",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Petroff assumed a full oil film of uniform thickness equal to the radial clearance c, i.e. zero eccentricity.",
+    "With a linear velocity profile the viscous shear gives f = 2π<sup>2</sup>(μN/p)(r/c).",
+    "This holds only for light loads at high speed, where the journal runs nearly concentric: option <b>(C)</b>.",
+    "<b>Exam tip:</b> At heavier loads the journal moves off centre and the full hydrodynamic (Sommerfeld/Raimondi–Boyd) analysis is needed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A hydraulic turbine works under a net head of 100 m with a flow of 2 m³/s, and its overall efficiency is 90 %. Taking g = 9.81 m/s², its shaft power output (in MW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.77 (accept 1.75 to 1.78)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Water power = ρgQH; shaft power = overall efficiency × water power.",
+    "Water power = 1000 × 9.81 × 2 × 100 = 1.962 × 10<sup>6</sup> W.",
+    "Shaft power = 0.9 × 1.962 = <b>1.77 MW</b>.",
+    "<b>Exam tip:</b> 1 m³/s falling through 1 m gives about 9.81 kW — a quick check on the order of magnitude."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A composite wall has two layers of equal thickness in perfect contact, and the conductivity of layer 1 is twice that of layer 2. In steady one-dimensional conduction the total temperature drop across the wall is 90 °C. The temperature drop across layer 2 is",
+   "fig": null,
+   "opts": [
+    "30 °C",
+    "60 °C",
+    "45 °C",
+    "90 °C"
+   ],
+   "ans": "(B) 60 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In series the same heat flux passes through each layer, so each temperature drop is proportional to its thermal resistance L/k.",
+    "R<sub>2</sub> = L/k<sub>2</sub> and R<sub>1</sub> = L/(2k<sub>2</sub>) = R<sub>2</sub>/2, so ΔT<sub>2</sub> : ΔT<sub>1</sub> = 2 : 1.",
+    "ΔT<sub>2</sub> = 90 × 2/3 = <b>60 °C</b>, option (B).",
+    "<b>Exam tip:</b> The poorer conductor always takes the larger share of the temperature drop — the idea behind insulation."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A Carnot refrigerator keeps a cold space at −23 °C while rejecting heat to surroundings at 27 °C. Its coefficient of performance is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a reversible refrigerator, COP = T<sub>L</sub>/(T<sub>H</sub> − T<sub>L</sub>), with absolute temperatures.",
+    "T<sub>L</sub> = 250 K, T<sub>H</sub> = 300 K.",
+    "COP = 250/(300 − 250) = <b>5</b>.",
+    "<b>Exam tip:</b> Never use °C in this formula: 23/50 or −23/50 are the usual wrong answers."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following arc welding processes uses a non-consumable electrode?",
+   "fig": null,
+   "opts": [
+    "Shielded metal arc welding (SMAW)",
+    "Submerged arc welding (SAW)",
+    "Gas metal arc welding (GMAW/MIG)",
+    "Gas tungsten arc welding (GTAW/TIG)"
+   ],
+   "ans": "(D) Gas tungsten arc welding (GTAW/TIG)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a consumable-electrode process the electrode melts and becomes the filler metal.",
+    "SMAW (coated stick), SAW (bare wire under flux) and MIG (continuously fed wire) all melt their electrodes.",
+    "TIG uses a tungsten electrode that does not melt; filler, if needed, is added separately: option <b>(D)</b>.",
+    "<b>Exam tip:</b> Plasma arc welding also uses a non-consumable tungsten electrode."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following is a 'pull' system of production control?",
+   "fig": null,
+   "opts": [
+    "Kanban (just-in-time)",
+    "Material requirements planning (MRP)",
+    "Scheduling production in advance from a sales forecast",
+    "Releasing fixed economic batch quantities on a set calendar"
+   ],
+   "ans": "(A) Kanban (just-in-time)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a pull system, a downstream stage's actual consumption triggers production upstream; in a push system, production is released to a plan or forecast.",
+    "MRP, forecast-based scheduling and calendar batch release all push work into the shop.",
+    "Kanban cards authorise production only when parts are used: <b>Kanban (JIT)</b>, option (A).",
+    "<b>Exam tip:</b> The number of kanbans N = D(T<sub>w</sub> + T<sub>p</sub>)(1 + α)/C caps the work-in-process."
+   ]
+  }
+ ]
+}
