@@ -4,33 +4,83 @@
  "scenes": [
   {
    "kind": "hook",
-   "title": ["DAY 18/90", "WEEK 3 TEST"],
+   "title": [
+    "DAY 18/90",
+    "WEEK 3 TEST"
+   ],
    "sub": "Columns to gear trains: one test tonight",
    "voice": "Day eighteen of the GATE M. E. ninety days challenge, ninety one days to go! Week three is done. Tonight we find out what really stuck."
   },
   {
    "kind": "card",
    "title": "Today's Topic",
-   "lines": ["Weekly Revision", "Week 3: all five topics"],
+   "lines": [
+    "Weekly Revision",
+    "Week 3: all five topics"
+   ],
    "voice": "No new chapter today. It is week three revision: columns and energy methods, three theory of machines topics, and calculus, all in one test."
   },
   {
    "kind": "steps",
    "title": "Cover Today",
-   "steps": ["Columns & energy methods", "Mechanisms & flywheels", "Cams, gears, gear trains", "Calculus"],
+   "steps": [
+    "Columns & energy methods",
+    "Mechanisms & flywheels",
+    "Cams, gears, gear trains",
+    "Calculus"
+   ],
    "voice": "Revise Euler buckling and Castigliano, mechanism analysis with flywheels, cams and gear trains, and calculus. Rework every question you got wrong this week."
   },
   {
    "kind": "card",
    "title": "Quick Tip",
-   "lines": ["Instantaneous centres:", "N = n(n − 1) / 2", "Four-bar chain: 6 centres"],
+   "lines": [
+    "Instantaneous centres:",
+    "N = n(n − 1) / 2",
+    "Four-bar chain: 6 centres"
+   ],
    "voice": "Quick tip. n links give n into n minus one by two instantaneous centres. A four bar chain has six. Find the hidden ones with Kennedy's three centres theorem."
   },
   {
    "kind": "dates",
    "title": "Today's Plan",
-   "lines": [["Practice PDF", "Telegram, now"], ["Weekly test (₹1)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Weekly test (₹1)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
    "voice": "The free week three practice set with full solutions is on Telegram now. Tonight's weekly test, twenty questions, runs seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 17 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "sai avinash",
+     "marks": "20/30"
+    },
+    {
+     "rank": 2,
+     "name": "Rahul Yadav",
+     "marks": "11.34/30"
+    },
+    {
+     "rank": 3,
+     "name": "Bhikya Naik",
+     "marks": "6.67/30"
+    }
+   ],
+   "voice": "Day seventeen toppers! Sai Avinash tops the gear trains test with twenty out of thirty. Rahul Yadav takes rank two, and Bhikya Naik grabs rank three. Well done!"
   }
  ]
 }
