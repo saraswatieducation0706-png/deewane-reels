@@ -1,0 +1,268 @@
+{
+ "day": 77,
+ "subject": "All Subjects",
+ "topic": "Mixed PYQ Day",
+ "days_to_gate": 22,
+ "summary": "a mixed set modelled on the most-repeated GATE ME previous-year concepts across all subjects: analogies and clock angles, Laplace shifting and Simpson's rule, the ballistic pendulum, thin-cylinder volumetric strain, Hooke's joint, transmissibility, belt power, jet impact on a moving plate, Prandtl number, entropy of the universe, the optimum Brayton pressure ratio, top-gate filling time and Little's law",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 2",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the pair that has the same relationship as AUTHOR : NOVEL",
+   "fig": null,
+   "opts": [
+    "Reader : Library",
+    "Sculptor : Statue",
+    "Teacher : Classroom",
+    "Pen : Paper"
+   ],
+   "ans": "(B) Sculptor : Statue",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In analogy questions, state the relation in one sentence and test each option with the same sentence.",
+    "'An author creates a novel.' Only 'a sculptor creates a statue' fits the same sentence.",
+    "A reader uses a library, a teacher works in a classroom, and a pen writes on paper: none is creator → creation.",
+    "Answer: <b>(B)</b>",
+    "<b>Exam tip:</b> If two options seem to fit, make the relation sentence more specific (creator–creation, part–whole, worker–tool)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The angle (in degrees) between the hour hand and the minute hand of a clock at 3:40 is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "130",
+   "sfig": "d77p_s2.png",
+   "solution": [
+    "<b>Concept:</b> The minute hand moves 6° per minute and the hour hand 0.5° per minute, so θ = |30H − 5.5M|.",
+    "θ = |30 × 3 − 5.5 × 40| = |90 − 220| = <b>130°</b>",
+    "Check: minute hand at 240°, hour hand at 90 + 20 = 110°, difference 130° (clock face below).",
+    "<b>Exam tip:</b> If the formula gives more than 180°, subtract it from 360° to get the smaller angle."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Laplace transform of f(t) = t e<sup>−2t</sup> is",
+   "fig": null,
+   "opts": [
+    "1/(s + 2)²",
+    "1/(s − 2)²",
+    "2/(s + 2)³",
+    "s/(s + 2)²"
+   ],
+   "ans": "(A) 1/(s + 2)²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> First shifting theorem: L{e<sup>at</sup> f(t)} = F(s − a).",
+    "L{t} = 1/s²; with a = −2 the shift gives F(s + 2) = 1/(s + 2)².",
+    "Answer: <b>(A)</b>",
+    "<b>Exam tip:</b> L{tⁿ e<sup>at</sup>} = n!/(s − a)<sup>n+1</sup>; watch the sign of a when shifting."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of x⁴ from x = 0 to x = 2 is evaluated by Simpson's 1/3 rule with a step size of 0.5. The value obtained (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.417 (accept 6.38 to 6.45)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Simpson's 1/3 rule: I ≈ (h/3)[y<sub>0</sub> + 4(y<sub>1</sub> + y<sub>3</sub>) + 2y<sub>2</sub> + y<sub>4</sub>], with an even number of strips.",
+    "x = 0, 0.5, 1, 1.5, 2 → y = 0, 0.0625, 1, 5.0625, 16",
+    "I ≈ (0.5/3)[0 + 4(0.0625 + 5.0625) + 2 × 1 + 16] = (1/6)(20.5 + 2 + 16) = 38.5/6 = <b>6.417</b>",
+    "The exact value is 32/5 = 6.4; the error comes from the fourth derivative (24), which is not zero.",
+    "<b>Exam tip:</b> Simpson's 1/3 rule is exact for polynomials up to degree 3, not degree 4."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A bullet of mass 20 g moving horizontally at 400 m/s embeds itself in a 4 kg wooden block hanging from light strings (ballistic pendulum), as shown. Taking g = 9.81 m/s², the height (in mm) through which the block rises (round off to one decimal place) is ______",
+   "fig": "d77p_q5.png",
+   "opts": null,
+   "ans": "201.9 (accept 200.8 to 202.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The impact is perfectly plastic: momentum is conserved during impact (energy is not); after impact, energy is conserved during the swing.",
+    "Common velocity V = mv/(m + M) = 0.02 × 400/4.02 = 1.990 m/s",
+    "h = V²/(2g) = 1.990²/(2 × 9.81) = 0.2019 m = <b>201.9 mm</b>",
+    "<b>Exam tip:</b> Never equate the bullet's kinetic energy to (m + M)gh: more than 99 % of it is lost in the plastic impact."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A thin cylindrical shell of diameter d and wall thickness t (closed ends) is subjected to an internal pressure p. With E the Young's modulus and ν the Poisson's ratio, its volumetric strain is",
+   "fig": null,
+   "opts": [
+    "(pd/(2tE))(1 − ν)",
+    "(pd/(4tE))(1 − 2ν)",
+    "(pd/(4tE))(5 − 4ν)",
+    "(pd/(2tE))(5 − 4ν)"
+   ],
+   "ans": "(C) (pd/(4tE))(5 − 4ν)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ<sub>h</sub> = pd/(2t), σ<sub>l</sub> = pd/(4t); volumetric strain = 2ε<sub>h</sub> + ε<sub>l</sub>.",
+    "ε<sub>h</sub> = (pd/(4tE))(2 − ν), ε<sub>l</sub> = (pd/(4tE))(1 − 2ν)",
+    "ε<sub>v</sub> = (pd/(4tE))(4 − 2ν + 1 − 2ν) = <b>(pd/(4tE))(5 − 4ν)</b>, answer <b>(C)</b>",
+    "<b>Exam tip:</b> For a thin sphere, ε<sub>v</sub> = 3ε = (3pd/(4tE))(1 − ν)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The driving shaft of a Hooke's (universal) joint runs at a uniform 600 rpm, and the angle between the two shafts is 20°. The maximum and minimum speeds of the driven shaft are",
+   "fig": null,
+   "opts": [
+    "600 rpm and 563.8 rpm",
+    "638.5 rpm and 600 rpm",
+    "621.2 rpm and 579.6 rpm",
+    "638.5 rpm and 563.8 rpm"
+   ],
+   "ans": "(D) 638.5 rpm and 563.8 rpm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a Hooke's joint, ω<sub>max</sub> = ω/cos α and ω<sub>min</sub> = ω cos α.",
+    "N<sub>max</sub> = 600/cos 20° = 600/0.9397 = 638.5 rpm",
+    "N<sub>min</sub> = 600 × 0.9397 = 563.8 rpm. Answer <b>(D)</b>",
+    "<b>Exam tip:</b> The maximum speed occurs twice per revolution; a double Hooke's joint (equal angles, forks in one plane) removes the fluctuation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a spring-mass-damper system excited by a harmonic force, the transmissibility equals 1 at a frequency ratio ω/ωₙ of",
+   "fig": null,
+   "opts": [
+    "1, for every damping ratio",
+    "√2, for every damping ratio",
+    "√2 only when the system is undamped",
+    "2, for every damping ratio"
+   ],
+   "ans": "(B) √2, for every damping ratio",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> TR = √[(1 + (2ζr)²)/((1 − r²)² + (2ζr)²)].",
+    "TR = 1 requires (1 − r²)² = 1, i.e. r² = 2, r = √2, independent of ζ: all the TR curves cross at r = √2.",
+    "Answer: <b>(B)</b>",
+    "<b>Exam tip:</b> Isolation (TR < 1) needs r > √2, and there more damping slightly increases TR."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An open flat-belt drive has an angle of contact of 165° on the smaller pulley and a coefficient of friction of 0.3. The belt speed is 15 m/s and the tension on the tight side is 2000 N (centrifugal tension neglected). The power transmitted (in kW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "17.36 (accept 17.20 to 17.50)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> T<sub>1</sub>/T<sub>2</sub> = e<sup>μθ</sup> with θ in radians; P = (T<sub>1</sub> − T<sub>2</sub>)v.",
+    "θ = 165 × π/180 = 2.880 rad; e<sup>0.3 × 2.880</sup> = e<sup>0.864</sup> = 2.372",
+    "T<sub>2</sub> = 2000/2.372 = 843.0 N",
+    "P = (2000 − 843.0) × 15 = 17 355 W = <b>17.36 kW</b>",
+    "<b>Exam tip:</b> Use the angle of contact on the smaller pulley, where slip occurs first."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A water jet of 40 mm diameter with a velocity of 25 m/s strikes normally a flat plate that moves away from the nozzle in the direction of the jet at 10 m/s, as shown. The force exerted by the jet on the plate (in N, round off to one decimal place) is ______",
+   "fig": "d77p_q10.png",
+   "opts": null,
+   "ans": "282.7 (accept 281.0 to 284.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a single moving plate, the mass striking per second is ρA(V − u) and the relative velocity destroyed is (V − u), so F = ρA(V − u)².",
+    "A = π/4 × 0.04² = 1.2566 × 10⁻³ m²",
+    "F = 1000 × 1.2566 × 10⁻³ × (25 − 10)² = <b>282.7 N</b>",
+    "The work done on the plate is F × u = 2827 W.",
+    "<b>Exam tip:</b> For a series of plates (a wheel), the whole jet ρAV strikes, so F = ρAV(V − u) instead."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For laminar flow over a flat plate, the hydrodynamic boundary layer and the thermal boundary layer have the same thickness when",
+   "fig": null,
+   "opts": [
+    "the Prandtl number is 1",
+    "the Reynolds number is 1",
+    "the Nusselt number is 1",
+    "the Biot number is less than 0.1"
+   ],
+   "ans": "(A) the Prandtl number is 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> δ<sub>t</sub>/δ ≈ Pr<sup>−1/3</sup>, because Pr = ν/α compares momentum diffusion with heat diffusion.",
+    "When Pr = 1, momentum and heat diffuse at the same rate, so δ<sub>t</sub> = δ.",
+    "Answer: <b>(A)</b>",
+    "<b>Exam tip:</b> Liquid metals (Pr ≪ 1) have δ<sub>t</sub> ≫ δ; oils (Pr ≫ 1) have δ<sub>t</sub> ≪ δ."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "1 kg of water (c = 4.18 kJ/kg·K) at 20 °C is placed in contact with a large reservoir at 80 °C until it reaches 80 °C. The entropy change of the universe (in kJ/K, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.068 (accept 0.067 to 0.070)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ΔS<sub>universe</sub> = ΔS<sub>water</sub> + ΔS<sub>reservoir</sub>; the reservoir stays at constant temperature.",
+    "ΔS<sub>water</sub> = mc ln(T<sub>2</sub>/T<sub>1</sub>) = 4.18 ln(353.15/293.15) = 0.7784 kJ/K",
+    "ΔS<sub>reservoir</sub> = −Q/T = −4.18 × 60/353.15 = −0.7102 kJ/K",
+    "ΔS<sub>universe</sub> = <b>0.068 kJ/K</b> (positive, as heat flows through a finite temperature difference)",
+    "<b>Exam tip:</b> Always use kelvin in ln(T<sub>2</sub>/T<sub>1</sub>) and in Q/T."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An ideal Brayton cycle with air (γ = 1.4) works between a minimum temperature of 300 K and a maximum temperature of 1200 K. The pressure ratio that gives the maximum net work per kg of air is about",
+   "fig": null,
+   "opts": [
+    "4.0",
+    "8.0",
+    "11.3",
+    "16.0"
+   ],
+   "ans": "(C) 11.3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Net work is maximum when T<sub>2</sub> = T<sub>4</sub> = √(T<sub>min</sub>T<sub>max</sub>), giving r<sub>p</sub> = (T<sub>max</sub>/T<sub>min</sub>)<sup>γ/(2(γ − 1))</sup>.",
+    "r<sub>p</sub> = 4<sup>1.4/0.8</sup> = 4<sup>1.75</sup> = <b>11.3</b>, answer <b>(C)</b>",
+    "At this ratio, T<sub>2</sub> = T<sub>4</sub> = 600 K.",
+    "<b>Exam tip:</b> At the pressure ratio (T<sub>max</sub>/T<sub>min</sub>)<sup>γ/(γ − 1)</sup> (= 128 here) the net work falls to zero."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A mould cavity of volume 1.0 × 10⁶ mm³ is filled through a top gate, as shown. The height of molten metal above the gate (sprue height) is 200 mm and the gate area is 400 mm². Neglecting friction and taking g = 9.81 m/s², the filling time (in s, round off to two decimal places) is ______",
+   "fig": "d77p_q14.png",
+   "opts": null,
+   "ans": "1.26 (accept 1.25 to 1.27)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a top gate the head stays constant during filling (metal falls freely into the cavity), so v = √(2gh) throughout and t = V/(A v).",
+    "v = √(2 × 9.81 × 0.2) = 1.981 m/s",
+    "t = 1.0 × 10⁻³ m³/(400 × 10⁻⁶ m² × 1.981 m/s) = <b>1.26 s</b>",
+    "<b>Exam tip:</b> For a bottom gate the effective head falls as the cavity fills, and t = (A<sub>m</sub>/A<sub>g</sub>)(2/√(2g))(√h<sub>t</sub> − √(h<sub>t</sub> − h<sub>m</sub>)), which is longer."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A machine shop holds on average 30 jobs as work-in-process, and it completes 6 jobs per day in steady state. The average time a job spends in the shop is",
+   "fig": null,
+   "opts": [
+    "0.2 days",
+    "180 days",
+    "36 days",
+    "5 days"
+   ],
+   "ans": "(D) 5 days",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Little's law: L = λW, valid for any stable system regardless of distributions.",
+    "W = L/λ = 30/6 = <b>5 days</b>, answer <b>(D)</b>",
+    "<b>Exam tip:</b> Little's law also gives L<sub>q</sub> = λW<sub>q</sub>; it is the quickest check on any queuing answer."
+   ]
+  }
+ ]
+}

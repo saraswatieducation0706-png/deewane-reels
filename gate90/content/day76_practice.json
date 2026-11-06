@@ -1,0 +1,278 @@
+{
+ "day": 76,
+ "subject": "Industrial Engineering",
+ "topic": "IE Revision",
+ "days_to_gate": 23,
+ "summary": "a full revision of Industrial Engineering: forecasting (Delphi, least-squares trend), inventory (reverse EOQ, EPQ, reorder point), Johnson's rule, MRP and BOM explosion, linear programming (simplex, graphical minimisation), unbalanced transportation, assignment, CPM floats, crashing and M/M/1 queue design",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Mixed PYQ Day",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The Delphi method of forecasting is",
+   "fig": null,
+   "opts": [
+    "a time-series method that uses weighted averages of past demand",
+    "a causal method that regresses demand on economic indicators",
+    "a qualitative method in which a panel of experts answers questionnaires anonymously over several rounds, with controlled feedback, until a consensus emerges",
+    "a survey of a large sample of final consumers about their buying intentions"
+   ],
+   "ans": "(C) a qualitative method in which a panel of experts answers questionnaires anonymously over several rounds, with controlled feedback, until a consensus emerges",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Forecasting methods are qualitative (judgement-based) or quantitative (time-series and causal).",
+    "Delphi uses a panel of experts who reply anonymously; a coordinator summarises and feeds back the replies, and the rounds continue until the opinions converge.",
+    "Anonymity avoids the 'bandwagon' and dominant-personality effects of a face-to-face committee.",
+    "Answer: <b>(C)</b>",
+    "<b>Exam tip:</b> Delphi, market survey, sales-force composite and executive opinion are qualitative; moving average, exponential smoothing and regression are quantitative."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The demands of a product in six successive quarters were 30, 34, 37, 42, 44 and 49 units. Using a linear trend fitted by the method of least squares, the forecast for quarter 7 (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "52.3 (accept 52.0 to 52.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Fit y = a + bt with b = (nΣty − ΣtΣy)/(nΣt² − (Σt)²) and a = ȳ − b t̄.",
+    "With t = 1 … 6: Σt = 21, Σy = 236, Σty = 891, Σt² = 91, n = 6.",
+    "b = (6 × 891 − 21 × 236)/(6 × 91 − 21²) = (5346 − 4956)/(546 − 441) = 390/105 = 3.714",
+    "a = 236/6 − 3.714 × 3.5 = 39.333 − 13.0 = 26.333",
+    "F<sub>7</sub> = 26.333 + 3.714 × 7 = <b>52.3 units</b>",
+    "<b>Exam tip:</b> Code the periods as 1, 2, 3 … (or symmetrically about zero so that Σt = 0) to keep the arithmetic short."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An item with an annual demand of 9600 units is managed by the basic EOQ model. The firm places 12 orders per year, and its annual inventory holding cost is ₹3000. The ordering cost per order (in ₹) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "250",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At the EOQ, the annual ordering cost equals the annual holding cost.",
+    "Annual ordering cost = annual holding cost = ₹3000",
+    "Ordering cost per order = 3000/12 = <b>₹250</b>",
+    "Check: Q* = 9600/12 = 800 units; holding cost per unit = 3000/(800/2) = ₹7.5; √(2 × 9600 × 250/7.5) = 800 ✓",
+    "<b>Exam tip:</b> 'Ordering cost = holding cost at EOQ' turns many reverse EOQ questions into one-line answers."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the economic production quantity (EPQ) model, the production rate p is greater than the demand rate d. If p becomes very large compared with d (all costs unchanged), the EPQ",
+   "fig": null,
+   "opts": [
+    "becomes zero",
+    "approaches the basic EOQ value",
+    "becomes infinitely large",
+    "is unchanged"
+   ],
+   "ans": "(B) approaches the basic EOQ value",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EPQ = √(2DC<sub>o</sub>/(C<sub>h</sub>(1 − d/p))).",
+    "As p → ∞, d/p → 0 and (1 − d/p) → 1, so EPQ → √(2DC<sub>o</sub>/C<sub>h</sub>) = EOQ.",
+    "Physically, a very fast production rate means the whole batch arrives almost at once, which is the instantaneous-replenishment EOQ case.",
+    "Answer: <b>(B)</b>",
+    "<b>Exam tip:</b> Because (1 − d/p) < 1, the EPQ is always larger than the EOQ, and the maximum inventory is Q(1 − d/p), not Q."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The demand for an item during the replenishment lead time is normally distributed with a mean of 500 units and a standard deviation of 50 units. If the acceptable risk of a stock-out in a cycle is 2.5 % (z = 1.96), the reorder point (in units) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "598",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ROP = mean lead-time demand + safety stock, with safety stock = z σ<sub>LT</sub>.",
+    "Safety stock = 1.96 × 50 = 98 units",
+    "ROP = 500 + 98 = <b>598 units</b>",
+    "<b>Exam tip:</b> A 2.5 % stock-out risk means a 97.5 % cycle service level; z = 1.96 (not 1.645, which is 95 %)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Five jobs are processed first on machine M1 and then on machine M2. The processing times (in hours, M1, M2) are P (5, 2), Q (1, 6), R (9, 7), S (3, 8) and T (10, 4). The sequence that minimises the makespan and the minimum makespan are",
+   "fig": null,
+   "opts": [
+    "P–Q–R–S–T; 34 h",
+    "Q–S–T–R–P; 32 h",
+    "Q–R–S–T–P; 31 h",
+    "Q–S–R–T–P; 30 h"
+   ],
+   "ans": "(D) Q–S–R–T–P; 30 h",
+   "sfig": "d76p_s6.png",
+   "solution": [
+    "<b>Concept:</b> Johnson's rule: pick the smallest time; if it is on M1, put the job as early as possible; if on M2, as late as possible; strike it out and repeat.",
+    "Smallest times: Q (1 on M1) → 1st; P (2 on M2) → 5th; S (3 on M1) → 2nd; T (4 on M2) → 4th; R → 3rd. Sequence Q–S–R–T–P.",
+    "M1 finishes at 1, 4, 13, 23, 28; M2 runs Q 1–7, S 7–15, R 15–22, T 23–27, P 28–30 (Gantt chart below).",
+    "Minimum makespan = <b>30 h</b>, answer <b>(D)</b>",
+    "<b>Exam tip:</b> Always compute M2's start as max(M2 free, job finished on M1); idle gaps on M2 (here 22–23 and 27–28) are where makespans are lost."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a material requirements planning (MRP) record, the planned order release for a component is",
+   "fig": null,
+   "opts": [
+    "the gross requirement of the component in the same week",
+    "the scheduled receipt that is already on order from the supplier",
+    "the projected on-hand inventory at the end of the week",
+    "the planned order receipt shifted earlier by the component's lead time"
+   ],
+   "ans": "(D) the planned order receipt shifted earlier by the component's lead time",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> MRP nets the gross requirements against on-hand stock and scheduled receipts, giving net requirements and planned order receipts (lot-sized).",
+    "Each planned order receipt is then offset (moved earlier) by the lead time to give the planned order release, which is the action the planner takes.",
+    "Planned order releases of a parent become the gross requirements of its children (BOM explosion).",
+    "Answer: <b>(D)</b>",
+    "<b>Exam tip:</b> Scheduled receipts are orders already released; planned order releases are orders MRP recommends releasing."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The product structure (bill of materials) of product P is shown; the numbers in brackets are the quantities needed per unit of the parent. An order for 100 units of P is received. There is no stock of P, A or B, but 150 units of component C are in stock. The net requirement of component C (in units) is ______",
+   "fig": "d76p_q8.png",
+   "opts": null,
+   "ans": "550",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> BOM explosion: the gross requirement of a component is the sum over every path from the end product, multiplying the quantities along each path.",
+    "Via A: 100 × 2 × 2 = 400 units of C; via B: 100 × 3 × 1 = 300 units of C",
+    "Gross requirement of C = 400 + 300 = 700 units",
+    "Net requirement = 700 − 150 = <b>550 units</b>",
+    "<b>Exam tip:</b> A common component appearing under several parents (C here) must be added up over all of them before netting; this is why MRP uses low-level coding."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "While solving a maximisation linear programme by the simplex method, the entering variable has been selected, but every element of its column in the constraint rows is zero or negative. This indicates that the problem has",
+   "fig": null,
+   "opts": [
+    "an unbounded solution",
+    "an infeasible solution",
+    "alternative optimal solutions",
+    "a degenerate solution"
+   ],
+   "ans": "(A) an unbounded solution",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The ratio test looks for the first basic variable driven to zero as the entering variable increases.",
+    "If no column entry is positive, increasing the entering variable never makes any basic variable zero, so it can increase without limit while Z keeps improving.",
+    "Hence the objective is <b>unbounded</b>, answer <b>(A)</b>.",
+    "<b>Exam tip:</b> Infeasibility shows up as an artificial variable remaining positive in the final table; alternative optima as a zero net evaluation for a non-basic variable."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Minimise Z = 3x + 2y subject to x + y ≥ 8, 3x + y ≥ 12, x + 3y ≥ 12 and x, y ≥ 0. The minimum value of Z is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "18",
+   "sfig": "d76p_s10.png",
+   "solution": [
+    "<b>Concept:</b> For a minimisation with ≥ constraints the feasible region is unbounded outward; the optimum lies at a corner point of its inner boundary.",
+    "Corner points: (0, 12), intersection of 3x + y = 12 and x + y = 8 → (2, 6), intersection of x + y = 8 and x + 3y = 12 → (6, 2), and (12, 0).",
+    "Z = 24, 18, 22 and 36 respectively.",
+    "Minimum Z = <b>18</b> at (2, 6) (graph below).",
+    "<b>Exam tip:</b> Check every corner; the slope of the objective (−3/2) lies between those of the two constraints that meet at the optimum (−3 and −1)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Three plants with capacities of 50, 60 and 80 units supply three markets whose demands are 70, 50 and 40 units. The unit transportation costs (₹) are: plant 1: 5, 6, 8; plant 2: 7, 4, 5; plant 3: 4, 9, 6 (to markets 1, 2, 3). The minimum total transportation cost (in ₹) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "730",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Total capacity 190 > total demand 160, so add a dummy market of 30 units with zero costs and solve the balanced problem.",
+    "Optimal allocation (checked by the u–v method): plant 3 → market 1: 50; plant 1 → market 1: 20; plant 2 → market 2: 50; plant 2 → market 3: 10; plant 3 → market 3: 30; plant 1 → dummy: 30.",
+    "Cost = 50 × 4 + 20 × 5 + 50 × 4 + 10 × 5 + 30 × 6 = 200 + 100 + 200 + 50 + 180 = <b>₹730</b>",
+    "Plant 1 (the dearest for markets 2 and 3) is the one left with 30 units of unused capacity.",
+    "<b>Exam tip:</b> The dummy column adds no cost; its allocation simply tells you which source keeps spare capacity."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Three salesmen S1, S2, S3 are to be assigned one each to three regions R1, R2, R3. The expected monthly profits (₹ thousand) are S1: 40, 52, 36; S2: 48, 44, 50; S3: 38, 46, 42 (for R1, R2, R3). The maximum total profit (₹ thousand) is",
+   "fig": null,
+   "opts": [
+    "148",
+    "140",
+    "142",
+    "136"
+   ],
+   "ans": "(C) 142",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a maximisation assignment, subtract every entry from the largest entry (52) to get a regret (cost) matrix, then apply the Hungarian method.",
+    "The optimum is S1 → R2 (52), S2 → R1 (48), S3 → R3 (42).",
+    "Maximum profit = 52 + 48 + 42 = <b>142</b>, answer <b>(C)</b>",
+    "148 adds the row maxima 52 + 50 + 46, but S1 and S3 would then both need R2, which is not allowed.",
+    "<b>Exam tip:</b> With only 3! = 6 assignments, checking all of them is quick; for 4 × 4 or larger use the Hungarian method."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A project has the activities (duration in days; immediate predecessors): A (3; –), B (4; –), C (5; A), D (6; A), E (2; B, C), F (4; D, E), G (7; B). The project duration and the total float of activity D are",
+   "fig": null,
+   "opts": [
+    "14 days; 0 days",
+    "14 days; 1 day",
+    "13 days; 1 day",
+    "15 days; 2 days"
+   ],
+   "ans": "(B) 14 days; 1 day",
+   "sfig": "d76p_s13.png",
+   "solution": [
+    "<b>Concept:</b> Forward pass for earliest times, backward pass for latest times; total float = LS − ES.",
+    "ES/EF: A 0/3, B 0/4, C 3/8, D 3/9, E max(4, 8) = 8/10, F max(9, 10) = 10/14, G 4/11. Project duration = 14 days (network below).",
+    "Backward: LF(F) = 14 → LS(F) = 10; LF(D) = 10 → LS(D) = 4; total float of D = 4 − 3 = 1 day.",
+    "Critical path A–C–E–F (3 + 5 + 2 + 4 = 14). Answer <b>(B)</b>",
+    "<b>Exam tip:</b> When an activity has two predecessors (E here), its ES is the larger of their EF values."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A critical activity has a normal time of 12 days at a direct cost of ₹8000 and a crash time of 8 days at a direct cost of ₹10 400. The indirect (overhead) cost of the project is ₹500 per day. Crashing this activity by one day",
+   "fig": null,
+   "opts": [
+    "saves ₹100, so it should be done",
+    "saves ₹600, so it should be done",
+    "costs ₹600 more and saves nothing",
+    "increases the total project cost by ₹100, so it is not worthwhile"
+   ],
+   "ans": "(D) increases the total project cost by ₹100, so it is not worthwhile",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cost slope = (crash cost − normal cost)/(normal time − crash time).",
+    "Cost slope = (10 400 − 8000)/(12 − 8) = ₹600 per day",
+    "Crashing one day: direct cost +600, indirect cost −500, net +₹100",
+    "Total cost rises, so it is not worthwhile: answer <b>(D)</b>",
+    "<b>Exam tip:</b> Crash only while the cost slope of the cheapest critical activity is less than the indirect cost saved per day."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Vehicles arrive at a single-bay service station in a Poisson stream at 10 per hour, and the service time is exponential (M/M/1). The minimum service rate (vehicles per hour) needed so that the average time a vehicle spends at the station (waiting + service) does not exceed 15 minutes is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "14",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For M/M/1, W = 1/(μ − λ).",
+    "Require 1/(μ − 10) ≤ 0.25 h, i.e. μ − 10 ≥ 4",
+    "μ<sub>min</sub> = <b>14 per hour</b>",
+    "At μ = 14: ρ = 0.714, L = λW = 10 × 0.25 = 2.5 vehicles.",
+    "<b>Exam tip:</b> Keep λ, μ and W in the same time unit (here hours) before solving."
+   ]
+  }
+ ]
+}
