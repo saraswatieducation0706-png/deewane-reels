@@ -1,0 +1,265 @@
+{
+ "day": 78,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 2",
+ "days_to_gate": 21,
+ "summary": "a mixed full-syllabus warm-up for the second full-length mock: ages, subject–verb agreement, limits, probability densities, truss joints, cantilever bending stress, compound gear trains, damped vibration, bearing life, jets on moving plates, thermocouple time constants, wet steam, Rankine efficiency, shear angle and LP corner points",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 3",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "The present ages of A and B are in the ratio 5 : 7. Eight years from now the ratio will be 7 : 9. The present age of A (in years) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "20",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Write the ages as 5x and 7x; the same number of years is added to both.",
+    "(5x + 8)/(7x + 8) = 7/9 → 45x + 72 = 49x + 56 → x = 4.",
+    "A = 5 × 4 = <b>20 years</b> (B = 28; check: 28/36 = 7/9).",
+    "<b>Exam tip:</b> Substitute the answer back into both ratios — it takes ten seconds and catches sign slips."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Select the sentence that is grammatically correct.",
+   "fig": null,
+   "opts": [
+    "Each of the test specimens have been numbered.",
+    "Neither of the welds are defective.",
+    "Each of the test specimens has been numbered.",
+    "The number of rejected parts have increased this month."
+   ],
+   "ans": "(C) Each of the test specimens has been numbered.",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Each of …', 'neither of …' and 'the number of …' take a singular verb; the plural noun after 'of' does not decide the verb.",
+    "(A) and (B) wrongly use the plural 'have' / 'are'; (D) needs 'has increased' because the subject is 'the number'.",
+    "Only (C) uses the singular 'has': <b>(C)</b>.",
+    "<b>Exam tip:</b> 'A number of parts <i>have</i>' is plural, but 'the number of parts <i>has</i>' is singular — a favourite GATE trap."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The value of the limit of (1 + 3/x)<sup>2x</sup> as x → ∞ is",
+   "fig": null,
+   "opts": [
+    "1",
+    "e<sup>3/2</sup>",
+    "e<sup>2/3</sup>",
+    "e<sup>6</sup>"
+   ],
+   "ans": "(D) e<sup>6</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a 1<sup>∞</sup> form, lim (1 + a/x)<sup>bx</sup> = e<sup>ab</sup>.",
+    "ln L = lim 2x ln(1 + 3/x) = lim 2x × (3/x) = 6.",
+    "L = <b>e<sup>6</sup></b>, option (D).",
+    "<b>Exam tip:</b> Answer 1 is the classic trap: 1<sup>∞</sup> is an indeterminate form, not 1."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A random variable X has the probability density function f(x) = kx(2 − x) for 0 ≤ x ≤ 2 and zero elsewhere. The probability P(X &lt; 0.5) (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.156 (accept 0.155 to 0.157)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> First fix k from ∫f(x) dx = 1, then integrate f over the required range.",
+    "∫₀² (2x − x²) dx = 4 − 8/3 = 4/3, so k = 3/4.",
+    "P(X &lt; 0.5) = (3/4)[x² − x³/3] from 0 to 0.5 = (3/4)(0.25 − 0.04167) = <b>0.156</b>.",
+    "<b>Exam tip:</b> The density is symmetric about x = 1, so P(X &gt; 1.5) is also 0.156 — a quick check."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The triangular truss shown (span 4 m, height 3 m, apex C above the mid-point of AB) has a pin at A and a roller at B, and carries a vertical load of 30 kN at C. The forces in member AC and member AB are",
+   "fig": "d78p_q5.png",
+   "opts": [
+    "15.0 kN compression and 20.0 kN tension",
+    "18.0 kN compression and 10.0 kN tension",
+    "18.0 kN tension and 10.0 kN compression",
+    "10.0 kN compression and 18.0 kN tension"
+   ],
+   "ans": "(B) 18.0 kN compression and 10.0 kN tension",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Method of joints — find the reactions, then take a joint with only two unknown members.",
+    "By symmetry R<sub>A</sub> = R<sub>B</sub> = 15 kN. Member AC rises 3 m over 2 m, so sin θ = 3/√13 = 0.832 and cos θ = 2/√13 = 0.555.",
+    "Joint A: ΣF<sub>y</sub> = 0 → F<sub>AC</sub> sin θ = 15 → F<sub>AC</sub> = 18.0 kN (pushing on A: compression). ΣF<sub>x</sub> = 0 → F<sub>AB</sub> = 18.0 × 0.555 = 10.0 kN (tension).",
+    "Answer: <b>(B) 18.0 kN compression and 10.0 kN tension</b>.",
+    "<b>Exam tip:</b> In a simple roof truss the rafters are always in compression and the tie (bottom chord) in tension — use this to reject options instantly."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The cantilever shown, 2 m long, carries a uniformly distributed load of 6 kN/m over its whole length and a point load of 4 kN at its free end. Its cross-section is a rectangle 100 mm wide and 200 mm deep. The maximum bending stress (in MPa) is ______",
+   "fig": "d78p_q6.png",
+   "opts": null,
+   "ans": "30",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ<sub>max</sub> = M<sub>max</sub>/Z, with Z = bd²/6; in a cantilever M<sub>max</sub> is at the fixed end.",
+    "M<sub>max</sub> = wL²/2 + PL = 6 × 2²/2 + 4 × 2 = 12 + 8 = 20 kN·m.",
+    "Z = 100 × 200²/6 = 6.667 × 10<sup>5</sup> mm³, so σ<sub>max</sub> = 20 × 10<sup>6</sup>/6.667 × 10<sup>5</sup> = <b>30 MPa</b>.",
+    "<b>Exam tip:</b> Keep N and mm throughout (N·mm and mm³ give MPa directly)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a compound gear train, gear A (20 teeth) on the input shaft drives gear B (60 teeth). Gear C (25 teeth) is keyed to the same shaft as B and drives gear D (75 teeth) on the output shaft. All gears are external. If the input shaft turns at 1440 rpm, the output shaft turns at",
+   "fig": null,
+   "opts": [
+    "160 rpm in the same direction as the input",
+    "160 rpm opposite to the input",
+    "480 rpm in the same direction as the input",
+    "12 960 rpm opposite to the input"
+   ],
+   "ans": "(A) 160 rpm in the same direction as the input",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Train value = product of driver teeth/product of driven teeth; each external mesh reverses the direction.",
+    "N<sub>D</sub> = 1440 × (20/60) × (25/75) = 1440/9 = 160 rpm.",
+    "Two external meshes reverse the direction twice, so the output turns the same way as the input: <b>(A)</b>.",
+    "<b>Exam tip:</b> Gears B and C on one shaft share a speed — never include both in the ratio as a 'driven' pair."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A spring–mass–damper system has m = 4 kg, k = 1600 N/m and c = 48 N·s/m. Its damped natural frequency (in rad/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "19.08 (accept 18.90 to 19.26)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ω<sub>d</sub> = ω<sub>n</sub>√(1 − ζ²), with ω<sub>n</sub> = √(k/m) and ζ = c/(2√(km)).",
+    "ω<sub>n</sub> = √(1600/4) = 20 rad/s; c<sub>c</sub> = 2√(1600 × 4) = 160 N·s/m, so ζ = 48/160 = 0.3.",
+    "ω<sub>d</sub> = 20√(1 − 0.09) = 20 × 0.9539 = <b>19.08 rad/s</b>.",
+    "<b>Exam tip:</b> Even 30 % damping lowers the frequency by less than 5 % — if your ω<sub>d</sub> drops a lot, recheck ζ."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The radial load on a cylindrical roller bearing is increased by 20 % while the speed stays the same. Its rating life in hours becomes about",
+   "fig": null,
+   "opts": [
+    "58 % of the original",
+    "69 % of the original",
+    "54 % of the original",
+    "83 % of the original"
+   ],
+   "ans": "(C) 54 % of the original",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> L<sub>10</sub> = (C/P)<sup>k</sup>, with k = 3 for ball bearings and k = 10/3 for roller bearings.",
+    "New life/old life = (1/1.2)<sup>10/3</sup> = 0.8333<sup>3.333</sup> = 0.545.",
+    "So the life falls to about <b>54 %</b>, option (C). (58 % uses k = 3, the ball-bearing exponent.)",
+    "<b>Exam tip:</b> Check the bearing type before choosing the exponent — it is the only difference between the two answers."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A water jet of 60 mm diameter issues at 25 m/s and strikes normally a flat plate that moves away from the nozzle at 10 m/s in the direction of the jet, as shown. Taking ρ = 1000 kg/m³, the force exerted by the jet on the plate (in N, round off to the nearest integer) is ______",
+   "fig": "d78p_q10.png",
+   "opts": null,
+   "ans": "636 (accept 630 to 642)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a single moving plate, the mass striking it per second is ρA(V − u) and the relative velocity destroyed is (V − u), so F = ρA(V − u)².",
+    "A = π × 0.06²/4 = 2.827 × 10<sup>−3</sup> m²; V − u = 15 m/s.",
+    "F = 1000 × 2.827 × 10<sup>−3</sup> × 15² = <b>636 N</b>.",
+    "<b>Exam tip:</b> For a series of plates (a wheel) the whole jet ρAV strikes, so F = ρAV(V − u) instead."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A spherical thermocouple junction of 1.2 mm diameter (ρ = 8900 kg/m³, c = 390 J/kg·K, k = 25 W/m·K) is placed in a gas stream with h = 300 W/m²·K. Its thermal time constant is about",
+   "fig": null,
+   "opts": [
+    "13.9 s",
+    "4.63 s",
+    "1.16 s",
+    "2.31 s"
+   ],
+   "ans": "(D) 2.31 s",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For lumped behaviour τ = ρcV/(hA), and V/A = D/6 for a sphere.",
+    "Check: Bi = h(D/6)/k = 300 × 0.0002/25 = 0.0024 &lt; 0.1, so lumped analysis is valid.",
+    "τ = 8900 × 390 × 0.0002/300 = <b>2.31 s</b>, option (D).",
+    "<b>Exam tip:</b> V/A is D/6 for a sphere, D/4 for a long cylinder and half-thickness for a plate — using D itself gives the 13.9 s trap."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Wet steam at 10 bar has a dryness fraction of 0.9. At 10 bar, h<sub>f</sub> = 762.8 kJ/kg and h<sub>fg</sub> = 2015.3 kJ/kg. The specific enthalpy of the steam (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2576.6 (accept 2570.0 to 2583.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a wet mixture h = h<sub>f</sub> + x h<sub>fg</sub>.",
+    "h = 762.8 + 0.9 × 2015.3 = 762.8 + 1813.8.",
+    "h = <b>2576.6 kJ/kg</b>.",
+    "<b>Exam tip:</b> Use h<sub>fg</sub>, not h<sub>g</sub>, with the dryness fraction: x h<sub>g</sub> would add h<sub>f</sub> twice."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a simple Rankine cycle, the steam enters the turbine with h = 3230 kJ/kg and leaves it with h = 2170 kJ/kg. Saturated water leaves the condenser with h = 192 kJ/kg, and the pump work is 4 kJ/kg. The thermal efficiency of the cycle is about",
+   "fig": null,
+   "opts": [
+    "32.8 %",
+    "34.8 %",
+    "37.0 %",
+    "65.2 %"
+   ],
+   "ans": "(B) 34.8 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η = (W<sub>T</sub> − W<sub>P</sub>)/Q<sub>in</sub>, with Q<sub>in</sub> = h<sub>1</sub> − h<sub>4</sub> and h<sub>4</sub> = h<sub>3</sub> + W<sub>P</sub>.",
+    "W<sub>T</sub> = 3230 − 2170 = 1060 kJ/kg; W<sub>net</sub> = 1060 − 4 = 1056 kJ/kg.",
+    "Q<sub>in</sub> = 3230 − (192 + 4) = 3034 kJ/kg, so η = 1056/3034 = <b>34.8 %</b>, option (B).",
+    "<b>Exam tip:</b> 65.2 % is the fraction of heat rejected (1 − η) — read what the question asks."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting with a tool of 12° rake angle, the chip thickness ratio (uncut thickness/chip thickness) is 0.38. The shear angle (in degrees, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "22.0 (accept 21.8 to 22.2)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> tan φ = r cos α/(1 − r sin α), where r is the chip thickness ratio and α the rake angle.",
+    "r cos α = 0.38 × 0.9781 = 0.3717; 1 − r sin α = 1 − 0.38 × 0.2079 = 0.9210.",
+    "tan φ = 0.4036, so φ = <b>22.0°</b>.",
+    "<b>Exam tip:</b> A thicker chip (smaller r) means a smaller shear angle, a longer shear plane and a larger cutting force."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Maximise Z = 3x + 2y subject to x + y ≤ 5, x + 3y ≤ 9, x ≤ 4 and x, y ≥ 0. The optimum is",
+   "fig": null,
+   "opts": [
+    "Z = 14 at (4, 1)",
+    "Z = 13 at (3, 2)",
+    "Z = 12 at (4, 0)",
+    "Z = 15 at (5, 0)"
+   ],
+   "ans": "(A) Z = 14 at (4, 1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The optimum of an LP lies at a corner of the feasible region; evaluate Z at every corner.",
+    "Corners: (0, 0), (4, 0), (4, 1) [x = 4 with x + y = 5], (3, 2) [x + y = 5 with x + 3y = 9] and (0, 3).",
+    "Z = 0, 12, 14, 13 and 6, so the maximum is <b>Z = 14 at (4, 1)</b>. (5, 0) violates x ≤ 4.",
+    "<b>Exam tip:</b> Always test that an option's point is feasible before comparing Z values."
+   ]
+  }
+ ]
+}
