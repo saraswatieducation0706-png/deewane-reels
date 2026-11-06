@@ -101,3 +101,8 @@ For each day N (row N of the Master Schedule):
    false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true; Facebook `facebookData` {"type": "REEL", "title": <YouTube title without #Shorts>} —
    use "POST" instead of "REEL" if the reel is longer than 90 s, Facebook's Reel limit). Confirm with `getScheduledPosts`.
 6. Add N to `reel_scheduled`, push. Push-notify Naveen only if something failed (reel not booked by 2 AM = he posts by hand).
+
+## Note (6 Nov 2026)
+All 90 days are produced. Tests for Days 44–90 are also stored ENCRYPTED in `gate-me-ts/vault/GATE90/` (test .docx +
+`json/dayNN_test.json`, key = the GATE ME TS vault key) and were copied to Drive "02 Test Papers" through Make
+scenario 8060538. To re-copy one: run 8060538 with path `GATE90/<file name>.docx.enc`.
