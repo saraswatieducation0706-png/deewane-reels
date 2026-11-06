@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-me-2026",
  "course_title": "BEL Probationary Engineer Mechanical CBT Test Series 2026",
- "running_since": "2026-11-06T03:50:20Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -25,10 +25,13 @@
   "SUB-09",
   "SUB-10",
   "SUB-11",
-  "FL-05"
+  "FL-05",
+  "NC-EM-1",
+  "NC-EM-2",
+  "NC-EM-3"
  ],
  "drive_pending": [],
- "next_batch": 10,
+ "next_batch": 11,
  "total_batches": 33,
  "interim_upload_done": false,
  "production_done": false,
@@ -46,14 +49,16 @@
   "06": "1ATCuWJiYs9wz8x2LWUU9ZymDNNoPK3DL",
   "07": "1IFYccJxfCPeDdGLVO3_Hg3CQRZ1EmESS",
   "03/Sectional Tests (Aptitude & Reasoning)": "1IA3K5HBJww3sza_AyCkMGOyjOD2FHVCV",
-  "03/Subject Tests": "1pNQOQD9ZntVvsHgSROsdbMd6EqoffRho"
+  "03/Subject Tests": "1pNQOQD9ZntVvsHgSROsdbMd6EqoffRho",
+  "04/Engineering Mechanics": "1yoQjnFlYUxHvEzuy8vHf_C6SodEbpWwj"
  },
  "vault": {
   "plan": "dct/bel-pe-me-2026/02/plan.json",
   "tests_dir": "dct/bel-pe-me-2026/03/<FL|SUB|TOP|SEC>/",
   "notes_dir": "dct/bel-pe-me-2026/04/",
   "question_sources": "dct/bel-pe-me-2026/src/<ITEM>-src.tar.gz (check earlier sources to avoid repeating questions)",
-  "tools": "dct/_tools/dct_tools.tar.gz (build_section.py + build_paper.py + template.docx: python3 tools/build_section.py --input q.json --output X.docx --seed <id> --images-dir figs)"
+  "tools": "dct/_tools/dct_tools.tar.gz (build_section.py + build_paper.py + template.docx: python3 tools/build_section.py --input q.json --output X.docx --seed <id> --images-dir figs)",
+  "notes_tool": "dct/_tools/notes_builder.py (chapter PDF from JSON spec; python3 notes_builder.py --input ch.json --output X.pdf --logo logo-master-1024.png --figs figs; example specs in src/NC-EM-1-3-src.tar.gz)"
  },
  "files": {
   "FL-01": [
@@ -123,7 +128,16 @@
   "FL-05": [
    "03/Full Length Mock Tests/Technical - Test 5.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 5.docx"
+  ],
+  "NC-EM-1": [
+   "04/Engineering Mechanics/Engineering Mechanics - Ch1 Force Systems, Equilibrium & Trusses.pdf"
+  ],
+  "NC-EM-2": [
+   "04/Engineering Mechanics/Engineering Mechanics - Ch2 Friction.pdf"
+  ],
+  "NC-EM-3": [
+   "04/Engineering Mechanics/Engineering Mechanics - Ch3 Centroid & Moment of Inertia.pdf"
   ]
  },
- "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz). SUB-05..08 (FM, TD, ATD, HT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-05-08-src.tar.gz). FL-04 same mix (sources src/FL-04-src.tar.gz). SUB-09..11 (MFG, IE, MAT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-09-11-src.tar.gz). FL-05 same mix (sources src/FL-05-src.tar.gz)."
+ "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz). SUB-05..08 (FM, TD, ATD, HT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-05-08-src.tar.gz). FL-04 same mix (sources src/FL-04-src.tar.gz). SUB-09..11 (MFG, IE, MAT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-09-11-src.tar.gz). FL-05 same mix (sources src/FL-05-src.tar.gz). NC-EM-1..3 notes PDFs (20 solved MCQs each, 4 concepts x 5; vault 04/EM/; Drive 04/Engineering Mechanics; sources src/NC-EM-1-3-src.tar.gz). Note: plan file names containing '/' (TOM-1, IE-2, SOM-2) must use '-' instead in vault/Drive names."
 }
