@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-me-2026",
  "course_title": "BEL Probationary Engineer Mechanical CBT Test Series 2026",
- "running_since": "2026-11-06T10:50:29Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -40,10 +40,11 @@
   "FL-08",
   "NC-SOM-5",
   "NM-SOM",
-  "NC-TOM-1"
+  "NC-TOM-1",
+  "FL-09"
  ],
  "drive_pending": [],
- "next_batch": 17,
+ "next_batch": 18,
  "total_batches": 33,
  "interim_upload_done": false,
  "production_done": false,
@@ -191,7 +192,11 @@
   ],
   "NC-TOM-1": [
    "04/Theory of Machines & Vibrations/Theory of Machines & Vibrations - Ch1 Mechanisms & Velocity-Acceleration.pdf"
+  ],
+  "FL-09": [
+   "03/Full Length Mock Tests/Technical - Test 9.docx",
+   "03/Full Length Mock Tests/General Aptitude - Test 9.docx"
   ]
  },
- "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz). SUB-05..08 (FM, TD, ATD, HT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-05-08-src.tar.gz). FL-04 same mix (sources src/FL-04-src.tar.gz). SUB-09..11 (MFG, IE, MAT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-09-11-src.tar.gz). FL-05 same mix (sources src/FL-05-src.tar.gz). NC-EM-1..3 notes PDFs (20 solved MCQs each, 4 concepts x 5; vault 04/EM/; Drive 04/Engineering Mechanics; sources src/NC-EM-1-3-src.tar.gz). Note: plan file names containing '/' (TOM-1, IE-2, SOM-2) must use '-' instead in vault/Drive names. FL-06 same mix (sources src/FL-06-src.tar.gz; auto similarity check vs all earlier sources, near-duplicates replaced). NC-EM-4 + NM-EM (merged EM PDF, 27 pages, vault 04/merged/, Drive 04 Short Notes root) + NC-SOM-1 (vault 04/SOM/, Drive 04/Strength of Materials); sources src/NC-EM-4_NM-EM_NC-SOM-1-src.tar.gz; similarity-checked vs all earlier sources (same-number repeats changed). FL-07 same mix (sources src/FL-07-src.tar.gz; similarity-checked vs all 1211 earlier questions, 40 near-duplicates/same-number repeats replaced). NC-SOM-2..4 notes PDFs (20 solved MCQs each, 4 concepts x 5; vault 04/SOM/; Drive 04/Strength of Materials; sources src/NC-SOM-2-4-src.tar.gz; similarity-checked vs all earlier sources, near-duplicates/same-number repeats changed; answer keys balanced 5/5/5/5). FL-08 same mix (sources src/FL-08-src.tar.gz; similarity-checked vs all 1535 earlier questions, 74 near-duplicates/same-number repeats replaced in 3 rounds). NC-SOM-5 (vault 04/SOM/) + NM-SOM (merged SOM PDF, 35 pages, 5 chapters, vault 04/merged/, Drive 04 Short Notes root) + NC-TOM-1 (vault 04/TOM/, Drive 04/Theory of Machines & Vibrations); 20 solved MCQs each, 4 concepts x 5, answer keys 5/5/5/5; sources src/NC-SOM-5_NM-SOM_NC-TOM-1-src.tar.gz (includes corpus.py to rebuild the similarity corpus from all src tarballs); similarity-checked vs all 1842 earlier questions, same-number repeats changed."
+ "notes": "FL-01 technical mix: EM6 SOM12 TOM10 MD12 FM10 TD8 ATD10 HT7 MFG14 IE6 MAT5; GA 12 quant + 11 reasoning + 2 verbal. Marks 1 / 0.25. SEC tests: 12 quant + 11 reasoning + 2 verbal each; vault 03/SEC/; sources src/SEC-01-05-src.tar.gz. FL-02 same mix (sources src/FL-02-src.tar.gz). SUB-01..04 (EM, SOM, TOM, MD; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-01-04-src.tar.gz). FL-03 same mix (sources src/FL-03-src.tar.gz). SUB-05..08 (FM, TD, ATD, HT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-05-08-src.tar.gz). FL-04 same mix (sources src/FL-04-src.tar.gz). SUB-09..11 (MFG, IE, MAT; 30 Q each, chapter-balanced; vault 03/SUB/; sources src/SUB-09-11-src.tar.gz). FL-05 same mix (sources src/FL-05-src.tar.gz). NC-EM-1..3 notes PDFs (20 solved MCQs each, 4 concepts x 5; vault 04/EM/; Drive 04/Engineering Mechanics; sources src/NC-EM-1-3-src.tar.gz). Note: plan file names containing '/' (TOM-1, IE-2, SOM-2) must use '-' instead in vault/Drive names. FL-06 same mix (sources src/FL-06-src.tar.gz; auto similarity check vs all earlier sources, near-duplicates replaced). NC-EM-4 + NM-EM (merged EM PDF, 27 pages, vault 04/merged/, Drive 04 Short Notes root) + NC-SOM-1 (vault 04/SOM/, Drive 04/Strength of Materials); sources src/NC-EM-4_NM-EM_NC-SOM-1-src.tar.gz; similarity-checked vs all earlier sources (same-number repeats changed). FL-07 same mix (sources src/FL-07-src.tar.gz; similarity-checked vs all 1211 earlier questions, 40 near-duplicates/same-number repeats replaced). NC-SOM-2..4 notes PDFs (20 solved MCQs each, 4 concepts x 5; vault 04/SOM/; Drive 04/Strength of Materials; sources src/NC-SOM-2-4-src.tar.gz; similarity-checked vs all earlier sources, near-duplicates/same-number repeats changed; answer keys balanced 5/5/5/5). FL-08 same mix (sources src/FL-08-src.tar.gz; similarity-checked vs all 1535 earlier questions, 74 near-duplicates/same-number repeats replaced in 3 rounds). NC-SOM-5 (vault 04/SOM/) + NM-SOM (merged SOM PDF, 35 pages, 5 chapters, vault 04/merged/, Drive 04 Short Notes root) + NC-TOM-1 (vault 04/TOM/, Drive 04/Theory of Machines & Vibrations); 20 solved MCQs each, 4 concepts x 5, answer keys 5/5/5/5; sources src/NC-SOM-5_NM-SOM_NC-TOM-1-src.tar.gz (includes corpus.py to rebuild the similarity corpus from all src tarballs); similarity-checked vs all 1842 earlier questions, same-number repeats changed. FL-09 same mix (sources src/FL-09-src.tar.gz; similarity-checked vs all 1914 earlier questions, 117 near-duplicates/same-number repeats replaced in 5 rounds; adds match-the-list and 'which is INCORRECT' question styles)."
 }
