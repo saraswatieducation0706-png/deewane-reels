@@ -1,0 +1,264 @@
+{
+ "day": 81,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 4",
+ "days_to_gate": 17,
+ "summary": "a mixed full-syllabus warm-up for the fourth full-length mock: antonyms, LCM timing, triangular determinants, dice probability, connected bodies over a pulley, compound bars, kinematic pairs, the simple pendulum, notch sensitivity, Reynolds number, cylindrical thermal resistance, constant-volume heating, the zeroth law, true strain and Little's law",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Formula Sprint: Thermal",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the word that is most nearly OPPOSITE in meaning to TRANSIENT.",
+   "fig": null,
+   "opts": [
+    "fleeting",
+    "momentary",
+    "permanent",
+    "temporary"
+   ],
+   "ans": "(C) permanent",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Transient' means lasting only a short time (as in a transient heat-conduction problem).",
+    "Fleeting, momentary and temporary all mean short-lived, so they are synonyms, not opposites.",
+    "The word meaning 'lasting for ever or for a long time' is <b>permanent</b>, option (C).",
+    "<b>Exam tip:</b> In antonym questions, first strike out every option that is a synonym — here three of the four were."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Three alarms ring at intervals of 12, 15 and 20 minutes. They ring together at 8:00 a.m. How many times do they ring together from 8:00 a.m. to 2:00 p.m., both times included? ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Events with periods a, b, c coincide every LCM(a, b, c).",
+    "LCM(12, 15, 20) = 60 min, so they ring together every hour.",
+    "From 8:00 to 14:00 is 6 h, giving coincidences at 8, 9, 10, 11, 12, 1 and 2 o'clock: <b>7 times</b>.",
+    "<b>Exam tip:</b> Count both end points — 6 intervals contain 7 instants (the 'fence-post' trap answer is 6)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The determinant of the matrix with rows (2, 0, 0), (3, −1, 0) and (4, 5, 3) is",
+   "fig": null,
+   "opts": [
+    "6",
+    "−6",
+    "30",
+    "−2"
+   ],
+   "ans": "(B) −6",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The determinant of a triangular matrix is the product of its diagonal entries.",
+    "The matrix is lower triangular (all entries above the diagonal are zero); its diagonal is 2, −1, 3.",
+    "det = 2 × (−1) × 3 = <b>−6</b>, option (B).",
+    "<b>Exam tip:</b> The same rule gives the eigenvalues of a triangular matrix directly: here 2, −1 and 3."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two fair dice are thrown together. The probability that the sum of the numbers shown is at least 10 is ______ (round off to three decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "0.167 (accept 0.165 to 0.168)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With two dice there are 36 equally likely ordered outcomes; count the favourable ones.",
+    "Sum 10: (4,6), (5,5), (6,4) — 3 ways. Sum 11: (5,6), (6,5) — 2 ways. Sum 12: (6,6) — 1 way.",
+    "P = 6/36 = 1/6 = <b>0.167</b>.",
+    "<b>Exam tip:</b> Count ordered pairs — (4,6) and (6,4) are different outcomes, but (5,5) is only one."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two blocks of 5 kg and 3 kg hang from the ends of a light inextensible string passing over a light frictionless pulley, as shown. They are released from rest. Taking g = 9.81 m/s², the acceleration of the blocks (in m/s², round off to two decimal places) is ______",
+   "fig": "d81p_q5.png",
+   "opts": null,
+   "ans": "2.45 (accept 2.43 to 2.47)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Write Newton's second law for each block with the same string tension T and the same magnitude of acceleration a.",
+    "5 kg (moves down): 5g − T = 5a. 3 kg (moves up): T − 3g = 3a.",
+    "Adding: 2g = 8a, so a = 9.81/4 = <b>2.45 m/s²</b> (and T = 3(g + a) = 36.8 N).",
+    "<b>Exam tip:</b> a = (m<sub>1</sub> − m<sub>2</sub>)g/(m<sub>1</sub> + m<sub>2</sub>) for an ideal pulley; the tension always lies between the two weights (29.4 N and 49.1 N)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A compound bar is made of a steel rod (length 1 m, area 200 mm², E = 200 GPa) joined end to end with a brass rod (length 0.5 m, area 400 mm², E = 100 GPa), as shown. It carries an axial tensile load of 20 kN. The total elongation of the bar (in mm, round off to two decimal places) is ______",
+   "fig": "d81p_q6.png",
+   "opts": null,
+   "ans": "0.75 (accept 0.74 to 0.76)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bars in series carry the same force; their elongations PL/(AE) add.",
+    "Steel: 20 000 × 1000/(200 × 200 000) = 0.50 mm. Brass: 20 000 × 500/(400 × 100 000) = 0.25 mm.",
+    "Total elongation = 0.50 + 0.25 = <b>0.75 mm</b>.",
+    "<b>Exam tip:</b> Series bars share the force and add deformations; parallel (side-by-side) bars share the deformation and add forces."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A ball-and-socket joint (as in a car's steering linkage) is a",
+   "fig": null,
+   "opts": [
+    "spherical pair, allowing three independent rotations",
+    "turning pair, allowing one rotation",
+    "cylindrical pair, allowing one rotation and one sliding motion",
+    "higher pair with point contact"
+   ],
+   "ans": "(A) spherical pair, allowing three independent rotations",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Kinematic pairs are classified by the relative motions they permit (degrees of freedom).",
+    "A ball held in a spherical socket can rotate about any three perpendicular axes but cannot translate.",
+    "It is a <b>spherical pair with three rotational degrees of freedom</b>, option (A) — a lower pair, because the contact is over a surface.",
+    "<b>Exam tip:</b> Turning (revolute) and sliding (prismatic) pairs allow 1 DOF, a cylindrical pair 2 and a spherical pair 3; point or line contact makes a higher pair."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The length of a simple pendulum whose period of small oscillation is 2 s at a place where g = 9.81 m/s² is ______ (in m, round off to three decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "0.994 (accept 0.988 to 1.000)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For small oscillations of a simple pendulum, T = 2π√(L/g).",
+    "L = gT²/(4π²) = 9.81 × 4/(4 × 9.8696).",
+    "L = 9.81/9.8696 = <b>0.994 m</b>.",
+    "<b>Exam tip:</b> The period is independent of the bob's mass and (for small swings) of the amplitude — only L and g matter."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A notched shaft has a theoretical stress concentration factor of 2.2, and the notch sensitivity of its material is 0.75. The fatigue stress concentration factor is",
+   "fig": null,
+   "opts": [
+    "2.20",
+    "1.65",
+    "1.90",
+    "2.95"
+   ],
+   "ans": "(C) 1.90",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> K<sub>f</sub> = 1 + q(K<sub>t</sub> − 1), where q (0 to 1) is the notch sensitivity.",
+    "K<sub>t</sub> − 1 = 1.2; q(K<sub>t</sub> − 1) = 0.75 × 1.2 = 0.9.",
+    "K<sub>f</sub> = 1 + 0.9 = <b>1.90</b>, option (C).",
+    "<b>Exam tip:</b> q = 0 means no notch effect (K<sub>f</sub> = 1) and q = 1 means full effect (K<sub>f</sub> = K<sub>t</sub>); 1.65 is the wrong product q × K<sub>t</sub>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Water (kinematic viscosity 1.0 × 10<sup>−6</sup> m²/s) flows at a mean velocity of 0.04 m/s through a pipe of 50 mm diameter. The flow is",
+   "fig": null,
+   "opts": [
+    "laminar, with Re = 2000",
+    "turbulent, with Re = 20 000",
+    "laminar, with Re = 200",
+    "turbulent, with Re = 2000"
+   ],
+   "ans": "(A) laminar, with Re = 2000",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Re = VD/ν; pipe flow is laminar below about 2000–2300.",
+    "Re = 0.04 × 0.05/(1.0 × 10<sup>−6</sup>) = 2000.",
+    "Re = 2000 is in the laminar range, so the flow is <b>laminar, with Re = 2000</b>, option (A).",
+    "<b>Exam tip:</b> Convert the diameter to metres first — 50 instead of 0.05 shifts Re by a factor of 1000."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A layer of insulation (k = 0.05 W/m·K) covers a pipe; its inner radius is 50 mm and its outer radius 100 mm. The conduction thermal resistance of a 1 m length of this insulation is about",
+   "fig": null,
+   "opts": [
+    "1.00 K/W",
+    "2.21 K/W",
+    "0.32 K/W",
+    "4.41 K/W"
+   ],
+   "ans": "(B) 2.21 K/W",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For radial conduction through a cylindrical layer, R = ln(r<sub>2</sub>/r<sub>1</sub>)/(2πkL).",
+    "ln(100/50) = ln 2 = 0.693; 2πkL = 2π × 0.05 × 1 = 0.3142 W/K.",
+    "R = 0.693/0.3142 = <b>2.21 K/W</b>, option (B).",
+    "<b>Exam tip:</b> Treating the layer as a plane wall of thickness 50 mm with the inner area (2π × 0.05 × 1) gives 3.18 K/W; with the outer area 1.59 K/W — the log form lies between."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "2 kg of air (c<sub>v</sub> = 0.718 kJ/kg·K) in a rigid closed tank is heated from 300 K to 500 K. The heat supplied (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "287.2 (accept 285.8 to 288.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a rigid (constant-volume) closed system no boundary work is done, so Q = ΔU = mc<sub>v</sub>ΔT.",
+    "ΔT = 500 − 300 = 200 K.",
+    "Q = 2 × 0.718 × 200 = <b>287.2 kJ</b>.",
+    "<b>Exam tip:</b> Using c<sub>p</sub> (1.005) gives 402 kJ — that is the constant-pressure answer, where the extra heat goes into boundary work."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The zeroth law of thermodynamics provides the basis for",
+   "fig": null,
+   "opts": [
+    "the definition of internal energy",
+    "the concept of entropy",
+    "the conservation of energy",
+    "the measurement of temperature"
+   ],
+   "ans": "(D) the measurement of temperature",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Zeroth law: two bodies each in thermal equilibrium with a third body are in thermal equilibrium with each other.",
+    "So a thermometer (the 'third body') can compare the temperatures of bodies without their touching.",
+    "This is the basis of <b>temperature measurement</b>, option (D).",
+    "<b>Exam tip:</b> First law → energy and internal energy; second law → entropy and the limits on efficiency."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A metal bar is stretched uniformly (before necking) from a gauge length of 100 mm to 150 mm. The true strain is ______ (round off to three decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "0.405 (accept 0.401 to 0.409)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> True strain is the integral of dL/L: ε<sub>T</sub> = ln(L/L<sub>0</sub>) = ln(1 + e), where e is the engineering strain.",
+    "Engineering strain e = (150 − 100)/100 = 0.5.",
+    "ε<sub>T</sub> = ln 1.5 = <b>0.405</b>.",
+    "<b>Exam tip:</b> True strains add for successive steps (ln 1.2 + ln 1.25 = ln 1.5), engineering strains do not; for small strains the two are nearly equal."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Customers arrive at a service counter at an average rate of 12 per hour and each spends on average 15 minutes in the system (waiting plus service). The average number of customers in the system is",
+   "fig": null,
+   "opts": [
+    "12",
+    "0.8",
+    "3",
+    "15"
+   ],
+   "ans": "(C) 3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Little's law: L = λW, valid for any stable queue in steady state.",
+    "λ = 12 per hour; W = 15 min = 0.25 h.",
+    "L = 12 × 0.25 = <b>3</b>, option (C).",
+    "<b>Exam tip:</b> Keep λ and W in the same time unit; using W = 15 (minutes) with λ per hour gives the absurd 180."
+   ]
+  }
+ ]
+}
