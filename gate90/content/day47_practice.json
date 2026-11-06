@@ -1,0 +1,271 @@
+{
+ "day": 47,
+ "subject": "Applied Thermodynamics",
+ "topic": "Power Cycles",
+ "days_to_gate": 57,
+ "summary": "reciprocating air compressors (clearance, volumetric efficiency, multi-staging and intercooling), the Rankine cycle with superheat, reheat and regenerative feed heating, and the Brayton gas turbine cycle with component efficiencies, regeneration, intercooling and combined cycles",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 8 Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The Carnot cycle is not used as the practical model for steam power plants mainly because",
+   "fig": null,
+   "opts": [
+    "its efficiency is lower than that of the Rankine cycle",
+    "it would require compressing a wet (two-phase) mixture in the pump and expanding very wet steam in the turbine",
+    "it needs a condenser",
+    "it cannot use superheated steam at all"
+   ],
+   "ans": "(B) it would require compressing a wet (two-phase) mixture in the pump and expanding very wet steam in the turbine",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A Carnot vapour cycle adds and rejects heat isothermally inside the wet region.",
+    "Its compression would start from a wet mixture: a two-phase compressor is impractical and absorbs large work.",
+    "Its expansion ends with very wet steam, which erodes turbine blades. The Rankine cycle condenses fully and pumps liquid instead: <b>(B)</b>.",
+    "<b>Exam tip:</b> Carnot efficiency is the upper limit; the Rankine cycle trades a little efficiency for practicality."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a simple Rankine cycle the steam enters the turbine at 8 MPa with h<sub>1</sub> = 3230 kJ/kg and leaves the isentropic turbine at 10 kPa with h<sub>2</sub> = 2140 kJ/kg. Saturated liquid leaves the condenser with h<sub>3</sub> = 192 kJ/kg and v = 0.00101 m³/kg. The cycle efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "35.71 (accept 35.50 to 35.90)",
+   "sfig": "d47p_s2.png",
+   "solution": [
+    "<b>Concept:</b> η = (w<sub>T</sub> − w<sub>P</sub>)/q<sub>in</sub>, with the pump work w<sub>P</sub> = v(p<sub>boiler</sub> − p<sub>cond</sub>).",
+    "w<sub>P</sub> = 0.00101 × (8000 − 10) = 8.07 kJ/kg; h<sub>4</sub> = 192 + 8.07 = 200.07 kJ/kg",
+    "w<sub>T</sub> = 3230 − 2140 = 1090 kJ/kg; w<sub>net</sub> = 1081.93 kJ/kg",
+    "q<sub>in</sub> = 3230 − 200.07 = 3029.93 kJ/kg; η = 1081.93/3029.93 = <b>35.71 %</b>",
+    "<b>Exam tip:</b> Here the pump work is only 0.7 % of the turbine work; neglecting it changes η by about 0.1 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a Rankine cycle the boiler pressure is raised, keeping the maximum steam temperature and the condenser pressure unchanged. Then",
+   "fig": null,
+   "opts": [
+    "the efficiency falls and the exhaust becomes drier",
+    "both the efficiency and the exhaust dryness increase",
+    "the efficiency rises but the steam at the turbine exhaust becomes wetter",
+    "neither changes"
+   ],
+   "ans": "(C) the efficiency rises but the steam at the turbine exhaust becomes wetter",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Efficiency depends on the mean temperature of heat addition.",
+    "Higher boiler pressure raises the saturation temperature, so the mean temperature of heat addition rises and η increases.",
+    "But at the same maximum temperature the expansion line shifts to lower entropy, ending deeper in the wet region: <b>wetter exhaust (C)</b>.",
+    "<b>Exam tip:</b> This is exactly why reheat is used with high boiler pressures."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (R = 0.287 kJ/kg·K) at 1 bar and 300 K is compressed to 9 bar in a two-stage reciprocating compressor with perfect intercooling and the optimum intermediate pressure. Compression follows pV¹·³ = constant in both stages. The minimum total work per kg of air (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "215.3 (accept 213.6 to 217.0)",
+   "sfig": "d47p_s4.png",
+   "solution": [
+    "<b>Concept:</b> With perfect intercooling (back to T<sub>1</sub>) and p<sub>2</sub> = √(p<sub>1</sub>p<sub>3</sub>), both stages do equal work: W = 2[n/(n − 1)]RT<sub>1</sub>[(p<sub>3</sub>/p<sub>1</sub>)<sup>(n−1)/(2n)</sup> − 1].",
+    "p<sub>2</sub> = √9 = 3 bar; each stage has a ratio of 3; (n − 1)/n = 0.2308",
+    "3<sup>0.2308</sup> = 1.2885",
+    "W = 2 × 4.333 × 0.287 × 300 × 0.2885 = <b>215.3 kJ/kg</b>",
+    "<b>Exam tip:</b> Single-stage compression to 9 bar would need 4.333 × 86.1 × (9<sup>0.2308</sup> − 1) = 246.4 kJ/kg: intercooling saves about 13 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The volumetric efficiency of a single-stage reciprocating air compressor with a fixed clearance volume",
+   "fig": null,
+   "opts": [
+    "increases as the delivery pressure increases",
+    "is independent of the pressure ratio",
+    "is 100 % whenever the compression is isothermal",
+    "decreases as the pressure ratio increases"
+   ],
+   "ans": "(D) decreases as the pressure ratio increases",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>v</sub> = 1 + C − C(p<sub>2</sub>/p<sub>1</sub>)<sup>1/n</sup>.",
+    "The clearance air re-expands to a larger volume when the pressure ratio is larger, so less fresh air is drawn in.",
+    "Hence η<sub>v</sub> <b>decreases with pressure ratio (D)</b> and becomes zero at the limiting ratio (1 + 1/C)<sup>n</sup>.",
+    "<b>Exam tip:</b> This is the second reason (besides work saving) for multi-stage compression at high pressure ratios."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (R = 0.287 kJ/kg·K, γ = 1.4) at 300 K is compressed from 1 bar to 6 bar in a steady-flow compressor. The isothermal efficiency, defined as (isothermal work)/(isentropic work) for the same pressure ratio (in %, round off to two decimal places), is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "76.58 (accept 76.00 to 77.10)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Isothermal work = RT<sub>1</sub> ln r; isentropic work = [γ/(γ − 1)]RT<sub>1</sub>(r<sup>(γ−1)/γ</sup> − 1).",
+    "Isothermal: 0.287 × 300 × ln 6 = 86.1 × 1.7918 = 154.27 kJ/kg",
+    "Isentropic: 3.5 × 86.1 × (6<sup>0.2857</sup> − 1) = 301.35 × 0.6685 = 201.45 kJ/kg",
+    "Ratio = 154.27/201.45 = <b>76.58 %</b>",
+    "<b>Exam tip:</b> RT<sub>1</sub> cancels, so the ratio depends only on the pressure ratio and γ."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The thermal efficiency of an ideal (air-standard) Brayton cycle depends on",
+   "fig": null,
+   "opts": [
+    "the pressure ratio only (for a given γ)",
+    "the maximum temperature only",
+    "both the maximum and minimum temperatures",
+    "the mass flow rate of air"
+   ],
+   "ans": "(A) the pressure ratio only (for a given γ)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η = 1 − 1/r<sub>p</sub><sup>(γ−1)/γ</sup> = 1 − T<sub>1</sub>/T<sub>2</sub>.",
+    "Neither T<sub>max</sub> nor the flow rate appears: <b>(A)</b>.",
+    "The turbine inlet temperature does, however, decide the net work per kg (and the optimum pressure ratio).",
+    "<b>Exam tip:</b> With component inefficiencies, η also depends on T<sub>3</sub>/T<sub>1</sub>: a hotter turbine inlet then helps efficiency too."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An ideal Brayton cycle works on air (c<sub>p</sub> = 1.005 kJ/kg·K, γ = 1.4) with a compressor inlet temperature of 300 K, a pressure ratio of 8 and a turbine inlet temperature of 1300 K. The back work ratio (compressor work/turbine work, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.418 (accept 0.414 to 0.422)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Back work ratio = w<sub>C</sub>/w<sub>T</sub> = (T<sub>2</sub> − T<sub>1</sub>)/(T<sub>3</sub> − T<sub>4</sub>).",
+    "8<sup>0.2857</sup> = 1.8114; T<sub>2</sub> = 300 × 1.8114 = 543.4 K; T<sub>4</sub> = 1300/1.8114 = 717.7 K",
+    "BWR = (543.4 − 300)/(1300 − 717.7) = 243.4/582.3 = <b>0.418</b>",
+    "Shortcut: since T<sub>2</sub>/T<sub>1</sub> = T<sub>3</sub>/T<sub>4</sub>, BWR = T<sub>2</sub>/T<sub>3</sub> = 543.4/1300.",
+    "<b>Exam tip:</b> Gas turbines spend 40–60 % of turbine work on the compressor; a steam plant spends about 1 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The T–s diagram shows an ideal Brayton cycle 1–2–3–4 with an ideal regenerator, in which the compressed air (2 → x) is heated by the turbine exhaust (4 → y). For fixed T<sub>1</sub> and T<sub>3</sub>, the thermal efficiency of this cycle",
+   "fig": "d47p_q9.png",
+   "opts": [
+    "increases as the pressure ratio increases",
+    "decreases as the pressure ratio increases",
+    "is independent of the pressure ratio",
+    "equals the Carnot efficiency at every pressure ratio"
+   ],
+   "ans": "(B) decreases as the pressure ratio increases",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an ideal regenerative Brayton cycle, η = 1 − (T<sub>1</sub>/T<sub>3</sub>)r<sub>p</sub><sup>(γ−1)/γ</sup>.",
+    "As r<sub>p</sub> rises, T<sub>4</sub> falls towards T<sub>2</sub> and less heat can be recovered, so η <b>decreases (B)</b>.",
+    "At r<sub>p</sub> → 1 it tends to the Carnot value 1 − T<sub>1</sub>/T<sub>3</sub> (but with zero net work).",
+    "<b>Exam tip:</b> This is the opposite trend to the simple Brayton cycle, whose efficiency rises with r<sub>p</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas turbine plant works on air (c<sub>p</sub> = 1.005 kJ/kg·K, γ = 1.4). Air enters the compressor at 290 K; the pressure ratio is 6 and the turbine inlet temperature is 1100 K. The isentropic efficiencies of the compressor and turbine are 0.82 and 0.88. The thermal efficiency of the plant (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "26.40 (accept 26.20 to 26.60)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find the actual exit temperatures from the isentropic efficiencies, then η = w<sub>net</sub>/q<sub>in</sub>.",
+    "6<sup>0.2857</sup> = 1.6685. T<sub>2s</sub> = 483.9 K; T<sub>2</sub> = 290 + 193.9/0.82 = 526.4 K",
+    "T<sub>4s</sub> = 1100/1.6685 = 659.3 K; T<sub>4</sub> = 1100 − 0.88 × 440.7 = 712.2 K",
+    "w<sub>net</sub>/c<sub>p</sub> = (1100 − 712.2) − (526.4 − 290) = 151.4 K; q<sub>in</sub>/c<sub>p</sub> = 1100 − 526.4 = 573.6 K",
+    "η = 151.4/573.6 = <b>26.40 %</b> (ideal cycle: 40.07 %)",
+    "<b>Exam tip:</b> Component losses hit gas turbines hard because the net work is a small difference of two large works."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Compared with a closed feed-water heater, an open (direct-contact) feed-water heater",
+   "fig": null,
+   "opts": [
+    "needs a separate pump after it to raise the feed water to the next pressure",
+    "cannot be used for deaeration",
+    "keeps the bled steam and feed water separate",
+    "is always more expensive"
+   ],
+   "ans": "(A) needs a separate pump after it to raise the feed water to the next pressure",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an open heater the bled steam mixes with the feed water at the bleed pressure.",
+    "The mixture leaves as saturated liquid at that (lower) pressure, so <b>a pump is required after each open heater (A)</b>.",
+    "Open heaters are cheap, give good heat transfer and also remove dissolved gases (deaerator).",
+    "<b>Exam tip:</b> Closed heaters keep the streams apart (a shell-and-tube exchanger), so only one feed pump is needed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steam power plant has a net work output of 1125 kJ/kg of steam and receives 3000 kJ/kg of heat in the boiler. Its heat rate (in kJ/kWh) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9600",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Heat rate = heat supplied per kWh of net work = 3600/η kJ/kWh.",
+    "η = 1125/3000 = 0.375",
+    "Heat rate = 3600/0.375 = <b>9600 kJ/kWh</b>",
+    "<b>Exam tip:</b> The lower the heat rate, the better the plant; the steam rate 3600/w<sub>net</sub> = 3.2 kg/kWh is a different measure."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (R = 0.287 kJ/kg·K) at 1 bar and 300 K is compressed to 27 bar in a three-stage reciprocating compressor with perfect intercooling and optimum stage pressures. Compression follows pV¹·²⁵ = constant. The minimum total work per kg of air (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "317.4 (accept 315.0 to 319.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For N stages with perfect intercooling the optimum stage ratio is (p<sub>final</sub>/p<sub>1</sub>)<sup>1/N</sup> and W = N[n/(n − 1)]RT<sub>1</sub>[r<sub>s</sub><sup>(n−1)/n</sup> − 1].",
+    "r<sub>s</sub> = 27<sup>1/3</sup> = 3 (stage pressures 1, 3, 9, 27 bar); (n − 1)/n = 0.2",
+    "3<sup>0.2</sup> = 1.2457",
+    "W = 3 × 5 × 0.287 × 300 × 0.2457 = <b>317.4 kJ/kg</b>",
+    "<b>Exam tip:</b> Each stage does equal work and has equal delivery temperature (300 × 1.2457 = 373.7 K)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a combined gas turbine–steam turbine power plant,",
+   "fig": null,
+   "opts": [
+    "the steam cycle is the topping cycle and the gas turbine the bottoming cycle",
+    "the gas turbine is the topping cycle and its exhaust raises steam for the bottoming Rankine cycle",
+    "the two cycles share the same working fluid",
+    "the overall efficiency is the product of the two cycle efficiencies"
+   ],
+   "ans": "(B) the gas turbine is the topping cycle and its exhaust raises steam for the bottoming Rankine cycle",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The gas turbine works at high temperature and rejects heat at 450–600 °C, ideal for raising steam.",
+    "So the gas turbine is the <b>topping cycle (B)</b> and a heat-recovery steam generator feeds the Rankine bottoming cycle.",
+    "η<sub>overall</sub> = η<sub>1</sub> + η<sub>2</sub> − η<sub>1</sub>η<sub>2</sub>, which exceeds either efficiency.",
+    "<b>Exam tip:</b> Modern combined-cycle plants reach about 60 % efficiency."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A gas turbine cycle uses many stages of intercooling and of reheating together with an ideal regenerator. As the number of stages tends to infinity, its efficiency approaches that of the",
+   "fig": null,
+   "opts": [
+    "Otto cycle",
+    "Diesel cycle",
+    "Rankine cycle",
+    "Ericsson cycle, which equals the Carnot efficiency between the same temperatures"
+   ],
+   "ans": "(D) Ericsson cycle, which equals the Carnot efficiency between the same temperatures",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Infinite intercooling makes compression isothermal at T<sub>min</sub>; infinite reheating makes expansion isothermal at T<sub>max</sub>.",
+    "With an ideal regenerator handling the constant-pressure processes, all external heat is exchanged at T<sub>max</sub> and T<sub>min</sub>.",
+    "That is the <b>Ericsson cycle (D)</b>, whose efficiency is 1 − T<sub>min</sub>/T<sub>max</sub>.",
+    "<b>Exam tip:</b> In practice two or three stages give most of the gain."
+   ]
+  }
+ ]
+}

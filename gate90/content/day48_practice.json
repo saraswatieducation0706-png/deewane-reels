@@ -1,0 +1,269 @@
+{
+ "day": 48,
+ "subject": "Weekly Revision",
+ "topic": "Week 8 Revision",
+ "days_to_gate": 56,
+ "summary": "a mixed revision of the week: fins and lumped transient conduction, forced and free convection, permutations, probability, mensuration and data interpretation, radiation exchange and heat exchangers, and gas and vapour power cycles",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Applied Thermodynamics, IC Engines",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A fin is found to have an effectiveness of 0.8. This means that",
+   "fig": null,
+   "opts": [
+    "the fin is 80 % efficient",
+    "the fin actually reduces the heat transfer from the surface and acts as insulation",
+    "the fin removes 80 % more heat than the bare surface",
+    "the fin is too short"
+   ],
+   "ans": "(B) the fin actually reduces the heat transfer from the surface and acts as insulation",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Effectiveness ε<sub>f</sub> = (heat transfer with fin)/(heat transfer from the base area without the fin).",
+    "ε<sub>f</sub> &lt; 1 means the fin conducts less heat than the bare area it covers: it <b>acts as insulation (B)</b>.",
+    "This happens when h is high or k is low (hA<sub>c</sub>/(kP) not small). A fin is normally justified only when ε<sub>f</sub> ≥ 2.",
+    "<b>Exam tip:</b> Do not confuse effectiveness with efficiency (actual heat/heat if the whole fin were at base temperature)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An aluminium sphere of 10 mm diameter (ρ = 2700 kg/m³, c = 900 J/kg·K, k = 200 W/m·K) at 250 °C is cooled in air at 30 °C with h = 60 W/m²·K. The time taken for the sphere to cool to 100 °C (in s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "77.3 (accept 76.8 to 77.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Check Bi; if Bi &lt; 0.1 use lumped capacitance: (T − T<sub>∞</sub>)/(T<sub>i</sub> − T<sub>∞</sub>) = e<sup>−t/τ</sup>, τ = ρcL<sub>c</sub>/h.",
+    "L<sub>c</sub> = D/6 = 1.667 mm; Bi = 60 × 0.001667/200 = 0.0005 ≪ 0.1",
+    "τ = 2700 × 900 × 0.001667/60 = 67.5 s",
+    "t = 67.5 × ln(220/70) = 67.5 × 1.1451 = <b>77.3 s</b>",
+    "<b>Exam tip:</b> For a sphere L<sub>c</sub> = R/3 = D/6, not R."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A very long copper rod (k = 380 W/m·K) of 3 mm diameter projects from a wall 60 °C above the surrounding air; h = 25 W/m²·K. The heat transfer from the rod (in W, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.51 (accept 1.49 to 1.53)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Infinitely long fin: Q = √(hPkA<sub>c</sub>) θ<sub>b</sub>.",
+    "P = π × 0.003 = 9.425 × 10<sup>−3</sup> m; A<sub>c</sub> = π(0.003)²/4 = 7.069 × 10<sup>−6</sup> m²",
+    "hPkA<sub>c</sub> = 25 × 9.425 × 10<sup>−3</sup> × 380 × 7.069 × 10<sup>−6</sup> = 6.329 × 10<sup>−4</sup>; √ = 0.02516 W/K",
+    "Q = 0.02516 × 60 = <b>1.51 W</b>",
+    "<b>Exam tip:</b> m = √(4h/(kD)) = 9.37 m<sup>−1</sup>; the long-fin formula holds when mL &gt; about 2.65 (L &gt; 0.28 m here)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Stanton number used in convection is",
+   "fig": null,
+   "opts": [
+    "Nu × Re × Pr",
+    "Re/(Nu Pr)",
+    "hL/k",
+    "Nu/(Re Pr) = h/(ρVc<sub>p</sub>)"
+   ],
+   "ans": "(D) Nu/(Re Pr) = h/(ρVc<sub>p</sub>)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> St = h/(ρVc<sub>p</sub>): heat actually transferred to the wall relative to the heat-capacity flux of the stream.",
+    "Since Nu = hL/k, Re = ρVL/μ and Pr = μc<sub>p</sub>/k, Nu/(Re Pr) = h/(ρVc<sub>p</sub>): <b>(D)</b>.",
+    "It appears in the Reynolds–Colburn analogy St Pr<sup>2/3</sup> = C<sub>f</sub>/2.",
+    "<b>Exam tip:</b> Peclet number = Re × Pr, so St = Nu/Pe."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "For fully developed laminar flow in a circular tube with a uniform wall temperature, Nu = 3.66. Water (k = 0.6 W/m·K) flows in a tube of 10 mm diameter. The heat transfer coefficient (in W/m²·K, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "219.6 (accept 218.5 to 220.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In fully developed laminar flow Nu is a constant: 3.66 (uniform wall temperature) or 4.36 (uniform heat flux).",
+    "h = Nu k/D = 3.66 × 0.6/0.01 = <b>219.6 W/m²·K</b>",
+    "It does not depend on the velocity at all, only on D.",
+    "<b>Exam tip:</b> Halving D doubles h in laminar flow: one reason for compact heat exchangers with narrow passages."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For turbulent flow over a flat plate (local Nu<sub>x</sub> = 0.0296 Re<sub>x</sub><sup>0.8</sup>Pr<sup>1/3</sup>), the local heat transfer coefficient h<sub>x</sub> varies with distance x from the leading edge as",
+   "fig": null,
+   "opts": [
+    "x<sup>−0.5</sup>",
+    "x<sup>0.2</sup>",
+    "x<sup>−0.2</sup>",
+    "independent of x"
+   ],
+   "ans": "(C) x<sup>−0.2</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> h<sub>x</sub> = Nu<sub>x</sub> k/x.",
+    "Nu<sub>x</sub> ∝ x<sup>0.8</sup>, so h<sub>x</sub> ∝ x<sup>0.8</sup>/x = <b>x<sup>−0.2</sup> (C)</b>.",
+    "In laminar flow, Nu<sub>x</sub> ∝ x<sup>0.5</sup> gives h<sub>x</sub> ∝ x<sup>−0.5</sup>: h falls off much faster.",
+    "<b>Exam tip:</b> At transition h<sub>x</sub> jumps up sharply because turbulence thins the viscous sublayer."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two cards are drawn one after the other without replacement from a well-shuffled pack of 52 cards. The probability that both are aces is",
+   "fig": null,
+   "opts": [
+    "1/169",
+    "1/221",
+    "1/26",
+    "2/221"
+   ],
+   "ans": "(B) 1/221",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Without replacement, multiply the conditional probabilities.",
+    "P = (4/52) × (3/51) = 12/2652 = <b>1/221 (B)</b>",
+    "Same as C(4, 2)/C(52, 2) = 6/1326.",
+    "<b>Exam tip:</b> With replacement it would be (1/13)² = 1/169, option (A)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Ten points lie in a plane, of which exactly 4 are collinear and no other three are collinear. The number of triangles that can be formed with these points as vertices is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "116",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Every choice of 3 non-collinear points gives a triangle.",
+    "All selections: C(10, 3) = 120",
+    "Collinear selections from the 4 points: C(4, 3) = 4 (these give no triangle)",
+    "Triangles = 120 − 4 = <b>116</b>",
+    "<b>Exam tip:</b> For straight lines through pairs of these points: C(10, 2) − C(4, 2) + 1 = 40."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The line graph shows the annual profit (₹ crore) of companies X and Y from 2020 to 2024. By about what percentage did the combined profit of the two companies increase from 2020 to 2024?",
+   "fig": "d48p_q9.png",
+   "opts": [
+    "36.6 %",
+    "44.0 %",
+    "52.0 %",
+    "57.8 %"
+   ],
+   "ans": "(D) 57.8 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Read the values, add, then percentage change = (new − old)/old × 100.",
+    "2020: X = 40, Y = 50, total 90. 2024: X = 72, Y = 70, total 142.",
+    "Increase = 52/90 × 100 = <b>57.8 % (D)</b>",
+    "<b>Exam tip:</b> 36.6 % = 52/142 uses the wrong base; always divide by the earlier value."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Inside a closed cubical enclosure, the shape factor from one face to each adjacent face is 0.2. The shape factor from a face to the opposite face is",
+   "fig": null,
+   "opts": [
+    "0.2",
+    "0.25",
+    "0.167",
+    "0.8"
+   ],
+   "ans": "(A) 0.2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Summation rule: the shape factors from a surface to all surfaces of an enclosure add up to 1.",
+    "A flat face does not see itself: F<sub>11</sub> = 0. It has 4 adjacent faces and 1 opposite face.",
+    "4 × 0.2 + F<sub>opp</sub> = 1 → F<sub>opp</sub> = <b>0.2 (A)</b>",
+    "<b>Exam tip:</b> So each face sees every other face equally: 1/5 each, as symmetry also suggests."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a counter-flow heat exchanger of 5 m² area (U = 400 W/m²·K), the hot fluid cools from 160 °C to 100 °C and the cold fluid is heated from 40 °C to 90 °C. The heat transfer rate (in kW, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "129.7 (accept 129.0 to 130.4)",
+   "sfig": "d48p_s11.png",
+   "solution": [
+    "<b>Concept:</b> Q = UA × LMTD with the terminal differences for counter-flow.",
+    "ΔT<sub>1</sub> = 160 − 90 = 70 °C (hot in, cold out); ΔT<sub>2</sub> = 100 − 40 = 60 °C",
+    "LMTD = (70 − 60)/ln(70/60) = 10/0.1542 = 64.87 °C",
+    "Q = 400 × 5 × 64.87 = <b>129.7 kW</b>",
+    "<b>Exam tip:</b> When ΔT<sub>1</sub>/ΔT<sub>2</sub> &lt; 1.5, the arithmetic mean (65 °C) is within 0.3 % of the LMTD."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an evaporator, the refrigerant boils at constant temperature while air flows over the tubes. If the exchanger has NTU = 2, its effectiveness is about",
+   "fig": null,
+   "opts": [
+    "0.500",
+    "0.667",
+    "0.865",
+    "0.981"
+   ],
+   "ans": "(C) 0.865",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A boiling or condensing fluid has C → ∞, so C<sub>r</sub> = 0.",
+    "For C<sub>r</sub> = 0 every arrangement gives ε = 1 − e<sup>−NTU</sup>.",
+    "ε = 1 − e<sup>−2</sup> = 1 − 0.135 = <b>0.865 (C)</b>",
+    "<b>Exam tip:</b> 0.667 = NTU/(1 + NTU) is the counter-flow value for C<sub>r</sub> = 1; 0.5 is the parallel-flow limit for C<sub>r</sub> = 1."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a Rankine cycle the condenser pressure is lowered, keeping the boiler conditions unchanged. Then",
+   "fig": null,
+   "opts": [
+    "the efficiency increases but the steam leaving the turbine becomes wetter",
+    "the efficiency decreases",
+    "the turbine exhaust becomes drier",
+    "the pump work decreases"
+   ],
+   "ans": "(A) the efficiency increases but the steam leaving the turbine becomes wetter",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Lower condenser pressure lowers the temperature at which heat is rejected.",
+    "The net work rises and the mean temperature of heat rejection falls, so η <b>increases</b>.",
+    "But the expansion line extends further into the wet region: the exhaust is <b>wetter (A)</b>. Pump work increases slightly.",
+    "<b>Exam tip:</b> The lowest condenser pressure is set by the cooling-water temperature (about 5–10 kPa)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gas turbine plant with a regenerator works on air with constant c<sub>p</sub>. The actual temperatures are: compressor inlet 300 K, compressor exit 500 K, turbine inlet 1100 K and turbine exit 700 K. The regenerator effectiveness is 0.75. The thermal efficiency of the plant (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "44.44 (accept 44.10 to 44.80)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The regenerator heats the compressed air from T<sub>2</sub> to T<sub>x</sub> = T<sub>2</sub> + ε(T<sub>4</sub> − T<sub>2</sub>), so the fuel supplies only c<sub>p</sub>(T<sub>3</sub> − T<sub>x</sub>).",
+    "T<sub>x</sub> = 500 + 0.75 × (700 − 500) = 650 K",
+    "w<sub>net</sub>/c<sub>p</sub> = (1100 − 700) − (500 − 300) = 200 K; q<sub>in</sub>/c<sub>p</sub> = 1100 − 650 = 450 K",
+    "η = 200/450 = <b>44.44 %</b> (without regenerator: 200/600 = 33.3 %)",
+    "<b>Exam tip:</b> The regenerator changes only the heat input, never the net work."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An ideal Brayton cycle on air (γ = 1.4) works between 300 K and 1350 K. The pressure ratio that gives the maximum net work per kg (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "13.90 (accept 13.80 to 14.00)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Maximum net work when T<sub>2</sub> = T<sub>4</sub> = √(T<sub>1</sub>T<sub>3</sub>), i.e. r<sub>p</sub> = (T<sub>3</sub>/T<sub>1</sub>)<sup>γ/(2(γ−1))</sup>.",
+    "T<sub>3</sub>/T<sub>1</sub> = 1350/300 = 4.5; γ/(2(γ − 1)) = 1.75",
+    "r<sub>p</sub> = 4.5<sup>1.75</sup> = <b>13.90</b>",
+    "<b>Exam tip:</b> At this pressure ratio, T<sub>2</sub> = T<sub>4</sub> = 636.4 K, so a regenerator would be of no use."
+   ]
+  }
+ ]
+}

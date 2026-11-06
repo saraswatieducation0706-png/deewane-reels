@@ -1,0 +1,270 @@
+{
+ "day": 49,
+ "subject": "Applied Thermodynamics",
+ "topic": "IC Engines",
+ "days_to_gate": 54,
+ "summary": "the air-standard Otto, Diesel and dual cycles (efficiency, mean effective pressure, cut-off and pressure ratios, comparisons) and IC engine performance: indicated and brake power, mechanical, thermal, volumetric and relative efficiencies, bsfc, the Morse test and the heat balance",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Applied Thermodynamics, Refrigeration & Air Conditioning",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The air-standard efficiency of the Otto cycle depends on",
+   "fig": null,
+   "opts": [
+    "the heat supplied per cycle",
+    "the compression ratio and γ only",
+    "the maximum cycle temperature",
+    "the engine speed"
+   ],
+   "ans": "(B) the compression ratio and γ only",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>Otto</sub> = 1 − 1/r<sup>γ−1</sup>.",
+    "Only the compression ratio r and the ratio of specific heats γ appear: <b>(B)</b>.",
+    "The heat supplied changes the work and the MEP, not the air-standard efficiency.",
+    "<b>Exam tip:</b> Real SI engines cannot raise r beyond about 10–12 because of knock, which caps their efficiency."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard Otto cycle (γ = 1.4) has an efficiency of 55 %. Its compression ratio (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.36 (accept 7.30 to 7.42)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Invert η = 1 − 1/r<sup>γ−1</sup>.",
+    "r<sup>0.4</sup> = 1/(1 − 0.55) = 2.222",
+    "r = 2.222<sup>2.5</sup> = <b>7.36</b>",
+    "<b>Exam tip:</b> Each step up in r gives a smaller gain in η: going from r = 7.36 to 10 adds only about 5 percentage points."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an air-standard Diesel cycle 1–2–3–4 (1–2 isentropic compression, 2–3 constant-pressure heat addition), the cut-off ratio is defined as",
+   "fig": null,
+   "opts": [
+    "V<sub>1</sub>/V<sub>2</sub>",
+    "p<sub>3</sub>/p<sub>2</sub>",
+    "V<sub>3</sub>/V<sub>2</sub>",
+    "V<sub>4</sub>/V<sub>3</sub>"
+   ],
+   "ans": "(C) V<sub>3</sub>/V<sub>2</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cut-off ratio ρ is the volume ratio over which fuel is burnt (heat is added) at constant pressure.",
+    "ρ = <b>V<sub>3</sub>/V<sub>2</sub> (C)</b>. V<sub>1</sub>/V<sub>2</sub> is the compression ratio r.",
+    "The expansion ratio is V<sub>4</sub>/V<sub>3</sub> = r/ρ.",
+    "<b>Exam tip:</b> Cut-off as a percentage of stroke = (ρ − 1)/(r − 1) × 100."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard Diesel cycle (γ = 1.4) has a compression ratio of 16 and a cut-off ratio of 2.5. Its thermal efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "59.05 (accept 58.70 to 59.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>Diesel</sub> = 1 − (1/r<sup>γ−1</sup>)(ρ<sup>γ</sup> − 1)/[γ(ρ − 1)].",
+    "16<sup>0.4</sup> = 3.0314, so 1/r<sup>0.4</sup> = 0.3299",
+    "2.5<sup>1.4</sup> = 3.6067; (3.6067 − 1)/(1.4 × 1.5) = 1.2413",
+    "η = 1 − 0.3299 × 1.2413 = <b>59.05 %</b>",
+    "<b>Exam tip:</b> The Otto cycle with r = 16 would give 67.0 %: the bracket term is the Diesel penalty."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Although the Otto cycle is more efficient than the Diesel cycle for the same compression ratio, practical CI (diesel) engines are more efficient than SI engines mainly because",
+   "fig": null,
+   "opts": [
+    "diesel fuel has a much higher calorific value",
+    "CI engines run at higher speeds",
+    "CI engines have lower friction",
+    "CI engines work at much higher compression ratios (about 15–22), as only air is compressed"
+   ],
+   "ans": "(D) CI engines work at much higher compression ratios (about 15–22), as only air is compressed",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a CI engine only air is compressed and fuel is injected at the end, so there is no knock limit on compression.",
+    "Compression ratios of 15–22 against 8–12 for SI engines more than make up for the Diesel cycle penalty: <b>(D)</b>.",
+    "CI engines also run lean and unthrottled, reducing pumping losses at part load.",
+    "<b>Exam tip:</b> Compare cycles at equal maximum pressure to see why: the Diesel cycle then wins."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An engine has an indicated power of 60 kW and a mechanical efficiency of 80 %. It burns 15 kg/h of fuel of calorific value 42 000 kJ/kg. Its brake thermal efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "27.43 (accept 27.20 to 27.65)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>bth</sub> = bp/(ṁ<sub>f</sub> × CV), with bp = η<sub>m</sub> × ip.",
+    "bp = 0.8 × 60 = 48 kW",
+    "Fuel energy = 15 × 42 000/3600 = 175 kW",
+    "η<sub>bth</sub> = 48/175 = <b>27.43 %</b> (indicated thermal efficiency = 60/175 = 34.29 %)",
+    "<b>Exam tip:</b> η<sub>bth</sub> = η<sub>m</sub> × η<sub>ith</sub>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a rope brake dynamometer, W is the dead load, S the spring balance reading, D the effective brake-drum diameter (m) and N the speed (rpm). The brake power (kW) is",
+   "fig": null,
+   "opts": [
+    "(W − S)πDN/60 000",
+    "(W + S)πDN/60 000",
+    "(W − S)DN/60 000",
+    "2π(W − S)N/60 000"
+   ],
+   "ans": "(A) (W − S)πDN/60 000",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Brake torque T = (W − S) × D/2 (net rope tension × drum radius).",
+    "bp = 2πNT/60 = 2πN(W − S)(D/2)/60 W = (W − S)πDN/60 W",
+    "In kW: <b>(W − S)πDN/60 000 (A)</b>, with D = drum + rope diameter.",
+    "<b>Exam tip:</b> All the brake power is dissipated as heat in the drum, which must be water-cooled."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A four-cylinder four-stroke engine (bore 90 mm, stroke 100 mm) develops a brake power of 40 kW at 3000 rpm. Its brake mean effective pressure (in bar, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.29 (accept 6.24 to 6.34)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> bp = p<sub>mb</sub> × V<sub>s</sub> × (N/2)/60 × number of cylinders for a four-stroke engine.",
+    "V<sub>s</sub> = (π/4)(0.09)² × 0.1 = 6.362 × 10<sup>−4</sup> m³ per cylinder",
+    "Swept volume rate = 4 × 6.362 × 10<sup>−4</sup> × 1500/60 = 0.06362 m³/s",
+    "p<sub>mb</sub> = 40/0.06362 = 628.8 kPa = <b>6.29 bar</b>",
+    "<b>Exam tip:</b> Do not forget N/2 for four-stroke engines; a two-stroke engine uses N."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The p–V diagram shown is that of an air-standard dual (limited-pressure) cycle. In this cycle heat is added",
+   "fig": "d49p_q9.png",
+   "opts": [
+    "during 2–3 at constant volume and during 3–4 at constant pressure",
+    "during 2–3 at constant pressure and during 3–4 at constant volume",
+    "only during 2–3 at constant volume",
+    "during 4–5 at constant volume"
+   ],
+   "ans": "(A) during 2–3 at constant volume and during 3–4 at constant pressure",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The dual cycle burns part of the fuel at constant volume (near TDC) and the rest at constant pressure.",
+    "2–3: vertical line, constant-volume heat addition; 3–4: horizontal line, constant-pressure heat addition: <b>(A)</b>.",
+    "4–5 is isentropic expansion and 5–1 constant-volume heat rejection.",
+    "<b>Exam tip:</b> With pressure ratio α = 1 it becomes the Diesel cycle; with cut-off ratio ρ = 1 it becomes the Otto cycle."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard dual cycle (γ = 1.4) has a compression ratio of 15, a pressure ratio of 1.4 during constant-volume heating and a cut-off ratio of 1.5. Its thermal efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "63.95 (accept 63.60 to 64.30)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η = 1 − (1/r<sup>γ−1</sup>)(αρ<sup>γ</sup> − 1)/[(α − 1) + γα(ρ − 1)].",
+    "15<sup>0.4</sup> = 2.9542, so 1/r<sup>0.4</sup> = 0.3385",
+    "αρ<sup>γ</sup> − 1 = 1.4 × 1.7641 − 1 = 1.4697; denominator = 0.4 + 1.4 × 1.4 × 0.5 = 1.38",
+    "η = 1 − 0.3385 × 1.0650 = <b>63.95 %</b>",
+    "<b>Exam tip:</b> Check against limits: Otto (r = 15) gives 66.15 %, so the dual value must be lower."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Beyond a certain speed, the volumetric efficiency of an engine falls as the speed increases, mainly because",
+   "fig": null,
+   "opts": [
+    "the compression ratio falls",
+    "the flow losses (friction and choking) across the intake valve rise sharply with the gas velocity",
+    "the fuel becomes richer",
+    "the exhaust temperature falls"
+   ],
+   "ans": "(B) the flow losses (friction and choking) across the intake valve rise sharply with the gas velocity",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Volumetric efficiency = actual air inducted/(swept volume × ambient density).",
+    "At high speed the gas velocity through the valve rises, the pressure drop grows roughly with velocity squared and the flow can choke: <b>(B)</b>.",
+    "At low speed, back-flow through the late-closing intake valve lowers it instead, so η<sub>v</sub> peaks at a mid speed.",
+    "<b>Exam tip:</b> Valve timing (inlet closing after BDC) uses the inertia of the charge to raise η<sub>v</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard Otto cycle has a compression ratio of 8. At the start of compression the air is at 100 kPa and 300 K, and 1500 kJ/kg of heat is added (c<sub>v</sub> = 0.718 kJ/kg·K, γ = 1.4). The maximum pressure in the cycle (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.41 (accept 7.36 to 7.46)",
+   "sfig": "d49p_s12.png",
+   "solution": [
+    "<b>Concept:</b> Isentropic compression, then constant-volume heat addition; use p<sub>3</sub>v<sub>3</sub>/T<sub>3</sub> = p<sub>1</sub>v<sub>1</sub>/T<sub>1</sub> with v<sub>3</sub> = v<sub>1</sub>/r.",
+    "T<sub>2</sub> = 300 × 8<sup>0.4</sup> = 689.2 K",
+    "T<sub>3</sub> = 689.2 + 1500/0.718 = 2778.4 K",
+    "p<sub>3</sub> = p<sub>1</sub> r T<sub>3</sub>/T<sub>1</sub> = 100 × 8 × 2778.4/300 = 7409 kPa = <b>7.41 MPa</b>",
+    "<b>Exam tip:</b> p<sub>2</sub> = 100 × 8<sup>1.4</sup> = 1838 kPa; heat addition multiplies it by T<sub>3</sub>/T<sub>2</sub> = 4.03."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The relative efficiency of an IC engine is defined as",
+   "fig": null,
+   "opts": [
+    "brake power/indicated power",
+    "indicated thermal efficiency/mechanical efficiency",
+    "actual (indicated) thermal efficiency/air-standard efficiency",
+    "volumetric efficiency × mechanical efficiency"
+   ],
+   "ans": "(C) actual (indicated) thermal efficiency/air-standard efficiency",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Relative (efficiency) ratio compares the real engine with its ideal air-standard cycle at the same compression ratio.",
+    "η<sub>rel</sub> = η<sub>actual</sub>/η<sub>air-standard</sub>: <b>(C)</b>. Typical values are 0.6–0.8.",
+    "Option (A) is the mechanical efficiency.",
+    "<b>Exam tip:</b> If η<sub>ith</sub> = 30 % and the Otto value is 56.5 %, η<sub>rel</sub> = 0.53."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An air-standard Diesel cycle has a compression ratio of 18, with air at 300 K at the start of compression. 1200 kJ/kg of heat is added at constant pressure (c<sub>p</sub> = 1.005 kJ/kg·K, γ = 1.4). The cut-off ratio (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.253 (accept 2.240 to 2.265)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In constant-pressure heat addition, ρ = V<sub>3</sub>/V<sub>2</sub> = T<sub>3</sub>/T<sub>2</sub>.",
+    "T<sub>2</sub> = 300 × 18<sup>0.4</sup> = 953.3 K",
+    "T<sub>3</sub> = 953.3 + 1200/1.005 = 2147.3 K",
+    "ρ = 2147.3/953.3 = <b>2.253</b>",
+    "<b>Exam tip:</b> More heat (higher load) means a larger cut-off ratio and a lower Diesel-cycle efficiency."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The compression ratio of a petrol (SI) engine is limited mainly by",
+   "fig": null,
+   "opts": [
+    "the strength of the connecting rod",
+    "the volumetric efficiency",
+    "the cooling system capacity",
+    "detonation (knock) of the end gas"
+   ],
+   "ans": "(D) detonation (knock) of the end gas",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an SI engine the fuel–air mixture is compressed together.",
+    "At high compression ratios the end gas self-ignites before the flame reaches it, causing <b>knock (D)</b>.",
+    "Higher-octane fuel, a compact chamber and cooler intake allow higher r.",
+    "<b>Exam tip:</b> In CI engines the opposite holds: a higher compression ratio reduces diesel knock by shortening the ignition delay."
+   ]
+  }
+ ]
+}
