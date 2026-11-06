@@ -1,0 +1,265 @@
+{
+ "day": 79,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 3",
+ "days_to_gate": 19,
+ "summary": "a mixed full-syllabus warm-up for the third full-length mock: word usage, percentage change, determinants, integration by parts, concurrent forces, hollow shafts, Kutzbach criterion, cantilever vibration, stress concentration, centre of pressure, heat-exchanger arrangements, compressor energy balance, summer air conditioning, bend allowance and moving-average forecasting",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Formula Sprint: Mechanics & Design",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the word that correctly completes the sentence: The new heat-treatment schedule had a marked ______ on the surface hardness of the gears.",
+   "fig": null,
+   "opts": [
+    "affect",
+    "effect",
+    "affection",
+    "effectuate"
+   ],
+   "ans": "(B) effect",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Effect' is usually a noun (a result); 'affect' is usually a verb (to influence).",
+    "The blank follows the article 'a marked …', so a noun is needed.",
+    "The noun meaning 'result' is <b>effect</b>, option (B).",
+    "<b>Exam tip:</b> Remember 'A for Action' (affect is the verb) and 'E for End result' (effect is the noun)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The price of diesel rises by 25 %. By what percentage must a transport firm reduce its diesel consumption so that its spending on diesel stays the same? ______",
+   "fig": null,
+   "opts": null,
+   "ans": "20",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Spending = price × quantity; if spending is fixed, the quantity changes by the inverse ratio of the price.",
+    "New price = 1.25 × old, so new quantity = old/1.25 = 0.8 × old.",
+    "Reduction = 1 − 0.8 = <b>20 %</b>.",
+    "<b>Exam tip:</b> For an increase of r %, the cut needed is r/(100 + r) × 100 % — not r %. Here 25/125 × 100 = 20 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A is a 3 × 3 matrix with det(A) = 4. The value of det(2A<sup>−1</sup>) is",
+   "fig": null,
+   "opts": [
+    "1/2",
+    "8",
+    "32",
+    "2"
+   ],
+   "ans": "(D) 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an n × n matrix, det(kA) = k<sup>n</sup> det(A) and det(A<sup>−1</sup>) = 1/det(A).",
+    "det(2A<sup>−1</sup>) = 2³ × det(A<sup>−1</sup>) = 8 × (1/4).",
+    "= <b>2</b>, option (D).",
+    "<b>Exam tip:</b> The scalar comes out raised to the order of the matrix — 1/2 comes from forgetting the cube."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The value of the integral of x e<sup>x</sup> from x = 0 to x = 1 is",
+   "fig": null,
+   "opts": [
+    "1",
+    "e − 1",
+    "e",
+    "1/2"
+   ],
+   "ans": "(A) 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Integration by parts: ∫u dv = uv − ∫v du, with u = x and dv = e<sup>x</sup> dx.",
+    "∫x e<sup>x</sup> dx = x e<sup>x</sup> − e<sup>x</sup> = (x − 1)e<sup>x</sup>.",
+    "From 0 to 1: (0)e − (−1)(1) = <b>1</b>, option (A).",
+    "<b>Exam tip:</b> Differentiate (x − 1)e<sup>x</sup> to check: you get x e<sup>x</sup>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A weight of 100 N hangs from two light strings tied to a ceiling, as shown. One string makes 30° and the other 60° with the horizontal. The tension in the string inclined at 60° (in N, round off to one decimal place) is ______",
+   "fig": "d79p_q5.png",
+   "opts": null,
+   "ans": "86.6 (accept 85.8 to 87.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Three concurrent forces in equilibrium — use Lami's theorem: each force is proportional to the sine of the angle between the other two.",
+    "Angles between the forces: between the strings 90°; between the weight and the 60° string 150°; between the weight and the 30° string 120°. Lami: T<sub>2</sub>/sin 120° = W/sin 90°, so T<sub>2</sub> = 100 × 0.866. Check by resolving:",
+    "Horizontal: T<sub>1</sub> cos 30° = T<sub>2</sub> cos 60° → T<sub>1</sub> = 0.577 T<sub>2</sub>. Vertical: T<sub>1</sub> sin 30° + T<sub>2</sub> sin 60° = 100 → 1.155 T<sub>2</sub> = 100.",
+    "T<sub>2</sub> (60° string) = <b>86.6 N</b>, and T<sub>1</sub> = 50.0 N.",
+    "<b>Exam tip:</b> The steeper string always carries the larger share of a hanging load."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A hollow steel shaft has an outer diameter of 80 mm and an inner diameter of 60 mm. It transmits a torque of 5 kN·m. The maximum shear stress in the shaft (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "72.8 (accept 72.4 to 73.2)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ<sub>max</sub> = T r<sub>o</sub>/J with J = π(D<sup>4</sup> − d<sup>4</sup>)/32 for a hollow shaft.",
+    "J = π(80<sup>4</sup> − 60<sup>4</sup>)/32 = π × 2.80 × 10<sup>7</sup>/32 = 2.749 × 10<sup>6</sup> mm<sup>4</sup>.",
+    "τ<sub>max</sub> = 5 × 10<sup>6</sup> × 40/2.749 × 10<sup>6</sup> = <b>72.8 MPa</b> (at the outer surface).",
+    "<b>Exam tip:</b> The stress at the inner surface is 72.8 × 30/40 = 54.6 MPa — never zero in a hollow shaft."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A planar mechanism has five links (including the fixed link) joined in a single closed loop by five revolute (turning) pairs. Its degree of freedom is",
+   "fig": null,
+   "opts": [
+    "1",
+    "0",
+    "3",
+    "2"
+   ],
+   "ans": "(D) 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Kutzbach criterion for planar mechanisms: F = 3(n − 1) − 2j − h.",
+    "n = 5, j = 5 (lower pairs), h = 0.",
+    "F = 3 × 4 − 2 × 5 = <b>2</b>, option (D): two independent inputs are needed.",
+    "<b>Exam tip:</b> Inserting one more link and one more pin into a closed loop adds 3 − 2 = 1 degree of freedom, so a five-bar chain has one more DOF than a four-bar chain."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A light steel cantilever (E = 200 GPa) of length 0.5 m and square cross-section 20 mm × 20 mm carries a mass of 10 kg at its free end, as shown. Neglecting the mass of the beam, the natural frequency of transverse vibration (in Hz, round off to two decimal places) is ______",
+   "fig": "d79p_q8.png",
+   "opts": null,
+   "ans": "12.73 (accept 12.60 to 12.86)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The end stiffness of a cantilever is k = 3EI/L³; then f<sub>n</sub> = (1/2π)√(k/m).",
+    "I = 20 × 20³/12 = 13 333 mm<sup>4</sup>. k = 3 × 200 000 × 13 333/500³ = 64 N/mm = 64 000 N/m.",
+    "f<sub>n</sub> = (1/2π)√(64 000/10) = 80/(2π) = <b>12.73 Hz</b>.",
+    "<b>Exam tip:</b> Equivalently f<sub>n</sub> = (1/2π)√(g/δ<sub>st</sub>) with δ<sub>st</sub> = mg/k = 1.53 mm — a quick cross-check."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a component of a <i>ductile</i> material carrying a <i>static</i> load, the theoretical stress concentration factor at a notch is usually ignored in design because",
+   "fig": null,
+   "opts": [
+    "the notch raises the yield strength of the material",
+    "local yielding at the notch root redistributes the stress over the section",
+    "ductile materials are not sensitive to notches under any loading",
+    "the factor applies only to compressive loads"
+   ],
+   "ans": "(B) local yielding at the notch root redistributes the stress over the section",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A stress concentration factor gives the elastic peak stress at a notch.",
+    "In a ductile material the small region at the notch root yields first, and the load is shared by the surrounding material, so the peak is relieved before failure.",
+    "Hence for static loads on ductile parts the factor is usually ignored: <b>(B)</b>. For brittle materials, and for fatigue loading of any material, it must be applied.",
+    "<b>Exam tip:</b> Option (C) is the trap — ductile parts are very notch-sensitive in fatigue."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A vertical circular gate of 1 m diameter closes an opening in the wall of a water tank, as shown. Its top edge is 2 m below the free surface. The depth of the centre of pressure below the free surface (in m, round off to three decimal places) is ______",
+   "fig": "d79p_q10.png",
+   "opts": null,
+   "ans": "2.525 (accept 2.510 to 2.540)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> h<sub>cp</sub> = h̄ + I<sub>G</sub>/(A h̄) for a vertical plane surface.",
+    "h̄ = 2 + 0.5 = 2.5 m; A = π/4 × 1² = 0.7854 m²; I<sub>G</sub> = π × 1<sup>4</sup>/64 = 0.04909 m<sup>4</sup>.",
+    "h<sub>cp</sub> = 2.5 + 0.04909/(0.7854 × 2.5) = 2.5 + 0.025 = <b>2.525 m</b>. (The resultant force is ρg h̄ A = 19.3 kN.)",
+    "<b>Exam tip:</b> For a circle I<sub>G</sub>/A = d²/16, so h<sub>cp</sub> − h̄ = d²/(16h̄) — no need to compute I<sub>G</sub> separately."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following statements about heat exchangers is correct?",
+   "fig": null,
+   "opts": [
+    "In a counter-flow exchanger, the outlet temperature of the cold fluid can be higher than the outlet temperature of the hot fluid.",
+    "In a parallel-flow exchanger, the outlet temperature of the cold fluid can be higher than the outlet temperature of the hot fluid.",
+    "For the same inlet and outlet temperatures, the LMTD of a parallel-flow exchanger exceeds that of a counter-flow exchanger.",
+    "When one fluid condenses at constant temperature, a counter-flow arrangement gives a higher effectiveness than a parallel-flow one."
+   ],
+   "ans": "(A) In a counter-flow exchanger, the outlet temperature of the cold fluid can be higher than the outlet temperature of the hot fluid.",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In counter-flow the cold fluid leaves next to the hot inlet; in parallel flow both leave at the same end.",
+    "So in counter-flow T<sub>c,out</sub> may exceed T<sub>h,out</sub> (it is limited only by T<sub>h,in</sub>), while in parallel flow T<sub>c,out</sub> can at most approach T<sub>h,out</sub>.",
+    "Counter-flow has the larger LMTD, and with a condensing fluid (C<sub>r</sub> = 0) both arrangements give ε = 1 − e<sup>−NTU</sup>. Answer: <b>(A)</b>.",
+    "<b>Exam tip:</b> 'Temperature cross' is possible only in counter-flow."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (c<sub>p</sub> = 1.005 kJ/kg·K) flows at 1 kg/s through an adiabatic compressor and its temperature rises from 300 K to 450 K. Neglecting changes in kinetic and potential energy, the power required (in kW, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "150.8 (accept 149.3 to 152.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady-flow energy equation for an adiabatic device: W = ṁ(h<sub>2</sub> − h<sub>1</sub>) = ṁc<sub>p</sub>(T<sub>2</sub> − T<sub>1</sub>).",
+    "W = 1 × 1.005 × (450 − 300).",
+    "= <b>150.8 kW</b> (input).",
+    "<b>Exam tip:</b> Use c<sub>p</sub> (enthalpy) for flow devices; c<sub>v</sub> would give 107.7 kW, a common slip."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a summer air-conditioning system for a humid climate, the usual sequence of processes applied to the supply air is",
+   "fig": null,
+   "opts": [
+    "heating followed by humidification",
+    "adiabatic (evaporative) cooling only",
+    "cooling and dehumidification followed by reheating",
+    "sensible cooling followed by humidification"
+   ],
+   "ans": "(C) cooling and dehumidification followed by reheating",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hot humid air must lose both sensible heat and moisture.",
+    "The cooling coil is run below the dew point so that moisture condenses (cooling and dehumidification); the air then often becomes too cold and is reheated to the required supply temperature.",
+    "Answer: <b>(C)</b>.",
+    "<b>Exam tip:</b> Evaporative cooling (B) adds moisture — it suits hot <i>dry</i> climates only."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 2 mm thick sheet is bent through 90° with an inside bend radius of 5 mm. Taking the neutral axis at 0.4 times the thickness from the inside surface, the bend allowance (developed length of the bend, in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9.11 (accept 9.02 to 9.20)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bend allowance = α(R + kt), the arc length of the neutral axis, with α in radians.",
+    "R + kt = 5 + 0.4 × 2 = 5.8 mm; α = π/2.",
+    "Bend allowance = 1.5708 × 5.8 = <b>9.11 mm</b>.",
+    "<b>Exam tip:</b> For small R/t the neutral axis shifts towards the inside (k ≈ 0.33–0.4); for large R/t it is near mid-thickness (k = 0.5)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The monthly demand of an item from January to June was 120, 132, 126, 138, 144 and 129 units. The three-month simple moving-average forecast for July is",
+   "fig": null,
+   "opts": [
+    "129 units",
+    "136 units",
+    "131.5 units",
+    "137 units"
+   ],
+   "ans": "(D) 137 units",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An n-period moving average forecasts the next period as the mean of the latest n actual values.",
+    "Latest three months: April 138, May 144, June 129.",
+    "Forecast = (138 + 144 + 129)/3 = 411/3 = <b>137 units</b>, option (D).",
+    "<b>Exam tip:</b> The mean of all six months is 131.5 — use only the last n values."
+   ]
+  }
+ ]
+}
