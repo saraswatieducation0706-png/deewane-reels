@@ -1,0 +1,274 @@
+{
+ "day": 71,
+ "subject": "Fluid Mechanics + Heat Transfer",
+ "topic": "FM & HT Revision",
+ "days_to_gate": 29,
+ "summary": "a full revision of Fluid Mechanics (stability of floating bodies, kinematics, radial flow and Bernoulli, angular momentum, dimensional analysis, laminar film flow, boundary-layer separation, minor losses) and Heat Transfer (conduction with heat generation, fins, Prandtl number, black-body radiation, shape factors, ε-NTU heat exchangers and the overall heat transfer coefficient)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 1",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A solid wooden cylinder of diameter D and height H (specific gravity 0.6) floats in water with its axis vertical, as shown. The minimum ratio D/H for it to float stably in this position (round off to two decimal places) is ______",
+   "fig": "d71p_q1.png",
+   "opts": null,
+   "ans": "1.39 (accept 1.37 to 1.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A floating body is stable if its metacentric height GM = BM − BG &gt; 0, with BM = I/V (I = second moment of the waterplane area, V = displaced volume).",
+    "Immersed depth h = 0.6H. G is at H/2 and B at h/2 = 0.3H above the base, so BG = 0.5H − 0.3H = 0.2H",
+    "BM = (πD⁴/64)/(πD²h/4) = D²/(16h) = D²/(9.6H)",
+    "GM &gt; 0 → D²/(9.6H) &gt; 0.2H → (D/H)² &gt; 1.92 → D/H &gt; <b>1.39</b>",
+    "<b>Exam tip:</b> A tall thin cylinder floats on its side; it can float upright only if it is wide enough for BM to exceed BG."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A two-dimensional flow has the velocity field u = x², v = −2xy. The flow is",
+   "fig": null,
+   "opts": [
+    "compressible and irrotational",
+    "compressible and rotational",
+    "incompressible and rotational",
+    "incompressible and irrotational"
+   ],
+   "ans": "(C) incompressible and rotational",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Continuity (incompressible): ∂u/∂x + ∂v/∂y = 0. Rotation: ω<sub>z</sub> = ½(∂v/∂x − ∂u/∂y).",
+    "∂u/∂x + ∂v/∂y = 2x − 2x = 0: the flow is incompressible.",
+    "∂v/∂x − ∂u/∂y = −2y − 0 = −2y ≠ 0 (except on y = 0): the flow is rotational, so no velocity potential exists.",
+    "Answer: <b>(C) incompressible and rotational</b>.",
+    "<b>Exam tip:</b> A stream function exists for every 2-D incompressible flow; a velocity potential exists only if the flow is also irrotational."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water flows radially outward at 0.01 m³/s between two parallel horizontal discs 5 mm apart, as shown. Neglecting losses, the rise in pressure from a radius of 0.1 m to a radius of 0.3 m (in kPa, round off to two decimal places) is ______",
+   "fig": "d71p_q3.png",
+   "opts": null,
+   "ans": "4.50 (accept 4.46 to 4.55)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Continuity in radial flow: Q = 2πrbV, so V ∝ 1/r. Bernoulli (same level): p₂ − p₁ = ½ρ(V₁² − V₂²).",
+    "V₁ = 0.01/(2π × 0.1 × 0.005) = 3.183 m/s; V₂ = 0.01/(2π × 0.3 × 0.005) = 1.061 m/s",
+    "p₂ − p₁ = 500 × (3.183² − 1.061²) = 500 × (10.132 − 1.126) = 4503 Pa = <b>4.50 kPa</b>",
+    "<b>Exam tip:</b> The flow slows down as it spreads out, so the pressure rises outward (the discs are pushed apart less at the rim than near the centre)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A lawn sprinkler, shown in plan, has two equal arms of radius 0.2 m, each ending in a 5 mm diameter nozzle pointing tangentially. The total flow is 0.4 litres per second. The torque needed to hold the sprinkler stationary is about",
+   "fig": "d71p_q4.png",
+   "opts": [
+    "0.81 N·m",
+    "0.41 N·m",
+    "1.63 N·m",
+    "0.20 N·m"
+   ],
+   "ans": "(A) 0.81 N·m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Angular-momentum equation for a control volume: T = Σ ṁ V r for the tangential jets.",
+    "Each nozzle carries 0.2 L/s: V = 0.0002/(π × 0.005²/4) = 0.0002/1.963 × 10⁻⁵ = 10.19 m/s",
+    "T = ρQ<sub>total</sub> V r = 1000 × 0.0004 × 10.19 × 0.2 = <b>0.81 N·m (A)</b>",
+    "0.41 N·m counts only one nozzle.",
+    "<b>Exam tip:</b> If the sprinkler is free to rotate at ω, the absolute jet speed becomes V − ωr, and the torque falls to zero when ωr = V (no friction)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The discharge Q over a triangular (V) notch depends on the head H over the notch, the acceleration due to gravity g and the notch angle θ (viscosity and surface tension neglected). Dimensional analysis gives",
+   "fig": null,
+   "opts": [
+    "Q = H √(gH) f(θ)",
+    "Q = √(gH) f(θ)",
+    "Q = H² g f(θ)",
+    "Q = √g H<sup>5/2</sup> f(θ)"
+   ],
+   "ans": "(D) Q = √g H<sup>5/2</sup> f(θ)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Rayleigh's method: Q = C g<sup>a</sup> H<sup>b</sup> f(θ), θ being dimensionless.",
+    "[L³T⁻¹] = [LT⁻²]<sup>a</sup>[L]<sup>b</sup> → T: −1 = −2a → a = ½; L: 3 = a + b → b = 5/2",
+    "So Q = √g H<sup>5/2</sup> f(θ): <b>(D)</b>. The V-notch formula Q = (8/15) C<sub>d</sub> √(2g) tan(θ/2) H<sup>5/2</sup> has exactly this form.",
+    "<b>Exam tip:</b> Option (A) is H<sup>3/2</sup>√g, the form for a rectangular notch per unit width (Q/L)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil (density 900 kg/m³, dynamic viscosity 0.2 Pa·s) flows steadily in laminar regime as a film 3 mm thick down a wide plane inclined at 30° to the horizontal. Taking g = 9.81 m/s², the velocity at the free surface of the film (in mm/s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "99.3 (accept 98.5 to 100.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a falling film, gravity along the plane is balanced by viscous shear; with zero shear at the free surface, u(y) = (ρg sinθ/μ)(hy − y²/2).",
+    "At y = h: u<sub>s</sub> = ρg sinθ h²/(2μ)",
+    "u<sub>s</sub> = 900 × 9.81 × 0.5 × (0.003)²/(2 × 0.2) = 4414.5 × 9 × 10⁻⁶/0.4 = 0.0993 m/s = <b>99.3 mm/s</b>",
+    "Check: flow per metre width q = ρg sinθ h³/(3μ) = 1.99 × 10⁻⁴ m³/s, mean velocity = 66.2 mm/s = (2/3)u<sub>s</sub>; Re = ρVh/μ ≈ 0.9, laminar.",
+    "<b>Exam tip:</b> The film profile is half of the plane-Poiseuille parabola, so the mean is 2/3 of the surface velocity."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a boundary layer on a curved surface, flow separation occurs at the point where",
+   "fig": null,
+   "opts": [
+    "the pressure gradient dp/dx becomes zero",
+    "the velocity gradient (∂u/∂y) at the wall becomes zero in a region of adverse pressure gradient",
+    "the boundary-layer thickness becomes equal to the radius of curvature",
+    "the free-stream velocity reaches its maximum value"
+   ],
+   "ans": "(B) the velocity gradient (∂u/∂y) at the wall becomes zero in a region of adverse pressure gradient",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an adverse pressure gradient (dp/dx &gt; 0) the slow fluid near the wall is decelerated until it stops and reverses.",
+    "Separation point: wall shear τ<sub>w</sub> = μ(∂u/∂y)<sub>y=0</sub> = 0; downstream of it (∂u/∂y)<sub>wall</sub> &lt; 0 (reversed flow).",
+    "dp/dx = 0 marks the point of minimum pressure (maximum free-stream velocity), which lies upstream of separation: <b>(B)</b>.",
+    "<b>Exam tip:</b> Separation can never occur in a favourable pressure gradient (dp/dx &lt; 0); a turbulent boundary layer resists separation longer than a laminar one."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water flows through a sudden contraction from a large pipe into a smaller pipe in which the velocity is 3 m/s. The coefficient of contraction at the vena contracta is 0.62. Taking g = 9.81 m/s², the head loss due to the contraction (in m, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.172 (accept 0.170 to 0.174)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The loss in a sudden contraction is mainly the expansion loss from the vena contracta (velocity V₂/C<sub>c</sub>) to the full pipe: h<sub>L</sub> = (1/C<sub>c</sub> − 1)² V₂²/(2g).",
+    "1/C<sub>c</sub> − 1 = 1/0.62 − 1 = 0.6129; (0.6129)² = 0.3757",
+    "V₂²/(2g) = 9/19.62 = 0.4587 m",
+    "h<sub>L</sub> = 0.3757 × 0.4587 = <b>0.172 m</b>",
+    "<b>Exam tip:</b> With C<sub>c</sub> ≈ 0.62 the loss coefficient is about 0.375; for a very large area ratio it is often rounded to 0.5V²/2g (sharp entrance)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The steady temperature distribution in a plane wall 0.1 m thick (k = 40 W/m·K) is T = 200 − 500x − 2000x² (T in °C, x in m from the left face). The volumetric heat generation rate in the wall is",
+   "fig": null,
+   "opts": [
+    "8.0 × 10⁴ W/m³",
+    "1.6 × 10⁵ W/m³",
+    "2.0 × 10⁴ W/m³",
+    "3.6 × 10⁵ W/m³"
+   ],
+   "ans": "(B) 1.6 × 10⁵ W/m³",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady 1-D conduction with generation: d²T/dx² + q̇/k = 0, so q̇ = −k d²T/dx².",
+    "d²T/dx² = −4000 K/m² → q̇ = −40 × (−4000) = <b>1.6 × 10⁵ W/m³ (B)</b>",
+    "Check: the flux leaving the right face, −k dT/dx at x = 0.1 = 40 × (500 + 400) = 36 000 W/m², minus that entering at x = 0 (40 × 500 = 20 000 W/m²) = 16 000 W/m² = q̇L. ✔",
+    "<b>Exam tip:</b> 8.0 × 10⁴ comes from forgetting that the second derivative of 2000x² is 4000, not 2000."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A long copper pin fin (k = 380 W/m·K) of 4 mm diameter has an insulated tip; h = 20 W/m²·K. The shortest fin length for which it transfers 99 % of the heat of an infinitely long fin of the same section (in mm, round off to the nearest whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "365 (accept 362 to 368)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Insulated-tip fin: Q = √(hPkA) θ<sub>b</sub> tanh(mL); infinite fin: Q = √(hPkA) θ<sub>b</sub>. Their ratio is tanh(mL).",
+    "m = √(hP/(kA)) = √(4h/(kD)) = √(4 × 20/(380 × 0.004)) = √52.63 = 7.255 m⁻¹",
+    "tanh(mL) = 0.99 → mL = tanh⁻¹(0.99) = 2.647",
+    "L = 2.647/7.255 = 0.3648 m ≈ <b>365 mm</b>",
+    "<b>Exam tip:</b> Beyond mL ≈ 2.5–3 extra fin length adds almost nothing, which is why copper fins are kept short."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Prandtl numbers of common fluids near room temperature, arranged in increasing order, are",
+   "fig": null,
+   "opts": [
+    "liquid mercury &lt; air &lt; water &lt; engine oil",
+    "air &lt; liquid mercury &lt; water &lt; engine oil",
+    "liquid mercury &lt; water &lt; air &lt; engine oil",
+    "engine oil &lt; water &lt; air &lt; liquid mercury"
+   ],
+   "ans": "(A) liquid mercury &lt; air &lt; water &lt; engine oil",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Pr = ν/α compares momentum diffusion with heat diffusion.",
+    "Liquid metals conduct heat very well (large α): Pr ≈ 0.01–0.03 for mercury.",
+    "Gases: Pr ≈ 0.7 (air). Water: Pr ≈ 7 at 20 °C. Oils (very viscous): Pr ≈ 100–10 000.",
+    "Order: <b>(A) mercury &lt; air &lt; water &lt; engine oil</b>.",
+    "<b>Exam tip:</b> δ<sub>t</sub>/δ ≈ Pr<sup>−1/3</sup>: the thermal boundary layer is much thicker than the velocity layer for liquid metals and much thinner for oils."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A furnace whose inner walls are at 1200 K has a small circular sight-hole of 20 mm diameter in its wall. The surroundings are at 300 K. Treating the hole as a black body and taking σ = 5.67 × 10⁻⁸ W/m²·K⁴, the net rate of radiation loss through the hole (in W, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "36.79 (accept 36.50 to 37.10)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A small opening in a large isothermal cavity absorbs almost all radiation entering it, so it behaves as a black body at the cavity temperature.",
+    "A = π × 0.02²/4 = 3.1416 × 10⁻⁴ m²",
+    "Q = σA(T₁⁴ − T₂⁴) = 5.67 × 10⁻⁸ × 3.1416 × 10⁻⁴ × (1200⁴ − 300⁴) = 1.7813 × 10⁻¹¹ × 2.0655 × 10¹² = <b>36.79 W</b>",
+    "<b>Exam tip:</b> Black-body cavities are used as radiation standards; the T⁴ term of the 300 K surroundings changes the answer by less than 0.4 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A long cylinder of diameter D is placed centrally inside a long duct of square cross-section of side 2D, as shown. The shape factor from the inner surface of the duct to the cylinder is",
+   "fig": "d71p_q13.png",
+   "opts": [
+    "0.785",
+    "0.500",
+    "0.393",
+    "0.250"
+   ],
+   "ans": "(C) 0.393",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> All radiation leaving the convex cylinder (1) strikes the duct (2): F₁₂ = 1. Reciprocity: A₁F₁₂ = A₂F₂₁.",
+    "Per unit length: A₁ = πD, A₂ = 4 × 2D = 8D",
+    "F₂₁ = A₁/A₂ = πD/(8D) = π/8 = <b>0.393 (C)</b>",
+    "<b>Exam tip:</b> 0.785 = π/4 would result from taking the duct perimeter as 4D; always draw the geometry before using reciprocity."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a counter-flow heat exchanger, oil (heat capacity rate 1.5 kW/K) enters at 140 °C and is cooled by water (heat capacity rate 6 kW/K) entering at 20 °C. The product UA is 2.25 kW/K. The outlet temperature of the oil (in °C, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "51.8 (accept 51.3 to 52.3)",
+   "sfig": "d71p_s14.png",
+   "solution": [
+    "<b>Concept:</b> ε-NTU method for counter flow: ε = [1 − e<sup>−NTU(1−C<sub>r</sub>)</sup>]/[1 − C<sub>r</sub>e<sup>−NTU(1−C<sub>r</sub>)</sup>].",
+    "C<sub>min</sub> = 1.5 kW/K (oil), C<sub>r</sub> = 1.5/6 = 0.25, NTU = UA/C<sub>min</sub> = 2.25/1.5 = 1.5",
+    "e<sup>−1.5 × 0.75</sup> = e<sup>−1.125</sup> = 0.3247; ε = (1 − 0.3247)/(1 − 0.25 × 0.3247) = 0.6753/0.9188 = 0.7350",
+    "Q = εC<sub>min</sub>(T<sub>h,in</sub> − T<sub>c,in</sub>) = 0.7350 × 1.5 × 120 = 132.3 kW",
+    "Oil outlet = 140 − 132.3/1.5 = <b>51.8 °C</b> (water leaves at 20 + 132.3/6 = 42.1 °C; profiles below)",
+    "<b>Exam tip:</b> When outlet temperatures are unknown, use ε-NTU; LMTD would need trial and error."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a thin-walled tube heat exchanger, the inside and outside heat transfer coefficients are 1000 W/m²·K and 250 W/m²·K (wall resistance and fouling negligible). To raise the overall heat transfer coefficient, which change is more effective, and what does U become?",
+   "fig": null,
+   "opts": [
+    "Doubling the inside coefficient; U = 333 W/m²·K",
+    "Doubling the inside coefficient; U = 222 W/m²·K",
+    "Doubling the outside coefficient; U = 222 W/m²·K",
+    "Doubling the outside coefficient; U = 333 W/m²·K"
+   ],
+   "ans": "(D) Doubling the outside coefficient; U = 333 W/m²·K",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a thin wall 1/U = 1/h<sub>i</sub> + 1/h<sub>o</sub>; the larger resistance controls U.",
+    "Now: 1/U = 0.001 + 0.004 → U = 200 W/m²·K",
+    "Doubling h<sub>i</sub>: 1/U = 0.0005 + 0.004 → U = 222 W/m²·K",
+    "Doubling h<sub>o</sub>: 1/U = 0.001 + 0.002 → U = 333 W/m²·K: <b>(D)</b>",
+    "<b>Exam tip:</b> Always attack the side with the lower h (usually the gas side); that is also where fins are added."
+   ]
+  }
+ ]
+}
