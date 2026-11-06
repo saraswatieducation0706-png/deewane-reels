@@ -1,0 +1,264 @@
+{
+ "day": 90,
+ "subject": "Full Syllabus",
+ "topic": "Grand Mock (Day 90)",
+ "days_to_gate": 7,
+ "summary": "a final mixed full-syllabus warm-up for the Grand Mock: antonyms, interior angles of a polygon, a second-order ODE, Simpson's 1/3 rule, friction on an inclined plane, the middle-third rule, Euler buckling about the weaker axis, rack and pinion, torsional vibration, helical spring stiffness, jet power, conduction from a sphere (Nu = 2), nozzle exit velocity, gravity die casting and the EOQ",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the word that is most nearly OPPOSITE in meaning to PROLIFIC.",
+   "fig": null,
+   "opts": [
+    "Productive",
+    "Barren",
+    "Abundant",
+    "Fertile"
+   ],
+   "ans": "(B) Barren",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Prolific' means producing a great deal (a prolific inventor, a prolific crop).",
+    "Productive, abundant and fertile are all close to it in meaning.",
+    "The opposite is <b>barren</b> (producing nothing), option (B).",
+    "<b>Exam tip:</b> When three options share one idea, the odd one out is usually the antonym."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The sum of the interior angles of a convex polygon is 1800°. The number of sides of the polygon is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A convex polygon with n sides can be split into (n − 2) triangles from one vertex, so the interior angles add up to (n − 2) × 180°.",
+    "(n − 2) × 180 = 1800 gives n − 2 = 10, so n = <b>12</b>.",
+    "Check: each exterior angle of a regular 12-gon is 360°/12 = 30°, so each interior angle is 150° and 12 × 150° = 1800°.",
+    "<b>Exam tip:</b> The exterior angles of any convex polygon always add up to 360°; this is often the quicker route."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The solution of y″ − y = 0 that satisfies y(0) = 2 and y′(0) = 0 is",
+   "fig": null,
+   "opts": [
+    "2 sinh x",
+    "2 cos x",
+    "e<sup>x</sup>",
+    "2 cosh x"
+   ],
+   "ans": "(D) 2 cosh x",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The auxiliary equation m² − 1 = 0 gives m = ±1, so y = Ae<sup>x</sup> + Be<sup>−x</sup>.",
+    "y(0) = A + B = 2 and y′(0) = A − B = 0, so A = B = 1 and y = e<sup>x</sup> + e<sup>−x</sup> = <b>2 cosh x</b>, option (D).",
+    "2 cos x solves y″ + y = 0 instead, and 2 sinh x has y(0) = 0.",
+    "<b>Exam tip:</b> Check the initial conditions on each option directly; it is often faster than solving."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of e<sup>x²</sup> from x = 0 to x = 1 is evaluated by Simpson's 1/3 rule with two equal intervals (h = 0.5). The result (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.476 (accept 1.470 to 1.482)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Simpson's 1/3 rule: ∫ f dx ≈ (h/3)[f<sub>0</sub> + 4f<sub>1</sub> + f<sub>2</sub>] for two intervals.",
+    "f(0) = 1, f(0.5) = e<sup>0.25</sup> = 1.2840, f(1) = e = 2.7183.",
+    "I ≈ (0.5/3)[1 + 4 × 1.2840 + 2.7183] = 0.16667 × 8.8544 = <b>1.476</b> (the exact value is 1.4627).",
+    "<b>Exam tip:</b> Simpson's 1/3 rule needs an even number of intervals; with an odd number use the 3/8 rule for the last three."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 50 kg block is pushed up a rough plane inclined at 30° to the horizontal by a force acting parallel to the plane, as shown. The coefficient of kinetic friction is 0.2. Taking g = 9.81 m/s², the force needed to move the block up the plane at constant speed (in N, round off to one decimal place) is ______",
+   "fig": "d90p_q5.png",
+   "opts": null,
+   "ans": "330.2 (accept 328.5 to 331.9)",
+   "sfig": "d90p_s5.png",
+   "solution": [
+    "<b>Concept:</b> At constant speed the forces along the plane balance: P = mg sin θ + μ mg cos θ (friction acts down the plane, opposing the motion).",
+    "mg = 50 × 9.81 = 490.5 N. Normal reaction N = 490.5 cos 30° = 424.8 N, friction = 0.2 × 424.8 = 85.0 N.",
+    "P = 490.5 × 0.5 + 85.0 = 245.25 + 84.96 = <b>330.2 N</b>.",
+    "<b>Exam tip:</b> For motion down the plane at constant speed the friction term changes sign: P = mg(sin θ − μ cos θ)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A short column of solid rectangular section, b wide and d deep, carries a compressive load whose line of action is shifted along the depth d. For no tensile stress to develop anywhere in the section, the eccentricity e must not exceed",
+   "fig": null,
+   "opts": [
+    "d/4",
+    "d/3",
+    "d/6",
+    "d/8"
+   ],
+   "ans": "(C) d/6",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Direct stress P/A and bending stress Pe/Z combine; the far edge stays free of tension while P/A ≥ Pe/Z, i.e. e ≤ Z/A.",
+    "For bending about the axis parallel to b: Z = bd²/6 and A = bd, so Z/A = <b>d/6</b>, option (C).",
+    "The load must therefore lie within the 'middle third' of the depth (d/6 on either side of the centroid).",
+    "<b>Exam tip:</b> For a solid circular section the core is a circle of diameter d/4 (e ≤ d/8)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel strut of solid rectangular section 40 mm × 20 mm and length 1 m is pinned at both ends (E = 200 GPa). The Euler buckling load (in kN, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "52.64 (accept 52.2 to 53.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Euler's load for a pin-ended strut is P<sub>cr</sub> = π²EI/L², and the strut buckles about the axis with the <b>least</b> moment of inertia.",
+    "I<sub>min</sub> = 40 × 20³/12 = 26 667 mm⁴ (the other value, 20 × 40³/12 = 106 667 mm⁴, does not govern).",
+    "P<sub>cr</sub> = π² × 200 000 × 26 667/1000² = 52 638 N = <b>52.64 kN</b>.",
+    "<b>Exam tip:</b> Using the larger I would give four times the load (210.6 kN), a common trap."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A pinion of 18 teeth and module 4 mm meshes with a rack. The distance moved by the rack for one complete revolution of the pinion is about",
+   "fig": null,
+   "opts": [
+    "226.2 mm",
+    "72.0 mm",
+    "113.1 mm",
+    "452.4 mm"
+   ],
+   "ans": "(A) 226.2 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The pitch line of the rack rolls without slipping on the pitch circle of the pinion.",
+    "Pitch circle diameter d = mz = 4 × 18 = 72 mm. One revolution moves the rack by the pitch circumference πd = π × 72 = <b>226.2 mm</b>, option (A).",
+    "Equivalently, 18 teeth × circular pitch πm (12.57 mm) = 226.2 mm.",
+    "<b>Exam tip:</b> 72 mm is the pitch diameter and 113.1 mm is only half a revolution."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A disc with a mass moment of inertia of 0.5 kg·m² is fixed to the free end of a vertical steel shaft of 20 mm diameter and 1 m length, whose upper end is fixed (G = 80 GPa). Neglecting the inertia of the shaft, the natural frequency of torsional vibration (in Hz, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.98 (accept 7.92 to 8.04)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The torsional stiffness of a shaft is k<sub>t</sub> = GJ/L, and f<sub>n</sub> = (1/2π)√(k<sub>t</sub>/I).",
+    "J = π × 0.02⁴/32 = 1.5708 × 10<sup>−8</sup> m⁴, so k<sub>t</sub> = 80 × 10<sup>9</sup> × 1.5708 × 10<sup>−8</sup>/1 = 1256.6 N·m/rad.",
+    "ω<sub>n</sub> = √(1256.6/0.5) = 50.13 rad/s, f<sub>n</sub> = 50.13/2π = <b>7.98 Hz</b>.",
+    "<b>Exam tip:</b> This is the rotational twin of √(k/m): replace k by GJ/L and m by I."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A close-coiled helical compression spring has a wire diameter of 5 mm, a mean coil diameter of 40 mm and 12 active coils (G = 80 GPa). Its stiffness is about",
+   "fig": null,
+   "opts": [
+    "16.3 N/mm",
+    "4.07 N/mm",
+    "8.14 N/mm",
+    "32.6 N/mm"
+   ],
+   "ans": "(C) 8.14 N/mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a close-coiled helical spring, k = Gd⁴/(8D³n).",
+    "k = 80 000 × 5⁴/(8 × 40³ × 12) = 80 000 × 625/6 144 000 = <b>8.14 N/mm</b>, option (C).",
+    "Note the strong dependence: doubling d multiplies k by 16, while doubling D divides it by 8.",
+    "<b>Exam tip:</b> Cutting a spring into two halves doubles the stiffness of each half (n is halved)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A nozzle delivers a water jet of 50 mm diameter at 30 m/s. Taking the density of water as 1000 kg/m³, the kinetic power of the jet (in kW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "26.51 (accept 26.31 to 26.71)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Power of a jet = (mass flow rate) × (kinetic energy per kg) = (ρAV) × V²/2 = ½ρAV³.",
+    "A = (π/4) × 0.05² = 1.9635 × 10<sup>−3</sup> m². ṁ = 1000 × 1.9635 × 10<sup>−3</sup> × 30 = 58.9 kg/s.",
+    "P = 0.5 × 58.9 × 30² = 26 507 W = <b>26.51 kW</b>.",
+    "<b>Exam tip:</b> Jet power grows with V³, so doubling the jet velocity (same area) multiplies it by eight."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A small sphere of diameter D loses heat to an infinite, stagnant fluid by pure conduction only (no fluid motion). The Nusselt number hD/k based on the fluid conductivity is",
+   "fig": null,
+   "opts": [
+    "1",
+    "2",
+    "3.66",
+    "4.36"
+   ],
+   "ans": "(B) 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Treat the fluid as a spherical shell from r = D/2 to r → ∞. Its conduction resistance is (1/r<sub>1</sub> − 1/r<sub>2</sub>)/(4πk) → 1/(4πk r<sub>1</sub>).",
+    "So Q = 4πk r<sub>1</sub>ΔT. Writing Q = h(4πr<sub>1</sub>²)ΔT gives h = k/r<sub>1</sub> = 2k/D.",
+    "Hence Nu = hD/k = <b>2</b>, option (B). This is the lower limit of every forced- or free-convection correlation for spheres (e.g. Nu = 2 + 0.6Re<sup>1/2</sup>Pr<sup>1/3</sup>).",
+    "<b>Exam tip:</b> 3.66 and 4.36 are the fully developed laminar values for flow inside a tube (constant wall temperature and constant heat flux)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Steam expands adiabatically in a nozzle with an enthalpy drop of 200 kJ/kg. The velocity at the inlet is negligible. The exit velocity of the steam (in m/s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "632.5 (accept 628.0 to 637.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Steady-flow energy equation for an adiabatic nozzle with no work: h<sub>1</sub> + V<sub>1</sub>²/2 = h<sub>2</sub> + V<sub>2</sub>²/2.",
+    "With V<sub>1</sub> ≈ 0: V<sub>2</sub> = √(2Δh) = √(2 × 200 000) m/s (Δh in J/kg).",
+    "V<sub>2</sub> = √400 000 = <b>632.5 m/s</b>.",
+    "<b>Exam tip:</b> Remember V = 44.72√Δh with Δh in kJ/kg; forgetting to convert kJ to J gives a value 31.6 times too small."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Gravity die casting (permanent-mould casting) differs from sand casting mainly in that",
+   "fig": null,
+   "opts": [
+    "the molten metal is forced into the mould under a high pressure",
+    "the mould is broken after each casting to remove it",
+    "it is best suited for steels with very high melting points",
+    "a reusable metal mould is filled under gravity alone"
+   ],
+   "ans": "(D) a reusable metal mould is filled under gravity alone",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In gravity die casting the mould is made of metal (usually cast iron or steel) and is reused for many castings; the metal enters under its own head only.",
+    "So the answer is <b>a reusable metal mould filled under gravity</b>, option (D).",
+    "Forcing metal in under pressure is pressure die casting; breaking the mould describes sand and investment casting; and the process suits lower-melting alloys such as aluminium, magnesium and copper alloys.",
+    "<b>Exam tip:</b> Metal moulds chill the casting, giving finer grains and better finish but needing low-melting alloys."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An item has an annual demand of 3600 units, an ordering cost of ₹50 per order and a holding cost of ₹4 per unit per year. The economic order quantity and the number of orders per year are",
+   "fig": null,
+   "opts": [
+    "300 units and 15 orders",
+    "300 units and 12 orders",
+    "424 units and 8.5 orders",
+    "212 units and 17 orders"
+   ],
+   "ans": "(B) 300 units and 12 orders",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EOQ = √(2DC<sub>o</sub>/C<sub>h</sub>), which balances the annual ordering and holding costs.",
+    "EOQ = √(2 × 3600 × 50/4) = √90 000 = 300 units.",
+    "Number of orders = D/EOQ = 3600/300 = 12 per year, so the answer is <b>300 units and 12 orders</b>, option (B).",
+    "<b>Exam tip:</b> At the EOQ both costs are equal: (3600/300) × 50 = ₹600 = (300/2) × 4."
+   ]
+  }
+ ]
+}
