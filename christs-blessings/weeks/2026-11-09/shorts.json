@@ -1,0 +1,352 @@
+[
+ {
+  "id": "s1",
+  "date": "2026-11-09",
+  "template": "A",
+  "scene": "dawn_lake",
+  "seed": 22,
+  "music_key": "E",
+  "cover": [
+   "You are",
+   "known"
+  ],
+  "title": "When you feel like nobody sees what you're carrying",
+  "description": "For anyone who feels unseen, with no one who really knows what they carry. Psalm 139:1-2 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#psalm139 #faith #bibleverse #christianshorts",
+  "tags": [
+   "psalm 139 1-2",
+   "thou hast searched me and known me",
+   "feeling unseen",
+   "god knows me",
+   "christian encouragement",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you feel like nobody really sees what you're carrying right now, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 139, verses 1 and 2.",
+    "label": "Psalm 139:1-2"
+   },
+   {
+    "role": "verse",
+    "text": "O LORD, thou hast searched me, and known me. Thou knowest my downsitting and mine uprising, thou understandest my thought afar off.",
+    "label": "Psalm 139:1-2"
+   },
+   {
+    "role": "reflection",
+    "text": "Downsitting and uprising simply means every time you sit down, and every time you get up. The ordinary moments. The ones nobody posts about. David says God knows all of them, even the thoughts he hasn't put into words yet. You might feel invisible at work, or at home. But you are not unnoticed. You are known completely, and still loved."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You know what I carry even when no one else does. Let that be enough for today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tonight's full Psalm 139 sleep prayer is on the channel. Save it for bedtime."
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "date": "2026-11-10",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 23,
+  "music_key": "C",
+  "cover": [
+   "Before",
+   "sunset"
+  ],
+  "title": "Still angry at someone? Read this before the day ends",
+  "description": "For anyone still carrying anger at someone who hurt them. Ephesians 4:26 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#anger #forgiveness #bibleverse #christianshorts",
+  "tags": [
+   "ephesians 4 26",
+   "be ye angry and sin not",
+   "let not the sun go down upon your wrath",
+   "bible verse about anger",
+   "christian encouragement",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If someone made you really angry this week, and it's still sitting in your chest, listen to this."
+   },
+   {
+    "role": "ref",
+    "text": "Ephesians 4, verse 26.",
+    "label": "Ephesians 4:26"
+   },
+   {
+    "role": "verse",
+    "text": "Be ye angry, and sin not: let not the sun go down upon your wrath:",
+    "label": "Ephesians 4:26"
+   },
+   {
+    "role": "reflection",
+    "text": "Notice what Paul doesn't say. He doesn't say never be angry. Anger at something wrong can be honest. What he warns about is letting it settle in overnight, where it quietly hardens into bitterness. So before today ends, take it to God. You don't have to fix the whole situation by sunset. Just don't carry it to bed alone."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, You see what made me angry. Take it from my hands before it takes root in my heart. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If this helped, save it for the next hard day."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-11-11",
+  "template": "B",
+  "scene": "forest_fork",
+  "seed": 24,
+  "music_key": "G",
+  "cover": [
+   "Turn to",
+   "me, Lord"
+  ],
+  "title": "Lonely even with people around you? Pray this with David",
+  "description": "For anyone who feels lonely, even when people are around. Psalm 25:16 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#loneliness #prayer #bibleverse #christianshorts",
+  "tags": [
+   "psalm 25 16",
+   "turn thee unto me",
+   "feeling lonely",
+   "prayer for loneliness",
+   "christian comfort",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you've felt lonely lately, even with people all around you, this prayer is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 25, verse 16.",
+    "label": "Psalm 25:16"
+   },
+   {
+    "role": "verse",
+    "text": "Turn thee unto me, and have mercy upon me; for I am desolate and afflicted.",
+    "label": "Psalm 25:16"
+   },
+   {
+    "role": "reflection",
+    "text": "This is David, a king, admitting he feels desolate. Alone and worn down. He doesn't dress it up, and he doesn't wait until he feels more spiritual to pray it. He simply asks God to turn toward him. Loneliness isn't a sign that you've failed, or that God has left. It's a reason to ask Him to come close. And He hears that prayer."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, turn toward me today. Sit with me in the lonely places, and bring kind people near. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If you feel alone today, type \"here\" below. We'll pray for you."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-11-12",
+  "template": "D",
+  "scene": "candle",
+  "seed": 25,
+  "music_key": "Eb",
+  "cover": [
+   "Never too",
+   "dark"
+  ],
+  "title": "In a dark season? It's never too dark for God to see you",
+  "description": "For anyone walking through a dark season. Psalm 139:11-12 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#psalm139 #hope #bibleverse #christianshorts",
+  "tags": [
+   "psalm 139 11-12",
+   "the darkness and the light are both alike to thee",
+   "dark season",
+   "night prayer",
+   "christian comfort",
+   "bible verse for hard times"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're in a dark season and it feels like you're lost in it, stay a minute."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 139, verses 11 and 12.",
+    "label": "Psalm 139:11-12"
+   },
+   {
+    "role": "verse",
+    "text": "If I say, Surely the darkness shall cover me; even the night shall be light about me. Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.",
+    "label": "Psalm 139:11-12"
+   },
+   {
+    "role": "reflection",
+    "text": "David imagines the worst. What if the darkness just covers me, and I disappear? Then he answers himself. To God, the dark isn't dark. The night shines like the day. Your hard season may be real, and it may not lift quickly. But you are not lost in it. The One who made the night sees you clearly, right where you are."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, it's dark where I am. Thank You that it's never too dark for You to see me. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our full Psalm 139 sleep prayer is on the channel."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-11-13",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 26,
+  "music_key": "D",
+  "cover": [
+   "Pray with",
+   "me"
+  ],
+  "title": "A short prayer for when everything feels like too much",
+  "description": "A prayer to pray along with when you feel overwhelmed, from Psalm 61:2 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#overwhelmed #prayer #bibleverse #christianshorts",
+  "tags": [
+   "psalm 61 2",
+   "lead me to the rock that is higher than i",
+   "prayer when overwhelmed",
+   "feeling overwhelmed",
+   "christian prayer",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If everything feels like too much today, pray these words with me, slowly."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 61, verse 2.",
+    "label": "Psalm 61:2"
+   },
+   {
+    "role": "verse",
+    "text": "From the end of the earth will I cry unto thee, when my heart is overwhelmed: lead me to the rock that is higher than I.",
+    "label": "Psalm 61:2"
+   },
+   {
+    "role": "reflection",
+    "text": "David felt like he was at the end of the earth, as far from steady ground as a person could be. So he asked for a rock higher than himself. Not a bigger effort. Not a better plan. Something solid to stand on that he couldn't build on his own. When you're overwhelmed, you don't have to climb out alone. Ask to be led."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, my heart is overwhelmed. Lead me to the rock that is higher than I. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Save this for the next time it all feels like too much."
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-11-14",
+  "template": "A",
+  "scene": "sunrise_lake",
+  "seed": 27,
+  "music_key": "A",
+  "cover": [
+   "Free from",
+   "approval"
+  ],
+  "title": "Always worried what people think? This verse names the trap",
+  "description": "For anyone who worries too much about what other people think. Proverbs 29:25 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#peoplepleasing #trust #bibleverse #christianshorts",
+  "tags": [
+   "proverbs 29 25",
+   "the fear of man bringeth a snare",
+   "people pleasing",
+   "worried what people think",
+   "christian encouragement",
+   "bible verse about approval"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're always worried about what people think of you, this verse names the trap."
+   },
+   {
+    "role": "ref",
+    "text": "Proverbs 29, verse 25.",
+    "label": "Proverbs 29:25"
+   },
+   {
+    "role": "verse",
+    "text": "The fear of man bringeth a snare: but whoso putteth his trust in the LORD shall be safe.",
+    "label": "Proverbs 29:25"
+   },
+   {
+    "role": "reflection",
+    "text": "A snare is a hidden trap that closes quietly. Fear of other people's opinions works the same way. It decides what we wear, what we say, and what we never dare to try. This proverb offers a way out: trust the LORD instead. His view of you doesn't rise and fall with a group chat. With Him, you can be honest and still be safe."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, free me from living for other people's approval. Let Your voice be the one I trust. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Send this to a friend who worries too much about everyone else's opinion."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-11-15",
+  "template": "B",
+  "scene": "hills_sunset",
+  "seed": 28,
+  "music_key": "F",
+  "cover": [
+   "Bless my",
+   "work"
+  ],
+  "title": "A Sunday blessing over the work of your hands this week",
+  "description": "A Sunday prayer over your work for the week ahead, from Psalm 90:17 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#sundayprayer #blessing #bibleverse #christianshorts",
+  "tags": [
+   "psalm 90 17",
+   "establish thou the work of our hands",
+   "prayer for work",
+   "sunday prayer",
+   "prayer for the week",
+   "christian blessing"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Before Monday comes, let's ask God to bless the work of your hands this week."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 90, verse 17.",
+    "label": "Psalm 90:17"
+   },
+   {
+    "role": "verse",
+    "text": "And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us; yea, the work of our hands establish thou it.",
+    "label": "Psalm 90:17"
+   },
+   {
+    "role": "reflection",
+    "text": "Psalm 90 is the only psalm with Moses' name on it. He had watched a whole generation pass in the wilderness, and the psalm is honest about how quickly our days go by. So he ends by asking God to make their work last. Whatever your hands will do this week, an office job, caring for kids, studying, a small business, it matters. Ask God to establish it."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, bless the work of my hands this week, and let Your beauty rest on all of it. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with someone heading into a busy week."
+   }
+  ]
+ }
+]

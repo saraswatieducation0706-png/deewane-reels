@@ -1,0 +1,103 @@
+{
+ "long1": {
+  "date_et": "2026-11-09",
+  "slot_ist": "2026-11-10T06:30:00",
+  "type": "sleep prayer",
+  "script": "long1_script.txt",
+  "scene": "night_lake",
+  "seed": 38,
+  "music_key": "E",
+  "render": {
+   "intro": "Sleep Prayer with Psalm 139",
+   "subtitles": "dim",
+   "seed": 38,
+   "music_key": "E",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer with Psalm 139 | You Are Fully Known, Even in the Dark",
+  "thumb_big": "Fully Known",
+  "thumb_small": "Psalm 139 sleep prayer",
+  "thumb_scene": "night_lake",
+  "description": "A gentle guided sleep prayer from Psalm 139 for nights when you feel unseen or alone with your thoughts. We rest in being known by God in every sitting down and lying down, feel His hand behind and before us, remember there is nowhere too far from Him, hear that the darkness is as light to Him, count His thoughts toward us like grains of sand, and hand Him our restless thoughts before a closing blessing. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 139:1-3, 5, 7, 9-12, 17-18, 23.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #psalm139 #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer",
+   "psalm 139",
+   "psalm 139 sleep prayer",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "you are fully known",
+   "prayer for peace at night",
+   "christian sleep meditation",
+   "kjv sleep",
+   "christ's blessings"
+  ]
+ },
+ "long2": {
+  "date_et": "2026-11-12",
+  "slot_ist": "2026-11-13T06:30:00",
+  "type": "scripture meditation with soft music",
+  "script": "long2_script.txt",
+  "scene": "dawn_lake",
+  "seed": 39,
+  "music_key": "Bb",
+  "render": {
+   "intro": "Fear Not, I Have Called You by Name",
+   "subtitles": "dim",
+   "seed": 39,
+   "music_key": "Bb",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Fear Not, I Have Called Thee by Thy Name | An Isaiah 43 Scripture Meditation with Soft Music",
+  "thumb_big": "Thou Art Mine",
+  "thumb_small": "Isaiah 43 meditation",
+  "thumb_scene": "dawn_lake",
+  "description": "A slow scripture meditation on Isaiah 43 for anxious or heavy days. We read a few lines at a time with pauses to reflect: called by name and belonging to God, His presence when we pass through the waters, being precious in His sight, a breathing prayer with \"Fear not: for I am with thee\", and noticing the new things He is growing in dry places. After the meditation, about 15 minutes of soft music to keep resting or praying.\n\nScripture (KJV): Isaiah 43:1-2, 4-5, 18-19.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#isaiah43 #fearnot #scripturemeditation #christianmeditation",
+  "tags": [
+   "isaiah 43",
+   "fear not i have called thee by thy name",
+   "thou art mine",
+   "scripture meditation",
+   "christian meditation",
+   "when thou passest through the waters",
+   "prayer for anxiety",
+   "soft music prayer",
+   "kjv meditation",
+   "christ's blessings"
+  ]
+ },
+ "long3": {
+  "date_et": "2026-11-14",
+  "slot_ist": "2026-11-15T06:30:00",
+  "type": "Bible story explained",
+  "script": "long3_script.txt",
+  "scene": "candle",
+  "seed": 40,
+  "music_key": "F",
+  "render": {
+   "subtitles": "normal",
+   "seed": 40,
+   "music_key": "F",
+   "music_db": -23,
+   "lufs": -16
+  },
+  "title": "Hannah's Prayer: When You've Prayed for the Same Thing for Years (1 Samuel 1 Explained)",
+  "thumb_big": "Poured Out",
+  "thumb_small": "Hannah's prayer explained",
+  "thumb_scene": "candle",
+  "description": "Year after year Hannah went up to Shiloh with the same ache, and year after year she was provoked until she wept. Then she poured out her soul before the LORD so quietly that the priest Eli thought she was drunk. In this video we walk through 1 Samuel 1 and the start of chapter 2: the background, Hannah's honest prayer, being misunderstood, the peace she found before anything changed, Samuel's birth and the little coat she made him each year. Four lessons for anyone who is still waiting on a long prayer, and a closing prayer.\n\nScripture (KJV): 1 Samuel 1:1-2, 5-8, 10-11, 13, 15, 17-20, 27-28; 1 Samuel 2:1-2, 19.\n\nThis video is spiritual encouragement, not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#hannahsprayer #biblestory #1samuel #christianencouragement",
+  "tags": [
+   "hannah's prayer",
+   "hannah in the bible",
+   "1 samuel 1",
+   "bible story explained",
+   "unanswered prayer",
+   "waiting on god",
+   "poured out my soul before the lord",
+   "bible stories for adults",
+   "christian encouragement",
+   "christ's blessings"
+  ]
+ }
+}
