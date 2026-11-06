@@ -1,0 +1,264 @@
+{
+ "day": 86,
+ "subject": "Maths + General Aptitude",
+ "topic": "Formula Sprint: Maths & GA",
+ "days_to_gate": 11,
+ "summary": "a rapid shortcut-and-trap revision of Engineering Mathematics (eigenvalues of patterned matrices, the Leibniz rule, Euler's theorem on homogeneous functions, curl of a rotation field, Laplace solution of an ODE, residues inside a contour, the secant method, the normal-distribution empirical rule) and General Aptitude (senior to, one-word substitution, HCF of differences, change of log base, handshakes, right angles of clock hands, repeated replacement in mixtures) — every solution states the key formula, so the set doubles as a revision sheet",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 7",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A 4 × 4 matrix has every diagonal entry equal to 5 and every off-diagonal entry equal to 2. Its determinant is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "297",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An n × n matrix with diagonal a and all off-diagonal entries b is (a − b)I + bJ, where J is the all-ones matrix with eigenvalues n, 0, …, 0. So its eigenvalues are a + (n − 1)b (once) and a − b (n − 1 times); det = product of eigenvalues.",
+    "Here a = 5, b = 2, n = 4: eigenvalues 5 + 3 × 2 = 11 and 5 − 2 = 3 (three times).",
+    "det = 11 × 3³ = 11 × 27 = <b>297</b>.",
+    "<b>Exam tip:</b> Check with the trace: 11 + 3 + 3 + 3 = 20 = 4 × 5. The same shortcut gives the inverse and A<sup>k</sup> at once, because only the two eigenvalues matter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "F(x) is defined as the integral of √(1 + t³) dt from t = 0 to t = x². The value of F′(2) (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "32.25 (accept 32.05 to 32.45)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Leibniz rule: d/dx ∫<sub>a(x)</sub><sup>b(x)</sup> f(t) dt = f(b) b′(x) − f(a) a′(x). The integrand need not be integrable in closed form.",
+    "Here a = 0 and b = x², so F′(x) = √(1 + (x²)³) × 2x = 2x √(1 + x⁶).",
+    "F′(2) = 4 √(1 + 64) = 4 × 8.0623 = <b>32.25</b>.",
+    "<b>Exam tip:</b> Forgetting the chain-rule factor b′(x) = 2x gives 8.06; substituting t = x instead of t = x² gives 4 × 3 = 12. Never try to integrate first."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If u = tan<sup>−1</sup>[(x³ + y³)/(x − y)], then x ∂u/∂x + y ∂u/∂y equals",
+   "fig": null,
+   "opts": [
+    "2 tan u",
+    "sin 2u",
+    "2u",
+    "½ sin 2u"
+   ],
+   "ans": "(B) sin 2u",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Euler's theorem: if z(x, y) is homogeneous of degree n, x z<sub>x</sub> + y z<sub>y</sub> = nz. If only a function g(u) = z is homogeneous, then x u<sub>x</sub> + y u<sub>y</sub> = n g(u)/g′(u).",
+    "u itself is not homogeneous, but tan u = (x³ + y³)/(x − y) is homogeneous of degree 3 − 1 = 2.",
+    "x u<sub>x</sub> + y u<sub>y</sub> = 2 tan u/sec²u = 2 sin u cos u = <b>sin 2u (B)</b>.",
+    "<b>Exam tip:</b> 2 tan u is the result for tan u, not for u — the classic trap. For u = sin<sup>−1</sup>(z) with z of degree n the answer is n tan u."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rigid body rotates with constant angular velocity <b>ω</b> = 3<b>k</b> rad/s. The velocity field of its points is <b>v</b> = <b>ω</b> × <b>r</b>, where <b>r</b> = x<b>i</b> + y<b>j</b> + z<b>k</b>. The curl of <b>v</b> is",
+   "fig": null,
+   "opts": [
+    "3<b>k</b>",
+    "0",
+    "3(<b>i</b> + <b>j</b> + <b>k</b>)",
+    "6<b>k</b>"
+   ],
+   "ans": "(D) 6<b>k</b>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For constant <b>ω</b>: ∇ × (<b>ω</b> × <b>r</b>) = 2<b>ω</b> and ∇·(<b>ω</b> × <b>r</b>) = 0 (rigid rotation is solenoidal); also ∇·<b>r</b> = 3 and ∇ × <b>r</b> = 0.",
+    "<b>v</b> = 3<b>k</b> × (x<b>i</b> + y<b>j</b> + z<b>k</b>) = −3y <b>i</b> + 3x <b>j</b>.",
+    "∇ × <b>v</b> = (∂(3x)/∂x − ∂(−3y)/∂y) <b>k</b> = (3 + 3)<b>k</b> = <b>6k (D)</b>.",
+    "<b>Exam tip:</b> Curl of a velocity field = twice the angular velocity (vorticity = 2ω). Answering 3<b>k</b> forgets the factor 2."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Using Laplace transforms, y″ + 9y = 18 with y(0) = 0 and y′(0) = 0 is solved. The value of y at t = 1 (t in radians, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.98 (accept 3.96 to 4.00)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> L{y″} = s²Y − s y(0) − y′(0); L{1} = 1/s; and the partial-fraction pair a²/[s(s² + a²)] = 1/s − s/(s² + a²) ↔ 1 − cos at.",
+    "(s² + 9)Y = 18/s, so Y = 18/[s(s² + 9)] = 2[1/s − s/(s² + 9)].",
+    "y = 2(1 − cos 3t); y(1) = 2(1 − cos 3) = 2(1 + 0.98999) = <b>3.98</b>.",
+    "<b>Exam tip:</b> cos 3 is negative (3 rad ≈ 172°), so y(1) is close to its maximum of 4. Keep the calculator in radians."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "C is the circle |z − 2i| = 1.5 traversed anticlockwise, as shown. The value of ∮<sub>C</sub> dz/[z(z² + 4)] is",
+   "fig": "d86p_q6.png",
+   "opts": [
+    "−πi/4",
+    "πi/4",
+    "0",
+    "πi/2"
+   ],
+   "ans": "(A) −πi/4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Residue theorem: ∮ f dz = 2πi × (sum of residues at poles <i>inside</i> C). At a simple pole z = a of p(z)/q(z), Res = p(a)/q′(a).",
+    "Poles: z = 0 and z = ±2i. Distances from the centre 2i: |0 − 2i| = 2 &gt; 1.5 and |−2i − 2i| = 4 &gt; 1.5, so only z = 2i lies inside.",
+    "q = z³ + 4z, q′ = 3z² + 4; at z = 2i, q′ = −12 + 4 = −8, so Res = −1/8.",
+    "∮ = 2πi(−1/8) = <b>−πi/4 (A)</b>.",
+    "<b>Exam tip:</b> Always locate the poles first. Adding the residue at z = 0 (1/4) would give +πi/4; the residues at all three poles add to zero."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The root of x e<sup>x</sup> − 1 = 0 is sought by the secant method with x<sub>0</sub> = 0 and x<sub>1</sub> = 1. The value of x<sub>3</sub> (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.5033 (accept 0.5008 to 0.5058)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Secant method: x<sub>n+1</sub> = x<sub>n</sub> − f(x<sub>n</sub>)(x<sub>n</sub> − x<sub>n−1</sub>)/[f(x<sub>n</sub>) − f(x<sub>n−1</sub>)]; order of convergence 1.618. Unlike regula falsi, it always uses the latest two points (the root need not stay bracketed).",
+    "f(0) = −1, f(1) = e − 1 = 1.71828: x<sub>2</sub> = 1 − 1.71828 × 1/2.71828 = 0.36788.",
+    "f(0.36788) = 0.36788 × 1.44467 − 1 = −0.46854: x<sub>3</sub> = 0.36788 + 0.46854 × (0.36788 − 1)/(−0.46854 − 1.71828) = <b>0.5033</b>.",
+    "<b>Exam tip:</b> The true root is 0.5671. Here regula falsi gives the same x<sub>3</sub>, because x = 1 and x = 0.368 still bracket the root; the two methods part ways only when the two latest points have f of the same sign (secant uses them anyway, regula falsi keeps the older point of opposite sign)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The life of a lamp is normally distributed with a mean of 1000 h and a standard deviation of 100 h. The fraction of lamps that last between 800 h and 1100 h is about",
+   "fig": null,
+   "opts": [
+    "68 %",
+    "95 %",
+    "82 %",
+    "48 %"
+   ],
+   "ans": "(C) 82 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Empirical rule for a normal variable: about 68.3 % within μ ± σ, 95.4 % within μ ± 2σ and 99.7 % within μ ± 3σ; the curve is symmetric, so each half is half of these.",
+    "800 h is μ − 2σ and 1100 h is μ + σ.",
+    "P = 95.4/2 + 68.3/2 = 47.7 + 34.1 ≈ 81.8 % ≈ <b>82 % (C)</b>. (Φ(1) − Φ(−2) = 0.8413 − 0.0228 = 0.8186.)",
+    "<b>Exam tip:</b> Split an unsymmetric interval at the mean and add the two halves. 48 % counts only the part below the mean."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Select the option that correctly fills the blank: Although she joined later, the new plant manager is senior ______ all the shift engineers in rank.",
+   "fig": null,
+   "opts": [
+    "than",
+    "from",
+    "to",
+    "over"
+   ],
+   "ans": "(C) to",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Latin comparatives ending in -ior (senior, junior, superior, inferior, prior) take 'to', not 'than'.",
+    "So: senior <b>to (C)</b> all the shift engineers.",
+    "<b>Exam tip:</b> Also 'prefer A to B' (not 'than'), and 'superior to'. 'More senior than' is the only place where 'than' fits, because 'more' makes it an ordinary comparative."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Select the word for: <i>a person who can use both the right hand and the left hand equally well</i>.",
+   "fig": null,
+   "opts": [
+    "ambidextrous",
+    "ambivalent",
+    "ambiguous",
+    "amphibious"
+   ],
+   "ans": "(A) ambidextrous",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> One-word substitution: ambi- means 'both'; dexter means 'right hand' (hence dexterity, skill with the hands).",
+    "Using both hands equally well: <b>ambidextrous (A)</b>.",
+    "Ambivalent = having mixed feelings; ambiguous = having more than one meaning; amphibious = living on land and in water.",
+    "<b>Exam tip:</b> Prefixes with the same meaning look alike — decide by the root, not the prefix."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The largest number that divides 1305, 4665 and 6905 leaving the same remainder in each case is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1120",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> If N leaves the same remainder r with a, b and c, then N divides each difference (b − a), (c − b), (c − a). The largest such N is the HCF of the differences.",
+    "Differences: 4665 − 1305 = 3360, 6905 − 4665 = 2240, 6905 − 1305 = 5600.",
+    "HCF(3360, 2240, 5600) = <b>1120</b> (3360 = 3 × 1120, 2240 = 2 × 1120, 5600 = 5 × 1120). The common remainder is 1305 − 1120 = 185.",
+    "<b>Exam tip:</b> Do not take the HCF of the numbers themselves (that would be for zero remainder). For 'leaving remainders r₁, r₂, r₃', take the HCF of (a − r₁), (b − r₂), (c − r₃)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "If log<sub>2</sub> x + log<sub>4</sub> x + log<sub>16</sub> x = 21/4, then x is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "8",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Change of base: log<sub>a<sup>k</sup></sub> x = (1/k) log<sub>a</sub> x. Convert every term to one base.",
+    "log<sub>4</sub> x = ½ log<sub>2</sub> x and log<sub>16</sub> x = ¼ log<sub>2</sub> x, so (1 + ½ + ¼) log<sub>2</sub> x = (7/4) log<sub>2</sub> x = 21/4.",
+    "log<sub>2</sub> x = 3, so x = 2³ = <b>8</b>.",
+    "<b>Exam tip:</b> log<sub>a</sub> x × log<sub>x</sub> a = 1 and a<sup>log<sub>a</sub> x</sup> = x are the other two shortcuts that GATE uses most."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "At a meeting, every participant shook hands exactly once with every other participant. There were 66 handshakes in all. The number of participants is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Each handshake is a pair of people: number of handshakes = <sup>n</sup>C<sub>2</sub> = n(n − 1)/2. (Same count: diagonals of an n-gon = n(n − 1)/2 − n; matches in a round robin = n(n − 1)/2.)",
+    "n(n − 1)/2 = 66 gives n(n − 1) = 132 = 12 × 11.",
+    "n = <b>12</b>.",
+    "<b>Exam tip:</b> Counting n(n − 1) = 132 as the number of handshakes counts each one twice; for gifts exchanged (ordered pairs) n(n − 1) is the right count."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The number of times the hour hand and the minute hand of a clock are at right angles to each other in one full day (24 hours) is",
+   "fig": null,
+   "opts": [
+    "48",
+    "24",
+    "22",
+    "44"
+   ],
+   "ans": "(D) 44",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The minute hand gains 330° per hour on the hour hand, so relative to the hour hand it makes 11 full turns in 12 hours. In every relative turn the angle between the hands passes through 90° twice.",
+    "In 12 h: 2 × 11 = 22 right angles (the hands coincide 11 times, are opposite 11 times).",
+    "In 24 h: 2 × 22 = <b>44 (D)</b>.",
+    "<b>Exam tip:</b> Counting 2 per hour gives 48 — the trap: between 2 and 4 o'clock (and between 8 and 10) there are only 3 right angles, not 4, because the one at 3:00 (9:00) is shared. Coincidences: 22 per day; straight line (opposite or coincident): 44 per day."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A container holds 40 litres of pure milk. 8 litres are drawn off and replaced with water. This operation is done three times in all. The quantity of milk now left in the container is",
+   "fig": null,
+   "opts": [
+    "16 L",
+    "20.48 L",
+    "25.6 L",
+    "19.52 L"
+   ],
+   "ans": "(B) 20.48 L",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Repeated replacement: if x litres of a V-litre mixture are removed and replaced n times, the original liquid left = V(1 − x/V)<sup>n</sup>.",
+    "Milk left = 40(1 − 8/40)³ = 40 × 0.8³ = 40 × 0.512.",
+    "= <b>20.48 L (B)</b>; water = 19.52 L.",
+    "<b>Exam tip:</b> Removing 8 L of milk three times (24 L, leaving 16 L) is wrong: after the first step each draw also removes water. 25.6 L is the answer after two operations."
+   ]
+  }
+ ]
+}
