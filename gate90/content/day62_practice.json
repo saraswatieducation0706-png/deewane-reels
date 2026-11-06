@@ -1,0 +1,261 @@
+{
+ "day": 62,
+ "subject": "Manufacturing",
+ "topic": "Metrology & CIM",
+ "days_to_gate": 39,
+ "summary": "limits, fits and tolerances (IT grades, hole basis, fundamental deviations), limit gauges and tolerance stacks, sine bar and slip gauges, comparators, interferometry and optical flats, surface roughness, geometric tolerances (MMC), and CNC part programming, BLU and CAD transformations, CAPP",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Probability & Statistics",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The hole-basis system of fits is preferred in most industries because",
+   "fig": null,
+   "opts": [
+    "shafts are easier to measure than holes",
+    "it always gives interference fits",
+    "holes are produced with fixed-size tools (drills, reamers, broaches) and checked with plug gauges, so keeping the hole size constant needs fewer tools and gauges",
+    "the fundamental deviation of every shaft is zero"
+   ],
+   "ans": "(C) holes are produced with fixed-size tools (drills, reamers, broaches) and checked with plug gauges, so keeping the hole size constant needs fewer tools and gauges",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In the hole-basis system the lower deviation of the hole is zero (H hole) and different fits are obtained by changing the shaft.",
+    "Shafts can be turned or ground to any size with the same tool, but each hole size needs its own drill, reamer, broach and plug gauge. Keeping the hole fixed therefore cuts tooling and gauging cost: <b>(C)</b>.",
+    "<b>Exam tip:</b> The shaft-basis system (h shaft) is used when one shaft of standard bright bar carries several parts with different fits."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A fit is specified as 50 H7/f6. For this size IT7 = 25 μm and IT6 = 16 μm, and the fundamental (upper) deviation of the f shaft is −25 μm. The maximum clearance of the fit (in μm) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "66",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> H hole: lower deviation 0, upper deviation = IT grade. f shaft: upper deviation = fundamental deviation, lower = upper − IT grade.",
+    "Hole: 50.000 to 50.025 mm",
+    "Shaft: upper = 50 − 0.025 = 49.975 mm; lower = 49.975 − 0.016 = 49.959 mm",
+    "Maximum clearance = 50.025 − 49.959 = 0.066 mm = <b>66 μm</b> (minimum clearance = 25 μm)",
+    "<b>Exam tip:</b> For shafts a to h the fundamental deviation is the upper deviation; for j to zc it is the lower deviation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following combinations gives a transition fit?",
+   "fig": null,
+   "opts": [
+    "H7/k6",
+    "H7/g6",
+    "H7/s6",
+    "H8/d9"
+   ],
+   "ans": "(A) H7/k6",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In the hole-basis system, shafts a–h give clearance fits, j–n transition fits and p–zc interference fits (roughly).",
+    "A k6 shaft overlaps the H7 hole zone, so an assembled pair may have a small clearance or a small interference: <b>(A)</b>.",
+    "g6 and d9 give clearance fits (sliding/running); s6 gives an interference (press) fit.",
+    "<b>Exam tip:</b> Transition fits such as H7/k6 or H7/n6 are used for gears and couplings that must be located accurately but can still be dismantled."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 100 mm sine bar is to be set to an angle of 35°. The height of the slip-gauge pile to be placed under one roller (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "57.36 (accept 57.33 to 57.39)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The sine bar forms the hypotenuse of a right triangle: sin θ = h/L, where L is the distance between the roller centres.",
+    "h = 100 × sin 35° = 100 × 0.57358",
+    "h = <b>57.36 mm</b>",
+    "<b>Exam tip:</b> Sine bars become inaccurate above about 45°, since an error in h causes an angle error dθ = dh/(L cos θ), which grows as θ increases."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A linear variable differential transformer (LVDT) works on the principle of",
+   "fig": null,
+   "opts": [
+    "change of resistance of a strained wire",
+    "change of mutual inductance between a primary coil and two secondary coils as a soft-iron core moves",
+    "change of capacitance between two plates",
+    "generation of an EMF by a piezoelectric crystal"
+   ],
+   "ans": "(B) change of mutual inductance between a primary coil and two secondary coils as a soft-iron core moves",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An LVDT has one primary and two secondary windings connected in series opposition, with a movable soft-iron core.",
+    "At the null position the two secondary voltages cancel; displacing the core raises one and lowers the other, so the output voltage is proportional to displacement and its phase shows the direction: <b>(B)</b>.",
+    "<b>Exam tip:</b> The LVDT is an electrical comparator; it is frictionless, has very high resolution and is linear over its working range."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A surface is tested with an optical flat under monochromatic light of wavelength 0.6 μm. The fringes are curved as shown, and the bow of each fringe is 0.4 of the fringe spacing. The out-of-flatness of the surface (in μm, round off to two decimal places) is ______",
+   "fig": "d62p_q6.png",
+   "opts": null,
+   "ans": "0.12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Neighbouring fringes differ in air-gap thickness by λ/2. A fringe curved by a fraction a/b of the fringe spacing shows a height error of (a/b) × λ/2.",
+    "λ/2 = 0.3 μm",
+    "Out-of-flatness = 0.4 × 0.3 = <b>0.12 μm</b>",
+    "<b>Exam tip:</b> Straight, parallel, equally spaced fringes mean a flat surface; curved fringes mean a convex or concave surface (pressing the flat at one edge tells which)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which statement about surface roughness parameters is correct?",
+   "fig": null,
+   "opts": [
+    "Ra is the maximum peak-to-valley height within the sampling length",
+    "Ra is always larger than Rz for the same surface",
+    "the sampling (cut-off) length has no effect on the measured roughness",
+    "Ra is the arithmetic mean of the absolute deviations of the profile from the mean line over the sampling length"
+   ],
+   "ans": "(D) Ra is the arithmetic mean of the absolute deviations of the profile from the mean line over the sampling length",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Ra (CLA) = (1/L)∫|y| dx, measured from the mean line within the sampling length.",
+    "Rz (ten-point height) and Rt/Rmax are peak-to-valley type parameters, so they are always larger than Ra (for example Ra = h/4 for a triangular profile): <b>(D)</b>.",
+    "The cut-off length filters out waviness; a longer cut-off includes more waviness and changes the reading.",
+    "<b>Exam tip:</b> Ra is the most widely used parameter but cannot distinguish peaks from valleys; two very different surfaces can have the same Ra."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A turning tool with a nose radius of 0.6 mm is used at a feed of 0.15 mm/rev. The ideal (geometric) peak-to-valley surface roughness (in μm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4.69 (accept 4.66 to 4.72)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> When the feed is small compared with the nose radius, the surface is a series of circular arcs and h = f²/(8r).",
+    "h = 0.15²/(8 × 0.6) = 0.0225/4.8 = 0.0046875 mm",
+    "h = <b>4.69 μm</b>",
+    "<b>Exam tip:</b> Halving the feed cuts the ideal roughness to one-quarter, while doubling the nose radius only halves it."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A hole of size 20.0–20.2 mm has a position tolerance of Ø0.1 mm at maximum material condition (MMC). If the hole is actually produced at 20.15 mm, the position tolerance available is",
+   "fig": null,
+   "opts": [
+    "Ø0.10 mm",
+    "Ø0.25 mm",
+    "Ø0.30 mm",
+    "Ø0.05 mm"
+   ],
+   "ans": "(B) Ø0.25 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With the MMC modifier, the stated geometric tolerance applies when the feature is at MMC, and any departure from MMC is added as a bonus tolerance.",
+    "MMC of a hole = smallest size = 20.0 mm. Departure = 20.15 − 20.0 = 0.15 mm",
+    "Available position tolerance = 0.1 + 0.15 = <b>Ø0.25 mm (B)</b>",
+    "<b>Exam tip:</b> The maximum bonus occurs at LMC (20.2 mm), giving Ø0.3 mm. A functional GO gauge checks size and position together at the virtual condition 20.0 − 0.1 = 19.9 mm."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gauge block is measured with a He-Ne laser interferometer (λ = 632.8 nm). As the moving mirror travels from one face of the block to the other, 50 000 fringes are counted. The length of the block (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15.82",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a Michelson-type interferometer the light travels to the mirror and back, so each fringe corresponds to a mirror movement of λ/2.",
+    "L = Nλ/2 = 50 000 × 0.6328/2 μm = 15 820 μm",
+    "L = <b>15.82 mm</b>",
+    "<b>Exam tip:</b> Laser interferometers are used to calibrate CNC machine axes; air temperature, pressure and humidity change λ and must be compensated."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In ISO CNC programming, which one of the following codes is correctly matched with its function?",
+   "fig": null,
+   "opts": [
+    "G00 – linear interpolation at the programmed feed",
+    "M03 – spindle stop",
+    "M06 – tool change",
+    "G91 – absolute dimensioning"
+   ],
+   "ans": "(C) M06 – tool change",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> G codes are preparatory (motion and mode) functions; M codes are miscellaneous (machine) functions.",
+    "G00 is rapid positioning (G01 is linear interpolation at feed), M03 is spindle on clockwise (M05 is stop), G91 is incremental (G90 is absolute). M06 is tool change: <b>(C)</b>.",
+    "<b>Exam tip:</b> Also remember G02/G03 (CW/CCW arcs), G17 (XY plane), M08/M09 (coolant on/off) and M30 (end of program, rewind)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The table of a CNC drilling machine is driven directly (no gearing) by a stepper motor with a step angle of 1.8° through a lead screw of 4 mm pitch. The number of pulses needed to move the table by 75 mm is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3750",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Basic length unit (BLU) = table movement per pulse = pitch/(steps per revolution × gear ratio).",
+    "Steps per revolution = 360/1.8 = 200, so BLU = 4/200 = 0.02 mm",
+    "Pulses = 75/0.02 = <b>3750</b>",
+    "<b>Exam tip:</b> The table speed is set by the pulse frequency: at 1000 pulses/s this table moves 20 mm/s."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In 2-D CAD, the point (3, 4) is scaled by a factor of 2 in both directions about the fixed point (1, 1). Its new position is",
+   "fig": null,
+   "opts": [
+    "(6, 8)",
+    "(4, 7)",
+    "(7, 5)",
+    "(5, 7)"
+   ],
+   "ans": "(D) (5, 7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Scaling about a point other than the origin = translate that point to the origin, scale, translate back.",
+    "Relative position: (3 − 1, 4 − 1) = (2, 3); scaled: (4, 6); back: (4 + 1, 6 + 1) = <b>(5, 7)</b>",
+    "(6, 8) is the result of scaling about the origin.",
+    "<b>Exam tip:</b> In homogeneous coordinates the three steps become one 3 × 3 matrix product T(1,1)·S(2,2)·T(−1,−1)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Three spacers, each 33.00 ± 0.02 mm long, are placed side by side in a housing whose internal length is 100.00 ± 0.10 mm, as shown. The maximum possible gap G (in mm, round off to two decimal places) is ______",
+   "fig": "d62p_q14.png",
+   "opts": null,
+   "ans": "1.16",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Worst-case stack: the gap is largest when the housing is largest and every spacer is smallest.",
+    "G<sub>max</sub> = 100.10 − 3 × 32.98 = 100.10 − 98.94",
+    "G<sub>max</sub> = <b>1.16 mm</b> (and G<sub>min</sub> = 99.90 − 99.06 = 0.84 mm)",
+    "<b>Exam tip:</b> The tolerance of the gap equals the sum of all the tolerances in the chain: ±(0.10 + 3 × 0.02) = ±0.16 mm about the nominal gap of 1.00 mm."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In computer-aided process planning (CAPP), the generative approach",
+   "fig": null,
+   "opts": [
+    "creates a new process plan from part features using decision logic, formulae and a manufacturing knowledge base, without starting from a stored plan",
+    "retrieves the standard plan of the part family (found by group-technology coding) and edits it",
+    "is the same as the variant approach",
+    "applies only to assembly planning"
+   ],
+   "ans": "(A) creates a new process plan from part features using decision logic, formulae and a manufacturing knowledge base, without starting from a stored plan",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> CAPP comes in two types: variant (retrieval) and generative.",
+    "The variant approach classifies the part with a GT code, retrieves the standard plan of its family and modifies it. The generative approach synthesises the plan from scratch using decision tables, rules and process data: <b>(A)</b>.",
+    "<b>Exam tip:</b> Opitz and MICLASS are GT coding systems used to form part families for variant CAPP and cellular manufacturing."
+   ]
+  }
+ ]
+}

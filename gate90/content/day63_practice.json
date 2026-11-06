@@ -1,0 +1,262 @@
+{
+ "day": 63,
+ "subject": "Engineering Mathematics",
+ "topic": "Probability & Statistics",
+ "days_to_gate": 38,
+ "summary": "probability rules, independence and conditional probability, Bayes' theorem, discrete and continuous random variables, expectation and variance, binomial, Poisson, exponential, uniform and normal distributions, mean, median, mode and standard deviation, correlation and least-squares regression",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Industrial Engineering, Production Planning & Inventory",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A and B are two events with P(A) > 0 and P(B) > 0. If A and B are mutually exclusive, then",
+   "fig": null,
+   "opts": [
+    "A and B must also be independent",
+    "A and B cannot be independent",
+    "P(A ∪ B) = P(A)P(B)",
+    "P(A | B) = P(A)"
+   ],
+   "ans": "(B) A and B cannot be independent",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Mutually exclusive: P(A ∩ B) = 0. Independent: P(A ∩ B) = P(A)P(B).",
+    "Since P(A) and P(B) are both positive, P(A)P(B) > 0 ≠ P(A ∩ B) = 0, so they cannot be independent: <b>(B)</b>.",
+    "Indeed P(A | B) = 0: knowing B happened tells us for sure that A did not, which is the opposite of independence.",
+    "<b>Exam tip:</b> 'Mutually exclusive' is about the events' outcomes; 'independent' is about probabilities. Do not mix them up."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A machine has four critical components that fail independently, each with a probability of 0.05 during a shift. The machine stops if any one of them fails. The probability that the machine stops during the shift (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.185 (accept 0.184 to 0.187)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> P(at least one) = 1 − P(none).",
+    "P(no failure) = 0.95<sup>4</sup> = 0.81451",
+    "P(stop) = 1 − 0.81451 = <b>0.185</b>",
+    "<b>Exam tip:</b> Simply adding 4 × 0.05 = 0.20 overcounts the cases where two or more fail."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For which one of the following distributions are the mean and the variance always equal?",
+   "fig": null,
+   "opts": [
+    "Binomial",
+    "Normal",
+    "Poisson",
+    "Uniform"
+   ],
+   "ans": "(C) Poisson",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a Poisson distribution with parameter λ, E[X] = Var(X) = λ.",
+    "A binomial has variance np(1 − p) < np; a normal or uniform distribution has mean and variance set independently: <b>(C)</b>.",
+    "<b>Exam tip:</b> If the sample mean and variance of count data are nearly equal, a Poisson model is a good first guess."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "30 % of the e-mails reaching an inbox are spam. The word 'offer' appears in 40 % of spam e-mails and in 5 % of genuine e-mails. An e-mail is found to contain 'offer'. The probability that it is spam (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.774 (accept 0.770 to 0.778)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bayes' theorem: P(S | W) = P(W | S)P(S)/[P(W | S)P(S) + P(W | G)P(G)].",
+    "Numerator = 0.4 × 0.3 = 0.12; denominator = 0.12 + 0.05 × 0.7 = 0.155",
+    "P(S | W) = 0.12/0.155 = <b>0.774</b>",
+    "<b>Exam tip:</b> Draw a tree: the two branches that end in 'offer' form the denominator."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "X is normally distributed with mean 10 and variance 4. Given Φ(1) = 0.8413, where Φ is the standard normal cumulative distribution function, P(8 < X < 12) is",
+   "fig": null,
+   "opts": [
+    "0.1587",
+    "0.6826",
+    "0.8413",
+    "0.3413"
+   ],
+   "ans": "(B) 0.6826",
+   "sfig": "d63p_s5.png",
+   "solution": [
+    "<b>Concept:</b> Standardise with z = (x − μ)/σ; note that σ = √4 = 2, not 4.",
+    "z<sub>1</sub> = (8 − 10)/2 = −1, z<sub>2</sub> = (12 − 10)/2 = 1",
+    "P = Φ(1) − Φ(−1) = 2Φ(1) − 1 = 2 × 0.8413 − 1 = <b>0.6826 (B)</b>",
+    "<b>Exam tip:</b> About 68 %, 95 % and 99.7 % of a normal population lie within 1, 2 and 3 standard deviations of the mean."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A shop has 6 identical machines, each of which is independently under repair on a given day with a probability of 0.2. The probability that exactly 2 machines are under repair on a given day (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.246 (accept 0.244 to 0.248)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Binomial: P(X = r) = <sup>n</sup>C<sub>r</sub> p<sup>r</sup>(1 − p)<sup>n−r</sup>.",
+    "P(X = 2) = 15 × 0.2<sup>2</sup> × 0.8<sup>4</sup> = 15 × 0.04 × 0.4096",
+    "P = <b>0.246</b>",
+    "<b>Exam tip:</b> Check that the trials are independent and p is the same for all; otherwise the binomial model does not apply."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A random variable X has the probability density function f(x) = λe<sup>−λx</sup> for x ≥ 0 (λ > 0). Its mean and variance are",
+   "fig": null,
+   "opts": [
+    "1/λ and 1/λ²",
+    "λ and λ",
+    "1/λ and 1/λ",
+    "λ and λ²"
+   ],
+   "ans": "(A) 1/λ and 1/λ²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For the exponential distribution, E[X] = ∫ xλe<sup>−λx</sup> dx = 1/λ and E[X²] = 2/λ².",
+    "Var(X) = 2/λ² − 1/λ² = 1/λ², so the mean and the standard deviation are equal: <b>(A)</b>.",
+    "<b>Exam tip:</b> λ is a rate (failures per hour); 1/λ is the mean time between failures. (λ, λ) belongs to the Poisson distribution."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A random variable X has the probability density function f(x) = k(1 − x²) for −1 ≤ x ≤ 1 and zero elsewhere. The value of k (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.75",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The total area under a pdf is 1.",
+    "∫ from −1 to 1 of (1 − x²) dx = [x − x³/3] from −1 to 1 = 2/3 + 2/3 = 4/3",
+    "k × 4/3 = 1, so k = <b>0.75</b>",
+    "<b>Exam tip:</b> Also check f(x) ≥ 0 everywhere in the range; a 'pdf' that goes negative is not valid whatever k is."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The mean of 10 observations was found to be 20. Later it was noticed that one observation, 38, had been wrongly recorded as 83. The correct mean is",
+   "fig": null,
+   "opts": [
+    "24.5",
+    "20.0",
+    "15.5",
+    "11.0"
+   ],
+   "ans": "(C) 15.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Correct the sum, not the mean.",
+    "Wrong sum = 10 × 20 = 200. Correct sum = 200 − 83 + 38 = 155",
+    "Correct mean = 155/10 = <b>15.5</b>",
+    "<b>Exam tip:</b> A single wrong entry shifts the mean by (error)/n = 45/10 = 4.5. The median is far less sensitive to such outliers."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The standard deviation (population, dividing by n) of the data 4, 8, 6, 10, 12 is ______ (round off to two decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "2.83 (accept 2.81 to 2.85)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ = √[Σ(x − x̄)²/n].",
+    "x̄ = 40/5 = 8; squared deviations: 16, 0, 4, 4, 16, total 40",
+    "σ² = 40/5 = 8, σ = √8 = <b>2.83</b>",
+    "<b>Exam tip:</b> The sample standard deviation (divide by n − 1) would be √10 = 3.16; read which one the question wants."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "X takes the values −2, −1, 0, 1, 2 with equal probability and Y = X². The correlation coefficient between X and Y is",
+   "fig": null,
+   "opts": [
+    "1, because Y is completely determined by X",
+    "−1",
+    "0.5",
+    "0, although X and Y are not independent"
+   ],
+   "ans": "(D) 0, although X and Y are not independent",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The correlation coefficient measures only <i>linear</i> association: r ∝ Cov(X, Y) = E[XY] − E[X]E[Y].",
+    "E[X] = 0 and E[XY] = E[X³] = (−8 − 1 + 0 + 1 + 8)/5 = 0, so Cov = 0 and r = 0: <b>(D)</b>.",
+    "Yet Y is a function of X, so they are clearly dependent.",
+    "<b>Exam tip:</b> Independent ⇒ uncorrelated, but uncorrelated does not imply independent (except for jointly normal variables)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "For 5 pairs of observations, Σx = 20, Σy = 30, Σxy = 140 and Σx² = 100. Using the least-squares regression line of y on x, the estimated value of y at x = 6 is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "8",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> b<sub>yx</sub> = [Σxy − (Σx)(Σy)/n]/[Σx² − (Σx)²/n], and the line passes through (x̄, ȳ).",
+    "b<sub>yx</sub> = (140 − 120)/(100 − 80) = 1; x̄ = 4, ȳ = 6",
+    "y = 6 + 1 × (6 − 4) = <b>8</b>",
+    "<b>Exam tip:</b> Use the y-on-x line to predict y; the x-on-y line is a different line unless r = ±1."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A process produces 2 % defective items. Using the Poisson approximation, the probability that a lot of 100 items contains no defective item is about",
+   "fig": null,
+   "opts": [
+    "0.135",
+    "0.020",
+    "0.271",
+    "0.865"
+   ],
+   "ans": "(A) 0.135",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For large n and small p, the binomial is approximated by a Poisson distribution with λ = np.",
+    "λ = 100 × 0.02 = 2, so P(0) = e<sup>−2</sup> = <b>0.135 (A)</b>",
+    "The exact binomial value 0.98<sup>100</sup> = 0.133 is very close.",
+    "<b>Exam tip:</b> 0.271 is P(X = 1) = 2e<sup>−2</sup>, a common slip."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A random variable has the probability density function f(x) = 3x² for 0 ≤ x ≤ 1 and zero elsewhere. Its variance (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.0375",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Var(X) = E[X²] − (E[X])².",
+    "E[X] = ∫ 3x³ dx = 3/4; E[X²] = ∫ 3x⁴ dx = 3/5",
+    "Var = 0.6 − 0.5625 = <b>0.0375</b>",
+    "<b>Exam tip:</b> For f(x) = (n + 1)xⁿ on [0, 1], E[X] = (n + 1)/(n + 2), a handy check."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The diameters of pins have a standard deviation of 12 μm. Samples of 36 pins are taken and the sample mean is calculated. The standard deviation of the sample mean (standard error) is",
+   "fig": null,
+   "opts": [
+    "12 μm",
+    "0.33 μm",
+    "6 μm",
+    "2 μm"
+   ],
+   "ans": "(D) 2 μm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For n independent observations, σ<sub>x̄</sub> = σ/√n.",
+    "σ<sub>x̄</sub> = 12/√36 = 12/6 = <b>2 μm (D)</b>",
+    "By the central limit theorem the sample mean is nearly normal even if the individual diameters are not.",
+    "<b>Exam tip:</b> This is why X̄ control charts have limits at μ ± 3σ/√n, much narrower than the spread of individual parts."
+   ]
+  }
+ ]
+}

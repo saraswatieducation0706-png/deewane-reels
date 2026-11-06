@@ -1,0 +1,262 @@
+{
+ "day": 64,
+ "subject": "Industrial Engineering",
+ "topic": "Production Planning & Inventory",
+ "days_to_gate": 37,
+ "summary": "forecasting (moving averages, exponential smoothing, trend and seasonal indices, MAD, bias and tracking signal), sequencing and scheduling (SPT, EDD, Johnson's rule), aggregate planning strategies, MRP explosion and netting, and inventory control (EOQ, production lot size, backorders, quantity discounts, safety stock and reorder point, ABC/VED)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Industrial Engineering, Operations Research",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "The annual demand of an item is 18 000 units, the ordering cost is ₹360 per order and the unit price is ₹50. The holding cost is 20 % of the unit price per year. The minimum total annual inventory cost (ordering + holding, excluding purchase cost) in ₹ (round off to the nearest whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11384 (accept 11330 to 11440)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At the EOQ, the minimum total variable cost is TC* = √(2DC<sub>o</sub>C<sub>h</sub>).",
+    "C<sub>h</sub> = 0.2 × 50 = ₹10 per unit per year; EOQ = √(2 × 18 000 × 360/10) = 1138 units",
+    "TC* = √(2 × 18 000 × 360 × 10) = √129 600 000 = <b>₹11 384</b>",
+    "<b>Exam tip:</b> TC* = C<sub>h</sub> × EOQ, a quick check: 10 × 1138.4 = 11 384."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the basic EOQ model, if the annual demand becomes four times its present value (all costs unchanged), the EOQ",
+   "fig": null,
+   "opts": [
+    "becomes four times",
+    "becomes twice",
+    "stays the same",
+    "becomes half"
+   ],
+   "ans": "(B) becomes twice",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EOQ = √(2DC<sub>o</sub>/C<sub>h</sub>) ∝ √D.",
+    "√4 = 2, so the EOQ doubles: <b>(B)</b>. The number of orders per year D/Q also doubles.",
+    "<b>Exam tip:</b> The total variable cost √(2DC<sub>o</sub>C<sub>h</sub>) also doubles, but cost per unit falls: inventory has economies of scale."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The demands in January, February and March were 410, 380 and 450 units. Using a three-month weighted moving average with weights 0.5, 0.3 and 0.2 (0.5 on the most recent month), the forecast for April (in units) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "421",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Weighted moving average F = Σw<sub>i</sub>A<sub>i</sub> with Σw<sub>i</sub> = 1, larger weights on recent data.",
+    "F = 0.5 × 450 + 0.3 × 380 + 0.2 × 410 = 225 + 114 + 82",
+    "F = <b>421 units</b>",
+    "<b>Exam tip:</b> The simple 3-month average would be 413.3; weighting the recent high month pulls the forecast up."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Simple exponential smoothing with a smoothing constant α = 1 gives a forecast equal to",
+   "fig": null,
+   "opts": [
+    "the average of all past demands",
+    "the previous forecast",
+    "the latest actual demand (naive forecast)",
+    "zero"
+   ],
+   "ans": "(C) the latest actual demand (naive forecast)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> F<sub>t+1</sub> = αA<sub>t</sub> + (1 − α)F<sub>t</sub>.",
+    "With α = 1, F<sub>t+1</sub> = A<sub>t</sub>: the forecast simply repeats the last actual value: <b>(C)</b>. With α = 0 the forecast never changes.",
+    "<b>Exam tip:</b> Exponential smoothing with α behaves like a moving average of about N = 2/α − 1 periods."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Four jobs are processed first on machine M1 and then on machine M2. The processing times (hours) are P (6, 3), Q (2, 5), R (8, 6) and S (4, 7), given as (M1, M2). With the optimal sequence, the minimum total elapsed time (in hours) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "23",
+   "sfig": "d64p_s5.png",
+   "solution": [
+    "<b>Concept:</b> Johnson's rule: pick the smallest time; if it is on M1 put the job as early as possible, if on M2 as late as possible; strike it off and repeat.",
+    "Smallest 2 (Q on M1) → first; next 3 (P on M2) → last; next 4 (S on M1) → second; R takes the remaining place. Sequence: Q, S, R, P",
+    "M1 ends: 2, 6, 14, 20. M2 ends: 7, 14, 20, 23 (M2 is idle only for the first 2 h)",
+    "Minimum elapsed time = <b>23 h</b>",
+    "<b>Exam tip:</b> The makespan can never be less than (total M2 time + smallest M1 time) = 21 + 2 = 23 here, so the answer is confirmed."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Match the single-machine sequencing rule with what it minimises. P: SPT (shortest processing time); Q: EDD (earliest due date); R: Moore–Hodgson algorithm. 1: maximum lateness; 2: number of tardy jobs; 3: mean flow time (and mean waiting time).",
+   "fig": null,
+   "opts": [
+    "P-1, Q-3, R-2",
+    "P-3, Q-2, R-1",
+    "P-2, Q-1, R-3",
+    "P-3, Q-1, R-2"
+   ],
+   "ans": "(D) P-3, Q-1, R-2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Each classic single-machine rule is optimal for one measure.",
+    "SPT minimises mean flow time, mean waiting time and mean lateness; EDD minimises the maximum lateness (and maximum tardiness); Moore–Hodgson (built on EDD) minimises the number of tardy jobs: <b>(D)</b>.",
+    "<b>Exam tip:</b> SPT never minimises maximum lateness in general, and EDD does not minimise mean flow time."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A part is produced at a rate of 24 000 units per year and consumed at 6000 units per year. The set-up cost is ₹500 per set-up and the holding cost is ₹2.5 per unit per year. With the economic batch quantity, the maximum inventory level (in units, round off to the nearest whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1342 (accept 1335 to 1349)",
+   "sfig": "d64p_s7.png",
+   "solution": [
+    "<b>Concept:</b> In the production (EPQ) model, stock builds up at the rate P − D during production, so I<sub>max</sub> = Q(1 − D/P).",
+    "Q = √[2DC<sub>s</sub>/(C<sub>h</sub>(1 − D/P))] = √[2 × 6000 × 500/(2.5 × 0.75)] = √3 200 000 = 1788.9 units",
+    "I<sub>max</sub> = 1788.9 × 0.75 = <b>1342 units</b>",
+    "<b>Exam tip:</b> Production runs for Q/P = 0.0745 year (about 27 days) of each cycle of Q/D = 0.298 year."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Material requirements planning (MRP) is most suitable for",
+   "fig": null,
+   "opts": [
+    "items with independent demand, such as finished goods sold to customers",
+    "dependent-demand items such as components and sub-assemblies whose requirements follow from the master production schedule",
+    "services that cannot be stored",
+    "items whose demand is completely random"
+   ],
+   "ans": "(B) dependent-demand items such as components and sub-assemblies whose requirements follow from the master production schedule",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The demand for a component depends on the production plan of its parent, so it can be calculated rather than forecast.",
+    "MRP explodes the MPS through the bill of materials, nets against inventory and offsets by lead times: <b>(B)</b>.",
+    "Independent-demand items (end products, spares) are controlled by forecasting with EOQ/ROP methods.",
+    "<b>Exam tip:</b> Lumpy, time-phased demand for components makes reorder-point systems wasteful; that is the reason MRP was developed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The weekly demand for an item is normally distributed with a standard deviation of 20 units, and weekly demands are independent. The lead time is 4 weeks. For a service level of 97 % (z = 1.88), the safety stock required (in units, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "75.2 (accept 74.8 to 75.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Safety stock = z × σ<sub>LT</sub>, where σ<sub>LT</sub> = σ<sub>week</sub>√L for independent weekly demands.",
+    "σ<sub>LT</sub> = 20 × √4 = 40 units",
+    "SS = 1.88 × 40 = <b>75.2 units</b>",
+    "<b>Exam tip:</b> Variances add, not standard deviations: 4 × 20 = 80 would grossly overstate the safety stock."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In VED analysis, spare parts and materials are classified according to their",
+   "fig": null,
+   "opts": [
+    "annual consumption value",
+    "rate of usage (fast, slow, non-moving)",
+    "criticality to production: vital, essential and desirable",
+    "unit price only"
+   ],
+   "ans": "(C) criticality to production: vital, essential and desirable",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Different selective inventory controls use different criteria.",
+    "VED: criticality (vital, essential, desirable) — used mainly for spares: <b>(C)</b>.",
+    "ABC: annual consumption value; FSN: rate of movement; HML: unit price; SDE: scarcity of supply.",
+    "<b>Exam tip:</b> A cheap 'C' item can still be 'V' (vital), so ABC and VED are often used together."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Product X is made from 2 units of Y and 1 unit of Z, as shown. 50 units of X are required in week 8. Lead times are 1 week for X and 2 weeks for Y. 10 units of X and 30 units of Y are on hand, with no scheduled receipts, and lot-for-lot ordering is used. The planned order release quantity for Y (in units) is ______",
+   "fig": "d64p_q11.png",
+   "opts": null,
+   "ans": "50",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> MRP nets each level against its own stock and offsets the order by the lead time before exploding to the next level.",
+    "X: net = 50 − 10 = 40, released in week 8 − 1 = 7",
+    "Y: gross = 2 × 40 = 80 needed in week 7; net = 80 − 30 = 50",
+    "Planned order release for Y = <b>50 units</b>, in week 7 − 2 = 5",
+    "<b>Exam tip:</b> Exploding the gross requirement of X (2 × 50 = 100) without first netting X's stock is the most common mistake."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following is a demand-side (demand-influencing) option in aggregate planning rather than a capacity (supply-side) option?",
+   "fig": null,
+   "opts": [
+    "Hiring and laying off workers",
+    "Overtime and idle time",
+    "Subcontracting",
+    "Pricing, promotion and taking back orders"
+   ],
+   "ans": "(D) Pricing, promotion and taking back orders",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Aggregate planning matches capacity and demand over the medium term by changing either side.",
+    "Capacity options: workforce changes, overtime/idle time, part-time workers, subcontracting, building inventory.",
+    "Demand options: pricing and promotion, back-ordering in peak periods, counter-seasonal products: <b>(D)</b>.",
+    "<b>Exam tip:</b> A 'mixed' strategy combines several options and is usually cheaper than a pure level or chase plan."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For four periods the actual demands are 100, 110, 120 and 105 units, and the forecasts were 105, 105, 112 and 110 units. The mean absolute deviation (MAD) and the bias (mean of actual − forecast) are",
+   "fig": null,
+   "opts": [
+    "MAD = 5.75, bias = 0.75",
+    "MAD = 0.75, bias = 5.75",
+    "MAD = 5.75, bias = −0.75",
+    "MAD = 34.75, bias = 0.75"
+   ],
+   "ans": "(A) MAD = 5.75, bias = 0.75",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> MAD = Σ|e|/n measures the size of errors; bias = Σe/n measures systematic over- or under-forecasting.",
+    "Errors e = A − F: −5, +5, +8, −5",
+    "MAD = 23/4 = 5.75; bias = 3/4 = <b>0.75 (A)</b> (34.75 is the MSE)",
+    "<b>Exam tip:</b> A small positive bias means the method forecasts slightly low on average; the tracking signal Σe/MAD = 0.52 is well within limits."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When quantity discounts are offered at price breaks, the optimal order quantity is",
+   "fig": null,
+   "opts": [
+    "always the EOQ at the lowest price",
+    "always the largest price-break quantity",
+    "either the feasible EOQ of some price range or a price-break quantity, whichever gives the lowest total cost including purchase cost",
+    "always the EOQ at the highest price"
+   ],
+   "ans": "(C) either the feasible EOQ of some price range or a price-break quantity, whichever gives the lowest total cost including purchase cost",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The total cost curve (including purchase cost) drops at every price break, so the minimum may lie at the EOQ of a range or at the start of a cheaper range.",
+    "Procedure: compute the EOQ for each price; keep those that lie in their own range; compare their total costs with the costs at the higher price-break quantities: <b>(C)</b>.",
+    "<b>Exam tip:</b> Start from the lowest price: if its EOQ is feasible, it is optimal and no further checking is needed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The forecast annual demand of a product for next year is 4800 units, and the seasonal index of the third quarter is 1.25. The forecast for the third quarter (in units) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1500",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Seasonal forecast = (deseasonalised average per period) × seasonal index.",
+    "Average per quarter = 4800/4 = 1200 units",
+    "Q3 forecast = 1200 × 1.25 = <b>1500 units</b>",
+    "<b>Exam tip:</b> The seasonal indices of the four quarters must add up to 4 (average 1)."
+   ]
+  }
+ ]
+}
