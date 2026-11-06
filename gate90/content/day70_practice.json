@@ -1,0 +1,264 @@
+{
+ "day": 70,
+ "subject": "Theory of Machines + Vibrations + Machine Design",
+ "topic": "TOM, Vibrations & MD Revision",
+ "days_to_gate": 30,
+ "summary": "a full revision of Theory of Machines (Grashof's law, quick-return ratio, cam follower acceleration, interference, reverted gear trains, flywheels, gyroscopic couple, balancing), Vibrations (compound pendulum, Dunkerley's method, vibration isolation) and Machine Design (theories of failure, shaft design, bearing life and belt drives)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "FM & HT Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A four-bar chain has links of 40 mm, 90 mm, 70 mm and 100 mm. To obtain a crank–rocker mechanism, the link to be fixed is",
+   "fig": null,
+   "opts": [
+    "the 40 mm link",
+    "the link opposite to the 40 mm link",
+    "either link adjacent to the 40 mm link",
+    "no link: the chain cannot rotate fully"
+   ],
+   "ans": "(C) either link adjacent to the 40 mm link",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Grashof's law: if s + l ≤ p + q, at least one link can rotate fully.",
+    "s + l = 40 + 100 = 140 < p + q = 90 + 70 = 160: a Grashof chain.",
+    "Fixing a link adjacent to the shortest gives a crank–rocker; fixing the shortest gives a double crank; fixing the link opposite it gives a double rocker: <b>(C)</b>.",
+    "<b>Exam tip:</b> Note that the order of the links in the chain matters: 'adjacent' and 'opposite' refer to their positions, not their lengths."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a crank and slotted-lever quick-return mechanism, the distance between the fixed centres is 300 mm and the crank is 150 mm long. The ratio of the time of the cutting stroke to the time of the return stroke is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At the extreme positions the crank is perpendicular to the slotted lever, so cos(β/2) = r/c, where β is the crank angle for the return stroke.",
+    "cos(β/2) = 150/300 = 0.5 → β/2 = 60°, return angle β = 120°",
+    "Cutting angle = 360° − 120° = 240°; ratio = 240/120 = <b>2</b>",
+    "<b>Exam tip:</b> A longer crank (relative to the centre distance) gives a larger quick-return ratio."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cam rotating at a uniform 600 rpm moves a knife-edge follower outward through 40 mm with simple harmonic motion during 90° of cam rotation. The maximum acceleration of the follower during the outstroke (in m/s², round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "315.8 (accept 313.0 to 318.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For SHM over a cam angle θ_o, a_max = (h/2)(πω/θ_o)².",
+    "ω = 2π × 600/60 = 62.83 rad/s; θ_o = π/2 rad, so πω/θ_o = 2ω = 125.66 rad/s",
+    "a_max = 0.02 × 125.66² = <b>315.8 m/s²</b>",
+    "<b>Exam tip:</b> Halving the cam angle for the same lift multiplies the peak acceleration by four."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For 20° full-depth involute teeth (addendum = 1 module), the minimum number of teeth on a pinion meshing with a rack, to avoid interference, is",
+   "fig": null,
+   "opts": [
+    "14",
+    "17",
+    "13",
+    "18"
+   ],
+   "ans": "(D) 18",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a pinion meshing with a rack, interference is avoided if T ≥ 2a_w/sin²φ (a_w = addendum in modules).",
+    "T_min = 2 × 1/sin²20° = 2/0.11698 = 17.1",
+    "Rounding up: <b>18 teeth (D)</b>.",
+    "<b>Exam tip:</b> 17 is too few (17 &lt; 17.1); always round up. For 14.5° teeth the minimum is 32."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In the reverted gear train shown, the input and output shafts are coaxial and all the gears have the same module. Gear A (20 teeth) on the input shaft drives B (60 teeth) on the countershaft, and C on the countershaft drives D on the output shaft. If the overall speed reduction is 12, the number of teeth on D is ______",
+   "fig": "d70p_q5.png",
+   "opts": null,
+   "ans": "64",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Speed ratio = product of (driven/driver) teeth ratios; coaxial shafts with the same module need equal centre distances: T_A + T_B = T_C + T_D.",
+    "(60/20)(T_D/T_C) = 12 → T_D = 4T_C",
+    "T_C + T_D = 20 + 60 = 80 → 5T_C = 80 → T_C = 16, T_D = <b>64</b>",
+    "<b>Exam tip:</b> Reverted trains (lathe back gears, gearbox lay shafts) always need this centre-distance condition."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A flywheel of given radius is designed for a certain fluctuation of energy and a given coefficient of fluctuation of speed. If the mean speed of the engine is doubled, the other quantities remaining the same, the mass of the flywheel required becomes",
+   "fig": null,
+   "opts": [
+    "twice the original",
+    "one-half of the original",
+    "one-quarter of the original",
+    "four times the original"
+   ],
+   "ans": "(C) one-quarter of the original",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ΔE = Iω²C_s = mk²ω²C_s.",
+    "For the same ΔE, C_s and k: m ∝ 1/ω²",
+    "Doubling the speed makes the required mass <b>one-quarter (C)</b>.",
+    "<b>Exam tip:</b> This is why high-speed engines need only small flywheels."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A disc of mass 5 kg and radius of gyration 100 mm spins at 1000 rpm about its axis, and the axis precesses at 2 rad/s in a plane perpendicular to the spin plane. The gyroscopic couple (in N·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "10.47 (accept 10.40 to 10.55)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Gyroscopic couple C = Iωω_p.",
+    "I = mk² = 5 × 0.1² = 0.05 kg·m²; ω = 2π × 1000/60 = 104.72 rad/s",
+    "C = 0.05 × 104.72 × 2 = <b>10.47 N·m</b>",
+    "<b>Exam tip:</b> Use the spin speed in rad/s; rpm in the formula is the most common error."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rigid rotor carries several unbalanced masses, all lying in a single plane perpendicular to the shaft axis. Which statement is correct?",
+   "fig": null,
+   "opts": [
+    "It needs balancing masses in two planes for dynamic balance",
+    "If it is statically balanced (Σmr = 0), it is also dynamically balanced",
+    "Static balance is impossible to obtain for such a rotor",
+    "Its unbalanced couple is Σmr × (distance between the bearings)"
+   ],
+   "ans": "(B) If it is statically balanced (Σmr = 0), it is also dynamically balanced",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Dynamic balance needs Σmr = 0 (no resultant force) and Σmrl = 0 (no resultant couple).",
+    "With all masses in one plane, l is the same for every mass, so Σmrl = l Σmr: static balance automatically removes the couple: <b>(B)</b>.",
+    "Masses in several planes need balancing in two planes.",
+    "<b>Exam tip:</b> Thin discs and pulleys are balanced statically; long rotors (motor armatures, crankshafts) need dynamic balancing."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A uniform rod 1 m long is pivoted about a horizontal axis through a point O, 0.25 m from its upper end, and swings in a vertical plane, as shown. Taking g = 9.81 m/s², the period of small oscillations (in s, round off to two decimal places) is ______",
+   "fig": "d70p_q9.png",
+   "opts": null,
+   "ans": "1.53 (accept 1.52 to 1.54)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Compound pendulum: T = 2π√(I_O/(mgd)), d = distance from the pivot to the centre of mass.",
+    "d = 0.5 − 0.25 = 0.25 m; I_O = mL²/12 + md² = m(0.0833 + 0.0625) = 0.1458m",
+    "T = 2π√(0.1458/(9.81 × 0.25)) = 2π × 0.2438 = <b>1.53 s</b>",
+    "<b>Exam tip:</b> The equivalent simple-pendulum length is I_O/(md) = 0.583 m, longer than d."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Dunkerley's method for the fundamental natural frequency of a shaft carrying several discs gives",
+   "fig": null,
+   "opts": [
+    "the exact value",
+    "an upper bound (a value higher than the true one)",
+    "a lower bound (a value lower than the true one)",
+    "the second natural frequency"
+   ],
+   "ans": "(C) a lower bound (a value lower than the true one)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Dunkerley: 1/f² = 1/f₀² + 1/f₁² + 1/f₂² + … (shaft alone and each disc alone).",
+    "Neglecting the cross terms makes the right side too large, so f is underestimated: <b>a lower bound (C)</b>.",
+    "Rayleigh's energy method, by contrast, gives an upper bound.",
+    "<b>Exam tip:</b> The true fundamental frequency lies between the Dunkerley and Rayleigh estimates."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A machine running at 1500 rpm is mounted on undamped isolators which deflect by 4 mm under its weight. Taking g = 9.81 m/s², the transmissibility (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.110 (accept 0.109 to 0.112)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ωn = √(g/δ); for an undamped mount TR = 1/(r² − 1) when r > 1.",
+    "ωn = √(9.81/0.004) = 49.52 rad/s; ω = 2π × 1500/60 = 157.08 rad/s; r = 3.172",
+    "TR = 1/(3.172² − 1) = 1/9.06 = <b>0.110</b> (89 % isolation)",
+    "<b>Exam tip:</b> Softer isolators (larger static deflection) lower ωn and improve isolation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a component made of a brittle material such as grey cast iron under a static two-dimensional stress system, the theory of failure normally used is the",
+   "fig": null,
+   "opts": [
+    "maximum principal stress (Rankine) theory",
+    "maximum shear stress (Tresca) theory",
+    "maximum distortion energy (von Mises) theory",
+    "maximum strain energy (Haigh) theory"
+   ],
+   "ans": "(A) maximum principal stress (Rankine) theory",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Brittle materials fail by fracture on the plane of maximum tensile stress, without yielding.",
+    "Hence the <b>maximum principal stress theory (A)</b> (or the Coulomb–Mohr theory) is used, with S_ut as the limit.",
+    "Tresca and von Mises predict yielding of ductile materials.",
+    "<b>Exam tip:</b> von Mises gives shear yield strength = 0.577 S_y; Tresca gives 0.5 S_y."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A solid shaft is to transmit 20 kW at 500 rpm. If the permissible shear stress is 40 MPa, the minimum shaft diameter required (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "36.5 (accept 36.3 to 36.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> T = 60P/(2πN) and τ = 16T/(πd³).",
+    "T = 60 × 20 000/(2π × 500) = 381.97 N·m",
+    "d = (16 × 381 970/(π × 40))<sup>1/3</sup> = 48 634<sup>1/3</sup> = <b>36.5 mm</b>",
+    "<b>Exam tip:</b> In practice the next standard size (38 or 40 mm) is chosen."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The equivalent load on a deep-groove ball bearing is to be changed so that its rating life, at the same speed, is doubled. The load must be reduced to about",
+   "fig": null,
+   "opts": [
+    "50 % of its original value",
+    "79 % of its original value",
+    "71 % of its original value",
+    "81 % of its original value"
+   ],
+   "ans": "(B) 79 % of its original value",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For ball bearings L ∝ (C/P)³, so P ∝ L<sup>−1/3</sup>.",
+    "P_new/P_old = 2<sup>−1/3</sup> = 0.794",
+    "The load must fall to about <b>79 % (B)</b>; for a roller bearing (exponent 10/3) it would be 81 %.",
+    "<b>Exam tip:</b> Bearing life is very sensitive to load: a 10 % overload cuts ball-bearing life by about 25 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a belt drive in which centrifugal tension is considered, the power transmitted is maximum when the centrifugal tension equals",
+   "fig": null,
+   "opts": [
+    "one-half of the maximum tension",
+    "one-third of the maximum tension",
+    "the maximum tension",
+    "one-quarter of the maximum tension"
+   ],
+   "ans": "(B) one-third of the maximum tension",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> P = (T₁ − T₂)v = (T_max − mv²)(1 − e<sup>−μθ</sup>)v.",
+    "dP/dv = 0 → T_max − 3mv² = 0, so T_c = mv² = T_max/3: <b>(B)</b>",
+    "The optimum belt speed is v = √(T_max/(3m)).",
+    "<b>Exam tip:</b> Centrifugal tension does not change the initial-tension balance; it only reduces the tension available for power."
+   ]
+  }
+ ]
+}

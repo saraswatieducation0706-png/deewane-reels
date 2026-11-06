@@ -1,0 +1,267 @@
+{
+ "day": 69,
+ "subject": "Engineering Mechanics + Strength of Materials",
+ "topic": "EM & SOM Revision",
+ "days_to_gate": 31,
+ "summary": "a full revision of Engineering Mechanics (equilibrium of a sphere in a groove, trusses, ladder friction, projectiles, power and impact) and Strength of Materials (elastic constants, tapering bars, SFD and BMD, section modulus, cantilever deflection, torsion of fixed shafts, thin cylinders with joint efficiency, effective length of columns and stress transformation)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "TOM, Vibrations & MD Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A smooth sphere of weight W = 100 N rests in a V-groove whose faces make 60° and 30° with the horizontal, as shown. The reactions on the sphere from the 30° face and the 60° face are, respectively,",
+   "fig": "d69p_q1.png",
+   "opts": [
+    "50 N and 86.6 N",
+    "86.6 N and 50 N",
+    "100 N and 57.7 N",
+    "57.7 N and 115.5 N"
+   ],
+   "ans": "(B) 86.6 N and 50 N",
+   "sfig": "d69p_s1.png",
+   "solution": [
+    "<b>Concept:</b> A smooth surface pushes along its normal. The normal to a face inclined at α to the horizontal makes α with the vertical.",
+    "R₁ (30° face) acts at 30° from the vertical, R₂ (60° face) at 60° from the vertical, on opposite sides; the two normals are at 90° to each other.",
+    "Horizontal: R₁ sin 30° = R₂ sin 60°. Vertical: R₁ cos 30° + R₂ cos 60° = 100. Hence R₁ = W cos 30° = <b>86.6 N</b> and R₂ = W cos 60° = <b>50 N (B)</b>.",
+    "<b>Exam tip:</b> The flatter face carries the larger share of the weight; Lami's theorem gives the same result in one line."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The truss ABC shown is pinned at A and supported on a roller at B, and carries a vertical load of 24 kN at C. The force in member AB (in kN, round off to two decimal places) is ______ (tension positive)",
+   "fig": "d69p_q2.png",
+   "opts": null,
+   "ans": "10.67 (accept 10.60 to 10.75)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find the support reactions, then use the equilibrium of the joint with only two unknown member forces (joint B).",
+    "ΣM_A = 0: 6R_B = 24 × 2, so R_B = 8 kN (R_A = 16 kN).",
+    "BC has length √(4² + 3²) = 5 m. Joint B, vertical: 8 + F_BC × 3/5 = 0 → F_BC = −13.33 kN (compression).",
+    "Horizontal at B: −F_AB − F_BC × 4/5 = 0 → F_AB = 13.33 × 0.8 = <b>10.67 kN (tension)</b>",
+    "<b>Exam tip:</b> Assume every member in tension; a negative answer then means compression automatically."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A uniform ladder rests on a rough horizontal floor (μ = 0.3) and leans against a smooth vertical wall. The least angle the ladder can make with the floor without slipping is about",
+   "fig": null,
+   "opts": [
+    "73.3°",
+    "30.9°",
+    "59.0°",
+    "45.0°"
+   ],
+   "ans": "(C) 59.0°",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With a smooth wall, all the friction is at the floor; take moments about the foot.",
+    "Wall reaction R_w = friction F = μW at limiting equilibrium. Moments about the foot: W(L/2)cos θ = R_w L sin θ",
+    "tan θ = 1/(2μ) = 1/0.6 → θ = <b>59.0° (C)</b>",
+    "<b>Exam tip:</b> A higher μ allows a flatter ladder; with friction at both surfaces use tan θ = (1 − μ₁μ₂)/(2μ₁)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A ball is projected from level ground with a speed of 20 m/s. Taking g = 9.81 m/s², the smaller of the two angles of projection (in degrees) for which its horizontal range is 30 m (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "23.69 (accept 23.50 to 23.85)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Range on level ground R = u² sin 2θ/g; two complementary angles give the same range.",
+    "sin 2θ = Rg/u² = 30 × 9.81/400 = 0.7358",
+    "2θ = 47.37° → θ = <b>23.69°</b> (the other angle is 66.31°)",
+    "<b>Exam tip:</b> The two angles are θ and 90° − θ; maximum range u²/g = 40.8 m occurs at 45°."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A pump lifts 2 m³ of water per minute through a height of 20 m. If its overall efficiency is 70 %, the power input to the pump is about",
+   "fig": null,
+   "opts": [
+    "6.54 kW",
+    "9.34 kW",
+    "4.58 kW",
+    "13.08 kW"
+   ],
+   "ans": "(B) 9.34 kW",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Useful power = rate of gain of potential energy = ρQgH; input = output/efficiency.",
+    "Output = 1000 × (2/60) × 9.81 × 20 = 6540 W",
+    "Input = 6540/0.7 = 9343 W ≈ <b>9.34 kW (B)</b>",
+    "<b>Exam tip:</b> Divide by efficiency to get the input; multiplying (4.58 kW) is a common slip."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 1 kg sphere moving at 4 m/s collides directly with a 2 kg sphere moving at 2 m/s in the opposite direction. The coefficient of restitution is 0.5. The loss of kinetic energy in the impact (in J) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Momentum is conserved; e fixes the separation speed: v₂ − v₁ = e(u₁ − u₂).",
+    "Momentum: 1 × 4 + 2 × (−2) = 0 = v₁ + 2v₂; restitution: v₂ − v₁ = 0.5 × (4 + 2) = 3",
+    "v₂ = 1 m/s, v₁ = −2 m/s. KE before = ½ × 1 × 16 + ½ × 2 × 4 = 12 J; after = ½ × 1 × 4 + ½ × 2 × 1 = 3 J",
+    "Loss = <b>9 J</b> (in general ΔKE = ½ m₁m₂/(m₁ + m₂) × (1 − e²)(u₁ − u₂)² = ½ × (2/3) × 0.75 × 36 = 9 J ✓)",
+    "<b>Exam tip:</b> Velocities are vectors: take one direction positive and give the opposite velocity a minus sign."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For an isotropic material, Young's modulus is found to be 2.4 times its modulus of rigidity. The ratio of the bulk modulus to the modulus of rigidity (K/G) is",
+   "fig": null,
+   "opts": [
+    "4/3",
+    "3/4",
+    "5/3",
+    "2"
+   ],
+   "ans": "(A) 4/3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> E = 2G(1 + ν) = 3K(1 − 2ν).",
+    "2.4G = 2G(1 + ν) → ν = 0.2",
+    "K = E/[3(1 − 2ν)] = 2.4G/1.8 → K/G = <b>4/3 (A)</b>",
+    "<b>Exam tip:</b> Find ν first; it links all the elastic constants."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel bar 1 m long tapers uniformly from 40 mm diameter at one end to 20 mm diameter at the other. It carries an axial pull of 50 kN. Taking E = 200 GPa, its elongation (in mm, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.398 (accept 0.395 to 0.401)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a uniformly tapering circular bar, δ = 4PL/(πE d₁ d₂).",
+    "δ = 4 × 50 000 × 1000/(π × 200 000 × 40 × 20)",
+    "δ = 2 × 10⁸/(5.027 × 10⁸) = <b>0.398 mm</b>",
+    "<b>Exam tip:</b> Using the mean diameter (30 mm) gives 0.354 mm, which is wrong; the area varies as the square of the diameter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The simply supported beam AB shown (span 8 m) carries a 40 kN point load at 2 m from A and a UDL of 10 kN/m over the 4 m next to B. The maximum bending moment in the beam (in kN·m) is ______",
+   "fig": "d69p_q9.png",
+   "opts": null,
+   "ans": "80",
+   "sfig": "d69p_s9.png",
+   "solution": [
+    "<b>Concept:</b> The maximum bending moment occurs where the shear force is zero or changes sign.",
+    "ΣM_B = 0: 8R_A = 40 × 6 + (10 × 4) × 2 = 320 → R_A = 40 kN, R_B = 80 − 40 = 40 kN",
+    "Shear: +40 kN from A to the point load, then 40 − 40 = 0 from 2 m to 4 m, so the BM is constant there.",
+    "M = 40 × 2 = <b>80 kN·m</b>, constant from x = 2 m to x = 4 m (SFD and BMD below).",
+    "<b>Exam tip:</b> A zone of zero shear means a flat portion of the BMD: pure bending between the two loads."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A beam has a triangular cross-section of base b and height h, with the base horizontal. Its section modulus for the fibre at the top vertex (about the centroidal axis parallel to the base) is",
+   "fig": null,
+   "opts": [
+    "bh²/12",
+    "bh²/36",
+    "bh²/6",
+    "bh²/24"
+   ],
+   "ans": "(D) bh²/24",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Z = I/y_max, with y measured from the neutral (centroidal) axis.",
+    "I about the centroidal axis = bh³/36. The centroid is h/3 above the base, so the vertex is 2h/3 away.",
+    "Z_top = (bh³/36)/(2h/3) = <b>bh²/24 (D)</b>; for the base fibre Z = bh²/12.",
+    "<b>Exam tip:</b> In an unsymmetrical section the maximum bending stress is at the fibre farthest from the neutral axis (the vertex here)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The cantilever AB shown (length 3 m, EI = 6000 kN·m²) is fixed at A and carries a 12 kN load at its mid-length C. The deflection of the free end B (in mm, round off to two decimal places) is ______",
+   "fig": "d69p_q11.png",
+   "opts": null,
+   "ans": "5.63 (accept 5.58 to 5.67)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Beyond the load the beam is unloaded, so it stays straight with the slope at C.",
+    "At C (a = 1.5 m): y_C = Wa³/(3EI) = 12 × 3.375/18 000 = 2.25 mm; θ_C = Wa²/(2EI) = 12 × 2.25/12 000 = 0.00225 rad",
+    "y_B = y_C + θ_C × 1.5 = 2.25 + 3.375 = <b>5.63 mm</b> (= 5WL³/(48EI))",
+    "<b>Exam tip:</b> For a load at mid-length of a cantilever the tip deflection is 5/16 of that for the same load at the tip."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A shaft AB of length L is fixed at both ends and a torque T is applied at a section C, at a distance a from A and b from B (a + b = L). The fixing torque at end A is",
+   "fig": null,
+   "opts": [
+    "Ta/L",
+    "Tb/L",
+    "T/2",
+    "Tab/L²"
+   ],
+   "ans": "(B) Tb/L",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Statically indeterminate: T_A + T_B = T and the twist of AC equals the twist of CB.",
+    "T_A a/(GJ) = T_B b/(GJ) → T_A/T_B = b/a",
+    "T_A = <b>Tb/L (B)</b>: the shorter (stiffer) part carries the larger torque.",
+    "<b>Exam tip:</b> Same as an axially loaded bar fixed at both ends: each reaction is proportional to the length of the other part."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A thin cylindrical shell of 800 mm internal diameter and 8 mm wall thickness carries an internal pressure of 2 MPa. The longitudinal joint efficiency is 80 % and the circumferential joint efficiency is 50 %. The hoop stress (taking the joint into account) is",
+   "fig": null,
+   "opts": [
+    "100 MPa",
+    "62.5 MPa",
+    "125 MPa",
+    "156.25 MPa"
+   ],
+   "ans": "(C) 125 MPa",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The hoop stress acts across the longitudinal joint, so it is divided by the longitudinal joint efficiency.",
+    "σ_h = pD/(2tη_l) = 2 × 800/(2 × 8 × 0.8)",
+    "σ_h = <b>125 MPa (C)</b>; the longitudinal stress uses η_c: pD/(4tη_c) = 100 MPa.",
+    "<b>Exam tip:</b> Longitudinal joint ↔ hoop stress; circumferential joint ↔ longitudinal stress. Swapping them is the usual error."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The effective length of a column of length L with one end fixed and the other end hinged (pinned), as used in Euler's formula, is",
+   "fig": null,
+   "opts": [
+    "L/√2",
+    "L/2",
+    "2L",
+    "L"
+   ],
+   "ans": "(A) L/√2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Effective length = distance between points of zero bending moment (inflection points) of the buckled shape.",
+    "Both ends hinged: L; both fixed: L/2; fixed–free: 2L; fixed–hinged: <b>L/√2 ≈ 0.7L (A)</b>",
+    "The buckling load is then P = 2π²EI/L², twice that of a pin-ended column.",
+    "<b>Exam tip:</b> P ∝ 1/Le²: the ratios for (fixed–free : pinned : fixed–pinned : fixed–fixed) are 1/4 : 1 : 2 : 4."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "At a point in a body under plane stress, σx = 60 MPa, σy = 20 MPa and τxy = +15 MPa (positive: acting in the +y direction on the +x face). The normal stress on a plane whose normal is at 30° counter-clockwise from the x-axis (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "62.99 (accept 62.70 to 63.30)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σn = (σx + σy)/2 + (σx − σy)/2 cos 2θ + τxy sin 2θ, with θ measured counter-clockwise from x to the normal.",
+    "= 40 + 20 × cos 60° + 15 × sin 60° = 40 + 10 + 12.99",
+    "σn = <b>62.99 MPa</b>",
+    "<b>Exam tip:</b> Check with σ₁ = 40 + √(20² + 15²) = 65 MPa: no normal stress can exceed it."
+   ]
+  }
+ ]
+}

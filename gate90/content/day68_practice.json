@@ -1,0 +1,262 @@
+{
+ "day": 68,
+ "subject": "General Aptitude",
+ "topic": "GA Revision",
+ "days_to_gate": 32,
+ "summary": "a full revision of General Aptitude: verbal ability (tenses, antonyms, sentence completion, critical reasoning), quantitative aptitude (profit and loss, work, ages, mensuration, probability), analytical reasoning (directions, number series, syllogisms), data interpretation from a line graph and spatial aptitude (paper folding and shortest paths on a surface)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "EM & SOM Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the option that correctly fills the blank: By the time the inspector arrives tomorrow, we ______ the pressure test.",
+   "fig": null,
+   "opts": [
+    "will finish",
+    "will have finished",
+    "have finished",
+    "had finished"
+   ],
+   "ans": "(B) will have finished",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> An action that will be complete before a stated point in the future takes the future perfect tense (will have + past participle).",
+    "'By the time the inspector arrives tomorrow' fixes a future point; the test will be over before it: <b>will have finished (B)</b>.",
+    "'had finished' is past perfect (before a past point); 'will finish' does not show completion before that point.",
+    "<b>Exam tip:</b> 'By the time' + present tense in the clause → future perfect in the main clause; 'By the time' + past tense → past perfect."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Select the word that is most nearly OPPOSITE in meaning to FRUGAL.",
+   "fig": null,
+   "opts": [
+    "thrifty",
+    "careful",
+    "extravagant",
+    "modest"
+   ],
+   "ans": "(C) extravagant",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Frugal means economical, sparing in the use of money or resources.",
+    "Its opposite is wasteful or <b>extravagant (C)</b>. 'Thrifty' and 'careful' are near-synonyms, a common trap in antonym questions.",
+    "<b>Exam tip:</b> In antonym questions first eliminate the options that mean the same as the given word."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Select the most appropriate word to fill the blank: The trial results were ______: they neither clearly supported nor clearly ruled out the new design.",
+   "fig": null,
+   "opts": [
+    "inconclusive",
+    "conclusive",
+    "impressive",
+    "exhaustive"
+   ],
+   "ans": "(A) inconclusive",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The clause after the colon explains the blank: results that settle nothing either way.",
+    "Such results are <b>inconclusive (A)</b>. 'Conclusive' is the opposite; 'exhaustive' (thorough) and 'impressive' do not fit the explanation.",
+    "<b>Exam tip:</b> A colon or 'that is' after the blank usually defines the missing word; let it decide."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A shopkeeper sells an article for ₹1140 and suffers a loss of 5 %. The selling price (in ₹) at which he must sell it to gain 10 % is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1320",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> SP = CP × (1 − loss %/100); find the cost price first, then apply the required gain.",
+    "CP = 1140/0.95 = ₹1200",
+    "Required SP = 1200 × 1.10 = <b>₹1320</b>",
+    "<b>Exam tip:</b> Percentages of profit and loss are always on the cost price, not on the old selling price (1140 × 1.15 = 1311 is wrong)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A and B together can finish a job in 12 days, B and C together in 15 days, and C and A together in 20 days. The number of days A alone would take to finish the job is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "30",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Add the three pair rates: each person is counted twice.",
+    "2(A + B + C) = 1/12 + 1/15 + 1/20 = (5 + 4 + 3)/60 = 1/5, so A + B + C = 1/10 per day",
+    "A = 1/10 − (B + C) = 1/10 − 1/15 = 1/30 per day, so A alone takes <b>30 days</b>",
+    "<b>Exam tip:</b> Work with rates (fractions of the job per day), never with the days directly."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The ratio of the present ages of a father and his son is 7 : 2. After 10 years the ratio will be 9 : 4. The present age of the father is",
+   "fig": null,
+   "opts": [
+    "30 years",
+    "40 years",
+    "42 years",
+    "35 years"
+   ],
+   "ans": "(D) 35 years",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Let the present ages be 7x and 2x; both increase by the same 10 years.",
+    "(7x + 10)/(2x + 10) = 9/4 → 28x + 40 = 18x + 90 → x = 5",
+    "Father = 7 × 5 = <b>35 years (D)</b> (son 10; after 10 years 45 : 20 = 9 : 4 ✓).",
+    "<b>Exam tip:</b> Always check the answer in the second ratio; it catches arithmetic slips."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Ravi walks 4 km north, turns right and walks 3 km, turns right again and walks 8 km, and then turns left and walks 3 km. How far is he from the starting point, and in which direction?",
+   "fig": null,
+   "opts": [
+    "7.21 km, south-east",
+    "5 km, north-east",
+    "7.21 km, south-west",
+    "4 km, south"
+   ],
+   "ans": "(A) 7.21 km, south-east",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Track the position on x (east) and y (north) axes, turning with the direction faced.",
+    "North 4 → (0, 4); right = east 3 → (3, 4); right = south 8 → (3, −4); left of south = east 3 → (6, −4)",
+    "Distance = √(6² + 4²) = √52 = <b>7.21 km, towards the south-east (A)</b>",
+    "<b>Exam tip:</b> 'Right' and 'left' depend on the direction being faced at that moment; write the facing direction after each turn."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The next term of the series 4, 9, 25, 49, 121, ___ is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "169",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Look at what kind of numbers the terms are before looking at differences.",
+    "4, 9, 25, 49, 121 = 2², 3², 5², 7², 11²: squares of consecutive prime numbers",
+    "Next = 13² = <b>169</b>",
+    "<b>Exam tip:</b> If the differences (5, 16, 24, 72) show no pattern, test squares, cubes, primes and factorials."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Statements: Some valves are pipes. No pipe is a pump. Conclusions: I. Some valves are not pumps. II. Some pumps are valves. Which conclusion(s) follow?",
+   "fig": null,
+   "opts": [
+    "Only II follows",
+    "Only I follows",
+    "Both I and II follow",
+    "Neither I nor II follows"
+   ],
+   "ans": "(B) Only I follows",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Some A are B' + 'No B is C' always gives 'Some A are not C'.",
+    "The valves that are pipes cannot be pumps, so some valves are not pumps: I follows.",
+    "Nothing links the other valves to pumps; they may or may not be pumps, so II does not follow: <b>Only I (B)</b>.",
+    "<b>Exam tip:</b> Draw the Venn diagram in the way that tries to break the conclusion; if it can be broken, it does not follow."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The line graph shows the monthly sales of two products P and Q from January to June. By what percentage does the total six-month sales of P exceed that of Q? ______",
+   "fig": "d68p_q10.png",
+   "opts": null,
+   "ans": "20",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Percentage excess = (P − Q)/Q × 100, on the base of the quantity being compared with.",
+    "Total P = 40 + 46 + 52 + 48 + 60 + 66 = 312; total Q = 36 + 42 + 40 + 50 + 44 + 48 = 260",
+    "(312 − 260)/260 × 100 = 52/260 × 100 = <b>20 %</b>",
+    "<b>Exam tip:</b> 'P exceeds Q by' uses Q as the base; 'Q is less than P by' uses P (16.67 % here)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A square sheet of paper is folded twice (first the top half down onto the bottom half, then the right half onto the left half) and two holes are punched through all the layers, as shown. Which option shows the sheet when it is unfolded?",
+   "fig": "d68p_q11.png",
+   "opts": [
+    "Figure (A)",
+    "Figure (B)",
+    "Figure (C)",
+    "Figure (D)"
+   ],
+   "ans": "(C) Figure (C)",
+   "sfig": "d68p_s11.png",
+   "solution": [
+    "<b>Concept:</b> Unfold in the reverse order of folding; each unfolding reflects the holes in that fold line.",
+    "Undo fold 2: the holes are reflected in the vertical centre line (the triangles turn to face each other). Undo fold 1: everything is reflected in the horizontal centre line.",
+    "The result has the holes in mirror symmetry about both centre lines: <b>(C)</b>. (A) copies without reflecting, (B) rotates the holes, and (D) undoes only one fold.",
+    "<b>Exam tip:</b> n folds give 2ⁿ copies of each hole; check the count first, then the mirror orientation of a non-symmetric hole."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An ant crawls on the curved surface of a closed cylindrical can of radius 7 cm and height 30 cm, from a point on the bottom rim to the point on the top rim diametrically opposite to it. Taking π = 22/7, the length of the shortest path (in cm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "37.20 (accept 37.00 to 37.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Unroll the curved surface into a rectangle; the shortest path becomes a straight line.",
+    "Horizontal distance = half the circumference = πr = 22/7 × 7 = 22 cm; vertical distance = 30 cm",
+    "Path = √(22² + 30²) = √1384 = <b>37.20 cm</b>",
+    "<b>Exam tip:</b> The same unfolding trick works for a cube or a box: open the faces the path crosses into one plane."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A solid metal cone of base radius 6 cm and height 8 cm is melted and recast into solid spheres of radius 2 cm each. The number of spheres obtained is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Volume is conserved on recasting.",
+    "Cone = (1/3)π × 6² × 8 = 96π cm³; sphere = (4/3)π × 2³ = 32π/3 cm³",
+    "Number = 96π/(32π/3) = <b>9</b>",
+    "<b>Exam tip:</b> Keep π as a symbol; it cancels and avoids rounding errors."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A fair die is thrown three times. The probability of getting at least one six (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.421 (accept 0.418 to 0.424)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'At least one' = 1 − P(none).",
+    "P(no six in three throws) = (5/6)³ = 125/216",
+    "P(at least one six) = 1 − 125/216 = 91/216 = <b>0.421</b>",
+    "<b>Exam tip:</b> Adding 1/6 + 1/6 + 1/6 = 0.5 is wrong because it counts outcomes with two or three sixes more than once."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Argument: “Our plant should replace all its old motors with high-efficiency motors, because the new motors use 8 % less electricity.” Which one of the following, if true, most weakens this argument?",
+   "fig": null,
+   "opts": [
+    "Electricity prices are expected to rise next year",
+    "High-efficiency motors are now made by several companies",
+    "The energy saved over the remaining life of the old motors is worth less than the cost of replacing them",
+    "Some of the plant's old motors are more than 20 years old"
+   ],
+   "ans": "(C) The energy saved over the remaining life of the old motors is worth less than the cost of replacing them",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> To weaken an argument, attack the unstated assumption linking the evidence to the conclusion.",
+    "The argument assumes that saving 8 % of electricity justifies the replacement. If the savings are worth less than the cost, the conclusion fails: <b>(C)</b>.",
+    "(A) and (D) actually support replacement; (B) is irrelevant.",
+    "<b>Exam tip:</b> In GA critical-reasoning questions, find the gap between 'because …' and 'therefore …'; the weakener widens it."
+   ]
+  }
+ ]
+}
