@@ -1,0 +1,270 @@
+{
+ "day": 82,
+ "subject": "Fluid & Thermal Sciences",
+ "topic": "Formula Sprint: Thermal",
+ "days_to_gate": 16,
+ "summary": "a rapid formula revision of Fluid Mechanics (centre of pressure, Darcy–Weisbach, power transmission through pipes, venturimeter), Thermodynamics (Clausius inequality, irreversibility, wet-steam properties, isentropic relations), Heat Transfer (composite walls, lumped cooling, LMTD, radiation between concentric cylinders) and Applied Thermodynamics (centrifugal compressor work, feed-pump work, pump specific speed) — every solution states the key formula, so the set doubles as a revision sheet",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 5",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A vertical rectangular gate 1.5 m wide and 2 m high holds water on one side, as shown. Its top edge is 1 m below the free surface. The depth of the centre of pressure below the free surface is",
+   "fig": "d82p_q1.png",
+   "opts": [
+    "2.000 m",
+    "2.333 m",
+    "2.167 m",
+    "2.250 m"
+   ],
+   "ans": "(C) 2.167 m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Vertical plane surface: F = ρgAh̄ and h<sub>cp</sub> = h̄ + I<sub>G</sub>/(Ah̄), with I<sub>G</sub> = bd³/12 for a rectangle.",
+    "h̄ = 1 + 2/2 = 2 m; A = 1.5 × 2 = 3 m²; I<sub>G</sub> = 1.5 × 2³/12 = 1.0 m⁴.",
+    "h<sub>cp</sub> = 2 + 1.0/(3 × 2) = <b>2.167 m (C)</b>. (Force F = 9810 × 3 × 2 = 58.9 kN.)",
+    "<b>Exam tip:</b> h<sub>cp</sub> = 2d/3 (2.333 m here) only when the top edge is AT the free surface. The centre of pressure is always below the centroid and approaches it as the gate goes deeper."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water flows at 1.8 m/s through a 250 mm diameter pipe 800 m long. The Darcy friction factor is 0.018. Taking g = 9.81 m/s², the head lost in friction (in m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9.51 (accept 9.46 to 9.56)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Darcy–Weisbach: h<sub>f</sub> = fLV²/(2gD) with the Darcy f (= 4 × Fanning f). In terms of discharge, h<sub>f</sub> = 8fLQ²/(π²gD⁵).",
+    "h<sub>f</sub> = 0.018 × 800 × 1.8²/(2 × 9.81 × 0.25).",
+    "= 46.66/4.905 = <b>9.51 m</b>.",
+    "<b>Exam tip:</b> If a question gives the Fanning factor f′, use h<sub>f</sub> = 4f′LV²/(2gD). Laminar flow: f = 64/Re. At constant Q, h<sub>f</sub> ∝ 1/D⁵."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Water is supplied to a hydraulic machine through a pipe 2 km long and 300 mm in diameter (Darcy f = 0.02) from a reservoir giving a total head of 300 m at the pipe inlet. Taking g = 9.81 m/s², the maximum power that can be delivered at the pipe outlet is about",
+   "fig": null,
+   "opts": [
+    "532 kW",
+    "798 kW",
+    "266 kW",
+    "355 kW"
+   ],
+   "ans": "(A) 532 kW",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Power transmitted P = ρgQ(H − h<sub>f</sub>); it is maximum when h<sub>f</sub> = H/3, giving a maximum transmission efficiency of 2/3.",
+    "h<sub>f</sub> = 100 m: V = √(2gDh<sub>f</sub>/(fL)) = √(2 × 9.81 × 0.3 × 100/(0.02 × 2000)) = 3.836 m/s.",
+    "Q = (π/4)(0.3²)(3.836) = 0.2712 m³/s; P = 9810 × 0.2712 × (300 − 100) = 532 000 W = <b>532 kW (A)</b>.",
+    "<b>Exam tip:</b> 798 kW uses the full 300 m (forgetting the friction loss). Efficiency of transmission η = (H − h<sub>f</sub>)/H."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A horizontal venturimeter has an inlet diameter of 160 mm and a throat diameter of 80 mm, as shown. A mercury (S = 13.6) differential manometer connected between them reads 220 mm. Taking C<sub>d</sub> = 0.96 and g = 9.81 m/s², the discharge of water (in litres per second, round off to two decimal places) is ______",
+   "fig": "d82p_q4.png",
+   "opts": null,
+   "ans": "36.75 (accept 36.57 to 36.94)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Q = C<sub>d</sub> A<sub>1</sub>A<sub>2</sub>√(2gh)/√(A<sub>1</sub>² − A<sub>2</sub>²), where the piezometric head difference h = x(S<sub>m</sub>/S − 1) for a manometer reading x.",
+    "h = 0.22 × (13.6 − 1) = 2.772 m of water; √(2gh) = 7.375 m/s.",
+    "A<sub>1</sub> = 0.020106 m², A<sub>2</sub> = 0.005027 m²; A<sub>1</sub>A<sub>2</sub>/√(A<sub>1</sub>² − A<sub>2</sub>²) = 0.005191 m².",
+    "Q = 0.96 × 0.005191 × 7.375 = 0.03675 m³/s = <b>36.75 L/s</b>.",
+    "<b>Exam tip:</b> Using x × 13.6 instead of x × 12.6 is the classic slip. For a vertical or inclined venturimeter the same formula holds, because the manometer reads the piezometric head difference directly."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An inventor claims that an engine receives 900 kJ of heat from a reservoir at 450 K, rejects 550 kJ to a reservoir at 300 K and produces 350 kJ of work per cycle. The claim is",
+   "fig": null,
+   "opts": [
+    "possible, and the engine is irreversible",
+    "possible, and the engine is reversible",
+    "impossible, because it violates the first law",
+    "impossible, because it violates the Clausius inequality (second law)"
+   ],
+   "ans": "(D) impossible, because it violates the Clausius inequality (second law)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Clausius inequality: ∮δQ/T ≤ 0 (= 0 reversible, < 0 irreversible, > 0 impossible). Equivalent check: W ≤ W<sub>Carnot</sub> = Q<sub>1</sub>(1 − T<sub>2</sub>/T<sub>1</sub>).",
+    "First law: 900 − 550 = 350 kJ, so energy is balanced.",
+    "∮δQ/T = 900/450 − 550/300 = 2.000 − 1.833 = +0.167 kJ/K > 0.",
+    "Carnot limit = 900 × (1 − 300/450) = 300 kJ < 350 kJ → <b>impossible: violates the Clausius inequality (D)</b>.",
+    "<b>Exam tip:</b> Always take heat rejected as negative in ∮δQ/T. Satisfying the first law never makes a cycle feasible on its own."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A heat engine receives 1200 kJ of heat from a reservoir at 750 K and delivers 500 kJ of work. The surroundings are at 300 K. The irreversibility (lost work) of the engine, in kJ, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "220",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Maximum (reversible) work W<sub>max</sub> = Q(1 − T<sub>0</sub>/T); irreversibility I = W<sub>max</sub> − W<sub>actual</sub> = T<sub>0</sub>S<sub>gen</sub>; second-law efficiency η<sub>II</sub> = W/W<sub>max</sub>.",
+    "W<sub>max</sub> = 1200 × (1 − 300/750) = 720 kJ.",
+    "I = 720 − 500 = <b>220 kJ</b>; η<sub>II</sub> = 500/720 = 69.4 % (while η<sub>I</sub> = 500/1200 = 41.7 %).",
+    "<b>Exam tip:</b> Check with entropy: heat rejected = 700 kJ, S<sub>gen</sub> = 700/300 − 1200/750 = 0.7333 kJ/K, and T<sub>0</sub>S<sub>gen</sub> = 220 kJ (Gouy–Stodola)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Wet steam at 0.2 MPa has a specific volume of 0.5 m³/kg. At 0.2 MPa: v<sub>f</sub> = 0.001061 m³/kg, v<sub>g</sub> = 0.8857 m³/kg, h<sub>f</sub> = 504.7 kJ/kg and h<sub>fg</sub> = 2201.6 kJ/kg. The specific enthalpy of the steam is about",
+   "fig": null,
+   "opts": [
+    "1242 kJ/kg",
+    "1746 kJ/kg",
+    "1526 kJ/kg",
+    "2706 kJ/kg"
+   ],
+   "ans": "(B) 1746 kJ/kg",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Wet steam (quality x): v = v<sub>f</sub> + x v<sub>fg</sub>, h = h<sub>f</sub> + x h<sub>fg</sub>, s = s<sub>f</sub> + x s<sub>fg</sub>.",
+    "x = (0.5 − 0.001061)/(0.8857 − 0.001061) = 0.564.",
+    "h = 504.7 + 0.564 × 2201.6 = <b>1746 kJ/kg (B)</b>.",
+    "<b>Exam tip:</b> 1242 kJ/kg = x h<sub>fg</sub> forgets h<sub>f</sub>. x ≈ v/v<sub>g</sub> is fine for volume only when v<sub>f</sub> is negligible — never write h = x h<sub>g</sub>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Air (γ = 1.4) at 1 bar and 20 °C is compressed reversibly and adiabatically to 12 bar. Its final temperature is about",
+   "fig": null,
+   "opts": [
+    "323 °C",
+    "41 °C",
+    "596 °C",
+    "247 °C"
+   ],
+   "ans": "(A) 323 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Reversible adiabatic (isentropic) ideal gas: T<sub>2</sub>/T<sub>1</sub> = (p<sub>2</sub>/p<sub>1</sub>)<sup>(γ−1)/γ</sup> = (V<sub>1</sub>/V<sub>2</sub>)<sup>γ−1</sup>, with T in kelvin.",
+    "T<sub>2</sub> = 293.15 × 12<sup>0.2857</sup> = 293.15 × 2.034 = 596.2 K.",
+    "T<sub>2</sub> = 596.2 − 273.15 = <b>323 °C (A)</b>.",
+    "<b>Exam tip:</b> Applying the ratio to 20 °C gives 41 °C, and 596 is the answer in K, not °C. With pv<sup>1.3</sup> = C the result would be 247 °C."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A furnace wall consists of 230 mm of fireclay brick (k = 1.15 W/m·K) and 115 mm of insulating brick (k = 0.23 W/m·K), as shown. The furnace gases are at 900 °C (h = 50 W/m²·K) and the outside air at 30 °C (h = 12 W/m²·K). The steady heat loss (in W/m², round off to one decimal place) is ______",
+   "fig": "d82p_q9.png",
+   "opts": null,
+   "ans": "1083.0 (accept 1077.6 to 1088.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Resistances in series per unit area: R = 1/h<sub>i</sub> + ΣL/k + 1/h<sub>o</sub>; q = ΔT<sub>overall</sub>/R (electrical analogy).",
+    "R = 1/50 + 0.23/1.15 + 0.115/0.23 + 1/12 = 0.020 + 0.200 + 0.500 + 0.0833 = 0.8033 m²·K/W.",
+    "q = (900 − 30)/0.8033 = <b>1083.0 W/m²</b>.",
+    "Surface temperatures: inside 900 − 1083/50 = 878.3 °C; outside 30 + 1083/12 = 120.2 °C.",
+    "<b>Exam tip:</b> Each layer’s temperature drop is proportional to its resistance — the insulating brick (largest R) carries the largest drop. For a cylinder use ln(r<sub>2</sub>/r<sub>1</sub>)/(2πkL) instead of L/(kA)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 4 mm thick aluminium plate (ρ = 2700 kg/m³, c = 900 J/kg·K, k = 205 W/m·K) at 300 °C is cooled from both faces by air at 25 °C with h = 40 W/m²·K. The time for the plate to cool to 100 °C (in s, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "157.9 (accept 157.1 to 158.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Lumped capacitance (valid for Bi = hL<sub>c</sub>/k < 0.1): (T − T<sub>∞</sub>)/(T<sub>i</sub> − T<sub>∞</sub>) = e<sup>−t/τ</sup>, with τ = ρcL<sub>c</sub>/h and L<sub>c</sub> = V/A.",
+    "Plate cooled on both faces: L<sub>c</sub> = half-thickness = 0.002 m; Bi = 40 × 0.002/205 = 0.00039 → lumped OK.",
+    "τ = 2700 × 900 × 0.002/40 = 121.5 s.",
+    "t = τ ln[(300 − 25)/(100 − 25)] = 121.5 × ln 3.667 = <b>157.9 s</b>.",
+    "<b>Exam tip:</b> Using the full thickness as L<sub>c</sub> doubles the time. L<sub>c</sub>: plate (both faces) = t/2, long cylinder = r/2, sphere = r/3."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a heat exchanger the hot fluid cools from 140 °C to 80 °C and the cold fluid is heated from 25 °C to 65 °C. If it is arranged in counter flow, its log mean temperature difference is about",
+   "fig": null,
+   "opts": [
+    "49.1 °C",
+    "55.0 °C",
+    "64.5 °C",
+    "65.0 °C"
+   ],
+   "ans": "(C) 64.5 °C",
+   "sfig": "d82p_s11.png",
+   "solution": [
+    "<b>Concept:</b> LMTD = (ΔT<sub>1</sub> − ΔT<sub>2</sub>)/ln(ΔT<sub>1</sub>/ΔT<sub>2</sub>); counter flow: ΔT<sub>1</sub> = T<sub>h,in</sub> − T<sub>c,out</sub>, ΔT<sub>2</sub> = T<sub>h,out</sub> − T<sub>c,in</sub>.",
+    "Counter flow: ΔT<sub>1</sub> = 140 − 65 = 75 °C, ΔT<sub>2</sub> = 80 − 25 = 55 °C.",
+    "LMTD = 20/ln(75/55) = <b>64.5 °C (C)</b>.",
+    "Parallel flow for the same terminal temperatures: ΔT = 115 and 15 °C → LMTD = 49.1 °C, so counter flow needs less area.",
+    "<b>Exam tip:</b> 65.0 °C is the arithmetic mean — always slightly larger than the LMTD. When ΔT<sub>1</sub> = ΔT<sub>2</sub>, LMTD = ΔT."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A long tube of 0.1 m outer diameter (surface temperature 700 K, ε = 0.6) runs concentrically inside a long duct of 0.3 m diameter (surface temperature 350 K, ε = 0.4), as shown. Taking σ = 5.67 × 10<sup>−8</sup> W/m²·K⁴, the net radiation heat transfer per metre length (in W, round off to one decimal place) is ______",
+   "fig": "d82p_q12.png",
+   "opts": null,
+   "ans": "1850.6 (accept 1841.3 to 1859.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Two-surface grey enclosure: Q<sub>12</sub> = σA<sub>1</sub>(T<sub>1</sub>⁴ − T<sub>2</sub>⁴)/[1/ε<sub>1</sub> + (A<sub>1</sub>/A<sub>2</sub>)(1/ε<sub>2</sub> − 1)], since F<sub>12</sub> = 1 for the inner surface.",
+    "Per metre: A<sub>1</sub> = π × 0.1 = 0.3142 m²; A<sub>1</sub>/A<sub>2</sub> = 0.1/0.3 = 1/3.",
+    "σA<sub>1</sub>(T<sub>1</sub>⁴ − T<sub>2</sub>⁴) = 5.67 × 10<sup>−8</sup> × 0.3142 × (2.401 × 10¹¹ − 1.501 × 10¹⁰) = 4009.6 W.",
+    "Denominator = 1/0.6 + (1/3)(1/0.4 − 1) = 1.6667 + 0.5 = 2.1667; Q = <b>1850.6 W per m</b>.",
+    "<b>Exam tip:</b> Using the parallel-plate expression (A<sub>1</sub>/A<sub>2</sub> = 1) gives 1266 W. If the inner body is very small (A<sub>1</sub>/A<sub>2</sub> → 0), Q = ε<sub>1</sub>σA<sub>1</sub>(T<sub>1</sub>⁴ − T<sub>2</sub>⁴)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A centrifugal compressor impeller of 0.5 m tip diameter runs at 15 000 rpm with radial vanes. The slip factor is 0.9 and the power input factor is 1.04. The work input per kg of air is about",
+   "fig": null,
+   "opts": [
+    "154.2 kJ/kg",
+    "138.8 kJ/kg",
+    "160.4 kJ/kg",
+    "144.3 kJ/kg"
+   ],
+   "ans": "(D) 144.3 kJ/kg",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Centrifugal compressor (radial vanes, no inlet whirl): W = ψσu<sub>2</sub>², where σ = slip factor, ψ = power input factor and u<sub>2</sub> = πD<sub>2</sub>N/60; stagnation temperature rise ΔT<sub>0</sub> = W/c<sub>p</sub>.",
+    "u<sub>2</sub> = π × 0.5 × 15 000/60 = 392.7 m/s.",
+    "W = 1.04 × 0.9 × 392.7² = 144 340 J/kg = <b>144.3 kJ/kg (D)</b> (ΔT<sub>0</sub> ≈ 144/1.005 = 143.6 K).",
+    "<b>Exam tip:</b> u<sub>2</sub>² alone (154.2) ignores slip; σu<sub>2</sub>² (138.8) is the energy given to the air before adding windage and disc-friction losses through ψ."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A boiler feed pump takes saturated water at 10 kPa (v = 0.00101 m³/kg) and delivers it to a boiler at 15 MPa. If the pump’s isentropic efficiency is 80 %, the actual pump work is about",
+   "fig": null,
+   "opts": [
+    "15.14 kJ/kg",
+    "18.92 kJ/kg",
+    "12.11 kJ/kg",
+    "0.19 kJ/kg"
+   ],
+   "ans": "(B) 18.92 kJ/kg",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Pump work for a liquid: w<sub>p,ideal</sub> = vΔp (v in m³/kg, Δp in kPa → kJ/kg); w<sub>p,actual</sub> = vΔp/η<sub>p</sub>.",
+    "w<sub>p,ideal</sub> = 0.00101 × (15 000 − 10) = 15.14 kJ/kg.",
+    "w<sub>p,actual</sub> = 15.14/0.8 = <b>18.92 kJ/kg (B)</b>.",
+    "<b>Exam tip:</b> Divide by efficiency for a pump or compressor; multiply for a turbine (12.11 is the wrong direction). Δp in bar gives an answer 100 times too small (0.19)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A centrifugal pump running at 1450 rpm delivers 0.08 m³/s against a head of 25 m. Its specific speed N<sub>s</sub> = N√Q/H<sup>3/4</sup> (N in rpm, Q in m³/s, H in m) (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "36.68 (accept 36.50 to 36.86)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Pump specific speed N<sub>s</sub> = N√Q/H<sup>3/4</sup>; turbine specific speed N<sub>s</sub> = N√P/H<sup>5/4</sup>. Affinity laws: Q ∝ ND³, H ∝ N²D², P ∝ N³D⁵.",
+    "√Q = √0.08 = 0.2828; H<sup>3/4</sup> = 25<sup>0.75</sup> = 11.18.",
+    "N<sub>s</sub> = 1450 × 0.2828/11.18 = <b>36.68</b>.",
+    "<b>Exam tip:</b> Do not mix the pump formula (Q, H<sup>3/4</sup>) with the turbine formula (P, H<sup>5/4</sup>). Low N<sub>s</sub> → radial-flow pump, high N<sub>s</sub> → axial-flow pump."
+   ]
+  }
+ ]
+}
