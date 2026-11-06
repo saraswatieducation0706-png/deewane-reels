@@ -1,0 +1,264 @@
+{
+ "day": 85,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 6",
+ "days_to_gate": 12,
+ "summary": "a mixed full-syllabus warm-up for the sixth full-length mock: antonyms, a clock that gains time, the inverse of a 2 × 2 matrix, Euler's method, uniformly accelerated rotation, strain energy in stepped bars, shear stress in rectangular beams, instantaneous centres, springs in series, the Soderberg criterion, laminar pipe flow, pin-fin efficiency, polytropic work, cold working and x̄ control charts",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Formula Sprint: Maths & GA",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the word that is most nearly OPPOSITE in meaning to TACITURN.",
+   "fig": null,
+   "opts": [
+    "Reserved",
+    "Talkative",
+    "Silent",
+    "Sullen"
+   ],
+   "ans": "(B) Talkative",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Taciturn' describes a person who says very little.",
+    "Reserved, silent and sullen are all close to it in meaning, not opposite.",
+    "The opposite is <b>talkative</b>, option (B).",
+    "<b>Exam tip:</b> For antonym questions, first strike out every option that is a synonym; what remains is usually short."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A wall clock gains 5 minutes every hour. It is set to the correct time at 8:00 a.m. When the correct time is 8:00 p.m. the same day, the clock shows",
+   "fig": null,
+   "opts": [
+    "8:55 p.m.",
+    "9:00 p.m.",
+    "7:00 p.m.",
+    "9:05 p.m."
+   ],
+   "ans": "(B) 9:00 p.m.",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A clock that gains at a steady rate is ahead by (gain per hour) × (hours elapsed).",
+    "From 8:00 a.m. to 8:00 p.m. is 12 hours, so the clock gains 12 × 5 = 60 minutes.",
+    "It therefore shows <b>9:00 p.m.</b>, option (B).",
+    "<b>Exam tip:</b> If the question gives the time shown by the faulty clock instead, the elapsed true time is (shown time)/(1 + gain fraction): here 65 clock minutes = 60 true minutes."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The inverse of the matrix with rows (3, 1) and (5, 2) has rows",
+   "fig": null,
+   "opts": [
+    "(2, −1) and (−5, 3)",
+    "(2, 1) and (5, 3)",
+    "(−2, 1) and (5, −3)",
+    "(3, −1) and (−5, 2)"
+   ],
+   "ans": "(A) (2, −1) and (−5, 3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a 2 × 2 matrix with rows (a, b), (c, d): A<sup>−1</sup> = (1/det A) × [rows (d, −b), (−c, a)].",
+    "det A = 3 × 2 − 1 × 5 = 1.",
+    "So A<sup>−1</sup> has rows <b>(2, −1) and (−5, 3)</b>, option (A).",
+    "<b>Exam tip:</b> Check by multiplying: (3, 1)·(2, −5) = 1 and (3, 1)·(−1, 3) = 0, giving the first row of I."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The equation dy/dx = 2x − y with y(0) = 1 is solved by Euler's (explicit) method with a step h = 0.1. The value of y at x = 0.2 (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.83",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Euler's method: y<sub>n+1</sub> = y<sub>n</sub> + h f(x<sub>n</sub>, y<sub>n</sub>).",
+    "Step 1: y<sub>1</sub> = 1 + 0.1 × (0 − 1) = 0.9 at x = 0.1.",
+    "Step 2: y<sub>2</sub> = 0.9 + 0.1 × (0.2 − 0.9) = <b>0.83</b> at x = 0.2 (exact 2x − 2 + 3e<sup>−x</sup> = 0.856).",
+    "<b>Exam tip:</b> Euler's method uses only the slope at the start of each step, so its error per step is of order h<sup>2</sup> and the total error of order h."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A wheel starts from rest and accelerates uniformly to 600 rpm in 10 s. The number of revolutions it makes in this time is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "50",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With uniform angular acceleration from rest, the angle turned = average speed × time.",
+    "Final speed = 600 rpm = 10 rev/s; average speed = 5 rev/s.",
+    "Revolutions = 5 × 10 = <b>50</b>.",
+    "<b>Exam tip:</b> The rotational equations mirror the linear ones: θ = (ω<sub>0</sub> + ω)t/2, just as s = (u + v)t/2."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Bars A and B, shown, are of the same material and length L. Bar A has a uniform diameter d. Bar B has diameter d over half its length and 2d over the other half. Both carry axial loads that produce the same maximum stress σ. The ratio of the strain energy stored in B to that stored in A is",
+   "fig": "d85p_q6.png",
+   "opts": [
+    "1/2",
+    "5/8",
+    "5/16",
+    "1"
+   ],
+   "ans": "(B) 5/8",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> U = Σ P<sup>2</sup>L<sub>i</sub>/(2A<sub>i</sub>E); the load is fixed by the maximum stress in the thinnest part.",
+    "Both bars carry P = σA (A = πd²/4). U<sub>A</sub> = σ<sup>2</sup>AL/(2E).",
+    "U<sub>B</sub> = (P<sup>2</sup>/2E)[(L/2)/A + (L/2)/(4A)] = (σ<sup>2</sup>AL/2E)(1/2 + 1/8) = (5/8)U<sub>A</sub>; option (B).",
+    "<b>Exam tip:</b> Enlarging part of a bar lowers its energy-absorbing capacity for the same peak stress, which is why bolts for shock loads are turned down to the core diameter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A beam of rectangular section 120 mm wide and 240 mm deep carries a vertical shear force of 72 kN. The transverse shear stress at a level 60 mm above the neutral axis (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.81 (accept 2.79 to 2.83)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ = VA′ȳ′/(Ib), which for a rectangle gives the parabola τ = (V/2I)(d<sup>2</sup>/4 − y<sup>2</sup>).",
+    "Average stress = V/(bd) = 72 000/28 800 = 2.5 MPa, so τ<sub>max</sub> = 1.5 × 2.5 = 3.75 MPa at the neutral axis.",
+    "At y = 60 mm = d/4: τ = τ<sub>max</sub>(1 − 4y<sup>2</sup>/d<sup>2</sup>) = 3.75 × (1 − 0.25) = <b>2.81 MPa</b>.",
+    "<b>Exam tip:</b> Half-way from the neutral axis to the top fibre the shear stress is always 3/4 of its maximum in a rectangle."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a four-bar chain (including the fixed link), the total number of instantaneous centres and the number of them that lie at the pin joints are",
+   "fig": null,
+   "opts": [
+    "4 and 4",
+    "6 and 2",
+    "8 and 4",
+    "6 and 4"
+   ],
+   "ans": "(D) 6 and 4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The number of instantaneous centres of n links is N = n(n − 1)/2.",
+    "For n = 4, N = 4 × 3/2 = 6.",
+    "Four of them (I<sub>12</sub>, I<sub>23</sub>, I<sub>34</sub>, I<sub>14</sub>) are at the pin joints and can be written down by inspection; the other two (I<sub>13</sub>, I<sub>24</sub>) are found with Kennedy's theorem: <b>6 and 4</b>, option (D).",
+    "<b>Exam tip:</b> Of the four at the joints, I<sub>12</sub> and I<sub>14</sub> (on the frame) are fixed; I<sub>23</sub> and I<sub>34</sub> move with the links."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 5 kg mass hangs from two springs of stiffness 2 kN/m and 3 kN/m connected in series. The natural frequency of the system (in rad/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15.49 (accept 15.40 to 15.58)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Springs in series: 1/k<sub>eq</sub> = 1/k<sub>1</sub> + 1/k<sub>2</sub>; ω<sub>n</sub> = √(k<sub>eq</sub>/m).",
+    "k<sub>eq</sub> = (2000 × 3000)/(2000 + 3000) = 1200 N/m.",
+    "ω<sub>n</sub> = √(1200/5) = √240 = <b>15.49 rad/s</b> (2.47 Hz).",
+    "<b>Exam tip:</b> In series the equivalent stiffness is always less than the smaller spring; in parallel the stiffnesses simply add."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A machine part made of a steel with yield strength 300 MPa and corrected endurance limit 200 MPa carries a fluctuating stress with a mean of 100 MPa and an amplitude of 50 MPa. The factor of safety by the Soderberg criterion is about",
+   "fig": null,
+   "opts": [
+    "1.71",
+    "2.40",
+    "1.20",
+    "3.00"
+   ],
+   "ans": "(A) 1.71",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Soderberg line: σ<sub>m</sub>/S<sub>yt</sub> + σ<sub>a</sub>/S<sub>e</sub> = 1/N.",
+    "1/N = 100/300 + 50/200 = 0.3333 + 0.25 = 0.5833.",
+    "N = 1/0.5833 = <b>1.71</b>, option (A).",
+    "<b>Exam tip:</b> Soderberg (using S<sub>yt</sub>) is the most conservative of the common criteria; Goodman uses S<sub>ut</sub> and Gerber a parabola."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil (density 900 kg/m³, dynamic viscosity 0.1 Pa·s) flows at 1 litre per second through a horizontal pipe of 40 mm diameter and 50 m length. Assuming fully developed laminar flow, the pressure drop over the length (in kPa, round off to one decimal place) is ______",
+   "fig": "d85p_q11.png",
+   "opts": null,
+   "ans": "79.6 (accept 79.2 to 80.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hagen–Poiseuille: Δp = 128μLQ/(πD<sup>4</sup>), valid for laminar flow (Re below about 2000).",
+    "V = Q/A = 0.001/(π × 0.04²/4) = 0.796 m/s; Re = ρVD/μ = 900 × 0.796 × 0.04/0.1 = 286, so the flow is laminar.",
+    "Δp = 128 × 0.1 × 50 × 0.001/(π × 0.04<sup>4</sup>) = 0.64/(8.04 × 10<sup>−6</sup>) = 79 600 Pa = <b>79.6 kPa</b>.",
+    "<b>Exam tip:</b> At a fixed flow rate Δp ∝ 1/D<sup>4</sup> in laminar flow, so a small error in diameter gives a large error in pressure drop."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An aluminium pin fin (k = 200 W/m·K) of 10 mm diameter and 100 mm length has an insulated tip, and h = 50 W/m²·K. The base is 80 K hotter than the surrounding air. The fin efficiency and the heat lost by the fin are about",
+   "fig": "d85p_q12.png",
+   "opts": [
+    "0.76 and 12.6 W",
+    "0.96 and 9.6 W",
+    "0.76 and 9.6 W",
+    "0.62 and 7.8 W"
+   ],
+   "ans": "(C) 0.76 and 9.6 W",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an insulated-tip fin, η<sub>f</sub> = tanh(mL)/(mL) with m = √(hP/(kA)) = √(4h/(kd)) for a pin.",
+    "m = √(4 × 50/(200 × 0.01)) = 10 m<sup>−1</sup>, so mL = 1 and η<sub>f</sub> = tanh 1 = 0.762.",
+    "q = η<sub>f</sub> h (πdL) θ<sub>b</sub> = 0.762 × 50 × (π × 0.01 × 0.1) × 80 = <b>9.6 W</b>; option (C).",
+    "<b>Exam tip:</b> Check with q = √(hPkA) θ<sub>b</sub> tanh(mL): √(hPkA) = 0.157 W/K, so q = 0.157 × 80 × 0.762 = 9.6 W."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air is compressed in a closed cylinder from 100 kPa and 0.3 m³ to 0.1 m³ following pV<sup>1.3</sup> = constant. The work done on the air (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "39.0 (accept 38.8 to 39.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Polytropic boundary work: W<sub>by</sub> = (p<sub>1</sub>V<sub>1</sub> − p<sub>2</sub>V<sub>2</sub>)/(n − 1).",
+    "p<sub>2</sub> = 100 × 3<sup>1.3</sup> = 417.1 kPa; p<sub>2</sub>V<sub>2</sub> = 41.71 kJ and p<sub>1</sub>V<sub>1</sub> = 30 kJ.",
+    "W<sub>by</sub> = (30 − 41.71)/0.3 = −39.0 kJ, so the work done <b>on</b> the air is <b>39.0 kJ</b>.",
+    "<b>Exam tip:</b> For compression the polytropic formula gives a negative value of work done by the gas; read the question for the sign it wants."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When a metal is cold worked (plastically deformed below its recrystallisation temperature),",
+   "fig": null,
+   "opts": [
+    "its strength and hardness rise while its ductility falls",
+    "its strength and ductility both rise",
+    "its hardness falls and its ductility rises",
+    "its electrical conductivity rises sharply"
+   ],
+   "ans": "(A) its strength and hardness rise while its ductility falls",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cold work multiplies dislocations, which tangle and obstruct one another (strain hardening).",
+    "Yield strength, tensile strength and hardness therefore rise, while elongation (ductility) falls; conductivity drops slightly.",
+    "So <b>strength and hardness rise, ductility falls</b>, option (A).",
+    "<b>Exam tip:</b> Annealing (recovery, recrystallisation and grain growth) reverses these changes."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Samples of 5 parts each are taken from a process. The grand mean of the sample means is 50.00 mm and the average sample range is 4.00 mm. Taking A<sub>2</sub> = 0.577 for n = 5, the upper control limit of the x̄ chart (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "52.31 (accept 52.29 to 52.33)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an x̄ chart built from ranges, UCL = x̿ + A<sub>2</sub>R̄ and LCL = x̿ − A<sub>2</sub>R̄.",
+    "A<sub>2</sub>R̄ = 0.577 × 4.00 = 2.308 mm.",
+    "UCL = 50.00 + 2.308 = <b>52.31 mm</b> (LCL = 47.69 mm).",
+    "<b>Exam tip:</b> A<sub>2</sub>R̄ is a shortcut for 3σ/√n, with σ estimated as R̄/d<sub>2</sub>; A<sub>2</sub> falls as the sample size grows."
+   ]
+  }
+ ]
+}
