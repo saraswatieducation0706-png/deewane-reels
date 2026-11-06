@@ -1,0 +1,264 @@
+{
+ "day": 58,
+ "subject": "Manufacturing",
+ "topic": "Joining, Powder Metallurgy & Polymers",
+ "days_to_gate": 44,
+ "summary": "arc welding (polarity, power-source and arc characteristics, heat input, duty cycle), gas, resistance, thermit and solid-state welding, weld defects and carbon equivalent, brazing and soldering, powder production, compaction and sintering, and polymer and composite processing (moulding processes, rule of mixtures)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Manufacturing, Machining Mechanics & Tool Life",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Alternating current (AC) is generally preferred for TIG welding of aluminium because",
+   "fig": null,
+   "opts": [
+    "it gives the deepest penetration of all polarities",
+    "the electrode-positive half-cycle breaks up the surface oxide film (cathodic cleaning) while the electrode-negative half-cycle keeps the tungsten cool",
+    "aluminium cannot carry direct current",
+    "AC needs no shielding gas"
+   ],
+   "ans": "(B) the electrode-positive half-cycle breaks up the surface oxide film (cathodic cleaning) while the electrode-negative half-cycle keeps the tungsten cool",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Aluminium is covered by a tough, high-melting Al<sub>2</sub>O<sub>3</sub> film that must be removed for the weld pool to fuse.",
+    "When the electrode is positive, positive ions bombard the work (cathode) and scrub off the oxide; when it is negative, most heat goes into the work and the tungsten stays cool.",
+    "AC combines both effects: <b>(B)</b>.",
+    "<b>Exam tip:</b> DCEN is used for TIG welding of steels and stainless steels; DCEP would overheat a tungsten electrode."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A welding power source has the linear characteristic shown (open-circuit voltage 75 V, short-circuit current 600 A). The arc characteristic is V = 20 + 5l, with l the arc length in mm. The arc length (in mm, round off to one decimal place) that gives the maximum arc power is ______",
+   "fig": "d58p_q2.png",
+   "opts": null,
+   "ans": "3.5 (accept 3.4 to 3.6)",
+   "sfig": "d58p_s2.png",
+   "solution": [
+    "<b>Concept:</b> On a linear source V = V<sub>0</sub>(1 − I/I<sub>s</sub>), the power VI is maximum at V = V<sub>0</sub>/2 and I = I<sub>s</sub>/2.",
+    "P = I(75 − 0.125I); dP/dI = 75 − 0.25I = 0 → I = 300 A, V = 37.5 V, P<sub>max</sub> = 11.25 kW (see figure).",
+    "Arc: 37.5 = 20 + 5l → l = <b>3.5 mm</b>",
+    "<b>Exam tip:</b> P<sub>max</sub> = V<sub>0</sub>I<sub>s</sub>/4 is a quick check: 75 × 600/4 = 11 250 W."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A butt weld is made at 30 V and 250 A with a travel speed of 10 mm/s. If 75 % of the arc energy enters the work, the net heat input per unit length (in J/mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "562.5 (accept 559.7 to 565.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Net heat input H = ηVI/v (energy delivered per mm of weld).",
+    "VI = 30 × 250 = 7500 W",
+    "H = 0.75 × 7500/10 = <b>562.5 J/mm</b>",
+    "<b>Exam tip:</b> Higher heat input lowers the cooling rate, which reduces HAZ hardness but coarsens the grains."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a neutral oxy-acetylene flame, the oxygen needed for complete combustion of acetylene is supplied as follows:",
+   "fig": null,
+   "opts": [
+    "all of it from the oxygen cylinder",
+    "2.5 volumes from the cylinder and none from air",
+    "1.5 volumes from the cylinder and 1 volume from air",
+    "1 volume per volume of acetylene from the cylinder (inner cone) and 1.5 volumes from the surrounding air (outer envelope)"
+   ],
+   "ans": "(D) 1 volume per volume of acetylene from the cylinder (inner cone) and 1.5 volumes from the surrounding air (outer envelope)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Complete combustion: C<sub>2</sub>H<sub>2</sub> + 2.5 O<sub>2</sub> → 2CO<sub>2</sub> + H<sub>2</sub>O.",
+    "Primary reaction in the inner cone: C<sub>2</sub>H<sub>2</sub> + O<sub>2</sub> → 2CO + H<sub>2</sub> (equal volumes from the cylinders; hottest point ≈ 3200 °C just beyond the cone).",
+    "Secondary reaction in the outer envelope: 2CO + H<sub>2</sub> + 1.5 O<sub>2</sub> → 2CO<sub>2</sub> + H<sub>2</sub>O, with oxygen from the air: <b>(D)</b>.",
+    "<b>Exam tip:</b> Because the inner zone contains CO and H<sub>2</sub>, the neutral flame shields the pool from oxidation."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a resistance spot weld, a current of 8 kA flows for 0.15 s through an effective resistance of 120 μΩ. The heat generated (in J) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1152",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Joule heating H = I²Rt.",
+    "I² = (8000)² = 6.4 × 10<sup>7</sup> A²; R = 1.2 × 10<sup>−4</sup> Ω; t = 0.15 s",
+    "H = 6.4 × 10<sup>7</sup> × 1.2 × 10<sup>−4</sup> × 0.15 = <b>1152 J</b>",
+    "<b>Exam tip:</b> The contact resistance between the sheets is the largest part of R, which is why the nugget forms at the faying surface."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In diffusion bonding (diffusion welding), the joint is formed by",
+   "fig": null,
+   "opts": [
+    "melting a thin filler layer between the parts",
+    "a high-velocity impact that produces a wavy interface",
+    "atomic diffusion across clean, closely mated surfaces held under pressure at an elevated temperature, without melting",
+    "frictional heating produced by relative rotation"
+   ],
+   "ans": "(C) atomic diffusion across clean, closely mated surfaces held under pressure at an elevated temperature, without melting",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Solid-state processes join metals without melting the base metal.",
+    "In diffusion bonding the surfaces are pressed together at about 0.5–0.8 T<sub>m</sub> for minutes to hours; atoms diffuse across the interface and voids close up: <b>(C)</b>.",
+    "(B) describes explosion welding and (D) friction welding.",
+    "<b>Exam tip:</b> Diffusion bonding is used for titanium aerospace parts and for joining dissimilar metals and ceramics."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In brazing, the joint clearance is kept small (typically 0.025–0.25 mm) mainly because",
+   "fig": null,
+   "opts": [
+    "the filler metal is drawn into and held in the joint by capillary action",
+    "a small gap needs no flux",
+    "the base metal melts only in narrow gaps",
+    "a large clearance makes the joint too strong"
+   ],
+   "ans": "(A) the filler metal is drawn into and held in the joint by capillary action",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Brazing depends on wetting and capillary flow of the molten filler between closely fitting surfaces.",
+    "If the gap is too large, capillary forces cannot pull the filler in and the joint strength falls towards that of the filler; too small a gap stops the flow: <b>(A)</b>.",
+    "A properly brazed thin joint can be stronger than the filler alone, because the joint is constrained by the stronger base metal.",
+    "<b>Exam tip:</b> Flux is still needed in most brazing to remove oxides and help wetting."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A welding transformer is rated at 250 A for a 60 % duty cycle. The duty cycle at which it may be used at 200 A (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "93.75 (accept 93.30 to 94.20)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The heating of the source ∝ I² × duty cycle, so I<sup>2</sup>D is constant.",
+    "D<sub>2</sub> = D<sub>1</sub>(I<sub>1</sub>/I<sub>2</sub>)² = 60 × (250/200)² = 60 × 1.5625",
+    "D<sub>2</sub> = <b>93.75 %</b>",
+    "<b>Exam tip:</b> The current that may be drawn continuously (100 %) is 250 × √0.6 = 193.6 A."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following products is a typical application where powder metallurgy is clearly superior to other processes?",
+   "fig": null,
+   "opts": [
+    "Large crankshafts",
+    "Thin-walled aluminium beverage cans",
+    "Long structural I-beams",
+    "Self-lubricating porous bronze bearings"
+   ],
+   "ans": "(D) Self-lubricating porous bronze bearings",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> PM can deliberately leave a controlled, interconnected porosity.",
+    "Sintered bronze bearings are vacuum-impregnated with oil (20–30 % porosity) and lubricate themselves in service: <b>(D)</b>.",
+    "Crankshafts are forged, cans are deep drawn and ironed, and I-beams are rolled.",
+    "<b>Exam tip:</b> Other PM-only products: cemented carbide tools, tungsten filaments and porous metal filters."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A gear blank with a projected area of 1500 mm² is compacted in a die (see figure) at a pressure of 600 MPa. The press force needed (in kN) is ______",
+   "fig": "d58p_q10.png",
+   "opts": null,
+   "ans": "900",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Compaction force = compaction pressure × projected area of the part normal to the pressing direction.",
+    "F = 600 N/mm² × 1500 mm² = 9.0 × 10<sup>5</sup> N",
+    "F = <b>900 kN</b>",
+    "<b>Exam tip:</b> In single-action pressing the density falls with distance from the moving punch; double-action pressing gives a more uniform density."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An iron powder compact has a green density of 6.4 g/cm³. The theoretical density of iron is 7.87 g/cm³. The porosity of the compact (in %, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "18.7 (accept 18.5 to 18.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Porosity = 1 − (actual density/theoretical density).",
+    "Relative density = 6.4/7.87 = 0.8132",
+    "Porosity = 1 − 0.8132 = 0.1868 = <b>18.7 %</b>",
+    "<b>Exam tip:</b> Sintering and re-pressing raise the relative density; most structural PM steels are 85–92 % dense."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the atomization of molten metals to make powders,",
+   "fig": null,
+   "opts": [
+    "water atomization gives irregular particles and gas atomization gives nearly spherical particles",
+    "both water and gas atomization always give flake-shaped particles",
+    "gas atomization gives irregular particles with the best green strength",
+    "atomization can be used only for brittle metals"
+   ],
+   "ans": "(A) water atomization gives irregular particles and gas atomization gives nearly spherical particles",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Particle shape depends on how fast the droplets freeze compared with how fast surface tension rounds them.",
+    "Water quenches droplets very quickly, freezing them in irregular shapes (good interlocking, good green strength); in inert gas they have time to spheroidize: <b>(A)</b>.",
+    "Spherical powders flow and pack well (used in metal injection moulding and additive manufacturing).",
+    "<b>Exam tip:</b> Brittle materials are powdered by crushing/milling; flake powders come from ball milling ductile metals."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following polymers can be softened by heating and re-shaped several times?",
+   "fig": null,
+   "opts": [
+    "Bakelite (phenol formaldehyde)",
+    "Cured epoxy resin",
+    "Polyethylene",
+    "Vulcanized rubber"
+   ],
+   "ans": "(C) Polyethylene",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Thermoplastics have linear or branched chains held by secondary bonds that weaken on heating; thermosets and vulcanized rubbers are cross-linked by primary bonds.",
+    "Polyethylene is a thermoplastic and can be re-melted and recycled: <b>(C)</b>.",
+    "Bakelite, cured epoxy and vulcanized rubber decompose rather than melt on heating.",
+    "<b>Exam tip:</b> Thermoplastics → injection moulding, extrusion, blow moulding; thermosets → compression and transfer moulding."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A unidirectional glass-fibre/epoxy composite has 60 % fibres by volume (E<sub>f</sub> = 72 GPa, E<sub>m</sub> = 3 GPa). Its elastic modulus transverse to the fibres (in GPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.06 (accept 7.00 to 7.12)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Loaded across the fibres, the phases carry the same stress (iso-stress): 1/E<sub>t</sub> = V<sub>f</sub>/E<sub>f</sub> + V<sub>m</sub>/E<sub>m</sub>.",
+    "1/E<sub>t</sub> = 0.6/72 + 0.4/3 = 0.00833 + 0.13333 = 0.14167 GPa<sup>−1</sup>",
+    "E<sub>t</sub> = <b>7.06 GPa</b>",
+    "<b>Exam tip:</b> Along the fibres (iso-strain) E = 0.6 × 72 + 0.4 × 3 = 44.4 GPa; the transverse value is governed by the soft matrix."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Pultrusion is used to produce",
+   "fig": null,
+   "opts": [
+    "continuous fibre-reinforced polymer sections of constant cross-section, such as rods, channels and ladder rails",
+    "hollow plastic bottles",
+    "thin polymer films",
+    "large hollow seamless tanks"
+   ],
+   "ans": "(A) continuous fibre-reinforced polymer sections of constant cross-section, such as rods, channels and ladder rails",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In pultrusion, continuous fibre rovings are pulled through a resin bath and then through a heated die that shapes and cures the section.",
+    "So it makes constant-section, fibre-reinforced profiles of any length: <b>(A)</b>.",
+    "Bottles are blow moulded, films are blown, tanks are rotationally moulded or filament wound.",
+    "<b>Exam tip:</b> Pultrusion is the composite counterpart of extrusion, but the material is <i>pulled</i>, not pushed, through the die."
+   ]
+  }
+ ]
+}

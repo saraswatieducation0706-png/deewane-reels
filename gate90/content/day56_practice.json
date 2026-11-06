@@ -1,0 +1,265 @@
+{
+ "day": 56,
+ "subject": "Manufacturing",
+ "topic": "Forming",
+ "days_to_gate": 46,
+ "summary": "plastic deformation and flow curves, yield criteria (Tresca and von Mises), hot and cold working, flat rolling (draft, contact length, roll force, neutral point), forging, extrusion and wire drawing loads, and sheet-metal operations: blanking and piercing, bending and spring-back, deep drawing",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, Spatial Aptitude",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A hydrostatic pressure of 200 MPa is superimposed on a stress state that is just causing yielding by the von Mises criterion. The material will now",
+   "fig": null,
+   "opts": [
+    "yield at a lower load because the stresses are larger",
+    "still be just at yield, because a hydrostatic stress does not change the deviatoric stresses",
+    "become fully elastic, because pressure always prevents yielding",
+    "fracture in a brittle manner"
+   ],
+   "ans": "(B) still be just at yield, because a hydrostatic stress does not change the deviatoric stresses",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Both the von Mises and Tresca criteria depend only on stress <i>differences</i> (the deviatoric part of the stress).",
+    "Adding −p to σ<sub>1</sub>, σ<sub>2</sub> and σ<sub>3</sub> leaves every (σ<sub>i</sub> − σ<sub>j</sub>) unchanged, so the yield condition is unchanged: <b>(B)</b>.",
+    "This is why metals are plastically incompressible and why yield loci are drawn as cylinders (von Mises) or hexagonal prisms (Tresca) along the hydrostatic axis.",
+    "<b>Exam tip:</b> Hydrostatic pressure does raise the <i>ductility</i> (delays fracture), which is why extrusion can deform brittle materials."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "At a point in a deforming body the principal stresses are 300 MPa, 100 MPa and −50 MPa. The von Mises equivalent (effective) stress (in MPa, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "304.1 (accept 301.1 to 307.2)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ<sub>e</sub> = √{½[(σ<sub>1</sub> − σ<sub>2</sub>)² + (σ<sub>2</sub> − σ<sub>3</sub>)² + (σ<sub>3</sub> − σ<sub>1</sub>)²]}.",
+    "Differences: 200, 150 and −350 MPa; squares: 40 000 + 22 500 + 122 500 = 185 000",
+    "σ<sub>e</sub> = √(92 500) = <b>304.1 MPa</b>",
+    "<b>Exam tip:</b> The Tresca equivalent stress here is σ<sub>1</sub> − σ<sub>3</sub> = 350 MPa; Tresca is always the more conservative of the two."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The flow curve of a steel is σ = 600ε<sup>0.2</sup> MPa. In a forming operation the true strain reaches 0.3. The average flow stress over this deformation, used for estimating forming forces (in MPa, round off to one decimal place), is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "393.0 (accept 390.0 to 396.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Average flow stress = (1/ε)∫<sub>0</sub><sup>ε</sup> Kε<sup>n</sup> dε = Kε<sup>n</sup>/(1 + n).",
+    "Flow stress at ε = 0.3: 600 × 0.3<sup>0.2</sup> = 471.6 MPa",
+    "Average = 471.6/1.2 = <b>393.0 MPa</b>",
+    "<b>Exam tip:</b> Use the average flow stress in work and force estimates over the whole deformation (rolling, drawing, extrusion) and the final flow stress for the force at the end of a forging stroke."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Lead is deformed at room temperature (about 25 °C). Its melting point is 327 °C. This deformation is",
+   "fig": null,
+   "opts": [
+    "cold working, because it is carried out at room temperature",
+    "warm working",
+    "hot working, because room temperature is above the recrystallization temperature of lead",
+    "neither, because lead cannot be plastically deformed"
+   ],
+   "ans": "(C) hot working, because room temperature is above the recrystallization temperature of lead",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hot or cold working is decided by the homologous temperature T/T<sub>m</sub> (in kelvin), not by whether heating is used.",
+    "T/T<sub>m</sub> = 298/600 ≈ 0.50, which is above the recrystallization temperature of lead (about 0.3–0.4 T<sub>m</sub>, i.e. below room temperature).",
+    "So lead recrystallizes as it is deformed and does not strain-harden: <b>(C)</b> hot working.",
+    "<b>Exam tip:</b> Similarly, deforming tungsten at 1000 °C is still cold working (T<sub>m</sub> = 3410 °C)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plate is rolled with rolls of 500 mm diameter. The coefficient of friction between the rolls and the plate is 0.12. The maximum possible draft in one pass (in mm, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.6 (accept 3.5 to 3.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The strip is drawn into the roll gap only if tan α ≤ μ; for small angles this gives Δh<sub>max</sub> = μ²R.",
+    "R = 250 mm; Δh<sub>max</sub> = 0.12² × 250 = 0.0144 × 250",
+    "Δh<sub>max</sub> = <b>3.6 mm</b>",
+    "<b>Exam tip:</b> Larger rolls and rougher rolls (higher μ) permit larger drafts; that is why breakdown passes in hot rolling use large, rough rolls."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A strip 20 mm thick enters the rolls at 2 m/s and leaves 16 mm thick, as shown (the width does not change). The surface speed of the rolls is 2.4 m/s. The forward slip (in %, round off to two decimal places) is ______",
+   "fig": "d56p_q6.png",
+   "opts": null,
+   "ans": "4.17 (accept 4.12 to 4.22)",
+   "sfig": "d56p_s6.png",
+   "solution": [
+    "<b>Concept:</b> Volume constancy h<sub>0</sub>v<sub>0</sub> = h<sub>f</sub>v<sub>f</sub>; forward slip = (v<sub>f</sub> − v<sub>r</sub>)/v<sub>r</sub>.",
+    "Exit speed v<sub>f</sub> = 20 × 2/16 = 2.5 m/s",
+    "Forward slip = (2.5 − 2.4)/2.4 = 0.04167 = <b>4.17 %</b>",
+    "Between entry and the neutral point the strip moves slower than the rolls, after it faster (see figure).",
+    "<b>Exam tip:</b> Backward slip here is (2.4 − 2.0)/2.4 = 16.7 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following reduces the roll separating force in flat rolling, other conditions remaining the same?",
+   "fig": null,
+   "opts": [
+    "Using rolls of larger diameter",
+    "Increasing the coefficient of friction",
+    "Increasing the draft per pass",
+    "Applying front and back tension to the strip"
+   ],
+   "ans": "(D) Applying front and back tension to the strip",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> F ≈ σ<sub>m</sub> w √(RΔh) × (friction-hill factor).",
+    "Larger R and larger Δh increase the contact length, and higher μ raises the friction hill, so (A), (B) and (C) all increase the force.",
+    "Strip tensions lower the longitudinal compressive stress needed, so the roll pressure falls: <b>(D)</b>.",
+    "<b>Exam tip:</b> Small work rolls backed up by large rolls (cluster mills) are used for thin, hard strip for the same reason."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A billet of 120 mm diameter is extruded directly into a rod of 40 mm diameter, as shown. Assuming ideal (frictionless, homogeneous) deformation with a mean flow stress of 100 MPa, the extrusion force (in MN, round off to two decimal places) is ______",
+   "fig": "d56p_q8.png",
+   "opts": null,
+   "ans": "2.49 (accept 2.46 to 2.51)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Ideal extrusion pressure p = σ<sub>m</sub> ln R, with extrusion ratio R = A<sub>0</sub>/A<sub>f</sub>.",
+    "R = (120/40)² = 9; p = 100 ln 9 = 219.7 MPa",
+    "F = p A<sub>0</sub> = 219.7 × π × 60² = 2.485 × 10<sup>6</sup> N ≈ <b>2.49 MN</b>",
+    "<b>Exam tip:</b> Real forces are higher (redundant work and container friction); in direct extrusion the friction makes the force peak at the start of the stroke."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For ideal (frictionless) wire drawing of a perfectly plastic material, the maximum possible area reduction in a single pass is about",
+   "fig": null,
+   "opts": [
+    "36.8 %",
+    "50.0 %",
+    "63.2 %",
+    "100 %"
+   ],
+   "ans": "(C) 63.2 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The drawing stress σ<sub>m</sub> ln(A<sub>0</sub>/A<sub>f</sub>) must not exceed the strength σ<sub>m</sub> of the drawn wire.",
+    "Limit: ln(A<sub>0</sub>/A<sub>f</sub>) = 1, so A<sub>f</sub>/A<sub>0</sub> = e<sup>−1</sup> = 0.368",
+    "Maximum reduction = 1 − 0.368 = <b>63.2 %</b>: <b>(C)</b>.",
+    "<b>Exam tip:</b> Friction, die angle and strain hardening change this limit; in practice reductions of 30–45 % per pass are used."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rectangular blank 60 mm × 40 mm is cut from a sheet 1.5 mm thick with a shear strength of 280 MPa. The blanking force without shear on the punch is",
+   "fig": null,
+   "opts": [
+    "42 kN",
+    "84 kN",
+    "168 kN",
+    "50.4 kN"
+   ],
+   "ans": "(B) 84 kN",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Blanking force = perimeter × thickness × shear strength.",
+    "Perimeter = 2(60 + 40) = 200 mm",
+    "F = 200 × 1.5 × 280 = 84 000 N = <b>84 kN</b>: <b>(B)</b>.",
+    "<b>Exam tip:</b> Shear (bevel) on the punch or die spreads the cut over the stroke and lowers the peak force, while the work done stays the same."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A hole of 20 mm diameter is to be pierced in a sheet with a radial clearance of 0.08 mm per side. The punch and die diameters should be",
+   "fig": null,
+   "opts": [
+    "punch 19.84 mm, die 20.00 mm",
+    "punch 20.00 mm, die 20.08 mm",
+    "punch 19.92 mm, die 20.08 mm",
+    "punch 20.00 mm, die 20.16 mm"
+   ],
+   "ans": "(D) punch 20.00 mm, die 20.16 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In piercing (punching) the hole takes the size of the punch; the clearance is added to the die.",
+    "Punch = 20.00 mm; die = 20 + 2 × 0.08 = 20.16 mm: <b>(D)</b>.",
+    "In blanking it is the reverse: die = blank size and punch = blank size − 2 × clearance.",
+    "<b>Exam tip:</b> 'Per side' clearance is doubled when converting to a diameter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 2 mm thick sheet is bent through 90° with an inside bend radius of 6 mm, as shown. Taking the neutral axis at 0.4t from the inside surface, the bend allowance (developed length of the bend, in mm, round off to two decimal places) is ______",
+   "fig": "d56p_q12.png",
+   "opts": null,
+   "ans": "10.68 (accept 10.60 to 10.76)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bend allowance = θ(R + kt), the length of the neutral axis in the bend (θ in radians).",
+    "R + kt = 6 + 0.4 × 2 = 6.8 mm; θ = π/2",
+    "BA = (π/2) × 6.8 = <b>10.68 mm</b>",
+    "<b>Exam tip:</b> k ≈ 0.33 for R &lt; 2t and ≈ 0.5 for R &gt; 2t; the problem statement usually gives it."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cup of 80 mm diameter is drawn from a 150 mm diameter blank of 1.2 mm thick steel sheet with an ultimate tensile strength of 350 MPa. Using F = πdtσ<sub>u</sub>(D/d − 0.7), the drawing force (in kN, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "124.0 (accept 123.0 to 125.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The empirical drawing force grows with the drawing ratio D/d; the 0.7 accounts for friction and bending.",
+    "D/d = 150/80 = 1.875; πdtσ<sub>u</sub> = π × 80 × 1.2 × 350 = 105 558 N",
+    "F = 105 558 × (1.875 − 0.7) = 124 031 N = <b>124.0 kN</b>",
+    "<b>Exam tip:</b> The drawing ratio 1.875 is below the limiting drawing ratio (≈ 2) of mild steel, so a single draw is possible."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In closed-die (impression-die) forging, the narrow flash land around the die cavity",
+   "fig": null,
+   "opts": [
+    "reduces the forging load by letting excess metal escape freely",
+    "restricts the outward flow of metal, raising the pressure so that the die cavity fills completely",
+    "is provided only to locate the billet in the die",
+    "prevents the die from wearing"
+   ],
+   "ans": "(B) restricts the outward flow of metal, raising the pressure so that the die cavity fills completely",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The thin flash cools quickly and its friction on the land resists flow.",
+    "This builds up pressure inside the cavity so that the metal fills the deepest corners before excess escapes into the gutter: <b>(B)</b>.",
+    "The price is a high forging load near the end of the stroke; the flash is trimmed off afterwards.",
+    "<b>Exam tip:</b> Flashless (precision) forging needs very accurate billet volumes."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Match the product (Column I) with the process used to make it (Column II).<br>P. Seamless tubes &nbsp; Q. Collapsible toothpaste tubes &nbsp; R. Crankshafts &nbsp; S. Thin wires<br>1. Closed-die forging &nbsp; 2. Drawing &nbsp; 3. Rotary piercing (Mannesmann) &nbsp; 4. Impact extrusion",
+   "fig": null,
+   "opts": [
+    "P-3, Q-1, R-4, S-2",
+    "P-4, Q-3, R-1, S-2",
+    "P-3, Q-4, R-2, S-1",
+    "P-3, Q-4, R-1, S-2"
+   ],
+   "ans": "(D) P-3, Q-4, R-1, S-2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Each product's shape and material suit one process.",
+    "Seamless tubes: rotary (Mannesmann) piercing of a hot round billet; toothpaste tubes: impact extrusion of soft aluminium slugs.",
+    "Crankshafts: closed-die forging for strength and grain flow; wires: drawing through dies: <b>(D)</b> P-3, Q-4, R-1, S-2.",
+    "<b>Exam tip:</b> Impact extrusion is usually backward (reverse) extrusion done in a single fast blow."
+   ]
+  }
+ ]
+}
