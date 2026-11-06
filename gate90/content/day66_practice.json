@@ -1,0 +1,260 @@
+{
+ "day": 66,
+ "subject": "Weekly Revision",
+ "topic": "Week 11 Revision",
+ "days_to_gate": 35,
+ "summary": "a mixed revision of this week: machine tools, NTM and additive manufacturing (taper turning, milling, SLS), metrology and CIM (CNC constant surface speed, GD&T, CAPP), probability and statistics (geometric and normal distributions, regression lines), production planning and inventory (EOQ, moving averages, SPT) and operations research (AOA networks, M/M/1 queues, shadow prices)",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Maths Revision",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "The short taper shown (from Ø60 mm to Ø50 mm over a length of 40 mm) is to be turned on a centre lathe by swivelling the compound rest. The angle (in degrees) through which the compound rest must be swivelled (round off to two decimal places) is ______",
+   "fig": "d66p_q1.png",
+   "opts": null,
+   "ans": "7.13 (accept 7.08 to 7.18)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The compound rest is set to the half taper angle α, where tan α = (D − d)/(2L).",
+    "tan α = (60 − 50)/(2 × 40) = 10/80 = 0.125",
+    "α = tan<sup>−1</sup>(0.125) = <b>7.13°</b>",
+    "<b>Exam tip:</b> The compound-rest method suits short, steep tapers (hand feed); long, gentle tapers are turned by tailstock set-over or a taper-turning attachment."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following additive manufacturing processes fuses a bed of polymer powder layer by layer with a laser beam?",
+   "fig": null,
+   "opts": [
+    "Stereolithography (SLA)",
+    "Fused deposition modelling (FDM)",
+    "Selective laser sintering (SLS)",
+    "Laminated object manufacturing (LOM)"
+   ],
+   "ans": "(C) Selective laser sintering (SLS)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> AM processes are grouped by the starting material: liquid (SLA: UV laser cures a photopolymer), solid filament/sheet (FDM extrudes, LOM cuts and bonds sheets) and powder (SLS, SLM, binder jetting).",
+    "A laser sintering a powder bed is <b>SLS (C)</b>; the unsintered powder supports the part, so no support structures are needed.",
+    "<b>Exam tip:</b> SLM/DMLS fully melts metal powder; SLS normally sinters polymers such as nylon."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Compared with up (conventional) milling, down (climb) milling",
+   "fig": null,
+   "opts": [
+    "requires a backlash eliminator in the table feed screw because the cutter tends to pull the work into itself",
+    "starts each cut at zero chip thickness, causing rubbing",
+    "tends to lift the workpiece off the table",
+    "is preferred for castings with hard, sandy skin"
+   ],
+   "ans": "(A) requires a backlash eliminator in the table feed screw because the cutter tends to pull the work into itself",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In down milling the cutter rotates in the direction of the feed; each tooth enters at maximum chip thickness and exits at zero.",
+    "The cutting force pushes the work down onto the table and also in the feed direction, so any backlash in the lead screw lets the table jerk forward: a backlash eliminator is needed: <b>(A)</b>",
+    "Up milling starts at zero thickness (rubbing, poorer finish) and tends to lift the work, but it is used for hard-skinned castings.",
+    "<b>Exam tip:</b> Down milling gives better finish and longer tool life on rigid CNC machines with ball screws."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A CNC lathe program uses G96 S180 (constant surface speed of 180 m/min). The spindle speed (in rpm) when the tool is cutting at a diameter of 40 mm (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1432.4 (accept 1425 to 1440)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With constant surface speed (G96), the control changes the spindle speed as the diameter changes: N = 1000V/(πD).",
+    "N = 1000 × 180/(π × 40) = 180 000/125.66",
+    "N = <b>1432.4 rpm</b>",
+    "<b>Exam tip:</b> In facing towards the centre N rises sharply, so G50 (or G92) S… is used to clamp the maximum spindle speed; G97 cancels CSS."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Which one of the following geometric tolerances is always specified with respect to a datum?",
+   "fig": null,
+   "opts": [
+    "Flatness",
+    "Straightness",
+    "Circularity (roundness)",
+    "Position"
+   ],
+   "ans": "(D) Position",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Form tolerances (flatness, straightness, circularity, cylindricity) control a feature by itself and never use a datum.",
+    "Orientation (parallelism, perpendicularity, angularity), location (position, concentricity, symmetry) and run-out tolerances relate a feature to a datum: <b>(D)</b>",
+    "<b>Exam tip:</b> Profile of a line/surface may be used with or without a datum."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In computer-aided process planning (CAPP), the variant (retrieval) approach",
+   "fig": null,
+   "opts": [
+    "creates every process plan from scratch using decision logic and a manufacturing database",
+    "retrieves the standard plan of the part family (found by group-technology coding) and edits it for the new part",
+    "needs no part classification or coding",
+    "is used only for assembly planning"
+   ],
+   "ans": "(B) retrieves the standard plan of the part family (found by group-technology coding) and edits it for the new part",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> CAPP has two approaches: variant and generative.",
+    "Variant: code the new part (GT), find its family, retrieve the family's standard plan and modify it: <b>(B)</b>",
+    "Generative: synthesises a new plan from part geometry, decision rules and process knowledge, with no stored family plan.",
+    "<b>Exam tip:</b> Variant systems are easier to build; generative systems are more consistent and need no existing plans."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A fair die is thrown repeatedly until a six appears. The probability that more than four throws are needed (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.482 (accept 0.478 to 0.486)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> More than k throws are needed exactly when the first k throws all fail: P(N > k) = (1 − p)<sup>k</sup>.",
+    "P(N > 4) = (5/6)<sup>4</sup> = 625/1296",
+    "= <b>0.482</b>",
+    "<b>Exam tip:</b> The expected number of throws is 1/p = 6 (geometric distribution, which is memoryless)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The lengths of rods are normally distributed with mean 50 mm and standard deviation 4 mm. Given Φ(1) = 0.8413 and Φ(0.5) = 0.6915, the probability that a rod lies between 48 mm and 54 mm (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.533 (accept 0.529 to 0.537)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Standardise: z = (x − μ)/σ, and use Φ(−z) = 1 − Φ(z).",
+    "z₁ = (48 − 50)/4 = −0.5; z₂ = (54 − 50)/4 = 1",
+    "P = Φ(1) − Φ(−0.5) = 0.8413 − (1 − 0.6915) = <b>0.533</b>",
+    "<b>Exam tip:</b> Sketch the bell curve and shade the area; it avoids sign errors with negative z."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If the correlation coefficient between x and y is zero, the two regression lines (y on x and x on y)",
+   "fig": null,
+   "opts": [
+    "coincide",
+    "are parallel",
+    "are perpendicular to each other, parallel to the coordinate axes",
+    "make an angle of 45° with each other"
+   ],
+   "ans": "(C) are perpendicular to each other, parallel to the coordinate axes",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The regression lines are y − ȳ = r(σ<sub>y</sub>/σ<sub>x</sub>)(x − x̄) and x − x̄ = r(σ<sub>x</sub>/σ<sub>y</sub>)(y − ȳ).",
+    "With r = 0 they become y = ȳ (horizontal) and x = x̄ (vertical): perpendicular: <b>(C)</b>",
+    "With r = ±1 they coincide.",
+    "<b>Exam tip:</b> Both regression lines always pass through (x̄, ȳ)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The annual demand of an item is 7200 units, the ordering cost is ₹250 per order and the holding cost is ₹10 per unit per year. Under the EOQ policy, the number of orders placed per year is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "12",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EOQ = √(2DC<sub>o</sub>/C<sub>h</sub>); number of orders = D/EOQ.",
+    "EOQ = √(2 × 7200 × 250/10) = √360 000 = 600 units",
+    "Orders per year = 7200/600 = <b>12</b>",
+    "<b>Exam tip:</b> Directly, N* = √(DC<sub>h</sub>/(2C<sub>o</sub>)) = √(7200 × 10/500) = 12."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Increasing the number of periods n in a simple moving-average forecast",
+   "fig": null,
+   "opts": [
+    "makes the forecast respond faster to a change in demand",
+    "makes the forecast smoother but slower to respond to a real change in demand",
+    "gives more weight to the latest demand",
+    "has no effect on the lag of the forecast"
+   ],
+   "ans": "(B) makes the forecast smoother but slower to respond to a real change in demand",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A simple moving average gives equal weight 1/n to each of the last n periods.",
+    "Larger n averages out random noise (smoother) but the forecast lags a trend or step change by about (n − 1)/2 periods: <b>(B)</b>",
+    "<b>Exam tip:</b> A moving average of n periods behaves roughly like exponential smoothing with α = 2/(n + 1)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Five jobs with processing times of 5, 3, 8, 2 and 7 hours wait for a single machine and are sequenced by the SPT rule. The average number of jobs in the system over the makespan (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.36 (accept 2.34 to 2.38)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Average number of jobs in the system = (sum of completion times)/(makespan), since each job stays in the system until it completes.",
+    "SPT order: 2, 3, 5, 7, 8 → completion times 2, 5, 10, 17, 25 (sum = 59)",
+    "Average number in system = 59/25 = <b>2.36</b>",
+    "<b>Exam tip:</b> Because the makespan is fixed, SPT, which minimises the sum of completion times, also minimises the average work-in-process."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an activity-on-arrow project network, a dummy activity is used to",
+   "fig": null,
+   "opts": [
+    "show a correct precedence relationship or to keep two activities between the same pair of events distinct; it takes zero time and no resources",
+    "represent an activity that is not on the critical path",
+    "represent waiting time that consumes resources",
+    "reduce the project duration by crashing"
+   ],
+   "ans": "(A) show a correct precedence relationship or to keep two activities between the same pair of events distinct; it takes zero time and no resources",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In AOA networks each activity is an arrow between two events, and no two activities may share both end events.",
+    "A dummy (dashed arrow, zero duration, no resources) keeps parallel activities uniquely numbered and models logic that cannot be drawn otherwise: <b>(A)</b>",
+    "<b>Exam tip:</b> Activity-on-node networks need no dummies; that is one reason they are preferred in software."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In an M/M/1 queue, the arrival rate is 4 per hour and the service rate is 5 per hour. The average number of customers waiting in the queue (excluding the one being served) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> L<sub>q</sub> = λ²/[μ(μ − λ)] = ρ²/(1 − ρ).",
+    "ρ = 4/5 = 0.8",
+    "L<sub>q</sub> = 0.64/0.2 = <b>3.2</b> customers (L = ρ/(1 − ρ) = 4)",
+    "<b>Exam tip:</b> W<sub>q</sub> = L<sub>q</sub>/λ = 0.8 h by Little's law."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the optimal simplex table of a maximisation LP, the shadow price (dual value) of a resource constraint means",
+   "fig": null,
+   "opts": [
+    "the cost of buying one unit of the resource in the market",
+    "the number of units of the resource left unused",
+    "the reduced cost of a non-basic variable",
+    "the increase in the optimal objective value per unit increase in the availability of that resource, within the range of feasibility"
+   ],
+   "ans": "(D) the increase in the optimal objective value per unit increase in the availability of that resource, within the range of feasibility",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The optimal dual variable y<sub>i</sub> = ∂Z*/∂b<sub>i</sub>; it is read from the net-evaluation row under the slack of constraint i.",
+    "It is the marginal worth of one more unit of the resource, valid while the current basis stays feasible: <b>(D)</b>",
+    "A resource with unused slack (non-binding constraint) has a shadow price of zero (complementary slackness).",
+    "<b>Exam tip:</b> Buy extra resource only if its market price is below its shadow price."
+   ]
+  }
+ ]
+}

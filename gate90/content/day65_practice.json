@@ -1,0 +1,266 @@
+{
+ "day": 65,
+ "subject": "Industrial Engineering",
+ "topic": "Operations Research",
+ "days_to_gate": 36,
+ "summary": "linear programming (graphical method, special cases, simplex and Big-M, duality), transportation (NWC, degeneracy, u–v method), the assignment problem (Hungarian method), project networks (CPM forward and backward pass, floats, PERT time estimates and probability, crashing) and M/M/1 queues",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 11 Revision",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "Maximise Z = 2x + 3y subject to x + y ≤ 8, x + 3y ≤ 18, 2x + y ≤ 14 and x, y ≥ 0. The maximum value of Z is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "21",
+   "sfig": "d65p_s1.png",
+   "solution": [
+    "<b>Concept:</b> The optimum of an LP lies at a corner (extreme point) of the feasible region; evaluate Z at every corner.",
+    "Corners: (0, 0); (7, 0) on 2x + y = 14; (6, 2) where 2x + y = 14 meets x + y = 8; (3, 5) where x + y = 8 meets x + 3y = 18; (0, 6)",
+    "Z = 0, 14, 18, 21, 18",
+    "Maximum Z = <b>21</b> at x = 3, y = 5",
+    "<b>Exam tip:</b> Check each intersection against the third constraint: x + 3y = 18 and 2x + y = 14 meet at (4.8, 4.4), which violates x + y ≤ 8, so it is not a corner."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The LP: maximise Z = 3x + 2y subject to x − y ≤ 2, x ≥ 1 and x, y ≥ 0 has",
+   "fig": null,
+   "opts": [
+    "no feasible solution",
+    "an unbounded solution",
+    "a unique optimal solution at (2, 0)",
+    "alternative optimal solutions"
+   ],
+   "ans": "(B) an unbounded solution",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> If the feasible region is open in a direction in which Z keeps increasing, the LP is unbounded.",
+    "Take x = 1 and let y grow: x − y = 1 − y ≤ 2 holds for every y ≥ 0, so all points (1, y) are feasible",
+    "Z = 3 + 2y → ∞: the solution is <b>unbounded (B)</b>",
+    "<b>Exam tip:</b> In the simplex table, unboundedness shows up as an entering column with no positive entry (no ratio can be formed)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the Big-M method, a constraint of the type a₁x₁ + a₂x₂ ≥ b (with b > 0) in a maximisation problem is converted to an equation by",
+   "fig": null,
+   "opts": [
+    "adding a slack variable only",
+    "subtracting a surplus variable only",
+    "subtracting a surplus variable and adding an artificial variable with a coefficient of −M in the objective",
+    "adding an artificial variable with a coefficient of +M in the objective"
+   ],
+   "ans": "(C) subtracting a surplus variable and adding an artificial variable with a coefficient of −M in the objective",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A surplus variable turns ≥ into =, but it enters with −1, so it cannot form the initial identity basis.",
+    "An artificial variable A is added to give a starting basic feasible solution; to drive it out, it is penalised with −M (very large) in a max problem (+M in a min problem): <b>(C)</b>",
+    "If an artificial variable stays positive in the final table, the LP is infeasible.",
+    "<b>Exam tip:</b> The two-phase method does the same job: phase 1 minimises the sum of artificial variables."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Three warehouses S1, S2, S3 with supplies of 30, 50 and 20 units serve four shops D1–D4 with demands of 20, 40, 30 and 10 units. The unit costs (₹) to D1, D2, D3, D4 are: from S1: 3, 1, 7, 4; from S2: 2, 6, 5, 9; from S3: 8, 3, 3, 2. The total cost (in ₹) of the initial basic feasible solution found by the north-west corner rule is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "400",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> NWC rule: start at the top-left cell, allocate the most possible, and move right (demand left over) or down (supply left over).",
+    "S1–D1 = 20 (S1 left 10); S1–D2 = 10 (S1 done); S2–D2 = 30; S2–D3 = 20 (S2 done); S3–D3 = 10; S3–D4 = 10",
+    "Cost = 20 × 3 + 10 × 1 + 30 × 6 + 20 × 5 + 10 × 3 + 10 × 2 = 60 + 10 + 180 + 100 + 30 + 20 = <b>₹400</b>",
+    "Six allocations = m + n − 1 = 3 + 4 − 1, so the solution is non-degenerate.",
+    "<b>Exam tip:</b> NWC ignores costs; VAM or the least-cost method usually starts much closer to the optimum."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An initial basic feasible solution of an m × n transportation problem has fewer than m + n − 1 positive allocations. Before applying the u–v (MODI) method, one should",
+   "fig": null,
+   "opts": [
+    "drop one row of the cost table",
+    "add a dummy row of zero cost",
+    "declare the solution optimal",
+    "allocate a very small quantity ε to a suitable empty cell that does not form a closed loop with the occupied cells"
+   ],
+   "ans": "(D) allocate a very small quantity ε to a suitable empty cell that does not form a closed loop with the occupied cells",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The u–v method needs m + n − 1 occupied (basic) cells to solve for all the u<sub>i</sub> and v<sub>j</sub>; fewer cells means the solution is degenerate.",
+    "Put ε (→ 0) in an independent empty cell, preferably a low-cost one, so that no closed loop is formed: <b>(D)</b>. Then proceed normally and set ε = 0 at the end.",
+    "<b>Exam tip:</b> A dummy row or column is used for an unbalanced problem (total supply ≠ total demand), not for degeneracy."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Three workers W1, W2, W3 are to be assigned one each to jobs J1, J2, J3. The costs (₹) are W1: 8, 4, 7; W2: 5, 2, 3; W3: 9, 4, 8 (for J1, J2, J3). The minimum total cost (in ₹) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hungarian method: subtract row minima, then column minima, and make an assignment using independent zeros.",
+    "Row reduction: W1: 4, 0, 3; W2: 3, 0, 1; W3: 5, 0, 4. Column reduction (minima 3, 0, 1): W1: 1, 0, 2; W2: 0, 0, 0; W3: 2, 0, 3",
+    "Zeros can be covered by 2 lines (< 3), so subtract the smallest uncovered value 1 and add it at line intersections: W1: 0, 0, 1; W2: 0, 1, 0; W3: 1, 0, 2",
+    "Assign W3–J2, W1–J1, W2–J3: 8 + 3 + 4 = <b>₹15</b>",
+    "<b>Exam tip:</b> With only 3! = 6 possibilities, quickly listing them (15, 16, 16, 17, 18, 18) is a fast check in the exam."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "To solve an assignment problem in which the entries are profits to be maximised by the Hungarian method, the profit matrix is first",
+   "fig": null,
+   "opts": [
+    "converted to a loss matrix by subtracting every entry from the largest entry of the matrix",
+    "multiplied by the number of rows",
+    "replaced by its transpose",
+    "divided by the largest entry, and then the method is applied unchanged to maximise"
+   ],
+   "ans": "(A) converted to a loss matrix by subtracting every entry from the largest entry of the matrix",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The Hungarian method minimises. Maximising P is the same as minimising (P<sub>max</sub> − P) (or −P).",
+    "Subtract each entry from the largest one to get an opportunity-loss matrix, then minimise: <b>(A)</b>",
+    "The optimal assignment is the same; the total profit is read from the original matrix.",
+    "<b>Exam tip:</b> An unbalanced problem (more jobs than workers) needs a dummy row with zero entries first."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The activity-on-arrow network of a project is shown, with durations in days. The project duration (in days) is ______",
+   "fig": "d65p_q8.png",
+   "opts": null,
+   "ans": "18",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Forward pass: earliest time of an event E<sub>j</sub> = max over incoming activities of (E<sub>i</sub> + t<sub>ij</sub>); the project time is E of the end event.",
+    "E1 = 0, E2 = 5, E3 = 2, E4 = max(5 + 6, 2 + 8) = 11, E5 = 5 + 4 = 9",
+    "E6 = max(11 + 5, 9 + 9, 2 + 10) = max(16, 18, 12) = <b>18 days</b>; the critical path is A–E–G (1–2–5–6)",
+    "<b>Exam tip:</b> Path lengths: A–C–F 16, B–D–F 15, A–E–G 18, B–H 12. Listing all paths is a quick check in small networks."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "For the project network of the previous question, the total float of activity D (3–4), in days, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Total float = LS − ES = L<sub>j</sub> − E<sub>i</sub> − t<sub>ij</sub>, found from a backward pass.",
+    "Backward pass: L6 = 18, L5 = 9, L4 = 18 − 5 = 13, L2 = min(13 − 6, 9 − 4) = 5, L3 = min(13 − 8, 18 − 10) = 5",
+    "TF(D) = L4 − E3 − 8 = 13 − 2 − 8 = <b>3 days</b>",
+    "Free float of D = E4 − E3 − 8 = 11 − 10 = 1 day.",
+    "<b>Exam tip:</b> TF of an activity = (critical path length) − (length of the longest path through that activity) = 18 − 15 = 3."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An activity has optimistic, most likely and pessimistic times of 3, 6 and 15 days. Its expected time and standard deviation are",
+   "fig": null,
+   "opts": [
+    "8 days and 2 days",
+    "7 days and 2 days",
+    "7 days and 4 days",
+    "6 days and 2 days"
+   ],
+   "ans": "(B) 7 days and 2 days",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> PERT (beta distribution): t<sub>e</sub> = (a + 4m + b)/6, σ = (b − a)/6.",
+    "t<sub>e</sub> = (3 + 24 + 15)/6 = 42/6 = 7 days; σ = (15 − 3)/6 = 2 days: <b>(B)</b>",
+    "<b>Exam tip:</b> t<sub>e</sub> lies on the side of the longer tail (b − m = 9 > m − a = 3), so it exceeds the most likely time."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The expected length of the critical path of a project is 50 days and the variance of the project duration is 25 days². Assuming a normal distribution (z = 1.645 for 95 % probability), the due date (in days) that gives a 95 % chance of completion (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "58.2 (accept 58.1 to 58.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> T = T<sub>e</sub> + zσ, where σ is the square root of the sum of the variances of the critical activities.",
+    "σ = √25 = 5 days",
+    "T = 50 + 1.645 × 5 = 50 + 8.225 = <b>58.2 days</b>",
+    "<b>Exam tip:</b> Never add the standard deviations of activities; add variances and then take the square root."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "While crashing a project to reduce its duration at minimum extra cost, the activity crashed first is the one",
+   "fig": null,
+   "opts": [
+    "with the longest normal duration in the network",
+    "with the least cost slope among all activities",
+    "on the critical path with the least cost slope",
+    "on a non-critical path with the largest float"
+   ],
+   "ans": "(C) on the critical path with the least cost slope",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Only critical activities shorten the project; cost slope = (crash cost − normal cost)/(normal time − crash time).",
+    "Choose the critical activity with the least cost slope: <b>(C)</b>. When several paths become critical, all of them must be shortened together (choose the cheapest combination).",
+    "Stop when the extra direct cost per day exceeds the indirect cost saved per day: that gives the optimum duration.",
+    "<b>Exam tip:</b> Crashing a non-critical activity only adds cost, it never shortens the project."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Customers arrive at a single-window counter in a Poisson stream at 6 per hour, and the service time is exponential with a mean of 7.5 minutes (M/M/1). The probability that there are at least 3 customers in the system (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.422 (accept 0.418 to 0.426)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an M/M/1 queue P<sub>n</sub> = (1 − ρ)ρ<sup>n</sup>, so P(N ≥ k) = ρ<sup>k</sup>.",
+    "μ = 60/7.5 = 8 per hour, ρ = λ/μ = 6/8 = 0.75",
+    "P(N ≥ 3) = 0.75³ = <b>0.422</b>",
+    "<b>Exam tip:</b> P(an arriving customer has to wait) = P(N ≥ 1) = ρ = 0.75."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an M/M/1 queue the arrival rate is 3 per hour and the service rate is 4 per hour. The probability that the server is idle and the average number of customers in the queue (excluding the one in service) are",
+   "fig": null,
+   "opts": [
+    "0.75 and 2.25",
+    "0.25 and 3",
+    "0.75 and 3",
+    "0.25 and 2.25"
+   ],
+   "ans": "(D) 0.25 and 2.25",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> P<sub>0</sub> = 1 − ρ; L<sub>q</sub> = ρ²/(1 − ρ) = λ²/[μ(μ − λ)].",
+    "ρ = 3/4 = 0.75, so P<sub>0</sub> = 0.25",
+    "L<sub>q</sub> = 0.5625/0.25 = 2.25; L = ρ/(1 − ρ) = 3: <b>(D)</b>",
+    "<b>Exam tip:</b> L − L<sub>q</sub> = ρ always, because the server holds on average ρ customers."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A primal LP has 3 constraints (other than non-negativity) and 2 decision variables. Its dual has",
+   "fig": null,
+   "opts": [
+    "3 variables and 2 constraints",
+    "2 variables and 3 constraints",
+    "3 variables and 3 constraints",
+    "2 variables and 2 constraints"
+   ],
+   "ans": "(A) 3 variables and 2 constraints",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> One dual variable for each primal constraint and one dual constraint for each primal variable; the coefficient matrix is transposed.",
+    "3 primal constraints → 3 dual variables; 2 primal variables → 2 dual constraints: <b>(A)</b>",
+    "The optimal dual variables are the shadow prices of the primal resources.",
+    "<b>Exam tip:</b> The dual of the dual is the primal; a primal with many constraints and few variables is often easier to solve through its dual."
+   ]
+  }
+ ]
+}

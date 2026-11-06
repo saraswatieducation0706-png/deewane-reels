@@ -1,0 +1,263 @@
+{
+ "day": 67,
+ "subject": "Engineering Mathematics",
+ "topic": "Maths Revision",
+ "days_to_gate": 33,
+ "summary": "a revision of all of Engineering Mathematics: eigenvalues and special matrices, limits, maxima and integration, curl and Green's theorem, first- and second-order ODEs, analytic functions and residues, Newton–Raphson and Gauss–Seidel, and probability distributions",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, GA Revision",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "For the matrix A with rows (4, −2) and (1, 1), the largest eigenvalue of A³ − 2A is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "21",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> If Ax = λx, then p(A)x = p(λ)x for any polynomial p: the eigenvalues of p(A) are p(λ).",
+    "Characteristic equation λ² − 5λ + 6 = 0 (trace 5, determinant 4 + 2 = 6) → λ = 2, 3",
+    "p(λ) = λ³ − 2λ: p(2) = 8 − 4 = 4; p(3) = 27 − 6 = 21",
+    "Largest eigenvalue = <b>21</b>",
+    "<b>Exam tip:</b> Never compute A³ explicitly in the exam; work with the eigenvalues."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A is a real skew-symmetric matrix of order 5. Then",
+   "fig": null,
+   "opts": [
+    "det A = 1",
+    "det A = 0",
+    "A is always invertible",
+    "all eigenvalues of A are real and non-zero"
+   ],
+   "ans": "(B) det A = 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Aᵀ = −A, so det A = det Aᵀ = det(−A) = (−1)<sup>n</sup> det A.",
+    "For odd n = 5: det A = −det A, hence <b>det A = 0 (B)</b>",
+    "The eigenvalues of a real skew-symmetric matrix are zero or purely imaginary (±iβ); with odd order, one eigenvalue must be 0.",
+    "<b>Exam tip:</b> The diagonal entries of a skew-symmetric matrix are all zero, so its trace is 0."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The value of the limit of (cos x)<sup>1/x²</sup> as x → 0 (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.607 (accept 0.601 to 0.613)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A 1<sup>∞</sup> form: lim f<sup>g</sup> = e<sup>lim g(f − 1)</sup> (or take logarithms and use L'Hospital's rule).",
+    "ln L = lim (ln cos x)/x²; ln cos x ≈ −x²/2 for small x",
+    "ln L = −1/2, so L = e<sup>−1/2</sup> = <b>0.607</b>",
+    "<b>Exam tip:</b> Memorise cos x ≈ 1 − x²/2 and ln(1 + u) ≈ u; most 1<sup>∞</sup> limits fall in one line."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The maximum value of f(x) = x e<sup>−x</sup> for x ≥ 0 is",
+   "fig": null,
+   "opts": [
+    "1",
+    "e",
+    "1/e",
+    "2/e²"
+   ],
+   "ans": "(C) 1/e",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Stationary point from f′(x) = 0, confirmed by the sign of f″.",
+    "f′(x) = e<sup>−x</sup>(1 − x) = 0 → x = 1; f″(1) = e<sup>−1</sup>(1 − 2) < 0, a maximum",
+    "f(1) = <b>1/e (C)</b> ≈ 0.368",
+    "<b>Exam tip:</b> 2/e² is f(2), the point of inflection, a common distractor."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The value of the integral of x ln x from x = 0 to x = 1 is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "-0.25",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Integration by parts with u = ln x, dv = x dx; the lower limit uses x² ln x → 0 as x → 0.",
+    "∫ x ln x dx = (x²/2) ln x − ∫ (x²/2)(1/x) dx = (x²/2) ln x − x²/4",
+    "From 0 to 1: (0 − 1/4) − (0 − 0) = <b>−0.25</b>",
+    "<b>Exam tip:</b> In general, ∫₀¹ x<sup>n</sup> ln x dx = −1/(n + 1)²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The curl of the vector field F = yz i + zx j + xy k is",
+   "fig": null,
+   "opts": [
+    "x i + y j + z k",
+    "2(x i + y j + z k)",
+    "i + j + k",
+    "0"
+   ],
+   "ans": "(D) 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ∇ × F = (∂F<sub>z</sub>/∂y − ∂F<sub>y</sub>/∂z) i + (∂F<sub>x</sub>/∂z − ∂F<sub>z</sub>/∂x) j + (∂F<sub>y</sub>/∂x − ∂F<sub>x</sub>/∂y) k.",
+    "i: x − x = 0; j: y − y = 0; k: z − z = 0 → <b>0 (D)</b>",
+    "F is conservative: F = ∇(xyz).",
+    "<b>Exam tip:</b> Spot a potential first; if F = ∇φ, the curl is zero and line integrals depend only on the end points."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Using Green's theorem, the value of the line integral of (x² − y) dx + (x + y²) dy taken anticlockwise around the circle C: x² + y² = 9 shown (round off to two decimal places) is ______",
+   "fig": "d67p_q7.png",
+   "opts": null,
+   "ans": "56.55 (accept 56.0 to 57.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Green's theorem: ∮(P dx + Q dy) = ∬(∂Q/∂x − ∂P/∂y) dA over the enclosed region.",
+    "P = x² − y, Q = x + y²; ∂Q/∂x − ∂P/∂y = 1 − (−1) = 2",
+    "Integral = 2 × area = 2 × 9π = 18π = <b>56.55</b>",
+    "<b>Exam tip:</b> The x² and y² terms contribute nothing; only the 'cross' terms survive."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The solution of dy/dx = xy² with y(0) = 1, evaluated at x = 1, is",
+   "fig": null,
+   "opts": [
+    "2",
+    "1/2",
+    "e<sup>1/2</sup>",
+    "3/2"
+   ],
+   "ans": "(A) 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Variables separable: dy/y² = x dx.",
+    "−1/y = x²/2 + C; y(0) = 1 gives C = −1, so y = 1/(1 − x²/2) = 2/(2 − x²)",
+    "y(1) = 2/(2 − 1) = <b>2 (A)</b>",
+    "<b>Exam tip:</b> This solution blows up at x = √2: non-linear ODEs can have finite-escape times."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The order and degree of the differential equation (d²y/dx²)³ + (dy/dx)⁴ + y = 0 are",
+   "fig": null,
+   "opts": [
+    "order 3, degree 2",
+    "order 2, degree 4",
+    "order 2, degree 3",
+    "order 4, degree 3"
+   ],
+   "ans": "(C) order 2, degree 3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Order = highest derivative present; degree = power of that highest derivative when the equation is polynomial in its derivatives.",
+    "Highest derivative d²y/dx² → order 2; it appears cubed → degree 3: <b>(C)</b>",
+    "<b>Exam tip:</b> The power of a lower derivative (here 4 on dy/dx) does not decide the degree."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "C is the circle |z − 1| = 2 traversed anticlockwise. The value of (1/2πi) times the integral of (z + 2)/[z(z − 4)] around C is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "-0.5",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Residue theorem: (1/2πi)∮f dz = sum of residues at the poles inside C.",
+    "Poles: z = 0 (distance 1 from the centre 1, inside) and z = 4 (distance 3, outside)",
+    "Residue at 0 = (0 + 2)/(0 − 4) = −0.5 → answer <b>−0.5</b>",
+    "<b>Exam tip:</b> Always check each pole's distance from the centre of the circle, not from the origin."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "u = e<sup>x</sup> cos y is the real part of an analytic function f(z). A harmonic conjugate v is",
+   "fig": null,
+   "opts": [
+    "e<sup>x</sup> cos y",
+    "e<sup>x</sup> sin y",
+    "−e<sup>x</sup> sin y",
+    "e<sup>−x</sup> sin y"
+   ],
+   "ans": "(B) e<sup>x</sup> sin y",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cauchy–Riemann: v<sub>y</sub> = u<sub>x</sub> and v<sub>x</sub> = −u<sub>y</sub>.",
+    "v<sub>y</sub> = e<sup>x</sup> cos y → v = e<sup>x</sup> sin y + g(x); v<sub>x</sub> = e<sup>x</sup> sin y = −u<sub>y</sub> ✓, so g is constant",
+    "v = <b>e<sup>x</sup> sin y (B)</b>, and f(z) = e<sup>z</sup>",
+    "<b>Exam tip:</b> Milne–Thomson: put x = z, y = 0 in f′ = u<sub>x</sub> − iu<sub>y</sub> to get f′(z) = e<sup>z</sup> directly."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "√10 is computed by the Newton–Raphson method applied to f(x) = x² − 10, starting from x₀ = 3. The first iterate x₁ (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.167 (accept 3.16 to 3.17)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> x<sub>n+1</sub> = x<sub>n</sub> − f(x<sub>n</sub>)/f′(x<sub>n</sub>); for square roots this is x<sub>n+1</sub> = (x<sub>n</sub> + 10/x<sub>n</sub>)/2.",
+    "x₁ = 3 − (9 − 10)/(2 × 3) = 3 + 1/6",
+    "x₁ = <b>3.167</b> (true √10 = 3.1623)",
+    "<b>Exam tip:</b> Convergence is quadratic: x₂ = 3.16228 already has 5 correct digits."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Gauss–Seidel iteration for Ax = b is guaranteed to converge for any starting vector when A is",
+   "fig": null,
+   "opts": [
+    "strictly diagonally dominant",
+    "singular",
+    "skew-symmetric",
+    "upper triangular with zero diagonal"
+   ],
+   "ans": "(A) strictly diagonally dominant",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A sufficient condition for Jacobi and Gauss–Seidel convergence is strict diagonal dominance: |a<sub>ii</sub>| > Σ<sub>j≠i</sub>|a<sub>ij</sub>| in every row.",
+    "Hence <b>(A)</b>; Gauss–Seidel also converges for symmetric positive-definite matrices.",
+    "<b>Exam tip:</b> If the given system is not diagonally dominant, reorder the equations before iterating."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two fair dice are thrown and S is the sum of the numbers shown. The variance of S (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "5.83 (accept 5.80 to 5.87)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For independent variables, variances add: Var(X + Y) = Var X + Var Y.",
+    "One die: E[X] = 3.5, E[X²] = 91/6, Var X = 91/6 − 12.25 = 35/12",
+    "Var S = 2 × 35/12 = 35/6 = <b>5.83</b>",
+    "<b>Exam tip:</b> For a discrete uniform on 1…n, Var = (n² − 1)/12; n = 6 gives 35/12."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The median of an exponential distribution with rate parameter λ (mean 1/λ) is",
+   "fig": null,
+   "opts": [
+    "1/λ",
+    "λ ln 2",
+    "1/(2λ)",
+    "(ln 2)/λ"
+   ],
+   "ans": "(D) (ln 2)/λ",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The median m satisfies F(m) = 1 − e<sup>−λm</sup> = 1/2.",
+    "e<sup>−λm</sup> = 1/2 → m = <b>(ln 2)/λ (D)</b> ≈ 0.693/λ",
+    "Since the distribution is right-skewed, the median is less than the mean 1/λ, and the mode is 0.",
+    "<b>Exam tip:</b> This is the 'half-life' formula of radioactive decay."
+   ]
+  }
+ ]
+}
