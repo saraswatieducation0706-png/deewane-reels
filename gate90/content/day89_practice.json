@@ -1,0 +1,264 @@
+{
+ "day": 89,
+ "subject": "All Subjects",
+ "topic": "Final Formula Revision",
+ "days_to_gate": 8,
+ "summary": "a final one-stop formula sheet across the whole syllabus — every solution opens with the formula it uses: permutations with repeated letters, eigenvalue sum and product, Newton–Raphson, restitution, principal stresses, Euler's effective lengths, piston acceleration, transmissibility, fillet-weld throat, pump power and affinity laws, lumped cooling, ideal-gas entropy change, Merchant's shear angle and the M/M/1 queue",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Grand Mock (Day 90)",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "The number of distinct arrangements of all the letters of the word ENGINEER is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3360",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Arrangements of n objects with p, q, … identical = n!/(p! q! …).",
+    "<b>Concept:</b> ENGINEER has 8 letters: E three times, N twice, G, I and R once each.",
+    "Arrangements = 8!/(3! × 2!) = 40 320/12 = <b>3360</b>.",
+    "<b>Exam tip:</b> Related formulas: circular arrangements of n distinct objects (n − 1)!; selections <sup>n</sup>C<sub>r</sub> = n!/[r!(n − r)!]; arrangements <sup>n</sup>P<sub>r</sub> = n!/(n − r)!."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A 3 × 3 matrix A has trace 10, and two of its eigenvalues are 2 and 3. The determinant of A is",
+   "fig": null,
+   "opts": [
+    "6",
+    "30",
+    "25",
+    "60"
+   ],
+   "ans": "(B) 30",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Σλ<sub>i</sub> = trace A (sum of diagonal entries); Πλ<sub>i</sub> = det A.",
+    "<b>Concept:</b> The third eigenvalue follows from the trace, and then the determinant is the product of all three.",
+    "λ<sub>3</sub> = 10 − 2 − 3 = 5, so det A = 2 × 3 × 5 = <b>30 (B)</b>.",
+    "<b>Exam tip:</b> Eigenvalues of A<sup>−1</sup>, A<sup>k</sup>, A + cI and kA are 1/λ, λ<sup>k</sup>, λ + c and kλ; eigenvalues of a triangular matrix are its diagonal entries."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A root of x³ − 2x − 5 = 0 is found by the Newton–Raphson method starting from x<sub>0</sub> = 2. The first iterate x<sub>1</sub> (round off to 2 decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.10 (accept 2.09 to 2.11)",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> x<sub>n+1</sub> = x<sub>n</sub> − f(x<sub>n</sub>)/f′(x<sub>n</sub>).",
+    "<b>Concept:</b> f(x) = x³ − 2x − 5 and f′(x) = 3x² − 2.",
+    "f(2) = 8 − 4 − 5 = −1 and f′(2) = 12 − 2 = 10, so x<sub>1</sub> = 2 − (−1/10) = <b>2.10</b> (true root 2.0946).",
+    "<b>Exam tip:</b> NR converges quadratically for a simple root. Bisection halves the interval each step; regula falsi uses x = (a f(b) − b f(a))/(f(b) − f(a)); the secant method uses the same formula with the two latest points."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A ball is dropped from a height of 8 m onto a hard floor. The coefficient of restitution between the ball and the floor is 0.5. The height reached by the ball after its second bounce is",
+   "fig": null,
+   "opts": [
+    "2 m",
+    "1 m",
+    "4 m",
+    "0.5 m"
+   ],
+   "ans": "(D) 0.5 m",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> e = (velocity of separation)/(velocity of approach); for a ball dropped from h, the rebound height after n bounces is h<sub>n</sub> = e<sup>2n</sup>h.",
+    "<b>Concept:</b> Each impact multiplies the speed by e, and the height (∝ v²) by e².",
+    "h<sub>2</sub> = 0.5⁴ × 8 = 8/16 = <b>0.5 m (D)</b>.",
+    "<b>Exam tip:</b> After the first bounce the height is e²h = 2 m. Linear momentum is conserved in a collision of two free bodies; kinetic energy is conserved only if e = 1."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "At a point in plane stress, σ<sub>x</sub> = 50 MPa (tension), σ<sub>y</sub> = 10 MPa (compression) and τ<sub>xy</sub> = 40 MPa. The principal stresses are",
+   "fig": null,
+   "opts": [
+    "70 MPa and −30 MPa",
+    "60 MPa and −20 MPa",
+    "50 MPa and −10 MPa",
+    "90 MPa and −50 MPa"
+   ],
+   "ans": "(A) 70 MPa and −30 MPa",
+   "sfig": "d89p_s5.png",
+   "solution": [
+    "<b>Formula:</b> σ<sub>1,2</sub> = (σ<sub>x</sub> + σ<sub>y</sub>)/2 ± √{[(σ<sub>x</sub> − σ<sub>y</sub>)/2]² + τ<sub>xy</sub>²}; tan 2θ<sub>p</sub> = 2τ<sub>xy</sub>/(σ<sub>x</sub> − σ<sub>y</sub>).",
+    "<b>Concept:</b> The centre of Mohr's circle is at the mean normal stress and its radius equals the maximum in-plane shear stress.",
+    "Centre = (50 − 10)/2 = 20 MPa; radius = √(30² + 40²) = 50 MPa. σ<sub>1</sub> = 20 + 50 = 70 MPa, σ<sub>2</sub> = 20 − 50 = −30 MPa: <b>(A)</b>.",
+    "<b>Exam tip:</b> Check: σ<sub>1</sub> + σ<sub>2</sub> = σ<sub>x</sub> + σ<sub>y</sub> = 40 MPa (first stress invariant). Maximum in-plane shear = radius = 50 MPa."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A solid circular steel strut of 40 mm diameter and 2.5 m length is fixed at one end and pinned at the other. Taking E = 200 GPa, its Euler buckling load (in kN) is ______ (round off to 1 decimal place)",
+   "fig": null,
+   "opts": null,
+   "ans": "79.4 (accept 78.8 to 80.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> P<sub>cr</sub> = π²EI/L<sub>e</sub>²; L<sub>e</sub> = L (both ends pinned), 2L (fixed–free), L/2 (both fixed), L/√2 (fixed–pinned).",
+    "<b>Concept:</b> For a solid circle I = πd⁴/64 = π × 40⁴/64 = 1.257 × 10⁵ mm⁴.",
+    "With L<sub>e</sub> = L/√2: P<sub>cr</sub> = 2π²EI/L² = 2π² × 200 000 × 1.257 × 10⁵/2500² = 79 380 N = <b>79.4 kN</b>.",
+    "<b>Exam tip:</b> Relative to both ends pinned, the buckling loads are in the ratio 1/4 (fixed–free) : 1 : 2 (fixed–pinned) : 4 (both fixed). Slenderness ratio = L<sub>e</sub>/k with k = √(I/A)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a slider–crank mechanism the crank is 50 mm long, the connecting rod is 200 mm long and the crank turns uniformly at 100 rad/s. The acceleration of the piston when the crank is at inner dead centre (θ = 0°) is",
+   "fig": null,
+   "opts": [
+    "500 m/s²",
+    "375 m/s²",
+    "625 m/s²",
+    "531 m/s²"
+   ],
+   "ans": "(C) 625 m/s²",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> a<sub>p</sub> ≈ rω²[cos θ + (cos 2θ)/n], with n = l/r; piston velocity v<sub>p</sub> ≈ rω[sin θ + (sin 2θ)/(2n)].",
+    "<b>Concept:</b> n = 200/50 = 4 and rω² = 0.05 × 100² = 500 m/s².",
+    "At θ = 0°: a<sub>p</sub> = 500(1 + 1/4) = <b>625 m/s² (C)</b>; at outer dead centre (θ = 180°) it is 500(1 − 1/4) = 375 m/s².",
+    "<b>Exam tip:</b> The inertia force of the reciprocating mass m is F = m a<sub>p</sub>; its primary part is mrω² cos θ and its secondary part mrω² cos 2θ/n."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An undamped machine mounting runs at three times its natural frequency. The force transmissibility is",
+   "fig": null,
+   "opts": [
+    "0.333",
+    "0.125",
+    "0.111",
+    "1.125"
+   ],
+   "ans": "(B) 0.125",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> TR = √[1 + (2ζr)²]/√[(1 − r²)² + (2ζr)²], with r = ω/ω<sub>n</sub>; for ζ = 0, TR = 1/|1 − r²|.",
+    "<b>Concept:</b> Isolation (TR &lt; 1) needs r &gt; √2.",
+    "TR = 1/|1 − 9| = 1/8 = <b>0.125 (B)</b>; i.e. 12.5 % of the force reaches the foundation.",
+    "<b>Exam tip:</b> For r &gt; √2, adding damping increases TR. Magnification factor (amplitude) X/X<sub>st</sub> = 1/√[(1 − r²)² + (2ζr)²], which for ζ = 0 has the same value here."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two plates are joined by fillet welds of 8 mm leg size with a total weld length of 150 mm. The permissible shear stress in the weld is 90 MPa. The safe load the joint can carry (in kN) is ______ (round off to 2 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "76.36 (accept 75.98 to 76.74)",
+   "sfig": "d89p_s9.png",
+   "solution": [
+    "<b>Formula:</b> Fillet-weld strength P = τ × t × L, where the throat thickness t = s cos 45° = 0.707s.",
+    "<b>Concept:</b> Fillet welds fail in shear across the throat, the smallest section of the weld.",
+    "P = 90 × 0.707 × 8 × 150 = 76 356 N = <b>76.36 kN</b>.",
+    "<b>Exam tip:</b> Using the leg size s instead of the throat (108 kN) is the classic error. For a butt weld P = σ t L with t = plate thickness."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A pump delivers 0.05 m³/s of water against a total head of 40 m. Its overall efficiency is 75 %. Taking g = 9.81 m/s², the power required to drive the pump (in kW) is ______ (round off to 2 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "26.16 (accept 26.03 to 26.29)",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Water (hydraulic) power = ρgQH; shaft power = ρgQH/η for a pump (and ηρgQH for a turbine).",
+    "<b>Concept:</b> ρgQH = 1000 × 9.81 × 0.05 × 40 = 19 620 W.",
+    "Shaft power = 19.62/0.75 = <b>26.16 kW</b>.",
+    "<b>Exam tip:</b> Divide by η for a pump (input is larger) and multiply for a turbine (output is smaller). Pump specific speed N<sub>s</sub> = N√Q/H<sup>3/4</sup>; turbine N<sub>s</sub> = N√P/H<sup>5/4</sup>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The speed of a centrifugal pump is doubled (same impeller, same fluid, similar operating point). Its discharge, head and power become, respectively,",
+   "fig": null,
+   "opts": [
+    "2, 4 and 8 times",
+    "2, 2 and 4 times",
+    "4, 2 and 8 times",
+    "2, 4 and 16 times"
+   ],
+   "ans": "(A) 2, 4 and 8 times",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Affinity laws for one pump: Q ∝ N, H ∝ N², P ∝ N³ (for a changed impeller size at the same N: Q ∝ D³, H ∝ D², P ∝ D⁵).",
+    "<b>Concept:</b> Similar velocity triangles: all velocities scale with N, so Q ∝ N, H ∝ (velocity)² ∝ N², P ∝ QH ∝ N³.",
+    "Doubling N: Q × 2, H × 4, P × 8: <b>(A)</b>.",
+    "<b>Exam tip:</b> General scaling: Q/(ND³), gH/(N²D²) and P/(ρN³D⁵) stay constant between geometrically similar machines."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A small metal sphere at 200 °C is suddenly placed in a fluid at 20 °C. Lumped analysis applies. Its temperature (in °C) after a time equal to two time constants is ______ (round off to 2 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "44.36 (accept 44.14 to 44.58)",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> (T − T<sub>∞</sub>)/(T<sub>i</sub> − T<sub>∞</sub>) = e<sup>−t/τ</sup>, with time constant τ = ρcV/(hA); valid when Bi = hL<sub>c</sub>/k &lt; 0.1, L<sub>c</sub> = V/A.",
+    "<b>Concept:</b> After t = 2τ the excess temperature falls to e<sup>−2</sup> = 0.1353 of its initial value.",
+    "T = 20 + (200 − 20) × 0.1353 = 20 + 24.36 = <b>44.36 °C</b>.",
+    "<b>Exam tip:</b> After one time constant 36.8 % of the initial excess remains (63.2 % of the change is complete). L<sub>c</sub> = r/3 for a sphere, r/2 for a long cylinder, half-thickness for a plate."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Air (c<sub>p</sub> = 1.005 kJ/kg·K, R = 0.287 kJ/kg·K) goes from 1 bar and 300 K to 3 bar and 500 K. Its specific entropy change is about",
+   "fig": null,
+   "opts": [
+    "0.513 kJ/kg·K",
+    "0.315 kJ/kg·K",
+    "0.828 kJ/kg·K",
+    "0.198 kJ/kg·K"
+   ],
+   "ans": "(D) 0.198 kJ/kg·K",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Δs = c<sub>p</sub> ln(T<sub>2</sub>/T<sub>1</sub>) − R ln(p<sub>2</sub>/p<sub>1</sub>) = c<sub>v</sub> ln(T<sub>2</sub>/T<sub>1</sub>) + R ln(v<sub>2</sub>/v<sub>1</sub>).",
+    "<b>Concept:</b> Entropy is a property, so Δs depends only on the end states and not on the path.",
+    "Δs = 1.005 ln(5/3) − 0.287 ln 3 = 0.5134 − 0.3153 = <b>0.198 kJ/kg·K (D)</b>.",
+    "<b>Exam tip:</b> A pressure rise lowers entropy, so the R ln(p<sub>2</sub>/p<sub>1</sub>) term is subtracted; adding it gives 0.828. For an incompressible solid or liquid, Δs = c ln(T<sub>2</sub>/T<sub>1</sub>)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In orthogonal cutting with a tool of rake angle 8°, the friction angle at the tool–chip interface is 36°. The shear angle given by Merchant's theory is",
+   "fig": null,
+   "opts": [
+    "31°",
+    "22°",
+    "40°",
+    "27°"
+   ],
+   "ans": "(A) 31°",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> Merchant: 2φ + β − α = 90°, i.e. φ = 45° + α/2 − β/2. Also tan φ = r cos α/(1 − r sin α), with chip thickness ratio r = t/t<sub>c</sub>.",
+    "<b>Concept:</b> Merchant assumed that the shear plane sets itself where the cutting energy is minimum.",
+    "φ = 45° + 4° − 18° = <b>31° (A)</b>.",
+    "<b>Exam tip:</b> A larger rake angle or a smaller friction angle gives a larger shear angle, a thinner chip and a lower cutting force. Shear strain γ = cot φ + tan(φ − α)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Trucks arrive at a single loading bay in a Poisson stream at 15 per hour, and the loading time is exponential with a mean rate of 20 per hour (M/M/1). The average time a truck waits in the queue before loading starts (in minutes) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "9",
+   "sfig": null,
+   "solution": [
+    "<b>Formula:</b> For M/M/1 with ρ = λ/μ: L<sub>s</sub> = λ/(μ − λ), L<sub>q</sub> = λ²/[μ(μ − λ)], W<sub>s</sub> = 1/(μ − λ), W<sub>q</sub> = λ/[μ(μ − λ)]; Little's law L = λW.",
+    "<b>Concept:</b> ρ = 15/20 = 0.75 &lt; 1, so the queue is stable.",
+    "W<sub>q</sub> = 15/(20 × 5) = 0.15 h = <b>9 minutes</b> (W<sub>s</sub> = 1/5 h = 12 min, L<sub>q</sub> = 2.25 trucks).",
+    "<b>Exam tip:</b> W<sub>s</sub> − W<sub>q</sub> = 1/μ, the mean service time (3 min here). The probability that the bay is idle is 1 − ρ = 0.25."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,264 @@
+{
+ "day": 88,
+ "subject": "All Subjects",
+ "topic": "Mixed PYQ Traps",
+ "days_to_gate": 9,
+ "summary": "the most-repeated GATE traps across the syllabus: successive percentages, counting with a leading zero, limits in degrees, a non-linear ODE that blows up, trace of A², kinetic energy of a rolling ring, volumetric strain under uniaxial load, the hollow-shaft k⁴ rule, the redundant roller in a cam, static deflection and frequency, Darcy versus Fanning friction factor, local versus average h, Carnot COP in kelvin, I²R heating and the EOQ holding cost — each solution names the trap so you can avoid it on exam day",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Final Formula Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The price of an article is first raised by 10 % and later the new price is reduced by 10 %. Compared with the original price, the final price is",
+   "fig": null,
+   "opts": [
+    "1 % lower",
+    "the same",
+    "1 % higher",
+    "0.1 % lower"
+   ],
+   "ans": "(A) 1 % lower",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Successive percentage changes multiply; they do not add. Net factor = (1 + a)(1 + b).",
+    "Net factor = 1.10 × 0.90 = 0.99.",
+    "The final price is <b>1 % lower (A)</b> than the original.",
+    "<b>Exam tip:</b> Two equal and opposite percentage changes always give a net loss of (x/10)² %: here (10/10)² = 1 %. The order of the two changes does not matter."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The number of three-digit positive integers (100 to 999) in which all three digits are different is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "648",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Fill the places one at a time, starting with the most restricted place (fundamental counting principle).",
+    "Hundreds digit: 9 choices (1–9, zero not allowed). Tens digit: 9 choices (0–9 except the hundreds digit). Units digit: 8 choices.",
+    "Total = 9 × 9 × 8 = <b>648</b>.",
+    "<b>Exam tip:</b> Starting with 10 × 9 × 8 = 720 forgets that a number cannot begin with 0; 720 − 72 (those starting with 0) = 648 is the same answer by subtraction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "If x is measured in degrees, the value of the limit of (sin x)/x as x → 0 is",
+   "fig": null,
+   "opts": [
+    "1",
+    "180/π",
+    "0",
+    "π/180"
+   ],
+   "ans": "(D) π/180",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The standard result sin θ/θ → 1 holds only when θ is in radians.",
+    "x degrees = πx/180 radians, so sin x° = sin(πx/180).",
+    "sin(πx/180)/x = (π/180) × [sin(πx/180)/(πx/180)] → <b>π/180 (D)</b> ≈ 0.01745.",
+    "<b>Exam tip:</b> The same trap appears in calculus with angles: d/dx (sin x°) = (π/180) cos x°. Always convert to radians before differentiating, integrating or taking limits."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The solution of dy/dx = y² with y(0) = 1/2 is y = 1/(2 − x). Which one of the following statements is correct?",
+   "fig": null,
+   "opts": [
+    "The solution is valid for all real x, and y(3) = −1",
+    "The solution exists only for x &lt; 2; it becomes unbounded as x → 2",
+    "The solution exists only for x &gt; 2",
+    "The equation has no solution through (0, 1/2) because it is non-linear"
+   ],
+   "ans": "(B) The solution exists only for x &lt; 2; it becomes unbounded as x → 2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a non-linear equation the solution through a given point may exist only on a limited interval, which must contain the starting point and on which y stays finite.",
+    "Separating variables: −1/y = x + c; y(0) = 1/2 gives c = −2, so y = 1/(2 − x).",
+    "y → ∞ as x → 2⁻, so the solution through (0, 1/2) lives only on −∞ &lt; x &lt; 2: <b>option (B)</b>. Substituting x = 3 into the formula (y = −1) gives a point on a different branch, not on this solution.",
+    "<b>Exam tip:</b> dy/dx = y² is always ≥ 0, so a solution cannot drop from +∞ to −1; checking the sign of the slope catches the trap at once."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 3 × 3 matrix A has the eigenvalues 1, 2 and −3. The trace of A² is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "14",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> If λ is an eigenvalue of A, then λ² is an eigenvalue of A². The trace of any matrix equals the sum of its eigenvalues.",
+    "Eigenvalues of A²: 1, 4 and 9.",
+    "trace(A²) = 1 + 4 + 9 = <b>14</b>.",
+    "<b>Exam tip:</b> Squaring the trace, (1 + 2 − 3)² = 0, is the trap: trace(A²) = Σλ², not (Σλ)²."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A thin ring (hoop) of mass 2 kg rolls without slipping on a level floor; the speed of its centre is 3 m/s. Its total kinetic energy (in J) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "18",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For rolling without slipping, KE = ½mv² + ½I<sub>G</sub>ω² with ω = v/r. For a thin ring I<sub>G</sub> = mr², so the rotational KE equals the translational KE.",
+    "Translational KE = ½ × 2 × 3² = 9 J; rotational KE = ½ × (2r²) × (3/r)² = 9 J.",
+    "Total KE = 9 + 9 = <b>18 J</b>.",
+    "<b>Exam tip:</b> Writing only ½mv² (9 J) forgets the spin. The fraction of KE that is rotational: ring 1/2, disc 1/3, solid sphere 2/7."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A steel rod 50 mm in diameter and 200 mm long carries an axial tensile load of 100 kN. With E = 200 GPa and Poisson's ratio 0.3, the increase in the volume of the rod is about",
+   "fig": null,
+   "opts": [
+    "100 mm³",
+    "160 mm³",
+    "70 mm³",
+    "40 mm³"
+   ],
+   "ans": "(D) 40 mm³",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Under a uniaxial stress the lateral strains are −νε each, so the volumetric strain is ε<sub>v</sub> = ε(1 − 2ν).",
+    "σ = 100 000/(π × 25²) = 50.9 MPa; ε = σ/E = 2.55 × 10<sup>−4</sup>; ε<sub>v</sub> = 2.55 × 10<sup>−4</sup> × 0.4 = 1.02 × 10<sup>−4</sup>.",
+    "V = π × 25² × 200 = 3.93 × 10<sup>5</sup> mm³, so ΔV = ε<sub>v</sub>V = <b>40 mm³ (D)</b>. Neatly, ΔV = PL(1 − 2ν)/E, independent of the diameter.",
+    "<b>Exam tip:</b> ΔV = εV (100 mm³) ignores the lateral contraction; (1 + 2ν) instead of (1 − 2ν) gives 160 mm³."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A solid circular shaft is replaced by a hollow shaft of the same material and the same outer diameter D, whose inner diameter is D/2. At the same maximum shear stress, the torque the hollow shaft can carry, as a percentage of that of the solid shaft, is",
+   "fig": null,
+   "opts": [
+    "75 %",
+    "93.75 %",
+    "50 %",
+    "87.5 %"
+   ],
+   "ans": "(B) 93.75 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> T = τZ<sub>p</sub>, with Z<sub>p</sub> = πD³(1 − k⁴)/16 for a hollow shaft of diameter ratio k = d/D. The material near the centre carries little stress, so removing it costs little strength.",
+    "k = 0.5: 1 − k⁴ = 1 − 0.0625 = 0.9375.",
+    "The hollow shaft carries <b>93.75 % (B)</b> of the torque, with only 1 − k² = 75 % of the material (weight).",
+    "<b>Exam tip:</b> 75 % (the area ratio) and 50 % (the diameter ratio) are the traps: strength goes with the polar section modulus, which depends on k⁴, not on the area."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The cam mechanism shown has a cam (link 2) pinned to the frame (link 1), a roller (link 4) pinned to a follower (link 3) that slides in a frame guide, and rolling (higher-pair) contact between the cam and the roller. Applying Grübler's equation gives F = 2, but the mechanism has only one useful degree of freedom, because",
+   "fig": "d88p_q9.png",
+   "opts": [
+    "the higher pair removes two degrees of freedom",
+    "the free spin of the roller about its own pin is a redundant degree of freedom that does not affect the output motion",
+    "the follower guide is a higher pair",
+    "Grübler's equation is not valid for mechanisms with sliders"
+   ],
+   "ans": "(B) the free spin of the roller about its own pin is a redundant degree of freedom that does not affect the output motion",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Grübler: F = 3(n − 1) − 2j − h. A redundant degree of freedom is a motion of a link that does not change the input–output relation.",
+    "n = 4, lower pairs j = 3 (cam pin, roller pin, follower slider), h = 1: F = 9 − 6 − 1 = 2.",
+    "The roller can spin on its pin without moving the follower, so the effective DOF = 2 − 1 = 1: <b>option (B)</b>.",
+    "<b>Exam tip:</b> Grübler counts the cam–roller contact as a higher pair (rolling with slipping, h = 1). If it is taken as pure rolling without slip, it becomes a lower pair (j = 4, h = 0) and Grübler gives F = 1 directly, with no redundant freedom."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A machine on spring mounts has a static deflection of 4 mm. Taking g = 9.81 m/s², the natural frequency of its vertical vibration (in Hz) is ______ (round off to 2 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "7.88 (accept 7.82 to 7.94)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ω<sub>n</sub> = √(k/m) = √(g/δ<sub>st</sub>), since kδ<sub>st</sub> = mg. f<sub>n</sub> = ω<sub>n</sub>/2π.",
+    "ω<sub>n</sub> = √(9.81/0.004) = 49.52 rad/s.",
+    "f<sub>n</sub> = 49.52/(2π) = <b>7.88 Hz</b> (shortcut f<sub>n</sub> ≈ 15.76/√δ with δ in mm).",
+    "<b>Exam tip:</b> Reporting 49.5 as 'Hz' or putting δ in mm into √(g/δ) are the two common slips; always check whether rad/s or Hz is asked."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil of kinematic viscosity 0.75 stoke (7.5 × 10<sup>−5</sup> m²/s) flows at a mean velocity of 1.5 m/s through a pipe of 50 mm diameter and 50 m length. Taking g = 9.81 m/s², the head lost in friction (in m) is ______ (round off to 2 decimal places)",
+   "fig": null,
+   "opts": null,
+   "ans": "7.34 (accept 7.28 to 7.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Darcy–Weisbach h<sub>f</sub> = fLV²/(2gD); for laminar flow the Darcy friction factor is f = 64/Re (the Fanning factor is 16/Re, one-quarter of it).",
+    "Re = VD/ν = 1.5 × 0.05/(7.5 × 10<sup>−5</sup>) = 1000 → laminar; f = 64/1000 = 0.064.",
+    "h<sub>f</sub> = 0.064 × (50/0.05) × 1.5²/(2 × 9.81) = <b>7.34 m</b> (Hagen–Poiseuille 32μVL/(ρgD²) gives the same).",
+    "<b>Exam tip:</b> Using 16/Re in the Darcy formula gives 1.83 m. If the formula is written with 4f (h<sub>f</sub> = 4fLV²/2gD), then f is the Fanning factor."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air flows over a flat plate in laminar flow (local Nu<sub>x</sub> = 0.332 Re<sub>x</sub><sup>1/2</sup> Pr<sup>1/3</sup>). The local heat transfer coefficient at the trailing edge, x = L, is 12 W/m²·K. The average heat transfer coefficient over the whole plate (in W/m²·K) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "24",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In laminar flow h<sub>x</sub> ∝ x<sup>−1/2</sup>, so the average over 0 to L is h<sub>avg</sub> = (1/L)∫h<sub>x</sub> dx = 2h<sub>L</sub> (Nu<sub>avg</sub> = 0.664 Re<sub>L</sub><sup>1/2</sup> Pr<sup>1/3</sup>).",
+    "h<sub>avg</sub> = 2 × 12.",
+    "h<sub>avg</sub> = <b>24 W/m²·K</b>.",
+    "<b>Exam tip:</b> Taking the trailing-edge value as the average underestimates the heat transfer by half. In turbulent flow (h<sub>x</sub> ∝ x<sup>−0.2</sup>) the factor is 1.25."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A reversible heat pump delivers heat to a room at 47 °C while taking heat from the outside air at 7 °C. Its coefficient of performance is",
+   "fig": null,
+   "opts": [
+    "7.0",
+    "1.18",
+    "8.0",
+    "6.71"
+   ],
+   "ans": "(C) 8.0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For reversible machines, COP<sub>HP</sub> = T<sub>H</sub>/(T<sub>H</sub> − T<sub>L</sub>) and COP<sub>R</sub> = T<sub>L</sub>/(T<sub>H</sub> − T<sub>L</sub>), with absolute temperatures; COP<sub>HP</sub> = COP<sub>R</sub> + 1.",
+    "T<sub>H</sub> = 320 K, T<sub>L</sub> = 280 K, T<sub>H</sub> − T<sub>L</sub> = 40 K.",
+    "COP<sub>HP</sub> = 320/40 = <b>8.0 (C)</b>.",
+    "<b>Exam tip:</b> 7.0 is the refrigerator COP; 47/40 = 1.18 uses degrees Celsius. Temperatures in COP and Carnot efficiency must be in kelvin."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In resistance spot welding, the welding current is increased by 20 % while the resistance and the weld time remain the same. The heat generated at the joint increases by about",
+   "fig": null,
+   "opts": [
+    "20 %",
+    "40 %",
+    "73 %",
+    "44 %"
+   ],
+   "ans": "(D) 44 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Joule heating: H = I²Rt, so the heat varies as the square of the current.",
+    "H<sub>2</sub>/H<sub>1</sub> = 1.2² = 1.44.",
+    "The heat rises by <b>44 % (D)</b>.",
+    "<b>Exam tip:</b> Taking heat ∝ I gives 20 %; 2 × 20 % = 40 % is the small-change approximation that misses the 4 % square term. Current is the most powerful control in resistance welding."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The annual demand for a part is 12 500 units. The cost of placing an order is ₹160, the unit price is ₹100 and the annual holding cost is 16 % of the unit price. The economic order quantity (in units) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "500",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> EOQ = √(2DC<sub>o</sub>/C<sub>h</sub>), where C<sub>h</sub> is the holding cost per unit per year in rupees.",
+    "C<sub>h</sub> = 0.16 × 100 = ₹16 per unit per year.",
+    "EOQ = √(2 × 12 500 × 160/16) = √250 000 = <b>500 units</b>.",
+    "<b>Exam tip:</b> Putting C<sub>h</sub> = 0.16 into the formula gives 5000 units, ten times too large; always convert the holding rate into ₹ per unit per year first."
+   ]
+  }
+ ]
+}
