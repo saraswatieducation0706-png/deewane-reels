@@ -1,0 +1,266 @@
+{
+ "day": 84,
+ "subject": "Materials, Manufacturing & IE",
+ "topic": "Formula Sprint: Manufacturing & IE",
+ "days_to_gate": 14,
+ "summary": "a rapid formula revision of Engineering Materials (Schmid's law, BCC–FCC volume change), Casting (choke area, Caine's riser method), Forming (V-die bending force, plane-strain roll force), Joining (heat input and welding speed, duty cycle), Machining (shear angle with negative rake, nose-radius surface finish), NTM (electron-beam velocity), Metrology (GO/NOT GO snap gauges), CIM (Bézier curves) and Industrial Engineering (PERT probability, Johnson's rule) — every solution states the key formula, so the set doubles as a revision sheet",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 6",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "A single crystal of a metal has a critical resolved shear stress of 20 MPa. A tensile load is applied along an axis that makes 50° with the normal to the active slip plane and 40° with the slip direction. The tensile stress at which slip begins (in MPa, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "40.62 (accept 40.42 to 40.82)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Schmid's law: τ<sub>R</sub> = σ cos φ cos λ, where φ is the angle between the load axis and the slip-plane normal and λ the angle between the load axis and the slip direction. Slip starts when τ<sub>R</sub> = τ<sub>CRSS</sub>.",
+    "Schmid factor m = cos 50° × cos 40° = 0.6428 × 0.7660 = 0.4924.",
+    "σ<sub>y</sub> = τ<sub>CRSS</sub>/m = 20/0.4924 = <b>40.62 MPa</b>.",
+    "<b>Exam tip:</b> The Schmid factor can never exceed 0.5 (reached at φ = λ = 45°), so σ<sub>y</sub> ≥ 2τ<sub>CRSS</sub>. If either angle is 90°, m = 0 and the system cannot slip however large the load."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When iron transforms from BCC (lattice parameter 0.2863 nm) to FCC (lattice parameter 0.3591 nm) on heating through 912 °C, its volume",
+   "fig": null,
+   "opts": [
+    "expands by about 1.34 %",
+    "contracts by about 1.34 %",
+    "contracts by about 8.1 %",
+    "does not change, because the number of atoms is conserved"
+   ],
+   "ans": "(B) contracts by about 1.34 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Volume per atom = a³/n, with n = 2 atoms per BCC cell and n = 4 per FCC cell (APF: BCC 0.68, FCC 0.74). Percentage volume change = (V<sub>FCC</sub> − V<sub>BCC</sub>)/V<sub>BCC</sub> × 100.",
+    "BCC: 0.2863³/2 = 0.011734 nm³ per atom; FCC: 0.3591³/4 = 0.011577 nm³ per atom.",
+    "Change = (0.011577 − 0.011734)/0.011734 = −1.34 %, i.e. the iron <b>contracts by about 1.34 % (B)</b>.",
+    "<b>Exam tip:</b> Compare volume per atom, not volume per cell (the FCC cell holds twice as many atoms). The ratio of APFs alone (0.68/0.74, about 8 %) ignores the change in atomic radius and overstates the change."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 60 kg steel casting is to be poured in 20 s through a vertical sprue whose height above the choke (the sprue base) is 200 mm. The density of liquid steel is 7000 kg/m³ and the efficiency (discharge) factor of the gating system is 0.85. Taking g = 9.81 m/s², the choke area (in mm², round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "254.5 (accept 252.0 to 257.0)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Choke area A<sub>c</sub> = W/(ρ t c √(2gH)), where W is the casting mass, t the pouring time, c the efficiency factor and H the effective metal head above the choke.",
+    "Velocity at the choke = √(2 × 9.81 × 0.2) = 1.981 m/s.",
+    "A<sub>c</sub> = 60/(7000 × 20 × 0.85 × 1.981) = 2.545 × 10<sup>−4</sup> m² = <b>254.5 mm²</b>.",
+    "<b>Exam tip:</b> Mass flow rate = W/t = ρA<sub>c</sub>cv. For bottom gating or a casting partly in the cope, the effective head is smaller than the sprue height, so the choke must be larger."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A steel casting is a 100 mm cube. It is fed by a cylindrical side riser of diameter 120 mm and height 120 mm, cooling from all its surfaces, as shown. In Caine's method the freezing ratio X = (A/V)<sub>casting</sub>/(A/V)<sub>riser</sub> and the volume ratio Y = V<sub>riser</sub>/V<sub>casting</sub>; for steel the riser is adequate if X ≥ 0.10/(Y − 0.03) + 1.08. For this riser,",
+   "fig": "d84p_q4.png",
+   "opts": [
+    "X = 0.83, Y = 1.36, and the riser is inadequate",
+    "X = 1.20, Y = 0.74, and the riser is inadequate",
+    "X = 1.00, Y = 1.36, and the riser is just adequate",
+    "X = 1.20, Y = 1.36, and the riser is adequate"
+   ],
+   "ans": "(D) X = 1.20, Y = 1.36, and the riser is adequate",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Caine's method: the riser must freeze later (X > 1) and also hold enough liquid (Y large enough); the boundary is the hyperbola X = a/(Y − b) + c (for steel a = 0.10, b = 0.03, c = 1.08).",
+    "Cube: A/V = 6/a = 0.060 mm<sup>−1</sup>. Cylinder (H = D): A/V = 4/D + 2/H = 6/D = 0.050 mm<sup>−1</sup>. X = 0.060/0.050 = 1.20.",
+    "V<sub>riser</sub> = (π/4)(120²)(120) = 1.357 × 10<sup>6</sup> mm³; V<sub>casting</sub> = 10<sup>6</sup> mm³, so Y = 1.36. Required X = 0.10/(1.36 − 0.03) + 1.08 = 1.155.",
+    "X = 1.20 > 1.155, so <b>X = 1.20, Y = 1.36, and the riser is adequate (D)</b>.",
+    "<b>Exam tip:</b> X is (A/V) of the casting divided by (A/V) of the riser, i.e. M<sub>riser</sub>/M<sub>casting</sub>; inverting it (0.83) is the usual slip. A riser with X = 1 freezes together with the casting and cannot feed it."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A steel sheet 2.5 mm thick and 600 mm long is bent in a V-die with a die opening of 20 mm. The ultimate tensile strength of the sheet is 420 MPa. Taking the die-opening factor k = 1.33, the bending force (in kN, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "104.74 (accept 104.2 to 105.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bending force F = k σ<sub>u</sub> L t²/W, with k ≈ 1.33 for a V-die and 0.33 for a wiping (edge) die; L = bend length, W = die opening.",
+    "F = 1.33 × 420 × 600 × 2.5²/20 N.",
+    "= 1.33 × 420 × 600 × 6.25/20 = 104 738 N = <b>104.74 kN</b>.",
+    "<b>Exam tip:</b> F ∝ t² and ∝ 1/W: doubling the sheet thickness quadruples the force. A wiping die needs only about a quarter of the V-die force (k = 0.33)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A wide strip is cold rolled from 24 mm to 18 mm thickness between rolls of 150 mm radius, with a strip width of 200 mm. The uniaxial yield stress of the strip (taken as constant) is 200 MPa. Treating the deformation as plane strain (von Mises) and neglecting friction, the roll separating force is about",
+   "fig": null,
+   "opts": [
+    "1.39 MN",
+    "1.20 MN",
+    "0.98 MN",
+    "2.77 MN"
+   ],
+   "ans": "(A) 1.39 MN",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Roll force F = L w σ′, where the projected contact length L = √(RΔh) and, for a wide strip in plane strain, the flow stress σ′ = (2/√3)σ<sub>y</sub> = 1.155σ<sub>y</sub> (von Mises).",
+    "L = √(150 × 6) = 30 mm; σ′ = 1.155 × 200 = 231 MPa.",
+    "F = 30 × 200 × 231 = 1.386 × 10<sup>6</sup> N = <b>1.39 MN (A)</b>.",
+    "<b>Exam tip:</b> Using σ<sub>y</sub> without the plane-strain factor gives 1.20 MN. Friction raises the mean pressure further (the friction hill); the torque per roll is F × L/2."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A butt weld is made at 28 V and 180 A with a heat transfer efficiency of 0.7. To control the grain growth in the heat-affected zone, the net heat input must not exceed 0.9 kJ/mm. The minimum welding speed (in mm/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3.92 (accept 3.90 to 3.94)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Net heat input per unit length H<sub>net</sub> = ηVI/v (J/mm when v is in mm/s); a faster travel speed lowers the heat input.",
+    "ηVI = 0.7 × 28 × 180 = 3528 W.",
+    "v<sub>min</sub> = ηVI/H<sub>max</sub> = 3528/900 = <b>3.92 mm/s</b>.",
+    "<b>Exam tip:</b> Leaving out η gives 5.60 mm/s. Heat that actually melts metal = melting efficiency × net heat input; cooling rate rises as heat input falls."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A welding transformer is rated at 500 A for a 60 % duty cycle. The maximum current at which it can be used continuously (100 % duty cycle) is about",
+   "fig": null,
+   "opts": [
+    "300 A",
+    "645 A",
+    "387 A",
+    "440 A"
+   ],
+   "ans": "(C) 387 A",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Duty cycle relation (equal heating of the windings): I<sub>1</sub>² D<sub>1</sub> = I<sub>2</sub>² D<sub>2</sub>, so I<sub>2</sub> = I<sub>1</sub>√(D<sub>1</sub>/D<sub>2</sub>).",
+    "I<sub>100</sub> = 500 × √(60/100) = 500 × 0.7746.",
+    "= <b>387 A (C)</b>.",
+    "<b>Exam tip:</b> Heating depends on I², so the relation is not linear (300 A is the linear trap). Using the set below its rated current allows a duty cycle above the rated one, up to 100 %."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting with a tool of negative rake angle −5°, the uncut chip thickness is 0.3 mm and the chip thickness is 0.75 mm. The shear angle (in degrees, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "21.06 (accept 20.95 to 21.17)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Shear angle: tan φ = r cos α/(1 − r sin α), with chip thickness ratio r = t/t<sub>c</sub> (&lt; 1); for a negative rake, put α as a negative number.",
+    "r = 0.3/0.75 = 0.4; cos(−5°) = 0.9962, sin(−5°) = −0.0872.",
+    "tan φ = 0.4 × 0.9962/(1 + 0.4 × 0.0872) = 0.3985/1.0349 = 0.3851, so φ = <b>21.06°</b>.",
+    "<b>Exam tip:</b> Treating the rake as +5° gives 22.43°. A negative rake lowers the shear angle, so the chip is thicker and the cutting force larger — but the tool edge is stronger, which is why carbide inserts often use it."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A finish-turning operation uses a tool of nose radius 1.2 mm. Taking the peak-to-valley height h = f²/(8r) and the centre-line average roughness R<sub>a</sub> ≈ h/4, the largest feed that gives R<sub>a</sub> = 1.6 μm is about",
+   "fig": null,
+   "opts": [
+    "0.124 mm/rev",
+    "0.248 mm/rev",
+    "0.175 mm/rev",
+    "0.496 mm/rev"
+   ],
+   "ans": "(B) 0.248 mm/rev",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Ideal surface roughness with a nose radius: h = f²/(8r) and R<sub>a</sub> ≈ h/4 = f²/(32r), so f = √(32 r R<sub>a</sub>).",
+    "f = √(32 × 1.2 × 0.0016) mm/rev (R<sub>a</sub> = 1.6 μm = 0.0016 mm).",
+    "f = √0.06144 = <b>0.248 mm/rev (B)</b>.",
+    "<b>Exam tip:</b> Setting h (instead of R<sub>a</sub>) equal to 1.6 μm gives 0.124 mm/rev. Roughness grows with the square of the feed, so halving the feed cuts R<sub>a</sub> to one quarter."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In electron-beam machining, the electrons are accelerated through a potential difference of 120 kV. Using the non-relativistic relation, the velocity of the electrons at the workpiece is about",
+   "fig": null,
+   "opts": [
+    "6.5 × 10<sup>6</sup> m/s",
+    "1.0 × 10<sup>8</sup> m/s",
+    "3.0 × 10<sup>8</sup> m/s",
+    "2.05 × 10<sup>8</sup> m/s"
+   ],
+   "ans": "(D) 2.05 × 10<sup>8</sup> m/s",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Kinetic energy gained = eV, so ½m<sub>e</sub>v² = eV and v = √(2eV/m<sub>e</sub>) = 5.93 × 10<sup>5</sup>√V m/s (V in volts).",
+    "v = 5.93 × 10<sup>5</sup> × √(120 000) = 5.93 × 10<sup>5</sup> × 346.4.",
+    "= <b>2.05 × 10<sup>8</sup> m/s (D)</b>, about two-thirds of the speed of light.",
+    "<b>Exam tip:</b> Putting V in kilovolts gives 6.5 × 10<sup>6</sup> m/s. Beam power = V × I (e.g. 120 kV × 10 mA = 1.2 kW); EBM is done in vacuum so the electrons are not scattered."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A shaft is specified as 25 mm with limits −0.020 mm and −0.041 mm. A GO and a NOT GO snap gauge are made with a gauge-maker's tolerance of 10 % of the work tolerance, placed inside the work tolerance zone (no wear allowance). The size limits of the gauges are",
+   "fig": null,
+   "opts": [
+    "GO 24.9779 to 24.9800 mm; NOT GO 24.9590 to 24.9611 mm",
+    "GO 24.9800 to 24.9821 mm; NOT GO 24.9569 to 24.9590 mm",
+    "GO 24.9590 to 24.9611 mm; NOT GO 24.9779 to 24.9800 mm",
+    "GO 24.9779 to 24.9800 mm; NOT GO 24.9569 to 24.9590 mm"
+   ],
+   "ans": "(A) GO 24.9779 to 24.9800 mm; NOT GO 24.9590 to 24.9611 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Taylor's principle: the GO gauge checks the maximum metal condition (for a shaft, the upper limit) and the NOT GO gauge the least metal condition (the lower limit). Gauge tolerance zones lie inside the work tolerance.",
+    "Shaft limits: 24.980 mm (max) and 24.959 mm (min); work tolerance = 0.021 mm; gauge tolerance = 0.0021 mm.",
+    "GO (snap) gauge: 24.9800 − 0.0021 = 24.9779 to 24.9800 mm. NOT GO: 24.9590 to 24.9590 + 0.0021 = 24.9611 mm.",
+    "<b>Answer (A)</b>.",
+    "<b>Exam tip:</b> For a hole the GO plug gauge sits at the lower limit and the NOT GO at the upper limit — the reverse of a shaft. A wear allowance, when given, is applied only to the GO gauge, moving it further inside the zone."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A cubic Bézier curve has the control points P<sub>0</sub>(0, 0), P<sub>1</sub>(2, 4), P<sub>2</sub>(6, 5) and P<sub>3</sub>(8, 1), as shown. The slope dy/dx of the curve at the parameter value u = 0.5 (round off to three decimal places) is ______",
+   "fig": "d84p_q13.png",
+   "opts": null,
+   "ans": "0.167 (accept 0.165 to 0.169)",
+   "sfig": "d84p_s13.png",
+   "solution": [
+    "<b>Concept:</b> Cubic Bézier: P(u) = (1 − u)³P<sub>0</sub> + 3u(1 − u)²P<sub>1</sub> + 3u²(1 − u)P<sub>2</sub> + u³P<sub>3</sub>; its derivative P′(u) = 3[(1 − u)²(P<sub>1</sub> − P<sub>0</sub>) + 2u(1 − u)(P<sub>2</sub> − P<sub>1</sub>) + u²(P<sub>3</sub> − P<sub>2</sub>)], and dy/dx = y′(u)/x′(u).",
+    "At u = 0.5: P′ = 3[0.25(2, 4) + 0.5(4, 1) + 0.25(2, −4)] = 3(3, 0.5) = (9, 1.5).",
+    "dy/dx = 1.5/9 = <b>0.167</b>. (The point itself is P(0.5) = (P<sub>0</sub> + 3P<sub>1</sub> + 3P<sub>2</sub> + P<sub>3</sub>)/8 = (4, 3.5).)",
+    "<b>Exam tip:</b> The curve passes only through P<sub>0</sub> and P<sub>3</sub>, is tangent to P<sub>0</sub>P<sub>1</sub> at the start (slope 2 here) and to P<sub>2</sub>P<sub>3</sub> at the end (slope −2), and lies inside the convex hull of the four points."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The critical path of a project consists of three activities with (optimistic, most likely, pessimistic) times in days of (3, 6, 9), (2, 8, 14) and (5, 7, 9). Assuming the project duration is normally distributed (Φ(0.86) = 0.804), the probability of completing the project within 23 days is about",
+   "fig": null,
+   "opts": [
+    "64.3 %",
+    "70.7 %",
+    "80.4 %",
+    "19.6 %"
+   ],
+   "ans": "(C) 80.4 %",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> PERT: t<sub>e</sub> = (a + 4m + b)/6 and σ² = ((b − a)/6)² for each activity; along the critical path add the expected times and the <i>variances</i>; z = (T<sub>s</sub> − T<sub>e</sub>)/σ<sub>path</sub>.",
+    "t<sub>e</sub> = 6 + 8 + 7 = 21 days; σ² = 1 + 4 + 0.444 = 5.444, so σ = 2.333 days.",
+    "z = (23 − 21)/2.333 = 0.857; P = Φ(0.86) = <b>80.4 % (C)</b>.",
+    "<b>Exam tip:</b> Adding the standard deviations (1 + 2 + 0.667 = 3.667) gives 70.7 %, and dividing by the variance gives 64.3 % — both wrong. Only variances add."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Six jobs are processed first on machine M1 and then on machine M2. The processing times in hours (M1, M2) are: A (4, 6), B (7, 3), C (2, 5), D (8, 9), E (5, 2) and F (6, 7). With the jobs sequenced by Johnson's rule, the minimum makespan (in hours) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "34",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Johnson's rule (n jobs, 2 machines, same order): pick the smallest remaining time; if it is on M1 put that job as early as possible, if on M2 as late as possible; repeat. Equivalently, jobs with t<sub>1</sub> ≤ t<sub>2</sub> first in increasing t<sub>1</sub>, then the rest in decreasing t<sub>2</sub>.",
+    "Set 1 (t<sub>1</sub> ≤ t<sub>2</sub>): C(2), A(4), F(6), D(8). Set 2 (t<sub>1</sub> &gt; t<sub>2</sub>): B(3), E(2) in decreasing t<sub>2</sub>. Sequence C–A–F–D–B–E.",
+    "M1 finishes at 2, 6, 12, 20, 27, 32. M2 finishes at 7, 13, 20, 29, 32, 34. Makespan = <b>34 h</b>.",
+    "<b>Exam tip:</b> A lower bound is (total M2 time + smallest M1 time) = 32 + 2 = 34 h, so this schedule is clearly optimal; M2 is idle only for the first 2 h."
+   ]
+  }
+ ]
+}
