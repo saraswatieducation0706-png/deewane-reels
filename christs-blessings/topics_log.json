@@ -131,5 +131,85 @@
   "theme": "Bible story: Elijah under the juniper tree",
   "ref": "1 Kings 19:3-13,15,18",
   "template": "story"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s1",
+  "theme": "Dreading Monday? Start with this one verse",
+  "ref": "Psalm 118:24",
+  "template": "A",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s2",
+  "theme": "When the night feels heavy and you need a safe place to rest",
+  "ref": "Psalm 91:1",
+  "template": "D",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s3",
+  "theme": "When you've failed and it feels like everyone saw it",
+  "ref": "Micah 7:8",
+  "template": "B",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s4",
+  "theme": "For the days you feel like you're just not enough",
+  "ref": "2 Corinthians 12:9",
+  "template": "C",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s5",
+  "theme": "A short bedtime prayer for when you're too tired to pray",
+  "ref": "A bedtime prayer to pray along with, from Psalm 63:6-7",
+  "template": "E",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s6",
+  "theme": "Missing someone as the holidays get closer",
+  "ref": "Revelation 21:4",
+  "template": "A",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "s7",
+  "theme": "Before this week starts, remember who walks ahead of you",
+  "ref": "A Sunday prayer for the week ahead, from Deuteronomy 31:8",
+  "template": "B",
+  "posted": "catch-up 6-12 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "long1",
+  "theme": "Sleep Prayer with Psalm 91 | Rest Under the Shadow of His Wings",
+  "ref": "see long.json",
+  "template": "sleep prayer",
+  "posted": "catch-up 7-9 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "long2",
+  "theme": "Sleep Prayer for Your Family | Leave the People You Love in God's Hands",
+  "ref": "see long.json",
+  "template": "sleep prayer for family",
+  "posted": "catch-up 7-9 Nov"
+ },
+ {
+  "week": "2026-11-02",
+  "id": "long3",
+  "theme": "Ruth and Naomi: When Grief Leaves You Empty (The Book of Ruth Explained)",
+  "ref": "see long.json",
+  "template": "Bible story explained",
+  "posted": "catch-up 7-9 Nov"
  }
 ]
