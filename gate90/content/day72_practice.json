@@ -1,0 +1,265 @@
+{
+ "day": 72,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 1",
+ "days_to_gate": 28,
+ "summary": "a mixed full-syllabus warm-up for the first full-length mock: averages, eigenvalues, double integrals, capstan friction, overhanging beams, flywheels, vibration isolation, key design, tank draining, pin fins, polytropic compression, cooling coils, turning MRR, limits and fits, and project networks",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Thermo & Applied Thermo Revision",
+ "questions": [
+  {
+   "type": "NAT",
+   "text": "The average of five numbers is 24. When one of the numbers is removed, the average of the remaining four numbers becomes 21. The number removed is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "36",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Sum = average × count; work with sums, not averages.",
+    "Sum of five numbers = 5 × 24 = 120; sum of the remaining four = 4 × 21 = 84.",
+    "Number removed = 120 − 84 = <b>36</b>.",
+    "<b>Exam tip:</b> In GA, convert every average into a total first — it turns the problem into one subtraction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The eigenvalues of the matrix with rows (2, 1, 0), (1, 2, 0) and (0, 0, 3) are",
+   "fig": null,
+   "opts": [
+    "2, 2 and 3",
+    "1, 3 and 3",
+    "1, 2 and 3",
+    "0, 3 and 4"
+   ],
+   "ans": "(B) 1, 3 and 3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A block-diagonal matrix has the eigenvalues of its blocks; check with trace = sum and determinant = product.",
+    "The 2 × 2 block (2, 1; 1, 2) has λ² − 4λ + 3 = 0, so λ = 1 and 3. The lone entry gives λ = 3.",
+    "Check: trace = 7 = 1 + 3 + 3; det = 3 × (4 − 1) = 9 = 1 × 3 × 3. Answer: <b>(B) 1, 3 and 3</b>.",
+    "<b>Exam tip:</b> Trace and determinant checks eliminate wrong options in seconds."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The value of the double integral ∫₀¹ ∫₀ˣ xy dy dx (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.125 (accept 0.124 to 0.126)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Integrate the inner variable first, treating the outer one as a constant.",
+    "Inner: ∫₀ˣ xy dy = x · x²/2 = x³/2.",
+    "Outer: ∫₀¹ x³/2 dx = 1/8 = <b>0.125</b>.",
+    "<b>Exam tip:</b> Sketch the region (here the triangle below y = x) before changing the order of integration."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A rope is wrapped 1.5 full turns around a fixed horizontal post, as shown, and holds a load of 2000 N on one end. The coefficient of friction between the rope and the post is 0.25. The minimum force at the other end that prevents the load from falling (in N, round off to the nearest integer) is ______",
+   "fig": "d72p_q4.png",
+   "opts": null,
+   "ans": "190 (accept 188 to 191)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Belt (capstan) friction: T<sub>tight</sub>/T<sub>slack</sub> = e<sup>μθ</sup>, with θ in radians.",
+    "θ = 1.5 × 2π = 3π = 9.425 rad; μθ = 2.356; e<sup>2.356</sup> = 10.55.",
+    "The load is the tight side, so P = 2000/10.55 = <b>190 N</b>.",
+    "<b>Exam tip:</b> When holding a load the load side is tight; when hoisting it, the pulling side is tight and P = 2000 × 10.55."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The beam ABC shown is pinned at A, rests on a roller at B and overhangs to C. It carries a UDL of 10 kN/m on AB (4 m) and a point load of 20 kN at the free end C (BC = 2 m). The point of contraflexure in AB is at a distance from A of",
+   "fig": "d72p_q5.png",
+   "opts": [
+    "1.0 m",
+    "3.0 m",
+    "2.0 m",
+    "2.5 m"
+   ],
+   "ans": "(C) 2.0 m",
+   "sfig": "d72p_s5.png",
+   "solution": [
+    "<b>Concept:</b> A point of contraflexure is where the bending moment changes sign (M = 0) inside a span.",
+    "Moments about A: R<sub>B</sub> × 4 = 10 × 4 × 2 + 20 × 6, so R<sub>B</sub> = 50 kN and R<sub>A</sub> = 60 − 50 = 10 kN.",
+    "In AB: M(x) = 10x − 5x² = 5x(2 − x), zero at x = 2 m. M at B = −40 kN·m (hogging).",
+    "Answer: <b>(C) 2.0 m</b>. The SFD and BMD are shown below.",
+    "<b>Exam tip:</b> Overhangs with an end load always create hogging over the support and hence a point of contraflexure."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The maximum fluctuation of energy of an engine is 4 kJ. Its flywheel runs at a mean speed of 300 rpm and the total fluctuation of speed is to be limited to ±1.5 % of the mean speed. If the flywheel is treated as a rim of mean radius 0.6 m, its mass (in kg, round off to the nearest integer) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "375 (accept 372 to 379)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ΔE = Iω²C<sub>s</sub>, where C<sub>s</sub> = (ω<sub>max</sub> − ω<sub>min</sub>)/ω is the coefficient of fluctuation of speed.",
+    "ω = 2π × 300/60 = 31.42 rad/s; C<sub>s</sub> = 2 × 0.015 = 0.03.",
+    "I = 4000/(31.42² × 0.03) = 135.1 kg·m²; m = I/R² = 135.1/0.36 = <b>375 kg</b>.",
+    "<b>Exam tip:</b> ±1.5 % means a total fluctuation of 3 % — the most common slip in flywheel questions."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A machine mounted on springs and a dashpot has a damping ratio of 0.2 and runs at twice the natural frequency of the mounting. The force transmissibility is about",
+   "fig": null,
+   "opts": [
+    "0.412",
+    "0.333",
+    "0.167",
+    "0.600"
+   ],
+   "ans": "(A) 0.412",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> TR = √[1 + (2ζr)²]/√[(1 − r²)² + (2ζr)²].",
+    "r = 2, 2ζr = 0.8: TR = √1.64/√(9 + 0.64) = 1.281/3.105 = <b>0.412</b>.",
+    "Without damping TR = 1/(r² − 1) = 0.333, so damping increases the transmitted force when r &gt; √2.",
+    "<b>Exam tip:</b> For isolation (r &gt; √2) use as little damping as is needed to pass through resonance safely."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A rectangular sunk key 14 mm wide transmits a torque of 600 N·m from a shaft of 50 mm diameter. If the permissible shear stress in the key is 60 MPa, the minimum key length is about",
+   "fig": null,
+   "opts": [
+    "57.1 mm",
+    "14.3 mm",
+    "40.0 mm",
+    "28.6 mm"
+   ],
+   "ans": "(D) 28.6 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Shear in the key: the force at the shaft surface F = 2T/d acts on the area b × l.",
+    "F = 2 × 600/0.05 = 24 000 N.",
+    "l = F/(bτ) = 24 000/(14 × 60) = <b>28.6 mm</b>.",
+    "<b>Exam tip:</b> 57.1 mm results from using F = T/d; remember the force acts at the radius d/2."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A vertical cylindrical tank of 1.2 m diameter contains water to a depth of 2 m. It is drained through a sharp-edged orifice of 50 mm diameter (C<sub>d</sub> = 0.62) in its bottom. Taking g = 9.81 m/s², the time to empty the tank (in s, round off to the nearest integer) is ______",
+   "fig": "d72p_q9.png",
+   "opts": null,
+   "ans": "593 (accept 588 to 598)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Unsteady draining: A(−dh/dt) = C<sub>d</sub>a√(2gh) integrates to t = (A/C<sub>d</sub>a)√(2H/g).",
+    "A/a = (1.2/0.05)² = 576; √(2H/g) = √(4/9.81) = 0.6386 s.",
+    "t = 576/0.62 × 0.6386 = <b>593 s</b> (about 9.9 min).",
+    "<b>Exam tip:</b> Draining time varies as √H, so the first half of the depth empties much faster than the second half."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The diameter of a very long pin fin is doubled, the material, h and the base temperature excess staying the same. The heat dissipated by the fin becomes",
+   "fig": null,
+   "opts": [
+    "2 times",
+    "2.83 times",
+    "4 times",
+    "1.41 times"
+   ],
+   "ans": "(B) 2.83 times",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a very long fin Q = √(hPkA) θ<sub>0</sub>, with P = πd and A = πd²/4, so Q ∝ √(d · d²) = d<sup>1.5</sup>.",
+    "Doubling d: Q₂/Q₁ = 2<sup>1.5</sup> = <b>2.83</b>.",
+    "<b>Exam tip:</b> Write P and A in terms of d before taking the square root; it is the most common place to lose a factor."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "1 kg of air (R = 0.287 kJ/kg·K, γ = 1.4) is compressed reversibly according to pv<sup>1.3</sup> = constant from 1 bar and 300 K to 8 bar. The heat rejected by the air during the compression (in kJ, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "44.2 (accept 43.8 to 44.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a polytropic process W = R(T₂ − T₁)/(n − 1) (work input) and Q = W(γ − n)/(γ − 1) in magnitude.",
+    "T₂ = 300 × 8<sup>0.3/1.3</sup> = 484.8 K.",
+    "Work input = 0.287 × 184.8/0.3 = 176.8 kJ.",
+    "Heat rejected = 176.8 × (1.4 − 1.3)/(1.4 − 1) = <b>44.2 kJ</b> (check: ΔU = 0.7175 × 184.8 = 132.6 kJ = 176.8 − 44.2).",
+    "<b>Exam tip:</b> When n &lt; γ during compression the gas rejects heat; when n &gt; γ it would have to receive heat."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Air at 35 °C dry-bulb temperature passes over a cooling coil whose apparatus dew point is 10 °C. If the bypass factor of the coil is 0.2, the dry-bulb temperature of the air leaving the coil is",
+   "fig": null,
+   "opts": [
+    "30 °C",
+    "12 °C",
+    "15 °C",
+    "20 °C"
+   ],
+   "ans": "(C) 15 °C",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bypass factor BPF = (t₂ − t<sub>ADP</sub>)/(t₁ − t<sub>ADP</sub>).",
+    "t₂ = 10 + 0.2 × (35 − 10) = <b>15 °C</b>.",
+    "The coil's contact factor is 1 − 0.2 = 0.8.",
+    "<b>Exam tip:</b> 30 °C comes from using the contact factor in place of the bypass factor — check which is given."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A bar of 60 mm diameter is turned to 56 mm diameter in a single pass at 250 rpm with a feed of 0.25 mm/rev. The material removal rate (in cm³/min, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "22.78 (accept 22.60 to 22.90)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> MRR = (area removed per revolution path) × feed × speed = (π/4)(D² − d²) f N.",
+    "π/4 × (60² − 56²) = π/4 × 464 = 364.4 mm².",
+    "MRR = 364.4 × 0.25 × 250 = 22 777 mm³/min = <b>22.78 cm³/min</b>.",
+    "<b>Exam tip:</b> This equals πD<sub>mean</sub> × depth × f × N exactly; using the outer diameter overestimates it by about 3 %."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A hole is made to 25.000–25.021 mm and its mating shaft to 24.959–24.980 mm. The fit and the maximum clearance are",
+   "fig": null,
+   "opts": [
+    "Transition fit; 0.041 mm",
+    "Clearance fit; 0.041 mm",
+    "Interference fit; 0.020 mm",
+    "Clearance fit; 0.062 mm"
+   ],
+   "ans": "(D) Clearance fit; 0.062 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Maximum clearance = largest hole − smallest shaft; minimum clearance = smallest hole − largest shaft.",
+    "Minimum clearance = 25.000 − 24.980 = 0.020 mm &gt; 0, so it is a clearance fit.",
+    "Maximum clearance = 25.021 − 24.959 = <b>0.062 mm</b>.",
+    "<b>Exam tip:</b> If the minimum clearance is positive the fit is clearance; if the maximum clearance is negative it is interference; otherwise transition."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A project has five activities: A (4 days) and B (5 days) start at once; C (6 days) follows A; D (3 days) follows B; E (2 days) follows both C and D, as in the network shown. The project duration and the critical path are",
+   "fig": "d72p_q15.png",
+   "opts": [
+    "12 days; A–C–E",
+    "10 days; B–D–E",
+    "12 days; B–D–E",
+    "15 days; A–C–D–E"
+   ],
+   "ans": "(A) 12 days; A–C–E",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The critical path is the longest path from start to finish; its length is the project duration.",
+    "Path A–C–E = 4 + 6 + 2 = 12 days; path B–D–E = 5 + 3 + 2 = 10 days.",
+    "Duration = <b>12 days</b>, critical path <b>A–C–E</b>; B and D each have a total float of 2 days.",
+    "<b>Exam tip:</b> List every path when the network is small — it is faster than a full forward and backward pass."
+   ]
+  }
+ ]
+}
