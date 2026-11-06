@@ -1,0 +1,265 @@
+{
+ "day": 80,
+ "subject": "Applied Mechanics & Design",
+ "topic": "Formula Sprint: Mechanics & Design",
+ "days_to_gate": 18,
+ "summary": "a rapid formula revision of Engineering Mechanics (SHM, moments of inertia, power on a gradient), Strength of Materials (section modulus, Mohr's circle, shear-stress distribution), Theory of Machines (gear trains with idlers, Coriolis acceleration, secondary unbalanced force), Vibrations (damped natural frequency, torsional vibration, springs in series and parallel) and Machine Design (bolt tightening torque, V-belt tensions, Wahl factor) — every solution states the key formula, so the set doubles as a revision sheet",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Full-Length Mock 4",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A particle moves in simple harmonic motion with an amplitude of 50 mm. Its maximum speed is 0.5 m/s. Its maximum acceleration is",
+   "fig": null,
+   "opts": [
+    "2.5 m/s²",
+    "10 m/s²",
+    "5 m/s²",
+    "0.5 m/s²"
+   ],
+   "ans": "(C) 5 m/s²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In SHM x = A sin ωt, so v<sub>max</sub> = Aω and a<sub>max</sub> = Aω² = v<sub>max</sub>²/A; period T = 2π/ω.",
+    "ω = v<sub>max</sub>/A = 0.5/0.05 = 10 rad/s.",
+    "a<sub>max</sub> = Aω² = 0.05 × 10² = <b>5 m/s² (C)</b>. (Period = 2π/10 = 0.628 s.)",
+    "<b>Exam tip:</b> Velocity is maximum at the mean position and acceleration at the extremes; 10 m/s² comes from forgetting the amplitude (using ω² × 0.1)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A thin uniform circular disc has a mass of 4 kg and a radius of 0.2 m. Its mass moment of inertia about a tangent lying in the plane of the disc is",
+   "fig": null,
+   "opts": [
+    "0.24 kg·m²",
+    "0.20 kg·m²",
+    "0.08 kg·m²",
+    "0.04 kg·m²"
+   ],
+   "ans": "(B) 0.20 kg·m²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Disc: I<sub>polar</sub> = ½mr²; I<sub>diameter</sub> = ¼mr² (perpendicular-axis theorem); then the parallel-axis theorem I = I<sub>G</sub> + md².",
+    "Tangent in the plane is parallel to a diameter at distance r: I = ¼mr² + mr² = (5/4)mr².",
+    "I = 1.25 × 4 × 0.2² = <b>0.20 kg·m² (B)</b>.",
+    "<b>Exam tip:</b> Tangent perpendicular to the plane gives (3/2)mr² = 0.24 kg·m² — read which tangent is meant. Ring values: mr², ½mr², (3/2)mr², 2mr²."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A car of mass 1200 kg climbs a road of gradient 1 in 20 (measured along the slope) at a steady 54 km/h. The road and air resistance together is 300 N. Taking g = 9.81 m/s², the power developed by the engine, in kW, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "13.33 (accept 13.2 to 13.5)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Power = tractive force × speed; at steady speed the tractive force = mg sinθ + resistance.",
+    "1 in 20 along the slope means sinθ = 1/20: mg sinθ = 1200 × 9.81/20 = 588.6 N.",
+    "Tractive force = 588.6 + 300 = 888.6 N; v = 54/3.6 = 15 m/s.",
+    "P = 888.6 × 15 = 13 329 W = <b>13.33 kW</b>.",
+    "<b>Exam tip:</b> Convert km/h to m/s (÷ 3.6) before multiplying. On an accelerating car add ma to the tractive force."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A wooden plank of cross-section 200 mm × 50 mm is used as a simply supported beam. Compared with laying it flat (50 mm vertical), placing it on edge (200 mm vertical) increases the load it can carry for the same allowable bending stress by a factor of",
+   "fig": null,
+   "opts": [
+    "16",
+    "2",
+    "1",
+    "4"
+   ],
+   "ans": "(D) 4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bending strength M = σZ, with section modulus Z = bd²/6 for a rectangle (d = depth in the plane of bending).",
+    "On edge: Z = 50 × 200²/6 = 3.33 × 10⁵ mm³. Flat: Z = 200 × 50²/6 = 8.33 × 10⁴ mm³.",
+    "Ratio = 200/50 = <b>4 (D)</b>.",
+    "<b>Exam tip:</b> Strength ratio = d<sub>1</sub>/d<sub>2</sub> (Z ∝ bd²), but the stiffness ratio is (d<sub>1</sub>/d<sub>2</sub>)² = 16 (I ∝ bd³). Do not mix them."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A plane-stress element carries σ<sub>x</sub> = 60 MPa (tension), σ<sub>y</sub> = 20 MPa (compression) and τ<sub>xy</sub> = 30 MPa, as shown. The minimum principal stress, in MPa (with sign, tension positive), is ______",
+   "fig": "d80p_q5.png",
+   "opts": null,
+   "ans": "−30",
+   "sfig": "d80p_s5.png",
+   "solution": [
+    "<b>Concept:</b> σ<sub>1,2</sub> = (σ<sub>x</sub> + σ<sub>y</sub>)/2 ± √[((σ<sub>x</sub> − σ<sub>y</sub>)/2)² + τ<sub>xy</sub>²]; τ<sub>max</sub> = radius of Mohr's circle; tan 2θ<sub>p</sub> = 2τ<sub>xy</sub>/(σ<sub>x</sub> − σ<sub>y</sub>).",
+    "Take σ<sub>y</sub> = −20 MPa (compression is negative). Centre = (60 − 20)/2 = 20 MPa.",
+    "Radius = √(40² + 30²) = 50 MPa, so σ<sub>1</sub> = 70 MPa and σ<sub>2</sub> = 20 − 50 = <b>−30 MPa</b>; τ<sub>max</sub> = 50 MPa; θ<sub>p</sub> = ½ tan⁻¹(60/80) = 18.4°.",
+    "<b>Exam tip:</b> The commonest error is entering the compressive stress as +20: that gives centre 40, radius 36.1 and a wrong σ<sub>2</sub> of 3.9 MPa."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A spring–mass–damper system has m = 5 kg, k = 20 kN/m and c = 250 N·s/m. Its damped natural frequency is",
+   "fig": null,
+   "opts": [
+    "58.1 rad/s",
+    "63.2 rad/s",
+    "52.4 rad/s",
+    "9.25 rad/s"
+   ],
+   "ans": "(A) 58.1 rad/s",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ω<sub>n</sub> = √(k/m); c<sub>c</sub> = 2√(km) = 2mω<sub>n</sub>; ζ = c/c<sub>c</sub>; ω<sub>d</sub> = ω<sub>n</sub>√(1 − ζ²).",
+    "ω<sub>n</sub> = √(20000/5) = 63.25 rad/s; c<sub>c</sub> = 2√(20000 × 5) = 632.5 N·s/m.",
+    "ζ = 250/632.5 = 0.395; ω<sub>d</sub> = 63.25 × √(1 − 0.156) = <b>58.1 rad/s (A)</b>.",
+    "<b>Exam tip:</b> 52.4 rad/s is ω<sub>n</sub>√(1 − 2ζ²), the frequency of peak amplitude in forced vibration — a different formula. 9.25 is 58.1 rad/s converted to Hz."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A beam of solid circular section, 100 mm in diameter, carries a shear force of 60 kN. The maximum shear stress in the section, in MPa, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "10.19 (accept 10.1 to 10.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ = VAȳ/(Ib); its peak at the neutral axis is (4/3)τ<sub>avg</sub> for a circle and (3/2)τ<sub>avg</sub> for a rectangle.",
+    "τ<sub>avg</sub> = V/A = 60000/(π/4 × 100²) = 7.64 MPa.",
+    "τ<sub>max</sub> = (4/3) × 7.64 = <b>10.19 MPa</b>.",
+    "<b>Exam tip:</b> Thin-walled tube: 2τ<sub>avg</sub>; I-section: the web carries nearly all the shear, τ<sub>max</sub> ≈ V/(web area)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the simple gear train shown, gear A (20 teeth) drives gear C (40 teeth) through an idler B (50 teeth). If A turns at 400 rpm clockwise, gear C turns at",
+   "fig": "d80p_q8.png",
+   "opts": [
+    "200 rpm counter-clockwise",
+    "200 rpm clockwise",
+    "160 rpm clockwise",
+    "500 rpm counter-clockwise"
+   ],
+   "ans": "(B) 200 rpm clockwise",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a simple train, N<sub>last</sub>/N<sub>first</sub> = T<sub>first</sub>/T<sub>last</sub>; idlers do not change the ratio, only the direction (each external mesh reverses rotation).",
+    "N<sub>C</sub> = 400 × 20/40 = 200 rpm.",
+    "A (cw) → B (ccw) → C (cw): <b>200 rpm clockwise (B)</b>.",
+    "<b>Exam tip:</b> Odd number of idlers → same direction as the driver; even number → opposite. In a compound train the ratio is the product of driven/driver teeth for each pair."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A slider moves outward along a straight rotating link with a constant velocity of 1.5 m/s relative to the link, while the link turns at a uniform 20 rad/s. The magnitude of the Coriolis component of the slider's acceleration, in m/s², is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "60",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Coriolis component a<sub>c</sub> = 2vω, where v is the sliding velocity relative to the rotating link; it acts perpendicular to the link.",
+    "a<sub>c</sub> = 2 × 1.5 × 20 = <b>60 m/s²</b>.",
+    "Direction: rotate the relative velocity vector by 90° in the sense of ω.",
+    "<b>Exam tip:</b> Do not drop the factor 2 (30 m/s² is a trap). The Coriolis term exists only when a point slides on a rotating link — never for a slider on a fixed guide."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a reciprocating engine the crank is 60 mm, the connecting rod is 240 mm and the reciprocating mass is 2 kg. The engine runs at 1500 rpm. The maximum secondary unbalanced force and its frequency are",
+   "fig": null,
+   "opts": [
+    "2961 N, varying at the crank frequency",
+    "740 N, varying at the crank frequency",
+    "740 N, varying at twice the crank frequency",
+    "185 N, varying at twice the crank frequency"
+   ],
+   "ans": "(C) 740 N, varying at twice the crank frequency",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Primary force = mω²r cosθ; secondary force = mω²r cos 2θ/n, where n = l/r; the secondary term varies at twice the crank speed.",
+    "ω = 2π × 1500/60 = 157.1 rad/s; mω²r = 2 × 157.1² × 0.06 = 2961 N; n = 240/60 = 4.",
+    "Secondary maximum = 2961/4 = <b>740 N at twice the crank frequency (C)</b>.",
+    "<b>Exam tip:</b> Dividing by n² (185 N) is a common slip. Think of the secondary force as from an imaginary crank of length r/(4n) rotating at 2ω."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A rotor with a mass moment of inertia of 10 kg·m² is fixed to the free end of a vertical steel shaft 1 m long and 50 mm in diameter, whose other end is rigidly clamped. Neglecting the inertia of the shaft and taking G = 80 GPa, the natural frequency of torsional vibration, in Hz, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "11.15 (accept 11.05 to 11.25)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Torsional stiffness k<sub>t</sub> = GJ/L, J = πd⁴/32; f<sub>n</sub> = (1/2π)√(k<sub>t</sub>/I).",
+    "J = π × 0.05⁴/32 = 6.136 × 10⁻⁷ m⁴; k<sub>t</sub> = 80 × 10⁹ × 6.136 × 10⁻⁷/1 = 49 087 N·m/rad.",
+    "ω<sub>n</sub> = √(49087/10) = 70.06 rad/s, f<sub>n</sub> = 70.06/(2π) = <b>11.15 Hz</b>.",
+    "<b>Exam tip:</b> The torsional formulas mirror linear ones: k → GJ/L, m → I. Including shaft inertia adds I<sub>shaft</sub>/3 to the rotor."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "An M16 bolt is to be tightened to an initial preload of 20 kN. Taking the usual torque coefficient of 0.2, the required tightening torque is",
+   "fig": null,
+   "opts": [
+    "64 N·m",
+    "320 N·m",
+    "32 N·m",
+    "6.4 N·m"
+   ],
+   "ans": "(A) 64 N·m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Tightening torque T = K F<sub>i</sub> d, with torque (nut) factor K ≈ 0.2 for dry steel threads, d = nominal diameter.",
+    "T = 0.2 × 20000 × 0.016",
+    "= <b>64 N·m (A)</b>.",
+    "<b>Exam tip:</b> Keep d in metres for N·m. A common design rule for preload is F<sub>i</sub> ≈ 0.75 × proof load for reusable joints (0.9 for permanent)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 10 kg mass is supported as shown: spring k<sub>1</sub> = 6 kN/m hangs from the ceiling and carries a light rigid plate, from which the mass hangs on two springs k<sub>2</sub> = k<sub>3</sub> = 6 kN/m side by side. The natural frequency of vertical vibration, in Hz, is ______",
+   "fig": "d80p_q13.png",
+   "opts": null,
+   "ans": "3.18 (accept 3.15 to 3.21)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Springs in parallel: k = k<sub>1</sub> + k<sub>2</sub>; in series: 1/k = 1/k<sub>1</sub> + 1/k<sub>2</sub>; f<sub>n</sub> = (1/2π)√(k/m).",
+    "k<sub>2</sub> ∥ k<sub>3</sub> = 12 kN/m; in series with k<sub>1</sub>: k<sub>eq</sub> = (6 × 12)/(6 + 12) = 4 kN/m.",
+    "ω<sub>n</sub> = √(4000/10) = 20 rad/s; f<sub>n</sub> = 20/(2π) = <b>3.18 Hz</b>.",
+    "<b>Exam tip:</b> Springs that carry the same force are in series; springs that share the same deflection are in parallel. Gravity does not change f<sub>n</sub> of a linear spring–mass system."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A V-belt runs in a pulley groove of included angle 40°. The angle of contact is 160° and μ = 0.25. The ratio of the tight-side to slack-side tension (ignoring centrifugal tension) is",
+   "fig": null,
+   "opts": [
+    "2.01",
+    "2.96",
+    "1.27",
+    "7.70"
+   ],
+   "ans": "(D) 7.70",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Flat belt: T<sub>1</sub>/T<sub>2</sub> = e<sup>μθ</sup>. V-belt: T<sub>1</sub>/T<sub>2</sub> = e<sup>μθ cosec β</sup>, where β is HALF the groove angle.",
+    "θ = 160° = 2.793 rad; β = 20°: exponent = 0.25 × 2.793/sin 20° = 2.041.",
+    "T<sub>1</sub>/T<sub>2</sub> = e<sup>2.041</sup> = <b>7.70 (D)</b>.",
+    "<b>Exam tip:</b> Using the full groove angle (sin 40°) gives 2.96; forgetting the wedge effect gives 2.01. With centrifugal tension use (T<sub>1</sub> − T<sub>c</sub>)/(T<sub>2</sub> − T<sub>c</sub>)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A close-coiled helical spring has a mean coil diameter of 40 mm and a wire diameter of 5 mm. It carries an axial load of 300 N. Using Wahl's factor, the maximum shear stress in the wire, in MPa, is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "289.4 (accept 286.5 to 292.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> τ = K × 8PD/(πd³), with spring index C = D/d and Wahl factor K = (4C − 1)/(4C − 4) + 0.615/C.",
+    "C = 40/5 = 8; K = 31/28 + 0.615/8 = 1.107 + 0.077 = 1.184.",
+    "8PD/(πd³) = 8 × 300 × 40/(π × 125) = 244.5 MPa; τ = 1.184 × 244.5 = <b>289.4 MPa</b>.",
+    "<b>Exam tip:</b> Also remember k = Gd⁴/(8D³n) for stiffness. K corrects for both direct shear and curvature; the shear-stress factor alone is K<sub>s</sub> = 1 + 0.5/C."
+   ]
+  }
+ ]
+}
