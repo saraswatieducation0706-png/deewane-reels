@@ -1,0 +1,263 @@
+{
+ "day": 59,
+ "subject": "Manufacturing",
+ "topic": "Machining Mechanics & Tool Life",
+ "days_to_gate": 43,
+ "summary": "orthogonal and oblique cutting, tool signature (ASA and ORS), chip formation and the built-up edge, shear angle, shear strain and velocity relations, Merchant's circle and force analysis, tool wear and tool materials, Taylor's tool life equation, machinability, cutting power and the economics of machining",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Week 10 Revision",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "In oblique cutting with a tool of inclination angle i, Stabler's flow rule states that the chip flow angle η (measured on the rake face from the normal to the cutting edge) is",
+   "fig": null,
+   "opts": [
+    "equal to the rake angle",
+    "zero, whatever the inclination",
+    "approximately equal to the inclination angle i",
+    "equal to 90° − i"
+   ],
+   "ans": "(C) approximately equal to the inclination angle i",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In oblique cutting the cutting edge is inclined at angle i to the normal of the cutting velocity, so the chip does not flow straight up the rake face.",
+    "Stabler found experimentally that the chip flows sideways at an angle η ≈ i, measured on the rake face from the normal to the edge: <b>(C)</b>.",
+    "In orthogonal cutting i = 0, so η = 0 and the chip flows normal to the edge.",
+    "<b>Exam tip:</b> Oblique cutting has three force components (cutting, feed and radial); orthogonal cutting has only two."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting with a tool of rake angle 15°, the uncut chip thickness is 0.20 mm and the chip thickness is 0.45 mm, as shown. The shear angle (in degrees, round off to two decimal places) is ______",
+   "fig": "d59p_q2.png",
+   "opts": null,
+   "ans": "25.88 (accept 25.70 to 26.06)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Volume constancy along the shear plane gives t = l sin φ and t<sub>c</sub> = l cos(φ − α), so tan φ = r cos α/(1 − r sin α), with r = t/t<sub>c</sub>.",
+    "r = 0.20/0.45 = 0.4444",
+    "tan φ = 0.4444 × cos 15°/(1 − 0.4444 × sin 15°) = 0.4293/0.8850 = 0.4851",
+    "φ = tan<sup>−1</sup> 0.4851 = <b>25.88°</b>",
+    "<b>Exam tip:</b> r is always less than 1 (the chip is thicker than the uncut layer), and a larger r means a larger shear angle and lower forces."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In orthogonal cutting with a rake angle of 10°, the shear angle is 30°. The shear strain in the chip is about",
+   "fig": null,
+   "opts": [
+    "1.73",
+    "2.10",
+    "2.46",
+    "1.36"
+   ],
+   "ans": "(B) 2.10",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Shear strain in orthogonal cutting: γ = cot φ + tan(φ − α) = cos α/[sin φ cos(φ − α)].",
+    "cot 30° = 1.732; tan(30° − 10°) = tan 20° = 0.364",
+    "γ = 1.732 + 0.364 = <b>2.10</b>: <b>(B)</b>. (1.73 is cot φ alone.)",
+    "<b>Exam tip:</b> For a given α, γ is minimum when φ = 45° + α/2, the same condition as Merchant's minimum-energy solution with zero friction."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A single-point tool is specified in the ASA system as 10-12-8-6-15-20-0.8. The end cutting edge angle of the tool is",
+   "fig": null,
+   "opts": [
+    "10°",
+    "20°",
+    "8°",
+    "15°"
+   ],
+   "ans": "(D) 15°",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ASA tool signature order: back rake α<sub>b</sub>, side rake α<sub>s</sub>, end relief, side relief, end cutting edge angle C<sub>e</sub>, side cutting edge angle C<sub>s</sub>, nose radius.",
+    "So 10° back rake, 12° side rake, 8° end relief, 6° side relief, <b>15° end cutting edge angle</b>, 20° side cutting edge angle and 0.8 mm nose radius: <b>(D)</b>.",
+    "<b>Exam tip:</b> In ORS, the principal cutting edge angle φ = 90° − C<sub>s</sub> = 70° here, and the auxiliary cutting edge angle φ<sub>1</sub> = C<sub>e</sub> = 15°."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting with a tool of rake angle 8°, the cutting force is 1500 N, the thrust force is 600 N and the chip thickness ratio is 0.32. The shear force along the shear plane (in N, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1234.9 (accept 1228.7 to 1241.0)",
+   "sfig": "d59p_s5.png",
+   "solution": [
+    "<b>Concept:</b> All the forces are components of the same resultant R, so in the Merchant's circle (see figure) F<sub>s</sub> = F<sub>c</sub> cos φ − F<sub>t</sub> sin φ.",
+    "tan φ = 0.32 cos 8°/(1 − 0.32 sin 8°) = 0.3169/0.9555 = 0.3317, so φ = 18.35°",
+    "F<sub>s</sub> = 1500 cos 18.35° − 600 sin 18.35° = 1423.7 − 188.9 = <b>1234.9 N</b>",
+    "Also F<sub>n</sub> = 1500 sin φ + 600 cos φ = 1041.7 N, F = 802.9 N, N = 1401.9 N and μ = F/N = 0.573.",
+    "<b>Exam tip:</b> F<sub>s</sub> and F<sub>n</sub> come from rotating (F<sub>c</sub>, F<sub>t</sub>) by φ; F and N come from rotating by α."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "According to Merchant's theory, if the friction at the tool–chip interface increases while the rake angle remains the same, then",
+   "fig": null,
+   "opts": [
+    "the shear angle decreases, the chip becomes thicker and the cutting force increases",
+    "the shear angle increases and the cutting force decreases",
+    "the shear angle does not change because it depends only on the rake angle",
+    "the chip thickness ratio increases"
+   ],
+   "ans": "(A) the shear angle decreases, the chip becomes thicker and the cutting force increases",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Merchant: 2φ + β − α = 90°, so φ = 45° + α/2 − β/2.",
+    "A larger friction angle β gives a smaller φ. A smaller φ means a longer shear plane, a smaller chip thickness ratio r (thicker chip) and a larger shear area, so F<sub>c</sub> rises: <b>(A)</b>.",
+    "<b>Exam tip:</b> Cutting fluids, polished rake faces and larger rake angles all raise φ and reduce power."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In orthogonal cutting at a cutting speed of 120 m/min with a tool of rake angle 5°, the chip thickness ratio is 0.35. The shear velocity (in m/min, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "123.6 (accept 122.4 to 124.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The velocity triangle closes: V/cos(φ − α) = V<sub>s</sub>/cos α = V<sub>c</sub>/sin φ.",
+    "tan φ = 0.35 cos 5°/(1 − 0.35 sin 5°) = 0.3487/0.9695 = 0.3596, so φ = 19.78°",
+    "V<sub>s</sub> = V cos α/cos(φ − α) = 120 × 0.9962/cos 14.78° = 119.54/0.9669 = <b>123.6 m/min</b>",
+    "Check: chip velocity V<sub>c</sub> = rV = 42 m/min.",
+    "<b>Exam tip:</b> V<sub>s</sub> can be larger than V; the shear power is F<sub>s</sub>V<sub>s</sub> and the friction power is F V<sub>c</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "For a tool, the Taylor exponent n is 0.2. The tool life is 30 min at a cutting speed of 100 m/min. The cutting speed (in m/min, round off to two decimal places) that gives a tool life of 60 min is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "87.06 (accept 86.62 to 87.49)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Taylor's equation V T<sup>n</sup> = C.",
+    "V<sub>2</sub> = V<sub>1</sub>(T<sub>1</sub>/T<sub>2</sub>)<sup>n</sup> = 100 × (30/60)<sup>0.2</sup> = 100 × 0.8706",
+    "V<sub>2</sub> = <b>87.06 m/min</b>",
+    "<b>Exam tip:</b> Because n is small, doubling the tool life needs only about a 13 % cut in speed."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For finish turning of a hardened alloy steel (about 60 HRC), the most suitable cutting tool material is",
+   "fig": null,
+   "opts": [
+    "high-speed steel",
+    "cubic boron nitride (CBN)",
+    "uncoated cemented carbide of the K (cast iron) grade",
+    "polycrystalline diamond (PCD)"
+   ],
+   "ans": "(B) cubic boron nitride (CBN)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The tool must keep its hardness at high temperature and must not react chemically with the work.",
+    "CBN is the second hardest material, is stable up to about 1400 °C and is chemically inert to iron, so it is used for hard turning of steels: <b>(B)</b>.",
+    "Diamond is harder but dissolves in iron (carbon diffusion) at high temperature, so PCD is used for non-ferrous metals and composites. HSS and uncoated carbides soften or wear fast on 60 HRC steel.",
+    "<b>Exam tip:</b> Order of hot hardness: HSS < carbides < ceramics < CBN < diamond."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The Taylor equation for a tool is VT<sup>0.25</sup> = 250 (V in m/min, T in min). The machine and labour cost is ₹4 per minute, the tool cost per cutting edge is ₹40 and the tool changing time is 1 min. The cutting speed for minimum cost per piece (in m/min, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "104.3 (accept 103.3 to 105.3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For minimum cost, T<sub>opt</sub> = (1/n − 1)(t<sub>c</sub> + C<sub>t</sub>/C<sub>m</sub>).",
+    "T<sub>opt</sub> = (4 − 1)(1 + 40/4) = 3 × 11 = 33 min",
+    "V<sub>opt</sub> = 250/33<sup>0.25</sup> = 250/2.3968 = <b>104.3 m/min</b>",
+    "<b>Exam tip:</b> The speed for maximum production rate (T = (1/n − 1)t<sub>c</sub> = 3 min) is always higher than the speed for minimum cost."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The machinability index (rating) of a material is usually defined as",
+   "fig": null,
+   "opts": [
+    "the hardness of the material relative to that of a free-cutting steel",
+    "the ratio of cutting force on the material to that on a free-cutting steel",
+    "the surface roughness obtained relative to a free-cutting steel",
+    "the cutting speed for a fixed tool life (often 60 min) on the material, as a percentage of that for a standard free-cutting steel"
+   ],
+   "ans": "(D) the cutting speed for a fixed tool life (often 60 min) on the material, as a percentage of that for a standard free-cutting steel",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Machinability is judged by tool life, forces/power and surface finish, but the common single-number rating uses tool life.",
+    "Machinability index = V<sub>60</sub>(material)/V<sub>60</sub>(standard) × 100 %, where the standard is AISI 1112 free-cutting steel (rated 100 %): <b>(D)</b>.",
+    "<b>Exam tip:</b> A material with index above 100 % (e.g. free-cutting brass, aluminium alloys) is easier to machine than the standard."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A bar of 60 mm diameter is turned at 500 rpm with a feed of 0.2 mm/rev and a depth of cut of 1.5 mm. If the specific cutting energy of the work material is 3 J/mm³, the cutting power (in kW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.41 (accept 1.40 to 1.43)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cutting power = specific cutting energy × material removal rate (MRR = V f d).",
+    "V = πDN = π × 60 × 500/60 = 1570.8 mm/s",
+    "MRR = 1570.8 × 0.2 × 1.5 = 471.2 mm³/s",
+    "P = 3 × 471.2 = 1413.7 W = <b>1.41 kW</b>",
+    "<b>Exam tip:</b> Specific energy (J/mm³) is numerically the same as the mean pressure F<sub>c</sub>/(f d) in N/mm²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In machining a ductile metal at moderate to high cutting speed, most of the heat generated is",
+   "fig": null,
+   "opts": [
+    "conducted into the workpiece",
+    "carried away by the chip (typically about 70–80 %)",
+    "conducted into the tool",
+    "radiated to the surroundings"
+   ],
+   "ans": "(B) carried away by the chip (typically about 70–80 %)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Heat is generated in the primary (shear) zone, the secondary (tool–chip) zone and the tertiary (flank–work) zone.",
+    "At usual cutting speeds the chip moves away fast and carries most of the heat: <b>(B)</b>; roughly 10–20 % goes into the work and about 5–10 % into the tool.",
+    "<b>Exam tip:</b> The share taken by the chip increases with cutting speed, which is why high-speed machining can keep the work cool."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A tool obeys the extended Taylor equation VT<sup>0.25</sup>f<sup>0.6</sup> = C. If the feed is halved, the percentage increase in cutting speed that keeps the same tool life (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "51.6 (accept 51.1 to 52.1)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For constant T, V f<sup>0.6</sup> = constant, so V<sub>2</sub>/V<sub>1</sub> = (f<sub>1</sub>/f<sub>2</sub>)<sup>0.6</sup>.",
+    "V<sub>2</sub>/V<sub>1</sub> = 2<sup>0.6</sup> = 1.5157",
+    "Increase = <b>51.6 %</b>",
+    "<b>Exam tip:</b> Tool life is most sensitive to speed, less to feed and least to depth of cut, so to raise MRR without losing tool life, increase depth first, then feed."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In orthogonal cutting, if the rake angle of the tool is increased while the other conditions remain the same,",
+   "fig": null,
+   "opts": [
+    "both the chip thickness ratio and the shear angle increase, and the cutting force decreases",
+    "both the chip thickness ratio and the shear angle decrease",
+    "the shear angle increases but the chip thickness ratio decreases",
+    "the chip thickness ratio increases but the cutting force also increases"
+   ],
+   "ans": "(A) both the chip thickness ratio and the shear angle increase, and the cutting force decreases",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> From Merchant, φ = 45° + α/2 − β/2, and r = sin φ/cos(φ − α).",
+    "A larger α gives a larger φ; a larger φ gives a shorter shear plane and a thinner chip, i.e. a larger r. The smaller shear area lowers F<sub>c</sub>: <b>(A)</b>.",
+    "<b>Exam tip:</b> The limit to raising the rake angle is the strength of the tool wedge, which is why carbides and ceramics often use negative rake."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,262 @@
+{
+ "day": 61,
+ "subject": "Manufacturing",
+ "topic": "Machine Tools, NTM & Additive",
+ "days_to_gate": 40,
+ "summary": "lathe operations and machining time, thread cutting, taper turning, drilling, shaping and planing, milling and indexing, jigs and fixtures (3-2-1 location, bushes, diamond pins), non-traditional machining (EDM relaxation circuit, ECM by Faraday's law, USM, AJM, LBM) and additive manufacturing processes and build time",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Manufacturing, Metrology & CIM",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "During thread cutting on a centre lathe, the carriage is moved by",
+   "fig": null,
+   "opts": [
+    "the feed rod through the apron gearing",
+    "engaging the split (half) nut with the lead screw, so that the carriage advances one lead per revolution of the work",
+    "hand, using the carriage hand-wheel",
+    "the cross-slide screw"
+   ],
+   "ans": "(B) engaging the split (half) nut with the lead screw, so that the carriage advances one lead per revolution of the work",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A thread needs an exact, positive ratio between work rotation and tool travel.",
+    "The lead screw, driven from the spindle through change gears, moves the carriage when the half nut is closed on it: <b>(B)</b>.",
+    "The feed rod (with friction clutches in the apron) is used for ordinary turning feeds, where slip does not matter.",
+    "<b>Exam tip:</b> The thread-chasing dial tells the operator when to re-engage the half nut so the tool falls into the same groove."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A bar of 60 mm diameter is reduced to 52 mm diameter over a length of 150 mm in two passes of 2 mm depth each. The cutting speed is kept at 120 m/min, calculated on the diameter at the start of each pass. The approach is 5 mm and the feed is 0.25 mm/rev. The total machining time (in min, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.88 (accept 1.87 to 1.90)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> t = L/(fN) per pass, with N = 1000V/(πD) recalculated for each pass.",
+    "Pass 1: D = 60 mm, N = 120 000/(π × 60) = 636.6 rpm; t<sub>1</sub> = 155/(0.25 × 636.6) = 0.974 min",
+    "Pass 2: D = 56 mm, N = 120 000/(π × 56) = 682.1 rpm; t<sub>2</sub> = 155/(0.25 × 682.1) = 0.909 min",
+    "Total = <b>1.88 min</b>",
+    "<b>Exam tip:</b> Each pass of depth 2 mm reduces the diameter by 4 mm."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The essential difference between a jig and a fixture is that",
+   "fig": null,
+   "opts": [
+    "a fixture is used only for drilling",
+    "a jig is always heavier and is bolted to the machine table",
+    "a jig is used only on lathes",
+    "a jig holds and locates the work and also guides the cutting tool (e.g. through drill bushes), whereas a fixture only holds and locates the work"
+   ],
+   "ans": "(D) a jig holds and locates the work and also guides the cutting tool (e.g. through drill bushes), whereas a fixture only holds and locates the work",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Both locate and clamp the workpiece in a fixed position.",
+    "A jig additionally guides the tool, typically with hardened bushes for drilling, reaming and tapping. A fixture is fixed to the machine table and the tool is set with setting blocks or feeler gauges, as in milling, turning and grinding: <b>(D)</b>.",
+    "<b>Exam tip:</b> Drill jigs are usually not clamped to the table; milling fixtures are."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In an RC relaxation circuit for EDM, the supply voltage is 100 V, R = 40 Ω and C = 20 μF. The discharge across the gap occurs when the capacitor voltage reaches 70 V. Neglecting the discharge time, the spark frequency (in Hz, round off to the nearest whole number) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1038 (accept 1030 to 1046)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The capacitor charges as V<sub>c</sub> = V<sub>s</sub>(1 − e<sup>−t/RC</sup>); the cycle time is the time to reach the discharge voltage.",
+    "RC = 40 × 20 × 10<sup>−6</sup> = 8 × 10<sup>−4</sup> s",
+    "t = RC ln[V<sub>s</sub>/(V<sub>s</sub> − V<sub>d</sub>)] = 8 × 10<sup>−4</sup> × ln(100/30) = 9.632 × 10<sup>−4</sup> s",
+    "f = 1/t = <b>1038 Hz</b>",
+    "<b>Exam tip:</b> The energy per spark is ½CV<sub>d</sub><sup>2</sup> = 0.049 J here; a higher V<sub>d</sub> gives bigger sparks but a lower frequency."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In electrochemical machining, the tool shows practically no wear because",
+   "fig": null,
+   "opts": [
+    "the tool is made of diamond",
+    "the tool is the cathode, where only hydrogen gas is evolved and no metal is dissolved",
+    "the electrolyte is a dielectric",
+    "the tool is cooled by the electrolyte"
+   ],
+   "ans": "(B) the tool is the cathode, where only hydrogen gas is evolved and no metal is dissolved",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In electrolysis metal dissolves only at the anode.",
+    "The work is made the anode and dissolves; at the tool (cathode) the reaction is the release of hydrogen gas (and hydroxide ions), so the tool shape is kept: <b>(B)</b>.",
+    "<b>Exam tip:</b> The electrolyte (e.g. NaCl or NaNO<sub>3</sub> solution) is a good conductor, unlike the dielectric used in EDM."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Aluminium (atomic weight 27, valency 3, density 2.7 g/cm³) is machined by ECM at 500 A. Taking Faraday's constant as 96 500 C/mol and 100 % efficiency, the volumetric material removal rate (in mm³/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "17.27 (accept 17.15 to 17.39)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Faraday's law: mass removal rate = IA/(nF).",
+    "ṁ = 500 × 27/(3 × 96 500) = 0.04663 g/s",
+    "Q = 0.04663/2.7 = 0.01727 cm³/s = <b>17.27 mm³/s</b>",
+    "<b>Exam tip:</b> The MRR does not depend on the hardness of the work, which is why ECM suits hard alloys."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Typical operating values of tool vibration in ultrasonic machining are",
+   "fig": null,
+   "opts": [
+    "frequency about 20 kHz and amplitude about 15–50 μm",
+    "frequency about 50 Hz and amplitude about 1 mm",
+    "frequency about 2 MHz and amplitude about 1 nm",
+    "frequency about 20 kHz and amplitude about 5 mm"
+   ],
+   "ans": "(A) frequency about 20 kHz and amplitude about 15–50 μm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The magnetostrictive or piezoelectric transducer works just above the audible range, and a horn (concentrator) magnifies the amplitude.",
+    "Frequency ≈ 19–25 kHz and amplitude ≈ 15–50 μm: <b>(A)</b>.",
+    "<b>Exam tip:</b> In Shaw's model, the MRR increases with amplitude, frequency and grain size, and is highest for brittle work materials."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A dividing head has a 40 : 1 worm gear, and index plates with hole circles of 15, 16, 17, 18, 19, 20 / 21, 23, 27, 29, 31, 33 / 37, 39, 41, 43, 47, 49. To mill 52 equally spaced slots by simple indexing using the 39-hole circle, the number of holes the crank must move for each slot is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "30",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In simple indexing, crank turns per division = 40/N.",
+    "40/52 = 10/13 (less than one turn)",
+    "10/13 = 30/39, so the crank moves <b>30 holes</b> on the 39-hole circle (no full turns).",
+    "<b>Exam tip:</b> The sector arms are set to span 30 spaces (31 holes) so that the count cannot go wrong."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Match the additive manufacturing process (Column I) with its category (Column II).<br>P. Stereolithography (SLA) &nbsp; Q. Fused deposition modelling (FDM) &nbsp; R. Selective laser sintering (SLS) &nbsp; S. 3D printing with a liquid binder<br>1. Powder bed fusion &nbsp; 2. Binder jetting &nbsp; 3. Vat photopolymerisation &nbsp; 4. Material extrusion",
+   "fig": null,
+   "opts": [
+    "P-1, Q-4, R-3, S-2",
+    "P-3, Q-2, R-1, S-4",
+    "P-4, Q-3, R-1, S-2",
+    "P-3, Q-4, R-1, S-2"
+   ],
+   "ans": "(D) P-3, Q-4, R-1, S-2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> ISO/ASTM 52900 groups AM processes by how each layer is made.",
+    "SLA cures liquid resin in a vat (vat photopolymerisation); FDM extrudes a molten filament (material extrusion); SLS fuses powder with a laser (powder bed fusion); binder jetting glues powder with a liquid binder: <b>(D)</b>.",
+    "<b>Exam tip:</b> SLS and binder jetting need no support structures because the loose powder supports the part; SLA and FDM need supports for overhangs."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A part 36 mm high is built by stereolithography with a layer thickness of 0.1 mm. Each layer takes 20 s for laser scanning and 10 s for recoating. The build time (in min) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "180",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Build time = number of layers × time per layer.",
+    "Layers = 36/0.1 = 360",
+    "Time = 360 × (20 + 10) = 10 800 s = <b>180 min</b>",
+    "<b>Exam tip:</b> Halving the layer thickness improves the surface (smaller stair steps) but doubles the number of layers and so roughly doubles the build time."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Abrasive jet machining is NOT well suited for",
+   "fig": null,
+   "opts": [
+    "cutting thin sections of glass",
+    "deburring and frosting of hard brittle parts",
+    "machining soft, ductile materials such as lead or soft aluminium, where the abrasive embeds in the surface",
+    "drilling small holes in ceramics"
+   ],
+   "ans": "(C) machining soft, ductile materials such as lead or soft aluminium, where the abrasive embeds in the surface",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In AJM a high-velocity stream of fine abrasive in a gas jet erodes the work by brittle fracture.",
+    "Ductile materials deform instead of chipping, and the grains tend to embed in soft surfaces, so the MRR is very low: <b>(C)</b>.",
+    "<b>Exam tip:</b> Typical abrasives are Al<sub>2</sub>O<sub>3</sub> and SiC of 10–50 μm, at gas pressures of a few bar and jet velocities of 150–300 m/s."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A surface 250 mm long is slab milled with a cutter of 80 mm diameter and 6 teeth at 200 rpm, with a feed of 0.15 mm per tooth and a depth of cut of 5 mm, as shown. Taking the approach as √(d(D − d)) and neglecting over-travel, the machining time (in min, round off to two decimal places) is ______",
+   "fig": "d61p_q12.png",
+   "opts": null,
+   "ans": "1.50 (accept 1.49 to 1.51)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The cutter reaches full depth only after its centre has moved the approach A = √(d(D − d)) from the point of first contact.",
+    "A = √(5 × 75) = 19.36 mm",
+    "Table feed = f<sub>z</sub>zN = 0.15 × 6 × 200 = 180 mm/min",
+    "t = (250 + 19.36)/180 = <b>1.50 min</b>",
+    "<b>Exam tip:</b> In face milling with the cutter central, the approach is D/2 instead."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a planing machine, as distinct from a shaper,",
+   "fig": null,
+   "opts": [
+    "the work, mounted on the table, reciprocates under a stationary tool, and the tool is fed between strokes",
+    "the tool reciprocates and the work is fed",
+    "the work rotates and the tool is fed axially",
+    "the tool rotates and the work is fed"
+   ],
+   "ans": "(A) the work, mounted on the table, reciprocates under a stationary tool, and the tool is fed between strokes",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Both produce flat surfaces with single-point tools in straight strokes.",
+    "In a shaper the ram carries the tool over a stationary work; in a planer the heavy table carries the large work past the tool: <b>(A)</b>.",
+    "<b>Exam tip:</b> Planers are used for large, heavy jobs (machine beds); shapers for small jobs."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A hole of 0.4 mm diameter is to be drilled through a 1.5 mm thick steel sheet by a pulsed laser. Each pulse has an energy of 2 J, of which 40 % is absorbed, and the energy needed to vaporise steel is 60 J/mm³. The minimum number of pulses needed is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Pulses needed = energy to remove the hole volume/absorbed energy per pulse (rounded up).",
+    "Volume = (π/4) × 0.4² × 1.5 = 0.1885 mm³",
+    "Energy = 0.1885 × 60 = 11.31 J; absorbed per pulse = 0.4 × 2 = 0.8 J",
+    "Pulses = 11.31/0.8 = 14.14, so <b>15 pulses</b>",
+    "<b>Exam tip:</b> Always round up the number of pulses (or passes); 14 pulses would leave the hole incomplete."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In the 3-2-1 principle of location for a prismatic workpiece,",
+   "fig": null,
+   "opts": [
+    "three clamps, two locators and one support are used",
+    "the work is held by three jaws, two centres and one stop",
+    "only three locators are needed for complete location",
+    "six locators are used: three on the primary (base) plane, two on the secondary plane and one on the tertiary plane, which together with the clamps restrain all 12 degrees of freedom"
+   ],
+   "ans": "(D) six locators are used: three on the primary (base) plane, two on the secondary plane and one on the tertiary plane, which together with the clamps restrain all 12 degrees of freedom",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> A free body has 12 degrees of freedom (±translation and ±rotation about three axes).",
+    "Three points on the base restrain 5 (−Z and rotations about X and Y, both senses), two on a side face restrain 3 more (−X and both senses of rotation about Z), and one on the end face restrains 1 more (−Y): 9 by the 6 locators.",
+    "The clamps restrain the remaining 3 (+X, +Y, +Z): <b>(D)</b>.",
+    "<b>Exam tip:</b> The three base locators should be spread as widely as possible for a stable seating."
+   ]
+  }
+ ]
+}
