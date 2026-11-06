@@ -1,0 +1,260 @@
+{
+ "day": 87,
+ "subject": "Full Syllabus",
+ "topic": "Full-Length Mock 7",
+ "days_to_gate": 10,
+ "summary": "a mixed full-syllabus warm-up for the seventh full-length mock: antonyms, consecutive odd numbers, LU decomposition, the uniform distribution, angular impulse, cantilever deflection under a UDL, elongation of a bar under its own weight, the pantograph, flange-coupling bolts, the critical velocity for laminar flow, fin effectiveness, the mean temperature of heat addition, the heat-affected zone in welding, blanking work and multifactor productivity",
+ "minutes": 60,
+ "test_qs": 65,
+ "test_minutes": 180,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Mixed PYQ Traps",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "Select the word that is most nearly OPPOSITE in meaning to OBDURATE.",
+   "fig": null,
+   "opts": [
+    "Stubborn",
+    "Unrepentant",
+    "Yielding",
+    "Inflexible"
+   ],
+   "ans": "(C) Yielding",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> 'Obdurate' describes a person who stubbornly refuses to change an opinion or course of action.",
+    "Stubborn, unrepentant and inflexible are all close to it in meaning.",
+    "The opposite is <b>yielding</b>, option (C).",
+    "<b>Exam tip:</b> In antonym questions three options are often synonyms of the given word; eliminate them first."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The average of five consecutive odd numbers is 27. The largest of these numbers is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "31",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For numbers in arithmetic progression, the average equals the middle term.",
+    "The middle (third) number is 27, and consecutive odd numbers differ by 2.",
+    "The numbers are 23, 25, 27, 29, 31, so the largest is <b>31</b>.",
+    "<b>Exam tip:</b> For an odd count of equally spaced numbers, start from the middle term instead of setting up an equation."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The matrix A with rows (2, 1) and (4, 5) is written as A = LU, where L is lower triangular with 1s on its diagonal (Doolittle's method). The upper triangular matrix U has rows",
+   "fig": null,
+   "opts": [
+    "(2, 1) and (0, 5)",
+    "(2, 1) and (0, 3)",
+    "(1, 0) and (2, 1)",
+    "(2, 1) and (0, −3)"
+   ],
+   "ans": "(B) (2, 1) and (0, 3)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Doolittle's LU decomposition is Gaussian elimination: U is the reduced matrix, and L stores the multipliers.",
+    "The multiplier for row 2 is l<sub>21</sub> = 4/2 = 2. Row 2 − 2 × row 1 = (4 − 4, 5 − 2) = (0, 3).",
+    "So U has rows <b>(2, 1) and (0, 3)</b>, option (B), and L has rows (1, 0) and (2, 1).",
+    "<b>Exam tip:</b> Check: det A = 2 × 5 − 1 × 4 = 6 = product of the diagonal of U (2 × 3)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A random variable X is uniformly distributed over the interval [2, 8]. The variance of X is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a uniform distribution on [a, b], the mean is (a + b)/2 and the variance is (b − a)<sup>2</sup>/12.",
+    "Here b − a = 6, so the variance = 36/12 = <b>3</b> (mean = 5).",
+    "<b>Exam tip:</b> The variance depends only on the width of the interval, not on where it lies."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A flywheel with a moment of inertia of 2 kg·m² rotates at 300 rpm. A constant braking torque brings it to rest in 10 s. The braking torque (in N·m, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6.28 (accept 6.22 to 6.34)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Angular impulse = change of angular momentum: T t = I(ω<sub>1</sub> − ω<sub>2</sub>).",
+    "ω<sub>1</sub> = 2π × 300/60 = 31.416 rad/s and ω<sub>2</sub> = 0.",
+    "T = 2 × 31.416/10 = <b>6.28 N·m</b>.",
+    "<b>Exam tip:</b> This is the rotational form of F t = m Δv; no need to find the angular deceleration first."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A cantilever AB of length L (fixed at A, free at B), shown in the figure, carries a uniformly distributed load over its whole length. The ratio of the deflection at its mid-span M to the deflection at its free end B is",
+   "fig": "d87p_q6.png",
+   "opts": [
+    "5/16",
+    "1/2",
+    "11/48",
+    "17/48"
+   ],
+   "ans": "(D) 17/48",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a cantilever with a UDL w, measured from the fixed end, y(x) = w x<sup>2</sup>(6L<sup>2</sup> − 4Lx + x<sup>2</sup>)/(24EI).",
+    "At x = L/2: y = w(L<sup>2</sup>/4)(6L<sup>2</sup> − 2L<sup>2</sup> + L<sup>2</sup>/4)/(24EI) = 17wL<sup>4</sup>/(384EI).",
+    "At x = L: y = wL<sup>4</sup>/(8EI) = 48wL<sup>4</sup>/(384EI). Ratio = <b>17/48</b>, option (D).",
+    "<b>Exam tip:</b> 5/16 is the corresponding ratio for a cantilever with a point load at its free end; the answer depends on the type of load."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A uniform steel rod 100 m long hangs vertically from its upper end and carries no load other than its own weight (density 7850 kg/m³, E = 200 GPa, g = 9.81 m/s²). The elongation of the rod (in mm, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.93 (accept 1.91 to 1.94)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The axial force at a distance x from the free end is ρgAx, so δ = ∫ρgx dx/E = ρgL<sup>2</sup>/(2E): half the elongation that the full weight would cause if hung at the end.",
+    "δ = 7850 × 9.81 × 100<sup>2</sup>/(2 × 200 × 10<sup>9</sup>) = 1.925 × 10<sup>−3</sup> m.",
+    "Elongation = <b>1.93 mm</b>; it does not depend on the cross-sectional area.",
+    "<b>Exam tip:</b> In terms of the total weight W, δ = WL/(2AE); the maximum stress, ρgL = 77 MPa here, occurs at the top."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A pantograph is a linkage that",
+   "fig": null,
+   "opts": [
+    "copies a path to an enlarged or reduced scale, its links forming a parallelogram",
+    "gives a quick return stroke to the ram of a shaper",
+    "converts uniform rotation into simple harmonic motion",
+    "transmits rotation between two parallel offset shafts"
+   ],
+   "ans": "(A) copies a path to an enlarged or reduced scale, its links forming a parallelogram",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In a pantograph four links form a parallelogram, so a tracing point and a pencil point always move along geometrically similar paths.",
+    "It is used to copy drawings and in engraving or copying machines at a fixed scale ratio: option <b>(A)</b>.",
+    "The other options describe the quick-return mechanism, the Scotch yoke and Oldham's coupling.",
+    "<b>Exam tip:</b> Linkages in which a point traces an exact straight line (Peaucellier, Hart) are a separate group from copying linkages such as the pantograph."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A flange coupling transmits a torque of 3 kN·m through 6 bolts arranged on a pitch circle of 150 mm diameter. If the allowable shear stress in the bolts is 40 MPa, the bolt diameter needed is about",
+   "fig": null,
+   "opts": [
+    "10.3 mm",
+    "20.6 mm",
+    "14.6 mm",
+    "7.3 mm"
+   ],
+   "ans": "(C) 14.6 mm",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The torque is carried by the shear force in the bolts acting at the pitch-circle radius: T = n F (D<sub>p</sub>/2).",
+    "F = 3000/(6 × 0.075) = 6667 N per bolt.",
+    "d = √(4F/(πτ)) = √(4 × 6667/(π × 40)) = <b>14.6 mm</b>, option (C).",
+    "<b>Exam tip:</b> 20.6 mm comes from using the pitch-circle diameter instead of the radius; 10.3 mm from dividing the torque by 12."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil of kinematic viscosity 1.0 × 10⁻⁴ m²/s flows through a pipe of 50 mm diameter. Taking the critical Reynolds number as 2000, the largest mean velocity at which the flow is certain to remain laminar (in m/s) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Re = VD/ν; the flow in a pipe stays laminar while Re ≤ 2000.",
+    "V = Re ν/D = 2000 × 1.0 × 10<sup>−4</sup>/0.05 = <b>4 m/s</b>.",
+    "<b>Exam tip:</b> Viscous oils stay laminar at quite high velocities, while water (ν ≈ 10<sup>−6</sup> m<sup>2</sup>/s) in the same pipe turns turbulent above only 0.04 m/s."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A very long aluminium pin fin (k = 200 W/m·K) of 5 mm diameter is exposed to air with h = 25 W/m²·K. Its effectiveness (heat transfer with the fin ÷ heat transfer from the bare base area) is about",
+   "fig": null,
+   "opts": [
+    "40",
+    "80",
+    "160",
+    "8"
+   ],
+   "ans": "(B) 80",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For an infinitely long fin, ε<sub>f</sub> = √(hPkA)θ<sub>b</sub>/(hAθ<sub>b</sub>) = √(kP/(hA)); for a circular pin P/A = 4/d.",
+    "ε<sub>f</sub> = √(4k/(hd)) = √(4 × 200/(25 × 0.005)) = √6400 = <b>80</b>, option (B).",
+    "<b>Exam tip:</b> Fins pay off when k is high and h is low; they are usually not worth adding if the effectiveness is below about 2."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water is heated at constant pressure from 300 K to 400 K (constant specific heat). The thermodynamic mean temperature of heat addition, defined so that Q = T<sub>m</sub> × ΔS, is (in K, round off to one decimal place) ______",
+   "fig": null,
+   "opts": null,
+   "ans": "347.6 (accept 346.5 to 348.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With Q = mc(T<sub>2</sub> − T<sub>1</sub>) and ΔS = mc ln(T<sub>2</sub>/T<sub>1</sub>), T<sub>m</sub> = (T<sub>2</sub> − T<sub>1</sub>)/ln(T<sub>2</sub>/T<sub>1</sub>), the logarithmic mean of the two temperatures.",
+    "T<sub>m</sub> = 100/ln(4/3) = 100/0.2877 = <b>347.6 K</b>.",
+    "<b>Exam tip:</b> T<sub>m</sub> is slightly below the arithmetic mean (350 K). Raising the mean temperature of heat addition is why regeneration and superheating improve Rankine-cycle efficiency."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "When a medium-carbon (hardenable) steel is arc welded without preheating, the heat-affected zone next to the fusion line often becomes hard and brittle and may crack. The main reason is that",
+   "fig": null,
+   "opts": [
+    "the filler metal always has a higher carbon content than the plate",
+    "the arc adds nitrogen to the plate, forming hard nitrides",
+    "the zone recrystallises into very coarse ferrite grains",
+    "the zone is austenitised and then cooled fast, forming martensite"
+   ],
+   "ans": "(D) the zone is austenitised and then cooled fast, forming martensite",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Metal just outside the weld is heated above the upper critical temperature and then quenched by the surrounding cold plate.",
+    "In a hardenable steel this fast cooling produces <b>martensite</b> (option D), which is hard and brittle and, with hydrogen present, causes cold cracking.",
+    "Preheating the plate lowers the cooling rate and avoids this.",
+    "<b>Exam tip:</b> The higher the carbon equivalent of the steel, the higher the preheat temperature needed."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A 40 mm diameter blank is cut from a 3 mm thick sheet whose shear strength is 300 MPa. The punch penetrates 40 % of the sheet thickness before the blank breaks away. Taking the punch force as constant at its maximum value over the penetration, the work done in blanking (in J, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "135.7 (accept 134.5 to 136.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Maximum blanking force F = π d t τ; work = F × (penetration distance).",
+    "F = π × 40 × 3 × 300 = 113 097 N = 113.1 kN.",
+    "Penetration = 0.4 × 3 = 1.2 mm, so the work = 113 097 × 1.2 × 10<sup>−3</sup> = <b>135.7 J</b>.",
+    "<b>Exam tip:</b> Providing shear on the punch spreads this same work over a larger stroke, so the peak force falls."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A plant produces 1200 units in a week using 400 labour-hours paid at ₹200 per hour and materials costing ₹60 000. Its multifactor productivity (units per ₹1000 of labour and material input) is about",
+   "fig": null,
+   "opts": [
+    "8.57",
+    "15.0",
+    "20.0",
+    "3.00"
+   ],
+   "ans": "(A) 8.57",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Multifactor productivity = output ÷ (sum of the input costs considered).",
+    "Labour cost = 400 × 200 = ₹80 000; total input = 80 000 + 60 000 = ₹1 40 000.",
+    "Productivity = 1200/140 = <b>8.57 units per ₹1000</b>, option (A).",
+    "<b>Exam tip:</b> Single-factor (partial) productivity uses only one input, e.g. 1200/400 = 3 units per labour-hour."
+   ]
+  }
+ ]
+}
