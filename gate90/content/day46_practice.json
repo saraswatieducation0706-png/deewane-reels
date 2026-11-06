@@ -1,0 +1,267 @@
+{
+ "day": 46,
+ "subject": "Heat Transfer",
+ "topic": "Radiation & Heat Exchangers",
+ "days_to_gate": 58,
+ "summary": "black and grey bodies (Stefan–Boltzmann, Wien, Kirchhoff), shape factors (reciprocity, summation, crossed strings), the radiation network, parallel plates and radiation shields, and heat exchangers by the LMTD and ε–NTU methods",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Applied Thermodynamics, Power Cycles",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "If the absolute temperature of a black body is doubled, its total emissive power becomes",
+   "fig": null,
+   "opts": [
+    "2 times",
+    "4 times",
+    "8 times",
+    "16 times"
+   ],
+   "ans": "(D) 16 times",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Stefan–Boltzmann law: E<sub>b</sub> = σT⁴.",
+    "E<sub>b</sub> ∝ T⁴, so doubling T gives 2⁴ = <b>16</b> times the emissive power.",
+    "Wien's law also says the peak shifts to half the wavelength.",
+    "<b>Exam tip:</b> Always use kelvin: doubling 300 °C is not doubling the absolute temperature."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A grey surface of emissivity 0.7 is at 600 °C. Taking σ = 5.67 × 10<sup>−8</sup> W/m²·K⁴, its total emissive power (in kW/m², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "23.07 (accept 22.95 to 23.19)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a grey surface E = εσT⁴ with T in kelvin.",
+    "T = 600 + 273.15 = 873.15 K; T⁴ = 5.812 × 10<sup>11</sup> K⁴",
+    "E = 0.7 × 5.67 × 10<sup>−8</sup> × 5.812 × 10<sup>11</sup> = 23 069 W/m² = <b>23.07 kW/m²</b>",
+    "<b>Exam tip:</b> Using T = 873 K instead of 873.15 K changes the answer only in the third significant figure; using °C gives nonsense."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For an opaque grey surface, the correct relation between absorptivity α, reflectivity ρ and emissivity ε is",
+   "fig": null,
+   "opts": [
+    "α + ρ = 1 and ε = 1 − ρ",
+    "α + ρ + ε = 1",
+    "α = ρ = ε",
+    "ε = 1 − α"
+   ],
+   "ans": "(A) α + ρ = 1 and ε = 1 − ρ",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Radiation falling on a surface is absorbed, reflected or transmitted: α + ρ + τ = 1.",
+    "Opaque: τ = 0, so α + ρ = 1.",
+    "Grey (Kirchhoff): ε = α, hence <b>ε = 1 − ρ</b>.",
+    "<b>Exam tip:</b> A polished metal (high ρ) is therefore a poor emitter: that is why radiation shields are polished."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A small sphere of 0.2 m diameter is placed inside a closed cubical box of side 0.5 m. The shape factor from the inner surface of the box to the sphere (round off to three decimal places) is ______",
+   "fig": "d46p_q4.png",
+   "opts": null,
+   "ans": "0.084 (accept 0.083 to 0.085)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The sphere (1) is convex and enclosed, so F<sub>12</sub> = 1. Reciprocity: A<sub>1</sub>F<sub>12</sub> = A<sub>2</sub>F<sub>21</sub>.",
+    "A<sub>1</sub> = πd² = π(0.2)² = 0.1257 m²; A<sub>2</sub> = 6a² = 6(0.5)² = 1.5 m²",
+    "F<sub>21</sub> = A<sub>1</sub>/A<sub>2</sub> = 0.1257/1.5 = <b>0.084</b>",
+    "<b>Exam tip:</b> The rest of the box's radiation, F<sub>22</sub> = 0.916, falls back on the box itself."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Two long parallel plates of equal width w face each other directly at a separation h = w, as shown. By the crossed-strings method, the shape factor between them is",
+   "fig": "d46p_q5.png",
+   "opts": [
+    "0.293",
+    "0.414",
+    "0.500",
+    "0.586"
+   ],
+   "ans": "(B) 0.414",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Hottel's crossed strings for long surfaces: F<sub>12</sub> = (sum of crossed strings − sum of uncrossed strings)/(2 × width of surface 1).",
+    "Crossed strings (diagonals): 2√(w² + h²) = 2√2 w; uncrossed strings (the open sides): 2h = 2w",
+    "F<sub>12</sub> = (2√2 w − 2w)/(2w) = √2 − 1 = <b>0.414</b>",
+    "<b>Exam tip:</b> As h/w → 0 the plates become 'infinite' and F<sub>12</sub> → 1."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Two very large parallel plates are at 1000 K (ε = 0.9) and 400 K (ε = 0.5). Taking σ = 5.67 × 10<sup>−8</sup> W/m²·K⁴, the net radiation heat flux between them (in kW/m², round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "26.17 (accept 26.04 to 26.30)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Two-surface enclosure of large parallel plates: q = σ(T<sub>1</sub>⁴ − T<sub>2</sub>⁴)/(1/ε<sub>1</sub> + 1/ε<sub>2</sub> − 1).",
+    "T<sub>1</sub>⁴ − T<sub>2</sub>⁴ = 10<sup>12</sup> − 2.56 × 10<sup>10</sup> = 9.744 × 10<sup>11</sup>",
+    "1/0.9 + 1/0.5 − 1 = 2.111",
+    "q = 5.67 × 10<sup>−8</sup> × 9.744 × 10<sup>11</sup>/2.111 = <b>26.17 kW/m²</b>",
+    "<b>Exam tip:</b> The surface with the lower emissivity controls the exchange: raising ε<sub>2</sub> to 0.9 would give 45.2 kW/m²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The radiation network between two surfaces 1 and 2 of an enclosure consists of, in series,",
+   "fig": null,
+   "opts": [
+    "two space resistances and one surface resistance",
+    "(1 − ε<sub>1</sub>)/(ε<sub>1</sub>A<sub>1</sub>), 1/(A<sub>1</sub>F<sub>12</sub>) and (1 − ε<sub>2</sub>)/(ε<sub>2</sub>A<sub>2</sub>)",
+    "1/(ε<sub>1</sub>A<sub>1</sub>) and 1/(ε<sub>2</sub>A<sub>2</sub>) only",
+    "1/(A<sub>1</sub>F<sub>12</sub>) only"
+   ],
+   "ans": "(B) (1 − ε<sub>1</sub>)/(ε<sub>1</sub>A<sub>1</sub>), 1/(A<sub>1</sub>F<sub>12</sub>) and (1 − ε<sub>2</sub>)/(ε<sub>2</sub>A<sub>2</sub>)",
+   "sfig": "d46p_s7.png",
+   "solution": [
+    "<b>Concept:</b> Each surface has a surface resistance (1 − ε)/(εA) between E<sub>b</sub> and its radiosity J.",
+    "Between the two radiosities lies the space (geometric) resistance 1/(A<sub>1</sub>F<sub>12</sub>).",
+    "q<sub>12</sub> = (E<sub>b1</sub> − E<sub>b2</sub>)/[(1 − ε<sub>1</sub>)/(ε<sub>1</sub>A<sub>1</sub>) + 1/(A<sub>1</sub>F<sub>12</sub>) + (1 − ε<sub>2</sub>)/(ε<sub>2</sub>A<sub>2</sub>)].",
+    "<b>Exam tip:</b> For a black surface (ε = 1) the surface resistance vanishes and J = E<sub>b</sub>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Radiation shields, all with the same emissivity as the two large parallel plates between which they are placed, are used to cut the radiation heat transfer to less than 15 % of its unshielded value. The minimum number of shields needed is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "6",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> With n shields of the same emissivity, there are n + 1 equal resistances in series, so q<sub>n</sub>/q<sub>0</sub> = 1/(n + 1).",
+    "Need 1/(n + 1) &lt; 0.15 → n + 1 &gt; 6.67 → n &gt; 5.67",
+    "Minimum n = <b>6</b> (q falls to 1/7 = 14.3 %)",
+    "<b>Exam tip:</b> Five shields give 1/6 = 16.7 %, just short: check the boundary case."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a steam condenser, the steam condenses at constant temperature while cooling water flows through the tubes. For given inlet and outlet temperatures, the LMTD for counter-flow compared with parallel-flow is",
+   "fig": null,
+   "opts": [
+    "larger",
+    "smaller",
+    "the same",
+    "zero"
+   ],
+   "ans": "(C) the same",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> When one fluid stays at a constant temperature, the terminal temperature differences ΔT<sub>1</sub> and ΔT<sub>2</sub> are the same whichever way the other fluid flows.",
+    "Hence the LMTD and the required area are <b>the same</b> for counter-flow and parallel-flow.",
+    "Likewise C<sub>r</sub> = 0 and ε = 1 − e<sup>−NTU</sup> for every arrangement.",
+    "<b>Exam tip:</b> Without phase change, counter-flow always gives the larger LMTD."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a parallel-flow heat exchanger, the hot fluid cools from 180 °C to 120 °C and the cold fluid is heated from 30 °C to 90 °C. The LMTD (in °C, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "74.56 (accept 74.19 to 74.93)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> LMTD = (ΔT<sub>1</sub> − ΔT<sub>2</sub>)/ln(ΔT<sub>1</sub>/ΔT<sub>2</sub>), with the ΔT at each end of the exchanger.",
+    "Parallel flow: inlet end ΔT<sub>1</sub> = 180 − 30 = 150 °C; outlet end ΔT<sub>2</sub> = 120 − 90 = 30 °C",
+    "LMTD = 120/ln 5 = 120/1.6094 = <b>74.56 °C</b>",
+    "<b>Exam tip:</b> In counter-flow the same terminal temperatures would give ΔT = 90 °C at both ends, so LMTD = 90 °C."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Oil and water have the same heat capacity rate, 5 kW/K, in a counter-flow heat exchanger. Oil enters at 140 °C; water enters at 40 °C and leaves at 100 °C. With U = 500 W/m²·K, the required heat transfer area (in m²) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "15",
+   "sfig": "d46p_s11.png",
+   "solution": [
+    "<b>Concept:</b> For balanced counter-flow (C<sub>h</sub> = C<sub>c</sub>), the temperature difference is the same all along the exchanger, so LMTD = ΔT.",
+    "Q = 5 × (100 − 40) = 300 kW; oil leaves at 140 − 60 = 80 °C",
+    "ΔT = 140 − 100 = 80 − 40 = 40 °C",
+    "A = Q/(UΔT) = 300 000/(500 × 40) = <b>15 m²</b>",
+    "<b>Exam tip:</b> The LMTD formula gives 0/0 here; recognise the parallel lines instead."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The number of transfer units (NTU) of a heat exchanger is defined as",
+   "fig": null,
+   "opts": [
+    "UA/C<sub>max</sub>",
+    "C<sub>min</sub>/C<sub>max</sub>",
+    "UA/C<sub>min</sub>",
+    "Q/Q<sub>max</sub>"
+   ],
+   "ans": "(C) UA/C<sub>min</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> NTU = UA/C<sub>min</sub>, a measure of the exchanger's thermal size.",
+    "Option (B) is the capacity ratio C<sub>r</sub>; option (D) is the effectiveness ε.",
+    "ε = f(NTU, C<sub>r</sub>, flow arrangement).",
+    "<b>Exam tip:</b> Use the ε–NTU method when outlet temperatures are unknown; LMTD then needs trial and error."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a parallel-flow heat exchanger, NTU = 1.5 and C<sub>r</sub> = 0.5, with C<sub>min</sub> = 3 kW/K. The hot fluid enters at 130 °C and the cold fluid at 30 °C. Using ε = [1 − exp(−NTU(1 + C<sub>r</sub>))]/(1 + C<sub>r</sub>), the heat transfer rate (in kW, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "178.9 (accept 177.1 to 180.7)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Q = εQ<sub>max</sub>, with Q<sub>max</sub> = C<sub>min</sub>(T<sub>h,i</sub> − T<sub>c,i</sub>).",
+    "NTU(1 + C<sub>r</sub>) = 2.25; e<sup>−2.25</sup> = 0.1054",
+    "ε = (1 − 0.1054)/1.5 = 0.5964",
+    "Q = 0.5964 × 3 × 100 = <b>178.9 kW</b>",
+    "<b>Exam tip:</b> A parallel-flow exchanger can never exceed ε = 1/(1 + C<sub>r</sub>) = 0.667 here, however large it is."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The maximum possible heat transfer rate in a heat exchanger is",
+   "fig": null,
+   "opts": [
+    "C<sub>max</sub>(T<sub>h,i</sub> − T<sub>c,i</sub>)",
+    "C<sub>min</sub>(T<sub>h,i</sub> − T<sub>h,o</sub>)",
+    "C<sub>min</sub>(T<sub>h,i</sub> − T<sub>c,i</sub>)",
+    "UA × LMTD"
+   ],
+   "ans": "(C) C<sub>min</sub>(T<sub>h,i</sub> − T<sub>c,i</sub>)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The largest temperature change any fluid can undergo is T<sub>h,i</sub> − T<sub>c,i</sub>.",
+    "Only the fluid with the smaller heat capacity rate can actually achieve it (in an infinitely long counter-flow exchanger).",
+    "So Q<sub>max</sub> = <b>C<sub>min</sub>(T<sub>h,i</sub> − T<sub>c,i</sub>)</b>; using C<sub>max</sub> would violate the energy balance of the other fluid.",
+    "<b>Exam tip:</b> ε = Q/Q<sub>max</sub> lies between 0 and 1 by this definition."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The radiosity of a surface is",
+   "fig": null,
+   "opts": [
+    "the radiation emitted by the surface per unit area",
+    "the radiation incident on the surface per unit area",
+    "the radiation absorbed by the surface per unit area",
+    "the total radiation leaving the surface (emitted plus reflected) per unit area"
+   ],
+   "ans": "(D) the total radiation leaving the surface (emitted plus reflected) per unit area",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Radiosity J = εE<sub>b</sub> + ρG, where G is the irradiation (incident radiation).",
+    "It is everything leaving the surface: emitted <i>and</i> reflected.",
+    "Option (B) is the irradiation G.",
+    "<b>Exam tip:</b> Net radiation from an opaque surface = A(J − G) = (E<sub>b</sub> − J)/[(1 − ε)/(εA)]."
+   ]
+  }
+ ]
+}

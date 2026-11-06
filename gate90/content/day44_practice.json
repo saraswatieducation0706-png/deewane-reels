@@ -1,0 +1,271 @@
+{
+ "day": 44,
+ "subject": "Heat Transfer",
+ "topic": "Convection",
+ "days_to_gate": 60,
+ "summary": "Newton's law of cooling, the dimensionless numbers (Re, Pr, Nu, Gr, Ra, St), velocity and thermal boundary layers, laminar and turbulent flat-plate correlations, tube flow (entry length, Dittus–Boelter, fully developed Nu), free convection on vertical plates and the Reynolds–Colburn analogy",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "General Aptitude, Quant II & Data Interpretation",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "The Nusselt number hL/k at a surface represents the ratio of",
+   "fig": null,
+   "opts": [
+    "heat conducted in the solid to heat convected by the fluid",
+    "convective heat transfer to the heat that would be conducted across a stagnant fluid layer of thickness L",
+    "momentum diffusivity to thermal diffusivity",
+    "buoyancy force to viscous force"
+   ],
+   "ans": "(B) convective heat transfer to the heat that would be conducted across a stagnant fluid layer of thickness L",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Nu = hL/k<sub>f</sub> = (hΔT)/(k<sub>f</sub>ΔT/L): convective heat flux divided by the pure-conduction flux through the same fluid layer.",
+    "Nu = 1 means the fluid is effectively stagnant (pure conduction); larger Nu means stronger convection.",
+    "Option (A) describes the Biot number, which uses k of the <i>solid</i>; (C) is Pr and (D) is Gr.",
+    "<b>Exam tip:</b> Nu and Bi look alike (hL/k). Nu uses the fluid's k, Bi uses the solid's k."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Engine oil (ν = 1.0 × 10<sup>−4</sup> m²/s, Pr = 500) flows at 0.5 m/s through a 25 mm diameter tube. Using L<sub>h</sub> ≈ 0.05 Re D for the hydrodynamic entry length and L<sub>t</sub> ≈ L<sub>h</sub> Pr for the thermal entry length, the thermal entry length (in m, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "78.1 (accept 77.3 to 78.9)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In laminar flow the entry lengths grow with Re; the thermal one is longer by the factor Pr.",
+    "Re = uD/ν = 0.5 × 0.025/10<sup>−4</sup> = 125 (laminar)",
+    "L<sub>h</sub> = 0.05 × 125 × 0.025 = 0.156 m",
+    "L<sub>t</sub> = 0.156 × 500 = <b>78.1 m</b>",
+    "<b>Exam tip:</b> For oils (Pr ≫ 1) the flow is thermally developing over almost any practical tube, so fully developed Nu = 3.66 underestimates h."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air at 4 m/s flows parallel to the 0.6 m side of a flat plate 0.6 m × 0.5 m, as shown. The plate is 60 °C hotter than the air. Air properties: ν = 1.5 × 10<sup>−5</sup> m²/s, k = 0.026 W/m·K, Pr = 0.71. Using Nu<sub>L</sub> = 0.664 Re<sub>L</sub><sup>1/2</sup> Pr<sup>1/3</sup>, the heat transfer rate from the top face (in W, round off to one decimal place) is ______",
+   "fig": "d44p_q3.png",
+   "opts": null,
+   "ans": "184.8 (accept 183.0 to 186.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Laminar flat plate (Re<sub>L</sub> &lt; 5 × 10<sup>5</sup>): average Nu = 0.664 Re<sub>L</sub><sup>1/2</sup> Pr<sup>1/3</sup>, with L measured along the flow.",
+    "Re<sub>L</sub> = 4 × 0.6/1.5 × 10<sup>−5</sup> = 1.6 × 10<sup>5</sup> (laminar)",
+    "Nu = 0.664 × 400 × 0.892 = 236.9; h = 236.9 × 0.026/0.6 = 10.27 W/m²·K",
+    "Q = hAΔT = 10.27 × (0.6 × 0.5) × 60 = <b>184.8 W</b>",
+    "<b>Exam tip:</b> The average h over 0 to L is twice the local h at x = L for laminar flow."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The thermal boundary layer on a heated flat plate is thicker than the velocity boundary layer when",
+   "fig": null,
+   "opts": [
+    "Pr &gt; 1",
+    "Pr = 1",
+    "the flow is turbulent",
+    "Pr &lt; 1"
+   ],
+   "ans": "(D) Pr &lt; 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> δ/δ<sub>t</sub> ≈ Pr<sup>1/3</sup>. Pr = ν/α compares how fast momentum and heat diffuse.",
+    "If Pr &lt; 1 (gases ≈ 0.7, liquid metals ≈ 0.01), heat diffuses faster than momentum, so δ<sub>t</sub> &gt; δ.",
+    "For oils and water (Pr &gt; 1) the thermal layer is thinner.",
+    "<b>Exam tip:</b> Pr = 1 makes the two profiles identical: this is the basis of the Reynolds analogy."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (k = 0.027 W/m·K, ν = 1.6 × 10<sup>−5</sup> m²/s, Pr = 0.7) flows at 10 m/s through a 50 mm diameter duct and is being cooled. Using the Dittus–Boelter equation Nu = 0.023 Re<sup>0.8</sup> Pr<sup>n</sup>, the heat transfer coefficient (in W/m²·K, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "44.0 (accept 43.6 to 44.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Dittus–Boelter for fully developed turbulent flow (Re &gt; 10<sup>4</sup>): n = 0.4 when the fluid is heated, n = 0.3 when it is cooled.",
+    "Re = 10 × 0.05/1.6 × 10<sup>−5</sup> = 31 250 (turbulent)",
+    "Nu = 0.023 × 31250<sup>0.8</sup> × 0.7<sup>0.3</sup> = 0.023 × 3943 × 0.899 = 81.5",
+    "h = 81.5 × 0.027/0.05 = <b>44.0 W/m²·K</b>",
+    "<b>Exam tip:</b> In turbulent tube flow h ∝ u<sup>0.8</sup>/D<sup>0.2</sup>, so doubling the velocity raises h by 2<sup>0.8</sup> = 1.74."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For hydrodynamically and thermally fully developed laminar flow in a circular tube with a uniform wall temperature, the Nusselt number based on diameter is",
+   "fig": null,
+   "opts": [
+    "4.36",
+    "3.66",
+    "5.39",
+    "It increases with Reynolds number"
+   ],
+   "ans": "(B) 3.66",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In fully developed laminar flow both velocity and dimensionless temperature profiles stop changing, so Nu is a constant.",
+    "Uniform wall temperature: Nu = <b>3.66</b>; uniform wall heat flux: Nu = 4.36.",
+    "Nu does not depend on Re or Pr once the flow is fully developed (laminar).",
+    "<b>Exam tip:</b> Since Nu is fixed, h = 3.66k/D: a smaller tube gives a larger h."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Water (c<sub>p</sub> = 4180 J/kg·K) at 0.1 kg/s is heated from 20 °C to 60 °C in a 30 mm diameter tube whose wall supplies a uniform heat flux of 20 kW/m², as shown. The required tube length (in m, round off to two decimal places) is ______",
+   "fig": "d44p_q7.png",
+   "opts": null,
+   "ans": "8.87 (accept 8.78 to 8.96)",
+   "sfig": "d44p_s7.png",
+   "solution": [
+    "<b>Concept:</b> Energy balance on the fluid: q″(πDL) = ṁc<sub>p</sub>(T<sub>o</sub> − T<sub>i</sub>). With uniform q″ the mean temperature rises linearly along the tube.",
+    "Heat needed: Q = 0.1 × 4180 × 40 = 16 720 W",
+    "Surface needed: πDL = 16720/20000 = 0.836 m²",
+    "L = 0.836/(π × 0.03) = <b>8.87 m</b>",
+    "<b>Exam tip:</b> With uniform heat flux, T<sub>s</sub> − T<sub>m</sub> = q″/h stays constant in the fully developed region, so both lines are parallel."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The Grashof number for a vertical plate of height L at temperature T<sub>s</sub> in a fluid at T<sub>∞</sub> is",
+   "fig": null,
+   "opts": [
+    "gβ(T<sub>s</sub> − T<sub>∞</sub>)L³/ν²",
+    "gβ(T<sub>s</sub> − T<sub>∞</sub>)L²/ν",
+    "ρuL/μ",
+    "gβ(T<sub>s</sub> − T<sub>∞</sub>)L³/(να)"
+   ],
+   "ans": "(A) gβ(T<sub>s</sub> − T<sub>∞</sub>)L³/ν²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Gr = buoyancy force/viscous force = gβΔTL³/ν².",
+    "Option (D) is the Rayleigh number Ra = Gr Pr; option (C) is the Reynolds number.",
+    "For an ideal gas β = 1/T<sub>f</sub>, with T<sub>f</sub> the absolute film temperature.",
+    "<b>Exam tip:</b> Laminar-to-turbulent transition for a vertical plate occurs at Ra ≈ 10<sup>9</sup>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A vertical plate 2 m high is at 100 °C in still air at 20 °C. Air properties at the film temperature: ν = 1.9 × 10<sup>−5</sup> m²/s, k = 0.029 W/m·K, Pr = 0.7, β = 1/333 K<sup>−1</sup>; g = 9.81 m/s². Using Nu<sub>L</sub> = 0.10 Ra<sub>L</sub><sup>1/3</sup> for turbulent flow, the average heat transfer coefficient (in W/m²·K, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4.81 (accept 4.77 to 4.86)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Free convection on a vertical plate: Ra = gβΔTL³Pr/ν²; turbulent when Ra &gt; 10<sup>9</sup>.",
+    "Ra = 9.81 × (80/333) × 2³ × 0.7/(1.9 × 10<sup>−5</sup>)² = 3.66 × 10<sup>10</sup> (turbulent)",
+    "Nu = 0.10 × (3.66 × 10<sup>10</sup>)<sup>1/3</sup> = 331.9",
+    "h = 331.9 × 0.029/2 = <b>4.81 W/m²·K</b>",
+    "<b>Exam tip:</b> With the 1/3 power, L cancels: h in turbulent free convection does not depend on plate height."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For laminar flow over a flat plate, if the free-stream velocity is doubled (all else unchanged), the average heat transfer coefficient becomes",
+   "fig": null,
+   "opts": [
+    "2 times",
+    "4 times",
+    "√2 times",
+    "2<sup>0.8</sup> times"
+   ],
+   "ans": "(C) √2 times",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Laminar: Nu<sub>L</sub> = 0.664 Re<sub>L</sub><sup>1/2</sup> Pr<sup>1/3</sup>, so h ∝ u<sup>1/2</sup>.",
+    "Doubling u multiplies h by 2<sup>1/2</sup> = <b>1.414</b>.",
+    "Option (D) would apply to turbulent flow (h ∝ u<sup>0.8</sup>).",
+    "<b>Exam tip:</b> Remember the exponents: laminar 1/2, turbulent 0.8, natural laminar Ra<sup>1/4</sup>, natural turbulent Ra<sup>1/3</sup>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air (ν = 1.6 × 10<sup>−5</sup> m²/s, k = 0.027 W/m·K, Pr = 0.7) flows at 30 m/s over a flat plate 2 m long whose boundary layer is tripped so that it is turbulent from the leading edge. Using Nu<sub>L</sub> = 0.037 Re<sub>L</sub><sup>0.8</sup> Pr<sup>1/3</sup>, the average heat transfer coefficient (in W/m²·K, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "80.6 (accept 79.8 to 81.4)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a fully turbulent boundary layer on a plate, local Nu<sub>x</sub> = 0.0296 Re<sub>x</sub><sup>0.8</sup> Pr<sup>1/3</sup>; averaging over L gives 0.037 Re<sub>L</sub><sup>0.8</sup> Pr<sup>1/3</sup>.",
+    "Re<sub>L</sub> = 30 × 2/1.6 × 10<sup>−5</sup> = 3.75 × 10<sup>6</sup>",
+    "Nu = 0.037 × (3.75 × 10<sup>6</sup>)<sup>0.8</sup> × 0.888 = 5968",
+    "h = 5968 × 0.027/2 = <b>80.6 W/m²·K</b>",
+    "<b>Exam tip:</b> If the first part of the plate is laminar, use the mixed form Nu = (0.037 Re<sup>0.8</sup> − 871) Pr<sup>1/3</sup>."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The velocity and thermal boundary layers on a flat plate have the same thickness when",
+   "fig": null,
+   "opts": [
+    "Pr = 1",
+    "Re = 1",
+    "Nu = 1",
+    "Gr = Re²"
+   ],
+   "ans": "(A) Pr = 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> δ/δ<sub>t</sub> = Pr<sup>1/3</sup>; the momentum and energy equations become identical in form when ν = α.",
+    "So δ = δ<sub>t</sub> exactly when <b>Pr = 1</b>.",
+    "This similarity is what gives the Reynolds analogy St = C<sub>f</sub>/2.",
+    "<b>Exam tip:</b> Gases (Pr ≈ 0.7) come close, which is why the Reynolds/Colburn analogy works well for air."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In laminar flow through a tube heated from the entrance, the local heat transfer coefficient along the tube",
+   "fig": null,
+   "opts": [
+    "is zero at the entrance and rises to a constant value",
+    "is constant along the whole tube",
+    "is highest near the entrance and decreases to a constant fully developed value",
+    "rises continuously along the tube"
+   ],
+   "ans": "(C) is highest near the entrance and decreases to a constant fully developed value",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> At the entrance the thermal boundary layer is very thin, so the temperature gradient at the wall (and h) is large.",
+    "As the thermal layer grows, h falls and settles at the fully developed value (Nu = 3.66 or 4.36).",
+    "So the average h of a short tube is higher than the fully developed value.",
+    "<b>Exam tip:</b> The same 'high near the start' behaviour is seen on a flat plate, where h<sub>x</sub> ∝ x<sup>−1/2</sup>."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air at 20 °C flows at 8 m/s across a long cylinder of 25 mm diameter whose surface is at 120 °C, as shown. Air properties: ν = 1.6 × 10<sup>−5</sup> m²/s, k = 0.027 W/m·K, Pr = 0.7. Using Nu<sub>D</sub> = 0.193 Re<sub>D</sub><sup>0.618</sup> Pr<sup>1/3</sup>, the heat loss per metre length of the cylinder (in W/m, round off to the nearest integer) is ______",
+   "fig": "d44p_q14.png",
+   "opts": null,
+   "ans": "495 (accept 490 to 500)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cross-flow over a cylinder (Hilpert type): Nu<sub>D</sub> = C Re<sub>D</sub><sup>m</sup> Pr<sup>1/3</sup>, with C and m chosen for the Re range (here 4000 to 40 000).",
+    "Re<sub>D</sub> = 8 × 0.025/1.6 × 10<sup>−5</sup> = 12 500",
+    "Nu = 0.193 × 12500<sup>0.618</sup> × 0.888 = 58.3; h = 58.3 × 0.027/0.025 = 63.0 W/m²·K",
+    "Q′ = h(πD)ΔT = 63.0 × π × 0.025 × 100 = <b>495 W/m</b>",
+    "<b>Exam tip:</b> The characteristic length for a cylinder in cross-flow is its diameter, not its length."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A metal ball is cooled in an air stream. In calculating its Biot number and the Nusselt number of the air flow, the thermal conductivity used is",
+   "fig": null,
+   "opts": [
+    "that of the metal in both",
+    "that of the air in both",
+    "that of the metal for Bi and that of the air for Nu",
+    "that of the air for Bi and that of the metal for Nu"
+   ],
+   "ans": "(C) that of the metal for Bi and that of the air for Nu",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Bi = hL<sub>c</sub>/k<sub>solid</sub> compares conduction inside the solid with convection at its surface.",
+    "Nu = hD/k<sub>fluid</sub> is the dimensionless temperature gradient in the fluid at the wall.",
+    "So k<sub>metal</sub> goes into Bi and k<sub>air</sub> into Nu: option <b>(C)</b>.",
+    "<b>Exam tip:</b> For a sphere, Bi uses L<sub>c</sub> = D/6 (lumped) while Nu uses D."
+   ]
+  }
+ ]
+}
