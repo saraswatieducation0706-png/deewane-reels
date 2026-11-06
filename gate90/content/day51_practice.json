@@ -1,0 +1,269 @@
+{
+ "day": 51,
+ "subject": "Engineering Mathematics",
+ "topic": "Complex Variables & Numerical Methods",
+ "days_to_gate": 52,
+ "summary": "analytic functions and the Cauchy–Riemann equations, harmonic conjugates, singularities and residues, Cauchy's integral theorem and formula, Laurent series; Newton–Raphson and bisection, the trapezoidal and Simpson's rules, and Euler, Heun and Runge–Kutta methods for ODEs",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Applied Thermodynamics, Turbomachinery",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "With z = x + iy, which of the following functions is NOT analytic?",
+   "fig": null,
+   "opts": [
+    "sin z",
+    "z³ + 2z",
+    "e<sup>2z</sup>",
+    "x² + iy²"
+   ],
+   "ans": "(D) x² + iy²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> f = u + iv is analytic in a region only if u<sub>x</sub> = v<sub>y</sub> and u<sub>y</sub> = −v<sub>x</sub> hold there.",
+    "For x² + iy²: u<sub>x</sub> = 2x, v<sub>y</sub> = 2y, so C–R hold only on the line y = x.",
+    "A function differentiable only on a line has no neighbourhood of analyticity: <b>(D)</b>.",
+    "<b>Exam tip:</b> Any function built from z alone (polynomials, e<sup>z</sup>, sin z) is analytic; anything that needs x and y separately is suspect."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "f(z) = u + iv is analytic with u = x³ − 3xy² and v(0, 0) = 0. The value of v at the point (1, 2) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "-2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Find the harmonic conjugate from the C–R equations.",
+    "v<sub>y</sub> = u<sub>x</sub> = 3x² − 3y² → v = 3x²y − y³ + g(x)",
+    "v<sub>x</sub> = 6xy + g′(x) must equal −u<sub>y</sub> = 6xy, so g = const = 0",
+    "v(1, 2) = 3(1)(2) − 8 = <b>−2</b> (indeed f = z³)",
+    "<b>Exam tip:</b> Milne–Thomson shortcut: f′(z) = u<sub>x</sub>(z, 0) − i u<sub>y</sub>(z, 0) = 3z², so f = z³."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The residue of f(z) = e<sup>2z</sup>/(z − 1)² at z = 1 is",
+   "fig": null,
+   "opts": [
+    "2e²",
+    "e²",
+    "e²/2",
+    "0"
+   ],
+   "ans": "(A) 2e²",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a pole of order 2 at a: Res = d/dz[(z − a)²f(z)] at z = a.",
+    "(z − 1)²f = e<sup>2z</sup>; its derivative is 2e<sup>2z</sup>",
+    "At z = 1: Res = <b>2e² (A)</b>",
+    "<b>Exam tip:</b> For order m: Res = [1/(m − 1)!] d<sup>m−1</sup>/dz<sup>m−1</sup>[(z − a)<sup>m</sup>f] at a."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Let C be the circle |z| = 3, traversed anticlockwise, and I = ∮<sub>C</sub> (z² + 1)/[z(z − 2)] dz. The value of I/(πi) is ______",
+   "fig": "d51p_q4.png",
+   "opts": null,
+   "ans": "4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Residue theorem: I = 2πi × (sum of residues inside C).",
+    "Both z = 0 and z = 2 lie inside |z| = 3.",
+    "Res(0) = (0 + 1)/(0 − 2) = −1/2; Res(2) = (4 + 1)/2 = 5/2; sum = 2",
+    "I = 2πi × 2 = 4πi, so I/(πi) = <b>4</b>",
+    "<b>Exam tip:</b> Always check which singularities lie inside the contour before adding residues."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The function f(z) = e<sup>1/z</sup> has at z = 0",
+   "fig": null,
+   "opts": [
+    "a simple pole",
+    "a removable singularity",
+    "an essential singularity",
+    "a pole of order 2"
+   ],
+   "ans": "(C) an essential singularity",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Classify by the principal part (negative powers) of the Laurent series.",
+    "e<sup>1/z</sup> = 1 + 1/z + 1/(2!z²) + 1/(3!z³) + … has infinitely many negative powers.",
+    "So z = 0 is an <b>essential singularity (C)</b>; its residue is 1.",
+    "<b>Exam tip:</b> Finite number of negative powers → pole (order = highest power); none → removable."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The cube root of 20 is found by the Newton–Raphson method applied to f(x) = x³ − 20, starting from x<sub>0</sub> = 3. The value of x<sub>1</sub> (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.7407 (accept 2.7380 to 2.7435)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> x<sub>n+1</sub> = x<sub>n</sub> − f(x<sub>n</sub>)/f′(x<sub>n</sub>).",
+    "f(3) = 27 − 20 = 7; f′(3) = 3 × 9 = 27",
+    "x<sub>1</sub> = 3 − 7/27 = <b>2.7407</b>",
+    "<b>Exam tip:</b> The true root is 2.7144; one more step gives 2.7146, showing quadratic convergence."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Simpson's 1/3 rule can be applied directly (without combining with another rule) only when the interval is divided into",
+   "fig": null,
+   "opts": [
+    "an odd number of strips",
+    "an even number of strips",
+    "a multiple of three strips",
+    "any number of strips"
+   ],
+   "ans": "(B) an even number of strips",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Simpson's 1/3 rule fits a parabola through each pair of strips (three points).",
+    "So the number of strips n must be <b>even (B)</b>.",
+    "Simpson's 3/8 rule uses cubics over groups of three strips (n a multiple of 3).",
+    "<b>Exam tip:</b> I ≈ (h/3)[f<sub>0</sub> + 4(odd ordinates) + 2(even interior ordinates) + f<sub>n</sub>]."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of sin x from 0 to π is evaluated by the trapezoidal rule with four equal strips (h = π/4). The value obtained (round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.896 (accept 1.890 to 1.902)",
+   "sfig": "d51p_s8.png",
+   "solution": [
+    "<b>Concept:</b> I ≈ (h/2)[f<sub>0</sub> + 2(f<sub>1</sub> + f<sub>2</sub> + f<sub>3</sub>) + f<sub>4</sub>].",
+    "Ordinates: 0, 0.7071, 1, 0.7071, 0",
+    "I ≈ (π/8)[0 + 2 × 2.4142 + 0] = 0.3927 × 4.8284 = <b>1.896</b>",
+    "<b>Exam tip:</b> The exact value is 2; for a concave function the trapezoidal rule underestimates (chords lie below the curve)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For Euler's explicit method with step size h, the local truncation error and the global error are of order",
+   "fig": null,
+   "opts": [
+    "h² and h respectively",
+    "h and h² respectively",
+    "h³ and h² respectively",
+    "h² and h² respectively"
+   ],
+   "ans": "(A) h² and h respectively",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Euler's method keeps only the first two Taylor terms: y(x + h) = y + hy′ + (h²/2)y″ + …",
+    "Error per step ∝ h²; over (b − a)/h steps the errors add up to ∝ h.",
+    "So <b>local O(h²), global O(h) (A)</b>: Euler is a first-order method.",
+    "<b>Exam tip:</b> Heun/modified Euler: global O(h²); classical RK4: global O(h⁴)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The classical fourth-order Runge–Kutta method is used for dy/dx = −2xy, y(0) = 1, with one step h = 0.2. The value of y at x = 0.2 (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.9608 (accept 0.9600 to 0.9616)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> y<sub>1</sub> = y<sub>0</sub> + (h/6)(k<sub>1</sub> + 2k<sub>2</sub> + 2k<sub>3</sub> + k<sub>4</sub>).",
+    "k<sub>1</sub> = f(0, 1) = 0; k<sub>2</sub> = f(0.1, 1) = −0.2",
+    "k<sub>3</sub> = f(0.1, 0.98) = −0.196; k<sub>4</sub> = f(0.2, 0.9608) = −0.38432",
+    "y<sub>1</sub> = 1 + (0.2/6)(0 − 0.4 − 0.392 − 0.38432) = 1 − 0.039211 = <b>0.9608</b>",
+    "<b>Exam tip:</b> The exact solution e<sup>−x²</sup> gives 0.960789 at x = 0.2: RK4 agrees to six decimals."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "Let C be the circle |z| = 1 traversed anticlockwise, as shown. The value of ∮<sub>C</sub> z²/(z − 3) dz is",
+   "fig": "d51p_q11.png",
+   "opts": [
+    "2πi × 9",
+    "2πi × 3",
+    "πi",
+    "0"
+   ],
+   "ans": "(D) 0",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Cauchy–Goursat theorem: the integral of a function analytic inside and on a closed contour is zero.",
+    "The only singularity, z = 3, lies outside |z| = 1.",
+    "So the integrand is analytic on and inside C and the integral is <b>0 (D)</b>.",
+    "<b>Exam tip:</b> 2πi × 9 would be the answer only if the contour enclosed z = 3 (e.g. |z| = 4)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The integral of e<sup>−x²</sup> from 0 to 1 is evaluated by Simpson's 1/3 rule with four equal strips (h = 0.25). The value obtained (round off to four decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "0.7469 (accept 0.7460 to 0.7477)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> I ≈ (h/3)[f<sub>0</sub> + 4(f<sub>1</sub> + f<sub>3</sub>) + 2f<sub>2</sub> + f<sub>4</sub>].",
+    "f<sub>0</sub> = 1, f<sub>1</sub> = 0.939413, f<sub>2</sub> = 0.778801, f<sub>3</sub> = 0.569783, f<sub>4</sub> = 0.367879",
+    "Sum = 1 + 4(1.509196) + 2(0.778801) + 0.367879 = 8.962266",
+    "I ≈ (0.25/3) × 8.962266 = <b>0.7469</b>",
+    "<b>Exam tip:</b> The exact value is 0.746824: Simpson's rule with only four strips is already accurate to four decimals."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The function f(z) = (sin z)/z⁴ has at z = 0",
+   "fig": null,
+   "opts": [
+    "a pole of order 4",
+    "a removable singularity",
+    "a pole of order 3",
+    "an essential singularity"
+   ],
+   "ans": "(C) a pole of order 3",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Expand and read off the highest negative power.",
+    "sin z/z⁴ = (z − z³/6 + z⁵/120 − …)/z⁴ = 1/z³ − 1/(6z) + z/120 − …",
+    "The highest negative power is z<sup>−3</sup>: a <b>pole of order 3 (C)</b>, with residue −1/6.",
+    "<b>Exam tip:</b> Order of pole = (order of zero of denominator) − (order of zero of numerator) = 4 − 1."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The bisection method is applied to f(x) = x³ − x − 1 on the interval [1, 2]. The third midpoint computed (m<sub>3</sub>, round off to three decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "1.375 (accept 1.374 to 1.376)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Keep the half-interval at whose ends f changes sign.",
+    "m<sub>1</sub> = 1.5: f = 0.875 > 0, f(1) = −1 < 0 → root in [1, 1.5]",
+    "m<sub>2</sub> = 1.25: f = −0.297 < 0 → root in [1.25, 1.5]",
+    "m<sub>3</sub> = <b>1.375</b> (f = 0.2246 > 0, so the next interval is [1.25, 1.375])",
+    "<b>Exam tip:</b> After n bisections the error bound is (b − a)/2<sup>n</sup>; the true root is 1.3247."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In polar form, z = re<sup>iθ</sup> and f = u(r, θ) + iv(r, θ), the Cauchy–Riemann equations are",
+   "fig": null,
+   "opts": [
+    "u<sub>r</sub> = v<sub>θ</sub> and u<sub>θ</sub> = −v<sub>r</sub>",
+    "u<sub>r</sub> = (1/r)v<sub>θ</sub> and v<sub>r</sub> = −(1/r)u<sub>θ</sub>",
+    "u<sub>r</sub> = r v<sub>θ</sub> and v<sub>r</sub> = −r u<sub>θ</sub>",
+    "u<sub>r</sub> = −(1/r)v<sub>θ</sub> and v<sub>r</sub> = (1/r)u<sub>θ</sub>"
+   ],
+   "ans": "(B) u<sub>r</sub> = (1/r)v<sub>θ</sub> and v<sub>r</sub> = −(1/r)u<sub>θ</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Equate f′ computed along the radial and the circumferential directions.",
+    "Radial: f′ = e<sup>−iθ</sup>(u<sub>r</sub> + iv<sub>r</sub>); circumferential: f′ = e<sup>−iθ</sup>(v<sub>θ</sub> − iu<sub>θ</sub>)/r",
+    "Hence <b>u<sub>r</sub> = v<sub>θ</sub>/r and v<sub>r</sub> = −u<sub>θ</sub>/r (B)</b>.",
+    "<b>Exam tip:</b> Check with f = z² = r²e<sup>2iθ</sup>: u<sub>r</sub> = 2r cos 2θ = (1/r)(2r² cos 2θ) = v<sub>θ</sub>/r."
+   ]
+  }
+ ]
+}

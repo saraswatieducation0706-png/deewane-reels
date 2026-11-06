@@ -1,0 +1,267 @@
+{
+ "day": 50,
+ "subject": "Applied Thermodynamics",
+ "topic": "Refrigeration & Air Conditioning",
+ "days_to_gate": 53,
+ "summary": "vapour-compression and air (Bell–Coleman) refrigeration, heat pumps, COP and tonnes of refrigeration, vapour absorption, properties of moist air (specific and relative humidity, enthalpy, wet-bulb and dew point), the psychrometric chart and basic air-conditioning processes with bypass factor",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Mathematics, Complex Variables & Numerical Methods",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "In a vapour-compression refrigeration cycle, subcooling the liquid refrigerant leaving the condenser (all other states unchanged)",
+   "fig": null,
+   "opts": [
+    "reduces the refrigerating effect",
+    "increases the refrigerating effect and the COP without changing the compressor work per kg",
+    "increases the compressor work per kg",
+    "has no effect on the cycle"
+   ],
+   "ans": "(B) increases the refrigerating effect and the COP without changing the compressor work per kg",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The throttle is isenthalpic, so h<sub>4</sub> = h<sub>3</sub>.",
+    "Subcooling lowers h<sub>3</sub>, hence h<sub>4</sub>, so the refrigerating effect h<sub>1</sub> − h<sub>4</sub> grows.",
+    "Compressor inlet and outlet states are unchanged, so the work per kg is the same: COP rises <b>(B)</b>.",
+    "<b>Exam tip:</b> A liquid–suction heat exchanger gives subcooling, but the extra suction superheat it causes may raise the work."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A reversed Carnot heat pump delivers heat to a room at 50 °C while taking heat from the ground at 5 °C. Its COP (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "7.18 (accept 7.14 to 7.22)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> COP<sub>HP</sub> = T<sub>H</sub>/(T<sub>H</sub> − T<sub>L</sub>), with absolute temperatures.",
+    "T<sub>H</sub> = 323.15 K, T<sub>L</sub> = 278.15 K, T<sub>H</sub> − T<sub>L</sub> = 45 K",
+    "COP<sub>HP</sub> = 323.15/45 = <b>7.18</b>",
+    "<b>Exam tip:</b> The refrigerator COP between the same temperatures is 278.15/45 = 6.18, exactly one less."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "One tonne of refrigeration (1 TR) is defined as the rate of heat removal needed to",
+   "fig": null,
+   "opts": [
+    "cool 1 tonne of water from 100 °C to 0 °C in 24 hours",
+    "evaporate 1 tonne of water in 1 hour",
+    "freeze 1 short ton (2000 lb) of water at 0 °C into ice at 0 °C in 24 hours",
+    "freeze 1 tonne of water in 1 hour"
+   ],
+   "ans": "(C) freeze 1 short ton (2000 lb) of water at 0 °C into ice at 0 °C in 24 hours",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The unit comes from the ice industry.",
+    "Freezing 907 kg of water at 0 °C (latent heat ≈ 335 kJ/kg) in 24 h needs ≈ 3.5 kW: <b>(C)</b>.",
+    "1 TR = 211 kJ/min = 3.517 kW (often taken as 3.5 kW).",
+    "<b>Exam tip:</b> Always check which value of 1 TR the question gives (3.5 or 3.517 kW)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A vapour-compression refrigerator works with these enthalpies: evaporator exit h<sub>1</sub> = 388 kJ/kg, compressor exit h<sub>2</sub> = 421 kJ/kg and condenser exit h<sub>3</sub> = 236 kJ/kg. The COP (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "4.61 (accept 4.58 to 4.64)",
+   "sfig": "d50p_s4.png",
+   "solution": [
+    "<b>Concept:</b> COP = refrigerating effect/compressor work = (h<sub>1</sub> − h<sub>4</sub>)/(h<sub>2</sub> − h<sub>1</sub>), with h<sub>4</sub> = h<sub>3</sub>.",
+    "Refrigerating effect = 388 − 236 = 152 kJ/kg",
+    "Compressor work = 421 − 388 = 33 kJ/kg",
+    "COP = 152/33 = <b>4.61</b>",
+    "<b>Exam tip:</b> The heat rejected in the condenser is h<sub>2</sub> − h<sub>3</sub> = 185 kJ/kg = 152 + 33, a quick check."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The p–h diagram of a simple vapour-compression cycle is shown. The throttling (expansion) process is",
+   "fig": "d50p_q5.png",
+   "opts": [
+    "3–4",
+    "1–2",
+    "2–3",
+    "4–1"
+   ],
+   "ans": "(A) 3–4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Throttling is isenthalpic, so it is a vertical line (h constant) from high to low pressure on the p–h chart.",
+    "3–4 drops from condenser pressure to evaporator pressure at constant h: <b>(A)</b>.",
+    "1–2 is compression, 2–3 condensation (heat rejection) and 4–1 evaporation (refrigerating effect).",
+    "<b>Exam tip:</b> On a T–s chart the throttle is drawn dashed, because it is irreversible."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "An ideal Bell–Coleman air-refrigeration cycle works with a pressure ratio of 4 (γ = 1.4). Its COP (round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "2.06 (accept 2.04 to 2.08)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> COP = 1/(r<sub>p</sub><sup>(γ−1)/γ</sup> − 1) for isentropic compression and expansion.",
+    "4<sup>0.2857</sup> = 1.4860",
+    "COP = 1/(1.4860 − 1) = <b>2.06</b>",
+    "<b>Exam tip:</b> The COP depends only on the pressure ratio; reducing r<sub>p</sub> raises COP but also cuts the refrigerating effect per kg of air."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In an ammonia–water vapour-absorption refrigeration system, the compressor of the vapour-compression system is replaced by",
+   "fig": null,
+   "opts": [
+    "an expansion valve and a condenser",
+    "a turbine and an evaporator",
+    "a rectifier only",
+    "an absorber, a solution pump and a generator"
+   ],
+   "ans": "(D) an absorber, a solution pump and a generator",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The absorption system compresses the refrigerant ‘thermally’.",
+    "Ammonia vapour is absorbed in weak solution in the absorber, the strong solution is pumped to high pressure, and heat in the generator drives the ammonia off: <b>(D)</b>.",
+    "Pumping a liquid needs very little work compared with compressing a vapour.",
+    "<b>Exam tip:</b> In a LiBr–water system, water is the refrigerant and LiBr the absorbent; in NH<sub>3</sub>–water, ammonia is the refrigerant."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air at 35 °C and a total pressure of 101.325 kPa has a relative humidity of 40 %. The saturation pressure of water at 35 °C is 5.628 kPa. The specific humidity of the air (in g per kg of dry air, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "14.13 (accept 14.06 to 14.20)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> p<sub>v</sub> = φp<sub>s</sub>; ω = 0.622 p<sub>v</sub>/(p − p<sub>v</sub>).",
+    "p<sub>v</sub> = 0.40 × 5.628 = 2.251 kPa",
+    "ω = 0.622 × 2.251/(101.325 − 2.251) = 0.01413 kg/kg = <b>14.13 g/kg</b>",
+    "<b>Exam tip:</b> Degree of saturation μ = ω/ω<sub>s</sub> is slightly less than φ (here μ ≈ 0.39)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For air–water vapour mixtures at ordinary conditions, the thermodynamic wet-bulb (adiabatic saturation) temperature is practically equal to the wet-bulb temperature read by a psychrometer because",
+   "fig": null,
+   "opts": [
+    "the air is always saturated",
+    "the Lewis number for air–water vapour is close to 1",
+    "the specific heat of water is constant",
+    "the dew point equals the dry-bulb temperature"
+   ],
+   "ans": "(B) the Lewis number for air–water vapour is close to 1",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The psychrometric WBT is set by a balance of heat and mass transfer at the wick; the adiabatic saturation temperature by an energy balance.",
+    "The two coincide when h/(ρc<sub>p</sub>h<sub>m</sub>) = Le<sup>2/3</sup> ≈ 1, true for air–water: <b>(B)</b>.",
+    "That is why constant-WBT lines on the chart are (almost) constant-enthalpy lines.",
+    "<b>Exam tip:</b> For other gas–liquid pairs (e.g. air–alcohol) the two temperatures differ."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Moist air at 30 °C has a specific humidity of 0.015 kg/kg of dry air. Taking h = 1.005t + ω(2500 + 1.88t) kJ/kg of dry air (t in °C), its enthalpy (in kJ/kg of dry air, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "68.50 (accept 68.15 to 68.85)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Enthalpy of moist air = dry-air sensible part + vapour part (latent at 0 °C + superheat).",
+    "Dry air: 1.005 × 30 = 30.15 kJ/kg",
+    "Vapour: 0.015 × (2500 + 1.88 × 30) = 0.015 × 2556.4 = 38.35 kJ/kg",
+    "h = 30.15 + 38.35 = <b>68.50 kJ/kg of dry air</b>",
+    "<b>Exam tip:</b> More than half of this enthalpy is latent: removing moisture is what loads a cooling coil."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The schematic psychrometric chart shows four processes from the state O. Chemical (adsorption) dehumidification, e.g. over silica gel, is best represented by",
+   "fig": "d50p_q11.png",
+   "opts": [
+    "O–1",
+    "O–2",
+    "O–3",
+    "O–4"
+   ],
+   "ans": "(D) O–4",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In adsorption the vapour gives up its latent heat (plus heat of adsorption) to the air stream.",
+    "So ω falls while the dry-bulb temperature rises, roughly along a constant-enthalpy line: down and to the right, <b>O–4 (D)</b>.",
+    "O–1 is heating with humidification, O–2 humidification at constant DBT and O–3 cooling with dehumidification.",
+    "<b>Exam tip:</b> Cooling-coil dehumidification (O–3) cools the air; chemical dehumidification heats it."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Air at 30 °C flows over a cooling coil whose apparatus dew point is 12 °C. If the bypass factor of the coil is 0.15, the temperature of the air leaving the coil (in °C, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "14.7 (accept 14.6 to 14.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> BF = (t<sub>2</sub> − t<sub>ADP</sub>)/(t<sub>1</sub> − t<sub>ADP</sub>): the fraction of air that ‘misses’ the coil surface.",
+    "t<sub>2</sub> = 12 + 0.15 × (30 − 12) = 12 + 2.7",
+    "t<sub>2</sub> = <b>14.7 °C</b>",
+    "<b>Exam tip:</b> More coil rows or lower air velocity give a smaller bypass factor (higher contact factor 1 − BF)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A vapour-absorption refrigerator receives heat in its generator at 100 °C, rejects heat to the surroundings at 30 °C and produces cooling at −10 °C. Its maximum possible COP is about",
+   "fig": null,
+   "opts": [
+    "1.23",
+    "6.58",
+    "0.19",
+    "5.33"
+   ],
+   "ans": "(A) 1.23",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Ideal absorption system = reversible heat engine (T<sub>G</sub> → T<sub>0</sub>) driving a reversible refrigerator (T<sub>E</sub> → T<sub>0</sub>).",
+    "η<sub>engine</sub> = 1 − 303.15/373.15 = 0.1876",
+    "COP<sub>refrigerator</sub> = 263.15/(303.15 − 263.15) = 6.579",
+    "COP<sub>max</sub> = 0.1876 × 6.579 = <b>1.23 (A)</b>",
+    "<b>Exam tip:</b> Real absorption COPs are about 0.5–0.7: they pay off only with cheap waste heat."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Moist air with 1.2 kg/s of dry air and a specific humidity of 0.006 kg/kg is heated from 10 °C to 30 °C in a heating coil. Taking c<sub>p</sub> of dry air = 1.005 and of water vapour = 1.88 kJ/kg·K, the heating load (in kW, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "24.39 (accept 24.27 to 24.51)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Sensible heating at constant ω uses the humid specific heat c<sub>pa</sub> + ωc<sub>pv</sub>.",
+    "Humid specific heat = 1.005 + 0.006 × 1.88 = 1.01628 kJ/kg·K",
+    "Q = 1.2 × 1.01628 × (30 − 10) = <b>24.39 kW</b>",
+    "<b>Exam tip:</b> Ignoring the vapour term gives 24.12 kW, which is outside the accepted range here."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The refrigerant vapour leaving the evaporator of a practical refrigerator is usually slightly superheated mainly to",
+   "fig": null,
+   "opts": [
+    "raise the condenser pressure",
+    "increase the refrigerating effect per kg by a large amount",
+    "make sure that no liquid droplets enter the compressor",
+    "reduce the compressor discharge temperature"
+   ],
+   "ans": "(C) make sure that no liquid droplets enter the compressor",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Liquid entering a reciprocating compressor (slugging) can damage valves and dilute the lubricant.",
+    "A few degrees of superheat, controlled by the thermostatic expansion valve, guarantees ‘dry’ compression: <b>(C)</b>.",
+    "Superheat raises the suction specific volume and the discharge temperature, so it is kept small.",
+    "<b>Exam tip:</b> Useful superheat (inside the cold space) adds to the refrigerating effect; superheat in the suction line does not."
+   ]
+  }
+ ]
+}

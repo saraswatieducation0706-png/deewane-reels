@@ -1,0 +1,267 @@
+{
+ "day": 52,
+ "subject": "Applied Thermodynamics",
+ "topic": "Turbomachinery",
+ "days_to_gate": 51,
+ "summary": "impulse and reaction principles, velocity triangles, blade efficiency, compounding, degree of reaction and reheat factor in steam turbines; gas turbine expansion; the Pelton wheel, Francis and Kaplan turbines, specific speed, unit quantities, draft tubes and cavitation",
+ "minutes": 45,
+ "test_qs": 20,
+ "test_minutes": 60,
+ "test_marking": "GATE marking (1/3 and 2/3 negative)",
+ "next_day": "Engineering Materials, Materials & Heat Treatment",
+ "questions": [
+  {
+   "type": "MCQ",
+   "text": "A Pelton wheel is",
+   "fig": null,
+   "opts": [
+    "a tangential-flow impulse turbine",
+    "an inward radial-flow reaction turbine",
+    "an axial-flow reaction turbine",
+    "a mixed-flow reaction turbine"
+   ],
+   "ans": "(A) a tangential-flow impulse turbine",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Classify turbines by the energy at inlet and the flow direction through the runner.",
+    "In a Pelton wheel all the head is converted to jet kinetic energy in the nozzle (impulse), and the jet strikes the buckets tangentially to the wheel: <b>(A)</b>.",
+    "Francis: (mixed/inward radial) reaction; Kaplan: axial-flow reaction.",
+    "<b>Exam tip:</b> Pelton wheels run in air at atmospheric pressure, so they need no draft tube and no casing pressure seal."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "The nozzle of a Pelton wheel works under a net head of 600 m with a coefficient of velocity of 0.97. Taking g = 9.81 m/s², the jet velocity (in m/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "105.24 (accept 104.70 to 105.80)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> V = C<sub>v</sub>√(2gH).",
+    "√(2 × 9.81 × 600) = √11 772 = 108.50 m/s",
+    "V = 0.97 × 108.50 = <b>105.24 m/s</b>",
+    "<b>Exam tip:</b> For maximum efficiency the bucket speed is about 0.46V ≈ 48 m/s here."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The modern Francis turbine is best described as",
+   "fig": null,
+   "opts": [
+    "an axial-flow impulse turbine",
+    "a mixed-flow (inward radial at entry, axial at exit) reaction turbine",
+    "a tangential-flow impulse turbine",
+    "an outward radial-flow impulse turbine"
+   ],
+   "ans": "(B) a mixed-flow (inward radial at entry, axial at exit) reaction turbine",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Water enters the Francis runner radially inwards from the guide vanes and turns to leave axially into the draft tube.",
+    "Part of the head is still pressure head in the runner, so it is a reaction turbine: <b>(B)</b>.",
+    "It suits medium heads (about 40–300 m) and specific speeds of about 60–300.",
+    "<b>Exam tip:</b> Inward flow is self-regulating: if speed rises, the centrifugal head opposes the flow."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A hydraulic turbine develops 2000 kW under a net head of 40 m at 500 rpm. Its specific speed N<sub>s</sub> = N√P/H<sup>5/4</sup> (N in rpm, P in kW, H in m) (round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "222.3 (accept 221.0 to 223.6)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Specific speed is the speed of a geometrically similar turbine that develops 1 kW under 1 m head.",
+    "√2000 = 44.72; 40<sup>1.25</sup> = 100.6",
+    "N<sub>s</sub> = 500 × 44.72/100.6 = <b>222.3</b>",
+    "<b>Exam tip:</b> This lies in the Francis range; N<sub>s</sub> below about 35 would point to a Pelton wheel."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The inlet and outlet velocity triangles of an impulse turbine blade are shown. If the blade is symmetrical (β<sub>1</sub> = β<sub>2</sub>) and friction is neglected (V<sub>r2</sub> = V<sub>r1</sub>), then",
+   "fig": "d52p_q5.png",
+   "opts": [
+    "the blade efficiency is 100 %",
+    "the whirl velocity at exit is always zero",
+    "the axial thrust on the blades is zero, since V<sub>f1</sub> = V<sub>f2</sub>",
+    "the relative velocity increases across the blade"
+   ],
+   "ans": "(C) the axial thrust on the blades is zero, since V<sub>f1</sub> = V<sub>f2</sub>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Axial (flow) components: V<sub>f1</sub> = V<sub>r1</sub> sin β<sub>1</sub>, V<sub>f2</sub> = V<sub>r2</sub> sin β<sub>2</sub>.",
+    "With V<sub>r2</sub> = V<sub>r1</sub> and β<sub>2</sub> = β<sub>1</sub>, V<sub>f2</sub> = V<sub>f1</sub>.",
+    "Axial thrust ∝ ṁ(V<sub>f1</sub> − V<sub>f2</sub>) = 0: <b>(C)</b>.",
+    "<b>Exam tip:</b> The exit whirl is zero only at one particular blade speed; the efficiency is limited to cos²α even then."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Steam leaves the nozzle of a single-stage impulse turbine at 500 m/s at 18° to the plane of the wheel. The blade speed is 200 m/s, the blades are symmetrical and friction reduces the relative velocity at exit to 0.9 times that at inlet. The blade efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "83.76 (accept 83.30 to 84.20)",
+   "sfig": "d52p_s6.png",
+   "solution": [
+    "<b>Concept:</b> η<sub>b</sub> = 2uΔV<sub>w</sub>/V<sub>1</sub><sup>2</sup>, with ΔV<sub>w</sub> = V<sub>r1</sub> cos β<sub>1</sub> + V<sub>r2</sub> cos β<sub>2</sub>.",
+    "V<sub>w1</sub> = 500 cos 18° = 475.53 m/s; V<sub>r1</sub> cos β<sub>1</sub> = 475.53 − 200 = 275.53 m/s",
+    "V<sub>r2</sub> cos β<sub>2</sub> = 0.9 × 275.53 = 247.98 m/s (β<sub>2</sub> = β<sub>1</sub>)",
+    "ΔV<sub>w</sub> = 523.51 m/s; η<sub>b</sub> = 2 × 200 × 523.51/500² = <b>83.76 %</b>",
+    "<b>Exam tip:</b> Without friction the same stage gives 88.17 %: friction costs about 4.4 percentage points."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a single-stage impulse turbine with nozzle angle α and symmetrical frictionless blades, the maximum blade efficiency and the optimum blade-speed ratio u/V<sub>1</sub> are",
+   "fig": null,
+   "opts": [
+    "cos α and cos α",
+    "cos²α/2 and cos α",
+    "2cos²α/(1 + cos²α) and cos α",
+    "cos²α and (cos α)/2"
+   ],
+   "ans": "(D) cos²α and (cos α)/2",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>b</sub> = 4ρ(cos α − ρ) with ρ = u/V<sub>1</sub> (k = 1, β<sub>1</sub> = β<sub>2</sub>).",
+    "dη/dρ = 0 → ρ<sub>opt</sub> = cos α/2",
+    "η<sub>max</sub> = 4 (cos α/2)(cos α/2) = <b>cos²α (D)</b>",
+    "<b>Exam tip:</b> Option (C) is the 50 % reaction result, which occurs at u/V<sub>1</sub> = cos α."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A Kaplan turbine runner has a tip diameter of 4 m and a hub diameter of 1.6 m. If the velocity of flow through the runner is 7 m/s, the discharge (in m³/s, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "73.89 (accept 73.50 to 74.30)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> The flow area of an axial runner is the annulus between hub and tip.",
+    "A = (π/4)(D² − d²) = (π/4)(16 − 2.56) = 10.556 m²",
+    "Q = A V<sub>f</sub> = 10.556 × 7 = <b>73.89 m³/s</b>",
+    "<b>Exam tip:</b> Forgetting the hub gives 87.96 m³/s; GATE often gives the hub as a fraction of the tip diameter."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "The output of a Pelton wheel is governed (at constant head) mainly by",
+   "fig": null,
+   "opts": [
+    "a spear (needle) valve in the nozzle, with a jet deflector for sudden load rejection",
+    "adjustable guide vanes (wicket gates)",
+    "adjustable runner blades",
+    "a draft-tube gate"
+   ],
+   "ans": "(A) a spear (needle) valve in the nozzle, with a jet deflector for sudden load rejection",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> In an impulse turbine the flow is set by the jet area alone.",
+    "The spear moves in the nozzle to change the jet area and hence Q: <b>(A)</b>.",
+    "Closing the spear quickly would cause water hammer, so a deflector first turns the jet away from the buckets.",
+    "<b>Exam tip:</b> Francis: wicket gates; Kaplan: wicket gates plus runner-blade pitch (double regulation)."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "A Pelton wheel delivers 2.5 MW of shaft power under a net head of 500 m with a discharge of 0.6 m³/s. Taking g = 9.81 m/s², its overall efficiency (in %, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "84.95 (accept 84.50 to 85.40)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> η<sub>o</sub> = shaft power/water power, water power = ρgQH.",
+    "Water power = 1000 × 9.81 × 0.6 × 500 = 2943 kW",
+    "η<sub>o</sub> = 2500/2943 = <b>84.95 %</b>",
+    "<b>Exam tip:</b> η<sub>o</sub> = η<sub>h</sub> × η<sub>m</sub> (× volumetric efficiency for reaction turbines)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "In a multi-stage steam turbine the reheat factor is greater than one because",
+   "fig": null,
+   "opts": [
+    "the steam is reheated in the boiler between stages",
+    "the friction losses of each stage reheat the steam, and part of this heat is recovered as work in later stages",
+    "the blade speed increases from stage to stage",
+    "the isentropic enthalpy drop is the same in all stages"
+   ],
+   "ans": "(B) the friction losses of each stage reheat the steam, and part of this heat is recovered as work in later stages",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Constant-pressure lines on the h–s chart diverge with increasing entropy.",
+    "Friction in a stage raises the entropy at its exit, so the next stage has a slightly larger isentropic drop: <b>(B)</b>.",
+    "Hence Σ(stage isentropic drops) > overall isentropic drop; RF = Σ/overall ≈ 1.03–1.05.",
+    "<b>Exam tip:</b> η<sub>turbine</sub> = RF × η<sub>stage</sub>, so the turbine is a little more efficient than each stage."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "In a 50 % reaction (Parsons) stage with symmetrical blading, the steam leaves the fixed blades at 240 m/s at 20° to the plane of the wheel, and the blade speed is 180 m/s. The work done per kg of steam (in kJ/kg, round off to two decimal places) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "48.79 (accept 48.54 to 49.04)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> Symmetric blading: V<sub>r2</sub> = V<sub>1</sub> and β<sub>2</sub> = α<sub>1</sub>, so w = u(2V<sub>1</sub> cos α − u).",
+    "V<sub>1</sub> cos α = 240 × 0.9397 = 225.53 m/s",
+    "ΔV<sub>w</sub> = 2 × 225.53 − 180 = 271.05 m/s",
+    "w = 180 × 271.05 = 48 789 J/kg = <b>48.79 kJ/kg</b>",
+    "<b>Exam tip:</b> At the optimum u = V<sub>1</sub> cos α the exit whirl is zero and w = u²."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "A reaction turbine works under a net head of 25 m. The atmospheric pressure head is 10.3 m of water and the vapour pressure head is 0.3 m. If the critical Thoma cavitation factor is 0.2, the maximum height of the runner exit above the tail-race is",
+   "fig": null,
+   "opts": [
+    "10.0 m",
+    "15.0 m",
+    "5.0 m",
+    "2.0 m"
+   ],
+   "ans": "(C) 5.0 m",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> σ = (H<sub>atm</sub> − H<sub>v</sub> − H<sub>s</sub>)/H; cavitation is avoided while σ ≥ σ<sub>c</sub>.",
+    "H<sub>s,max</sub> = H<sub>atm</sub> − H<sub>v</sub> − σ<sub>c</sub>H = 10.3 − 0.3 − 0.2 × 25",
+    "H<sub>s,max</sub> = <b>5.0 m (C)</b>",
+    "<b>Exam tip:</b> High-specific-speed turbines (Kaplan) have large σ<sub>c</sub> and often must be set below the tail-race."
+   ]
+  },
+  {
+   "type": "NAT",
+   "text": "Combustion gases (c<sub>p</sub> = 1.15 kJ/kg·K, γ = 1.33) enter a gas turbine at 1100 K and expand through a pressure ratio of 6 with an isentropic efficiency of 85 %. The work output per kg of gas (in kJ/kg, round off to one decimal place) is ______",
+   "fig": null,
+   "opts": null,
+   "ans": "385.9 (accept 384.0 to 387.8)",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> w = η<sub>t</sub> c<sub>p</sub>(T<sub>1</sub> − T<sub>2s</sub>), with T<sub>2s</sub> = T<sub>1</sub>/r<sub>p</sub><sup>(γ−1)/γ</sup>.",
+    "(γ − 1)/γ = 0.33/1.33 = 0.2481; 6<sup>0.2481</sup> = 1.5598",
+    "T<sub>2s</sub> = 1100/1.5598 = 705.2 K",
+    "w = 0.85 × 1.15 × (1100 − 705.2) = <b>385.9 kJ/kg</b>",
+    "<b>Exam tip:</b> Use the γ and c<sub>p</sub> given for the hot gas, not the air values (1.4, 1.005)."
+   ]
+  },
+  {
+   "type": "MCQ",
+   "text": "For a hydraulic turbine working at different heads, the unit power P<sub>u</sub> (power under unit head) is",
+   "fig": null,
+   "opts": [
+    "P/√H",
+    "P/H",
+    "P/H<sup>5/4</sup>",
+    "P/H<sup>3/2</sup>"
+   ],
+   "ans": "(D) P/H<sup>3/2</sup>",
+   "sfig": null,
+   "solution": [
+    "<b>Concept:</b> For a given turbine, V ∝ √H and Q ∝ √H, while N ∝ √H.",
+    "P ∝ QH ∝ H<sup>3/2</sup>, so <b>P<sub>u</sub> = P/H<sup>3/2</sup> (D)</b>.",
+    "Similarly N<sub>u</sub> = N/√H and Q<sub>u</sub> = Q/√H.",
+    "<b>Exam tip:</b> Use unit quantities to predict the same turbine's speed, flow and power at a new head."
+   ]
+  }
+ ]
+}
