@@ -1,0 +1,36 @@
+{
+ "out": "Day18_reel.mp4",
+ "footer": "Day 18/90  •  91 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": ["DAY 18/90", "WEEK 3 TEST"],
+   "sub": "Columns to gear trains: one test tonight",
+   "voice": "Day eighteen of the GATE M. E. ninety days challenge, ninety one days to go! Week three is done. Tonight we find out what really stuck."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": ["Weekly Revision", "Week 3: all five topics"],
+   "voice": "No new chapter today. It is week three revision: columns and energy methods, three theory of machines topics, and calculus, all in one test."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": ["Columns & energy methods", "Mechanisms & flywheels", "Cams, gears, gear trains", "Calculus"],
+   "voice": "Revise Euler buckling and Castigliano, mechanism analysis with flywheels, cams and gear trains, and calculus. Rework every question you got wrong this week."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": ["Instantaneous centres:", "N = n(n − 1) / 2", "Four-bar chain: 6 centres"],
+   "voice": "Quick tip. n links give n into n minus one by two instantaneous centres. A four bar chain has six. Find the hidden ones with Kennedy's three centres theorem."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Weekly test (₹1)", "7 to 9 PM"], ["Toppers", "Next reel"]],
+   "voice": "The free week three practice set with full solutions is on Telegram now. Tonight's weekly test, twenty questions, runs seven to nine P. M. in our one rupee challenge course."
+  }
+ ]
+}
