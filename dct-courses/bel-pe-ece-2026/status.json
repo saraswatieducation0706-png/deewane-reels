@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T19:44:46Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -29,10 +29,11 @@
   "FL-05",
   "NC-NT-1",
   "NC-NT-2",
-  "NC-NT-3"
+  "NC-NT-3",
+  "FL-06"
  ],
  "drive_pending": [],
- "next_batch": 11,
+ "next_batch": 12,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -165,6 +166,10 @@
   ],
   "NC-NT-3": [
    "04/Network Theory/Network Theory - Ch3 Sinusoidal Steady State, Power & Resonance.pdf"
+  ],
+  "FL-06": [
+   "03/Full Length Mock Tests/Technical - Test 6.docx",
+   "03/Full Length Mock Tests/General Aptitude - Test 6.docx (from ME)"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
