@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T22:45:10Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -35,10 +35,14 @@
   "NM-NT",
   "NC-EDC-1",
   "NC-EDC-2",
-  "FL-07"
+  "FL-07",
+  "NC-EDC-3",
+  "NM-EDC",
+  "NC-AE-1",
+  "NC-AE-2"
  ],
  "drive_pending": [],
- "next_batch": 14,
+ "next_batch": 15,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -113,7 +117,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 13)"
+   "02 Plan/status.json (refreshed batch 14)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -192,6 +196,18 @@
   "FL-07": [
    "03/Full Length Mock Tests/Technical - Test 7.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 7.docx (from ME)"
+  ],
+  "NC-EDC-3": [
+   "04/Electronic Devices/Electronic Devices - Ch3 Special Diodes, Optoelectronic Devices & IC Fabrication.pdf"
+  ],
+  "NM-EDC": [
+   "04/Electronic Devices Short Notes.pdf (3 chapters, 20 pages, 55 solved Qs)"
+  ],
+  "NC-AE-1": [
+   "04/Analog Circuits/Analog Circuits - Ch1 Diode Circuits: Rectifiers, Clippers, Clampers & Regulators.pdf"
+  ],
+  "NC-AE-2": [
+   "04/Analog Circuits/Analog Circuits - Ch2 BJT-FET Biasing & Small-Signal Amplifiers.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
