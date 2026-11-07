@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T18:45:19Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -26,10 +26,13 @@
   "SUB-09",
   "SUB-10",
   "SUB-11",
-  "FL-05"
+  "FL-05",
+  "NC-NT-1",
+  "NC-NT-2",
+  "NC-NT-3"
  ],
  "drive_pending": [],
- "next_batch": 10,
+ "next_batch": 11,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -73,7 +76,8 @@
  "notes": {
   "ga_reuse": "GA sections of FL-01..15, SEC-01..05 and GA notes are reused from bel-pe-me-2026 (same exam). NM-GA must be re-merged with the Electronics exam name (see plan.json item NM-GA).",
   "ews_fee": "Notification is self-contradictory on EWS fee (p5/p15 pays vs p11/p13 exempt): never state EWS fee as fact in video/description.",
-  "docx_preview": "LibreOffice headless does not draw OMML; check equations by counting <m:oMath> in document.xml instead."
+  "docx_preview": "LibreOffice headless does not draw OMML; check equations by counting <m:oMath> in document.xml instead.",
+  "slash_in_names": "Batch 10: '/' in chapter file names replaced by '-' in plan.json (file + vault) for NC-NT-1, NC-AE-2, NC-DE-4, NC-COM-3, NC-MP-1, NC-MP-2 (a '/' would create a vault sub-folder). PDF chapter titles keep the '/'."
  },
  "files": {
   "FL-01": [
@@ -152,6 +156,15 @@
   "FL-05": [
    "03/Full Length Mock Tests/Technical - Test 5.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 5.docx (from ME)"
+  ],
+  "NC-NT-1": [
+   "04/Network Theory/Network Theory - Ch1 Basics, Nodal-Mesh Analysis & Network Theorems.pdf"
+  ],
+  "NC-NT-2": [
+   "04/Network Theory/Network Theory - Ch2 Transient Analysis (RL, RC, RLC) & Laplace Method.pdf"
+  ],
+  "NC-NT-3": [
+   "04/Network Theory/Network Theory - Ch3 Sinusoidal Steady State, Power & Resonance.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
