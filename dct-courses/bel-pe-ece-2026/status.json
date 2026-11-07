@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T20:45:12Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -30,10 +30,14 @@
   "NC-NT-1",
   "NC-NT-2",
   "NC-NT-3",
-  "FL-06"
+  "FL-06",
+  "NC-NT-4",
+  "NM-NT",
+  "NC-EDC-1",
+  "NC-EDC-2"
  ],
  "drive_pending": [],
- "next_batch": 12,
+ "next_batch": 13,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -107,7 +111,8 @@
    "04/General Aptitude & Reasoning/General Aptitude & Reasoning - Ch3 Data Interpretation & Verbal Ability.pdf"
   ],
   "plan": [
-   "02 Plan/plan.json (current, copied batch 2)"
+   "02 Plan/plan.json (current, copied batch 2)",
+   "02 Plan/status.json (refreshed batch 12)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -170,6 +175,18 @@
   "FL-06": [
    "03/Full Length Mock Tests/Technical - Test 6.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 6.docx (from ME)"
+  ],
+  "NC-NT-4": [
+   "04/Network Theory/Network Theory - Ch4 Two-Port Networks, Coupled Circuits & Graph Theory.pdf"
+  ],
+  "NM-NT": [
+   "04/Network Theory Short Notes.pdf (4 chapters, 29 pages, 79 solved Qs)"
+  ],
+  "NC-EDC-1": [
+   "04/Electronic Devices/Electronic Devices - Ch1 Semiconductor Physics & PN Junction Diode.pdf"
+  ],
+  "NC-EDC-2": [
+   "04/Electronic Devices/Electronic Devices - Ch2 BJT, JFET & MOSFET Device Physics.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
