@@ -1,0 +1,86 @@
+{
+ "out": "Day19_reel.mp4",
+ "footer": "Day 19/90  •  89 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 19/90",
+    "GYROSCOPE"
+   ],
+   "sub": "Governors, balancing and the spinning top",
+   "voice": "Day nineteen of the GATE M. E. ninety days challenge, eighty nine days to go! Week four starts with governors, balancing and the gyroscope."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Theory of Machines",
+    "Governors, Balancing & Gyroscope"
+   ],
+   "voice": "Today's subject is theory of machines. Our topic: governors, balancing of rotating and reciprocating masses, and the gyroscope."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Watt, Porter, Hartnell",
+    "Sensitiveness & hunting",
+    "Rotating & reciprocating",
+    "Gyroscopic couple"
+   ],
+   "voice": "Cover Watt, Porter and Hartnell governors, sensitiveness, stability and hunting, balancing of rotating and reciprocating masses, and the gyroscopic couple."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Gyroscopic couple C =",
+    "I × spin × precession",
+    "both speeds in rad/s"
+   ],
+   "voice": "Quick tip. Gyroscopic couple equals moment of inertia, times spin speed, times precession speed. Convert both speeds to radians per second first."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Grab the free practice PDF on Telegram and work through it. Tonight's test runs seven to nine P. M. in our one rupee challenge course."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 18 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Marndi",
+     "marks": "14.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Kunal",
+     "marks": "13.67/30"
+    },
+    {
+     "rank": 3,
+     "name": "Saumitra Raj Trivedi",
+     "marks": "5.34/30"
+    }
+   ],
+   "voice": "Week three test toppers! Marndi takes rank one with fourteen point six seven. Kunal is close behind at rank two, and Saumitra Raj Trivedi takes rank three. Well done!"
+  }
+ ]
+}
