@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T16:44:13Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -22,10 +22,13 @@
   "SUB-06",
   "SUB-07",
   "SUB-08",
-  "FL-04"
+  "FL-04",
+  "SUB-09",
+  "SUB-10",
+  "SUB-11"
  ],
  "drive_pending": [],
- "next_batch": 8,
+ "next_batch": 9,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -135,6 +138,15 @@
   "FL-04": [
    "03/Full Length Mock Tests/Technical - Test 4.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 4.docx (from ME)"
+  ],
+  "SUB-09": [
+   "03/Subject Tests/Subject Test 09 - Microprocessors & Microcontrollers.docx"
+  ],
+  "SUB-10": [
+   "03/Subject Tests/Subject Test 10 - Electronic Measurements & Instrumentation.docx"
+  ],
+  "SUB-11": [
+   "03/Subject Tests/Subject Test 11 - Power Electronics.docx"
   ]
  }
 }
