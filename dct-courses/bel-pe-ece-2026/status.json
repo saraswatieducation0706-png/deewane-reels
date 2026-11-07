@@ -1,14 +1,20 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-07T10:46:44Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
-  "FL-01"
+  "FL-01",
+  "SEC-01",
+  "SEC-02",
+  "SEC-03",
+  "SEC-04",
+  "SEC-05",
+  "NM-GA"
  ],
  "drive_pending": [],
- "next_batch": 2,
+ "next_batch": 3,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -58,6 +64,30 @@
   "FL-01": [
    "03/Full Length Mock Tests/Technical - Test 1.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 1.docx (from ME)"
+  ],
+  "SEC-01": [
+   "03/Sectional Tests (Aptitude & Reasoning)/GA Sectional - Test 1.docx (from ME)"
+  ],
+  "SEC-02": [
+   "03/Sectional Tests (Aptitude & Reasoning)/GA Sectional - Test 2.docx (from ME)"
+  ],
+  "SEC-03": [
+   "03/Sectional Tests (Aptitude & Reasoning)/GA Sectional - Test 3.docx (from ME)"
+  ],
+  "SEC-04": [
+   "03/Sectional Tests (Aptitude & Reasoning)/GA Sectional - Test 4.docx (from ME)"
+  ],
+  "SEC-05": [
+   "03/Sectional Tests (Aptitude & Reasoning)/GA Sectional - Test 5.docx (from ME)"
+  ],
+  "NM-GA": [
+   "04/General Aptitude & Reasoning Short Notes.pdf (re-merged, Electronics exam name)",
+   "04/General Aptitude & Reasoning/General Aptitude & Reasoning - Ch1 Quantitative Aptitude.pdf",
+   "04/General Aptitude & Reasoning/General Aptitude & Reasoning - Ch2 Logical Reasoning.pdf",
+   "04/General Aptitude & Reasoning/General Aptitude & Reasoning - Ch3 Data Interpretation & Verbal Ability.pdf"
+  ],
+  "plan": [
+   "02 Plan/plan.json (current, copied batch 2)"
   ]
  }
 }
