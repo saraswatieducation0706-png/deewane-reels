@@ -211,5 +211,85 @@
   "ref": "see long.json",
   "template": "Bible story explained",
   "posted": "catch-up 7-9 Nov"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s1",
+  "theme": "When you feel like nobody sees what you're carrying",
+  "ref": "Psalm 139:1-2",
+  "template": "A",
+  "posted": "2026-11-09 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s2",
+  "theme": "Still angry at someone? Read this before the day ends",
+  "ref": "Ephesians 4:26",
+  "template": "C",
+  "posted": "2026-11-10 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s3",
+  "theme": "Lonely even with people around you? Pray this with David",
+  "ref": "Psalm 25:16",
+  "template": "B",
+  "posted": "2026-11-11 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s4",
+  "theme": "In a dark season? It's never too dark for God to see you",
+  "ref": "Psalm 139:11-12",
+  "template": "D",
+  "posted": "2026-11-12 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s5",
+  "theme": "A short prayer for when everything feels like too much",
+  "ref": "Psalm 61:2",
+  "template": "E",
+  "posted": "2026-11-13 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s6",
+  "theme": "Always worried what people think? This verse names the trap",
+  "ref": "Proverbs 29:25",
+  "template": "A",
+  "posted": "2026-11-14 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "s7",
+  "theme": "A Sunday blessing over the work of your hands this week",
+  "ref": "Psalm 90:17",
+  "template": "B",
+  "posted": "2026-11-15 17:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "long1",
+  "theme": "Sleep Prayer with Psalm 139 | You Are Fully Known, Even in the Dark",
+  "ref": "Psalm 139",
+  "template": "sleep prayer",
+  "posted": "2026-11-10 06:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "long2",
+  "theme": "Fear Not, I Have Called Thee by Thy Name | An Isaiah 43 Scripture Meditation with Soft Music",
+  "ref": "Isaiah 43",
+  "template": "scripture meditation with soft music",
+  "posted": "2026-11-13 06:30 IST"
+ },
+ {
+  "week": "2026-11-09",
+  "id": "long3",
+  "theme": "Hannah's Prayer: When You've Prayed for the Same Thing for Years (1 Samuel 1 Explained)",
+  "ref": "1 Samuel 1-2 (Hannah)",
+  "template": "Bible story explained",
+  "posted": "2026-11-15 06:30 IST"
  }
 ]
