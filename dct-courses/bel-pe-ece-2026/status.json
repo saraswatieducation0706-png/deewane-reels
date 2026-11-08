@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T18:45:17Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -88,13 +88,18 @@
   "TOP-02",
   "TOP-03",
   "TOP-04",
-  "TOP-05"
+  "TOP-05",
+  "TOP-06",
+  "TOP-07",
+  "TOP-08",
+  "TOP-09",
+  "TOP-10"
  ],
  "drive_pending": [],
- "next_batch": 34,
+ "next_batch": 35,
  "total_batches": 37,
  "interim_upload_done": false,
- "production_done": false,
+ "production_done": true,
  "upload_done": false,
  "video_done": false,
  "report_done": false,
@@ -166,7 +171,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 33)"
+   "02 Plan/status.json (refreshed batch 34)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -412,7 +417,26 @@
   ],
   "TOP-05": [
    "03/Topic Tests/Topic Test 05.docx (20 Qs)"
+  ],
+  "TOP-06": [
+   "03/Topic Tests/Topic Test 06.docx (20 Qs)"
+  ],
+  "TOP-07": [
+   "03/Topic Tests/Topic Test 07.docx (20 Qs)"
+  ],
+  "TOP-08": [
+   "03/Topic Tests/Topic Test 08.docx (20 Qs)"
+  ],
+  "TOP-09": [
+   "03/Topic Tests/Topic Test 09.docx (20 Qs)"
+  ],
+  "TOP-10": [
+   "03/Topic Tests/Topic Test 10.docx (20 Qs)"
+  ],
+  "report": [
+   "07 Report/Production Report.md"
   ]
  },
- "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
+ "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled.",
+ "production_done_at": "2026-11-08T18:56:59Z"
 }
