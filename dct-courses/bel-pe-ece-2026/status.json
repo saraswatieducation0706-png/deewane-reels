@@ -64,10 +64,14 @@
   "NM-CS",
   "NC-COM-1",
   "NC-COM-2",
-  "FL-13"
+  "FL-13",
+  "NC-COM-3",
+  "NC-COM-4",
+  "NM-COM",
+  "NC-EMT-1"
  ],
  "drive_pending": [],
- "next_batch": 26,
+ "next_batch": 27,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -142,7 +146,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 25)"
+   "02 Plan/status.json (refreshed batch 26)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -314,6 +318,18 @@
   "FL-13": [
    "03/Full Length Mock Tests/Technical - Test 13.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 13.docx (from ME)"
+  ],
+  "NC-COM-3": [
+   "04/Communication Systems/Communication Systems - Ch3 Pulse & Digital Modulation (PCM, DM, ASK-FSK-PSK-QAM).pdf"
+  ],
+  "NC-COM-4": [
+   "04/Communication Systems/Communication Systems - Ch4 Satellite, Optical Fibre, Mobile & Data Communication Basics.pdf"
+  ],
+  "NM-COM": [
+   "04/Communication Systems Short Notes.pdf (4 chapters, 22 pages, 73 solved Qs)"
+  ],
+  "NC-EMT-1": [
+   "04/Electromagnetics, Transmission Lines & Antennas/Electromagnetics, Transmission Lines & Antennas - Ch1 Vector Calculus, Electrostatics & Magnetostatics.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
