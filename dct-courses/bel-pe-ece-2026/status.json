@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T06:44:15Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -54,10 +54,14 @@
   "NM-DE",
   "NC-SS-1",
   "NC-SS-2",
-  "FL-11"
+  "FL-11",
+  "NC-SS-3",
+  "NM-SS",
+  "NC-CS-1",
+  "NC-CS-2"
  ],
  "drive_pending": [],
- "next_batch": 22,
+ "next_batch": 23,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -132,7 +136,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 21)"
+   "02 Plan/status.json (refreshed batch 22)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -272,6 +276,18 @@
   "FL-11": [
    "03/Full Length Mock Tests/Technical - Test 11.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 11.docx (from ME)"
+  ],
+  "NC-SS-3": [
+   "04/Signals & Systems/Signals & Systems - Ch3 Laplace Transform, Z-Transform & Sampling.pdf"
+  ],
+  "NM-SS": [
+   "04/Signals & Systems Short Notes.pdf (3 chapters, 18 pages, 54 solved Qs)"
+  ],
+  "NC-CS-1": [
+   "04/Control Systems/Control Systems - Ch1 Transfer Function, Block Diagrams, SFG & Time Response.pdf"
+  ],
+  "NC-CS-2": [
+   "04/Control Systems/Control Systems - Ch2 Stability: Routh-Hurwitz & Root Locus.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
