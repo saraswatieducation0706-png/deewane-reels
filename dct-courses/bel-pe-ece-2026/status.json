@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T00:45:26Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -40,10 +40,13 @@
   "NM-EDC",
   "NC-AE-1",
   "NC-AE-2",
-  "FL-08"
+  "FL-08",
+  "NC-AE-3",
+  "NC-AE-4",
+  "NC-AE-5"
  ],
  "drive_pending": [],
- "next_batch": 16,
+ "next_batch": 17,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -118,7 +121,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 15)"
+   "02 Plan/status.json (refreshed batch 16)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -213,6 +216,15 @@
   "FL-08": [
    "03/Full Length Mock Tests/Technical - Test 8.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 8.docx (from ME)"
+  ],
+  "NC-AE-3": [
+   "04/Analog Circuits/Analog Circuits - Ch3 Multistage, Frequency Response & Feedback Amplifiers.pdf"
+  ],
+  "NC-AE-4": [
+   "04/Analog Circuits/Analog Circuits - Ch4 Operational Amplifiers & Applications.pdf"
+  ],
+  "NC-AE-5": [
+   "04/Analog Circuits/Analog Circuits - Ch5 Oscillators, Power Amplifiers & 555 Timer.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
