@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T16:47:14Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -82,10 +82,11 @@
   "NC-MI-2",
   "NM-MI",
   "NC-PE-1",
-  "NC-PE-2"
+  "NC-PE-2",
+  "NM-PE"
  ],
  "drive_pending": [],
- "next_batch": 32,
+ "next_batch": 33,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -160,7 +161,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 30)"
+   "02 Plan/status.json (refreshed batch 32)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -388,6 +389,9 @@
   ],
   "NC-PE-2": [
    "04/Power Electronics/Power Electronics - Ch2 Choppers, Inverters & AC Voltage Controllers.pdf (15 solved Qs)"
+  ],
+  "NM-PE": [
+   "04/Power Electronics Short Notes.pdf (2 chapters, 12 pages, 31 solved Qs)"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
