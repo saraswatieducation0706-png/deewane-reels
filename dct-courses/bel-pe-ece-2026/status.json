@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T17:44:36Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -83,10 +83,15 @@
   "NM-MI",
   "NC-PE-1",
   "NC-PE-2",
-  "NM-PE"
+  "NM-PE",
+  "TOP-01",
+  "TOP-02",
+  "TOP-03",
+  "TOP-04",
+  "TOP-05"
  ],
  "drive_pending": [],
- "next_batch": 33,
+ "next_batch": 34,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -161,7 +166,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 32)"
+   "02 Plan/status.json (refreshed batch 33)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -392,6 +397,21 @@
   ],
   "NM-PE": [
    "04/Power Electronics Short Notes.pdf (2 chapters, 12 pages, 31 solved Qs)"
+  ],
+  "TOP-01": [
+   "03/Topic Tests/Topic Test 01.docx (20 Qs)"
+  ],
+  "TOP-02": [
+   "03/Topic Tests/Topic Test 02.docx (20 Qs)"
+  ],
+  "TOP-03": [
+   "03/Topic Tests/Topic Test 03.docx (20 Qs)"
+  ],
+  "TOP-04": [
+   "03/Topic Tests/Topic Test 04.docx (20 Qs)"
+  ],
+  "TOP-05": [
+   "03/Topic Tests/Topic Test 05.docx (20 Qs)"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
