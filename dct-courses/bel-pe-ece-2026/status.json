@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T04:44:12Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -49,10 +49,14 @@
   "NC-DE-1",
   "NC-DE-2",
   "NC-DE-3",
-  "FL-10"
+  "FL-10",
+  "NC-DE-4",
+  "NM-DE",
+  "NC-SS-1",
+  "NC-SS-2"
  ],
  "drive_pending": [],
- "next_batch": 20,
+ "next_batch": 21,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -127,7 +131,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 19)"
+   "02 Plan/status.json (refreshed batch 20)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -251,6 +255,18 @@
   "FL-10": [
    "03/Full Length Mock Tests/Technical - Test 10.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 10.docx (from ME)"
+  ],
+  "NC-DE-4": [
+   "04/Digital Electronics/Digital Electronics - Ch4 Logic Families, ADC-DAC & Semiconductor Memories.pdf"
+  ],
+  "NM-DE": [
+   "04/Digital Electronics Short Notes.pdf (4 chapters, 23 pages, 72 solved Qs)"
+  ],
+  "NC-SS-1": [
+   "04/Signals & Systems/Signals & Systems - Ch1 Signals, System Properties, LTI Systems & Convolution.pdf"
+  ],
+  "NC-SS-2": [
+   "04/Signals & Systems/Signals & Systems - Ch2 Fourier Series & Fourier Transform.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
