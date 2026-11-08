@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T08:44:24Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -59,10 +59,14 @@
   "NM-SS",
   "NC-CS-1",
   "NC-CS-2",
-  "FL-12"
+  "FL-12",
+  "NC-CS-3",
+  "NM-CS",
+  "NC-COM-1",
+  "NC-COM-2"
  ],
  "drive_pending": [],
- "next_batch": 24,
+ "next_batch": 25,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -137,7 +141,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 23)"
+   "02 Plan/status.json (refreshed batch 24)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -293,6 +297,18 @@
   "FL-12": [
    "03/Full Length Mock Tests/Technical - Test 12.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 12.docx (from ME)"
+  ],
+  "NC-CS-3": [
+   "04/Control Systems/Control Systems - Ch3 Frequency Response (Bode, Nyquist), Compensators & State Space.pdf"
+  ],
+  "NM-CS": [
+   "04/Control Systems Short Notes.pdf (3 chapters, 19 pages, 54 solved Qs)"
+  ],
+  "NC-COM-1": [
+   "04/Communication Systems/Communication Systems - Ch1 Amplitude & Angle Modulation, Receivers.pdf"
+  ],
+  "NC-COM-2": [
+   "04/Communication Systems/Communication Systems - Ch2 Random Signals, Noise & Information Theory.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
