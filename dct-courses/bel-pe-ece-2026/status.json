@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T14:44:35Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -73,10 +73,15 @@
   "NC-EMT-2",
   "NC-EMT-3",
   "NC-EMT-4",
-  "FL-15"
+  "FL-15",
+  "NM-EMT",
+  "NC-MP-1",
+  "NC-MP-2",
+  "NM-MP",
+  "NC-MI-1"
  ],
  "drive_pending": [],
- "next_batch": 30,
+ "next_batch": 31,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -151,7 +156,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 29)"
+   "02 Plan/status.json (refreshed batch 30)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -352,6 +357,21 @@
   "FL-15": [
    "03/Full Length Mock Tests/Technical - Test 15.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 15.docx (from ME)"
+  ],
+  "NM-EMT": [
+   "04/Electromagnetics, Transmission Lines & Antennas Short Notes.pdf (4 chapters, 26 pages, 90 solved Qs)"
+  ],
+  "NC-MP-1": [
+   "04/Microprocessors & Microcontrollers/Microprocessors & Microcontrollers - Ch1 8085-8086 Architecture, Addressing Modes & Instructions.pdf"
+  ],
+  "NC-MP-2": [
+   "04/Microprocessors & Microcontrollers/Microprocessors & Microcontrollers - Ch2 Memory-I-O Interfacing, Interrupts, Peripherals & 8051.pdf"
+  ],
+  "NM-MP": [
+   "04/Microprocessors & Microcontrollers Short Notes.pdf (2 chapters, 17 pages, 47 solved Qs)"
+  ],
+  "NC-MI-1": [
+   "04/Electronic Measurements & Instrumentation/Electronic Measurements & Instrumentation - Ch1 Errors, Analog Meters & Bridges.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
