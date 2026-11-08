@@ -1,7 +1,7 @@
 {
  "course_key": "bel-pe-ece-2026",
  "course_title": "BEL Probationary Engineer Electronics CBT Test Series 2026",
- "running_since": "2026-11-08T12:44:43Z",
+ "running_since": null,
  "done": [
   "STAGE1",
   "STAGE2",
@@ -69,10 +69,13 @@
   "NC-COM-4",
   "NM-COM",
   "NC-EMT-1",
-  "FL-14"
+  "FL-14",
+  "NC-EMT-2",
+  "NC-EMT-3",
+  "NC-EMT-4"
  ],
  "drive_pending": [],
- "next_batch": 28,
+ "next_batch": 29,
  "total_batches": 37,
  "interim_upload_done": false,
  "production_done": false,
@@ -147,7 +150,7 @@
   ],
   "plan": [
    "02 Plan/plan.json (current, copied batch 2)",
-   "02 Plan/status.json (refreshed batch 27)"
+   "02 Plan/status.json (refreshed batch 28)"
   ],
   "FL-02": [
    "03/Full Length Mock Tests/Technical - Test 2.docx",
@@ -335,6 +338,15 @@
   "FL-14": [
    "03/Full Length Mock Tests/Technical - Test 14.docx",
    "03/Full Length Mock Tests/General Aptitude - Test 14.docx (from ME)"
+  ],
+  "NC-EMT-2": [
+   "04/Electromagnetics, Transmission Lines & Antennas/Electromagnetics, Transmission Lines & Antennas - Ch2 Maxwell's Equations & Uniform Plane Waves.pdf"
+  ],
+  "NC-EMT-3": [
+   "04/Electromagnetics, Transmission Lines & Antennas/Electromagnetics, Transmission Lines & Antennas - Ch3 Transmission Lines & Smith Chart.pdf"
+  ],
+  "NC-EMT-4": [
+   "04/Electromagnetics, Transmission Lines & Antennas/Electromagnetics, Transmission Lines & Antennas - Ch4 Waveguides, Antennas & Microwave Devices.pdf"
   ]
  },
  "pipeline_scope": "Owner, 7 Nov 2026: pipeline ends at production. Website course creation/upload, promo video and YouTube are done by the owner himself; upload & video scheduled task removed; PC upload hand-off cancelled."
