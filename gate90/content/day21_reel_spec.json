@@ -37,7 +37,7 @@
    "lines": [
     "Successive changes a% and b%",
     "Net = a + b + ab/100",
-    "+20% then −20% → −4%"
+    "+20% then -20% = -4%"
    ],
    "voice": "Quick tip. Two successive changes of a and b percent give a net change of a plus b plus a b over one hundred. Up twenty, down twenty? Minus four percent."
   },
