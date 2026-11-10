@@ -27,8 +27,8 @@ def F(w, s):
 WELCOME = dict(kind="welcome", voice="Hello Everyone, I hope your preparations for the exam are going well.",
                title="Hello Everyone!", sub="Hope your preparation is going well")
 END = dict(kind="end", voice="Comment GATE ninety to get all the links. For test series and study material, visit web dot D. I. G. career thrust dot com. "
-           "Scan the codes to get our app and join our Telegram.", min_dur=7.0)
-QRS = [("Mobile App", "qr_playstore_app.jpeg"), ("Telegram", "qr_telegram.jpeg"), ("Website", "qr_website.jpeg")]
+           "Scan the codes to join our Telegram channel and visit our website.", min_dur=7.0)
+QRS = [("Telegram", "qr_telegram.jpeg"), ("Website", "qr_website.jpeg")]  # no mobile app any more (Naveen, 10 Nov 2026)
 
 # ---------------- TTS ----------------
 def tts(text, out, cache, use_api=True):
@@ -104,7 +104,7 @@ def scene(s, t, d, lay):
         ctext(d, 600, "DIG Career Thrust", F("ExtraBold", 66), RED, p)
         ctext(d, 690, "Test Series  •  Study Material", F("SemiBold", 40), INK, p)
         for j, (lab, _) in enumerate(QRS):
-            q = ease((t - 0.8 - 0.35 * j) / 0.4); x = 90 + j * 310
+            q = ease((t - 0.8 - 0.35 * j) / 0.4); x = (W - (len(QRS) * 310 - 40)) / 2 + j * 310
             if q > 0:
                 qi = QR_IMGS[j].copy(); qi.putalpha(int(255 * q)); lay.alpha_composite(qi, (int(x), 790))
                 d.rounded_rectangle([x, 1080, x + 270, 1150], 20, fill=RED + (int(255 * q),))

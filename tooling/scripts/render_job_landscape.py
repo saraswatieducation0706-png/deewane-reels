@@ -25,7 +25,7 @@ SETTLE = 4.2   # seconds after which every scene's entry animation is finished -
 
 WELCOME = dict(rr.WELCOME)
 END = dict(kind="end", voice="For test series and study material, visit web dot D. I. G. career thrust dot com. "
-           "Scan the codes to get our app and join our Telegram. Subscribe and press the bell icon for daily "
+           "Scan the codes to join our Telegram channel and visit our website. Subscribe and press the bell icon for daily "
            "government job updates!", min_dur=8.0)
 
 ease = rr.ease
@@ -97,7 +97,7 @@ def scene(s, t, d, lay):
         ctext(d, 622, "SUBSCRIBE & PRESS THE BELL", fit(d, "SUBSCRIBE & PRESS THE BELL", "ExtraBold", 44, 640), WHITE, pf, cx=520)
         ctext(d, 730, "Daily government job updates", F("SemiBold", 36), INK, pf, cx=520)
         for j, (lab, _) in enumerate(rr.QRS):
-            q = ease((t - 0.8 - 0.35 * j) / 0.4); x = 980 + j * 290
+            q = ease((t - 0.8 - 0.35 * j) / 0.4); x = 1400 - (len(rr.QRS) * 290 - 30) / 2 + j * 290
             if q > 0:
                 qi = QR_IMGS[j].copy(); qi.putalpha(int(255 * q)); lay.alpha_composite(qi, (int(x), 300))
                 d.rounded_rectangle([x, 570, x + 260, 636], 20, fill=al(RED, q))

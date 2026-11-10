@@ -115,14 +115,13 @@ Record the primary keyword, the vidIQ title scores and credits used in metadata.
 ⚠️ Always read the official notification before applying.
 
 📚 Prepare with DIG Career Thrust — Test Series & Study Material
-📱 App: https://play.google.com/store/apps/details?id=co.jack.iurlk
 💬 Telegram: https://t.me/digcareerthrust
 🌐 Website: https://web.digcareerthrust.com/login
 #<3–5 hashtags>
 ## Tags
 ## Teaser caption (Instagram + Facebook)
 <1–2 line hook + key facts (emoji bullets) + "▶️ Full details video on YouTube: Deewane: IES & GATE Point
-(@deewaneiesgate)" + official website + the 3 DIG links + 10–15 hashtags; < 2,000 chars>
+(@deewaneiesgate)" + official website + the 2 DIG links (Telegram, Website; no app) + 10–15 hashtags; < 2,000 chars>
 ## Posting slot
 ```
 No "unverified" / "could not verify" wording anywhere (title, description, caption, video).

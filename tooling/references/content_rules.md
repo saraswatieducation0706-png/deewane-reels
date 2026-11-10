@@ -90,7 +90,6 @@ When the notification is ambiguous, say "as per notification" rather than guessi
 (No "unverified" / "could not verify" wording anywhere in the title or description, even for unverified reels — Naveen, 9 Oct 2026.)
 
 📚 Prepare with DIG Career Thrust — Test Series & Study Material
-📱 App: https://play.google.com/store/apps/details?id=co.jack.iurlk
 💬 Telegram: https://t.me/digcareerthrust
 🌐 Website: https://web.digcareerthrust.com/login
 

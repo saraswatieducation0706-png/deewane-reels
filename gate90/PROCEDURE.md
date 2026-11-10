@@ -86,7 +86,11 @@ For each day N (row N of the Master Schedule):
      steps "Cover Today" (3–4 items from Topics covered, ≤ 30 chars each); card "Quick Tip" (one high-yield fact, 3 lines);
      dates "Today's Plan" (Practice PDF → "Telegram, now"; "Test (₹1 course)" → "7 to 9 PM"; Toppers → "Next reel"; on mock
      days the test line is "Mock (₹1 course)" → "7 to 11 PM" and the voice mentions 65 questions, 3 hours). The practice
-     PDF is free; tests are in the "GATE ME 90 Days Challenge" course (₹1, enrol once). Never call the test "free";
+     PDF is free; tests are in the "GATE ME 90 Days Challenge" course (₹1, enrol once). Add a plan line
+     "Take test" → "Telegram link / website", and the voice must tell students to take the test through the link shared
+     in our Telegram channel, or simply visit our website (works on both mobile and laptop) (Naveen, 10 Nov 2026).
+     No mobile app any more: never mention or show the app or its QR code; only Telegram and the website.
+     Never call the test "free";
      never use the word "free" for anything but the practice PDF;
      LAST: `toppers` scene, title "Day P Toppers", voice congratulating them by name (ranks, shared ranks).
    - Voice: English, "GATE M. E.", numbers in words where natural; ≤ 30 words per scene.
@@ -96,8 +100,8 @@ For each day N (row N of the Master Schedule):
 5. `createScheduledPost` for Day N's date at 08:00 (+05:30), YouTube Short + Instagram Reel + Facebook Page, exactly like the Day 1
    post (title "Day N/90 | <Topic> | GATE ME 90 Days Challenge #Shorts" ≤ 95 chars; description = day line, topic,
    today's plan (free practice PDF on Telegram; test window 7–9 PM, mocks 7–11 PM, in the ₹1 "GATE ME 90 Days Challenge"
-   course), "Comment GATE90 to get all the links", the course link if `course_link` is set in gate90/status.json, the 3
-   links, hashtags; YouTube category EDUCATION, madeForKids
+   course), "Comment GATE90 to get all the links", the course link if `course_link` is set in gate90/status.json, "Take the test through the link
+   in our Telegram channel or on our website (works on mobile and laptop)", the 2 links (Telegram, website; no app link), hashtags; YouTube category EDUCATION, madeForKids
    false, isAiGeneratedContent false; Instagram REEL, isAiGenerated true; Facebook `facebookData` {"type": "REEL", "title": <YouTube title without #Shorts>} —
    use "POST" instead of "REEL" if the reel is longer than 90 s, Facebook's Reel limit). Confirm with `getScheduledPosts`.
 6. Add N to `reel_scheduled`, push. Push-notify Naveen only if something failed (reel not booked by 2 AM = he posts by hand).

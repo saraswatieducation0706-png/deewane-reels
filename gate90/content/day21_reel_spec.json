@@ -1,0 +1,90 @@
+{
+ "out": "Day21_reel.mp4",
+ "footer": "Day 21/90  •  87 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 21/90",
+    "APTITUDE"
+   ],
+   "sub": "General Aptitude is 15 marks. Let's claim them",
+   "voice": "Day twenty one of the GATE M. E. ninety days challenge, eighty seven days left! Today we switch to aptitude, fifteen marks every engineer should collect."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "General Aptitude",
+    "Quantitative Aptitude I"
+   ],
+   "voice": "Today's subject is General Aptitude. Our topic: Quantitative Aptitude, part one. Fast arithmetic that saves you minutes in the exam."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Percentages & ratios",
+    "Averages, profit & loss",
+    "Time, speed & distance",
+    "Time & work"
+   ],
+   "voice": "Cover percentages, ratio and proportion, averages, profit and loss, time, speed and distance, and time and work."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Successive changes a% and b%",
+    "Net = a + b + ab/100",
+    "+20% then −20% → −4%"
+   ],
+   "voice": "Quick tip. Two successive changes of a and b percent give a net change of a plus b plus a b over one hundred. Up twenty, down twenty? Minus four percent."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Start with the free practice PDF on Telegram. Tonight's test runs seven to nine P. M. Use the Telegram link, or simply visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 20 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Kunal",
+     "marks": "30/30"
+    },
+    {
+     "rank": 2,
+     "name": "Sweta Rani Sahoo",
+     "marks": "30/30"
+    },
+    {
+     "rank": 3,
+     "name": "Atharva Vyas",
+     "marks": "18/30"
+    }
+   ],
+   "voice": "Day twenty toppers! Kunal and Sweta Rani Sahoo both scored a perfect thirty out of thirty, ranks one and two. Atharva Vyas takes rank three with eighteen. Superb work!"
+  }
+ ]
+}
