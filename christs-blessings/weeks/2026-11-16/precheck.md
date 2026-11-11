@@ -14,3 +14,7 @@ Result: points 1–7, 9, 10 PASS for all 10 videos. **Point 8 (KJV check) PENDIN
 10. madeForKids=false.
 
 Metricool analytics (YouTube, videos published 28 Oct–11 Nov): best Shorts — "Before this week starts, remember who walks ahead of you" (683 views, 66 watch-min), "For the one who keeps comparing themselves to everyone" (162), "Still waiting on a prayer?" (103). Worst — "When you've failed and it feels like everyone saw it" (17), "How to give thanks when life isn't going well" (23). Long: Psalm 46 meditation 102 watch-min (best), Ruth 36, Elijah 16, Psalm 91 sleep 14, family sleep prayer 0.4 (posted 9 Nov). Steer: Sunday week-ahead prayer again (top format) tied to Thanksgiving week; a comparison-style Short ("behind everyone"); relational Shorts (holiday family, being the strong one); avoided another plain gratitude Short — gratitude lives in the story instead.
+
+## KJV re-check, 11 Nov 2026 (after Naveen's approval, Blue Letter Bible KJV chapter pages)
+Verified word for word: Psalm 16:8, 16:9; Psalm 100:4 (S7); Psalm 141:3 (S3); Ecclesiastes 3:11 first clause "He hath made every thing beautiful in his time:" (S2 uses only this clause). Removed from kjv_pending.json.
+Not yet verified verbatim (the fetch tool only returned a summary for these, which agreed with our wording but does not count): Matthew 6:9-13, Luke 11:1, Romans 12:18, Isaiah 40:29, Psalm 94:19, 55:22, 56:3, Isaiah 30:15, 2 Thessalonians 3:16, Luke 17:11-19, Leviticus 13:46. Saturday production must check these before booking.
