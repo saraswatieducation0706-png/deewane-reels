@@ -1,0 +1,352 @@
+[
+ {
+  "id": "s1",
+  "date": "2026-11-16",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 29,
+  "music_key": "D",
+  "cover": [
+   "Just",
+   "today"
+  ],
+  "title": "Already worried about the whole week? Pray for today's bread",
+  "description": "For anyone lying awake over everything the week needs from them. Matthew 6:11 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#lordsprayer #worry #bibleverse #christianshorts",
+  "tags": [
+   "matthew 6 11",
+   "give us this day our daily bread",
+   "the lord's prayer",
+   "prayer for worry",
+   "one day at a time",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If it's only Monday and you're already worried about how you'll get through the whole week, pause with me."
+   },
+   {
+    "role": "ref",
+    "text": "Matthew 6, verse 11.",
+    "label": "Matthew 6:11"
+   },
+   {
+    "role": "verse",
+    "text": "Give us this day our daily bread.",
+    "label": "Matthew 6:11"
+   },
+   {
+    "role": "reflection",
+    "text": "Jesus could have taught us to ask for a full cupboard, or a plan for the month. Instead He taught us to ask for today. This day. Daily bread. It echoes the manna in the desert, which came fresh each morning and couldn't be stored up. You don't need tomorrow's strength yet. Ask for what today needs, and leave Thursday where it is."
+   },
+   {
+    "role": "prayer",
+    "text": "Father, give me what I need for today, and help me leave tomorrow with You. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tonight's full Lord's Prayer sleep prayer is on the channel. Save it for bedtime."
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "date": "2026-11-17",
+  "template": "A",
+  "scene": "sunrise_lake",
+  "seed": 30,
+  "music_key": "A",
+  "cover": [
+   "In His",
+   "time"
+  ],
+  "title": "Feel like you're behind everyone else in life? Hear this",
+  "description": "For anyone who feels late: behind friends, behind plans, behind where they thought they'd be. Ecclesiastes 3:11 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#ecclesiastes #godstiming #bibleverse #christianshorts",
+  "tags": [
+   "ecclesiastes 3 11",
+   "he hath made every thing beautiful in his time",
+   "god's timing",
+   "feeling behind in life",
+   "comparison",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you scroll past everyone's news and feel like you're the one who got left behind, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Ecclesiastes 3, verse 11.",
+    "label": "Ecclesiastes 3:11"
+   },
+   {
+    "role": "verse",
+    "text": "He hath made every thing beautiful in his time:",
+    "label": "Ecclesiastes 3:11"
+   },
+   {
+    "role": "reflection",
+    "text": "Notice the words: in his time. Not your friend's timeline, not the age you wrote down years ago. A late spring isn't a failed spring. Some things are still growing underground while others are already blooming above it. You are not behind on God's calendar. Do today's small faithful thing, and let Him decide when it's ready."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, quiet the voice that says I'm too late. I trust Your timing with my life. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with a friend who feels behind right now."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-11-18",
+  "template": "B",
+  "scene": "hills_sunset",
+  "seed": 31,
+  "music_key": "F",
+  "cover": [
+   "Guard my",
+   "words"
+  ],
+  "title": "Said something you wish you could take back? Pray this",
+  "description": "For anyone replaying words they wish they hadn't said. Psalm 141:3 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#psalm141 #words #bibleverse #christianshorts",
+  "tags": [
+   "psalm 141 3",
+   "set a watch o lord before my mouth",
+   "prayer before speaking",
+   "regret words",
+   "kind words",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you said something today that you keep replaying in your head, listen to this."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 141, verse 3.",
+    "label": "Psalm 141:3"
+   },
+   {
+    "role": "verse",
+    "text": "Set a watch, O LORD, before my mouth; keep the door of my lips.",
+    "label": "Psalm 141:3"
+   },
+   {
+    "role": "reflection",
+    "text": "David asks God to post a guard at his mouth, like a watchman at a city gate. Words go out through a door, and a good door can stay shut for a moment. You can't unsay what was said. But you can make it right with an apology, and you can ask God to stand at that door next time, especially in the tired, hurried moments."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, set a watch before my mouth. Help me speak kindly and make right what I got wrong. Amen."
+   },
+   {
+    "role": "close",
+    "text": "If this helped, save it for the next tense conversation."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-11-19",
+  "template": "D",
+  "scene": "candle",
+  "seed": 32,
+  "music_key": "Eb",
+  "cover": [
+   "Thy will",
+   "be done"
+  ],
+  "title": "When your plans fall apart, pray these four words",
+  "description": "For anyone whose plans didn't work out the way they hoped. Matthew 6:10 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#lordsprayer #surrender #bibleverse #christianshorts",
+  "tags": [
+   "matthew 6 10",
+   "thy will be done",
+   "the lord's prayer",
+   "when plans fall apart",
+   "trusting god",
+   "short prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If something you planned and prayed for just fell through, let's pray four words together."
+   },
+   {
+    "role": "ref",
+    "text": "Matthew 6, verse 10.",
+    "label": "Matthew 6:10"
+   },
+   {
+    "role": "verse",
+    "text": "Thy kingdom come. Thy will be done in earth, as it is in heaven.",
+    "label": "Matthew 6:10"
+   },
+   {
+    "role": "reflection",
+    "text": "Thy will be done. It isn't giving up. It's letting go of the grip. Jesus prayed the same surrender in the garden, in deep sorrow, so it's alright if these words come out shaky. You can still tell God what you wanted. Then open your hand, and trust that He is still good, even when the plan is gone."
+   },
+   {
+    "role": "prayer",
+    "text": "Father, this isn't what I planned. Thy will be done. Hold me while I let go. Amen."
+   },
+   {
+    "role": "close",
+    "text": "The full Lord's Prayer sleep prayer is on the channel. Pray it slowly with us tonight."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-11-20",
+  "template": "A",
+  "scene": "dawn_lake",
+  "seed": 33,
+  "music_key": "G",
+  "cover": [
+   "As much as",
+   "lieth in you"
+  ],
+  "title": "Nervous about a family gathering this holiday? Read this first",
+  "description": "For anyone heading into a holiday gathering with a knot in their stomach. Romans 12:18 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#holidays #family #bibleverse #christianshorts",
+  "tags": [
+   "romans 12 18",
+   "live peaceably with all men",
+   "family holidays",
+   "holiday stress",
+   "peace with family",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If there's a holiday table coming up and you're already nervous about one person sitting at it, hear this."
+   },
+   {
+    "role": "ref",
+    "text": "Romans 12, verse 18.",
+    "label": "Romans 12:18"
+   },
+   {
+    "role": "verse",
+    "text": "If it be possible, as much as lieth in you, live peaceably with all men.",
+    "label": "Romans 12:18"
+   },
+   {
+    "role": "reflection",
+    "text": "Paul is realistic. If it be possible. As much as lieth in you. Peace takes two people, and you only control your half. So you don't have to fix the whole family by the time the food is served. You can choose a gentle answer, step outside for air, and pray before you walk in. Your part is enough."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, give me a peaceful heart at that table. Help me do my part, and leave the rest with You. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tell us in the comments if you'd like prayer before the holidays."
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-11-21",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 34,
+  "music_key": "C",
+  "cover": [
+   "Strength",
+   "for the faint"
+  ],
+  "title": "Tired of being the strong one for everyone? This is for you",
+  "description": "For the carers, parents and friends who hold everyone else up. Isaiah 40:29 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#isaiah40 #strength #bibleverse #christianshorts",
+  "tags": [
+   "isaiah 40 29",
+   "he giveth power to the faint",
+   "tired of being strong",
+   "caregiver prayer",
+   "strength from god",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're the one everyone leans on, and nobody asks how you're doing, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 40, verse 29.",
+    "label": "Isaiah 40:29"
+   },
+   {
+    "role": "verse",
+    "text": "He giveth power to the faint; and to them that have no might he increaseth strength.",
+    "label": "Isaiah 40:29"
+   },
+   {
+    "role": "reflection",
+    "text": "Look at who receives strength here: the faint, the ones with no might left. Not the people who look strong. You don't have to perform strength for God. You can come to Him empty, tired from carrying a parent's care, a child's worries, a friend's crisis. Being worn out isn't failure. It's often the very place where His strength begins."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I'm tired of holding everything together. Be my strength today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with someone who carries everyone else."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-11-22",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 35,
+  "music_key": "Bb",
+  "cover": [
+   "Thanksgiving",
+   "week"
+  ],
+  "title": "Pray this over Thanksgiving week before it begins",
+  "description": "A Sunday prayer for the week ahead, from Psalm 100:4 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#sundayprayer #thanksgiving #bibleverse #christianshorts",
+  "tags": [
+   "psalm 100 4",
+   "enter into his gates with thanksgiving",
+   "thanksgiving prayer",
+   "sunday prayer",
+   "prayer for the week",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Before this week starts, let's pray over it together."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 100, verse 4.",
+    "label": "Psalm 100:4"
+   },
+   {
+    "role": "verse",
+    "text": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
+    "label": "Psalm 100:4"
+   },
+   {
+    "role": "reflection",
+    "text": "For many of us this is a week of travel, cooking, and full tables, and for some, an empty chair. The psalm doesn't ask us to pretend everything is fine. It invites us to walk in with thanks. So before the busy days, name one good gift from this year. Just one. Carry it into the week with you."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, I give You this week. Let me walk into every day with thanks, even where it's hard. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Have a blessed week. See you tomorrow morning."
+   }
+  ]
+ }
+]

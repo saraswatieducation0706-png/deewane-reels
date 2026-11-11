@@ -1,0 +1,103 @@
+{
+ "long1": {
+  "date_et": "2026-11-16",
+  "slot_ist": "2026-11-17T06:30:00",
+  "type": "sleep prayer",
+  "script": "long1_script.txt",
+  "scene": "night_lake",
+  "seed": 41,
+  "music_key": "D",
+  "render": {
+   "intro": "The Lord's Prayer, Prayed Slowly",
+   "subtitles": "dim",
+   "seed": 41,
+   "music_key": "D",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "The Lord's Prayer, Prayed Slowly for Sleep | A Guided Bedtime Prayer (KJV)",
+  "thumb_big": "Our Father",
+  "thumb_small": "The Lord's Prayer for sleep",
+  "thumb_scene": "night_lake",
+  "description": "A gentle guided sleep prayer that walks through the Lord's Prayer one line at a time, for nights when you want to pray but can't find the words. We rest in calling God \"Our Father\", breathe with \"hallowed be thy name\", open our hands with \"thy will be done\", give thanks for today's bread and leave tomorrow's with Him, let go of the day's debts, and remember that the kingdom, the power and the glory are His. Then we pray the whole prayer once more, very slowly, before a closing blessing. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Luke 11:1; Matthew 6:9-13.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #lordsprayer #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer",
+   "the lord's prayer",
+   "lord's prayer for sleep",
+   "our father prayer",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "matthew 6 9-13",
+   "christian sleep meditation",
+   "kjv sleep",
+   "christ's blessings"
+  ]
+ },
+ "long2": {
+  "date_et": "2026-11-19",
+  "slot_ist": "2026-11-20T06:30:00",
+  "type": "sleep prayer",
+  "script": "long2_script.txt",
+  "scene": "storm",
+  "seed": 42,
+  "music_key": "G",
+  "render": {
+   "intro": "Sleep Prayer for Anxious Thoughts",
+   "subtitles": "dim",
+   "seed": 42,
+   "music_key": "G",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer for Anxious Thoughts | When Your Mind Won't Slow Down (with Gentle Rain)",
+  "thumb_big": "Racing Mind?",
+  "thumb_small": "Sleep prayer for anxious thoughts",
+  "thumb_scene": "galilee_dusk",
+  "description": "A calm guided sleep prayer for nights when your body is tired but your mind keeps racing. With the sound of gentle rain, we meet God in the multitude of our thoughts (Psalm 94:19), set the day's heavy burden down (Psalm 55:22), breathe a short prayer of trust (Psalm 56:3), relax the body from head to toe in quietness and confidence (Isaiah 30:15), rest in hope with the Lord at our right hand (Psalm 16:8-9), and close with a blessing of peace. After the prayer, about 15 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 94:19; Psalm 55:22; Psalm 56:3; Isaiah 30:15; Psalm 16:8-9; 2 Thessalonians 3:16.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #anxiety #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer for anxiety",
+   "prayer for anxious thoughts",
+   "racing thoughts at night",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "psalm 94 19",
+   "what time i am afraid i will trust in thee",
+   "christian sleep meditation with rain",
+   "kjv sleep",
+   "christ's blessings"
+  ]
+ },
+ "long3": {
+  "date_et": "2026-11-21",
+  "slot_ist": "2026-11-22T06:30:00",
+  "type": "Bible story explained",
+  "script": "long3_script.txt",
+  "scene": "hills_sunset",
+  "seed": 43,
+  "music_key": "A",
+  "render": {
+   "subtitles": "normal",
+   "seed": 43,
+   "music_key": "A",
+   "music_db": -23,
+   "lufs": -16
+  },
+  "title": "The Ten Lepers: The One Who Came Back to Say Thank You (Luke 17 Explained)",
+  "thumb_big": "One Came Back",
+  "thumb_small": "Luke 17 explained",
+  "thumb_scene": "hills_sunset",
+  "description": "Ten men stood at a distance and called out to Jesus for mercy. All ten were cleansed on the road, but only one turned back to say thank you, and he was a Samaritan. In this video we walk through Luke 17:11-19 just before Thanksgiving: what life was like for people with leprosy in the Bible, why Jews and Samaritans lived apart, why Jesus sent the men to the priests, and what changed for the one who came back. Four lessons on calling out from a distance, faith that walks before it sees, thankfulness that turns around, and finding the Giver and not only the gift. With an honest word for anyone still waiting for an answer, and a closing prayer of thanks.\n\nScripture (KJV): Luke 17:11-19; Leviticus 13:46.\n\nThis video is spiritual encouragement, not medical advice or a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#biblestory #thanksgiving #gospelofluke #christianencouragement",
+  "tags": [
+   "ten lepers",
+   "the ten lepers bible story",
+   "luke 17 11-19",
+   "where are the nine",
+   "bible story explained",
+   "thankfulness in the bible",
+   "thanksgiving bible story",
+   "the grateful samaritan",
+   "bible stories for adults",
+   "christ's blessings"
+  ]
+ }
+}
