@@ -1,0 +1,90 @@
+{
+ "out": "Day22_reel.mp4",
+ "footer": "Day 22/90  •  86 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 22/90",
+    "VIBRATIONS"
+   ],
+   "sub": "Push a system at the wrong speed and it shakes apart",
+   "voice": "Day twenty two of the GATE M. E. ninety days challenge, eighty six days left! Today we force the vibration, and learn why resonance can wreck a machine."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Vibrations",
+    "Forced Vibration"
+   ],
+   "voice": "Today's subject is Vibrations. Our topic: forced vibration, a steady scorer in GATE M. E. numericals."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Forced response & resonance",
+    "Magnification factor",
+    "Isolation & transmissibility",
+    "Critical speed of shafts"
+   ],
+   "voice": "Cover the forced response and resonance, the magnification factor, vibration isolation and transmissibility, and the critical or whirling speed of shafts."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Isolation needs r > √2",
+    "(r = forcing freq / natural freq)",
+    "At r = √2, TR = 1; above it, damping raises TR"
+   ],
+   "voice": "Quick tip. Isolation works only when the frequency ratio is above root two. At exactly root two, transmissibility is one for any damping, and beyond it, more damping actually hurts."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Grab the free practice PDF on Telegram now. Test runs seven to nine P. M. Take it through our Telegram channel link, or visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 21 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Rahul Yadav",
+     "marks": "27.33/30"
+    },
+    {
+     "rank": 2,
+     "name": "Pranshu Kumar Yadav",
+     "marks": "23.33/30"
+    },
+    {
+     "rank": 3,
+     "name": "Sai Avinash",
+     "marks": "18.67/30"
+    }
+   ],
+   "voice": "Day twenty one toppers! Rahul Yadav takes rank one, Pranshu Kumar Yadav rank two, and Sai Avinash rank three. Congratulations, all three of you!"
+  }
+ ]
+}
