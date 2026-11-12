@@ -57,7 +57,7 @@ use it in runs.
 - Every formula card: formula (typeset), symbol table (symbol | meaning | SI unit), units to substitute and
   conversions that catch students, assumptions of the derivation, valid when / not valid when, a figure where it
   aids understanding, common traps. A4 portrait, 2–3 cards per page, contents page, QR codes page last
-  (website web.digcareerthrust.com/login and app play.google.com/store/apps/details?id=co.jack.iurlk).
+  (website web.digcareerthrust.com/login only; no mobile app any more).
 - The first notes batch builds `tooling/build_notes.py` (commit it here; content JSON goes to the vault encrypted),
   renders pages to PNG and looks at them. Send that first PDF for Naveen's approval in the final message.
 
