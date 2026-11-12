@@ -1,0 +1,90 @@
+{
+ "out": "Day23_reel.mp4",
+ "footer": "Day 23/90  •  85 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 23/90",
+    "MACHINE DESIGN"
+   ],
+   "sub": "Parts rarely break at one big load. They tire out.",
+   "voice": "Day twenty three of the GATE M. E. ninety days challenge, eighty five days left! Most machine parts fail from fatigue, not one big load. Let's design against both."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Machine Design",
+    "Static & Fatigue Design"
+   ],
+   "voice": "We start Machine Design today. Topic: static and fatigue design, a sure source of GATE M. E. numericals."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Theories of failure",
+    "Stress concentration",
+    "Endurance limit & S-N curve",
+    "Goodman & Soderberg lines"
+   ],
+   "voice": "Cover the theories of failure, stress concentration and notch sensitivity, the endurance limit with the S N curve, and the Goodman and Soderberg lines."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Soderberg joins Se to Syt",
+    "Goodman joins Se to Sut",
+    "Soderberg is the safest (smallest area)"
+   ],
+   "voice": "Quick tip. Soderberg draws the line to yield strength, Goodman to ultimate strength. So Soderberg is the most conservative, and Gerber's parabola the least."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Get the free practice PDF on Telegram now. Test runs seven to nine P. M. Take it through our Telegram channel link, or visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 22 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Ayush Naik",
+     "marks": "30/30"
+    },
+    {
+     "rank": 2,
+     "name": "Rahul Yadav",
+     "marks": "15.34/30"
+    },
+    {
+     "rank": 3,
+     "name": "Kunal",
+     "marks": "0.67/30"
+    }
+   ],
+   "voice": "Day twenty two toppers! Ayush Naik takes rank one with a perfect thirty, Rahul Yadav rank two, and Kunal rank three. Congratulations to all three!"
+  }
+ ]
+}
