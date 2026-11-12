@@ -53,11 +53,11 @@
    "kind": "steps",
    "title": "What To Do",
    "steps": [
-    "Never leave a NAT blank",
-    "MSQ: answer if fairly sure",
-    "MCQ: guess after removing 2"
+    "No guessing in GATE",
+    "MCQ: answer only if sure",
+    "Solved a NAT or MSQ? Enter it"
    ],
-   "voice": "So, never leave a numerical question blank. Type your best answer. In multiple select, answer if you are fairly sure. In multiple choice, guess only when you can remove two options."
+   "voice": "So, what should you do? Do not guess in GATE. In multiple choice, a wrong guess takes marks away, so answer only when you are sure. In numerical and multiple select questions, if you have solved it, always enter your answer. Never leave a solved question blank."
   }
  ]
 }

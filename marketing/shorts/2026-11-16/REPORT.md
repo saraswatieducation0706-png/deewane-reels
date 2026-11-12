@@ -10,7 +10,7 @@ real ElevenLabs voice (the channel voice from `tooling/config.json`). No "Hello 
 |---|---|---|---|---|
 | S1: GATE ME or GATE XE? | `S1_xe_vs_me.mp4` | **62.0 s** (2 s over the 40–60 s target) | 5.9 MB | `S1_cover.jpg` |
 | S2: 20-minute mock analysis | `S2_mock_analysis.mp4` | 60.0 s | 5.5 MB | `S2_cover.jpg` |
-| S3: Negative marking | `S3_negative_marking.mp4` | 54.0 s | 5.0 MB | `S3_cover.jpg` |
+| S3: Negative marking | `S3_negative_marking.mp4` | **61.1 s** (re-rendered 12 Nov, see end; 1.1 s over the 40–60 s target) | 5.6 MB | `S3_cover.jpg` |
 
 ## Wording changes
 None. All on-screen text and voice lines are exactly as in the brief (`S1_spec.json`, `S2_spec.json`, `S3_spec.json`).
@@ -62,3 +62,39 @@ The minus signs in S3 use the real minus character (U+2212), which the font draw
   confirm with it, and the footer says "As per the GATE 2027 marking scheme". Please confirm once the brochure is out.
 - The end card still shows the Telegram + Website QR codes (from the existing end scene); the brief only asked to
   change the pill text, URL line and voice.
+
+## S3 re-render (wording change, 12 Nov)
+
+Ritu's rule: no guessing in the GATE exam. Only the last scene of `S3_spec.json` ("What To Do", kind `steps`) was
+replaced; every other field and scene is unchanged. Re-rendered with `tooling/scripts/render_challenge.py` (real
+ElevenLabs voice, same settings as before). Nothing was booked, scheduled or posted. The cover was not changed.
+
+**New file:** `S3_negative_marking.mp4`, 1080x1920, **61.1 s** (was 54.0 s), **5.6 MB** (was 5.0 MB).
+
+**Old wording (last scene)**
+- On screen: "Never leave a NAT blank" / "MSQ: answer if fairly sure" / "MCQ: guess after removing 2"
+- Voice: "So, never leave a numerical question blank. Type your best answer. In multiple select, answer if you are
+  fairly sure. In multiple choice, guess only when you can remove two options."
+
+**New wording (last scene)**
+- On screen: "No guessing in GATE" / "MCQ: answer only if sure" / "Solved a NAT or MSQ? Enter it"
+- Voice: "So, what should you do? Do not guess in GATE. In multiple choice, a wrong guess takes marks away, so answer
+  only when you are sure. In numerical and multiple select questions, if you have solved it, always enter your
+  answer. Never leave a solved question blank."
+
+**Checks**
+- Frames `frames/S3_scene1–4.jpg`, `S3_end_mid.jpg`, `S3_end.jpg` replaced (540 px wide; one near the end of each
+  scene with all items shown, plus mid-end-scene and end). Looked at each: no overflow, overlap or clipping. The third
+  step "Solved a NAT or MSQ? Enter it" (longest line) fits inside its pill at a readable size (checked on a full-size
+  1080x1920 frame too), so the shorter fallback wording was not needed.
+- Minus signs (−1/3, −2/3) render; header reads "GATE 2027 Tips"; nothing on screen says GATE90. On screen, "guess"
+  appears only in "No guessing in GATE".
+- Audio: every scene's voice clip is non-silent (mean −23 to −26 dB). Scene lengths: hook 6.2 s, table 9.4 s,
+  card 14.8 s, steps 20.0 s, end 10.8 s. Audio length 61.09 s = video length 61.10 s.
+
+**Unsure / please check**
+- **Length 61.1 s**, 1.1 s over the 40–60 s target, because the new last-scene voice is longer (19.6 s of speech).
+  Not trimmed since the wording was given exactly. Dropping "Never leave a solved question blank." (it repeats the
+  sentence before) would bring it to about 59 s.
+- The voice still says "a wrong guess takes marks away" (as given); on screen the word "guess" only appears in step 1.
+- Not listened to by a person here; pronunciation still needs one listen.
