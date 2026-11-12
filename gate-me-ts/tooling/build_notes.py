@@ -61,7 +61,7 @@ PRE = r"""\documentclass[9pt]{extarticle}
 \renewcommand{\headrulewidth}{0.6pt}\renewcommand{\headrule}{{\color{dig}\hrule height 0.6pt}}
 \fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=7mm]{logo_red.png}}\hspace{2mm}{\pop\fontsize{7.5}{9}\selectfont\color{grey}GATE ME 2027 Test Series \,|\, Formula Notes \,|\, @@SUBJ@@}}
 \fancyhead[R]{{\popsb\fontsize{8}{9}\selectfont\color{dig}Dig Career Thrust}}
-\fancyfoot[L]{{\pop\fontsize{7}{9}\selectfont\color{grey}web.digcareerthrust.com \,|\, Dig Career Thrust app on Google Play}}
+\fancyfoot[L]{{\pop\fontsize{7}{9}\selectfont\color{grey}web.digcareerthrust.com \,|\, Dig Career Thrust}}
 \fancyfoot[R]{{\pop\fontsize{7}{9}\selectfont\color{grey}Page \thepage\ of \pageref{LastPage}}}
 \fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\headrule}{}}
 \titleformat{\section}{\pop\fontsize{12.5}{15}\selectfont\color{dig}}{\thesection}{0.6em}{}[{\color{dig}\titlerule[0.8pt]}]
@@ -148,9 +148,9 @@ def build(D, figdir, out, keep=False):
     # QR page
     t += (r"\newpage\thispagestyle{fancy}\vspace*{8mm}\begin{center}{\popx\fontsize{20}{24}\selectfont\color{dig}Keep practising with Dig Career Thrust\par}\vspace{4mm}"
           r"{\pop\fontsize{10.5}{14}\selectfont\color{grey}Topic tests, subject tests and full-length mocks of the GATE ME 2027 Test Series\par}\vspace{16mm}"
-          r"\begin{tabular}{c@{\hspace{22mm}}c}\includegraphics[width=55mm]{qr_web.png} & \includegraphics[width=55mm]{qr_app.png}\\[3mm]"
-          r"{\pop\fontsize{12}{14}\selectfont Website} & {\pop\fontsize{12}{14}\selectfont Android app}\\[1mm]"
-          r"{\fontsize{9}{11}\selectfont\url{web.digcareerthrust.com/login}} & {\fontsize{9}{11}\selectfont Google Play: Dig Career Thrust}\\\end{tabular}"
+          r"\begin{tabular}{c}\includegraphics[width=55mm]{qr_web.png}\\[3mm]"
+          r"{\pop\fontsize{12}{14}\selectfont Website}\\[1mm]"
+          r"{\fontsize{9}{11}\selectfont\url{web.digcareerthrust.com/login}}\\\end{tabular}"
           r"\vspace{18mm}\par\includegraphics[height=20mm]{logo_red.png}\par\vspace{3mm}{\popsb\fontsize{12}{14}\selectfont\color{dig}Dig Career Thrust}\end{center}")
     t += r"\end{document}" + "\n"
     tex = os.path.join(work, "notes.tex"); open(tex, "w").write(t)
