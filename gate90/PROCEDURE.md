@@ -13,7 +13,7 @@ This file is read by the scheduled runs. Never put API keys or tokens in this pu
   (Make.com posts it to Telegram at 8 AM — it MUST exist before 8 AM on Day N). Reels and covers go in `gate90/reels/`.
 - Metricool brand (blogId) `7269466`, timezone `Asia/Calcutta`. Networks: YouTube Short + Instagram Reel + Facebook Page (added 10 Oct 2026).
 - Status file: `gate90/status.json` (`produced`, `test_delivered`, `reel_scheduled` = lists of day numbers).
-- Course (₹1, enrol once, all 90 tests): https://iurlk.courses.store/909124 . Test windows: topic/weekly/revision tests open 7–9 PM (60 min to attempt), full mocks 7–11 PM (180 min).
+- Course (₹1, enrol once, all 90 tests): https://web.digcareerthrust.com/courses/gate-me-90-days-challenge/ . Test windows: topic/weekly/revision tests open 7–9 PM (60 min to attempt), full mocks 7–11 PM (180 min).
 - Accuracy is checked by Naveen's team, but still verify every numerical answer with Python before building.
 
 ## Setup (every run)
