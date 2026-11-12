@@ -8,6 +8,13 @@ automatically - the spec contains only the job scenes (first one must be kind "h
 See references/scene_kinds.md for every scene kind and its fields.
 Voice: ElevenLabs (config.json), one clip per scene, scene = clip + gap. Clips are cached
 by text so the welcome/end lines are only billed once.
+
+Optional spec fields (defaults keep the nightly GATE90 reel unchanged):
+  "welcome": false     - leave out the WELCOME scene
+  "series": "..."      - header line under the channel name (default "GATE ME 90 Days Challenge")
+  "end_voice": "..."   - replaces the END scene voice
+  "end_cta": "..."     - dark pill text on the end scene (default "Comment GATE90 for links")
+  "end_url": "..."     - URL line on the end card (default "web.digcareerthrust.com")
 """
 import subprocess, os, sys, json, hashlib, urllib.request, shutil
 from PIL import Image, ImageDraw, ImageFont
@@ -110,10 +117,12 @@ def scene(s, t, d, lay):
                 d.rounded_rectangle([x, 1080, x + 270, 1150], 20, fill=RED + (int(255 * q),))
                 w = d.textlength(lab, font=F("Bold", 38))
                 d.text((x + (270 - w) / 2, 1088), lab, font=F("Bold", 38), fill=WHITE + (int(255*q),))
-        ctext(d, 1190, "web.digcareerthrust.com", F("SemiBold", 44), INK, p)
+        url = s.get("url", "web.digcareerthrust.com")
+        ctext(d, 1190, url, fit(d, url, "SemiBold", 44, W - 200), INK, p)
         pf = ease((t - 2.2) / 0.4)
         d.rounded_rectangle([170, 1380, W - 170, 1490], 55, fill=INK + (int(255 * pf),))
-        ctext(d, 1400, "Comment GATE90 for links", F("Bold", 46), WHITE, pf)
+        cta = s.get("cta", "Comment GATE90 for links")
+        ctext(d, 1400 + (46 - (fc := fit(d, cta, "Bold", 46, W - 400)).size) * 0.6, cta, fc, WHITE, pf)
         return
 
     a = title(d, s, t)
@@ -241,7 +250,13 @@ def main():
     global LOGO_R, QR_IMGS
     spec_path = sys.argv[1]; use_api = "--no-tts" not in sys.argv
     spec = json.load(open(spec_path))
-    scenes = [dict(WELCOME)] + spec["scenes"] + [dict(END)]
+    # optional spec fields (defaults = the nightly GATE90 reel): welcome, series, end_voice, end_cta, end_url
+    end = dict(END)
+    end["cta"] = spec.get("end_cta", "Comment GATE90 for links")
+    end["url"] = spec.get("end_url", "web.digcareerthrust.com")
+    if spec.get("end_voice"): end["voice"] = spec["end_voice"]
+    scenes = ([dict(WELCOME)] if spec.get("welcome", True) else []) + spec["scenes"] + [end]
+    series = spec.get("series", "GATE ME 90 Days Challenge")
     out = spec["out"]; work = out + ".work"; os.makedirs(work, exist_ok=True)
     cache = os.path.join(os.path.dirname(os.path.abspath(out)), ".tts_cache"); os.makedirs(cache, exist_ok=True)
     gap = CFG.get("scene_gap_s", 0.4)
@@ -279,7 +294,7 @@ def main():
         hdr_bg = im.crop((0, 0, W, 190)); hdr_bg.alpha_composite(top); im.paste(hdr_bg, (0, 0))
         d = ImageDraw.Draw(im)
         d.text((190, 62), CHANNEL, font=F("Bold", 46), fill=WHITE)
-        d.text((192, 120), "GATE ME 90 Days Challenge", font=F("Medium", 30), fill=SOFT)
+        d.text((192, 120), series, font=F("Medium", 30), fill=SOFT)
         if spec.get("footer"):
             lab = spec["footer"]
             f = fit(d, lab, "Medium", 30, W - 100, 20)

@@ -1,0 +1,68 @@
+{
+ "out": "/tmp/shorts/S2_mock_analysis.mp4",
+ "welcome": false,
+ "series": "GATE 2027 Tips",
+ "footer": "web.digcareerthrust.com",
+ "end_voice": "Practise with ninety eight GATE M. E. tests, with solutions and rank, on our website. Visit web dot D. I. G. career thrust dot com.",
+ "end_cta": "98 GATE ME tests on our website",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "MOCK TEST",
+    "WASTED?"
+   ],
+   "sub": "Do this for 20 minutes after every mock",
+   "voice": "You gave a mock, saw the score, and closed it? That mock is wasted. Do this for twenty minutes instead."
+  },
+  {
+   "kind": "table",
+   "title": "Minutes 1 to 5: Sort",
+   "rows": [
+    [
+     "Silly mistake",
+     "S"
+    ],
+    [
+     "Concept not known",
+     "C"
+    ],
+    [
+     "Ran out of time",
+     "T"
+    ]
+   ],
+   "note": "Mark every wrong question",
+   "voice": "First five minutes. Mark every wrong question as one of three types. S for silly mistake. C for concept not known. T for time: you knew it, but ran out of time."
+  },
+  {
+   "kind": "card",
+   "title": "Minutes 5 to 15: Redo",
+   "lines": [
+    "Redo only S and T questions",
+    "Do not look at the solution",
+    "These marks are already yours"
+   ],
+   "voice": "Next ten minutes. Redo only the S and T questions, without looking at the solution. These are marks you already own."
+  },
+  {
+   "kind": "card",
+   "title": "Minutes 15 to 20: Note",
+   "lines": [
+    "One line for each C question",
+    "Write the topic",
+    "Write the idea you missed"
+   ],
+   "voice": "Last five minutes. For each C question, write one line in your error notebook: the topic, and the one idea you were missing."
+  },
+  {
+   "kind": "card",
+   "title": "Next Mock Target",
+   "lines": [
+    "Not a higher score",
+    "Fewer silly mistakes"
+   ],
+   "voice": "In your next mock, the target is not a higher score. It is fewer silly mistakes. Do this after every test, and you stop losing marks you already know."
+  }
+ ]
+}

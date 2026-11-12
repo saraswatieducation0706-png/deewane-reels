@@ -1,0 +1,63 @@
+{
+ "out": "/tmp/shorts/S3_negative_marking.mp4",
+ "welcome": false,
+ "series": "GATE 2027 Tips",
+ "footer": "As per the GATE 2027 marking scheme",
+ "end_voice": "Always confirm with the official GATE twenty twenty seven information brochure. For GATE tests in the real exam pattern, visit web dot D. I. G. career thrust dot com.",
+ "end_cta": "GATE tests in real exam pattern",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "NEGATIVE",
+    "MARKING"
+   ],
+   "sub": "Not every wrong answer costs marks",
+   "voice": "In GATE, not every wrong answer costs you marks. Know this rule before your next mock."
+  },
+  {
+   "kind": "table",
+   "title": "A Wrong Answer Costs",
+   "rows": [
+    [
+     "MCQ, 1 mark",
+     "−1/3"
+    ],
+    [
+     "MCQ, 2 marks",
+     "−2/3"
+    ],
+    [
+     "NAT (numerical)",
+     "0"
+    ],
+    [
+     "MSQ (multi-select)",
+     "0"
+    ]
+   ],
+   "note": "MSQ: no partial marks",
+   "voice": "In multiple choice questions, a wrong one mark answer costs one third of a mark, and a wrong two mark answer costs two thirds."
+  },
+  {
+   "kind": "card",
+   "title": "NAT and MSQ",
+   "lines": [
+    "NAT: no negative marking",
+    "MSQ: no negative marking",
+    "MSQ: no partial marks either"
+   ],
+   "voice": "Numerical answer questions have no negative marking at all. Multiple select questions also have no negative marking, but no partial marks. You must select every correct option, and nothing else."
+  },
+  {
+   "kind": "steps",
+   "title": "What To Do",
+   "steps": [
+    "Never leave a NAT blank",
+    "MSQ: answer if fairly sure",
+    "MCQ: guess after removing 2"
+   ],
+   "voice": "So, never leave a numerical question blank. Type your best answer. In multiple select, answer if you are fairly sure. In multiple choice, guess only when you can remove two options."
+  }
+ ]
+}

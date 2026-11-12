@@ -1,0 +1,83 @@
+{
+ "out": "/tmp/shorts/S1_xe_vs_me.mp4",
+ "welcome": false,
+ "series": "GATE 2027 Tips",
+ "footer": "web.digcareerthrust.com/gate-xe",
+ "end_voice": "If X. E. is right for you, pick your two sections on our website. There is one course for every pair. Visit web dot D. I. G. career thrust dot com, slash gate X. E.",
+ "end_cta": "Pick your 2 XE sections",
+ "end_url": "web.digcareerthrust.com/gate-xe",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "GATE ME",
+    "OR GATE XE?"
+   ],
+   "sub": "Mechanical student? Know this first",
+   "voice": "Mechanical student, confused between GATE M. E. and GATE X. E.? Here is the difference, in under a minute."
+  },
+  {
+   "kind": "table",
+   "title": "GATE ME Paper",
+   "rows": [
+    [
+     "Core Mechanical",
+     "72"
+    ],
+    [
+     "Engineering Maths",
+     "13"
+    ],
+    [
+     "General Aptitude",
+     "15"
+    ]
+   ],
+   "note": "100 marks  •  full Mechanical syllabus",
+   "voice": "In GATE M. E., the whole Mechanical syllabus comes. Seventy two marks of core subjects, thirteen of Engineering Maths, and fifteen of General Aptitude."
+  },
+  {
+   "kind": "table",
+   "title": "GATE XE Paper",
+   "rows": [
+    [
+     "Section 1 (your choice)",
+     "35"
+    ],
+    [
+     "Section 2 (your choice)",
+     "35"
+    ],
+    [
+     "Engineering Maths",
+     "15"
+    ],
+    [
+     "General Aptitude",
+     "15"
+    ]
+   ],
+   "note": "Example: Fluid Mechanics + Thermodynamics",
+   "voice": "In GATE X. E., you choose only two sections, for example Fluid Mechanics and Thermodynamics. Each is thirty five marks. Engineering Maths is fifteen, and General Aptitude fifteen."
+  },
+  {
+   "kind": "card",
+   "title": "The Difference",
+   "lines": [
+    "ME: every Mechanical subject",
+    "XE: 2 sections, in more depth"
+   ],
+   "voice": "So X. E. means fewer subjects, but in more depth."
+  },
+  {
+   "kind": "steps",
+   "title": "Check Before You Choose",
+   "steps": [
+    "Paper your M.Tech accepts",
+    "Paper your PSU asks for",
+    "Read the notification"
+   ],
+   "voice": "Before you choose, check two things. Which paper your target M. Tech programme accepts, and which paper your P. S. U. asks for. Many P. S. U. notifications ask for your own branch paper."
+  }
+ ]
+}
