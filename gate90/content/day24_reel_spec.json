@@ -1,0 +1,90 @@
+{
+ "out": "Day24_reel.mp4",
+ "footer": "Day 24/90  •  84 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 24/90",
+    "WEEK 4 TEST"
+   ],
+   "sub": "Gyroscopes to Goodman: one test tonight",
+   "voice": "Day twenty four of the GATE M. E. ninety days challenge, eighty four days to go! Week four is done. Tonight's test shows which formulas you really own."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Weekly Revision",
+    "Week 4: all five topics"
+   ],
+   "voice": "No new chapter today. It is week four revision: governors and gyroscope, free and forced vibration, quantitative aptitude, and fatigue design, in one test."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Governors & gyroscope",
+    "Free & forced vibration",
+    "Quantitative aptitude",
+    "Static & fatigue design"
+   ],
+   "voice": "Revise governors, balancing and the gyroscopic couple, damping and transmissibility, percentages and time and work, then Goodman and Soderberg. Redo every question you missed."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "fn = 15.76 / √d  Hz",
+    "d = static deflection in mm",
+    "Same rule: shaft critical speed"
+   ],
+   "voice": "Quick tip. Natural frequency in hertz is fifteen point seven six over root of static deflection in millimetres. The same rule gives a shaft's critical speed."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Weekly test (₹1)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Get the free practice PDF on Telegram now. Weekly test: seven to nine P. M. Take it through our Telegram channel link, or visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 23 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Rahul Yadav",
+     "marks": "23.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Atharva Vyas",
+     "marks": "21.33/30"
+    },
+    {
+     "rank": 3,
+     "name": "Sweta Rani Sahoo",
+     "marks": "7.34/30"
+    }
+   ],
+   "voice": "Day twenty three toppers! Rahul Yadav takes rank one on the fatigue design test, Atharva Vyas rank two, and Sweta Rani Sahoo rank three. Congratulations to all three!"
+  }
+ ]
+}
