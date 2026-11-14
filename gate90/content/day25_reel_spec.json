@@ -1,0 +1,90 @@
+{
+ "out": "Day25_reel.mp4",
+ "footer": "Day 25/90  •  82 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 25/90",
+    "JOINTS"
+   ],
+   "sub": "Bolts, rivets and welds: week five begins",
+   "voice": "Day twenty five of the GATE M. E. ninety days challenge, eighty two days to go! Week five opens with machine design: bolted, riveted and welded joints."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Machine Design",
+    "Bolted, Riveted & Welded Joints"
+   ],
+   "voice": "Today's subject is machine design. Our topic: joints. How bolts, rivets and welds carry load, and where each one fails first."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Bolt preload & stiffness",
+    "Riveted joint efficiency",
+    "Fillet & butt welds",
+    "Eccentric loading"
+   ],
+   "voice": "Cover bolt preload and joint stiffness, the tearing, shearing and crushing efficiency of riveted joints, fillet and butt welds, and eccentrically loaded joints."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Fillet weld throat = 0.707 s",
+    "P = 0.707 s l × shear stress",
+    "s = leg size, l = weld length"
+   ],
+   "voice": "Quick tip. A fillet weld fails across its throat: zero point seven zero seven times the leg size. Load equals point seven zero seven, times leg, times length, times shear stress."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "The free practice PDF is on Telegram now. Test tonight, seven to nine P. M. Take it through our Telegram channel link, or simply visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 24 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Atharva Vyas",
+     "marks": "20.34/30"
+    },
+    {
+     "rank": 2,
+     "name": "Kunal",
+     "marks": "7.01/30"
+    },
+    {
+     "rank": 3,
+     "name": "Marndi",
+     "marks": "3/30"
+    }
+   ],
+   "voice": "Week four test toppers! Atharva Vyas takes rank one, Kunal rank two, and Marndi rank three. Well done, all three. Keep that momentum going!"
+  }
+ ]
+}
