@@ -1,0 +1,26 @@
+{
+ "out": "Day26_reel.mp4",
+ "footer": "Day 26/90  •  81 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 26/90", "MACHINE ELEMENTS"],
+   "sub": "Shafts, bearings, brakes & clutches",
+   "voice": "Day twenty six of the GATE M. E. ninety days challenge, and eighty one days to go. Today we look inside the machine: shafts, bearings, brakes and clutches."},
+  {"kind": "card", "title": "Today's Topic",
+   "lines": ["Machine Design", "Machine Elements"],
+   "voice": "Subject, machine design. Topic, machine elements. These parts bring easy, formula based marks in GATE every single year."},
+  {"kind": "steps", "title": "Cover Today",
+   "steps": ["Shafts: bending + torsion", "Gears & bearings", "Brakes & clutches", "Springs"],
+   "voice": "Cover shafts under combined bending and torsion, gears and rolling and sliding contact bearings, brakes and clutches, and springs."},
+  {"kind": "card", "title": "Quick Tip",
+   "lines": ["Bearing life L10 = (C/P)^k", "k = 3 for ball bearings", "k = 10/3 for roller bearings"],
+   "voice": "Quick tip. Rated bearing life, in million revolutions, is C over P raised to k. Use k equals three for ball bearings and ten by three for roller bearings."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Take test", "Telegram link / website"], ["Toppers", "Next reel"]],
+   "voice": "The free practice PDF is on Telegram now. Test tonight, seven to nine P. M. Take it through the link in our Telegram channel, or simply visit our website, on mobile or laptop."},
+  {"kind": "toppers", "title": "Day 25 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "14.66/30"},
+               {"rank": 2, "name": "Rahul Yadav", "marks": "11.01/30"},
+               {"rank": 3, "name": "Kunal", "marks": "0.67/30"}],
+   "voice": "Joints test toppers! Sweta Rani Sahoo takes rank one, Rahul Yadav rank two, and Kunal rank three. Congratulations to all three!"}
+ ]
+}
