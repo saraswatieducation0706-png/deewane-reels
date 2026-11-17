@@ -1,0 +1,90 @@
+{
+ "out": "Day27_reel.mp4",
+ "footer": "Day 27/90  •  80 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 27/90",
+    "VECTOR CALCULUS"
+   ],
+   "sub": "Grad, div, curl & the big three theorems",
+   "voice": "Day twenty seven of the GATE M. E. ninety days challenge, with eighty days left. Today, vector calculus: short questions, quick marks, if you know the identities."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Engineering Mathematics",
+    "Vector Calculus"
+   ],
+   "voice": "Subject, engineering mathematics. Topic, vector calculus. It also powers fluid mechanics and heat transfer, which start right after this."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Gradient, divergence, curl",
+    "Directional derivatives",
+    "Line/surface/volume integrals",
+    "Gauss, Stokes & Green"
+   ],
+   "voice": "Cover gradient, divergence and curl, directional derivatives, line, surface and volume integrals, and the theorems of Gauss, Stokes and Green."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "curl (grad f) = 0",
+    "div (curl F) = 0",
+    "Max rate of change = |grad f|"
+   ],
+   "voice": "Quick tip. The curl of any gradient is zero, and the divergence of any curl is zero. The maximum directional derivative equals the magnitude of the gradient."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Practice PDF on Telegram now. Test, seven to nine P. M.: take it via the link in our Telegram channel, or simply visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 26 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Rahul Yadav",
+     "marks": "19.34/30"
+    },
+    {
+     "rank": 2,
+     "name": "Marndi",
+     "marks": "6.34/30"
+    },
+    {
+     "rank": 3,
+     "name": "Kunal",
+     "marks": "3.34/30"
+    }
+   ],
+   "voice": "Machine elements test toppers! Rahul Yadav takes rank one with a big score, Marndi rank two, and Kunal rank three. Congratulations to all three!"
+  }
+ ]
+}
