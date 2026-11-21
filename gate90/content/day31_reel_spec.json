@@ -1,0 +1,51 @@
+{
+ "out": "Day31_reel.mp4",
+ "footer": "Day 31/90  •  75 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": ["DAY 31/90", "FLUID MECHANICS"],
+   "sub": "Momentum, flow meters & dimensional analysis",
+   "voice": "Day thirty one of the GATE M. E. ninety days challenge. Seventy five days to go. A new week starts with momentum, flow measurement and dimensional analysis."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": ["Fluid Mechanics", "Momentum, Flow Measurement", "& Dimensional Analysis"],
+   "voice": "Subject, fluid mechanics. Today's topic links Bernoulli from last week to real devices: forces from jets, flow meters, and model testing."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": ["Momentum & energy equations", "Venturi & orifice meters", "Pitot tube velocity", "Dimensional analysis"],
+   "voice": "Cover the momentum and energy equations, venturi and orifice meters, the pitot tube, and dimensional analysis with Buckingham's pi theorem."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": ["Pi terms = n − m", "Venturi Cd ≈ 0.98, orifice ≈ 0.62", "Pitot: V = √(2gh), h = head"],
+   "voice": "Quick tip. Number of pi terms equals variables minus fundamental dimensions. A venturi's discharge coefficient is near zero point nine eight, an orifice's only about zero point six two."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    ["Practice PDF", "Telegram, now"],
+    ["Test (₹1 course)", "7 to 9 PM"],
+    ["Take test", "Telegram link / website"],
+    ["Toppers", "Next reel"]
+   ],
+   "voice": "Grab the practice PDF on Telegram now. Test from seven to nine P. M.: use the link in our Telegram channel, or simply visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 30 Toppers",
+   "entries": [
+    {"rank": 1, "name": "Sweta Rani Sahoo", "marks": "28/30"},
+    {"rank": 2, "name": "Rajeev Kumar", "marks": "7.01/30"},
+    {"rank": 3, "name": "Lokesh Gautam", "marks": "6.01/30"}
+   ],
+   "voice": "Week five revision toppers! Sweta Rani Sahoo tops with twenty eight out of thirty, Rajeev Kumar is second, and Lokesh Gautam third. Congratulations!"
+  }
+ ]
+}
