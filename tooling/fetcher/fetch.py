@@ -17,8 +17,11 @@ H = {"User-Agent": UA, "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8"}
 MAXC = 400_000
 
 def to_md(html, base):
-    h = html2text.HTML2Text(baseurl=base); h.body_width = 0; h.ignore_images = True
-    h.ignore_emphasis = True; h.protect_links = True
+    # make every link absolute first, so the run can follow "official website" / PDF links
+    html = re.sub(r'(href|src)\s*=\s*(["\'])(.*?)\2',
+                  lambda m: f'{m.group(1)}="{urllib.parse.urljoin(base, m.group(3).strip())}"', html, flags=re.I | re.S)
+    html = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", " ", html, flags=re.I | re.S)
+    h = html2text.HTML2Text(); h.body_width = 0; h.ignore_images = True; h.ignore_emphasis = True
     return h.handle(html)
 
 def fetch(url):
@@ -34,16 +37,30 @@ def fetch(url):
     r.encoding = r.encoding or r.apparent_encoding
     return r.status_code, "html", f"URL: {r.url}\n\n" + to_md(r.text, r.url)
 
+def _clean(s):
+    import html as _h
+    return _h.unescape(re.sub(r"<[^>]+>", "", s)).strip()
+
 def search(q):
-    r = requests.post("https://html.duckduckgo.com/html/", data={"q": q, "kl": "in-en"}, headers=H, timeout=30)
-    out = []
-    for m in re.finditer(r'class="result__a" href="([^"]+)"[^>]*>(.*?)</a>.*?class="result__snippet"[^>]*>(.*?)</a>', r.text, re.S):
-        href = m.group(1)
-        qs = urllib.parse.parse_qs(urllib.parse.urlparse(href).query)
-        href = qs.get("uddg", [href])[0]
-        clean = lambda s: re.sub(r"<[^>]+>", "", s).replace("&amp;", "&").replace("&#x27;", "'").strip()
-        out.append(f"- {clean(m.group(2))}\n  {href}\n  {clean(m.group(3))}")
-    return r.status_code, "search", f"SEARCH: {q}\n\n" + "\n".join(out)
+    """Bing web search (first ~20 results: title, link, snippet)."""
+    out, st = [], 0
+    for first in (1, 11):
+        r = requests.get("https://www.bing.com/search", params={"q": q, "first": first, "setlang": "en-IN", "cc": "IN"},
+                         headers=H, timeout=30)
+        st = r.status_code
+        for blk in re.findall(r'<li class="b_algo".*?</li>', r.text, re.S):
+            a = re.search(r'<h2[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', blk, re.S)
+            p = re.search(r"<p[^>]*>(.*?)</p>", blk, re.S)
+            if a:
+                href = a.group(1)
+                if "bing.com/ck/a" in href:   # decode Bing redirect links
+                    u = urllib.parse.parse_qs(urllib.parse.urlparse(_clean(href)).query).get("u", [""])[0]
+                    if u.startswith("a1"):
+                        import base64
+                        try: href = base64.urlsafe_b64decode(u[2:] + "==").decode()
+                        except Exception: pass
+                out.append(f"- {_clean(a.group(2))}\n  {_clean(href)}\n  {_clean(p.group(1)) if p else ''}")
+    return st, "search", f"SEARCH: {q}\n\n" + "\n".join(out)
 
 def main(req):
     name = os.path.splitext(os.path.basename(req))[0]
