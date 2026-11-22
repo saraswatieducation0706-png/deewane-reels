@@ -1,0 +1,39 @@
+name: web-fetch
+on:
+  push:
+    branches: [main]
+    paths: ["fetch/requests/**"]
+permissions:
+  contents: write
+concurrency:
+  group: web-fetch
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Install tools
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y poppler-utils >/dev/null
+          pip install -q requests html2text
+      - name: Fetch new requests
+        run: |
+          shopt -s nullglob
+          todo=()
+          for f in fetch/requests/*.txt; do
+            n=$(basename "$f" .txt)
+            [ -f "fetch/results/$n/DONE" ] || todo+=("$f")
+          done
+          echo "Requests: ${todo[*]}"
+          [ ${#todo[@]} -eq 0 ] && exit 0
+          python3 tooling/fetcher/fetch.py "${todo[@]}"
+          # housekeeping: drop requests/results older than 3 days
+          find fetch/requests -name '*.txt' -mtime +3 -delete || true
+          git config user.name "Deewane Fetch Bot"; git config user.email "bot@digcareerthrust.com"
+          git add -A fetch
+          git commit -qm "fetch results: ${todo[*]}" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
