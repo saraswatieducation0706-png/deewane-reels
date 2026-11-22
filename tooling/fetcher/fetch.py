@@ -4,6 +4,7 @@
 A request file fetch/requests/<name>.txt holds one item per line:
   https://...            fetch the page (HTML -> Markdown text with links, PDF -> text)
   raw: https://...       save the raw response (HTML/CSS source)
+  file: https://...      save the bytes as NNN.<ext> (scanned PDFs, images; max 25 MB)
   search: <query>        Bing web search - UNRELIABLE from GitHub (bot pages); do not rely on it
   # comment              ignored
 Results go to fetch/results/<name>/: 001.md, 002.md ... and index.json
@@ -74,6 +75,12 @@ def main(req):
             try:
                 if it.lower().startswith("search:"):
                     st, ty, txt = search(it[7:].strip())
+                elif it.lower().startswith("file:"):   # binary download (scanned PDFs, images), max 25 MB
+                    u = it[5:].strip(); r = requests.get(u, headers=H, timeout=60)
+                    ext = os.path.splitext(u.split("?")[0])[1][:6] or ".bin"
+                    fb = f"{n:03d}{ext}"; data = r.content[:25_000_000]
+                    open(os.path.join(outd, fb), "wb").write(data)
+                    rec.update(ok=200 <= r.status_code < 400, status=r.status_code, type="file", chars=len(data), file=fb); break
                 elif it.lower().startswith("raw:"):
                     r = requests.get(it[4:].strip(), headers=H, timeout=45); st, ty, txt = r.status_code, "raw", r.text
                 else:

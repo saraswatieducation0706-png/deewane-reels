@@ -65,7 +65,7 @@ Order (skip a scene only when the notification truly has nothing for it):
 Length: as long as the content needs, 45 seconds to 3 minutes. Do not pad thin notifications; do not cut
 mandatory fields to save time.
 
-**Emotional line** (spoken right after the fixed welcome, as the start of the hook voice): one sentence that
+**Emotional line** (part of the hook voice — in 16:9 videos it comes AFTER the key number, never before it): one sentence that
 speaks to a 21–35-year-old job seeker and fits THIS notification — e.g. secure PSU career with a big salary,
 a chance for freshers without experience, a bank job in your own state, a last-date reminder. Vary it every
 reel. No false promises ("guaranteed selection"), no fear-mongering.

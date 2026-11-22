@@ -39,7 +39,7 @@ Voice-text rules (ElevenLabs reads exactly what is written):
 ## 16:9 job videos — `render_job_landscape.py` (from 27 Oct 2026)
 
 Same spec file and the same scene kinds (`hook`, `card`, `count`, `table`, `pattern`, `steps`, `dates`), rendered
-at 1920x1080 with the landscape welcome and a website/QR + "Subscribe" end scene. Differences and additions:
+at 1920x1080, starting straight with the hook (no welcome scene since 23 Nov 2026) and ending with a website/QR + "Subscribe" end scene. Differences and additions:
 - Any scene may carry `"chapter": "<label>"` → YouTube chapters in `<out>.chapters.txt` ("0:00 Intro" is added;
   chapters under 10 s are merged; fewer than 3 → none). Also returned in the script's JSON output.
 - `hook`: `title` 1–2 lines (≤ 22 chars each; line 2 is gold), `sub` ≤ 60 chars.
@@ -57,5 +57,5 @@ Render time ≈ 1x real time (a 4-minute video takes ~4 minutes).
 ## 9:16 teaser — `render_reel.py` with `"teaser": true`
 
 Spec as for a reel plus `"teaser": true`: no welcome scene; the renderer appends a 6 s end card "Full details
-video on our YouTube channel — Deewane: IES & GATE Point". Use `hook` + 1–2 `card` scenes; keep the total at
+video on our YouTube channel — DIG Career Thrust". Use `hook` + 1–2 `card` scenes; keep the total at
 30–45 s (check the `duration_s` the script prints).

@@ -1,16 +1,38 @@
 # Finding and verifying notifications
 
-## 0. Unattended runs: no permission prompts (Naveen, 9 Nov 2026)
+## 0. Reading websites: ONLY through the GitHub fetcher (Naveen, 23 Nov 2026 — replaces the 9 Nov rule)
 
-The daily run must finish end to end with nobody at the computer.
-- Read websites ONLY with `WebSearch` and `WebFetch`. NEVER use the built-in browser, Claude in Chrome,
-  computer use or any `mcp__remote-devices__*` / `mcp__Claude_Browser__*` / `mcp__claude-in-chrome__*` tool
-  in this run, even if those tools are present and even if a site will not open with WebFetch.
-- At the very start of the run, pre-approve the two web tools for this session (the run's container is new every day):
-  `mkdir -p ~/.claude && python3 -c "import json,os;p=os.path.expanduser('~/.claude/settings.json');d=json.load(open(p)) if os.path.exists(p) else {};a=d.setdefault('permissions',{}).setdefault('allow',[]);[a.append(x) for x in ['WebFetch','WebSearch'] if x not in a];json.dump(d,open(p,'w'),indent=1)"`
-- If any tool call would need Naveen's approval, or a site refuses / times out: do NOT wait and do NOT ask.
-  Skip that page and continue — for an official site this is the "official site refuses access" row of §4
-  (proceed with 2 lead sites); for a lead site, use the other lead sites. List skipped sites in SUMMARY.md.
+Scheduled runs start in a fresh cloud container every day, so "Always allow" never carries over and every
+`WebFetch` / `WebSearch` call to a new site can stop the run waiting for Naveen. The shell cannot reach job sites
+either (proxy 403). So in this skill:
+
+- **NEVER call `WebFetch` or `WebSearch`** (not even once, not even for an official PDF), and NEVER use the
+  built-in browser, Claude in Chrome, computer use or any `mcp__remote-devices__*` / `mcp__Claude_Browser__*` /
+  `mcp__claude-in-chrome__*` tool. Do not request folder or site access. Do not edit ~/.claude/settings.json.
+- Read every web page and PDF with the repo's fetcher, which runs on GitHub Actions (push-triggered, no
+  permissions needed, ~60–90 s per batch):
+
+  ```bash
+  cd ~/deewane-reels
+  python3 tooling/scripts/gh_fetch.py leads https://www.freejobalert.com/latest-notifications/ https://www.indgovtjobs.in/ ...
+  # or many URLs from a file (one per line):
+  python3 tooling/scripts/gh_fetch.py official --file /tmp/urls.txt
+  ```
+  It prints the results folder (`fetch/results/<label>_<time>/`) and a table (n, ok, status, type, chars, file).
+  Each page is `NNN.md`: HTML → Markdown with absolute links; PDF → `pdftotext -layout` text (a note says when
+  the PDF is scanned). Put `raw: <url>` on a line to save the raw source instead.
+- **Batch**: send ALL lead-site URLs in one call, then all official pages / PDFs of the day's candidates in one
+  or two more calls (up to ~40 URLs per call). Don't fetch one URL at a time.
+- Read the result files with `grep -n` / `sed -n` / Python (they are long — freejobalert pages are 600K+ chars);
+  never `cat` a whole file. Follow links found in a page by putting them in the next batch.
+- A page with `ok: false`, an error, a timeout or almost no text (JS-rendered sites such as ssc.gov.in give
+  ~30 chars) = "site refuses access": do not retry more than once; official site → §4 "official site refuses
+  access" row (2 lead sites); lead site → use the other lead sites. List skipped sites in SUMMARY.md.
+- Scanned PDF (the text file says so): fetch it again as `file: <pdf url>` — you get the PDF itself
+  (`NNN.pdf`); rasterise the pages (`pdftoppm -r 110 -png`) and read them with the Read tool.
+- The fetcher deletes request files older than 3 days by itself. Commit nothing else into `fetch/`.
+- If `gh_fetch.py` itself fails (push rejected 6 times, no result after 15 min): stop finding new jobs, book
+  nothing new, and say so at the top of SUMMARY.md and in the final message (don't fall back to WebFetch).
 
 ## 1. Daily lead sites (checked every run — leads only)
 
@@ -36,20 +58,13 @@ All checked working on 7 Oct 2026.
 
 Don't use (tested 7 Oct 2026): sarkariresult.com (403), jagranjosh.com (blocked), employmentnews.gov.in,
 careerpower.in, recruitment.guru (stale), adda247.com/jobs, testbook.com (no lists).
-Pages are long — ask WebFetch only for entries posted in the lookback window with org, post, qualification,
-vacancies, last date and the link. If a site fails, note it in SUMMARY.md and continue.
+Pages are long — grep the fetched Markdown for entries posted in the lookback window (org, post, qualification,
+vacancies, last date and the link). If a site fails, note it in SUMMARY.md and continue.
 
-## 1a. YouTube leads (extra lead source, added 7 Oct 2026)
+## 1a. YouTube leads — dropped (23 Nov 2026)
 
-Run 1–2 `WebSearch` queries with `allowed_domains: ["youtube.com"]`, e.g. "new government job notification
-<month year> freshers", "<today's date> govt job notification". Use only the video **titles** returned by search
-as leads (org + post). For each title lead: collect the details (post, vacancies, qualification, age, last date)
-from the lead job sites in §1, add it to candidates.json, then dedup, filter, verify on the official site and make
-the reel exactly as for any other lead (Naveen confirmed this process, 7 Oct 2026). Also try a search for vacancy
-names in titles you didn't recognise from the lead sites — those are the most useful extra leads.
-Limitations (tested 7 Oct 2026): YouTube's AI video summary needs a signed-in YouTube app and is not reachable
-from this environment, and youtube.com watch pages are rate-limited/refused for WebFetch — so never take facts
-from YouTube, and don't retry a refused YouTube fetch.
+They needed `WebSearch`, which can stop an unattended run, and search engines return junk to the fetcher. Use
+the lead sites in §1 and the official sites in §2–3 only.
 
 ## 2. Official sites — central (direct check for fresh notices + verification)
 
@@ -87,7 +102,7 @@ For every candidate, try the official website (page text, or the full PDF advert
 
 - Text on the page → read the page text. PDF available → read the PDF (prefer the full detailed
   advertisement over a short one).
-- `WebFetch` the PDF URL; for long PDFs ask for one group of facts at a time (eligibility & vacancies; age &
-  pay; selection & exam pattern; dates & fee).
-- Scanned PDF without text → rasterise and read the pages.
+- Fetch the PDF URL with `gh_fetch.py` (it returns the text with layout); grep it for each group of facts
+  (eligibility & vacancies; age & pay; selection & exam pattern; dates & fee).
+- Scanned PDF without text → fetch it as `file: <url>`, rasterise and read the pages (§0).
 Record `official_url`, `pdf_url`, advertisement number, and where each fact was found.

@@ -32,7 +32,10 @@ Same spec format and scene kinds as the reel (`scene_kinds.md`), rendered at 192
 scene that starts each section (YouTube chapters are written to `<out>.chapters.txt`; put them in the
 description). Script order for one notification (skip a scene only when the notification has nothing for it):
 
-1. `hook` (no chapter) — emotional line + the news. 2 title lines ≤ 22 chars each, `sub` ≤ 60 chars.
+1. `hook` (no chapter) — the FIRST thing viewers see and hear (no greeting before it — §8). Voice ≤ 25 words:
+   org + post + the strongest true number (vacancies or salary) + who can apply, then one line saying what the
+   video covers ("eligibility, salary, selection और apply कैसे करें — सब इस video में"). 2 title lines ≤ 22
+   chars each, `sub` ≤ 60 chars.
 2. `card` "Overview" — organisation, post(s), job type, location, advt no.
 3. `count` / `table` "Vacancies" — total + post/branch-wise (`count` can take `notes` [≤3] for pay/job type).
 4. `table` / `card` "Eligibility" — degree & discipline, minimum %, final-year yes/no, age (with cut-off date),
@@ -63,7 +66,7 @@ Each scene's voice ≤ ~40 words, one idea per scene. Cards up to 5 lines (≤ 4
 ## 3. The 9:16 teaser (`render_reel.py` with `"teaser": true`)
 
 30–45 seconds for Instagram + Facebook. No welcome scene; the renderer adds a 6-second end card
-"Full details video on our YouTube channel — Deewane: IES & GATE Point".
+"Full details video on our YouTube channel — DIG Career Thrust".
 - Scenes: `hook` (≤ 25 words of voice) + 1–2 `card`s with the key facts (posts, pay, eligibility, LAST DATE).
 - Total voice ~70–100 words. Check the rendered duration is 30–45 s; adjust the text if not.
 - Roundup teaser: hook "<N> apprentice & contract jobs this week" + one card listing the 4 biggest
@@ -82,8 +85,11 @@ Per video (permanent video, urgent apprentice/contract video, roundup):
    organisation / exam / post (fall back to the seed). Keep 5–8 relevant related keywords for tags.
 2. `vidiq_generate_titles` (type long, regionCode IN, language en, numTitles 5) with a draft title and a
    3-line description.
-3. Final title (≤ 100 chars, no #Shorts): primary keyword near the start + the strongest HONEST hook from
-   step 2. Every number must be true; no false urgency ("before it's too late", "last chance" unless the last
+3. Final title (≤ 100 chars, no #Shorts): primary keyword at the very start, then "Notification Out" (when it
+   is new) and the strongest TRUE numbers searchers look for — salary, vacancies, who can apply, last date — e.g.
+   "SIDBI Grade A Notification 2026 Out | Salary ₹1.45 Lakh | 76 Posts | Eligibility & Apply Online"
+   (pattern of the top-ranking videos, checked 23 Nov 2026). Hinglish words people search are fine
+   ("Form Kaise Bhare", "Vacancy 2026"). Every number must be true; no false urgency ("before it's too late", "last chance" unless the last
    date really is within 3 days), no "guaranteed", nothing YOUTUBE_RULES forbids.
 4. `vidiq_score_title` (type long, channelId UCw3eyA3edUq3AJkh8HFLD2Q). If < 70, write one better variant,
    score it, keep the higher. (Skip this step when over the daily budget.)
@@ -120,8 +126,8 @@ Record the primary keyword, the vidIQ title scores and credits used in metadata.
 #<3–5 hashtags>
 ## Tags
 ## Teaser caption (Instagram + Facebook)
-<1–2 line hook + key facts (emoji bullets) + "▶️ Full details video on YouTube: Deewane: IES & GATE Point
-(@deewaneiesgate)" + official website + the 2 DIG links (Telegram, Website; no app) + 10–15 hashtags; < 2,000 chars>
+<1–2 line hook + key facts (emoji bullets) + "▶️ Full details video on YouTube: DIG Career Thrust
+(@digcareerthrust)" + official website + the 2 DIG links (Telegram, Website; no app) + 10–15 hashtags; < 2,000 chars>
 ## Posting slot
 ```
 No "unverified" / "could not verify" wording anywhere (title, description, caption, video).
@@ -131,3 +137,43 @@ No "unverified" / "could not verify" wording anywhere (title, description, capti
 Per video in the day's folder: `<NN>_video.mp4` (16:9), `<NN>_thumb.jpg` (1280x720), `<NN>_teaser.mp4` (9:16),
 `<NN>_cover.jpg` (1080x1920). Upload all four to GitHub, check each raw URL = 200, then book TWO Metricool
 posts at the same slot — see `posting.md` §3.
+
+## 7. Look, voice and playlists (Naveen, 23 Nov 2026)
+
+- **Theme**: everything follows the website https://web.digcareerthrust.com — `tooling/scripts/theme.py`
+  (indigo #4F46E5 → violet #7C3AED gradient with coral/cyan glows, white cards, coral #F2626B accent, Manrope
+  font, channel name "DIG Career Thrust", @digcareerthrust). The renderers and `thumbnail.py` already use it; never
+  hard-code the old red colours or the old channel name.
+- **Voice**: Hindi + English mix (Hinglish) in a young, energetic Indian male voice that rises and falls with
+  the content — ElevenLabs model `config.job_tts_model` (eleven_v3) with voice `config.job_voice_id`. Write every
+  `voice` line like this:
+  - Devanagari Hindi for the talking, English (Latin script) for terms people know in English: post names,
+    "eligibility", "last date", "apply online", "salary", "exam pattern", "B.Tech", "GATE score".
+  - Start each scene with ONE tone tag: `hook` → `[excited]`; overview / vacancies → `[confident]`;
+    eligibility / age / fee / steps → `[calm]`; salary → `[excited]`; last date / warnings → `[serious]`;
+    the final "apply only on the official site" card → `[warmly]`. Use `[pause]` before the key number at most
+    once per scene. No other tags.
+  - Numbers as people say them: "बयालीस हज़ार", "सत्तर पोस्ट्स", "पंद्रह दिसंबर"; amounts "एक लाख पैंतालीस हज़ार
+    रुपये". Acronyms spaced with capitals: "S I D B I", "B H E L", "G A T E".
+  - Short sentences (≤ 15 words), conversational ("दोस्तों", "ध्यान दीजिए", "सबसे ज़रूरी बात") but no filler.
+  - On-screen text stays English (cards, tables, titles) — only the voice is Hinglish.
+- **Playlists**: every job video goes into a playlist — permanent → "Job Notifications"
+  (PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE); apprentice / contract (incl. urgent ones) and the Sunday roundup →
+  "Apprentice & Contract Govt Jobs" (PLclE7tdz8arc). Metricool can't do this, so after booking add one line per
+  video to `tooling/playlist_queue.json` (posting.md §6); the nightly posting check adds the published video.
+- **Monetization**: Metricool and the YouTube API cannot switch ads on. The channel's Studio "Upload defaults →
+  Monetization" setting (ads On) covers new uploads. Nothing to do in the run; never write "monetized" anywhere.
+
+## 8. What the analytics say (27 Oct – 22 Nov 2026) and the rules that follow
+
+- ~65% of job-video views come from subscribers/notifications and they watch only ~15% (≈30 s); viewers lose
+  ~48% in the first 10% of the video, worse than most similar videos. → No greeting before the hook (the
+  16:9 renderer no longer adds the welcome scene); the hook names the number in the first 5 seconds; 2–4 min
+  total, cut anything that repeats.
+- Search gave only ~25 views per video, while big channels posting the same notification within hours get
+  20–100K. → Speed and fit matter more than volume: prefer notifications that fit our engineering audience
+  (PSU / GET / MT / AE / JE / technical officer posts, engineering services, GATE-based hiring) and post them the
+  same day; skip small notifications that keyword research shows nobody searches (vidIQ volume < 500 and not
+  engineering-related) when there are better ones for the slot.
+- External views (Telegram/website) watch the longest (≈39%). → Keep the Telegram post automatic and the
+  playlists filled so viewers find the next video.

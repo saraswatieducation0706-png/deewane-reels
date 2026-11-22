@@ -7,7 +7,7 @@ Same spec format and voice pipeline as render_reel.py (see references/scene_kind
   * scene kinds `job` and `index` for the Sunday apprentice/contract roundup,
   * optional "chapter": "<label>" on any scene -> YouTube chapters written to <out>.chapters.txt
     (first chapter "Intro" at 0:00 is automatic; chapters shorter than 10 s are merged).
-The WELCOME scene and the website/QR END scene are added automatically.
+The website/QR END scene is added automatically (no WELCOME scene unless the spec sets "welcome": true).
 Prints JSON: {"out", "duration_s", "scenes", "chapters": [...]}
 """
 import subprocess, os, sys, json, math, shutil
@@ -245,7 +245,9 @@ def main():
     spec_path = sys.argv[1]; use_api = "--no-tts" not in sys.argv
     spec = json.load(open(spec_path))
     assert spec["scenes"][0]["kind"] == "hook", "first spec scene must be the hook"
-    scenes = [dict(WELCOME)] + spec["scenes"] + [dict(END)]
+    # No greeting before the hook (Naveen, 23 Nov 2026: ~48% of viewers left in the first 10% of the video).
+    # The hook is the first thing heard; add "welcome": true to the spec only if a greeting is wanted.
+    scenes = ([dict(WELCOME)] if spec.get("welcome") else []) + spec["scenes"] + [dict(END)]
     out = spec["out"]; work = out + ".work"; os.makedirs(work, exist_ok=True)
     cache = os.path.join(os.path.dirname(os.path.abspath(out)), ".tts_cache"); os.makedirs(cache, exist_ok=True)
     gap = CFG.get("scene_gap_s", 0.4)

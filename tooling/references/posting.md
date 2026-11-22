@@ -100,6 +100,18 @@ When Naveen attached the notification PDF, don't use the slot queue: after uploa
 both posts of §3 (16:9 video on YouTube + teaser on Instagram & Facebook), whatever the job type. Then confirm with `getScheduledPosts`. If it fails twice, give Naveen the MP4, cover
 and metadata to post by hand.
 
+## 3b. Playlist queue (Naveen, 23 Nov 2026)
+
+After both posts of a job video are booked, append one entry per 16:9 video to `tooling/playlist_queue.json`
+(a JSON list) and commit + push it with the media:
+```json
+{"media": "<raw NN_video.mp4 url>", "title": "<YouTube title>", "slot": "YYYY-MM-DDTHH:MM+05:30",
+ "type": "permanent | apprentice | contract | roundup",
+ "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE (permanent) | PLclE7tdz8arc (apprentice, contract, roundup)",
+ "status": "pending"}
+```
+(write only the one playlist id that applies). PDF-mode videos too. The nightly check (§5 step 9) does the rest.
+
 ## 4. Verify
 
 Call `getScheduledPosts` for the posting window and confirm every job video appears at its slot twice: the
@@ -147,3 +159,19 @@ it was booked for (never move a 16:9 video to Instagram/Facebook or a teaser to 
    "Posting check: N reels re-booked for tomorrow (…list: reel → network → time). Reconnect: <network> (if any)."
    If everything was published, finish with one line "All reels posted on YouTube, Instagram and Facebook" and do not
    send a push.
+9. **Playlists** (Naveen, 23 Nov 2026). Read `tooling/playlist_queue.json`. For each entry with status
+   "pending" whose slot is in the past:
+   a. Find the YouTube video id: the YouTube provider's `publicUrl` of the post with that media URL in the
+      getScheduledPosts data (`watch?v=<id>` / `youtu.be/<id>` / `shorts/<id>`). If there is none, list the
+      channel's latest uploads with the Make YouTube helper (scenario 8073618, two-step pattern: scenarios_run
+      responsive=true with data {method, path, body, request_id}; then data store 226192 record with key =
+      request_id; delete the record after reading; NEVER touch keys starting "cb-"):
+      GET `/v3/playlistItems?part=snippet&playlistId=UUw3eyA3edUq3AJkh8HFLD2Q&maxResults=50` and match the title.
+   b. Skip if already in the playlist: GET `/v3/playlistItems?part=snippet&playlistId=<playlist>&videoId=<id>`
+      → items not empty → mark "done".
+   c. Add it: POST `/v3/playlistItems?part=snippet` body
+      `{"snippet":{"playlistId":"<playlist>","resourceId":{"kind":"youtube#video","videoId":"<id>"}}}` → 200 = done.
+   d. Set the entry's status to "done" (with "video_id"), or "failed: <error>" after 2 failed tries (add it to the
+      push as "Add to playlist by hand"). Entries still not published after 3 days → "skipped: not published".
+      Remove entries older than 14 days. Commit and push the file (git fetch + rebase first).
+   Nothing to do for GATE90 reels.
