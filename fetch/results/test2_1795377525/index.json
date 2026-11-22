@@ -1,0 +1,35 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/latest-notifications/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 616768,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.ongcindia.com/web/eng/career",
+  "ok": false,
+  "error": "ReadTimeout: HTTPSConnectionPool(host='www.ongcindia.com', port=443): Read timed out. (read timeout=45)"
+ },
+ {
+  "n": 3,
+  "url": "search: site:youtube.com government job notification November 2026",
+  "ok": true,
+  "status": 200,
+  "type": "search",
+  "chars": 5201,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "search: BEL recruitment 2026 notification pdf",
+  "ok": true,
+  "status": 200,
+  "type": "search",
+  "chars": 4935,
+  "file": "004.md"
+ }
+]
