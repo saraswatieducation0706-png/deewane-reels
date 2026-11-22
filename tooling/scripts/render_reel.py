@@ -16,12 +16,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 A = os.path.join(ROOT, "assets")
 CFG = json.load(open(os.path.join(ROOT, "config.json")))
 W, H, FPS = 1080, 1920, 30
-RED, DRED, WHITE, INK, SOFT = (237, 27, 36), (168, 10, 18), (255, 255, 255), (28, 28, 30), (255, 225, 226)
-CHANNEL = "Deewane: IES & GATE Point"
+import theme as T  # website theme (indigo/violet, coral accent, Manrope) - Naveen, 23 Nov 2026
+RED, DRED, WHITE, INK, SOFT = T.PRIMARY, T.VIOLET, T.WHITE, T.INK, T.SOFT   # names kept for the scene code
+CORAL, AMBER, MINT = T.CORAL, T.AMBER, T.MINT
+CHANNEL = T.CHANNEL
 _fc = {}
 def F(w, s):
     k = (w, int(s))
-    if k not in _fc: _fc[k] = ImageFont.truetype(os.path.join(A, f"Poppins-{w}.ttf"), int(s))
+    if k not in _fc: _fc[k] = ImageFont.truetype(os.path.join(A, f"{T.FONT}-{w}.ttf"), int(s))
     return _fc[k]
 
 WELCOME = dict(kind="welcome", voice="Hello Everyone, I hope your preparations for the exam are going well.",
@@ -29,7 +31,7 @@ WELCOME = dict(kind="welcome", voice="Hello Everyone, I hope your preparations f
 END = dict(kind="end", voice="For test series and study material, visit web dot D. I. G. career thrust dot com. "
            "Scan the codes to join our Telegram channel and visit our website. Follow for daily job updates!", min_dur=7.0)
 TEASER_END = dict(kind="teaser_end", voice="Watch the full video with every detail on our YouTube channel, "
-                  "Deewane I. E. S. and GATE Point. Follow us for daily government job updates!", min_dur=5.0)
+                  "D. I. G. Career Thrust. Follow us for daily government job updates!", min_dur=5.0)
 QRS = [("Telegram", "qr_telegram.jpeg"), ("Website", "qr_website.jpeg")]  # no mobile app any more (Naveen, 10 Nov 2026)
 
 # ---------------- TTS ----------------
@@ -107,8 +109,8 @@ def scene(s, t, d, lay):
         ctext(d, 670, "on our YouTube channel", F("SemiBold", 46), INK, p)
         p1 = ease((t - 0.7) / 0.4)
         d.rounded_rectangle([110, 780, W - 110, 900], 60, fill=RED + (int(255 * p1),))
-        ftext(d, 806, "Deewane: IES & GATE Point", "ExtraBold", 54, WHITE, p1, W - 300)
-        ctext(d, 960, "Search on YouTube  •  @deewaneiesgate", F("SemiBold", 40), INK, p1)
+        ftext(d, 806, T.CHANNEL, "ExtraBold", 54, WHITE, p1, W - 300)
+        ctext(d, 960, f"Search on YouTube  •  {T.HANDLE}", F("SemiBold", 40), INK, p1)
         p2 = ease((t - 1.3) / 0.4)
         d.rounded_rectangle([170, 1080, W - 170, 1190], 55, fill=INK + (int(255 * p2),))
         ctext(d, 1100, "FOLLOW for daily updates", F("Bold", 46), WHITE, p2)
@@ -208,7 +210,7 @@ def scene(s, t, d, lay):
             d.rectangle([110, y + hb - 36, W - 110, y + hb], fill=INK + (int(255 * p),))
             ftext(d, y + (hb - 52) / 2, lab.upper(), "Bold", 42 if n <= 2 else 36, WHITE, p, W - 300)
             vs = 96 if n <= 2 else (78 if n == 3 else 64)
-            ftext(d, y + hb + (bh - hb - vs * 1.3) / 2, val, "ExtraBold", vs, RED if j == n - 1 else INK, p, W - 300)
+            ftext(d, y + hb + (bh - hb - vs * 1.3) / 2, val, "ExtraBold", vs, CORAL if j == n - 1 else INK, p, W - 300)
     else:
         raise ValueError(f"unknown scene kind {k}")
 
@@ -243,38 +245,28 @@ def main():
         f"concat=n={len(scenes)}:v=0:a=1,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[out]"
     subprocess.run(["ffmpeg", "-y", "-v", "error", *ins, "-filter_complex", flt, "-map", "[out]", f"{work}/voice.wav"], check=True)
 
-    LOGO_R = Image.open(os.path.join(A, "logo_red.png")).convert("RGBA").resize((300, 280), Image.LANCZOS)
+    LOGO_R = Image.open(os.path.join(A, "logo_indigo.png")).convert("RGBA").resize((300, 280), Image.LANCZOS)
     logo_w = Image.open(os.path.join(A, "logo_white.png")).convert("RGBA").resize((120, 112), Image.LANCZOS)
     QR_IMGS = [Image.open(os.path.join(A, p)).convert("RGBA").resize((270, 270), Image.NEAREST) for _, p in QRS]
-    base = Image.new("RGB", (W, H)); bd = ImageDraw.Draw(base)
-    for y in range(H):
-        k = y / H
-        bd.line([(0, y), (W, y)], fill=tuple(int(RED[c] * (1 - k * 0.45) + DRED[c] * k * 0.45) for c in range(3)))
-    base = base.convert("RGBA")
     src = spec.get("source", "")
-    # wide striped background (stripes repeat every 220 px) - each frame is just a crop + header paste
-    grad = base.resize((W + 220, H))
-    wd = ImageDraw.Draw(stripes := Image.new("RGBA", (W + 220, H), (0, 0, 0, 0)))
-    for k in range(-5, 17):
-        x = k * 220
-        wd.polygon([(x, 0), (x + 70, 0), (x + 70 - 900, H), (x - 900, H)], fill=(255, 255, 255, 14))
-    grad.alpha_composite(stripes)
-    top = Image.new("RGBA", (W, 190), (0, 0, 0, 40)); top.alpha_composite(logo_w, (50, 50))
+    # website-style gradient with soft glows; slow drift = crop of a slightly taller image
+    grad = T.gradient_bg(W, H + 220)
+    top = T.header_band(W, 190); top.alpha_composite(logo_w, (50, 50))
     total = sum(s["dur"] for s in scenes)
 
     def background(tg):
-        off = int((tg * 40) % 220)
-        im = grad.crop((220 - off, 0, 220 - off + W, H))
+        off = int(110 + 110 * __import__("math").sin(tg / 9.0))
+        im = grad.crop((0, off, W, off + H))
         hdr_bg = im.crop((0, 0, W, 190)); hdr_bg.alpha_composite(top); im.paste(hdr_bg, (0, 0))
         d = ImageDraw.Draw(im)
         d.text((190, 62), CHANNEL, font=F("Bold", 46), fill=WHITE)
-        d.text((192, 120), "Daily Govt Job Updates", font=F("Medium", 30), fill=SOFT)
+        d.text((192, 120), T.TAGLINE, font=F("Medium", 30), fill=SOFT)
         if src:
             lab = (f"Verified from official source: {src}" if spec.get("verified", True)
                    else f"Official site: {src} — check notification before applying")
             f = fit(d, lab, "Medium", 30, W - 100, 20)
             d.text(((W - d.textlength(lab, font=f)) / 2, 1790), lab, font=f, fill=SOFT)
-        d.rectangle([0, H - 16, W, H], fill=DRED)
+        d.rectangle([0, H - 16, W, H], fill=T.NAVY)
         d.rectangle([0, H - 16, W * tg / total, H], fill=WHITE)
         return im
 

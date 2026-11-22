@@ -19,7 +19,9 @@ import render_reel as rr  # tts(), dur(), F(), colours, config, QR list
 A, CFG, F = rr.A, rr.CFG, rr.F
 W, H, FPS = 1920, 1080, 30
 RED, DRED, WHITE, INK, SOFT = rr.RED, rr.DRED, rr.WHITE, rr.INK, rr.SOFT
-GOLD = (255, 214, 0)
+import theme as T
+GOLD = T.AMBER
+CORAL = T.CORAL
 CHANNEL = rr.CHANNEL
 SETTLE = 4.2   # seconds after which every scene's entry animation is finished -> layer is cached
 
@@ -93,7 +95,7 @@ def scene(s, t, d, lay):
         ctext(d, 360, "Test Series  •  Study Material", F("SemiBold", 40), INK, p, cx=520)
         ctext(d, 430, "web.digcareerthrust.com", F("Bold", 44), INK, p, cx=520)
         pf = ease((t - 2.2) / 0.4)
-        d.rounded_rectangle([170, 600, 870, 700], 50, fill=al(RED, pf))
+        d.rounded_rectangle([170, 600, 870, 700], 50, fill=al(CORAL, pf))
         ctext(d, 622, "SUBSCRIBE & PRESS THE BELL", fit(d, "SUBSCRIBE & PRESS THE BELL", "ExtraBold", 44, 640), WHITE, pf, cx=520)
         ctext(d, 730, "Daily government job updates", F("SemiBold", 36), INK, pf, cx=520)
         for j, (lab, _) in enumerate(rr.QRS):
@@ -186,7 +188,7 @@ def scene(s, t, d, lay):
             lines, f = wrapfit(d, val, "ExtraBold", 76, bw - 50, 2, 30)
             th = len(lines) * f.size * 1.2
             for i, l in enumerate(lines):
-                ctext(d, y + 96 + (bh - 96 - th) / 2 + i * f.size * 1.2 + dy, l, f, RED if j == n - 1 else INK, p, cx=x + bw / 2)
+                ctext(d, y + 96 + (bh - 96 - th) / 2 + i * f.size * 1.2 + dy, l, f, CORAL if j == n - 1 else INK, p, cx=x + bw / 2)
     elif k == "job":  # roundup: one job per scene
         pl = ease((t - 0.3) / 0.45); dx = (1 - pl) * -300
         d.rounded_rectangle([120 + dx, 290, 820 + dx, 930], 40, fill=al(WHITE, pl))
@@ -214,7 +216,7 @@ def scene(s, t, d, lay):
         p = ease((t - 0.8 - 0.35 * len(rows)) / 0.4)
         if s.get("last_date"):
             yl = 290 + len(rows) * 108 + 10
-            d.rounded_rectangle([880, yl, W - 120, yl + 96], 48, fill=al(DRED, p))
+            d.rounded_rectangle([880, yl, W - 120, yl + 96], 48, fill=al(CORAL, p))
             ftext(d, yl + 22, f"Last date: {s['last_date']}", "ExtraBold", 46, WHITE, p, W - 1100, cx=(880 + W - 120) / 2)
     elif k == "index":  # roundup overview, rows [[name, last date]] up to 10 (two columns)
         rows = s["rows"][:10]; half = (len(rows) + 1) // 2
@@ -267,20 +269,11 @@ def main():
     if chapters:
         open(out + ".chapters.txt", "w").write("\n".join(f"{a} {b}" for a, b in chapters) + "\n")
 
-    LOGO_R = Image.open(os.path.join(A, "logo_red.png")).convert("RGBA").resize((230, 214), Image.LANCZOS)
+    LOGO_R = Image.open(os.path.join(A, "logo_indigo.png")).convert("RGBA").resize((230, 214), Image.LANCZOS)
     logo_w = Image.open(os.path.join(A, "logo_white.png")).convert("RGBA").resize((86, 80), Image.LANCZOS)
     QR_IMGS = [Image.open(os.path.join(A, p)).convert("RGBA").resize((260, 260), Image.NEAREST) for _, p in rr.QRS]
-    grad = Image.new("RGB", (W + 240, H)); gd = ImageDraw.Draw(grad)
-    for x in range(W + 240):
-        k = x / (W + 240)
-        gd.line([(x, 0), (x, H)], fill=tuple(int(RED[c] * (1 - k * 0.45) + DRED[c] * k * 0.45) for c in range(3)))
-    grad = grad.convert("RGBA")
-    stripes = Image.new("RGBA", (W + 240, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(stripes)
-    for k in range(-6, 16):
-        x = k * 240
-        sd.polygon([(x, 0), (x + 80, 0), (x + 80 - 600, H), (x - 600, H)], fill=(255, 255, 255, 14))
-    grad.alpha_composite(stripes)
-    top = Image.new("RGBA", (W, 128), (0, 0, 0, 40)); top.alpha_composite(logo_w, (44, 24))
+    grad = T.gradient_bg(W + 240, H)   # website hero gradient; slow horizontal drift
+    top = T.header_band(W, 128); top.alpha_composite(logo_w, (44, 24))
     src = spec.get("source", "")
     total = sum(s["dur"] for s in scenes)
     lab = ""
@@ -289,16 +282,16 @@ def main():
                else f"Official site: {src} — check notification before applying")
 
     def background(tg):
-        off = int((tg * 40) % 240)
-        im = grad.crop((240 - off, 0, 240 - off + W, H))
+        off = int(120 + 120 * math.sin(tg / 9.0))
+        im = grad.crop((off, 0, off + W, H))
         hb = im.crop((0, 0, W, 128)); hb.alpha_composite(top); im.paste(hb, (0, 0))
         d = ImageDraw.Draw(im)
         d.text((150, 24), CHANNEL, font=F("Bold", 42), fill=WHITE)
-        d.text((152, 76), "Daily Govt Job Updates", font=F("Medium", 28), fill=SOFT)
+        d.text((152, 76), T.TAGLINE, font=F("Medium", 28), fill=SOFT)
         if lab:
             f = fit(d, lab, "Medium", 28, W - 200, 18)
             d.text(((W - d.textlength(lab, font=f)) / 2, 1010), lab, font=f, fill=SOFT)
-        d.rectangle([0, H - 12, W, H], fill=DRED)
+        d.rectangle([0, H - 12, W, H], fill=T.NAVY)
         d.rectangle([0, H - 12, W * tg / total, H], fill=WHITE)
         return im
 
