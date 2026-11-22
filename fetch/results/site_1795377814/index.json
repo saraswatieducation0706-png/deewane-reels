@@ -1,0 +1,29 @@
+[
+ {
+  "n": 1,
+  "url": "raw:https://web.digcareerthrust.com/",
+  "ok": true,
+  "status": 200,
+  "type": "raw",
+  "chars": 144976,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://web.digcareerthrust.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 11179,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "raw:https://web.digcareerthrust.com/courses/",
+  "ok": true,
+  "status": 200,
+  "type": "raw",
+  "chars": 170250,
+  "file": "003.md"
+ }
+]
