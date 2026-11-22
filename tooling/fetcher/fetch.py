@@ -3,7 +3,8 @@
 
 A request file fetch/requests/<name>.txt holds one item per line:
   https://...            fetch the page (HTML -> Markdown text with links, PDF -> text)
-  search: <query>        DuckDuckGo web search (titles, links, snippets)
+  raw: https://...       save the raw response (HTML/CSS source)
+  search: <query>        Bing web search - UNRELIABLE from GitHub (bot pages); do not rely on it
   # comment              ignored
 Results go to fetch/results/<name>/: 001.md, 002.md ... and index.json
 [{n, url, ok, status, type, chars, file, error}].
@@ -71,7 +72,12 @@ def main(req):
         rec = {"n": n, "url": it, "ok": False}
         for attempt in (1, 2):
             try:
-                st, ty, txt = search(it[7:].strip()) if it.lower().startswith("search:") else fetch(it)
+                if it.lower().startswith("search:"):
+                    st, ty, txt = search(it[7:].strip())
+                elif it.lower().startswith("raw:"):
+                    r = requests.get(it[4:].strip(), headers=H, timeout=45); st, ty, txt = r.status_code, "raw", r.text
+                else:
+                    st, ty, txt = fetch(it)
                 f = f"{n:03d}.md"
                 open(os.path.join(outd, f), "w", encoding="utf-8").write(txt[:MAXC])
                 rec.update(ok=200 <= st < 400, status=st, type=ty, chars=len(txt), file=f); break
