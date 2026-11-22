@@ -1,0 +1,20 @@
+[
+ {
+  "n": 1,
+  "url": "file: https://www.freejobalert.com/wp-content/uploads/2023/01/sample.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "file",
+  "chars": 265399,
+  "file": "001.pdf"
+ },
+ {
+  "n": 2,
+  "url": "https://www.ntpc.co.in/careers",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 1614,
+  "file": "002.md"
+ }
+]
