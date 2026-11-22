@@ -1,0 +1,20 @@
+[
+ {
+  "n": 1,
+  "url": "raw:https://web.digcareerthrust.com/wp-content/plugins/dct-platform/assets/theme.css?ver=0.60.3",
+  "ok": true,
+  "status": 200,
+  "type": "raw",
+  "chars": 121017,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "raw:https://web.digcareerthrust.com/wp-content/plugins/dct-platform/assets/site.css?ver=0.60.3",
+  "ok": true,
+  "status": 200,
+  "type": "raw",
+  "chars": 32873,
+  "file": "002.md"
+ }
+]
