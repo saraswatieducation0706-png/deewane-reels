@@ -1,0 +1,2 @@
+raw:https://web.digcareerthrust.com/wp-content/plugins/dct-platform/assets/theme.css?ver=0.60.3
+raw:https://web.digcareerthrust.com/wp-content/plugins/dct-platform/assets/site.css?ver=0.60.3
