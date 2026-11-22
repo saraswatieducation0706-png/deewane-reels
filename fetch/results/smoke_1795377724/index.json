@@ -1,0 +1,29 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/engineering-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 62398,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://upsc.gov.in/recruitment/recruitment-advertisement",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 10456,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.ntpc.co.in/careers",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 1620,
+  "file": "003.md"
+ }
+]
