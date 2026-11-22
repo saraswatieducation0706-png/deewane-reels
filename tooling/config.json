@@ -24,5 +24,17 @@
     "14:00",
     "16:00"
   ],
-  "min_days_left_at_posting": 1
+  "min_days_left_at_posting": 1,
+  "job_voice_id": "PGnJCOJM679NpBwi71JI",
+  "job_voice_name": "Aarush - Clear, Encouraging and Friendly (young Indian male, Hindi-English; ElevenLabs library) - default until Naveen picks from the samples",
+  "job_voice_options": {
+    "Aarush": "PGnJCOJM679NpBwi71JI",
+    "Reyaansh (Sharp, Smooth & Confident)": "uO1t9fkaawZM44iBD8YR",
+    "Bunty (Explainer)": "2I56yvR6ubAyIbBlNfn7",
+    "Bunty (Fun Podcast Host)": "3OUAuH7CeDSQhCCijs1Y",
+    "Indal Patel (Expressive)": "8kdUocyLStdRW3bo9BOV",
+    "Ketan M (Relatable)": "MSlUbyNmvjNnEAQL1ZAo"
+  },
+  "job_tts_model": "eleven_v3",
+  "job_language": "hinglish"
 }

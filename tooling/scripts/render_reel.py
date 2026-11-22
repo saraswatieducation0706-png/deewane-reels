@@ -26,25 +26,30 @@ def F(w, s):
     if k not in _fc: _fc[k] = ImageFont.truetype(os.path.join(A, f"{T.FONT}-{w}.ttf"), int(s))
     return _fc[k]
 
-WELCOME = dict(kind="welcome", voice="Hello Everyone, I hope your preparations for the exam are going well.",
+WELCOME = dict(kind="welcome", voice="[excited] नमस्ते दोस्तों! उम्मीद है आपकी तैयारी एकदम बढ़िया चल रही है।",
                title="Hello Everyone!", sub="Hope your preparation is going well")
-END = dict(kind="end", voice="For test series and study material, visit web dot D. I. G. career thrust dot com. "
-           "Scan the codes to join our Telegram channel and visit our website. Follow for daily job updates!", min_dur=7.0)
-TEASER_END = dict(kind="teaser_end", voice="Watch the full video with every detail on our YouTube channel, "
-                  "D. I. G. Career Thrust. Follow us for daily government job updates!", min_dur=5.0)
+END = dict(kind="end", voice="[warmly] Test series और study material के लिए visit कीजिए web dot D I G career thrust dot com. "
+           "QR code scan करके हमारे Telegram से जुड़िए, और daily job updates के लिए follow ज़रूर कीजिए!", min_dur=7.0)
+TEASER_END = dict(kind="teaser_end", voice="[excited] पूरी details वाला video देखिए हमारे YouTube channel, D I G Career Thrust पर! "
+                  "और daily सरकारी job updates के लिए follow कीजिए!", min_dur=5.0)
 QRS = [("Telegram", "qr_telegram.jpeg"), ("Website", "qr_website.jpeg")]  # no mobile app any more (Naveen, 10 Nov 2026)
 
 # ---------------- TTS ----------------
 def tts(text, out, cache, use_api=True):
     key = os.environ.get("XI") or CFG.get("elevenlabs_api_key")
-    voice = os.environ.get("VOICE_ID") or CFG["voice_id"]
+    # job videos/teasers: Hindi-English young male voice on ElevenLabs v3 (Naveen, 23 Nov 2026)
+    voice = os.environ.get("VOICE_ID") or CFG.get("job_voice_id") or CFG["voice_id"]
+    model = os.environ.get("TTS_MODEL") or CFG.get("job_tts_model") or CFG["tts_model"]
     speed = float(os.environ.get("SPEED") or CFG.get("speed", 1.1))
-    h = hashlib.sha1(f"{voice}|{speed}|{CFG['tts_model']}|{text}".encode()).hexdigest()[:16]
+    h = hashlib.sha1(f"{voice}|{speed}|{model}|{text}".encode()).hexdigest()[:16]
     cp = os.path.join(cache, h + ".wav")
     if not os.path.exists(cp):
         if use_api and key:
-            body = {"text": text, "model_id": CFG["tts_model"],
-                    "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "speed": speed}}
+            if model == "eleven_v3":   # expressive model: audio tags like [excited] / [serious] steer the tone
+                body = {"text": text, "model_id": model, "voice_settings": {"stability": 0.5, "similarity_boost": 0.75}}
+            else:
+                body = {"text": text, "model_id": model,
+                        "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "speed": speed}}
             req = urllib.request.Request(
                 f"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_44100_128",
                 data=json.dumps(body).encode(), headers={"xi-api-key": key, "Content-Type": "application/json"})

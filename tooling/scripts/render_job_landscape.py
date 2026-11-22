@@ -26,9 +26,9 @@ CHANNEL = rr.CHANNEL
 SETTLE = 4.2   # seconds after which every scene's entry animation is finished -> layer is cached
 
 WELCOME = dict(rr.WELCOME)
-END = dict(kind="end", voice="For test series and study material, visit web dot D. I. G. career thrust dot com. "
-           "Scan the codes to join our Telegram channel and visit our website. Subscribe and press the bell icon for daily "
-           "government job updates!", min_dur=8.0)
+END = dict(kind="end", voice="[warmly] Test series और study material के लिए visit कीजिए web dot D I G career thrust dot com. "
+           "QR code scan करके Telegram से जुड़िए, और channel को subscribe करके bell icon ज़रूर दबाइए, "
+           "ताकि कोई भी सरकारी job update miss ना हो!", min_dur=8.0)
 
 ease = rr.ease
 def back(t):
