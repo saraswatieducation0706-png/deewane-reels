@@ -1,0 +1,152 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/bhel-engineer-executive-supervisor-trainee-recruitment-2026-27-3083737",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 55249,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/jkssb-junior-engineer-recruitment-2026-3074735",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 54627,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/bhel-trichy-apprentice-recruitment-2026-3083653",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 58329,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.freejobalert.com/articles/ncl-recruitment-2026-apply-online-for-52-clerk-lab-technician-and-more-posts-3082869",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 47297,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/articles/coconut-development-board-recruitment-2026-apply-online-for-35-group-a-b-and-c-posts-3081351",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 59470,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.freejobalert.com/articles/mbpa-graduate-apprentice-recruitment-2026-3082401",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 49980,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.freejobalert.com/articles/beml-executive-recruitment-2026-3083386",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 55625,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://www.freejobalert.com/articles/ucms-recruitment-2026-apply-online-for-21-assistant-professional-assistant-and-more-posts-3074434",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 46619,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.freejobalert.com/articles/ksfes-fire-station-officer-recruitment-2026-3083269",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 48581,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.sarkarinaukriblog.com/2026/11/indian-air-force-afcat-01-2027-officer.html",
+  "ok": false,
+  "status": 429,
+  "type": "html",
+  "chars": 1668,
+  "file": "010.md"
+ },
+ {
+  "n": 11,
+  "url": "https://www.sarkarinaukriblog.com/2026/10/nicl-administrative-officer-vacancy.html",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 19776,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://govtjobguru.in/jobs/kea-industrial-expansion-officer-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 16217,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://careers.bhel.in/",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 340,
+  "file": "013.md"
+ },
+ {
+  "n": 14,
+  "url": "https://careers.bhel.in/bhel/jsp/",
+  "ok": false,
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ },
+ {
+  "n": 15,
+  "url": "https://jkssb.nic.in/",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='jkssb.nic.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable"
+ },
+ {
+  "n": 16,
+  "url": "https://afcat.cdac.in/AFCAT/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='afcat.cdac.in', port=443): Max retries exceeded with url: /AFCAT/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='afcat.cdac.in', port=443) at 0x7242e43bf250>, 'Connect"
+ },
+ {
+  "n": 17,
+  "url": "https://nationalinsurance.nic.co.in/recruitment",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='nationalinsurance.nic.co.in', port=443): Max retries exceeded with url: /recruitment (Caused by ConnectTimeoutError(<HTTPSConnection(host='nationalinsurance.nic.co.in', port="
+ },
+ {
+  "n": 18,
+  "url": "https://www.indgovtjobs.in/search?q=BHEL",
+  "ok": false,
+  "status": 429,
+  "type": "html",
+  "chars": 1541,
+  "file": "018.md"
+ }
+]
