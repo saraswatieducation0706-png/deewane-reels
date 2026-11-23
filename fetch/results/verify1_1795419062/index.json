@@ -1,0 +1,125 @@
+[
+ {
+  "n": 1,
+  "url": "https://img2.freejobalert.com/news/2026/11/41258-6b03dfc2d16b358096213.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 696,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "http://careers.bhel.in/",
+  "ok": false,
+  "status": 503,
+  "type": "html",
+  "chars": 163,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.bhel.com/careers",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 10550,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.sarkariexam.com/bhel-trainee-recruitment-2026/",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 1826,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/articles/afcat-01-2027-notification-3077773",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 63275,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.sarkariexam.com/afcat-01-2027/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 17597,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://afcat.cdac.in/AFCAT/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='afcat.cdac.in', port=443): Max retries exceeded with url: /AFCAT/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='afcat.cdac.in', port=443) at 0x723db38ffb10>, 'Connect"
+ },
+ {
+  "n": 8,
+  "url": "https://careerindianairforce.cdac.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='careerindianairforce.cdac.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='careerindianairforce.cdac.in', port=443) at 0"
+ },
+ {
+  "n": 9,
+  "url": "https://jkssb.nic.in/Pdf/Advt_notification_10OF2026_21102026.pdf",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='jkssb.nic.in', port=443): Max retries exceeded with url: /Pdf/Advt_notification_10OF2026_21102026.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIF"
+ },
+ {
+  "n": 10,
+  "url": "https://jkssb.nic.in/Pdf/Corrigendum_Advt_10OF2026_19112026.pdf",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='jkssb.nic.in', port=443): Max retries exceeded with url: /Pdf/Corrigendum_Advt_10OF2026_19112026.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY"
+ },
+ {
+  "n": 11,
+  "url": "http://jkssb.nic.in/Pdf/Advt_notification_10OF2026_21102026.pdf",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPConnectionPool(host='jkssb.nic.in', port=80): Max retries exceeded with url: /Pdf/Advt_notification_10OF2026_21102026.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='jkssb.nic.in', port=8"
+ },
+ {
+  "n": 12,
+  "url": "https://www.sarkariexam.com/jkssb-je-mechanical-recruitment-2026/",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 1847,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://mumbaiport.gov.in/WriteReadData/RTF1984/1795013754.pdf",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='mumbaiport.gov.in', port=443): Max retries exceeded with url: /WriteReadData/RTF1984/1795013754.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_"
+ },
+ {
+  "n": 14,
+  "url": "https://cetonline.karnataka.gov.in/keawebentry456/ksfedrpc2026/FSO_NHKkannada.pdf",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='cetonline.karnataka.gov.in', port=443): Max retries exceeded with url: /keawebentry456/ksfedrpc2026/FSO_NHKkannada.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='c"
+ },
+ {
+  "n": 15,
+  "url": "https://govtjobguru.in/?s=BHEL",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 26715,
+  "file": "015.md"
+ },
+ {
+  "n": 16,
+  "url": "https://govtjobguru.in/?s=AFCAT",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 22143,
+  "file": "016.md"
+ }
+]
