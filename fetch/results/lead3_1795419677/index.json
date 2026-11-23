@@ -1,0 +1,65 @@
+[
+ {
+  "n": 1,
+  "url": "https://quicksarkari.com/bhel-engineer-and-supervisor-trainee-recruitment-2026-27/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 15332,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://govtjobsalert.in/afcat-01-2027-iaf-flying-ground-duty-ncc-gate-entry/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 48983,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.karmasandhan.com/?s=JKSSB+Junior+Engineer+Mechanical",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 4294,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://quicksarkari.com/?s=jkssb+junior+engineer+mechanical",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 7205,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://govtjobsalert.in/?s=jkssb+junior+engineer",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 30029,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.karmasandhan.com/?s=BHEL+Engineer+Trainee",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 5356,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.rojgarlive.com/?s=bhel",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 23080,
+  "file": "007.md"
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "n": 1,
+  "url": "https://afcat.edcil.co.in/assets/images/news/Notification%20for%20AFCAT%2001%20of%202027.pdf",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 116,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://afcat.edcil.co.in/",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 50,
+  "file": "002.md"
+ }
+]
