@@ -1,0 +1,90 @@
+{
+ "out": "Day32_reel.mp4",
+ "footer": "Day 32/90  •  74 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 32/90",
+    "VISCOUS FLOW"
+   ],
+   "sub": "Where friction meets the fluid",
+   "voice": "Day thirty two of the GATE M. E. ninety days challenge, seventy four days to go. Today, fluids get sticky: viscous flow and the boundary layer."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Fluid Mechanics",
+    "Viscous Flow & Boundary Layer"
+   ],
+   "voice": "Subject, fluid mechanics. Topic, viscous flow and boundary layer. GATE loves a quick laminar pipe flow numerical from here."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Hagen-Poiseuille flow",
+    "Flow between plates",
+    "Laminar friction factor",
+    "Boundary layer thickness"
+   ],
+   "voice": "Cover Hagen Poiseuille flow in pipes, flow between parallel plates, the laminar friction factor, and boundary layer thicknesses: displacement and momentum."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Laminar pipe: f = 64/Re",
+    "V max = 2 × V average",
+    "Plate BL thickness ~ √x"
+   ],
+   "voice": "Quick tip. In laminar pipe flow, the Darcy friction factor is sixty four over Reynolds number, and peak velocity is twice the average. On a flat plate, laminar boundary layer thickness grows with root x."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Test (₹1 course)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "Practice PDF is on Telegram now. Test from seven to nine P. M.: take it through the link in our Telegram channel, or simply visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 31 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Rahul Yadav",
+     "marks": "9.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Sai Avinash",
+     "marks": "9/30"
+    },
+    {
+     "rank": 3,
+     "name": "Kunal",
+     "marks": "7.67/30"
+    }
+   ],
+   "voice": "Momentum and flow measurement toppers! Rahul Yadav is rank one again, Sai Avinash takes rank two, and Kunal rank three. Well done, all three!"
+  }
+ ]
+}
