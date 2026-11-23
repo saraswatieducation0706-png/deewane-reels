@@ -1,0 +1,71 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.karmasandhan.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 25030,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.rojgarlive.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 23073,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freshersnow.com/latest-govt-jobs/",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 185,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.jkstudentalerts.com/",
+  "ok": false,
+  "status": 429,
+  "type": "html",
+  "chars": 1512,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.sarkariresult.com.cm/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 25868,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://govtjobsalert.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 29016,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.sahisarkarijobs.com/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.sahisarkarijobs.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.sahisarkarijobs.com', port=443): Failed to res"
+ },
+ {
+  "n": 8,
+  "url": "https://www.quicksarkari.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 39691,
+  "file": "008.md"
+ }
+]
