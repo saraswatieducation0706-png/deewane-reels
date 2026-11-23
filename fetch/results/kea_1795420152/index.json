@@ -1,0 +1,44 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/kea-industrial-expansion-officer-recruitment-2026-3082194",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 48753,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/kea-assistant-public-prosecutor-cum-assistant-recruitment-2026-3082235",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 56957,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/kea-assistant-public-prosecutor-cum-assistant-government-pleader-recruitment-2026-apply-online-for-52-posts-3082246",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 57243,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://govtjobguru.in/?s=KEA+Assistant+Public+Prosecutor",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 20136,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://cetonline.karnataka.gov.in/kea/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='cetonline.karnataka.gov.in', port=443): Max retries exceeded with url: /kea/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='cetonline.karnataka.gov.in', port=443) at 0"
+ }
+]
