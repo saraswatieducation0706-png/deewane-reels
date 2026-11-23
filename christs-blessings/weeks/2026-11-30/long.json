@@ -1,0 +1,104 @@
+{
+ "long1": {
+  "date_et": "2026-11-30",
+  "slot_ist": "2026-12-01T06:30:00",
+  "type": "sleep prayer (Advent)",
+  "script": "long1_script.txt",
+  "scene": "night_lake",
+  "seed": 60,
+  "music_key": "A",
+  "render": {
+   "intro": "Watching for the Morning",
+   "subtitles": "dim",
+   "seed": 60,
+   "music_key": "A",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer with Psalm 130 | Watching for the Morning (An Advent Bedtime Prayer, KJV)",
+  "thumb_big": "Watch for Morning",
+  "thumb_small": "Psalm 130 sleep prayer",
+  "thumb_scene": "dark_gold",
+  "description": "A gentle Advent sleep prayer for anyone in a long season of waiting. We pray Psalm 130 slowly, one line at a time: crying out to God from the depths, setting down the day's regrets because \"there is forgiveness with thee\", resting our hope in His word, waiting for the Lord \"more than they that watch for the morning\", and trusting His plenteous mercy. We pray for others who are waiting tonight and close with a blessing. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): Psalm 130:1-7.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #advent #psalm130 #bedtimeprayer",
+  "tags": [
+   "sleep prayer",
+   "psalm 130",
+   "out of the depths",
+   "my soul waiteth for the lord",
+   "advent sleep prayer",
+   "waiting on god",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "christian sleep meditation",
+   "christ's blessings"
+  ]
+ },
+ "long2": {
+  "date_et": "2026-12-03",
+  "slot_ist": "2026-12-04T06:30:00",
+  "type": "sleep prayer",
+  "script": "long2_script.txt",
+  "scene": "storm",
+  "seed": 61,
+  "music_key": "F",
+  "render": {
+   "intro": "Sleep Prayer for a Weary Heart",
+   "subtitles": "dim",
+   "seed": 61,
+   "music_key": "F",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer for a Weary Heart | Rest from a Busy Season (with Gentle Rain, KJV)",
+  "thumb_big": "Come and Rest",
+  "thumb_small": "Sleep prayer for a weary heart",
+  "thumb_scene": "candle",
+  "description": "A calm guided sleep prayer, with the sound of gentle rain, for anyone worn out by a busy December. We come to Jesus with the whole heavy load (Matthew 11:28-29), let ourselves be comforted \"as one whom his mother comforteth\" (Isaiah 66:13), quiet the body from head to toe like David's \"weaned child\" (Psalm 131:2), rest in the God who \"will rejoice over thee with joy\" (Zephaniah 3:17), and fix our minds on Him for perfect peace (Isaiah 26:3). After the prayer, about 17 minutes of rain and quiet music stay with you while you fall asleep.\n\nScripture (KJV): Matthew 11:28-29; Isaiah 66:13; Psalm 131:2; Zephaniah 3:17; Isaiah 26:3.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #rest #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer",
+   "sleep prayer with rain",
+   "prayer for a weary heart",
+   "come unto me and i will give you rest",
+   "matthew 11 28",
+   "zephaniah 3 17",
+   "guided sleep prayer",
+   "holiday stress",
+   "christian sleep meditation",
+   "christ's blessings"
+  ]
+ },
+ "long3": {
+  "date_et": "2026-12-05",
+  "slot_ist": "2026-12-06T06:30:00",
+  "type": "Bible story explained (Advent: Peace Sunday)",
+  "script": "long3_script.txt",
+  "scene": "sunrise_lake",
+  "seed": 62,
+  "music_key": "D",
+  "render": {
+   "intro": "The Prince of Peace",
+   "subtitles": "normal",
+   "seed": 62,
+   "music_key": "D",
+   "music_db": -23,
+   "lufs": -16
+  },
+  "title": "The Prince of Peace: Isaiah 9 Explained | Unto Us a Child Is Born (Advent Peace Sunday)",
+  "thumb_big": "Prince of Peace",
+  "thumb_small": "Isaiah 9 explained",
+  "thumb_scene": "hills_sunset",
+  "description": "On the second Sunday of Advent, many churches light the candle of peace. In this video we go back to where the famous Christmas words \"For unto us a child is born\" were first spoken: to the lands of Zebulun and Naphtali around Galilee, the first region of Israel taken by the Assyrian army. We look at Isaiah's \"Nevertheless\", the people that walked in darkness seeing a great light, how Matthew shows that light coming first to Galilee when Jesus began His ministry, why the answer to the battle is a child, the four names Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace, and the peace Jesus gives \"not as the world giveth\". With a prayer for Peace Sunday.\n\nScripture (KJV): Isaiah 9:1-7; 2 Kings 15:29; Matthew 4:13-16; Luke 2:14; John 14:27.\n\nThis video is spiritual encouragement, not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#advent #princeofpeace #isaiah9 #christmas",
+  "tags": [
+   "prince of peace",
+   "isaiah 9 6",
+   "isaiah 9 explained",
+   "unto us a child is born",
+   "the people that walked in darkness",
+   "peace sunday",
+   "second sunday of advent",
+   "bible story explained",
+   "advent 2026",
+   "christ's blessings"
+  ]
+ }
+}

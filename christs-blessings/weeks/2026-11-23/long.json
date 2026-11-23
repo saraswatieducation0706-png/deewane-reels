@@ -1,0 +1,104 @@
+{
+ "long1": {
+  "date_et": "2026-11-23",
+  "slot_ist": "2026-11-24T06:30:00",
+  "type": "sleep prayer",
+  "script": "long1_script.txt",
+  "scene": "night_lake",
+  "seed": 50,
+  "music_key": "Eb",
+  "render": {
+   "intro": "Sleep Prayer for a Grieving Heart",
+   "subtitles": "dim",
+   "seed": 50,
+   "music_key": "Eb",
+   "music_db": -16,
+   "lufs": -20
+  },
+  "title": "Sleep Prayer for a Grieving Heart | When You're Missing Someone This Holiday (KJV)",
+  "thumb_big": "Missing Them?",
+  "thumb_small": "A sleep prayer for grief",
+  "thumb_scene": "galilee_dusk",
+  "description": "A gentle guided sleep prayer for anyone grieving as the holidays begin, especially if there's an empty chair at your table this year. We remember that Jesus wept with His friends (John 11:35), that God keeps every tear (Psalm 56:8), that those who mourn are promised comfort (Matthew 5:4), and that He binds up the broken heart (Psalm 147:3). We give Him the words we never got to say, pray for the days ahead, and rest in the hope that weeping may endure for a night, but joy cometh in the morning. After the prayer, about 18 minutes of quiet music stays with you while you fall asleep.\n\nScripture (KJV): John 11:35; Psalm 56:8; Matthew 5:4; Psalm 147:3; 1 Thessalonians 4:13; Revelation 21:4; Psalm 30:5; Psalm 4:8.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#sleepprayer #grief #bedtimeprayer #christianmeditation",
+  "tags": [
+   "sleep prayer for grief",
+   "prayer for a grieving heart",
+   "grief at the holidays",
+   "missing a loved one",
+   "guided sleep prayer",
+   "bedtime prayer",
+   "psalm 147 3",
+   "jesus wept",
+   "christian sleep meditation",
+   "christ's blessings"
+  ]
+ },
+ "long2": {
+  "date_et": "2026-11-26",
+  "slot_ist": "2026-11-27T06:30:00",
+  "type": "gratitude prayer (Thanksgiving night)",
+  "script": "long2_script.txt",
+  "scene": "galilee_dusk",
+  "seed": 51,
+  "music_key": "G",
+  "render": {
+   "intro": "A Thanksgiving Night Prayer",
+   "subtitles": "dim",
+   "seed": 51,
+   "music_key": "G",
+   "music_db": -17,
+   "lufs": -19
+  },
+  "title": "A Thanksgiving Night Prayer | Count Your Blessings and Rest in His Mercy (Psalm 136)",
+  "thumb_big": "Forget Not",
+  "thumb_small": "A Thanksgiving night prayer",
+  "thumb_scene": "candle",
+  "description": "A slow, guided prayer of thanks for the end of Thanksgiving Day, however your day went. We remind our souls to \"forget not all his benefits\" (Psalm 103), thank God for the small gifts of food, warmth and rest (James 1:17), name the people we're grateful for (Philippians 1:3), give thanks for being carried through the hard places of this year (Psalm 116:12), pray Psalm 136 together with its refrain \"his mercy endureth for ever\", and remember those at quiet tables tonight. After the prayer, about 16 minutes of quiet music stays with you as you rest.\n\nScripture (KJV): Psalm 103:1-2; James 1:17; Philippians 1:3; Psalm 116:12; Psalm 136:1, 23; 2 Corinthians 9:15.\n\nThis prayer is not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#thanksgiving #gratitude #thanksgivingprayer #christianmeditation",
+  "tags": [
+   "thanksgiving prayer",
+   "thanksgiving night prayer",
+   "prayer of gratitude",
+   "psalm 136",
+   "his mercy endureth for ever",
+   "forget not all his benefits",
+   "psalm 103",
+   "guided prayer",
+   "bedtime prayer",
+   "christ's blessings"
+  ]
+ },
+ "long3": {
+  "date_et": "2026-11-28",
+  "slot_ist": "2026-11-29T06:30:00",
+  "type": "Bible story explained (Advent: Hope Sunday)",
+  "script": "long3_script.txt",
+  "scene": "calm_dawn",
+  "seed": 52,
+  "music_key": "E",
+  "render": {
+   "intro": "Advent Begins: Waiting with Hope",
+   "subtitles": "normal",
+   "seed": 52,
+   "music_key": "E",
+   "music_db": -23,
+   "lufs": -16
+  },
+  "title": "Advent Begins: Waiting with Hope | Isaiah 40 Explained (They That Wait Upon the LORD)",
+  "thumb_big": "Waiting With Hope",
+  "thumb_small": "Advent begins: Isaiah 40",
+  "thumb_scene": "sunrise_lake",
+  "description": "Advent begins this Sunday, the season of waiting for Christmas, and on the first Sunday we light the candle of hope. In this video we walk through Isaiah 40, a chapter written for God's people far from home in Babylon who wondered whether God had forgotten them. We look at \"Comfort ye, comfort ye my people\", the voice in the wilderness that the Gospels connect with John the Baptist, why \"the word of our God shall stand for ever\", the strong and gentle Shepherd, and the famous promise that \"they that wait upon the LORD shall renew their strength\". With an honest word for anyone in a waiting season, a prayer for the first week of Advent, and an invitation to our daily 24 Days to Christmas series starting December 1.\n\nScripture (KJV): Isaiah 40:1-11, 27-31; Lamentations 3:26.\n\nThis video is spiritual encouragement, not a substitute for professional care. If you are struggling, please reach out to someone you trust or a local helpline.\n\n[Chapters from <out>_chapters.txt]\n\nWe will never ask you for money or to message us privately.\n\n#advent #isaiah40 #biblestory #christmas",
+  "tags": [
+   "advent",
+   "first sunday of advent",
+   "advent hope",
+   "isaiah 40",
+   "isaiah 40 31",
+   "they that wait upon the lord",
+   "comfort ye my people",
+   "bible story explained",
+   "advent 2026",
+   "christ's blessings"
+  ]
+ }
+}

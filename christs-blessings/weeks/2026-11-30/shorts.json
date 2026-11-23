@@ -1,0 +1,352 @@
+[
+ {
+  "id": "s1",
+  "date": "2026-11-30",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 53,
+  "music_key": "E",
+  "cover": [
+   "Watch for",
+   "morning"
+  ],
+  "title": "Waiting on something and the night feels long? Hold on to this",
+  "description": "For anyone in a long season of waiting. Psalm 130:6 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#waitingongod #psalm130 #advent #bibleverse #prayer #christianshorts",
+  "tags": [
+   "psalm 130 6",
+   "my soul waiteth for the lord",
+   "waiting on god",
+   "advent waiting",
+   "prayer while waiting",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If you're waiting on something and every night feels long, this verse is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 130, verse 6.",
+    "label": "Psalm 130:6"
+   },
+   {
+    "role": "verse",
+    "text": "My soul waiteth for the Lord more than they that watch for the morning: I say, more than they that watch for the morning.",
+    "label": "Psalm 130:6"
+   },
+   {
+    "role": "reflection",
+    "text": "Picture a night watchman on an old city wall. He can't make the sun rise, and he can't hurry it. But he knows the morning is coming, so he keeps facing east. That's what waiting on God looks like. Not pretending the night is short, but refusing to stop watching for Him. It's Advent, the season of waiting. Keep looking east."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, while I wait, keep my eyes on You until the morning comes. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tonight's full Psalm 130 sleep prayer is on the channel. Save it for bedtime."
+   }
+  ]
+ },
+ {
+  "id": "s2",
+  "date": "2026-12-01",
+  "template": "D",
+  "scene": "candle",
+  "seed": 54,
+  "music_key": "G",
+  "cover": [
+   "A great",
+   "light"
+  ],
+  "title": "Day 1 of 24 Days to Christmas: the light that came into the dark",
+  "description": "Day 1 of 24 Days to Christmas: where the Christmas story really begins. Isaiah 9:2 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #isaiah9 #christmas #bibleverse #christianshorts",
+  "tags": [
+   "isaiah 9 2",
+   "the people that walked in darkness have seen a great light",
+   "24 days to christmas",
+   "advent devotional",
+   "advent day 1",
+   "christmas bible verse"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 1 of 24 Days to Christmas. Let's begin where the Christmas story begins: in the dark."
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 9, verse 2.",
+    "label": "Isaiah 9:2"
+   },
+   {
+    "role": "verse",
+    "text": "The people that walked in darkness have seen a great light: they that dwell in the land of the shadow of death, upon them hath the light shined.",
+    "label": "Isaiah 9:2"
+   },
+   {
+    "role": "reflection",
+    "text": "Isaiah spoke these words to people whose land had just been overrun, with families taken away and towns left empty. Into that darkness, God promised a great light. Seven hundred years later, Jesus began His ministry in that very region of Galilee. Christmas doesn't begin with tinsel. It begins with people in the dark, and a God who doesn't leave them there."
+   },
+   {
+    "role": "prayer",
+    "text": "Light of the world, shine into the dark places in my life today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Come back tomorrow for Day 2, and share this with someone who needs some light."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-12-02",
+  "template": "B",
+  "scene": "hills_sunset",
+  "seed": 55,
+  "music_key": "Bb",
+  "cover": [
+   "New",
+   "shoot"
+  ],
+  "title": "Day 2 of 24 Days to Christmas: new life from an old stump",
+  "description": "Day 2 of 24 Days to Christmas: the Branch from the roots of Jesse. Isaiah 11:1 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #isaiah11 #christmas #bibleverse #christianshorts",
+  "tags": [
+   "isaiah 11 1",
+   "stem of jesse",
+   "the branch",
+   "24 days to christmas",
+   "advent day 2",
+   "advent devotional"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 2 of 24 Days to Christmas. Have you ever seen a green shoot growing out of an old tree stump?"
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 11, verse 1.",
+    "label": "Isaiah 11:1"
+   },
+   {
+    "role": "verse",
+    "text": "And there shall come forth a rod out of the stem of Jesse, and a Branch shall grow out of his roots:",
+    "label": "Isaiah 11:1"
+   },
+   {
+    "role": "reflection",
+    "text": "Jesse was King David's father. By Isaiah's time, David's royal family looked like a tree cut down to a stump. Finished. But God promised that new life would grow from those old roots. And it did: Jesus was born into David's family line. Maybe something in your life looks cut down right now. God is very good at green shoots."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, bring new life out of the places in me that feel cut down. Amen."
+   },
+   {
+    "role": "close",
+    "text": "See you tomorrow for Day 3 of 24 Days to Christmas."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-12-03",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 56,
+  "music_key": "D",
+  "cover": [
+   "God",
+   "with us"
+  ],
+  "title": "Day 3 of 24 Days to Christmas: pray with me about one name",
+  "description": "Day 3 of 24 Days to Christmas: Immanuel, God with us. Isaiah 7:14 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #immanuel #christmas #prayer #christianshorts",
+  "tags": [
+   "isaiah 7 14",
+   "immanuel",
+   "god with us",
+   "24 days to christmas",
+   "advent day 3",
+   "advent prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 3 of 24 Days to Christmas. Pray with me about one name: Immanuel."
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 7, verse 14.",
+    "label": "Isaiah 7:14"
+   },
+   {
+    "role": "verse",
+    "text": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel.",
+    "label": "Isaiah 7:14"
+   },
+   {
+    "role": "reflection",
+    "text": "Isaiah gave this sign to a frightened king, at a time when Judah's enemies were closing in. Matthew tells us the promise came to its fullness when Mary gave birth to Jesus, and he explains the name for us: God with us. Not God watching from a distance. Not God waiting for you to get it together. God with us, in the ordinary, messy middle of life."
+   },
+   {
+    "role": "prayer",
+    "text": "Immanuel, thank You that You are with me today, right where I am. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Say Immanuel in the comments, and come back tomorrow for Day 4."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-12-04",
+  "template": "A",
+  "scene": "dawn_lake",
+  "seed": 57,
+  "music_key": "C",
+  "cover": [
+   "Little",
+   "Bethlehem"
+  ],
+  "title": "Day 4 of 24 Days to Christmas: feel too small for God to use?",
+  "description": "Day 4 of 24 Days to Christmas: little Bethlehem. Micah 5:2 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #bethlehem #christmas #bibleverse #christianshorts",
+  "tags": [
+   "micah 5 2",
+   "bethlehem ephratah",
+   "little town of bethlehem",
+   "24 days to christmas",
+   "advent day 4",
+   "feeling overlooked"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 4 of 24 Days to Christmas. Ever feel too small or too ordinary for God to use?"
+   },
+   {
+    "role": "ref",
+    "text": "Micah 5, verse 2.",
+    "label": "Micah 5:2"
+   },
+   {
+    "role": "verse",
+    "text": "But thou, Beth-lehem Ephratah, though thou be little among the thousands of Judah, yet out of thee shall he come forth unto me that is to be ruler in Israel;",
+    "label": "Micah 5:2"
+   },
+   {
+    "role": "reflection",
+    "text": "Bethlehem was a little town, too small to be counted among the important clans of Judah. Yet seven centuries before Jesus, Micah named it as the birthplace of the coming ruler. God didn't choose a capital city. He chose the little place. If you feel overlooked today, remember Bethlehem. Little has never been a problem for God."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, thank You that You see the little places and the little people. Use my small life for You. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with someone who feels small today, and see you tomorrow for Day 5."
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-12-05",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 58,
+  "music_key": "F",
+  "cover": [
+   "Comfort",
+   "ye"
+  ],
+  "title": "Day 5 of 24 Days to Christmas: for the one who's worn out already",
+  "description": "Day 5 of 24 Days to Christmas: a word of comfort for the weary. Isaiah 40:1 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #isaiah40 #comfort #bibleverse #christianshorts",
+  "tags": [
+   "isaiah 40 1",
+   "comfort ye my people",
+   "holiday stress",
+   "24 days to christmas",
+   "advent day 5",
+   "prayer for comfort"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 5 of 24 Days to Christmas. If you're worn out before the holidays have even started, hear this."
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 40, verse 1.",
+    "label": "Isaiah 40:1"
+   },
+   {
+    "role": "verse",
+    "text": "Comfort ye, comfort ye my people, saith your God.",
+    "label": "Isaiah 40:1"
+   },
+   {
+    "role": "reflection",
+    "text": "These words were written for people far from home, worn out by years of waiting. God doesn't open with a lecture. He says comfort, twice, the way a parent says it's alright, it's alright. And He calls them my people, even after everything. Before Christmas is a story about angels and shepherds, it's a story about a God who comes to comfort the weary."
+   },
+   {
+    "role": "prayer",
+    "text": "Father, comfort me today, and help me comfort someone else who is tired. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our new sleep prayer for a weary heart is on the channel. See you tomorrow for Day 6."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-12-06",
+  "template": "D",
+  "scene": "candle",
+  "seed": 59,
+  "music_key": "Eb",
+  "cover": [
+   "Prince of",
+   "Peace"
+  ],
+  "title": "Day 6 of 24 Days to Christmas: Peace Sunday, and four names",
+  "description": "Day 6 of 24 Days to Christmas, the second Sunday of Advent: Peace Sunday. Isaiah 9:6 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#24daystochristmas #advent #princeofpeace #christmas #bibleverse #christianshorts",
+  "tags": [
+   "isaiah 9 6",
+   "prince of peace",
+   "wonderful counsellor",
+   "peace sunday",
+   "24 days to christmas",
+   "second sunday of advent"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Day 6 of 24 Days to Christmas. It's the second Sunday of Advent: Peace Sunday."
+   },
+   {
+    "role": "ref",
+    "text": "Isaiah 9, verse 6.",
+    "label": "Isaiah 9:6"
+   },
+   {
+    "role": "verse",
+    "text": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+    "label": "Isaiah 9:6"
+   },
+   {
+    "role": "reflection",
+    "text": "Notice whose shoulder carries the weight. The government, the weight of the world, rests on His shoulder, not yours. You don't have to hold everything together today. The child of Bethlehem carries it. That's where real peace begins. Try praying His four names slowly today, one with each breath: Wonderful Counsellor. Mighty God. Everlasting Father. Prince of Peace."
+   },
+   {
+    "role": "prayer",
+    "text": "Prince of Peace, I lay down what I've been carrying. Give me Your peace today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our full Peace Sunday video on Isaiah 9 is on the channel. See you tomorrow for Day 7."
+   }
+  ]
+ }
+]

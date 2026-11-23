@@ -1,0 +1,302 @@
+[
+ {
+  "id": "s2",
+  "date": "2026-11-24",
+  "template": "D",
+  "scene": "candle",
+  "seed": 44,
+  "music_key": "D",
+  "cover": [
+   "Empty",
+   "chair"
+  ],
+  "title": "Facing an empty chair at the table this week? Pray this",
+  "description": "For anyone missing someone as the holidays begin. Psalm 147:3 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#grief #psalm147 #holidaygrief #bibleverse #prayer #christianshorts",
+  "tags": [
+   "psalm 147 3",
+   "he healeth the broken in heart",
+   "grief at the holidays",
+   "prayer for grief",
+   "missing a loved one",
+   "christian comfort"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If there's a chair at your table this week that no one can fill, this is for you."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 147, verse 3.",
+    "label": "Psalm 147:3"
+   },
+   {
+    "role": "verse",
+    "text": "He healeth the broken in heart, and bindeth up their wounds.",
+    "label": "Psalm 147:3"
+   },
+   {
+    "role": "reflection",
+    "text": "Notice the order. First He heals, then He binds up the wound, which is the slow and careful part. Grief doesn't heal in a day, and God doesn't expect it to. You don't have to hide your sadness at the holiday table. He stays close to the broken-hearted. And if you need to step outside for a quiet moment this week, He steps outside with you."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, bind up my broken heart, and stay close to me at the table this week. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tonight's full sleep prayer for a grieving heart is on the channel. Save it for bedtime."
+   }
+  ]
+ },
+ {
+  "id": "s3",
+  "date": "2026-11-25",
+  "template": "B",
+  "scene": "forest_fork",
+  "seed": 45,
+  "music_key": "F",
+  "cover": [
+   "One",
+   "thing"
+  ],
+  "title": "Overwhelmed by everything you have to get ready? Hear this",
+  "description": "For anyone with a to-do list longer than the hours in the day. Luke 10:41-42 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#marthaandmary #holidaystress #gospelofluke #bibleverse #prayer #christianshorts",
+  "tags": [
+   "luke 10 41-42",
+   "martha martha",
+   "mary and martha",
+   "holiday stress",
+   "prayer when overwhelmed",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If your list for this week is longer than the hours you have, stop for one minute with me."
+   },
+   {
+    "role": "ref",
+    "text": "Luke 10, verses 41 and 42.",
+    "label": "Luke 10:41-42"
+   },
+   {
+    "role": "verse",
+    "text": "Martha, Martha, thou art careful and troubled about many things: But one thing is needful:",
+    "label": "Luke 10:41-42"
+   },
+   {
+    "role": "reflection",
+    "text": "Martha wasn't doing anything wrong. She was cooking for Jesus Himself. But she was so busy serving Him that she had no time to sit with Him. Jesus says her name twice, gently, the way you'd calm a good friend. The meal, the house and the travel can wait ten minutes. Sit with Him first, and the rest of the list will feel lighter."
+   },
+   {
+    "role": "prayer",
+    "text": "Jesus, I'm troubled about many things. Help me choose the one thing that's needful, and sit with You today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Share this with someone who is doing all the cooking this week."
+   }
+  ]
+ },
+ {
+  "id": "s4",
+  "date": "2026-11-26",
+  "template": "E",
+  "scene": "parchment",
+  "seed": 46,
+  "music_key": "G",
+  "cover": [
+   "Give",
+   "thanks"
+  ],
+  "title": "A Thanksgiving prayer to pray together before the meal today",
+  "description": "A one-minute Thanksgiving prayer for your table, wherever you are today. Psalm 107:1 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#thanksgiving #thanksgivingprayer #psalm107 #gratitude #prayer #christianshorts",
+  "tags": [
+   "psalm 107 1",
+   "o give thanks unto the lord for he is good",
+   "thanksgiving prayer",
+   "prayer before meal",
+   "thanksgiving day prayer",
+   "grace before meals"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Before the turkey, the travel, or the dishes, let's pray together for one minute."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 107, verse 1.",
+    "label": "Psalm 107:1"
+   },
+   {
+    "role": "verse",
+    "text": "O give thanks unto the LORD, for he is good: for his mercy endureth for ever.",
+    "label": "Psalm 107:1"
+   },
+   {
+    "role": "reflection",
+    "text": "This psalm was sung by people who had been lost, hungry, in chains and caught in storms. Every time they cried out, God brought them through. Their thanks wasn't because life had been easy. It was because He was good, and His mercy kept going. Whatever this year has held for you, name one mercy that carried you through it, and thank Him for it now."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, thank You for this food, for these people, and for every mercy of this year. Be near anyone at a quiet table today. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Pray this at your table today. Tonight's full Thanksgiving prayer is on the channel."
+   }
+  ]
+ },
+ {
+  "id": "s5",
+  "date": "2026-11-27",
+  "template": "C",
+  "scene": "dark_gold",
+  "seed": 47,
+  "music_key": "C",
+  "cover": [
+   "Content",
+   "with this"
+  ],
+  "title": "On the biggest shopping day of the year, remember this promise",
+  "description": "For a day when every screen says you need something new. Hebrews 13:5 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#contentment #hebrews13 #neverleavethee #bibleverse #faith #christianshorts",
+  "tags": [
+   "hebrews 13 5",
+   "i will never leave thee nor forsake thee",
+   "contentment",
+   "black friday",
+   "be content",
+   "christian encouragement"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Today, every screen will tell you that you need something new. Here's what God says you already have."
+   },
+   {
+    "role": "ref",
+    "text": "Hebrews 13, verse 5.",
+    "label": "Hebrews 13:5"
+   },
+   {
+    "role": "verse",
+    "text": "Let your conversation be without covetousness; and be content with such things as ye have: for he hath said, I will never leave thee, nor forsake thee.",
+    "label": "Hebrews 13:5"
+   },
+   {
+    "role": "reflection",
+    "text": "There's nothing wrong with buying a gift or finding a good deal. But look at the reason this verse gives for being content. It isn't that you have enough things. It's that you have Him. I will never leave thee. Things wear out, and they go on sale again next year. His presence doesn't. When the wanting feels loud today, hold on to the One who isn't going anywhere."
+   },
+   {
+    "role": "prayer",
+    "text": "Lord, teach me to be content with what I have, because I have You. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Tell us in the comments: what's one thing you're thankful you already have?"
+   }
+  ]
+ },
+ {
+  "id": "s6",
+  "date": "2026-11-28",
+  "template": "D",
+  "scene": "candle",
+  "seed": 48,
+  "music_key": "Bb",
+  "cover": [
+   "Morning",
+   "comes"
+  ],
+  "title": "Can't sleep because you miss someone? Hold on to this verse",
+  "description": "For anyone lying awake tonight, missing someone they love. Psalm 30:5 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#grief #psalm30 #joycomethinthemorning #bibleverse #sleepprayer #christianshorts",
+  "tags": [
+   "psalm 30 5",
+   "weeping may endure for a night",
+   "joy cometh in the morning",
+   "grief at night",
+   "prayer for grief",
+   "bedtime prayer"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "If it's late and you're lying awake missing someone, this verse is for tonight."
+   },
+   {
+    "role": "ref",
+    "text": "Psalm 30, verse 5.",
+    "label": "Psalm 30:5"
+   },
+   {
+    "role": "verse",
+    "text": "in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+    "label": "Psalm 30:5"
+   },
+   {
+    "role": "reflection",
+    "text": "David doesn't pretend there's no night. He says weeping may stay for the whole of it. But he also says the night has an end, and the morning belongs to God. Grief can feel like a night that lasts for months, and that's okay. You don't have to make the morning come. Rest your head, let the tears come if they need to, and let Him bring the light."
+   },
+   {
+    "role": "prayer",
+    "text": "Father, stay with me through this night, and bring the morning in Your time. Amen."
+   },
+   {
+    "role": "close",
+    "text": "Our full sleep prayer for a grieving heart is on the channel, if you need company tonight."
+   }
+  ]
+ },
+ {
+  "id": "s7",
+  "date": "2026-11-29",
+  "template": "A",
+  "scene": "sunrise_lake",
+  "seed": 49,
+  "music_key": "A",
+  "cover": [
+   "Advent",
+   "begins"
+  ],
+  "title": "Advent starts today: a prayer of hope for the waiting season",
+  "description": "The first Sunday of Advent: a short prayer of hope as we wait for Christmas. Romans 15:13 (KJV).\n\nA new prayer every morning, with longer prayers and Bible stories every week.\n\n🌙 Can't sleep? Our full guided sleep prayers are on the channel: open Christ's Blessings and look under Videos.\n\n#advent #hope #romans15 #christmas #prayer #christianshorts",
+  "tags": [
+   "romans 15 13",
+   "the god of hope",
+   "first sunday of advent",
+   "advent prayer",
+   "hope sunday",
+   "advent 2026"
+  ],
+  "segments": [
+   {
+    "role": "hook",
+    "text": "Today is the first Sunday of Advent, the season of waiting with hope for Christmas."
+   },
+   {
+    "role": "ref",
+    "text": "Romans 15, verse 13.",
+    "label": "Romans 15:13"
+   },
+   {
+    "role": "verse",
+    "text": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+    "label": "Romans 15:13"
+   },
+   {
+    "role": "reflection",
+    "text": "Advent means coming. For four weeks, Christians remember how God's people waited for the promised Saviour, and how He came as a baby in Bethlehem. Maybe you're waiting for something too: news, an answer, a door to open. Paul calls Him the God of hope. Hope isn't pretending everything is fine. It's trusting the One who has kept His promises before."
+   },
+   {
+    "role": "prayer",
+    "text": "God of hope, fill my waiting with Your joy and peace this Advent. Amen."
+   },
+   {
+    "role": "close",
+    "text": "From December first, join us every day for 24 Days to Christmas."
+   }
+  ]
+ }
+]
