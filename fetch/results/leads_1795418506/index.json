@@ -1,0 +1,128 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/latest-notifications/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 626559,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/government-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 45295,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/engineering-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 63235,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.freejobalert.com/bank-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 36201,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/railway-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50650,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.freejobalert.com/state-government-jobs/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 518220,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.indgovtjobs.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 58579,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://www.rojgarresult.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 27582,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.sarkariexam.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 45618,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.mysarkarinaukri.com/",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 40,
+  "file": "010.md"
+ },
+ {
+  "n": 11,
+  "url": "https://www.fresherslive.com/government-jobs",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 17703,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://www.sarkarinaukriblog.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 14672,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://www.govtjobguru.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 17001,
+  "file": "013.md"
+ },
+ {
+  "n": 14,
+  "url": "https://majhinaukri.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 21338,
+  "file": "014.md"
+ }
+]
