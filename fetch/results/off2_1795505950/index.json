@@ -1,0 +1,44 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.ecil.co.in/jobs/Advt_12_2026.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 10929,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.coconutboard.gov.in/",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 56,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "http://coconutboard.gov.in/docs/cdbrecruitment.pdf",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPConnectionPool(host='coconutboard.gov.in', port=80): Max retries exceeded with url: /docs/cdbrecruitment.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='coconutboard.gov.in', port=80) at "
+ },
+ {
+  "n": 4,
+  "url": "https://jobs.jmi.ac.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 27812,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.jmi.ac.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50660,
+  "file": "005.md"
+ }
+]
