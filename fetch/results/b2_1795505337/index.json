@@ -1,0 +1,56 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/gujarat-police-recruitment-2026-3082915",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 61749,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/nlc-india-executive-recruitment-2026-3081657",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 53765,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/ndfdc-recruitment-2026-chief-manager-assistant-manager-3083810",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 48548,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://coconutboard.gov.in/docs/cdbrecruitment.pdf",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 75,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://coconutboard.gov.in/Vacancy.aspx",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 64,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.oil-india.com",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 26589,
+  "file": "006.md"
+ }
+]
