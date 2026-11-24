@@ -32,7 +32,8 @@
   "slot": "2026-11-24T10:00+05:30",
   "type": "permanent",
   "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-  "status": "pending"
+  "status": "done",
+  "video_id": "oZ9HhC0PUIc"
  },
  {
   "media": "https://raw.githubusercontent.com/saraswatieducation0706-png/deewane-reels/main/2026-11-24/01_video.mp4",
@@ -40,7 +41,8 @@
   "slot": "2026-11-24T18:00+05:30",
   "type": "permanent",
   "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-  "status": "pending"
+  "status": "done",
+  "video_id": "B3K2m9u39lI"
  },
  {
   "media": "https://raw.githubusercontent.com/saraswatieducation0706-png/deewane-reels/main/2026-11-24/02_video.mp4",
@@ -48,7 +50,8 @@
   "slot": "2026-11-24T20:00+05:30",
   "type": "permanent",
   "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-  "status": "pending"
+  "status": "done",
+  "video_id": "da4yIK-Io4w"
  },
  {
   "media": "https://raw.githubusercontent.com/saraswatieducation0706-png/deewane-reels/main/2026-11-24/03_video.mp4",
@@ -56,6 +59,7 @@
   "slot": "2026-11-24T22:00+05:30",
   "type": "permanent",
   "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-  "status": "pending"
+  "status": "done",
+  "video_id": "s1BnsUUeF68"
  }
 ]
