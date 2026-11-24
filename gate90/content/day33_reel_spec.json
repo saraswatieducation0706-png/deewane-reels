@@ -1,0 +1,20 @@
+{
+ "out": "Day33_reel.mp4",
+ "footer": "Day 33/90  •  73 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 33/90", "REASONING"], "sub": "Easy marks, if your logic is sharp",
+   "voice": "Day thirty three of the GATE M. E. ninety days challenge, seventy three days to go. Today we train the brain: analytical reasoning, the quickest marks in General Aptitude."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["General Aptitude", "Analytical Reasoning"],
+   "voice": "Subject, general aptitude. Topic, analytical reasoning. These questions need no formulas, only careful reading and clean logic."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Logical deduction", "Inductive reasoning", "Statements & conclusions", "Data sufficiency"],
+   "voice": "Cover logical deduction, inductive reasoning and number patterns, statements and conclusions, and data sufficiency questions."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["All A are B ≠ All B are A", "Draw a Venn for 'some'", "DS: test each statement alone"],
+   "voice": "Quick tip. All A are B does not mean all B are A. For some and none statements, draw a quick Venn diagram. In data sufficiency, test each statement alone before combining them."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Take test", "Telegram link / website"], ["Toppers", "Next reel"]],
+   "voice": "Practice PDF is on Telegram now. Test from seven to nine P. M.: take it through the link in our Telegram channel, or simply visit our website, on mobile or laptop."},
+  {"kind": "toppers", "title": "Day 32 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "29/30"}, {"rank": 2, "name": "Shivam Sahu", "marks": "6.99/30"}, {"rank": 3, "name": "Marndi", "marks": "5/30"}],
+   "voice": "Viscous flow toppers! Sweta Rani Sahoo takes rank one with a brilliant twenty nine out of thirty. Shivam Sahu is rank two, and Marndi rank three. Congratulations!"}
+ ]
+}
