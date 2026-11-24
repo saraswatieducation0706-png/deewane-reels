@@ -1,0 +1,41 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/karnataka-high-court-civil-judge-recruitment-2026-3084099",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 68626,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/kerala-high-court-civil-judge-recruitment-2026-apply-online-for-27-posts-3043795",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 46710,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://rojgarresult.com/uppsc-ro-aro-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 17521,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://karnatakajudiciary.kar.nic.in/recruitment.php",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='karnatakajudiciary.kar.nic.in', port=443): Max retries exceeded with url: /recruitment.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='karnatakajudiciary.kar.nic.in"
+ },
+ {
+  "n": 5,
+  "url": "https://hckrecruitment.kar.nic.in/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='hckrecruitment.kar.nic.in', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hckrecruitment.kar.nic.in', port=443): Failed to"
+ }
+]
