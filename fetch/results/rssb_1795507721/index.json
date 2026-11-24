@@ -1,0 +1,53 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/rssb-junior-engineer-recruitment-2026-apply-online-for-874-posts-3063198",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 58014,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://rssb.rajasthan.gov.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='rssb.rajasthan.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rssb.rajasthan.gov.in', port=443) at 0x77b1cfd50050>"
+ },
+ {
+  "n": 3,
+  "url": "https://govtjobguru.in/?s=rssb+junior+engineer",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 19797,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.rojgarresult.com/?s=rajasthan+junior+engineer",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 15488,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://majhinaukri.in/?s=rajasthan+junior+engineer",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 9532,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.sarkariexam.com/?s=rajasthan+je",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 6597,
+  "file": "006.md"
+ }
+]
