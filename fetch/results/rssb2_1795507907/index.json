@@ -1,0 +1,17 @@
+[
+ {
+  "n": 1,
+  "url": "https://govtjobguru.in/jobs/rssb-je-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 25895,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://rssb.rajasthan.gov.in/storage/advertisement_item/1794922282.pdf",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='rssb.rajasthan.gov.in', port=443): Max retries exceeded with url: /storage/advertisement_item/1794922282.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='rssb.rajast"
+ }
+]
