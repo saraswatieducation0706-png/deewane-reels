@@ -1,0 +1,119 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/nhpc-trainee-engineer-recruitment-2026-3084247",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 65614,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/nhpc-trainee-engineer-and-officer-recruitment-2026-3084355",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 60436,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/nhpc-trainee-officer-recruitment-2026-3084348",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 57085,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.freejobalert.com/articles/bpcl-executive-recruitment-2026-3084161",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 66700,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/articles/wbsetcl-recruitment-2026-junior-engineer-junior-surveyor-3084197",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 53471,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.freejobalert.com/articles/thdcil-recruitment-2026-3084313",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50333,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://rojgarresult.com/nhpc-trainee-engineer-2026/",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 4320,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://govtjobguru.in/jobs/wbsetcl-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 19128,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.nhpcindia.com/career",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 75,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.nhpcindia.com/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 20273,
+  "file": "010.md"
+ },
+ {
+  "n": 11,
+  "url": "https://www.bharatpetroleum.in/careers/current-openings.aspx",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 630,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://www.wbsetcl.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 19153,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://www.thdc.co.in/en/career",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 16373,
+  "file": "013.md"
+ }
+]
