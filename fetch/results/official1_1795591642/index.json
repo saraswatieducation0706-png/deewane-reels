@@ -1,0 +1,56 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.nhpcindia.com/assests/pzi_public/job/details_1795520940_9576.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 39947,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.nhpcindia.com/assests/pzi_public/job/details_1795586047_7633.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 42527,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.nhpcindia.com/assests/pzi_public/job/details_1795585942_2973.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 41215,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.bharatpetroleum.in/images/files/bpcl-srd-entry-level-advertisement.pdf",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 652,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.wbsetcl.in/career/REC_2026_04_Empl._Notification_2026_11_23.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 44634,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://thdc.co.in/sites/default/files/career/ENGAGEMENT_OF_FIELD_ENGINEER_FIELD%20OFFICER_VARIOUS_DISCIPLINE_ON_FIXED_TENURE.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 42150,
+  "file": "006.md"
+ }
+]
