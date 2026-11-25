@@ -1,0 +1,20 @@
+{
+ "out": "Day34_reel.mp4",
+ "footer": "Day 34/90  •  72 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 34/90", "PIPE LOSSES"], "sub": "When the flow turns chaotic",
+   "voice": "Day thirty four of the GATE M. E. ninety days challenge, seventy two days to go. Today the flow turns chaotic: turbulent flow and head losses in pipes."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Fluid Mechanics", "Turbulent Flow & Pipe Losses"],
+   "voice": "Subject, fluid mechanics. Topic, turbulent flow and pipe losses. Head loss numericals are a GATE favourite, so practise them well."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Elementary turbulent flow", "Darcy-Weisbach & Moody", "Losses in bends & fittings", "Pipes in series & parallel"],
+   "voice": "Cover elementary turbulent flow, the Darcy Weisbach equation and Moody chart, losses in bends and fittings, and pipes in series and parallel."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["Same Q, half the D", "= 32 × the friction loss", "Exit loss = V²/2g"],
+   "voice": "Quick tip. At fixed flow, halving diameter raises friction loss thirty two times, since loss varies as one over D to the fifth. Exit loss is one full velocity head."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Take test", "Telegram link / website"], ["Toppers", "Next reel"]],
+   "voice": "Grab the practice PDF on Telegram now. Tonight's test runs seven to nine P. M.: open it from the link in our Telegram channel, or simply visit our website, on mobile or laptop."},
+  {"kind": "toppers", "title": "Day 33 Toppers",
+   "entries": [{"rank": 1, "name": "Pranshu Kumar Yadav", "marks": "28/30"}, {"rank": 2, "name": "Sweta Rani Sahoo", "marks": "26.33/30"}, {"rank": 3, "name": "Shivam Sahu", "marks": "24/30"}],
+   "voice": "Analytical reasoning toppers! Pranshu Kumar Yadav is rank one with twenty eight out of thirty. Sweta Rani Sahoo takes rank two, Shivam Sahu rank three. Well done, all three!"}
+ ]
+}
