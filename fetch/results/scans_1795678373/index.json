@@ -1,0 +1,20 @@
+[
+ {
+  "n": 1,
+  "url": "file: https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611251036354999.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "file",
+  "chars": 4670323,
+  "file": "001.pdf"
+ },
+ {
+  "n": 2,
+  "url": "file: https://img2.freejobalert.com/news/2026/11/852369-6b0665140d70713165560.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "file",
+  "chars": 604001,
+  "file": "002.pdf"
+ }
+]
