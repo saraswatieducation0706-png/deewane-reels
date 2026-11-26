@@ -1,0 +1,20 @@
+{
+ "out": "Day35_reel.mp4",
+ "footer": "Day 35/90  •  71 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 35/90", "THERMO"], "sub": "A brand new subject starts today",
+   "voice": "Day thirty five of the GATE M. E. ninety days challenge, seventy one days to go. Fluids are done. Today thermodynamics begins, one of the highest scoring subjects."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Thermodynamics", "Basics & Pure Substances"],
+   "voice": "Subject, thermodynamics. Topic, basics and pure substances. Get these definitions right, and every later chapter becomes easier."},
+  {"kind": "steps", "title": "Cover Today", "steps": ["Systems & processes", "Zeroth law, work & heat", "Pure substances & steam", "Ideal & real gases"],
+   "voice": "Cover systems and processes, the zeroth law, work and heat, properties of pure substances and steam tables, and ideal versus real gases."},
+  {"kind": "card", "title": "Quick Tip", "lines": ["Wet steam: v = vf + x·vfg", "Same for h, u and s", "Z = Pv/RT; Z = 1: ideal gas"],
+   "voice": "Quick tip. For wet steam, any property equals the liquid value plus dryness fraction times the change on evaporation. And compressibility factor Z equals one means ideal gas."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Take test", "Telegram link / website"], ["Toppers", "Next reel"]],
+   "voice": "The practice PDF is waiting on Telegram. Test tonight, seven to nine P. M.: use the link in our Telegram channel, or simply visit our website, on mobile or laptop."},
+  {"kind": "toppers", "title": "Day 34 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "23.33/30"}, {"rank": 2, "name": "Shivam Sahu", "marks": "20.33/30"}, {"rank": 3, "name": "Sai Avinash", "marks": "12/30"}],
+   "voice": "Pipe losses toppers! Sweta Rani Sahoo is rank one again, with twenty three point three three. Shivam Sahu holds rank two, and Sai Avinash enters at rank three. Superb!"}
+ ]
+}
