@@ -1,0 +1,65 @@
+[
+ {
+  "n": 1,
+  "url": "https://cdnbbsr.s3waas.gov.in/s34ffd0e19d2069412274bd3025b0e176c/uploads/2026/11/202611251036354999.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 581,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.nmdc.co.in/cms-admin/Upload/Career_Documents/130d5f7347c2446d866105c3eeaa57b9_20261125154825855.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 10806,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://nta.ac.in/Download/Notice/Notice_20261125163602.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 12840,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://img2.freejobalert.com/news/2026/11/852369-6b0665140d70713165560.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 699,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.meity.gov.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 33,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.meity.gov.in/recruitment",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 44,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "raw: https://www.meity.gov.in/vacancies",
+  "ok": true,
+  "status": 200,
+  "type": "raw",
+  "chars": 2976,
+  "file": "007.md"
+ }
+]
