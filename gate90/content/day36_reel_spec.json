@@ -1,0 +1,90 @@
+{
+ "out": "Day36_reel.mp4",
+ "footer": "Day 36/90  •  70 days to GATE 2027",
+ "scenes": [
+  {
+   "kind": "hook",
+   "title": [
+    "DAY 36/90",
+    "WEEK 6 TEST"
+   ],
+   "sub": "Pitot tubes to steam tables: one test tonight",
+   "voice": "Day thirty six of the GATE M. E. ninety days challenge, seventy days to go! Week six is done. Tonight's weekly test checks fluids, reasoning and thermo together."
+  },
+  {
+   "kind": "card",
+   "title": "Today's Topic",
+   "lines": [
+    "Weekly Revision",
+    "Week 6: all five topics"
+   ],
+   "voice": "No new chapter today. It is week six revision: flow measurement, viscous and turbulent flow, analytical reasoning, and thermodynamics basics, in one test."
+  },
+  {
+   "kind": "steps",
+   "title": "Cover Today",
+   "steps": [
+    "Momentum & flow meters",
+    "Laminar flow & boundary layer",
+    "Turbulent flow & pipe losses",
+    "Reasoning + thermo basics"
+   ],
+   "voice": "Revise momentum equations and flow meters, laminar flow and boundary layers, pipe losses, reasoning, then pure substances. Redo every question you missed this week."
+  },
+  {
+   "kind": "card",
+   "title": "Quick Tip",
+   "lines": [
+    "Laminar: KE factor = 2",
+    "Momentum factor = 4/3",
+    "Turbulent: both ≈ 1"
+   ],
+   "voice": "Quick tip. Laminar pipe flow: kinetic energy factor alpha is two, momentum factor beta is four by three. Turbulent flow: both are nearly one."
+  },
+  {
+   "kind": "dates",
+   "title": "Today's Plan",
+   "lines": [
+    [
+     "Practice PDF",
+     "Telegram, now"
+    ],
+    [
+     "Weekly test (₹1)",
+     "7 to 9 PM"
+    ],
+    [
+     "Take test",
+     "Telegram link / website"
+    ],
+    [
+     "Toppers",
+     "Next reel"
+    ]
+   ],
+   "voice": "The practice PDF is on Telegram now. Weekly test, seven to nine P. M. Take it through our Telegram channel link, or visit our website, on mobile or laptop."
+  },
+  {
+   "kind": "toppers",
+   "title": "Day 35 Toppers",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Shivam Sahu",
+     "marks": "25.67/30"
+    },
+    {
+     "rank": 2,
+     "name": "Sweta Rani Sahoo",
+     "marks": "25.33/30"
+    },
+    {
+     "rank": 3,
+     "name": "Pranshu Kumar Yadav",
+     "marks": "22.66/30"
+    }
+   ],
+   "voice": "Basics and pure substances toppers! Shivam Sahu takes rank one with twenty five point six seven. Sweta Rani Sahoo is rank two, and Pranshu Kumar Yadav rank three. Well done!"
+  }
+ ]
+}
