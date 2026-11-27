@@ -1,0 +1,50 @@
+[
+ {
+  "n": 1,
+  "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/AEDO-Advt-No.-16-2026_BPSC-20261126-d39c5b.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 659,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Agriculture-Advt-No.-17-to-21-2026_BPSC-20261126-mj9cbs.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 672,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://cetonline.karnataka.gov.in/keawebentry456/dsepuerpc2026/PU_RPC_NOTI_26112026kannada.pdf",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='cetonline.karnataka.gov.in', port=443): Max retries exceeded with url: /keawebentry456/dsepuerpc2026/PU_RPC_NOTI_26112026kannada.pdf (Caused by ConnectTimeoutError(<HTTPSConn"
+ },
+ {
+  "n": 4,
+  "url": "https://cetonline.karnataka.gov.in/kea/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='cetonline.karnataka.gov.in', port=443): Max retries exceeded with url: /kea/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='cetonline.karnataka.gov.in', port=443) at 0"
+ },
+ {
+  "n": 5,
+  "url": "https://www.drdo.gov.in/drdo/sites/default/files/vacancy/advtLRDE26112026.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.drdo.gov.in', port=443): Max retries exceeded with url: /drdo/sites/default/files/vacancy/advtLRDE26112026.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='www.dr"
+ },
+ {
+  "n": 6,
+  "url": "https://bel-india.in/wp-content/uploads/2026/11/Trainee-Engineer-Advertisement.pdf",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='bel-india.in', port=443): Max retries exceeded with url: /wp-content/uploads/2026/11/Trainee-Engineer-Advertisement.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL:"
+ },
+ {
+  "n": 7,
+  "url": "https://gsssb.gujarat.gov.in/ViewFile?fileName=4naZ%E2%9C%BF8wS64TzwZ61AZrbMP4tvDBt3Mj8UPSd1xKcshtB9h%E2%9C%BFvtWCvjAgamuYjTh87F9MtUMQqhpbAhKEga7irPxGWPwtSHSFAKyqfoxTCgTiwzwhi4LtZf4%E2%9C%A4aDJX79AsMA31NDVoVi5%E2%9C%A4PJDSwrfs1rw%E2%99%AC%E2%99%AC",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='gsssb.gujarat.gov.in', port=443): Max retries exceeded with url: /ViewFile?fileName=4naZ%E2%9C%BF8wS64TzwZ61AZrbMP4tvDBt3Mj8UPSd1xKcshtB9h%E2%9C%BFvtWCvjAgamuYjTh87F9MtUMQqhp"
+ }
+]
