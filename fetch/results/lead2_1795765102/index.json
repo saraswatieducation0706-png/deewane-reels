@@ -1,0 +1,62 @@
+[
+ {
+  "n": 1,
+  "url": "https://govtjobguru.in/jobs/gsssb-laboratory-technician-class-3-recruitment-2026-apply-online-for-227-posts/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 21597,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://kea.kar.nic.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='kea.kar.nic.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kea.kar.nic.in', port=443) at 0x749c3590c410>, 'Connection "
+ },
+ {
+  "n": 3,
+  "url": "https://govtjobguru.in/jobs/kea-lecturer-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 126,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://govtjobguru.in/jobs/kea-pu-lecturer-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 129,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://govtjobguru.in/jobs/bpsc-aedo-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 123,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://govtjobguru.in/jobs/bel-trainee-engineer-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 11094,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://govtjobguru.in/jobs/bpsc-assistant-director-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 21072,
+  "file": "007.md"
+ }
+]

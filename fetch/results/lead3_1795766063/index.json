@@ -1,0 +1,35 @@
+[
+ {
+  "n": 1,
+  "url": "https://govtjobguru.in/jobs/gsssb-laboratory-technician-class-3-recruitment-2026-apply-online-for-227-posts/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 21597,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://govtjobguru.in/jobs/bel-trainee-engineer-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 11094,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.sarkariexam.com/kea-pu-lecturer-2026/",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 1799,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://kea.kar.nic.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='kea.kar.nic.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kea.kar.nic.in', port=443) at 0x749c3590c7d0>, 'Connection "
+ }
+]
