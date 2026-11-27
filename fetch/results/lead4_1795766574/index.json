@@ -1,0 +1,38 @@
+[
+ {
+  "n": 1,
+  "url": "https://govtjobguru.in/jobs/bel-trainee-engineer-jobs-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 18665,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.fresherslive.com/karnataka-government-jobs",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 12461,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.indgovtjobs.in/",
+  "ok": false,
+  "status": 429,
+  "type": "html",
+  "chars": 1496,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://govtjobguru.in/government-jobs-openings/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 997551,
+  "file": "004.md"
+ }
+]
