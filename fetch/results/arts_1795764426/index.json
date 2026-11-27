@@ -1,0 +1,137 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/bpsc-aedo-recruitment-2026-3084924",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 62884,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/kea-lecturer-recruitment-2026-3085148",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 63422,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/bpsc-agriculture-department-recruitment-2026-3084978",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 59595,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.freejobalert.com/articles/i-fc-recruitment-2026-assistant-engineer-assistant-surveyor-of-works-3085049",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 47778,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/articles/cspgcl-recruitment-2026-graduate-apprentice-diploma-apprentice-3085141",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50649,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.freejobalert.com/articles/gsssb-recruitment-2026-laboratory-technician-class-3-3085071",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 55076,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.freejobalert.com/articles/bel-trainee-engineer-recruitment-2026-3085027",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50962,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://www.freejobalert.com/articles/rites-assistant-manager-electrical-recruitment-2026-3084998",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50029,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.freejobalert.com/articles/drdo-lrde-apprentice-recruitment-2026-3085156",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 59736,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.sarkariexam.com/bpsc-aedo-2026-2/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 13373,
+  "file": "010.md"
+ },
+ {
+  "n": 11,
+  "url": "https://govtjobguru.in/jobs/cspgcl-graduation-diploma-apprentice-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 150,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://govtjobguru.in/jobs/drdo-lrde-apprentice-recruitment-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 22352,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://bpsc.bihar.gov.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 9938,
+  "file": "013.md"
+ },
+ {
+  "n": 14,
+  "url": "https://www.bel-india.in/job-notifications/",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='www.bel-india.in', port=443): Max retries exceeded with url: /job-notifications/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate"
+ },
+ {
+  "n": 15,
+  "url": "https://www.rites.com/Career",
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='www.rites.com', port=443): Max retries exceeded with url: /Career (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed:"
+ },
+ {
+  "n": 16,
+  "url": "https://cspgcl.co.in/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='cspgcl.co.in', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='cspgcl.co.in', port=443): Failed to establish a new connection"
+ }
+]
