@@ -1,0 +1,101 @@
+[
+ {
+  "n": 1,
+  "url": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_1.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: /ojas1/AdvtDetailFiles/GPRB_202627_1.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov"
+ },
+ {
+  "n": 2,
+  "url": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_4.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: /ojas1/AdvtDetailFiles/GPRB_202627_4.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov"
+ },
+ {
+  "n": 3,
+  "url": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_2.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: /ojas1/AdvtDetailFiles/GPRB_202627_2.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov"
+ },
+ {
+  "n": 4,
+  "url": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_3.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: /ojas1/AdvtDetailFiles/GPRB_202627_3.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov"
+ },
+ {
+  "n": 5,
+  "url": "https://ojas.gujarat.gov.in/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov.in', port=443): Failed to establish a "
+ },
+ {
+  "n": 6,
+  "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/8/301698380.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 119186,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://img2.freejobalert.com/news/2026/11/2365565-6b07ba8644d4364880794.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 1802,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://img2.freejobalert.com/news/2026/11/412587-6aedbbc6efa0987685079.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 119172,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.cspc.co.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 36,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.cspdcl.co.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cspdcl.co.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.cspdcl.co.in', port=443) at 0x712f66f33ed0>, 'Connect"
+ },
+ {
+  "n": 11,
+  "url": "https://www.meity.gov.in/static/uploads/2026/11/25f10c47770171bb6677b89ccc1eadf7.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 8710,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://trichy.bhel.com/tms/app_pro/Circular_%20Graduate%20App.%202026.pdf",
+  "ok": false,
+  "status": 403,
+  "type": "html",
+  "chars": 434,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://nml.res.in/sites/default/files/Advt%20of%20Apprentice%20052026_0.pdf",
+  "ok": true,
+  "status": 200,
+  "type": "pdf",
+  "chars": 17085,
+  "file": "013.md"
+ }
+]
