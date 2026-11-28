@@ -131,7 +131,8 @@
     "slot": "2026-11-28T18:00+05:30",
     "type": "permanent",
     "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-    "status": "pending"
+    "status": "done",
+    "video_id": "nCMtBXRF8Ac"
   },
   {
     "media": "https://raw.githubusercontent.com/saraswatieducation0706-png/deewane-reels/main/2026-11-28/02_video.mp4",
@@ -139,6 +140,7 @@
     "slot": "2026-11-28T20:00+05:30",
     "type": "permanent",
     "playlist": "PLbjTnj-t5GknGF9SMm4uOIsIlmKVMPQVE",
-    "status": "pending"
+    "status": "done",
+    "video_id": "kacfIJm4d00"
   }
 ]
