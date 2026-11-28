@@ -1,0 +1,25 @@
+{
+ "out": "Day37_reel.mp4",
+ "footer": "Day 37/90  •  68 days to GATE 2027",
+ "scenes": [
+  {"kind": "hook", "title": ["DAY 37/90", "FIRST LAW"],
+   "sub": "Energy is never lost, only tracked",
+   "voice": "Day thirty seven of the GATE M. E. ninety days challenge, sixty eight days to go! Week seven starts with the first law, the backbone of every thermo question."},
+  {"kind": "card", "title": "Today's Topic", "lines": ["Thermodynamics", "First Law"],
+   "voice": "Today's topic is the first law of thermodynamics, for closed systems and for control volumes, ending with the steady flow energy equation."},
+  {"kind": "steps", "title": "Cover Today",
+   "steps": ["Closed system: Q − W = U2 − U1", "Work in common processes", "Control volume & flow work", "Steady flow energy equation"],
+   "voice": "Cover heat minus work equals change in internal energy, work in common processes, flow work for control volumes, then the steady flow energy equation for nozzles and turbines."},
+  {"kind": "card", "title": "Quick Tip",
+   "lines": ["Throttling: h1 = h2", "No work, no heat, KE change ≈ 0", "Ideal gas: T stays same"],
+   "voice": "Quick tip. Across a throttling valve, enthalpy stays the same. For an ideal gas enthalpy depends only on temperature, so the temperature does not change either."},
+  {"kind": "dates", "title": "Today's Plan",
+   "lines": [["Practice PDF", "Telegram, now"], ["Test (₹1 course)", "7 to 9 PM"], ["Take test", "Telegram link / website"], ["Toppers", "Next reel"]],
+   "voice": "The practice PDF is on Telegram now. Test tonight, seven to nine P. M. Take it through our Telegram channel link, or simply visit our website, on mobile or laptop."},
+  {"kind": "toppers", "title": "Day 36 Toppers",
+   "entries": [{"rank": 1, "name": "Sweta Rani Sahoo", "marks": "25.33/30"},
+               {"rank": 2, "name": "Shivam Sahu", "marks": "22/30"},
+               {"rank": 3, "name": "Sai Avinash", "marks": "10.66/30"}],
+   "voice": "Week six test toppers! Sweta Rani Sahoo takes rank one with twenty five point three three. Shivam Sahu is rank two, and Sai Avinash rank three. Well done!"}
+ ]
+}
