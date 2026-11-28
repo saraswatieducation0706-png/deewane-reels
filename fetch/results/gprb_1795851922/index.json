@@ -1,0 +1,77 @@
+[
+ {
+  "n": 1,
+  "url": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_4.pdf",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ojas.gujarat.gov.in', port=443): Max retries exceeded with url: /ojas1/AdvtDetailFiles/GPRB_202627_4.pdf (Caused by NewConnectionError(\"HTTPSConnection(host='ojas.gujarat.gov"
+ },
+ {
+  "n": 2,
+  "url": "https://gprb.gujarat.gov.in/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='gprb.gujarat.gov.in', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gprb.gujarat.gov.in', port=443): Failed to establish a "
+ },
+ {
+  "n": 3,
+  "url": "https://www.marugujarat.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 95,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://www.indgovtjobs.in/search?q=gujarat+police",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 61424,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.sarkariexam.com/?s=gujarat+police",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 2489,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://rojgarresult.com/?s=gujarat+police",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 4195,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.fresherslive.com/state-government-jobs/gujarat",
+  "ok": false,
+  "status": 404,
+  "type": "html",
+  "chars": 6002,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://www.sarkarinaukriblog.com/search?q=gujarat+police",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 13768,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://majhinaukri.in/?s=gujarat+police",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 14456,
+  "file": "009.md"
+ }
+]
