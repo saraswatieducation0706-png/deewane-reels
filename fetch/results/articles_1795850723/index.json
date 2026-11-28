@@ -1,0 +1,158 @@
+[
+ {
+  "n": 1,
+  "url": "https://www.freejobalert.com/articles/gujarat-police-recruitment-2026-3082915",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 71348,
+  "file": "001.md"
+ },
+ {
+  "n": 2,
+  "url": "https://www.freejobalert.com/articles/csptcl-recruitment-2026-apply-online-for-1501-ae-je-deo-attendant-and-more-posts-3079324",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 54793,
+  "file": "002.md"
+ },
+ {
+  "n": 3,
+  "url": "https://www.freejobalert.com/articles/csptcl-recruitment-2026-3082262",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 49198,
+  "file": "003.md"
+ },
+ {
+  "n": 4,
+  "url": "https://rojgarresult.com/csptcl-various-post-2026/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 16600,
+  "file": "004.md"
+ },
+ {
+  "n": 5,
+  "url": "https://www.freejobalert.com/articles/meity-scientist-b-recruitment-2026-apply-online-for-20-posts-3084454",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 45612,
+  "file": "005.md"
+ },
+ {
+  "n": 6,
+  "url": "https://www.fresherslive.com/articles/meity-scientist-b-recruitment-2026-apply-online-for-20-posts-3084454",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 12331,
+  "file": "006.md"
+ },
+ {
+  "n": 7,
+  "url": "https://www.freejobalert.com/articles/appsc-recruitment-2026-apply-online-for-106-assistant-motor-vehicle-inspector-lab-assistant-and-more-posts-3073362",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 47530,
+  "file": "007.md"
+ },
+ {
+  "n": 8,
+  "url": "https://www.freejobalert.com/articles/vvcmc-recruitment-2026-apply-online-for-156-clerk-typist-junior-engineer-and-more-posts-3084807",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 69204,
+  "file": "008.md"
+ },
+ {
+  "n": 9,
+  "url": "https://www.freejobalert.com/articles/npc-recruitment-2026-technical-assistant-3085558",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 68845,
+  "file": "009.md"
+ },
+ {
+  "n": 10,
+  "url": "https://www.freejobalert.com/articles/mpsc-recruitment-2026-stenographer-grade-iii-3085093",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 53665,
+  "file": "010.md"
+ },
+ {
+  "n": 11,
+  "url": "https://www.freejobalert.com/articles/bhel-recruitment-2026-graduate-apprentice-3085257",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 49351,
+  "file": "011.md"
+ },
+ {
+  "n": 12,
+  "url": "https://www.freejobalert.com/articles/csir-nml-recruitment-2026-graduate-apprentice-technician-apprentice-3085485",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 50750,
+  "file": "012.md"
+ },
+ {
+  "n": 13,
+  "url": "https://www.freejobalert.com/articles/kerala-psc-recruitment-2026-apply-online-for-39-field-supervisor-ld-clerk-and-more-posts-3084858",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 62585,
+  "file": "013.md"
+ },
+ {
+  "n": 14,
+  "url": "https://www.freejobalert.com/articles/aft-chandigarh-recruitment-2027-apply-offline-for-57-stenographer-deo-and-more-posts-3084887",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 58340,
+  "file": "014.md"
+ },
+ {
+  "n": 15,
+  "url": "https://gprb.gujarat.gov.in/",
+  "ok": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='gprb.gujarat.gov.in', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gprb.gujarat.gov.in', port=443): Failed to establish a "
+ },
+ {
+  "n": 16,
+  "url": "https://cspc.co.in/",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 32,
+  "file": "016.md"
+ },
+ {
+  "n": 17,
+  "url": "https://www.meity.gov.in/recruitment",
+  "ok": true,
+  "status": 200,
+  "type": "html",
+  "chars": 44,
+  "file": "017.md"
+ },
+ {
+  "n": 18,
+  "url": "https://psc.ap.gov.in/",
+  "ok": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='psc.ap.gov.in', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='psc.ap.gov.in', port=443) at 0x74bc5a2ffd90>, 'Connection to"
+ }
+]
